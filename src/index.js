@@ -31,15 +31,18 @@ raceBtn.addEventListener('click', raceToggle, false);
 function navToggle() {
   let nav = document.getElementsByClassName('nav-items')[0];
   let cBody = document.getElementsByClassName('content-body')[0];
+  let fade = document.getElementsByClassName('fade')[0];
   if (nav.style.display === 'flex') {
     nav.style.display = 'none';
-    cBody.style.width = '95vw';
+    fade.style.display = 'none';
+    cBody.style.width = '95%';
     cBody.style['padding-left'] = '10px';
   }
   else {
     nav.style.display = 'flex';
-    cBody.style.width = '70vw';
-    cBody.style['padding-left'] = '35%';
+    fade.style.display = 'block';
+    cBody.style.width = '78%';
+    cBody.style['padding-left'] = '25%';
   }
 }
 
@@ -47,13 +50,17 @@ let hamburger = document.getElementsByClassName('hamburger')[0];
 hamburger.addEventListener('click', navToggle, false);
 
 function closeNav() {
+  console.log('click')
   let nav = document.getElementsByClassName('nav-items')[0];
-  if (nav.style.display === 'flex' && document.documentElement.offsetWidth < 800) {
-    let cBody = document.getElementsByClassName('content-body')[0];
-    nav.style.display = 'none';
-    cBody.style.width = '95vw';
-    cBody.style['padding-left'] = '10px';
-  }
+  let fade =document.getElementsByClassName('fade')[0];
+  let cBody = document.getElementsByClassName('content-body')[0];
+  let hamburger = document.getElementsByClassName('hamburger')[0];
+  nav.style.display = 'none';
+  fade.style.display = 'none';
+  hamburger.style.display = 'block';
+  cBody.style.width = '95%';
+  cBody.style['padding-left'] = '10px';
+  
 }
-let cBody = document.getElementsByClassName('content')[0];
-cBody.addEventListener('click', closeNav, false);
+let fadeScreen = document.getElementsByClassName('fade')[0];
+fadeScreen.addEventListener('click', closeNav, false);

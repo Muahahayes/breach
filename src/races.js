@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import parseContent from './parseContent.js';
 
 function Races({ match }) {
   if (match && match.params && match.params.r) {
@@ -39,25 +40,34 @@ function Races({ match }) {
 
 function parseRace(raceJSON) {
     // make list of stats
-    let statList = [];
-    for (let stat in raceJSON.stats) {
-      let el = <li key={'stat'+stat}>{raceJSON.stats[stat]}</li>;
-      statList.push(el);
-    }
-    let stats = React.createElement('ul', {}, statList);
+    // let statList = [];
+    // for (let stat in raceJSON.stats) {
+    //   let el = <li key={'stat'+stat}>{raceJSON.stats[stat]}</li>;
+    //   statList.push(el);
+    // }
+    // let stats = React.createElement('ul', {}, statList);
 
-    // make list of racial features
-    let racialList = [];
-    for (let racial in raceJSON.racials) {
-      let el = <li key={'racial'+racial}>{raceJSON.racials[racial]}</li>;
-      racialList.push(el)
-    }
-    let racials = React.createElement('ul', {}, racialList);
+    // // make list of racial features
+    // let racialList = [];
+    // for (let racial in raceJSON.racials) {
+    //   let el = <li key={'racial'+racial}>{raceJSON.racials[racial]}</li>;
+    //   racialList.push(el)
+    // }
+    // let racials = React.createElement('ul', {}, racialList);
   
+    let desc = [];
+    let appear = [];
+    let stats = [];
+    let racials = [];
+    parseContent(raceJSON.description, desc);
+    parseContent(raceJSON.appearance, appear);
+    parseContent(raceJSON.stats, stats);
+    parseContent(raceJSON.racials, racials);
+
     // Format for displaying the race's information
     return (
       <div className="content-body">
-        <b>Description: </b>{raceJSON.description}
+        {/* <b>Description: </b>{raceJSON.description}
         <br/><br/>
         <b>Appearance: </b>
         {raceJSON.appearance}
@@ -66,7 +76,16 @@ function parseRace(raceJSON) {
         {stats}
         <br/><br/>
         <b>Racial Features:</b>
+        {racials} */}
+        <h3>Description: </h3>
+        {desc}
+        <h3>Appearance: </h3>
+        {appear}
+        <h3>Base Stats:</h3>
+        {stats}
+        <h3>Racial Features:</h3>
         {racials}
+
       </div>
     );
 }

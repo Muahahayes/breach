@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import parseContent from './parseContent.js';
 
 function InfoPage({ match }) {
   if (match && match.params && match.params.p) {
@@ -8,7 +9,8 @@ function InfoPage({ match }) {
     try {
       let pageJSON = require(`./pages/${page}.js`).default;
       name = pageJSON.name;
-      content = parsePage(pageJSON);
+      // content = parsePage(pageJSON);
+      content = pageJSON.content;
     }
     catch(e) {
       name = page.toUpperCase();
@@ -21,7 +23,9 @@ function InfoPage({ match }) {
         <div className="content-head">
           <h1>{name}</h1>
         </div>
-        {content}
+        <div className="content-body">
+          {content}
+        </div>
       </div>
     );
   }
@@ -40,36 +44,10 @@ function InfoPage({ match }) {
 }
 
 function parsePage(pageJSON) {
-  // TODO: make a sub function to do formatting 
-  // have a page be either strings, arrays, or objects, if its an object check its obj.tag field for what type of tag to wrap the text in
-  // recursively call a helper function to check objects for what their obj.content is and parse them too
-  // do this in races too, maybe put this stuff in another file that they both include
-    // List of elements to be displayed
+  // TODO: ok, making .js files that export React elements is probably the best way to go, give up on this parsing stuff and just do that
     let elements = [];
     for (let row of pageJSON.content) {
-      if (Array.isArray(row)) {
-        let el = [];
-        for (let line of row) {
-          el.push(<li>{line}</li>)
-        }
-        elements.push(React.createElement('ul', {}, el));
-        elements.push(<br/>);
-      }
-      else {
-        let lines = row.split('\n');
-        for (let line of lines) {
-          let sublines = line.split('<br/>');
-          for (let subline of sublines) {
-            if (subline !== '') {
-              let str = subline.split(':');
-              let el = (str.length > 1)?<span><b>{`${str[0]}:`}</b>{str[1]}</span>:<span>{subline}</span>;
-              elements.push(el);
-            }
-            elements.push(<br/>);
-          }
-        }
-        
-      }
+      parseContent(row, elements);
     }
     // Format for displaying the page's information
     return (

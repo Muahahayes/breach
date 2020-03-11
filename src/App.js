@@ -13,8 +13,9 @@ function App() {
     <div className="App">     
       <Router>
         <Nav />
+        <div className="fade"/>
         <div className="nav-padding">
-          <img src={menuPic} alt="" height="50" width="50" class="hamburger"/>
+          <img src={menuPic} alt="" height="50" width="50" className="hamburger"/>
           {/* <div class="hamburger">
             <div></div>
             <div class="bar1"></div>
