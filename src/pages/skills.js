@@ -2,7 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 export default {
   name: "SKILLS",
-  content: <p>
+  content: <div>
+  <p>
   <span>Increases the result of d20 rolls which attempt to accomplish some task. All Skills start at 0 and are increased by the starting points given by your Race and by gaining <Link to="leveling">XP</Link> from when you Hard Succeed.</span><br/>
   <br/>
   <span><b>Hard/Soft Rolls:</b></span><br/>
@@ -17,6 +18,7 @@ export default {
   <span>If a member of your party is a Gift level above you, their expertise inspires you. This grants 1 XP on any <b>Soft Succeed</b>. This effect only applies when you roll one of their 5 highest Skills and you are within 100 ft.</span><br/>
   <br/>
   <span><b>Skills:</b></span><br/>
+  </p>
   <ul>
       <li>Mechanics (maintaining, repairing, or improving non-cybernetic technology)</li>
       <li>Cybernetics (maintaining, repairing, or improving cybernetic technology)</li>
@@ -46,5 +48,5 @@ export default {
       <li>Cooking (creation of edible foods/drinks)</li>
   </ul>
   <br/>
-</p>
+</div>
 }

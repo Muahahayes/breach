@@ -37,15 +37,14 @@ function App() {
 }
 
 //  TODO:
-/*  Make a private github repo for the project, so I can work on it on my laptop if needed!
+/*  Fix Links!
+    Make <table> css
     Finish new.js almost
     Write rpg.js
-    Make the infoPage.js able to parse in-text Links and other style tags
     Put some pages into a sublist called Rules
     Put some pages into sublists for each Source, which are each a page that lists the Gifts at a given G level
     Have the routing accept Source/G/GiftName to show a page that's just about that Gift (each gift has its own .js, which are all pulled in the G page)
     Put some pages into a sublist called Lore
-    Attach the github repo to a heroku app so its hosted on the cloud
     Go through the ideas part at the bottom of the google doc and add them into the main text
     Start adding pages of content so there's enough for a playtest campaign this summer?
 */

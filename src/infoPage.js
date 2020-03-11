@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import parseContent from './parseContent.js';
+// import parseContent from './parseContent.js';
 
 function InfoPage({ match }) {
   if (match && match.params && match.params.p) {
@@ -43,18 +43,18 @@ function InfoPage({ match }) {
   }
 }
 
-function parsePage(pageJSON) {
-  // TODO: ok, making .js files that export React elements is probably the best way to go, give up on this parsing stuff and just do that
-    let elements = [];
-    for (let row of pageJSON.content) {
-      parseContent(row, elements);
-    }
-    // Format for displaying the page's information
-    return (
-      <div className="content-body">
-        {elements}
-      </div>
-    );
-}
+// function parsePage(pageJSON) {
+//   // TODO: ok, making .js files that export React elements is probably the best way to go, give up on this parsing stuff and just do that
+//     let elements = [];
+//     for (let row of pageJSON.content) {
+//       parseContent(row, elements);
+//     }
+//     // Format for displaying the page's information
+//     return (
+//       <div className="content-body">
+//         {elements}
+//       </div>
+//     );
+// }
 
 export default InfoPage;

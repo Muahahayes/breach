@@ -3,7 +3,8 @@ import {Link} from 'react-router-dom';
 export default {
   name: "STATS",
   content: 
-  <p>
+  <div>
+    <p>
     <span><b>Life:</b> Your character has a maximum of 5 Life, plus additional Life equal to your Stamina (a minimum of 1 Life if your Stamina is -4 or less). Whenever you lose a point of Life, you receive an Injury. Roll on the Injury table at the bottom of this page. </span><br/>
     <br/>
     <span><b>Survival:</b> Your character has a maximum of 10 Survival, plus additional Survival equal to your Stamina multiplied by 5 (a minimum of 5 Survival if your Stamina is -1 or less). When something deals damage to your character, subtract the amount of damage from your current Survival. When something heals your character, add the amount of healing to your current Survival up to your max Survival.</span><br/>
@@ -18,7 +19,7 @@ export default {
     <br/>
     <span><b>Attributes:</b></span>
     <br/>
-    <span>A measurement of your natural ability at a base level. No Attribute may be increased above 5 + G</span><br/><br/>
+    <span>A measurement of your natural ability at a base level. No Attribute may be increased above 5 + G</span><br/><br/></p>
     <ul>
       <li><span>Strength (Raw power, anaerobic activity)</span><br/></li>
       <li><span>Agility (Physical nimbleness and flexibility)</span><br/></li>
@@ -26,6 +27,7 @@ export default {
       <li><span>Stamina (Life and endurance)</span><br/></li>
     </ul>
     <br/>
+    <p>
     <span><b>Strength Benefits:</b> Every point of Strength increases your Carry Weight by 50lb.</span><br/>
     <span><b>Agility Benefits:</b> Agility is used to determine how difficult it is for enemies to hit you.</span><br/>
     <span><b>Will Benefits:</b> Will is used to resist some non-physical effects.</span><br/>
@@ -38,5 +40,6 @@ export default {
     <span><b>Increasing Attributes:</b> Your Attributes are determined by your Race's starting Attributes, and are increased from Attribute Points (AP) you have at character creation, and gain from Gifts. When increasing an Attribute using AP, you cannot increase the Attribute beyond [2 * G] + 1.</span><br/>
     <br/>
     <span><b>A note on numbers:</b> Whenever you calculate a fraction of a number, if the result is not a whole number you must round down to the nearest non-zero whole number (If it is zero, treat it as 1).</span><br/>
-  </p>
+    </p>
+  </div>
 }
