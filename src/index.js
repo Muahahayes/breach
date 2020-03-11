@@ -23,10 +23,19 @@ function raceToggle() {
     raceBtn.innerHTML = '▼';
   }
 }
+
+function raceShow() {
+  let raceList = document.getElementById('race-list');
+  let raceBtn = document.getElementById('race-btn');
+  if (raceList.style.display === 'none') {
+    raceList.style.display = 'block';
+    raceBtn.innerHTML = '▲';
+  }
+}
 let raceBtn = document.getElementById('race-btn');
 raceBtn.addEventListener('click', raceToggle, false);
-// let raceLink = document.getElementById('race-link');
-// raceLink.addEventListener('click', raceToggle, false);
+let raceLink = document.getElementById('race-link');
+raceLink.addEventListener('click', raceShow, false);
 
 function navToggle() {
   let nav = document.getElementsByClassName('nav-items')[0];

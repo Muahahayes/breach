@@ -2,9 +2,8 @@ import React from 'react';
 import './App.css';
 import Nav from './nav';
 import Races from './races';
+import Sources from './sources';
 import menuPic from './pics/menu.png'
-// import Stats from './stats';
-// import Human from './races/human';
 import InfoPage from './infoPage';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
@@ -27,7 +26,7 @@ function App() {
         <Switch>
           <Route path="/pages/:p" component={InfoPage}/>
           <Route path="/races/:r" component={Races}/>
-          
+          <Route path="/sources/:s" component={Sources}/>
           <Route path="/:p" component={InfoPage}/>
           <Route path="/" exact component={Home}/>
         </Switch>
@@ -51,9 +50,6 @@ function App() {
 
 function Home() {
   return (
-  // <div>
-  //   <h1>Breach</h1>
-  // </div>
   InfoPage({match:{params:{p:"home"}}})
   );
 }

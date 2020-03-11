@@ -28,6 +28,12 @@ function Nav() {
         <li><Link style={navStyle} to="/races/aeth">Aeth</Link></li>
         </ul>
       </li>
+      <li><Link style={navStyle} to="/sources" id="source-link">Sources</Link> <span className="btn" id="source-btn">▼</span></li>
+      <li id="source-list" style={hidden}>
+        <ul>
+          
+        </ul>
+      </li>
     </ul>
   );
 }
