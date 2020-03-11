@@ -57,12 +57,15 @@ function parseRace(raceJSON) {
     // Format for displaying the race's information
     return (
       <div className="content-body">
-        {raceJSON.description}
+        <b>Description: </b>{raceJSON.description}
         <br/><br/>
-        Base Stats:
+        <b>Appearance: </b>
+        {raceJSON.appearance}
+        <br/><br/>
+        <b>Base Stats:</b>
         {stats}
         <br/><br/>
-        Racial Features:
+        <b>Racial Features:</b>
         {racials}
       </div>
     );

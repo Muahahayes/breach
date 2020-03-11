@@ -23,6 +23,8 @@ function Nav() {
         <ul>
         <li><Link style={navStyle} to="/races/human">Human</Link></li>
         <li><Link style={navStyle} to="/races/sylvan">Sylvan</Link></li>
+        <li><Link style={navStyle} to="/races/darkin">Darkin</Link></li>
+        <li><Link style={navStyle} to="/races/aeth">Aeth</Link></li>
         </ul>
       </li>
     </ul>

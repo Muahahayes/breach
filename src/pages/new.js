@@ -28,15 +28,15 @@ export default {
     The classic system of having a raw chunk of health to slowly wittle down sounded boring and didn't make much sense to us. Have 20 arrows sticking out of you? That's just fine! Did a 21st arrow hit your arm? You're dying on the ground! So we split HP into two stats, Life and Survival.
     Life measures how alive you are, and how close to death you are. Whenever you lose 1 point of Life, you get more injured and receive various penalties. If it hits 0, you're on the ground dying unless you get some help!
     Survival measures your toughness and luck, and comes between your precious Life and those arrows that want to take it away! Whenever you receive damage, it applies to your Survival first. If your Survival hits 0 you subtract 1 from your Life and reset your Survival.
-    With this 2 part system, we can make better sense of the arrows turning your character into a pin-cushion! The first couple arrows hit but get caught in your armor or don't hit anything vital and you can shrug it off, but every couple of arrows manage to hit something important and leave behind a meaningful effect!
-    
-    Initiative: Reworked!
-    In Breach, every round of combat the creatures involved roll their Speed to determine how far they can move during their turn. The turn order is based on the highest to lowest movement distances of the creatures. This means we have a Dynamic Turn Order, which can change each round.
+    With this 2 part system, we can make better sense of the arrows turning your character into a pin-cushion! The first couple arrows hit but get caught in your armor or don't hit anything vital and you can shrug it off, but every couple of arrows manage to hit something important and leave behind a meaningful effect!    
 
     Attributes: Trimmed down!
     We've reduced the core attributes to 4 stats. Strength, Agility, Will and Stamina.
     Will is a pseudo replacement for Wisdom and partially Charisma, the social aspects of Charisma are now purely based on Skills.
     Intelligence is gone and lives on in numerous Skills showing specific ways of being intelligent.
+
+    Initiative: Reworked!
+    In Breach, every round of combat the creatures involved roll their Speed to determine how far they can move during their turn. The turn order is based on the highest to lowest movement distances of the creatures. This means we have a Dynamic Turn Order, which can change each round.
 
     XP: Now with less murder-hobo!
     In Breach you no longer gain XP from killing. Instead, it's tied into the Skill system. When you Hard Succeed or Hard Fail at a Skill check, you gain 1 XP. Every 5 XP you can pick a Proficiency from your Source/Gifts and a Skill increases by 1.
@@ -45,6 +45,9 @@ export default {
     Succeed/Fail: Hard what?
     Ever feel like RPGs tend to be too binary? Breach has 2 levels of success and failure, called Hard and Soft. Whenever you surpass a Skill check by more than 5 we call that a Hard Success, and a Hard Fail is when you fall more than 5 short of a pass. That 5 point area around the pass is where Soft Success and Failure lives.
     A Hard Success means you pass it, no strings attached! A Soft Success means you pass it, but there might be a drawback or consequence. A Soft Fail means you failed, but the outcome could have been worse! Finally, a Hard Fail is where you fail and it goes worse, your GM can get creative with dishing out punishment for these.
+    
+    Socializing: Time to get Persuasive!
+
     `
   ]
 }
