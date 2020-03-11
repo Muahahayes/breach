@@ -40,6 +40,10 @@ function InfoPage({ match }) {
 }
 
 function parsePage(pageJSON) {
+  // TODO: make a sub function to do formatting 
+  // have a page be either strings, arrays, or objects, if its an object check its obj.tag field for what type of tag to wrap the text in
+  // recursively call a helper function to check objects for what their obj.content is and parse them too
+  // do this in races too, maybe put this stuff in another file that they both include
     // List of elements to be displayed
     let elements = [];
     for (let row of pageJSON.content) {
