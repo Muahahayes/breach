@@ -39,16 +39,22 @@ function App() {
 }
 
 //  TODO:
-/*  Fix Links!
-    Make <table> css
-    Finish new.js almost
+/*  Finish new.js almost
     Write rpg.js
-    Put some pages into a sublist called Rules
-    Put some pages into sublists for each Source, which are each a page that lists the Gifts at a given G level
-    Have the routing accept Source/G/GiftName to show a page that's just about that Gift (each gift has its own .js, which are all pulled in the G page)
     Put some pages into a sublist called Lore
     Go through the ideas part at the bottom of the google doc and add them into the main text
+    Go back over the rules and iterate/refine them
+    Make a rough draft of a character sheet
     Start adding pages of content so there's enough for a playtest campaign this summer?
+    Go back over the rules and iterate/refine them
+    Make a login system, only allow users to see the book, put login and guidebook links in a smaller navbar above content-head
+    Make a character sheet wizard, saves a sheet to a user
+    Make roll calculator, pulls a character from the user
+    Make beastiary, put link to it in the smaller navbar (playtest ready at this point)
+    Go back over the rules and iterate/refine them
+    Make GM guide, put link in the smaller navbar
+    Go back over the rules and iterate/refine them
+    Work with Ryan on an intro campaign and Lore
 */
 
 function Home() {

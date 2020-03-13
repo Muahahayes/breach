@@ -21,7 +21,7 @@ export default {
     <p><b>What's New?</b><br/>
     Now you might be saying "Hold on, where's Classes? or Initiative? and what was that about HP being different and some Attributes missing?", well hold onto your seat as we go over the changes in Breach.<br/>
     <br/>
-    <b>Classes:</b> Gone!<br/>
+    <b>Classes:</b> Gone! (See <Link to="sources">Sources</Link>)<br/>
     Instead of Classes, we have something called your Source. Don't think of this as a direct replacement though, Sources are not as regimented as a Class.
     When you create your character you select what Source your character gains their Gifts from. A Gift is some kind of power or ability that sets them apart from the average person. Every time you gain enough XP to level up, you select a new Gift from your chosen Source. There's plenty to choose from within each Source, so you can be a lot more freeform with developing your abilities than a typical Class in other RPGs.
     To supplement the Source and Gift system, we have something called Proficiencies. As you gain XP, you'll have opportunities to pick Proficiencies from the Gifts you possess. Think of these as passive bonuses or smaller sub-abilities (or Talent Trees from Video Game RPGs) that you can unlock from your existing Gifts.<br/>
