@@ -21,15 +21,18 @@ body {
     font-size: 1em;
   }
   .nav-items {
-    width: 20vw;
+    width: 25vw;
     display: none;
-    /* padding-top: 10px; */
+  }
+  .nav-items .btn {
+    font-size: 1.5em;
   }
   .nav-top {
     display: none;
   }
   .nav-padding {
     position: absolute;
+    height: 100px;
   }
   .hamburger {
     position: fixed;
@@ -74,6 +77,7 @@ body {
     max-width: 150px;
   }
   .nav-padding {
+    height: 90vh;
     width: 24vw;
     max-width: 145px;
     display: none;
@@ -90,7 +94,7 @@ body {
   }
   .content-body {    
   margin-block-start: 5em;
-  width: 95%;
+  width: 100%;
   }
   .hamburger {
     display: none;
@@ -137,16 +141,16 @@ h3 {
   padding-top: 1em;
 }
 
-#race-list {
+.nav-items .list {
   padding-top: 0;
 }
 
-#race-list ul {
+.nav-items .list ul {
   padding-top: 0;
   padding-bottom: 0;
 }
 
-#race-list ul li {
+.nav-items .list ul li {
   padding-top: 0;
   padding-bottom: 0.25em;
 }
@@ -162,7 +166,6 @@ h3 {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  height: 90vh;
   min-width: 65px;
   padding-inline-start: 10px;
   padding-top: 10px;
@@ -172,7 +175,7 @@ h3 {
 
 .hamburger {
   cursor: pointer;
-  z-index: 1;
+  z-index: 2;
 }
 
 
@@ -190,12 +193,11 @@ h3 {
   top: 0;
   background: rgb(70,70,80);
   color: white;
-  z-index: 0;
+  z-index: 1;
 }
 
 .content-body{
   padding-inline-start: 10px;
-  z-index: -1;
 }
 
 .content-body ul {
@@ -210,4 +212,26 @@ ul{
 
 .btn:hover{
   cursor: pointer;
+}
+
+.giftEntry {
+  margin-block-start: 1em;
+  background: rgb(220, 220, 200);
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(200, 200, 180);
+}
+
+.giftEntry h2 {
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.gift h3 {
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.gift-list hr {
+  border-top: 2px dashed black;
 }

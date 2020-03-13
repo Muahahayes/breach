@@ -37,6 +37,58 @@ raceBtn.addEventListener('click', raceToggle, false);
 let raceLink = document.getElementById('race-link');
 raceLink.addEventListener('click', raceShow, false);
 
+function sourceToggle() {
+  let sourceList = document.getElementById('source-list');
+  let sourceBtn = document.getElementById('source-btn');
+  if (sourceList.style.display === 'none') {
+    sourceList.style.display = 'block';
+    sourceBtn.innerHTML = '▲';
+  }
+  else {
+    sourceList.style.display = 'none';
+    sourceBtn.innerHTML = '▼';
+  }
+}
+
+function sourceShow() {
+  let sourceList = document.getElementById('source-list');
+  let sourceBtn = document.getElementById('source-btn');
+  if (sourceList.style.display === 'none') {
+    sourceList.style.display = 'block';
+    sourceBtn.innerHTML = '▲';
+  }
+}
+let sourceBtn = document.getElementById('source-btn');
+sourceBtn.addEventListener('click', sourceToggle, false);
+let sourceLink = document.getElementById('source-link');
+sourceLink.addEventListener('click', sourceShow, false);
+
+function giftToggle() {
+  let giftList = document.getElementById('gift-list');
+  let giftBtn = document.getElementById('gift-btn');
+  if (giftList.style.display === 'none') {
+    giftList.style.display = 'block';
+    giftBtn.innerHTML = '▲';
+  }
+  else {
+    giftList.style.display = 'none';
+    giftBtn.innerHTML = '▼';
+  }
+}
+
+function giftShow() {
+  let giftList = document.getElementById('gift-list');
+  let giftBtn = document.getElementById('gift-btn');
+  if (giftList.style.display === 'none') {
+    giftList.style.display = 'block';
+    giftBtn.innerHTML = '▲';
+  }
+}
+let giftBtn = document.getElementById('gift-btn');
+giftBtn.addEventListener('click', giftToggle, false);
+let giftLink = document.getElementById('gift-link');
+giftLink.addEventListener('click', giftShow, false);
+
 function navToggle() {
   let nav = document.getElementsByClassName('nav-items')[0];
   let cBody = document.getElementsByClassName('content-body')[0];
@@ -50,8 +102,8 @@ function navToggle() {
   else {
     nav.style.display = 'flex';
     fade.style.display = 'block';
-    cBody.style.width = '78%';
-    cBody.style['padding-left'] = '25%';
+    cBody.style.width = '70%';
+    cBody.style['padding-left'] = '30%';
   }
 }
 

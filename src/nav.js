@@ -20,7 +20,7 @@ function Nav() {
       <li><Link style={navStyle} to="/pages/skills">Skills</Link></li>
       <li><Link style={navStyle} to="/pages/leveling">XP and Leveling</Link></li>
       <li><Link style={navStyle} to="/races" id="race-link">Races</Link> <span className="btn" id="race-btn">▼</span></li>
-      <li id="race-list" style={hidden}> 
+      <li id="race-list" className="list" style={hidden}> 
         <ul>
         <li><Link style={navStyle} to="/races/human">Human</Link></li>
         <li><Link style={navStyle} to="/races/sylvan">Sylvan</Link></li>
@@ -29,9 +29,15 @@ function Nav() {
         </ul>
       </li>
       <li><Link style={navStyle} to="/sources" id="source-link">Sources</Link> <span className="btn" id="source-btn">▼</span></li>
-      <li id="source-list" style={hidden}>
+      <li id="source-list" className="list" style={hidden}>
         <ul>
-          
+        <li><Link style={navStyle} to="/sources/psychic">Psychic</Link></li>
+        </ul>
+      </li>
+      <li><Link style={navStyle} to="/gifts" id="gift-link">Gifts</Link> <span className="btn" id="gift-btn">▼</span></li>
+      <li id="gift-list" className="list" style={hidden}>
+        <ul>
+        <li><Link style={navStyle} to="/sources/psychic/gifts">Psychic</Link></li>
         </ul>
       </li>
     </ul>
