@@ -11,6 +11,32 @@ ReactDOM.render(<App />, document.getElementById('book'));
 // Learn more about service workers: https://bit.ly/CRA-PWA
 serviceWorker.unregister();
 
+function ruleToggle() {
+  let ruleList = document.getElementById('rule-list');
+  let ruleBtn = document.getElementById('rule-btn');
+  if (ruleList.style.display === 'none') {
+    ruleList.style.display = 'block';
+    ruleBtn.innerHTML = '▲';
+  }
+  else {
+    ruleList.style.display = 'none';
+    ruleBtn.innerHTML = '▼';
+  }
+}
+
+function ruleShow() {
+  let ruleList = document.getElementById('rule-list');
+  let ruleBtn = document.getElementById('rule-btn');
+  if (ruleList.style.display === 'none') {
+    ruleList.style.display = 'block';
+    ruleBtn.innerHTML = '▲';
+  }
+}
+let ruleBtn = document.getElementById('rule-btn');
+ruleBtn.addEventListener('click', ruleToggle, false);
+let ruleLink = document.getElementById('rule-link');
+ruleLink.addEventListener('click', ruleShow, false);
+
 function raceToggle() {
   let raceList = document.getElementById('race-list');
   let raceBtn = document.getElementById('race-btn');

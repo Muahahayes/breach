@@ -1,6 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import parseContent from './parseContent.js';
 import renderGift from './renderGift';
 
 function Gifts({ match }) {
@@ -46,14 +44,12 @@ function Gifts({ match }) {
   else if (match && match.params && match.params.s) { // source, render all gifts
     let source = require(`./sources/gifts/${match.params.s}`);
     let gifts = source.default;
-    console.log(gifts)
     let content = [];
 
     for (let level in gifts) {
       if (level > 0) content.push(<hr/>);
       let levelContent = [];
       for (let gift of gifts[level]) {
-        console.log(gift)
         levelContent.push(<div className="giftEntry">{renderGift(gift, match.params.s)}</div>);
       }
       content.push(<h2>[{Number(level)+1} G]</h2>);

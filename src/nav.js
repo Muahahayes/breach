@@ -16,9 +16,14 @@ function Nav() {
       <li><Link style={navStyle} to="/">Home</Link></li> {/* Replace with a Logo */}
       <li><Link style={navStyle} to="/pages/rpg">What's a RPG</Link></li>
       <li><Link style={navStyle} to="/pages/new">What's New</Link></li>
-      <li><Link style={navStyle} to="/pages/stats">Stats</Link></li>
-      <li><Link style={navStyle} to="/pages/skills">Skills</Link></li>
-      <li><Link style={navStyle} to="/pages/leveling">XP and Leveling</Link></li>
+      <li><Link style={navStyle} to="/rules" id="rule-link">Rules</Link> <span className="btn" id="rule-btn">▼</span></li>
+      <li id="rule-list" className="list" style={hidden}>
+        <ul>
+          <li><Link style={navStyle} to="/pages/leveling">XP and Leveling</Link></li>
+          <li><Link style={navStyle} to="/pages/stats">Stats</Link></li>
+          <li><Link style={navStyle} to="/pages/skills">Skills</Link></li>   
+        </ul>
+      </li>       
       <li><Link style={navStyle} to="/races" id="race-link">Races</Link> <span className="btn" id="race-btn">▼</span></li>
       <li id="race-list" className="list" style={hidden}> 
         <ul>
