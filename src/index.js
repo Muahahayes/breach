@@ -115,6 +115,32 @@ giftBtn.addEventListener('click', giftToggle, false);
 let giftLink = document.getElementById('gift-link');
 giftLink.addEventListener('click', giftShow, false);
 
+function loreToggle() {
+  let loreList = document.getElementById('lore-list');
+  let loreBtn = document.getElementById('lore-btn');
+  if (loreList.style.display === 'none') {
+    loreList.style.display = 'block';
+    loreBtn.innerHTML = '▲';
+  }
+  else {
+    loreList.style.display = 'none';
+    loreBtn.innerHTML = '▼';
+  }
+}
+
+function loreShow() {
+  let loreList = document.getElementById('lore-list');
+  let loreBtn = document.getElementById('lore-btn');
+  if (loreList.style.display === 'none') {
+    loreList.style.display = 'block';
+    loreBtn.innerHTML = '▲';
+  }
+}
+let loreBtn = document.getElementById('lore-btn');
+loreBtn.addEventListener('click', loreToggle, false);
+let loreLink = document.getElementById('lore-link');
+loreLink.addEventListener('click', loreShow, false);
+
 function navToggle() {
   let nav = document.getElementsByClassName('nav-items')[0];
   let cBody = document.getElementsByClassName('content-body')[0];
@@ -137,7 +163,6 @@ let hamburger = document.getElementsByClassName('hamburger')[0];
 hamburger.addEventListener('click', navToggle, false);
 
 function closeNav() {
-  console.log('click')
   let nav = document.getElementsByClassName('nav-items')[0];
   let fade =document.getElementsByClassName('fade')[0];
   let cBody = document.getElementsByClassName('content-body')[0];

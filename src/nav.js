@@ -46,6 +46,12 @@ function Nav() {
         <li><Link style={navStyle} to="/sources/psychic/gifts">Psychic</Link></li>
         </ul>
       </li>
+      <li><Link style={navStyle} to="/lore" id="lore-link">Lore</Link> <span className="btn" id="lore-btn">▼</span></li>
+      <li id="lore-list" className="list" style={hidden}>
+        <ul>
+        <li><Link style={navStyle} to="/sources/psychic/gifts">Psychic</Link></li>
+        </ul>
+      </li>
     </ul>
   );
 }
