@@ -1,9 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 export default {
-  name: "SKILLS",
+  name: "Skills",
   content: <div>
-  <p>
   <span>A Skill increases the result of d20 rolls which attempt to accomplish some task. All Skills start at 0 and are increased by the starting points given by your Race and by gaining <Link to="leveling">XP</Link> from when you <b>Hard Succeed</b> or <b>Hard Fail</b>.</span><br/>
 
   <hr/>
@@ -25,7 +24,7 @@ export default {
 
   <hr/>
   <h3>Limits:</h3>
-  <span>The maximum points you may have in a Skill is 5x the number of Gifts you possess. If a Skill is at its maximum it cannot gain XP from a <b>Hard Succeed/Fail</b>.</span><br/>
+  <span>The maximum points you may have in a Skill is 5x your G Level you possess. If a Skill is at its maximum it cannot gain XP from a <b>Hard Succeed/Fail</b>.</span><br/>
 
   <hr/>
   <h3>Inspiring Expertise:</h3>
@@ -76,6 +75,5 @@ export default {
       <li>Art (creation of a static/physical piece of art)</li>
       <li>Cooking (creation of edible foods/drinks)</li>
   </ul>
-  </p>
 </div>
 }

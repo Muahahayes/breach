@@ -3,8 +3,6 @@ import { Link } from 'react-router-dom';
 export default {
 name: 'Combat',
 content: <div>
-  <p>
-
-  </p>
+  
 </div>
 }

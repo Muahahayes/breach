@@ -1,10 +1,9 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 export default {
-  name: "STATS",
+  name: "Stats",
   content: 
   <div>
-    <p>
     <h3><b>Health:</b></h3>
     <span><b>Life:</b> Your character has a maximum of 5 Life, plus additional Life equal to your Stamina (a minimum of 1 Life if your Stamina is -4 or less). Whenever you lose a point of Life, you receive an Injury. Roll on the Injury table at the bottom of this page. </span><br/>
     <br/>
@@ -41,6 +40,5 @@ export default {
     <span><b>Speed:</b> You have Speed dice which are used for determining your maximum distance when doing a Movement Action. The number of dice and their size is determined by your Race and may be increased by Powers.</span><br/>
     <hr/>
     <span><b>A note on numbers:</b> Whenever you calculate a fraction of a number, if the result is not a whole number you must round down to the nearest non-zero whole number (If it is zero, treat it as 1).</span><br/>
-    </p>
   </div>
 }

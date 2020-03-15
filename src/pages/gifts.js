@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default {
-  name: "GIFTS",
+  name: "Gifts",
   content: <p>
     [gift summary blah blah]
   </p>

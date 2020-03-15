@@ -19,11 +19,12 @@ function Nav() {
       <li><Link style={navStyle} to="/rules" id="rule-link">Rules</Link> <span className="btn" id="rule-btn">▼</span></li>
       <li id="rule-list" className="list" style={hidden}>
         <ul>
-          <li><Link style={navStyle} to="/pages/leveling">XP and Leveling</Link></li>
-          <li><Link style={navStyle} to="/pages/stats">Stats</Link></li>
-          <li><Link style={navStyle} to="/pages/skills">Skills</Link></li>   
-          <li><Link style={navStyle} to="/pages/combat">Combat</Link></li>
-          <li><Link style={navStyle} to="/pages/socializing">Socializing</Link></li>
+          <li><Link style={navStyle} to="/rules/leveling">XP and Leveling</Link></li>
+          <li><Link style={navStyle} to="/rules/stats">Stats</Link></li>
+          <li><Link style={navStyle} to="/rules/skills">Skills</Link></li>   
+          <li><Link style={navStyle} to="/rules/combat">Combat</Link></li>
+          <li><Link style={navStyle} to="/rules/socializing">Socializing</Link></li>
+          <li><Link style={navStyle} to="/rules/exploration">Exploration</Link></li>
         </ul>
       </li>       
       <li><Link style={navStyle} to="/races" id="race-link">Races</Link> <span className="btn" id="race-btn">▼</span></li>
@@ -50,7 +51,7 @@ function Nav() {
       <li><Link style={navStyle} to="/lore" id="lore-link">Lore</Link> <span className="btn" id="lore-btn">▼</span></li>
       <li id="lore-list" className="list" style={hidden}>
         <ul>
-        <li><Link style={navStyle} to="/sources/psychic/gifts">Psychic</Link></li>
+        <li><Link style={navStyle} to="/lore/world">The World</Link></li>
         </ul>
       </li>
     </ul>

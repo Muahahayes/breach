@@ -19,6 +19,7 @@ function parseContent(row, elements) {
     for (let line of lines) {
       if (line !== '') {
         let str = line.split(':');
+        // eslint-disable-next-line
         let el = (str.length > 1)?<span><b>{`${str[0]}:`}</b>{str[1]}</span>:<span>{line}</span>;
         elements.push(el);
       }          

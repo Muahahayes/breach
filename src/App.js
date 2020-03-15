@@ -4,6 +4,8 @@ import Nav from './nav';
 import Races from './races';
 import Sources from './sources';
 import Gifts from './gifts';
+import Rules from './rules';
+import Lore from './lore';
 import menuPic from './pics/menu.png'
 import InfoPage from './infoPage';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
@@ -30,6 +32,8 @@ function App() {
           <Route path="/sources/:s/gifts" component={Gifts}/>
           <Route path="/sources/:s" component={Sources}/>          
           <Route path="/gifts/:s/:g" component={Gifts}/>
+          <Route path="/lore/:l" component={Lore}/>
+          <Route path="/rules/:r" component={Rules}/>
           <Route path="/:p" component={InfoPage}/>
           <Route path="/" exact component={Home}/>
         </Switch>

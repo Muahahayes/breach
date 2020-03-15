@@ -1,6 +1,6 @@
 import React from 'react';
 export default {
-  "name": "RACES",
+  "name": "Races",
   "content": <div>
     <p>There are many races in the world. Any creature with a Will of at least 1, or is a member of a playable race listed below, is considered a person and is treated as a sentient entity. As the world became more globalized the languages of the world homogenized within each race, many races in modern times only have one common language. If a person knows a language that another person knows, they may communicate between each other in any verbal or written form available to them. Each race has its own unique culture and opinions of the other races, examples will be given in this section but your GM may replace these descriptions with their own or even replace races completely within the format!</p>    
     <p>Each race has a description with this format:</p>

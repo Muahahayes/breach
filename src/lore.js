@@ -1,11 +1,11 @@
 import React from 'react';
 
-function InfoPage({ match }) {
-  if (match && match.params && match.params.p) {
-    let page = match.params.p;
+function Lore({ match }) {
+  if (match && match.params && match.params.l) {
+    let page = match.params.l;
     let content, name
     try {
-      let pageJSON = require(`./pages/${page}.js`).default;
+      let pageJSON = require(`./lore/${page}.js`).default;
       name = pageJSON.name;
       // content = parsePage(pageJSON);
       content = pageJSON.content;
@@ -41,4 +41,4 @@ function InfoPage({ match }) {
   }
 }
 
-export default InfoPage;
+export default Lore;

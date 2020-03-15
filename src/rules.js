@@ -1,11 +1,11 @@
 import React from 'react';
 
 function InfoPage({ match }) {
-  if (match && match.params && match.params.p) {
-    let page = match.params.p;
+  if (match && match.params && match.params.r) {
+    let page = match.params.r;
     let content, name
     try {
-      let pageJSON = require(`./pages/${page}.js`).default;
+      let pageJSON = require(`./rules/${page}.js`).default;
       name = pageJSON.name;
       // content = parsePage(pageJSON);
       content = pageJSON.content;
