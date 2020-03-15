@@ -14,9 +14,9 @@ function InfoPage({ match }) {
     }
     catch(e) {
       name = page.toUpperCase();
-      content = <div className="content-body">
+      content = <p>
                   The {page} page doesn't exist!
-                </div>
+                </p>
     }
     return (
       <div className="content">
@@ -42,19 +42,5 @@ function InfoPage({ match }) {
     ); 
   }
 }
-
-// function parsePage(pageJSON) {
-//   // TODO: ok, making .js files that export React elements is probably the best way to go, give up on this parsing stuff and just do that
-//     let elements = [];
-//     for (let row of pageJSON.content) {
-//       parseContent(row, elements);
-//     }
-//     // Format for displaying the page's information
-//     return (
-//       <div className="content-body">
-//         {elements}
-//       </div>
-//     );
-// }
 
 export default InfoPage;

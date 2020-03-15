@@ -22,6 +22,7 @@ function Nav() {
           <li><Link style={navStyle} to="/pages/leveling">XP and Leveling</Link></li>
           <li><Link style={navStyle} to="/pages/stats">Stats</Link></li>
           <li><Link style={navStyle} to="/pages/skills">Skills</Link></li>   
+          <li><Link style={navStyle} to="/pages/combat">Combat</Link></li>
           <li><Link style={navStyle} to="/pages/socializing">Socializing</Link></li>
         </ul>
       </li>       

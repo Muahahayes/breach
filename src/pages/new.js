@@ -4,7 +4,7 @@ export default {
   name:"What's New in Breach?",
   content: <div>
     <p>If you've played similar Tabletop RPG games before, this section will go over what to expect from a session of Breach. We'll start with what's the same in brief, and then go over what's new in detail.<br/>
-    <br/>
+    <hr/>
     <b>What's the Same?</b><br/>
     Breach is an action/adventure style RPG where you cooperatively create a story with a group of players and a GM (Game Master, some RPG's may call this a Dungeon Master or something similar). There are pre-written campaigns made by the Breach team for your GM to run, or they may choose to come up with their own story and setting! You can bring your same bag of dice to the table, Breach uses the classic polyhedral set of d4, d6, d8, d10, d12 and d20 dice! Just like other Tabletop RPGs, the story is driven by players voicing an action and then rolling dice to determine the result.<br/>
     <br/>
@@ -18,11 +18,12 @@ export default {
      <li><b>Skills:</b> These are more important than ever and factor directly into your leveling process!</li>
      <li><b>Aspects/Personality:</b> We call these Features, and it has a mechanical effect on the game.</li>
     </ul>
+    <hr/>
     <p><b>What's New?</b><br/>
     Now you might be saying "Hold on, where's Classes? or Initiative? and what was that about HP being different and some Attributes missing?", well hold onto your seat as we go over the changes in Breach.<br/>
     <br/>
     <b>Classes:</b> Gone! (See <Link to="sources">Sources</Link>)<br/>
-    Instead of Classes, we have something called your Source. Don't think of this as a direct replacement though, Sources are not as regimented as a Class.
+    Instead of Classes, we have something called your Source. Don't think of this as a direct replacement though. Sources are not as regimented as a Class.
     When you create your character you select what Source your character gains their Gifts from. A Gift is some kind of power or ability that sets them apart from the average person. Every time you gain enough XP to level up, you select a new Gift from your chosen Source. There's plenty to choose from within each Source, so you can be a lot more freeform with developing your abilities than a typical Class in other RPGs.
     To supplement the Source and Gift system, we have something called Proficiencies. As you gain XP, you'll have opportunities to pick Proficiencies from the Gifts you possess. Think of these as passive bonuses or smaller sub-abilities (or Talent Trees from Video Game RPGs) that you can unlock from your existing Gifts.<br/>
     <br/>
@@ -48,7 +49,8 @@ export default {
     Ever feel like RPGs tend to be too binary? Breach has 2 levels of success and failure, called Hard and Soft. Whenever you surpass a Skill check by more than 5 we call that a Hard Success, and a Hard Fail is when you fall more than 5 short of a pass. That 5 point area around the pass is where Soft Success and Failure lives.
     A Hard Success means you pass it, no strings attached! A Soft Success means you pass it, but there might be a drawback or consequence. A Soft Fail means you failed, but the outcome could have been worse! Finally, a Hard Fail is where you fail and it goes worse, your GM can get creative with dishing out punishment for these.<br/>
     <br/>
-    <b>Socializing:</b> Time to get Persuasive!<br/>
+    <b>Socializing:</b> Time to get Persuasive! (See <Link to="socializing">Socializing</Link>)<br/>
+
     <br/>
     </p>
   </div>
