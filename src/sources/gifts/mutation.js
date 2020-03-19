@@ -48,12 +48,80 @@ export default [
       ]
     },
     {
-      name: "",
-      attributes: "",
-      description: "",
+      name: "Retractable Claws",
+      attributes: "[Passive]",
+      description: "You can extend 3 inch claws from your fingers or toes at will. These claws are durable and if broken can be regrown. Your unarmed melee attack now deals 1d6 sharp damage.",
       proficiencies: [
-        
+        [
+          "Chiseling: You can use your claws to carve basic shapes into rock or softer materials, gain +G to Art checks involving Stonecrafting or Pottery. Additionally your Athletics checks gain +G if you are climbing.",
+          "Elongate: You can extend the claws up to 6 inches."
+        ],
+        [
+          "Barbed: You gain +G to attempts to Grapple or maintain a Grapple.",
+          "Precision: Add +G to your unarmed melee attack damage."
+        ],
+        [
+          "Sharpened: Your unarmed melee attack now deals 1d8 sharp damage.",
+          "Poisoned: [Activate] Your unarmed melee attack now may apply a Poison if it naturally rolls 15+ on its attack and hits. This Poison deals 1d4 nature damage per turn, afterwards if the enemy rolls d20+Stamina above {10 + G} the Poison effect ends."
+        ],
+        [
+          "Razors: Your unarmed melee attack now deals 1d10 sharp damage.",
+          "Ethereal: [Activate] As an Activation Action, you may deal Spirit damage instead of Sharp with your unarmed melee attack."
+        ]
       ]
     }
+  ],
+  [
+    {
+      name: "Tight Reflexes",
+      attributes: "[React] [Self]",
+      description: "When attacked by a melee or ranged weapon attack you may Dodge, reducing their attack roll by G. Causes G Strain.",
+      proficiencies: [
+        [],[],
+        [
+          "Reactive: You may perform a second React Action per Round."
+        ],
+        [],
+        [
+          "Proactive: [Activate] As an Activation Action you may perform a second Action in a turn. Cannot be used with any Action that does not cause Strain, and causes double the usual Strain. Usable G times per day.",
+          "Evasive: [Passive] Increase your Avoidance by 1."
+        ]
+      ]
+    },
+    {
+      name: "Shapeshift",
+      attributes: "[Action] [Self]",
+      description: "You may take on the form and appearance of any creature who you have touched and is equal or lesser G than yourself. While in this form your Strength, Agility and Stamina stats match the values of the creature's stats, you can use [1 G] Powers as an additional Activation Action and you gain any Passive physical traits of the creature. When you have lost Life equal to your G during your transformation, or as a Minor Action on your turn voluntarily, you immediately revert to your normal form, negate any remaining damage received, set your Strain to ½ your max Survival, and reset your Survival to its full value. Usable once per Full Sleep.",
+      proficiencies: [
+        [],
+        [
+          "Malleable: You may use Shapeshift one more time per Full Sleep."
+        ],
+        [
+          "Feral: In the form of creatures with a Will below 1, add your G to all unarmed attack damage.",
+          "Gifted: You may use Powers up to [2 G] while Shapeshifted.",
+          "Up Leveled: You may take on the form of creatures 1 G above yourself."
+        ],
+        [
+          "Resize: [Action] You may, as a Full Action, change the size of your form by 1 Size.",
+          "Relaxed: Set your Strain to ¼ your max Survival when you revert to your normal form.",
+          "Reform: [React] You may revert to your normal form as a React Action."
+        ],
+        [
+          "Effortless: You may take on the form of creatures 2 G above yourself and use Powers up to [3 G] while Shapeshifted. Requires Up Leveled and Gifted."
+        ]
+      ]
+    }
+  ],
+  [
+
   ]
 ]
+// {
+//   name: "",
+//   attributes: "",
+//   description: "",
+//   proficiencies: [
+    
+//   ]
+// }
