@@ -16,6 +16,7 @@ function Nav() {
       <li><Link style={navStyle} to="/">Home</Link></li> {/* Replace with a Logo */}
       <li><Link style={navStyle} to="/pages/rpg">What's a RPG</Link></li>
       <li><Link style={navStyle} to="/pages/new">What's New</Link></li>
+      <li><Link style={navStyle} to="/pages/creation">Character Creation</Link></li>
       <li><Link style={navStyle} to="/rules" id="rule-link">Rules</Link> <span className="btn" id="rule-btn">▼</span></li>
       <li id="rule-list" className="list" style={hidden}>
         <ul>
@@ -24,6 +25,7 @@ function Nav() {
           <li><Link style={navStyle} to="/rules/skills">Skills</Link></li>   
           <li><Link style={navStyle} to="/rules/combat">Combat</Link></li>
           <li><Link style={navStyle} to="/rules/socializing">Socializing</Link></li>
+          <li><Link style={navStyle} to="/rules/quirks">Quirks</Link></li>
           <li><Link style={navStyle} to="/rules/exploration">Exploration</Link></li>
         </ul>
       </li>       
@@ -40,12 +42,14 @@ function Nav() {
       <li id="source-list" className="list" style={hidden}>
         <ul>
         <li><Link style={navStyle} to="/sources/psychic">Psychic</Link></li>
+        <li><Link style={navStyle} to="/sources/mutation">Mutation</Link></li>
         </ul>
       </li>
       <li><Link style={navStyle} to="/gifts" id="gift-link">Gifts</Link> <span className="btn" id="gift-btn">▼</span></li>
       <li id="gift-list" className="list" style={hidden}>
         <ul>
         <li><Link style={navStyle} to="/sources/psychic/gifts">Psychic</Link></li>
+        <li><Link style={navStyle} to="/sources/mutation/gifts">Mutation</Link></li>
         </ul>
       </li>
       <li><Link style={navStyle} to="/lore" id="lore-link">Lore</Link> <span className="btn" id="lore-btn">▼</span></li>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import renderGift from './renderGift';
 
 function Gifts({ match }) {
@@ -31,12 +32,17 @@ function Gifts({ match }) {
       );
     }
     else {
-      return (
+      let sourceName = match.params.s;
+      sourceName = sourceName.split('');
+      sourceName[0] = sourceName[0].toUpperCase();
+      sourceName = sourceName.join('');
+      return (        
         <div className="content">
           <div className="content-head">
             <h1>[{giftLevel} G] {gift.name}</h1>
           </div>
           <div className="content-body">
+            Return to <Link to={`/sources/${match.params.s}/gifts`}>{sourceName}</Link> Gifts
             {renderGift(gift)}
           </div>  
         </div>

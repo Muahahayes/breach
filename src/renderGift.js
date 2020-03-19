@@ -16,6 +16,7 @@ function renderGift(gift, source) {
         parseContent(gift.proficiencies[level], els);
         proficiencies.push(<h3>[{Number(level)+1} G]</h3>)
         proficiencies.push(els);
+        proficiencies.push(<br/>);
       }
     }
     return (

@@ -12,7 +12,6 @@ function parseContent(row, elements) {
       el.push(<li>{sublines}</li>)
     }
     elements.push(React.createElement('ul', {}, el));
-    elements.push(<br/>);
   }
   else { // its a string, parse for \n and : bolding
     let lines = row.split('\n');

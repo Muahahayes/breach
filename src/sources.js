@@ -41,8 +41,18 @@ function Sources({ match }) {
 function parseSource(sourceJSON) {
     let desc = [];
     let resource = [];
+    let proficiencies = [];
     parseContent(sourceJSON.description, desc);
     parseContent(sourceJSON.resource, resource);
+    for (let level in sourceJSON.proficiencies) {
+      if (sourceJSON.proficiencies[level].length > 0) {
+        let els = [];
+        parseContent(sourceJSON.proficiencies[level], els);
+        proficiencies.push(<h3 style={{marginTop:0}}>[{Number(level)+1} G]</h3>)
+        proficiencies.push(els);
+        if (sourceJSON.proficiencies.length > Number(level)+1) proficiencies.push(<br/>)
+      }
+    }
 
     // Format for displaying the source's information
     return (
@@ -51,6 +61,8 @@ function parseSource(sourceJSON) {
         {desc}
         <h3>Resource: </h3>
         {resource}
+        {(sourceJSON.proficiencies.length > 0)?<h3>Proficiencies: </h3>:null}
+        {proficiencies}
       </div>
     );
 }

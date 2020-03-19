@@ -16,7 +16,7 @@ export default {
      <li><b>Levels and Experience:</b> We call this Gifts and XP.</li>
      <li><b>Races:</b> There may be a different selection than you're familiar with, but there's a variety of different types of character to express yourself with!</li>
      <li><b>Skills:</b> These are more important than ever and factor directly into your leveling process!</li>
-     <li><b>Aspects/Personality:</b> We call these Features, and it has a mechanical effect on the game.</li>
+     <li><b>Aspects/Personality:</b> We call these Quirks, and it has a mechanical effect on the game.</li>
     </ul>
     <hr/>
     <p><b>What's New?</b><br/>

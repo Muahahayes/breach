@@ -5,10 +5,12 @@ import parseContent from './parseContent.js';
 function Races({ match }) {
   if (match && match.params && match.params.r) {
     let race = match.params.r;
-    let content
+    let content;
+    let name;
     try {
       let raceJSON = require(`./races/${race}.js`).default;
       content = parseRace(raceJSON);
+      name = raceJSON.name;
     }
     catch(e) {
       content = <div className="content-body">
@@ -18,7 +20,7 @@ function Races({ match }) {
     return (
       <div className="content">
         <div className="content-head">
-          <h1>{race.toUpperCase()}</h1>
+          <h1>{name}</h1>
         </div>
         {content}
       </div>
