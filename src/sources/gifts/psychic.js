@@ -1,6 +1,12 @@
 export default [
   [
     {
+      name: "Contract",
+      attributes: "[Passive] [Self]",
+      description: "You may take this Gift at and only at 1G. When your Powers awakened inside you there was a small tear in the Aether of your soul. You commune with a Cosmic creature through the tear and are granted otherworldly power in exchange for a Contract you agree to uphold (usually has conditions that must be met). This creature may speak to your mind through the tear during a Full Sleep. You gain two [1 G] or one [1 G] and one [2 G] Contract Gifts for free, these do not count towards your G. Contract Gifts may also be selected by Psychics who do not make a Contract, unless stated otherwise, but Proficiencies marked [Contract] may only be used with an active Contract. These Gifts you get for free come from your Contract and if you violate the Contract they may not be used. You may only select a [1 G] or [2 G] Power from the Psychic Source list. You may only select Gifts of [3 G] or higher if they are Contract Gifts.",
+      proficiencies: []
+    },
+    {
       name: "Psi Burst",
       attributes: "[Action] [Ranged] [AOE]",
       description: "Releases a burst of psychic energy in a 30 ft range centered on your character. Roll d20 + Power, every creature within the effect must roll a Will check vs this roll. Deals 1 kinetic damage on a failed Will check.",

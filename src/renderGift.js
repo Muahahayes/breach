@@ -25,7 +25,7 @@ function renderGift(gift, source) {
         <br/>
         {description}
         <br/>
-        <h3><b>Proficiencies:</b></h3>
+        {(gift.proficiencies.length > 0)?<h3><b>Proficiencies:</b></h3>:null}
         {proficiencies}
       </div>
     );
@@ -35,7 +35,7 @@ function renderGift(gift, source) {
     return (
       <div className="gift">
         <h2><Link to={`/gifts/${source}/${giftName}`}>{gift.name}</Link></h2>
-        <span><b>{gift.attributes}</b></span>
+        <span><b className="attributes">{gift.attributes}</b></span>
         <br/>
         {description}
       </div>

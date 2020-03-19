@@ -107,10 +107,15 @@ function Gifts({ match }) {
       let bar = document.getElementById('giftSearch');
       let str = bar.value;
       let otherBar = document.getElementById('levelSearch');
+      let otherBar2 = document.getElementById('attributeSearch');
       if (otherBar.value !== '' && otherCalled !== 'yes') {
         otherBar.value = '';
         filter('yes');
       }     
+      if (otherBar2.value !== '' && otherCalled !== 'yes') {
+        otherBar2.value = '';
+        attributes('yes');
+      } 
       if (str === '') { // display them all again
         let blocks = document.getElementsByClassName('levelBlock');
         for (let block of blocks) {
@@ -155,6 +160,62 @@ function Gifts({ match }) {
       }
     }
 
+    function attributes(otherCalled) {
+      let bar = document.getElementById('attributeSearch');
+      let str = bar.value;
+      console.log(str)
+      let otherBar = document.getElementById('giftSearch');
+      if (otherBar.value !== '' && otherCalled !== 'yes') {
+        otherBar.value = '';
+        filter('yes');
+      }  
+      if (str === '') { // display them all again
+        let blocks = document.getElementsByClassName('levelBlock');
+        for (let block of blocks) {
+          block.style.display = 'block';
+        }
+        let entries = document.getElementsByClassName('giftEntry');
+        for (let entry of entries) {
+          entry.style.display = 'block';
+        }
+        let hrs = document.getElementsByClassName('giftHR');
+        for (let hr of hrs) {
+          hr.style.display = 'block';
+        }
+      }
+      else { // only show gifts that have attributes that include str
+        let blocks = document.getElementsByClassName('levelBlock');
+        let needHR = false;
+        for (let block of blocks) {
+          let found = false;
+          for (let child of block.children) {
+            if (child.classList[0] === 'giftHR' && !needHR) {
+              child.style.display = 'none'
+            }
+            else if (child.classList[0] === 'giftEntry') {
+              let atts = str.split('+');
+              for (let att of atts) {
+                if (child.getElementsByClassName('attributes')[0].textContent.toLowerCase().includes(att.toLowerCase()) && att !=='') { //TODO: add split on +
+                  child.style.display = 'block';
+                  found = true;
+                }
+                else {
+                  child.style.display = 'none';
+                }
+              }
+            }
+          }
+          if (!found) {
+            block.style.display = 'none';
+          }
+          else {
+            block.style.display = 'block';
+            needHR = true;
+          }
+        }
+      }
+    }
+
     let filterEl;
     if (document.defaultView.screen.availWidth < 800) {
       filterEl =    
@@ -177,8 +238,10 @@ function Gifts({ match }) {
                     <label className="searchLabel" htmlFor="levelSearch">Filter Level:</label>
                     <input className ="searchBar" type="search" id="levelSearch" name="levelSearch" onChange={filter} placeholder="G#" tabIndex={1}></input>
                   </span>
-                  <label className="searchLabel" htmlFor="giftSearch">Search Gift:</label>            
-                  <input className ="searchBar" type="search" id="giftSearch" name="giftSearch" onChange={search} placeholder="Gift" tabIndex={2}></input>            
+                  <label className="searchLabel" htmlFor="giftSearch">Search Gifts:</label>            
+                  <input className ="searchBar" type="search" id="giftSearch" name="giftSearch" onChange={search} placeholder="Gift" tabIndex={2}></input>  
+                  <label className="searchLabel" htmlFor="attributeSearch">Search Attributes:</label>            
+                  <input className ="searchBar" type="search" id="attributeSearch" name="attributeSearch" onChange={attributes} placeholder="[Attribute]" tabIndex={2}></input>            
                 </span>
     }
     
