@@ -83,6 +83,9 @@ body {
     border-radius: 10px;
     border : 2px solid #000000
   }
+  #attributeSearch {
+    width: 80%;
+  }
   .searchLabel {
     width: 30%;
     font-size: 1.5em;

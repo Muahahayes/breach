@@ -54,7 +54,7 @@ function Gifts({ match }) {
       if (level > 0) levelContent.push(<hr className="giftHR"/>);
       levelContent.push(<h2>[{Number(level)+1} G]</h2>);
       for (let gift of gifts[level]) {
-        levelContent.push(<div className={`giftEntry`} id={gift.name}>{renderGift(gift, match.params.s)}</div>);
+        if (gift) levelContent.push(<div className={`giftEntry`} id={gift.name}>{renderGift(gift, match.params.s)}</div>);
       }
       let idStr = `level${Number(level)+1}`
       let levelBlock = React.createElement("div", {className: "levelBlock", id: idStr}, levelContent);
@@ -66,10 +66,15 @@ function Gifts({ match }) {
       let bar = document.getElementById('levelSearch');
       let str = bar.value;
       let otherBar = document.getElementById('giftSearch');
+      let otherBar2 = document.getElementById('attributeSearch');
       if (otherBar.value !== '' && otherCalled !== 'yes') {
         otherBar.value = '';
         search('yes');
       }      
+      if (otherBar2.value !== '' && otherCalled !== 'yes') {
+        otherBar2.value = '';
+        attributes('yes');
+      }
       if (str.match(/^[1-9]$/)) { // one and only one digit
         let blocks = document.getElementsByClassName('levelBlock');
         for (let block of blocks) {
@@ -165,10 +170,15 @@ function Gifts({ match }) {
       let str = bar.value;
       console.log(str)
       let otherBar = document.getElementById('giftSearch');
+      let otherBar2 = document.getElementById('levelSearch');
       if (otherBar.value !== '' && otherCalled !== 'yes') {
         otherBar.value = '';
-        filter('yes');
+        search('yes');
       }  
+      if (otherBar2.value !== '' && otherCalled !== 'yes') {
+        otherBar2.value = '';
+        filter('yes');
+      }
       if (str === '') { // display them all again
         let blocks = document.getElementsByClassName('levelBlock');
         for (let block of blocks) {
@@ -195,11 +205,11 @@ function Gifts({ match }) {
             else if (child.classList[0] === 'giftEntry') {
               let atts = str.split('+');
               for (let att of atts) {
-                if (child.getElementsByClassName('attributes')[0].textContent.toLowerCase().includes(att.toLowerCase()) && att !=='') { //TODO: add split on +
+                if (child.getElementsByClassName('attributes')[0].textContent.toLowerCase().includes(att.toLowerCase())) { //TODO: add split on +
                   child.style.display = 'block';
                   found = true;
                 }
-                else {
+                else if (att !== '') {
                   child.style.display = 'none';
                 }
               }
@@ -227,7 +237,11 @@ function Gifts({ match }) {
                   <br/>
                   <br/>
                   <label className="searchLabel" htmlFor="giftSearch">Search Gift:</label>            
-                  <input className ="searchBar" type="search" id="giftSearch" name="giftSearch" onChange={search.bind(null, false)} placeholder="Gift" tabIndex={2}></input>            
+                  <input className ="searchBar" type="search" id="giftSearch" name="giftSearch" onChange={search.bind(null, false)} placeholder="Gift" tabIndex={2} title="Searches for a Gift name starting with your text, add a * to the front to search for Gifts that include your text within their name. (eg. *oc finds Shock)"></input>      
+                  <br/>
+                  <br/>
+                  <label className="searchLabel" htmlFor="attributeSearch">Search Attributes:</label>            
+                  <input className ="searchBar" type="search" id="attributeSearch" name="attributeSearch" onChange={attributes} placeholder="[Attribute]" tabIndex={2} title="Searches for Gifts with any attribute that include your text within the attribute name. Add a + between attributes to narrow the search to match multiple attributes. (eg. Ranged+Action)"></input>        
                 </p> 
                   
     }
@@ -239,9 +253,9 @@ function Gifts({ match }) {
                     <input className ="searchBar" type="search" id="levelSearch" name="levelSearch" onChange={filter} placeholder="G#" tabIndex={1}></input>
                   </span>
                   <label className="searchLabel" htmlFor="giftSearch">Search Gifts:</label>            
-                  <input className ="searchBar" type="search" id="giftSearch" name="giftSearch" onChange={search} placeholder="Gift" tabIndex={2}></input>  
+                  <input className ="searchBar" type="search" id="giftSearch" name="giftSearch" onChange={search} placeholder="Gift" tabIndex={2} title="Searches for a Gift name starting with your text, add a * to the front to search for Gifts that include your text within their name. (eg. *oc finds Shock)"></input>  
                   <label className="searchLabel" htmlFor="attributeSearch">Search Attributes:</label>            
-                  <input className ="searchBar" type="search" id="attributeSearch" name="attributeSearch" onChange={attributes} placeholder="[Attribute]" tabIndex={2}></input>            
+                  <input className ="searchBar" type="search" id="attributeSearch" name="attributeSearch" onChange={attributes} placeholder="[Attribute]" tabIndex={2} title="Searches for Gifts with any attribute that include your text within the attribute name. Add a + between attributes to narrow the search to match multiple attributes. (eg. Ranged+Action)"></input>            
                 </span>
     }
     
