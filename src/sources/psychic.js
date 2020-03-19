@@ -1,7 +1,8 @@
 export default {
   name: "Psychic",
-  description: "Psychics are an established class of 'better' creatures with a genetic advantage within the urban society, they developed about 200 years ago early on in the industrial boom. Using their unique Aether within themselves, they intuitively feel in tune with the world around them and can resonate with the Aether around them to impose changes upon it. They created the modern capitalist state by taking advantage of the non-psionic peoples and established themselves as the upper class.",
-  resource: "Psychic Fatigue: When you use any kind of action (even a Free Action) to use a Power roll a d20, if you roll lower than {9 + G} (or a natural 1) you fail to contain the energies within your mind causing a Psychic Break. Cancel that Power's effect and you cannot use any of your Powers until you fully sleep or take a break. If you are Feared or Stunned you must make a Psychic Fatigue check each turn of the effect's duration.",
+  slogan: "The Powers of the Mind",
+  description: "Psychics are an established class of 'better' creatures with a genetic advantage within the urban society, they developed about 200 years ago early on in the industrial boom. Using their unique Aether within themselves, they intuitively feel in tune with the world and can resonate with the Aether around them to impose changes upon it. They created the modern capitalist state by taking advantage of the non-psionic peoples and established themselves as the upper class.",
+  resource: "Psychic Fatigue: When you use any kind of action (even a Free Action) to use a Power, roll a d20. If you roll lower than {9 + G} (or a natural 1) you fail to contain the energies within your mind causing a Psychic Break. Cancel that Power's effect and you cannot use any of your Powers until you fully sleep or take a break. If you are Feared or Stunned you must make a Psychic Fatigue check each turn of the effect's duration.",
   proficiencies: [
     [
       "Mental Fortitude: Subtract 1 from the difficulty of Psychic Fatigue checks (to a minimum of 8). (Repeatable)"

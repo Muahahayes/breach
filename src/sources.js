@@ -5,10 +5,12 @@ import parseContent from './parseContent.js';
 function Sources({ match }) {
   if (match && match.params && match.params.s) {
     let source = match.params.s;
-    let content;
+    let content, sourceName, slogan;
     try {
       let sourceJSON = require(`./sources/${source}.js`).default;
       content = parseSource(sourceJSON);
+      sourceName = sourceJSON.name;
+      slogan = sourceJSON.slogan;
     }
     catch(e) {
       content = <div className="content-body">
@@ -18,7 +20,8 @@ function Sources({ match }) {
     return (
       <div className="content">
         <div className="content-head">
-          <h1>{source.toUpperCase()}</h1>
+          <h1>{sourceName}</h1>
+          <h3>{`(${slogan})`}</h3>
         </div>
         {content}
       </div>

@@ -1,5 +1,6 @@
 export default {
-  name: "Mutation",
+  name: "Mutation",  
+  slogan: "The Powers of Evolution",
   description: "Mutants are a new and not fully understood scientific development who are finding their place in the world.",
   resource: "Metabolism: When you use an active Mutation you experience Strain. You lower your max survival for each point of Strain you gain, and regain this lowered max survival for each point of Strain you lose up to your unstrained maximum. You remove all of your Strain when you fully sleep or if you take a break while eating a full meal. You remove an amount of Strain equal to [Stamina * G] when you take a break without eating a full meal. If your Strain exceeds half your unstrained max survival you become Overstrained and become unconscious, you cannot use any Powers until you fully sleep or take a break while eating a full meal.",
   proficiencies: [
