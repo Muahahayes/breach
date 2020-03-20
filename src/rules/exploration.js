@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 export default {
 name: 'Exploring the World',
 content: <div>
-  
  <h3>Awareness:</h3>
   Creatures cannot perform actions towards, or with the assumption of the existence of, another creature it is not aware of. If a creature is aware of another creature's existence but not its location it may perform actions which assumes it exists but may not target it directly. When a creature is in your line of sight (within 100 ft and the view is not obstructed) and not actively attempting to Hide or Sneak you become aware of it and it's location. If you enter an area and a creature of a size smaller than you is in line of sight, not moving, and not attempting to be noticed, it will be Hiding by default with a bonus to the Hide equal to its G. 
   <hr/>

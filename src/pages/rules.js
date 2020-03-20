@@ -10,7 +10,7 @@ content: <Fragment>
     <span>The Simplified ruleset is made to be more new player friendly, and has less math/housekeeping happening throughout the actions of your group.</span><br/>
     <span>Rules with a Simplified Version:</span>
     <ul>
-      <li><a href="/rules/combat#injury">Injury Table</a></li>
+      <li><a href="/rules/damage#injury">Injury Table</a></li>
     </ul>
     <span>Rules to exclude entirely during Simplified play:</span>
     <ul>

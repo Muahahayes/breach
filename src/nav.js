@@ -24,6 +24,7 @@ function Nav() {
           <li><Link style={navStyle} to="/rules/stats">Stats</Link></li>
           <li><Link style={navStyle} to="/rules/skills">Skills</Link></li>   
           <li><Link style={navStyle} to="/rules/combat">Combat</Link></li>
+          <li><Link style={navStyle} to="/rules/damage">Damage</Link></li>
           <li><Link style={navStyle} to="/rules/socializing">Socializing</Link></li>
           <li><Link style={navStyle} to="/rules/quirks">Quirks</Link></li>
           <li><Link style={navStyle} to="/rules/exploration">Exploration</Link></li>

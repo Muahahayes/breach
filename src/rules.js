@@ -1,6 +1,7 @@
 import React from 'react';
+import './rules.css';
 
-function InfoPage({ match }) {
+function Rules({ match }) {
   if (match && match.params && match.params.r) {
     let page = match.params.r;
     let content, name
@@ -41,4 +42,4 @@ function InfoPage({ match }) {
   }
 }
 
-export default InfoPage;
+export default Rules;

@@ -38,6 +38,9 @@ export default {
     <span><b>Avoidance:</b> Your character gains Avoidance from their equipment, Race, and some Gifts. When a creature attempts to Attack your character, the difficulty of the Attack roll is determined by your Avoidance.</span><br/>
     <br/>
     <span><b>Speed:</b> You have Speed dice which are used for determining your maximum distance when doing a Movement Action. The number of dice and their size is determined by your Race and may be increased by Powers.</span><br/>
+    <hr id="favored"/>
+    <h3>Favored/Unfavored Rolls:</h3>
+    <p>In some circumstances, the situation might favor or unfavor a dice roll. In these cases, a bonus/penalty is applied to the favored/unfavored roll respectively, with the degree of the bonus/penalty being +/- in tiers based on the creature's G. 1G, 2G, or 3G depending on how strong of an influence the situation has. Any single roll cannot have more than an Unfavored -3 penalty or a Favored +3 bonus.</p>
     <hr/>
     <span><b>A note on numbers:</b> Whenever you calculate a fraction of a number, if the result is not a whole number you must round down to the nearest non-zero whole number (If it is zero, treat it as 1).</span><br/>
   </div>
