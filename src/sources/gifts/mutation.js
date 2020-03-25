@@ -21,7 +21,8 @@ export default [
           "Quill Spray: [Activate] When you use Harden, you may release a spray of quills around. Every creature within 10ft must roll an Agility check vs your current Strain, you deal 1d4 piercing damage to any Soft Fail and an additional G damage to any Hard Fail."
         ],
         [
-          "Armored Skin: [Passive] While Blocking, increase your Avoidance by 2."
+          "Armored Skin: [Passive] While Blocking, increase your Avoidance by 2.",
+          "Adaptive Flesh: [Activate] When you use Harden, you may become Resistant to the type of damage you received (after applying this damage to your Survival). This lasts until you lose 1 Life or you use Adaptive Flesh again."
         ]
       ]
     },
