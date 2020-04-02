@@ -21,7 +21,7 @@ export default {
       <li><span>Stamina (Life and endurance)</span><br/></li>
     </ul>
     <br/>
-    <span><b>Strength Benefits:</b> Every point of Strength increases your Carry Weight by 50lb.</span><br/>
+    <span><b>Strength Benefits:</b> Every point of Strength increases your Carry Weight by 50lb and increases the damage of basic melee attacks.</span><br/>
     <span><b>Agility Benefits:</b> Agility is used to determine how difficult it is for enemies to hit you.</span><br/>
     <span><b>Will Benefits:</b> Will is used to resist some non-physical effects.</span><br/>
     <span><b>Stamina Benefits:</b> Every point of Stamina increases your Life by 1, your Survival by 5, and the distance you can travel per day by 5 miles.</span><br/>
@@ -37,7 +37,7 @@ export default {
     <br/>
     <span><b>Avoidance:</b> Your character gains Avoidance from their equipment, Race, and some Gifts. When a creature attempts to Attack your character, the difficulty of the Attack roll is determined by your Avoidance.</span><br/>
     <br/>
-    <span><b>Speed:</b> You have Speed dice which are used for determining your maximum distance when doing a Movement Action. The number of dice and their size is determined by your Race and may be increased by Powers.</span><br/>
+    <span><b>Speed:</b> You have Speed dice which are used for determining your maximum distance when doing a Movement Action. The number of dice and their size is determined by your Race and may be increased by some Gifts.</span><br/>
     <hr id="favored"/>
     <h3>Favored/Unfavored Rolls:</h3>
     <p>In some circumstances, the situation might favor or unfavor a dice roll. In these cases, a bonus/penalty is applied to the favored/unfavored roll respectively, with the degree of the bonus/penalty being +/- in tiers based on the creature's G. 1G, 2G, or 3G depending on how strong of an influence the situation has. Any single roll cannot have more than an Unfavored -3 penalty or a Favored +3 bonus.</p>

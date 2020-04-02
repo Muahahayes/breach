@@ -7,20 +7,28 @@ content: <div>
   <b>Killing/Subduing:</b> When dealing damage the attacker may attempt to subdue and not kill the victim, if they reduce the victim's Life below 1 but not to a negative number higher than half the victim's max Life the victim is made unconscious, otherwise the victim is Dead. If the creature's Life drops below 1 from damage, the attacker intends to kill, and the creature is a Player, or for NPCs at your GM's discretion, apply the <Link to="/rules/stats">Death</Link> rules. Otherwise, the creature is immediately Dead.</p>
   <hr/>
   <h3>Types of Damage:</h3>
-  <p><b>Physical types:</b><br/>
-  <b>Blunt:</b> On a critical hit, Stuns biological type creatures for 1 turn.<br/>
-  <b>Sharp:</b> On a critical hit, Bleeds biological type creatures every 5 turns and causes G Strain.<br/>
-  <b>Crushing:</b> On a critical hit, deals an additional Gd4 damage and causes G Faults.<br/><br/>
+  <p><b>Resistance:</b> When you are Resistant to a type of Damage, subtract G from all damage from that type. Additionally, whenever that type would bring you to 0 Survival, roll a d20 vs the remaining damage. On a success, cancel the remaining damage and set your Survival to 1.<br/><br/>
+  <b>Physical types:</b><br/>
+  <ul>
+    <li><b>Blunt:</b> On a critical hit, Stuns biological type creatures for 1 turn.<br/></li>
+    <li><b>Sharp:</b> On a critical hit, Bleeds biological type creatures every 5 turns and causes G Strain.<br/></li>
+    <li><b>Crushing:</b> On a critical hit, deals an additional Gd4 damage and causes G Faults.<br/><br/></li>
+  </ul>
   <b>Elemental types:</b><br/>
-  <b>Fire:</b> On a critical hit, Burns the target causing G fire damage over G turns.<br/>
-  <b>Water:</b> On a critical hit, Freezes the target snaring them for G turns.<br/>
-  <b>Nature:</b> On a critical hit, Poisons the target dealing G Nature damage over 4 turns with difficulty [15 + G], and subtracting G Bloodlust.<br/>
-  <b>Electric:</b> On a critical hit, Paralyzes the target for G turns. Cybernetic type creatures are also Stunned for the first turn.<br/><br/>
+  <ul>
+    <li><b>Fire:</b> On a critical hit, Burns the target causing G fire damage over G turns.<br/></li>
+    <li><b>Water:</b> On a critical hit, Freezes the target snaring them for G turns.<br/></li>
+    <li><b>Nature:</b> On a critical hit, Poisons the target dealing G Nature damage over 4 turns with difficulty [15 + G], and subtracting G Bloodlust.<br/></li>
+    <li><b>Electric:</b> On a critical hit, Paralyzes the target for G turns. Cybernetic type creatures are also Stunned for the first turn.<br/><br/></li>
+  </ul>
   <b>Mental types:</b><br/>
-  <b>Psychic:</b> On a critical hit, Disorients the target subtracting G from their next attack roll.<br/>
-  <b>Kinetic</b> (deals Blunt damage if it hits): On a critical hit, Stuns the target for 1 turn.<br/>
-  <b>Spirit:</b> On a critical hit, Drains the target, damaging them and heals the attacker for Gd4 Life.<br/>
-  <b>Darkness:</b> On a critical hit, Blinds the target for 1 turn and subtracts G ae.</p>
+  <ul>
+    <li><b>Psychic:</b> On a critical hit, Disorients the target subtracting G from their next attack roll.<br/></li>
+    <li><b>Kinetic</b> (deals Blunt damage if it hits): On a critical hit, Stuns the target for 1 turn.<br/></li>
+    <li><b>Spirit:</b> On a critical hit, Drains the target, damaging them and heals the attacker for Gd4 Life.<br/></li>
+    <li><b>Darkness:</b> On a critical hit, Blinds the target for 1 turn and subtracts G ae.</li>
+  </ul>  
+  </p>
   <hr/>
   <h3 id="injury">Injury:</h3>
   <p>When you receive an injury for any reason roll 2d10, the first roll decides the severity.<br/>
