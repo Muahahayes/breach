@@ -119,7 +119,25 @@ export default [
       proficiencies: [
         [],
         [
-          
+          "Subtle: The creature is not made aware of you from this Power. It is made aware of the Thread when it becomes aware of you.",
+		      "Branching: You may have up to 2 Threads active at one time.",
+ 		      "Duration: Your Threads now last for 1 day."
+        ],
+        [
+          "Command: When a Thread is attached to a creature which is not a person, you may convert the creature into a minion. On its turn you may make it do a Full or Minor Action and a Movement Action, doing so uses your Activation Action. To convert the creature you must make a Will check vs its own d20 + (G + Will) check. On the first turn of every combat and after a Full Sleep, the creature may attempt to remove the Thread.",
+          "Influence: While a person has a Thread attached to them, increase their Regard for you by G."
+        ],
+        [
+          "Propagation: You may use the Threads power on creatures within 50 ft of a creature you currently have a Thread attached to.",
+		      "Iron Grip: The creature must make a Will check vs your own Power check (instead of vs your own Will check) to remove the Thread.",
+		      "Multiply: You may have up to G more Threads active at one time. Requires Branching."
+        ],
+        [
+          "Control: You may use Command on a person. Only 1 Thread may use Control at one time.",
+		      "Double: You may use Control on 2 Threads at one time."
+        ],
+        [
+          "Deep Roots: Threads persist through the creature becoming unconscious and have no time limit."
         ]
       ]
     }
