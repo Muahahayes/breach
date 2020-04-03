@@ -13,6 +13,7 @@ export default {
     Attribute, finds Gifts that possess a given attribute, add a + between attributes to search for Gifts that possess a combination of specific attributes. (eg. range+aoe finds Gifts that have both [Ranged] and [AOE])
     <ul>
     <li><a href="/sources/psychic/gifts">Psychic</a></li>
+    <li><a href="/sources/cosmic/gifts">Cosmic</a></li>
     <li><a href="/sources/mutation/gifts">Mutation</a></li>
     </ul>
   </p>

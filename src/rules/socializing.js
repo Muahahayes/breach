@@ -21,7 +21,7 @@ export default {
       When you lose the Argument the person does not agree with your suggestion, and if they were attempting a Counter-Argument you must accept some compromise with their stance and act accordingly. 
       If the loss was due to a Hard Fail the GM may, at their discretion, impose consequences beyond the person standing their ground. 
       If you lose an Argument with a person, you may not initiate a similar Argument with them for a full day. 
-      For each repeated attempt at a similar Argument add 1 to their Agreement threshold.</span>
+      For each repeated attempt at a similar Argument add 1 to their Agreement threshold. If the person currently has an involuntary effect placed upon them by you, your Persuasion rolls have a -1 Unfavored penalty.</span>
     <hr/>
     <h3>Charm:</h3><br/>
     <span>To charm a person and increase their Regard of you, roll d20 + Charm vs their d20 + Insight.<br/>
@@ -32,7 +32,7 @@ export default {
     The GM may use the Regard stat to influence the person's interactions with your character and give them motivation to do positive actions for you of their own volition. When you attempt to Persuade a person, subtract their Regard from the Agreement threshold (to a minimum of 1, if their Regard is negative this will increase the threshold). Most people will have a starting Regard for you at zero unless they have a prior opinion of you in the story. You may only attempt to charm a person once per day. The GM may also impose Regard changes based on the events of the story and your interactions.</span>
     <hr/>
     <h3>Insight:</h3><br/>
-    <span>If you suspect a person is hiding the truth or their intentions, or to attempt to gain an understanding of a person and their social connections you may roll an Insight check. Roll d20 + Insight vs 15 (or up to GM discretion), or if they are actively trying to deceive you roll vs their d20 + Charm (intentions/understanding) or Persuasion (deceit) instead. <br/>
+    <span>If you suspect a person is hiding the truth or their intentions, or to attempt to gain an understanding of a person and their social connections you may roll an Insight check. Roll a d20 + Insight vs their Charm, or if they are actively trying to deceive you roll vs their Persuasion instead. <br/>
     On a <b>Hard Success</b> you gain the knowledge you seek within reason. <br/>
     On a <b>Soft Success</b> you know if they are hiding/deceiving or not, or you gain some minor understanding. <br/>
     On a <b>Soft Fail</b> you learn nothing. <br/>

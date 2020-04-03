@@ -3,7 +3,7 @@ export default [
     {
       name: "Contract",
       attributes: "[Passive] [Self]",
-      description: "You may take this Gift at and only at 1G. When your Powers awakened inside you there was a small tear in the Aether of your soul. You commune with a Cosmic creature through the tear and are granted otherworldly power in exchange for a Contract you agree to uphold (usually has conditions that must be met). This creature may speak to your mind through the tear during a Full Sleep. You gain two [1 G] or one [1 G] and one [2 G] Contract Gifts for free, these do not count towards your G. Contract Gifts may also be selected by Psychics who do not make a Contract, unless stated otherwise, but Proficiencies marked [Contract] may only be used with an active Contract. These Gifts you get for free come from your Contract and if you violate the Contract they may not be used. You may only select a [1 G] or [2 G] Power from the Psychic Source list. You may only select Gifts of [3 G] or higher if they are Contract Gifts.",
+      description: "You may take this Gift at and only at 1G. When your Powers awakened inside you there was a small tear in the Aether of your soul. You commune with a Cosmic creature through the tear and are granted otherworldly power in exchange for a Contract you agree to uphold (usually has conditions that must be met). This creature may speak to your mind through the tear during a Full Sleep. You gain two [1 G] or one [1 G] and one [2 G] Contract Gifts for free, these do not count towards your G. Contract Gifts may also be selected by Psychics who do not make a Contract, unless stated otherwise, but Proficiencies marked [Contract] may only be used with an active Contract. These Gifts you get for free come from your Contract and if you violate the Contract they may not be used. When you level in future, you may only select [1 G] or [2 G] Gifts from the Psychic Source list. You may only select Gifts of [3 G] or higher if they are Contract Gifts.",
       proficiencies: []
     },
     {
@@ -12,18 +12,20 @@ export default [
       description: "Releases a burst of psychic energy in a 30 ft range centered on your character. Roll d20 + Power, every creature within the effect must roll a Will check vs this roll. Deals 1 kinetic damage on a failed Will check.",
       proficiencies: [
         [
-          "Scream: Instead of dealing damage or other effects, you may inflict Fear on every target hit for G turns, at the end of each turn they may roll a Will check vs {15 + Will} to end the effect.",
-          "Feedback: Instead of dealing damage or other effects, you may force a Psychic Fatigue check on every target hit which has a Psychic Source."
+          "Scream: [Activate] Instead of dealing damage or other effects, you may inflict Fear on every target hit for G turns, at the end of each turn they may roll a Will check vs {15 + Will} to end the effect.",
+          "Feedback: [Activate] Instead of dealing damage or other effects, you may force a Psychic Fatigue check on every target hit which has a Psychic Source."
         ],
         [
+          "Wave: In addition to dealing damage, you may push all targets hit 10 ft away from you.",
           "Impact: Increases the damage to {1d4 + G}.",
-          "Shout: Instead of dealing damage or other effects, you may inflict Stun on every target hit for 1 turn. Roll an extra Psychic Fatigue check for each target hit."
+          "Shout: [Activate] Instead of dealing damage or other effects, as an Activation Action you may inflict Stun on every target hit for 1 turn. Roll an additional Psychic Fatigue check for each target hit. You do not regain this Activation Action on your next turn."
         ],
         [
-          "Echo: As a Minor Action you may do a second Psi Burst, this second use must not use the same status effect as the first.",
+          "Echo: As a Minor Action you may do a second Psi Burst, this second use must not use the same status effect as the first but may use your Activation Action a second time.",
           "Telepathic: You may roll your attack vs their Armor + Will instead, this Power deals Psychic damage instead of Kinetic when used this way." 
         ],
         [
+          "Magnitude: Increases the damage to 1d6 + G.",
           "Focused: You may direct your Psi Burst at a single creature in range. Instead of dealing damage or other effects, inflict Dumb on hit for G turns."
         ],
         [
@@ -67,7 +69,7 @@ export default [
     {
       name: "Focus",
       attributes: "[Action] [Self]",
-      description: "During a Psychic Break you may spend a turn to Focus, this does not cause a Psychic Fatigue check. If you are not moved,  take Life damage, or are forced to take a Psychic Fatigue check during this time you retain this focus. If you take damage equal or greater than ½ your Survival, roll a Psychic Fatigue check to maintain this focus. During your next turn, if you still have this focus, you may use a Power as if you were not in a Psychic Break.",
+      description: "During a Psychic Break you may spend a turn to Focus, this does not cause a Psychic Fatigue check. If you are not moved involuntarily, take Life damage, or are forced to take a Psychic Fatigue check during this time you retain this focus. If you take damage equal or greater than ½ your Survival, roll a Psychic Fatigue check to maintain this focus. During your next turn, if you still have this focus, you may use a Power as if you were not in a Psychic Break.",
       proficiencies: [
         [],[],
         [
@@ -81,7 +83,7 @@ export default [
           "Tranquil: Inner Peace ignores 1 additional Psychic Fatigue."
         ],
         [
-          "Flow: [Activate] You may continue to retain focus after casting a Power for 1 more turn. Uses your Activation Action each turn. (Repeatable)"
+          "Flow: [Activate] You may continue to retain focus after casting a Power for 1 more turn. Uses your Activation Action each turn. (Repeatable, adding 1 to maximum turns up to 5)"
         ]
       ]
     },
@@ -117,7 +119,25 @@ export default [
       proficiencies: [
         [],
         [
-          
+          "Subtle: The creature is not made aware of you from this Power. It is made aware of the Thread when it becomes aware of you.",
+		      "Branching: You may have up to 2 Threads active at one time.",
+ 		      "Duration: Your Threads now last for 1 day."
+        ],
+        [
+          "Command: When a Thread is attached to a creature which is not a person, you may convert the creature into a minion. On its turn you may make it do a Full or Minor Action and a Movement Action, doing so uses your Activation Action. To convert the creature you must make a Will check vs its own d20 + (G + Will) check. On the first turn of every combat and after a Full Sleep, the creature may attempt to remove the Thread.",
+          "Influence: While a person has a Thread attached to them, increase their Regard for you by G."
+        ],
+        [
+          "Propagation: You may use the Threads power on creatures within 50 ft of a creature you currently have a Thread attached to.",
+		      "Iron Grip: The creature must make a Will check vs your own Power check (instead of vs your own Will check) to remove the Thread.",
+		      "Multiply: You may have up to G more Threads active at one time. Requires Branching."
+        ],
+        [
+          "Control: You may use Command on a person. Only 1 Thread may use Control at one time.",
+		      "Double: You may use Control on 2 Threads at one time."
+        ],
+        [
+          "Deep Roots: Threads persist through the creature becoming unconscious and have no time limit."
         ]
       ]
     }

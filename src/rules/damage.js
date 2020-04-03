@@ -78,7 +78,7 @@ content: <div>
       <tr><td>1-2</td><td>Memory</td><td>On your next turn you cannot use an action on any creature which is not in line of sight at the start of your turn</td><td>Give your character sheet to the GM, you cannot look at the sheet until this injury is cured</td><td>Heavy and any time you try to recall a name, location, or event roll a d4, on a 1 you don't remember any of it and on a 2 or 3 you forget some meaningful detail</td></tr>
       <tr><td>3-4</td><td>Balance</td><td>-1 Avoidance</td><td>-G Avoidance</td><td>Heavy and 1/2 Carry Weight</td></tr>
       <tr><td>5-6</td><td>Sensory</td><td>-1 Attack Rolls</td><td>-G Attack Rolls</td><td>Heavy and cannot use 1 arm</td></tr>
-      <tr><td>7-9</td><td>Emotional</td><td>-G Survival</td><td>Moderate and lose 1 additional Life</td><td>Heavy but -1/2 Survival instead of -G</td></tr>
+      <tr><td>7-9</td><td>Emotional</td><td>-G Max Survival</td><td>Moderate and lose 1 additional Life</td><td>Heavy but -1/2 Survival instead of -G</td></tr>
       <tr><td>10</td><td>Cognitive</td><td>Unfavored -1 All Rolls (up to -3)</td><td>Moderate and roll a Moderate effect from the Mental Damage injury table</td><td>Heavy and Asleep until this Injury is cured</td></tr>
       </tbody>
     </table>
