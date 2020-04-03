@@ -113,6 +113,38 @@ export default [
           "Bulwark: Increase Potency to 1d8."
         ]
       ]
+    },
+    {
+      name: "Fortitude",
+      attributes: "[Action] [Range]",
+      description: "Point at a creature you can see within 30 ft, you weave a shroud of spirit energy around their body to protect them from harm. Increases the target's Max Survival by 1d8. Lasts 1 hour. If they receive Darkness damage equal to at least half their Max Survival from one attack, or if they drop below 1 Life, the effect ends. A creature may only benefit from one Fortitude effect at one time, if Fortitude is used on a creature with a current Fortitude effect the Max Survival is increased by the greater of the two values and any secondary effects are replaced by the new Fortitude. Costs 2 ae.",
+      proficiencies: [
+        [],
+        [
+          "Empowered: Add your Will to the effect.",
+          "Respite: If the creature's Max Survival increases from Fortitude's effect, the creature's current Survival is also increased by the amount of Max Survival added.",
+          "Hazy: Add +G to the creature's next Stealth or Hide check.",
+          "Fork: [Activate] You may apply Fortitude to a second creature you can see within 30ft."
+        ],
+        [
+          "Invigorate: [Activate] You may increase the damage of the creature's next attack by your Will.",
+          "Calm: [Activate] You may allow the creature to ignore its next Psychic Fatigue check.",
+          "Potency: Increase the effect roll to 1d10.",
+          "Repel: The creature gains 1 Armor."
+        ],
+        [
+          "Firm: Increase the effect by G.",
+          "Resistant: [Activate] You may give the creature Resistance to your Elemental Soul's damage type.",
+          "Fortune: [Activate] You may give a -1 Unfavored penalty to the next attack against the creature."
+        ],
+        [
+          "Bolster: [Activate] If the creature currently does not have Fortitude, instead of its usual effects Fortitude may fully restore the creature's Survival and activate the Invigorate and Fortune effects if you have those proficiencies chosen. Afterwards the creature may not receive any Fortitude effect for 1 hour.",
+          "Resolve: [Activate] You may increase the effect roll to 2d10."
+        ],
+        [
+          "Endure: When the creature reaches 1 Life while Fortitude is active, they immediately cure up to 2 Mild or Moderate Injuries, heal 2 Life and fully restore their Survival. Afterwards, the current Fortitude effect ends and the creature may not receive any Fortitude effects except for Bolster for 1 hour."
+        ]
+      ]
     }
   ]
 ]
