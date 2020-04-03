@@ -1,5 +1,5 @@
 export default [
-  [
+  [ // 1G
     {
       name: "Shock",
       attributes: "[Action] [Ranged] [Single Target]",
@@ -87,8 +87,8 @@ export default [
         ]
       ]
     }
-  ],
-  [
+  ],// 1G
+  [// 2G
     {
       name: "Barrier",
       attributes: "[Action] [AoE]",
@@ -109,12 +109,12 @@ export default [
         ],
         [
           "Maelstrom: Increases Turbulent to 1d6 + Will.",
-          "Warped: Increases Deflection to -3.",
+          "Warped: Increase Deflection to -3.",
           "Bulwark: Increase Potency to 1d8."
         ]
       ]
     }
-  ]
+  ]// 2G
 ]
 // {
 //   name: "",
