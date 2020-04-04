@@ -6,7 +6,7 @@ export default {
     <p>If you've played similar Tabletop RPG games before, this section will go over what to expect from a session of Breach. We'll start with what's the same in brief, and then go over what's new in detail.</p>
     <hr/>
     <p><b>What's the Same?</b><br/>
-    Breach is an action/adventure style RPG where you cooperatively create a story with a group of players and a GM (Game Master, some RPG's may call this a Dungeon Master or something similar). There are pre-written campaigns made by the Breach team for your GM to run, or they may choose to come up with their own story and setting! You can bring your same bag of dice to the table, Breach uses the classic polyhedral set of d4, d6, d8, d10, d12 and d20 dice! Just like other Tabletop RPGs, the story is driven by players voicing an action and then rolling dice to determine the result.<br/>
+    Breach is an action/adventure style RPG where you cooperatively create a story with a group of players and a GM (Game Master, some RPG's may call this a Dungeon Master or something similar). There are pre-written campaigns made by the Breach team for your GM to run, or they may choose to come up with their own story and setting! You can bring your same bag of dice to the table, Breach uses the classic polyhedral set of d4, d6, d8, d10, d12 and d20 dice. Just like other Tabletop RPGs, the story is driven by players voicing an action and then rolling dice to determine the result.<br/>
     <br/>
     Here's a short list of other game mechanics that may look familiar</p>
     <ul>
