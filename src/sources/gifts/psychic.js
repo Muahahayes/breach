@@ -63,6 +63,36 @@ export default [
           "Subconscious: Now the first time in a combat with a creature when you use Subtle and deal damage with this Shock, if you succeed and do not damage their Life they are not alerted to your presence."
         ]
       ]
+    },
+    {
+      name: "Psionic Blade",
+      attributes: "[Free] [Melee]",
+      description: "You extend a violent Psychic energy from your hand. After making a basic unarmed melee attack, add 1d4 psychic damage to this attack. Usable once per turn. This Power does not trigger the usual Psychic Fatigue check if the attack hits.",
+      proficiencies: [
+        [
+          "Empowered: Add your Will to the damage."
+        ],
+        [
+          "Sheath: You may use Psionic Blade with a sharp or piercing damage melee weapon.", 
+          "Horrific: [Activate] Instead of dealing the additional psychic damage, you may Frighten the target for one turn.",
+          "Thundering Blade: You may use electric damage instead of psychic.",
+          "Impact: Increases the damage to 1d6."          
+        ],
+        [
+          "Swift Strike: [Activate] After landing a melee hit, add G to your next speed roll when determining turn order.", 
+          "Phase: [Activate] The blade cuts through armor more effectively, add G to your attack roll.",
+          "Magnitude: Increases the damage to 1d8. Requires Impact."
+        ],
+        [
+          "Cleave: [Activate] When you hit your target, deal the Psionic Blade damage to any creature within melee range of the target which has an avoidance lower than the attack roll.", 
+          "Overwhelming: [Activate] Increases the damage to 2d6. Reroll any of these dice that roll a 1. Keep the new result. Requires Magnitude.",
+          "Rapid: Psionic Blade is usable more than once per turn, but only once per attack."
+        ],
+        [
+          "Adaptive: You may use two [Activate] Proficiencies for Psionic Blade with one Activation Action.", 
+          "Advantage: When you have Favored on the attack, you may add 2d6 damage to the attack."
+        ]
+      ]
     }
   ],// 1G
   [// 2G
