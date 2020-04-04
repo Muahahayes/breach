@@ -18,8 +18,10 @@ function parseContent(row, elements) {
     for (let line of lines) {
       if (line !== '') {
         let str = line.split(':');
+        let remaining = str.slice(1).join(':')
+        str[0] = (str[0] !== '\\')?`${str[0]}:`:'';
         // eslint-disable-next-line
-        let el = (str.length > 1)?<span><b>{`${str[0]}:`}</b>{str[1]}</span>:<span>{line}</span>;
+        let el = (str.length > 1)?<span><b>{`${str[0]}`}</b>{remaining}</span>:<span>{line}</span>;
         elements.push(el);
       }          
       elements.push(<br/>);
