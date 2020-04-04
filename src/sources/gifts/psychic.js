@@ -1,5 +1,5 @@
 export default [
-  [
+  [// 1G
     {
       name: "Contract",
       attributes: "[Passive] [Self]",
@@ -64,8 +64,8 @@ export default [
         ]
       ]
     }
-  ],
-  [
+  ],// 1G
+  [// 2G
     {
       name: "Focus",
       attributes: "[Action] [Self]",
@@ -133,7 +133,7 @@ export default [
 		      "Multiply: You may have up to G more Threads active at one time. Requires Branching."
         ],
         [
-          "Control: You may use Command on a person. Only 1 Thread may use Control at one time.",
+          "Control: You may use Command on a person. Only 1 Thread may use Control at one time. You may only use Control on a person with a regard for you greater than -1.",
 		      "Double: You may use Control on 2 Threads at one time."
         ],
         [
@@ -141,13 +141,35 @@ export default [
         ]
       ]
     }
-  ],
-  [
+  ],// 2G
+  [// 3G
     {
       name: "Psychosomatic",
       attributes: "[Activate] [Self] [Passive]",
-      description: "Choose 1 Power from the Mutation Source at the time you take this Gift. This is now a Psychic Power you may use. If it causes, refers to, uses, or spends Strain you instead use 1 Psychic Fatigue check for every 10% of your max survival needed to be substituted as Strain points. Using this Power uses your Activation Action in addition to the Action requirements of the selected Power.",
+      description: "Choose 1 Power from the Mutation Source at the time you take this Gift. This is now a Psychic Awakening Power you may use. If it causes, refers to, uses, or spends Strain you instead use 1 Psychic Fatigue check for every G Strain. Using this Power uses your Activation Action in addition to the Action requirements of the selected Power.",
       proficiencies: []
+    },
+    {
+      name: "Twist Reality",
+      attributes: "[Action] [Melee]",
+      description: "\\:You touch the head of a person who has a high regard for you, if their regard is greater than 2 you may impose a trigger or rule for how one aspect of their psyche interprets their world. The effect fails if their regard is not high enough, and causes them to lose 2 regard for you. Examples: \"all puppies look like dangerous wolves\", \"people who offer you a handshake are trying to recruit you into a shadowy organization/death cult\", \"if you don't walk up this hill and say hello to every sunrise you will die\". They roll a d20 + Insight vs Power to resist the new twist, on any Success they resist the effect and lower their regard for you by 2 or set it to -2 whichever results in a lower value, on a Soft Fail they may make a new harder check (add their regard to your Power roll) each time it triggers, on a Hard Fail they may not. For these triggered checks, on a Hard Success the effect ends, on a Soft Success they grow suspicious and lower their regard toward the Psychic by 1. They may also make the harder check when a person brings their attention to it, once per trigger, even if they Hard Failed the original check. For this assisted check the victim can use their Insight or the assisting person's Persuasion, whichever is higher. On a Hard Success the effect ends, on a Soft Success they grow suspicious and lower their regard towards the Psychic by 1, on a Hard Fail they lower regard of the person helping them by 1. The effect lasts for 1 week and ends prematurely if they go 10 miles away from you or if you enter Psychic Exhaustion within sight of them.",
+      proficiencies: [
+        [],[],
+        [
+          "Persuasive: You may use your Persuasion skill instead of Power.",
+		      "Lucid: You are immune to the Twist Reality Power from other Psychics.",
+		      "Confidant: You may use this Power if their regard is greater than 1."
+        ],
+        [
+          "Belief: [Activate] A Soft Fail on the original check no longer allows them to roll repeated checks when the effect triggers in future.",
+		      "Fanatic: On a Soft Fail on an assisted check they lower regard of the person helping them by 1.",
+		      "Deep Rooted: The effect lasts 1 year and no longer ends if they go 10 miles away."
+        ],
+        [
+          "Zealous: When the victim lowers their regard for an assisting person, lower it by 2.",
+		      "Devoted: [Activate] Assisted and triggered checks cannot Hard Succeed if their regard for the Psychic is greater than 0. They gain 1 regard for the Psychic whenever they Hard Fail any check against this Power up to a Max regard of 5."
+        ]
+      ]
     }
-  ]
+  ]// 3G
 ]

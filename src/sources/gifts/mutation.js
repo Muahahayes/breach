@@ -1,5 +1,5 @@
 export default [
-  [
+  [// 1G
     {
       name: "Harden",
       attributes: "[React] [Self]",
@@ -71,8 +71,8 @@ export default [
         ]
       ]
     }
-  ],
-  [
+  ], // 1G
+  [ // 2G
     {
       name: "Tight Reflexes",
       attributes: "[React] [Self]",
@@ -113,10 +113,15 @@ export default [
         ]
       ]
     }
-  ],
-  [
-
-  ]
+  ], // 2G
+  [ // 3G
+    {
+      name: "Artificial Evolution",
+      attributes: "[Activate] [Self] [Passive]",
+      description: "You gain a Module Chip that is embedded into your brain, your brain has evolved to interface with it but cannot handle loading new Augments onto it. Choose 1 Gift from the Cybernetic Augmentations Source, that is now a Mutant Power you may use. Gain G Strain whenever you use this power, and if it causes any Faults beyond the passive Fault from failing a roll, gain an additional G Strain for each Fault. Using this Power uses your Activation Action in addition to the Action requirements of the selected Power.",
+      proficiencies: []
+    }
+  ] // 3G
 ]
 // {
 //   name: "",

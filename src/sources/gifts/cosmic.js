@@ -146,7 +146,43 @@ export default [
         ]
       ]
     }
-  ]// 2G
+  ],// 2G
+  [// 3G
+    {
+      name: "Dark Ritual",
+      attributes: "[Self] [Activate] [Passive]",
+      description: "Choose 1 Power from the Ancient Bloodlines Source, this is now a Cosmic Forces Power you may use. If this Power spends or gains any Bloodlust, substitute it with Aether. Using this Power uses your Activation Action in addition to the Action requirements of the selected Power.",
+      proficiencies: []
+    },
+    {
+      name: "Destiny Bomb",
+      attributes: "[Action] [AoE] [Melee]",
+      description: "The Cosmic focuses the Aether within themselves into a volatile high pressure state which begins to pull on the surrounding Aether distorting the karmic destiny of any creature within 20 ft of the Cosmic. The energy is released, spending half of the Cosmic's current ae and dealing 1d10 damage for each ae spent to all creature's hit within the area. Creature's must roll a d20 + Agility vs Power, on a Soft Success they talk half damage and on any Fail they take full damage from the effect. After the effect, any creature that failed the check receives a -1 Unfavored on their next d20 roll and any creature that Hard Failed the check considers their next Soft Fail of any kind to be a Hard Fail. The Cosmic also receives both these effects. These effects only occur if more than G ae was spent.",
+      proficiencies: [
+        [],[],
+        [
+          "Empowered: Add your Will to the damage for each ae spent.",
+		      "Impact: Consider all effects and damage as if 1 more ae was spent."
+        ],
+        [
+          "Reach: Increase the range to 30 ft.",
+          "Magnitude: Increase the damage by 2d10.",
+          "Luck: If any creature Hard Failed their check, you don't gain a -1 Unfavored on your next d20 roll.",
+          "Bad Karma: [Activate] Any creature that Soft Failed their check considers their next Soft Fail of any kind to be a Hard Fail."
+        ],
+        [
+          "Deadly Fate: Gain 1 ae for each creature killed by the blast.",
+		      "Overwhelming: [Activate] For every 2 ae spent, increase the damage by 1d10.",
+		      "Fortune: If any creature Hard Failed their check, gain a +1 Favored on your next d20 roll.",
+		      "Effort: You may spend additional ae up to your current ae."
+        ],
+        [
+          "Rebound: [Activate] A second Destiny Bomb detonates in the same area on your next turn, this second Destiny Bomb considers all effects and damage as if it spent half the ae that the first one spent. The negative effects only effect the Cosmic if they are within the effect range.",
+          "Karmic Explosion: [Activate] Instead of its usual effects and ignoring any proficiencies, deal 2d10 damage for each ae spent in an area with a radius of 20 ft that is centered at a location you can see within 50 ft. Every creature within the area must roll a d20 + Agility vs Power, on any Success they take half the damage, on a Soft Fail they take full damage and are stunned for 1 turn, on a Hard Fail they take 5 Life damage directly instead of the normal damage and are stunned for 2 turns. This effect costs all of your current ae and requires at least half your Max ae to be spent. The unconscious effect from hitting 0 ae from this cost lasts for at least 1 hour regardless of any attempts to wake you."
+        ]
+      ]
+    }
+  ]// 3G
 ]
 // {
 //   name: "",

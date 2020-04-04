@@ -9,7 +9,7 @@ export default {
     ],
     [
       "Deep Well: Increase your maximum well by 3.",
-      "Deep Sleep: Increase the ae gained from a Full Sleep by 3."
+      "Deep Sleep: Increase the ae gained from a Full Sleep by G."
     ],
     [
       "Pool: Increase your maximum well by 3.",
@@ -19,7 +19,8 @@ export default {
     [
       "Pond: Increase your maximum well by 5.",
       "Attuned Chakra: Select 1 element. You are resistant to damage of that type.",
-      "Power Nap: You gain half the ae of taking a Break when you are afflicted by the Sleep effect."
+      "Power Nap: You gain half the ae of taking a Break when you are afflicted by the Sleep effect.",
+      "Slumber: Increase the ae gained from a Full Sleep by 5."
     ]
   ]
 }
