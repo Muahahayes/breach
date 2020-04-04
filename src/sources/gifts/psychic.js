@@ -120,22 +120,22 @@ export default [
     {
       name: "Disruption",
       attributes: "[Action] [Ranged] [Contract]",
-      description: "You reach out with your mind to disrupt the flow of energy within a creature you can see. On that creature's next turn, you block the first use of a Power it used on its previous turn. Roll a normal Psychic Fatigue check to place the Disruption on them. The first time they attempt to use a Disrupted Power roll additional Psychic Fatigue checks equal to the G of the Power they attempt to use, if you succeed they cannot use the Power and lose any Actions the Power required. If you fail a check they may use the Power but you do not go into Psychic Exhaustion.",
+      description: "You reach out with your mind to disrupt the flow of energy within a creature you can see. On that creature's next turn, you nullify the first use of a Power it used on its previous turn. Roll a normal Psychic Fatigue check to place the Disruption on them. The first time they attempt to use a Disrupted Power roll additional Psychic Fatigue checks equal to the G of the Power they attempt to use, if you succeed they cannot use the Power and lose any Actions the Power required. If you fail one of the additional checks they may use the Power but you do not go into Psychic Exhaustion.",
       proficiencies: [
         [],
         [
           "Suppress: Reduce the number of Psychic Fatigue checks required to Disrupt a Power by 1 (to a minimum of 1 check)."
         ],
         [
-          "Counter: [React] As a Reaction, you may attempt to block a Psychic or Cosmic Power before it takes effect, roll Psychic Fatigue checks equal to the G of the Power plus 1.", 
+          "Counter: [React] As a Reaction, you may attempt to nullify a Psychic or Cosmic Power before it takes effect, roll Psychic Fatigue checks equal to the G of the Power plus 1.", 
 		      "Smother: Increase the reduction from Suppress by 1 (to a minimum of 1 check)."
         ],
         [
-          "Disable: When you successfully block a Power, that Power is eligible for blocking on the next turn.",
+          "Disable: When you successfully nullify a Power, that Power is eligible for nullifying on the next turn.",
 		      "Denial: Reduce the number of Psychic Fatigue checks required to Counter a Power by 2 (to a minimum of 1 check)."
         ],
         [
-          "Permission: [Activate] When you successfully block a Power for a second time in a row, roll a Power vs Will check against the creature. On a success, the creature may only attempt to use that Power when you give it permission. After a Full Sleep the creature may attempt a Power vs Will check to end this effect."
+          "Permission: [Activate] When you successfully nullify a Power for a second time in a row, roll a Power vs Will check against the creature. On a success, the creature may only attempt to use that Power when you give it permission. After a Full Sleep the creature may attempt a Power vs Will check to end this effect."
         ],
         [
           "Dominate: [Activate] When a creature fails the check to end the effect of Permission, Permission may deny attempts to use any Power from its Source."
