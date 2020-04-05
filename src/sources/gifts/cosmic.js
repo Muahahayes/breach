@@ -3,7 +3,7 @@ export default [
     {
       name: "Shock",
       attributes: "[Action] [Ranged] [Single Target]",
-      description: "Point at a creature or object within 30ft. You release a blast of kinetic energy at the target dealing 1d4 kinetic damage. This makes a moderate clapping sound on impact. It creates a distorted ripple through the air as it travels to its target.",
+      description: "Point at a creature or object within 30ft. You release a blast of kinetic energy at the target dealing 1d4 kinetic damage. This makes a moderate clapping sound on impact. It creates a distorted ripple through the air as it travels to its target. Costs 1 ae.",
       proficiencies: [
         [
           "Empowered: Add your Will to the damage roll.",
@@ -86,6 +86,77 @@ export default [
           "Protection: When Spirit Stitching applies the Spirit Shield effect, it may use any proficiencies you possess for Spirit Shield. Costs 2 additional ae when used in this way (in addition to Spirit Stitching)."
         ]
       ]
+    },
+    {
+      name: "Hydromancy",
+      attributes: "[Action] [Minor] [Ranged] [Elemental]",
+      description: "Requires your Elemental Soul to be the Water type. As a Full Action you may create water in an area you can see in a sphere with a radius of 5 ft which centers around a point within 10 ft of you. After creation you may use this Power's Minor Action to move it or else it will fall to the ground, you may move this water up to 20 ft in any direction in a wave-like shape and once reaching its destination it falls to the ground. Any creature that is pushed by the water must roll a d20 + Athletics vs Power to resist being moved. On a Success they do not move, on a Soft Fail they are carried with the water to its destination and on a Hard Fail they are also dealt 1d6 Water damage. Costs 1 ae.",
+      proficiencies: [
+        [
+          "Manipulation: [Minor] As a Minor Action you pull together water you can see within 10 ft of you and the water forms into a sphere with a 5 ft radius, if the source of the water has a volume greater than a 5 ft sphere the excess water is left behind. You may move this water just like you would use a Minor Action to move water you have created with Hydromancy. Costs 1 ae.",
+          "Whip: [Action] As a Full Action you pull water to you from at least 1 cup (240ml) of water you can see within 20 ft and use it to whip a target you can see within 20 ft of you. Roll a Power Attack against the creature and on a hit deal 1d8 Water damage. On a hit you may conserve the water in your hand or return it to its source, on a miss the water falls to the ground. Costs 1 ae."
+        ],
+        [
+          "Crash: The base Hydromancy effect now deals damage on a Soft Fail.",
+          "Shape: [Activate] Instead of moving water with Hydromancy or Manipulation, you can shape it into any shape while conserving its volume. You can hold it in that shape for up to 10 minutes as long as you spend your Activation Action each turn. The Shape cannot move unless you use Manipulation to move it.",
+          "Empowered: Add your Will to any damage dealt by a Hydromancy effect.",
+          "Ventilation: [Passive] You can draw the oxygen out of the water around you. You and any creatures you choose within 10 ft can breath while underwater. This effect is disabled when you have 0 ae.",
+          "Mist: [Free] You may produce a cooling mist at will, cooling the area around you by 10 F within 10 ft. Lasts as long as desired. The effect is disabled when you have 0 ae."
+        ],
+        [
+          "Freeze: [Action] You may freeze a body of water you can see within 10 ft of you. You can freeze a size of water equal to a sphere with a radius of 5 ft. Any creature within the water is Snared, and on its turn must make an Athletics check vs Power to break free. On a Fail it remains Snared, on a Success it is no longer snared, but on a Soft Success it is Slowed for 1 turn. Costs 2 ae.",
+          "Reach: Your base Hydromancy effects and the Manipulation proficiency can create or affect water within 20 ft of you. When you move water, you may move it up to 30 ft.",
+          "Impact: Increase the damage of Whip to 1d10 and the base Hydromancy effect to 1d8.",
+          "Elemental: [Action] As a Full Action you pull water to you from at least 5 gallons (19 liters) of water you can see within 20 ft and use it to form a Water Elemental which you give Aether to animate into Life. See the [3 G] Water Elemental in the bestiary for its Stats and Abilities. The Elemental obeys you and on your turn you may spend an Activation Action to command it to use an Action, otherwise it will attempt to move within 10 ft of you. The Elemental lasts until you reach 0 ae or 1 week, whichever comes first. Costs 5 ae."
+        ],
+        [
+          "Flash Freeze: [Activate] You may use the Freeze proficiency as an Activation Action whenever you deal damage with a Hydromancy effect to freeze the water touching the victim.",
+		      "Rain: [Action] You may create a small cloud that has a radius of 10 ft centered at a point directly above you within 30 ft of you vertically. The cloud creates a downpour of rain on the area below it for G turns. All non-aquatic creatures except a Cosmic with a Water type Elemental Soul caught in the rain are hindered by the heavy flood of water and receive a -1 Unfavored on all rolls while they are within the area.",
+		      "Magnitude: Increase the damage of Whip to 2d6 and the base Hydromancy effect to 1d10. Requires Impact.",
+		      "Volume: Increase the sphere radius size of all Hydromancy effects by 5 ft."
+        ],
+        [
+          "Typhoon: [Activate] You may use Manipulation to move water you can see within 50 ft in a radius of 100 ft. Increase the distance you may move this water by 30 ft. This increases the cost of using Manipulation to 5 ae and the damage it deals is 1d10 for every 20 ft in the radius of the water. Deal half damage to any creature that Soft Succeeds its Athletic's check."
+        ],
+        [
+          "Tsunami: Increase the radius of Typhoon by 100 ft."
+        ]
+      ]
+    },
+    {
+      name: "Pyromancy",
+      attributes: "[Action] [Minor] [Ranged] [Elemental]",
+      description: "Requires your Elemental Soul to be the Fire type. As a Minor Action you may either snuff out a torch sized flame within 10 ft, or ignite a small flame in your hand which you may hold for up to 10 minutes or throw up to 10ft away. If you throw the flame, it must land on a flammable surface or it will snuff out. As a Full Action you may ignite a flame which quickly grows and fans out from your hand in a 10 ft cone in front of you. Every creature within the area must roll a d20 + Athletics vs Power to avoid the fire. On a Success they avoid being hit. Deal 1d4 Fire damage to every creature that Fails. Costs 1 ae.",
+      proficiencies: [
+        [
+          "Empowered: Add your Will to any damage done by Pyromancy.",
+          "Spectacle: [Activate] You may shape the flame into moving silhouettes. You may use the flame in Perform or Disruption checks as an Activate Action to add your Will to the check. Costs 1 ae."
+        ],
+        [
+          "Blaze: [Action] As a Full Action, you ignite a streak of fire that shoots out in a straight line. Make a ranged Power attack against a creature you can see within 30 ft. On a hit deal 1d8 Fire damage. Costs 1 ae.",
+          "Heat: Increase the damage of Pyromancy' Full Action attack to 1d6.",
+          "Warmth: [Free] You may produce a radiant heat at will, warming the area around you by 10 F within 10 ft. This effect is disabled when you are at 0 ae.",
+          "Manipulation: [Minor] As a Minor Action you gather the fire within a 5 ft radius you can see within 10 ft and may move it up to 20 ft in any direction. Any creature within the fire's destination must roll a d20 + Athletics vs Power to avoid the fire, On a Success they avoid being hit. Deal 1d4 Fire damage to every creature that Fails. Costs 1 ae."
+        ],
+        [
+          "Ignition: [Activate] Whenever one or more creatures Hard Fail a check to avoid fire from Pyromancy, you may spend an Activation Action to apply a Burn to the creatures for 2 turns which deals 1d4 Fire damage.",
+          "Reach: Your base Pyromancy Minor Action can snuff or throw flames up to 20 ft away, your base Pyromancy Full Action effects a 15 ft cone, and your Manipulation proficiency can move fire up to 30 ft.",
+          "Impact: Increase the damage of the base Pyromancy Full Action and Manipulation proficiency to 1d6, and increase the damage of Blaze to 1d10.",
+          "Elemental: [Action] As a Full Action you may gather fire from at least a bonfire sized flame you can see within 20 ft and use it to form a Fire Elemental which you give Aether to animate into Life. See the [3 G] Fire Elemental in the bestiary for its Stats and Abilities. The Elemental obeys you and on your turn you may spend an Activation Action to command it to use an Action, otherwise it will attempt to move within 10 ft of you. The Elemental lasts until you reach 0 ae or 1 week, whichever comes first. Costs 5 ae.",
+          "Flash: [Minor] As a Full Action you may release a spark which briefly shines a bright light in a 50 ft radius. All creature's receive a -1 Unfavored on their Stealth and Hide checks until the end of the next Round."        
+        ],
+        [
+          "Kindling: You may activate Ignition on Soft Fails. The Burn now deals 1d6 damage over 3 turns.",
+          "Magnitude: Increase the damage of the base Pyromancy Full Action and Manipulation proficiency to 1d8, and increase the damage of Blaze to 2d6. Requires Impact.",
+          "Spread: Increase the range of Blaze to 40 ft, and increase your base Pyromancy Full Action effect's cone size by 5 ft."        
+        ],
+        [
+          "Combustion: [Activate] You may use Manipulation to move fire you can see within 50 ft in a radius of 100 ft. Increase the distance you can move this fire by 30 ft. This increases the cost of using Manipulation to 5 ae and the damage it deals is 1d8 for every 20 ft in the radius of the fire. Deal half damage to any creature that Soft Succeeds its Agility check."
+        ],
+        [
+          "Inferno: Increase the radius of Combustion by 100 ft."
+        ]
+      ]
     }
   ],// 1G
   [// 2G
@@ -157,7 +228,7 @@ export default [
     {
       name: "Destiny Bomb",
       attributes: "[Action] [AoE] [Melee]",
-      description: "The Cosmic focuses the Aether within themselves into a volatile high pressure state which begins to pull on the surrounding Aether distorting the karmic destiny of any creature within 20 ft of the Cosmic. The energy is released, spending half of the Cosmic's current ae and dealing 1d10 damage for each ae spent to all creature's hit within the area. Creature's must roll a d20 + Agility vs Power, on a Soft Success they talk half damage and on any Fail they take full damage from the effect. After the effect, any creature that failed the check receives a -1 Unfavored on their next d20 roll and any creature that Hard Failed the check considers their next Soft Fail of any kind to be a Hard Fail. The Cosmic also receives both these effects. These effects only occur if more than G ae was spent.",
+      description: "The Cosmic focuses the Aether within themselves into a volatile high pressure state which begins to pull on the surrounding Aether distorting the karmic destiny of any creature within 20 ft of the Cosmic. The energy is released, spending half of the Cosmic's current ae and dealing 1d10 damage for each ae spent to all creature's hit within the area. Creature's must roll a d20 + Athletics vs Power, on a Soft Success they talk half damage and on any Fail they take full damage from the effect. After the effect, any creature that failed the check receives a -1 Unfavored on their next d20 roll and any creature that Hard Failed the check considers their next Soft Fail of any kind to be a Hard Fail. The Cosmic also receives both these effects. These non-damaging effects only occur if more than G ae was spent.",
       proficiencies: [
         [],[],
         [
@@ -177,8 +248,8 @@ export default [
 		      "Effort: You may spend additional ae up to your current ae."
         ],
         [
-          "Rebound: [Activate] A second Destiny Bomb detonates in the same area on your next turn, this second Destiny Bomb considers all effects and damage as if it spent half the ae that the first one spent. The negative effects only effect the Cosmic if they are within the effect range.",
-          "Karmic Explosion: [Activate] Instead of its usual effects and ignoring any proficiencies, deal 2d10 + Will damage for each ae spent in an area with a radius of 20 ft that is centered at a location you can see within 50 ft. Every creature within the area must roll a d20 + Agility vs Power, on any Success they take half the damage, on a Soft Fail they take full damage and are stunned for 1 turn, on a Hard Fail they take 5 Life damage directly instead of the normal damage and are stunned for 2 turns. This effect costs all of your current ae and requires at least half your Max ae to be spent. The unconscious effect from hitting 0 ae from this cost lasts for at least 1 hour regardless of any attempts to wake you."
+          "Rebound: [Activate] A second Destiny Bomb detonates in the same area at the start of your next turn, this second Destiny Bomb considers all effects and damage as if it spent half the ae that the first one spent. The negative effects only effect the Cosmic if they are within the effect range.",
+          "Karmic Explosion: [Activate] Instead of its usual effects and ignoring any proficiencies, deal 2d10 + Will damage for each ae spent in an area with a radius of 20 ft that is centered at a location you can see within 50 ft. Every creature within the area must roll a d20 + Athletics vs Power, on any Success they take half the damage, on a Soft Fail they take full damage and are stunned for 1 turn, on a Hard Fail they take 5 Life damage directly instead of the normal damage and are stunned for 2 turns. This effect costs all of your current ae and requires at least half your Max ae to be spent. The unconscious effect from hitting 0 ae from this cost lasts for at least 1 hour regardless of any attempts to wake you."
         ]
       ]
     }

@@ -84,13 +84,48 @@ export default [
           "Magnitude: Increases the damage to 1d8. Requires Impact."
         ],
         [
-          "Cleave: [Activate] When you hit your target, deal the Psionic Blade damage to any creature within melee range of the target which has an avoidance lower than the attack roll.", 
+          "Cleave: [Activate] When you hit your target, deal the Psionic Blade damage to each creature within melee range of the target which has an avoidance lower than the attack roll.", 
           "Overwhelming: [Activate] Increases the damage to 2d6. Reroll any of these dice that roll a 1. Keep the new result. Requires Magnitude.",
           "Rapid: Psionic Blade is usable more than once per turn, but only once per attack."
         ],
         [
           "Adaptive: You may use two [Activate] Proficiencies for Psionic Blade with one Activation Action.", 
           "Advantage: When you have Favored on the attack, you may add 2d6 damage to the attack."
+        ]
+      ]
+    },
+    {
+      name: "Pyrokinesis",
+      attributes: "[Action] [Minor] [Ranged]",
+      description: "As a Minor Action you may either snuff out a torch sized flame within 10 ft, or ignite a small flame in your hand which you may hold for up to 10 minutes or throw up to 10ft away. If you throw the flame, it must land on a flammable surface or it will snuff out. As a Full Action you may ignite a flame which quickly grows and fans out from your hand in a 10 ft cone in front of you. Every creature within the area must roll a d20 + Athletics vs Power to avoid the fire. On a Success they avoid being hit. Deal 1d4 Fire damage to every creature that Fails.",
+      proficiencies: [
+        [
+          "Empowered: Add your Will to any damage done by Pyrokinesis.",
+          "Spectacle: [Activate] You may shape the flame into moving silhouettes. You may use the flame in Perform or Disruption checks as an Activate Action to add your Will to the check."
+        ],
+        [
+          "Blaze: [Action] As a Full Action, you ignite a streak of fire that shoots out in a straight line. Make a ranged Power attack against a creature you can see within 30 ft. On a hit deal 1d8 Fire damage.",
+          "Heat: Increase the damage of Pyrokinesis' Full Action attack to 1d6.",
+          "Warmth: [Free] You may produce a radiant heat at will, warming the area around you by 10 F within 10 ft. Lasts as long as desired. This effect is disabled if you enter Psychic Exhaustion.",
+          "Manipulation: [Minor] As a Minor Action you gather the fire within a 5 ft radius you can see within 10 ft and may move it up to 20 ft in any direction. Any creature within the fire's destination must roll a d20 + Athletics vs Power to avoid the fire, On a Success they avoid being hit. Deal 1d4 Fire damage to every creature that Fails."
+        ],
+        [
+          "Ignition: [Activate] Whenever one or more creatures Hard Fail a check to avoid fire from Pyrokinesis, you may spend an Activation Action to apply a Burn to the creatures for 2 turns which deals 1d4 Fire damage.",
+          "Reach: Your base Pyrokinesis Minor Action can snuff or throw flames up to 20 ft away, your base Pyrokinesis Full Action effects a 15 ft cone, and your Manipulation proficiency can move fire up to 30 ft.",
+          "Impact: Increase the damage of the base Pyrokinesis Full Action and Manipulation proficiency to 1d6, and increase the damage of Blaze to 1d10.",
+          "Flash: [Minor] As a Full Action you may release a spark which briefly shines a bright light in a 50 ft radius. All creature's receive a -1 Unfavored on their Stealth and Hide checks until the end of the next Round."        
+        ],
+        [
+          "Kindling: You may activate Ignition on Soft Fails. The Burn now deals 1d6 damage over 3 turns.",
+          "Magnitude: Increase the damage of the base Pyrokinesis Full Action and Manipulation proficiency to 1d8, and increase the damage of Blaze to 2d6. Requires Impact.",
+          "Spread: Increase the range of Blaze to 40 ft, and increase your base Pyrokinesis Full Action effect's cone size by 5 ft."        
+        ],
+        [
+          "Eruption: [Activate] As an Activation Action when you use Blaze, you may release a spurt of molten magma at the target's feet. All creature's within 10 ft of the target must roll a d20 + Athletics vs Power to avoid the magma. On a Hard Success they move out of the area, on a Soft Success they take Blaze's regular damage, on a Fail they take double Blaze's regular damage, and on a Hard Fail they also receive a Burn for 1d8 over 3 turns. Roll an additional Psychic Fatigue check with -1 Unfavored.",
+          "Combustion: [Activate] You may use Manipulation to move fire you can see within 50 ft in a radius of 100 ft. Increase the distance you can move this fire by 30 ft. This increases the damage of this Manipulation to 1d8 for every 20 ft in the radius of the fire. Deal half damage to any creature that Soft Succeeds its Athletics check. Roll 2 additional Psychic Fatigue checks with -1 Unfavored."        
+        ],
+        [
+          "Inferno: Increase the radius of Combustion by 100 ft."
         ]
       ]
     }
