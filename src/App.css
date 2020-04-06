@@ -134,7 +134,7 @@ body {
 } /* Media Mobile */
 @media only screen and (min-width:801px) {
   .App {
-    font-size: 14pt;
+    font-size: 1.2em;
   }
   .nav-items {
     display:flex;
@@ -169,7 +169,7 @@ body {
   }
   .content-body {    
   padding-left: 10px;
-  margin-block-start: 5.5em;
+  margin-block-start: 13vh;
   width: 100%;
   }
   .content-body p {
