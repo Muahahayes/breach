@@ -35,10 +35,10 @@ export default {
     <br/>
     <b>Attributes:</b> Trimmed down! (See <Link to="/rules/stats">Stats</Link>)<br/>
     We've reduced the core attributes to 4 stats. Strength, Agility, Will and Stamina.
-    Will is a pseudo replacement for Wisdom and partially Charisma, the social aspects of Charisma are now purely based on Skills.
+    For D&amp;D players, Will is a pseudo replacement for Wisdom and partially Charisma, the social aspects of Charisma are now purely based on Skills.
     Intelligence is gone and lives on in numerous Skills showing specific ways of being intelligent.<br/>
     <br/>
-    <b>Initiative:</b> Reworked!<br/>
+    <b>Initiative:</b> Reworked! (See <Link to="/rules/combat">Combat</Link>)<br/>
     In Breach, every round of combat the creatures involved roll their Speed to determine how far they can move during their turn. The turn order is based on the highest to lowest movement distances of the creatures. This means we have a Dynamic Turn Order, which can change each round.<br/>
     <br/>
     <b>XP:</b> Now with less murder-hobo! (See <Link to="/rules/leveling">XP</Link>)<br/>
