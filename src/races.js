@@ -79,17 +79,47 @@ function parseRace(raceJSON) {
         <br/><br/>
         <b>Racial Features:</b>
         {racials} */}
-        <h3>Description: </h3>
+        <h3>Description:</h3>
         {desc}
-        <h3>Appearance: </h3>
+        <h3>Appearance:</h3>
         {appear}
+        <hr/>
         <h3>Base Stats:</h3>
         {stats}
+        <hr/>
         <h3>Racial Features:</h3>
         {racials}
-
+        {(raceJSON.sub)?parseSubrace(raceJSON):null}
       </div>
     );
+}
+
+function parseSubrace(raceJSON) {
+  let subs = raceJSON.sub
+  let divs = [];
+  for (let i in subs) {
+    let sub = subs[i];
+    let desc = [];
+    let racials = [];
+    parseContent(sub.description, desc)
+    parseContent(sub.racials, racials)
+    let div = <div>
+      {(i>0)?<hr/>:null}
+      <h2>{sub.name} {raceJSON.name}</h2>
+      <h3>Description:</h3>
+      {desc}
+      <h3>Subrace Features:</h3>
+      {racials}
+    </div>
+    divs.push(div)
+  }
+  return(
+    <div>
+      <hr/>
+      <h2>Subraces:</h2>
+      {divs}
+    </div>
+  )
 }
 
 export default Races;
