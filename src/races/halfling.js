@@ -5,7 +5,7 @@ export default {
   stats:[
     "Physical Build: 3'-4', 40-60lb, 110 years, 2 arms and 2 legs",
     "Base Stats: Strength 1, Agility 2, Stamina 1, Will 2",
-    "Speed: 1d4 + 1",
+    "Speed: 1d4 + 2",
 		"Creation AP: 3",
 		"Favored Skills: Charm, Insight, History, Hide, Awareness, Perform, Outdoorsman, Street Talk",
 		"Creation Skill Points: 12",

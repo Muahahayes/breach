@@ -10,7 +10,7 @@ export default {
 		"Creation AP: 3",
 		"Favored Skills: Charm, Mechanics, Cybernetics, Insight, History, Awareness, Hide, Perform, Art",
 		"Creation Skill Points: 14",
-		"Languages: Sylvan, Imperial, any playable race's language"
+		"Languages: Sylvan, Imperial, Any playable race's language"
 ],
   racials:[
     "Frail: -1 Max Life.",

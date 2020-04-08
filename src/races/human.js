@@ -9,7 +9,7 @@ export default {
     "Creation AP: 5",
     "Favored Skills: Cybernetics, Athletics, Persuasion, Search, Medicine, Street Talk, Disruption",
     "Creation Skill Points: 12",
-    "Languages: Imperial, any playable race's language"
+    "Languages: Imperial, Any playable race's language"
   ],
   racials:[
     "Adaptable: You may double the bonus of any Favored Skill for 1 check, once per day.",

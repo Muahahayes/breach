@@ -43,7 +43,7 @@ function App() {
 }
 
 //  TODO:
-/*  Finish new.js almost
+/*  Write creation.js
     Write rpg.js
     Go through the ideas part at the bottom of the google doc and add them into the main text
     Go back over the rules and iterate/refine them
