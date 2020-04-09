@@ -30,7 +30,7 @@ export default {
       description: "The Akkso'Atal are a determined race of opportunists. They stand between five and six feet tall when their back is straight, which is rare, with a tail up to four feet in length. Their bodies are more lithe than the Alko'Atal and their skin is soft and slippery, with smooth faces and frills extending from their heads. They feel at home in swamps and riverlands, and settle along the sides of the great rivers in the jungles of Etzal. The Akkso'Atal see themselves as the 'True Atal' by virtue of being more at home in the harsh environments of Etzal.",
       racials:[
         "Akkso Guile: Gain +2 Agility. Add +1 to your Speed rolls.",
-        "Amphibious: Add G to all Swimming checks, and you may spend up to 1 hour underwater before becoming unconscious."
+        "Amphibious: Add G to all Swimming checks, and you may spend up to 1 hour underwater before becoming unconscious. You require 1 additional Water Point."
       ]
     }
   ]
