@@ -40,8 +40,9 @@ function Nav() {
         <li><Link style={navStyle} to="/races/halfling">Halfling</Link></li>
         <li><Link style={navStyle} to="/races/giant">Giant</Link></li>
         <li><Link style={navStyle} to="/races/trollkin">Trollkin</Link></li>
-        <li><Link style={navStyle} to="/races/kxi">Kx'i</Link></li>
         <li><Link style={navStyle} to="/races/pix">Pix</Link></li>
+        <li><Link style={navStyle} to="/races/atal">Atal</Link></li>
+        <li><Link style={navStyle} to="/races/kxi">Kx'i</Link></li>        
         </ul>
       </li>
       <li><Link style={navStyle} to="/sources" id="source-link">Sources</Link> <span className="btn" id="source-btn">▼</span></li>
