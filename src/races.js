@@ -105,7 +105,7 @@ function parseSubrace(raceJSON) {
     parseContent(sub.racials, racials)
     let div = <div>
       {(i>0)?<hr/>:null}
-      <h2>{sub.name} {raceJSON.name}</h2>
+  <h2>{sub.name}{(raceJSON.subMarker)?raceJSON.subMarker:" "}{raceJSON.name}</h2>
       <h3>Description:</h3>
       {desc}
       <h3>Subrace Features:</h3>
