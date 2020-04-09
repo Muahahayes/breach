@@ -3,7 +3,7 @@ export default [
     {
       name: "Harden",
       attributes: "[React] [Self]",
-      description: "Your skin can flex and morph to become a hard leathery hide. When you receive damage, you may reduce the damage taken by an amount equal to your current Strain. Afterwards, causes G Strain. May only be used while Blocking and may only be used twice. Regain a use after taking a Break, or regain all uses after a Full Sleep.",
+      description: "Your skin can flex and morph to become a hard like armor. When you receive damage, you may reduce the damage taken by an amount equal to your current Strain. Afterwards, causes G Strain. May only be used while Blocking and may only be used twice per day. Regain a use after taking a Break, or regain all uses after a Full Sleep.",
       proficiencies: [
         [
           "Calloused: Reduce the damage taken by an additional amount equal to G.",
@@ -29,7 +29,7 @@ export default [
     {
       name: "Dermal Markings",
       attributes: "[Minor] [Self]",
-      description: "Roll a Disruption check. All enemies that can See you must roll a Will check vs your Disruption. Any that fail are Taunted for 1 turn. Causes G Strain. On a natural 1 for the Disruption check the Strain is doubled.",
+      description: "Roll a Disruption check. All enemies that can See you must roll an Insight check vs your Disruption. Any that fail are Taunted for 1 turn. Causes G Strain. On a natural 1 for the Disruption check the Strain is doubled.",
       proficiencies: [
         [
           "Infuriate: On an enemy's Hard Fail the effect lasts an additional turn.",
@@ -44,7 +44,7 @@ export default [
           "Distracting: [Activate] Subtract G from any attack rolls against allies in melee range for 1 turn."
         ],
         [
-          "Primal: [Activate] The Instinct effect now lasts until they lose awareness of you for as long as you spend your Activation Action each turn. They may roll a Will check vs your Disruption on each turn to end the effect."
+          "Primal: [Activate] The Instinct effect now lasts until they lose awareness of you for as long as you spend your Activation Action each turn. They may roll an Insight check vs your original Disruption roll on each turn to end the effect."
         ]
       ]
     },
