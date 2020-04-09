@@ -45,7 +45,7 @@ content: <div>
   If you succeed in Grappling them, on each of your turns you must spend your Minor Action to maintain the Grapple. On each of the creature's turns they may reroll their Agility check vs your original Strength roll. If they Succeed they end the Grapple. If they Fail they add a Favored +1 to their next attempt (up to +3).</p>
   <hr/>
   <h3>Blocking:</h3>
-  <p>You may spend a Minor Action to begin Blocking, you may attempt Block checks against any attack which hits you until your next Turn. Block checks are done by rolling [Block + Strength] vs the result of the attack roll which hit you. You may only Block if you are holding a melee weapon or shield. On any Success, you reduce the damage amount of the attack by the difference between the rolls. On a Hard Fail, you are no longer Blocking.</p>
+  <p>You may spend a Minor Action to begin Blocking, you may attempt Block checks as a Free Action against any attack which hits you until your next Turn. Block checks are done by rolling [Block + Strength] vs the result of the attack roll which hit you. You may only Block if you are holding a melee weapon or shield. On any Success, you reduce the damage amount of the attack by the difference between the rolls. On a Hard Fail, you are no longer Blocking.</p>
   <hr/>
   <h3>Prone:</h3>
   <p>If you fall or are knocked to the ground you are Prone. While Prone you cannot use your Full or Movement Actions. When rolling your Speed dice at the start of a round, if you are Prone the result is reduced by half. On your turn you may stand up and end the Prone effect as a Minor or Movement Action. While you are Prone, enemy attacks are Favored +1 against you. Your defensive rolls while prone are considered a Hard Fail when you roll a Soft Fail.</p>
