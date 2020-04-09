@@ -4,7 +4,7 @@ export default {
 name: 'The World',
 content: <div>
   <p>
-    The World is big.
+    The World is very big.
   </p>
 </div>
 }
