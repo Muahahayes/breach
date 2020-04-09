@@ -7,7 +7,7 @@ export default {
     "Base Attributes: Strength 1, Agility 2, Stamina 1, Will 2",
     "Speed: 2d4",
     "Creation AP: 3",
-    "Favored Skills: Mechanics, Persuasion, Insight, History, Logic, Art, Sneak, Search, Medicine",
+    "Favored Skills: Mechanics, Persuasion, Insight, History, Logic, Art, Sneak, Search",
     "Creation Skill Points: 12",
     "Languages: Aeth, Imperial"
 ],
