@@ -12,7 +12,7 @@ function Nav() {
 
   return (
     <ul className ="nav-items">
-      <li><h3 className ="nav-top">Pages</h3><br/></li>
+      <li><h3 className ="nav-top">Pages</h3></li>
       <li><Link style={navStyle} to="/">Home</Link></li> {/* Replace with a Logo */}
       <li><Link style={navStyle} to="/pages/rpg">What's a RPG</Link></li>
       <li><Link style={navStyle} to="/pages/new">What's New</Link></li>

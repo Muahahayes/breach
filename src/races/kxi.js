@@ -13,17 +13,9 @@ export default {
   ],
   racials:[    
 		"Barbed Feet: May make unarmed attacks with their front feet, dealing 1d6 damage. Also, may move their full movement distance while climbing and may end their movement on vertical surfaces without falling.",
-		"Psi Speak: Even the most ungifted Kx'i can communicate psionically with other Kx'i within 100ft, and Kx'i who grew up in a city can interface with the Psi Network without the Psi Network proficiency. Kx'i from a ruling family can psionically send 1-way messages to all Kx'i sworn to their family within 5 miles."
+		"Psi Speak: Even the most ungifted Kx'i can communicate psionically with other Kx'i within 100ft, and Kx'i who grew up in a city can interface with the Psi Network without the Psi Network proficiency."
   ],
   sub:[
-    {
-      name:"Drone",
-      description: "A Drone Kx'i is the most common type of Kx'i. Drones tend to live no more than 80 years and rarely migrate from their community. They do the bulk of the work, and feel an instinctual bond to the Royal Kx'i who rules them. Their limbs tend to be thicker and stronger, and their bodies more round. Their chitin has more dull hues with a rough matte texture.",
-      racials:[
-        "Chitin: Take -G damage from Sharp and Piercing damage attacks.",
-        "Worker: Gain +1 Strength."
-      ]
-    },
     {
       name:"Royal",
       description: "A Royal Kx'i comes from a family of Kx'i which have a position of authority over a community. Royal Kx'i can live up to 120 years and pass on their authority to their children, if those children have not already left to create their own community to rule over. They may only be born from a female Royal Kx'i. Beyond the social distinction of a Royal they physiologically have differences from other Kx'i, most notably their thinner limbs and slightly larger heads. Their chitin is typically more colorful than other Kx'i, with a beautiful sheen across the surface with a smoother texture.",
@@ -32,6 +24,14 @@ export default {
         "Dominant: Increase the starting Regard for you by +1 for all Drone Kx'i you meet.",
         "Ruler: Gain +1 Will."
       ]
-    }
+    },
+    {
+      name:"Drone",
+      description: "A Drone Kx'i is the most common type of Kx'i. Drones tend to live no more than 80 years and rarely migrate from their community. They do the bulk of the work, and feel an instinctual bond to the Royal Kx'i who rules them. Their limbs tend to be thicker and stronger, and their bodies more round. Their chitin has more dull hues with a rough matte texture.",
+      racials:[
+        "Chitin: Take -G damage from Sharp and Piercing damage attacks.",
+        "Worker: Gain +1 Strength."
+      ]
+    }    
   ]
 }
