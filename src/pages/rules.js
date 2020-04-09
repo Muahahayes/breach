@@ -7,11 +7,14 @@ content: <Fragment>
     <br/>
     <span>The Full rules include everything in the Player's Guide (this website) and the Game Master's Guide (linked above), except for any rule that is explicitly labeled for Simplified play.</span><br/>
     <br/>
-    <span>The Simplified ruleset is made to be more new player friendly, and has less math/housekeeping happening throughout the actions of your group.</span><br/>
+    <span>The Simplified ruleset is made to be more new player friendly, and has less math/housekeeping happening throughout the actions of your group.</span><br/><br/>
+    <hr/>
     <span>Rules with a Simplified Version:</span>
     <ul>
       <li><a href="/rules/damage#injury">Injury Table</a></li>
+      <li>Melee Range: Use 5ft instead of character height. For Huge creatures use 10ft, and for Gigantic use 20ft.</li>
     </ul>
+    <hr/>
     <span>Rules to exclude entirely during Simplified play:</span>
     <ul>
       <li><a href="/rules/exploration#hunger">Hunger</a></li>

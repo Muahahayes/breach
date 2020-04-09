@@ -18,13 +18,13 @@ content: <div>
   While you are Sleeping, you are not aware of your surroundings. Noises or mild physical interaction may wake you, if you are trying to stay asleep through interruptions roll a [d20 + Stamina] vs 15 to resist waking up. If you voluntarily want to be woken by disturbances while out of combat roll a [d20 + Awareness] vs 15, or vs the sneak of a creature if it is the source of the disturbance, to wake up and gain awareness of the source of the disturbance. If you are in combat and voluntarily want to be woken by disturbances roll a [d20 + Will] vs 15, or vs [the attack roll - damage dealt] if you are hit by an attack which deals damage, if [the attack roll - damage dealt] is less than 1 you wake up instantly. When you are woken by a disturbance and did not already take a turn in this round you are placed at the end of the round's turn order with 0 Movement distance for that turn.<br/>
   <hr/>
  <h3>Size:</h3>
-  Creature's come in many shapes and sizes. When moving, you may only pass through another creature's space if you are not in the same Size Tier. Gain a -G reduction when initiating a Grapple against a smaller creature, but gain a +G bonus when maintaining the Grapple. Gain a +G bonus when initiating a Grapple against a larger creature, but gain a -G reduction when maintaining the Grapple.<br/>
-  Tiny: Less than 2' tall/long. 1ft melee range.<br/>
-  Small: 2'-5' tall/long. 3ft melee range.<br/>
-  Medium: 5'-8' tall/long. 5ft melee range.<br/>
-  Large: 8'-12' tall/long. 10ft melee range.<br id="hunger"/>
-  Huge: 12'-20' tall/long. 15ft melee range.<br/>
-  Gigantic: More than 20' tall/long. 20ft+ melee range.<br/>
+  Creature's come in many shapes and sizes. When moving, you may only pass through another creature's space if you are not in the same Size Tier. Gain a -G reduction when initiating a Grapple against a smaller creature, but gain a +G bonus when maintaining the Grapple. When a creature of a higher Size category is standing between you and an attacker, you gain +G Avoidance to ranged attacks and powers.<br/>
+  Tiny: Less than 2' tall/long.<br/>
+  Small: 2'-5' tall/long.<br/>
+  Medium: 5'-8' tall/long.<br/>
+  Large: 8'-12' tall/long.<br id="hunger"/>
+  Huge: 12'-20' tall/long.<br/>
+  Gigantic: More than 20' tall/long.<br/>
   <hr/>
   <h3>Hunger:</h3> 
   Your character needs food and water to live. Your character requires 5 Food Points (FP) + 1 for every 10lb of your character's weight and requires 5 Water Points (WP) in a 3 day period. (Food points can be thought of as about 1,000 calories, for ease of play they are simplified and food from official sources are given FP instead. For homebrewing new foods follow a 1,000 calorie per 1 FP rule of thumb. Water is simplified to about 1 WP per quart/liter). <br/>
@@ -43,12 +43,12 @@ content: <div>
   Outside of Urban society smaller villages or foreigners do not use Virtua. They may use bartering for physical goods, or trade in precious metals. In general, 1 piece of gold (unmarked, plain chunks of metal about the size of half your thumb) is worth 100 Virtua. 1 piece of silver is worth 50 Virtua.
   <hr/>
   <h3>Climate:</h3>
-  Various environmental factors may have an effect on creatures. For each turn in combat, or each 10 minutes out of combat, apply the current Climate's effects to creatures within the area of effect. Types of Climate may be combined and cause multiple effects at once. Some tools, Powers, or proficiencies can protect against Climate.<br/>
-  Hot: Exceptionally hot temperatures, 110F or higher. Take 1d4 Fire damage for every 10F above 100. The heat exhausts the creatures causing all d20 rolls to receive a -G penalty. Shelter raises the threshold by 20F.<br/>
-  Cold: Exceptionally cold temperatures, 0F or lower. Take 1d4 Cold damage for every 10F below 10. The cold slows the creatures, reducing travel distance by 1 mile and movement distance by 5ft. Shelter lowers the threshold by 20F.<br/>
+  Various environmental factors may have an effect on creatures. For each round in combat, or each 10 minutes out of combat, apply the current Climate's effects to creatures within the area of effect. Types of Climate may be combined and cause multiple effects at once. Some tools, Powers, or proficiencies can protect against Climate.<br/>
+  Hot: Exceptionally hot temperatures, 110°F or higher. Take 1d4 Fire damage for every 10°F above 100. The heat exhausts the creatures causing all d20 rolls to receive a -G penalty. Shelter raises the threshold by 20°F.<br/>
+  Cold: Exceptionally cold temperatures, 0°F or lower. Take 1d4 Cold damage for every 10°F below 10. The cold slows the creatures, reducing travel distance by 1 mile and movement distance by 5ft. Shelter lowers the threshold by 20°F.<br/>
   Stormy: Extreme winds buffet against the creatures, 50mph or higher. Roll an Athletics check vs 15, if you fail you fall Prone. Shelter's may collapse at 70mph, every hour roll a d20 vs 10, on a fail the shelter is destroyed. Increase both checks' difficulty by 1 for every 10mph.<br/>
   Fog: Thick fog obscures vision. All d20 rolls involving sight receive a -G penalty. Limit sight ranges by half.<br/>
-  Wet: Increase the dice size of Hot and Cold Climates to d6's. Unprotected food may spoil, if you are not sheltered during a sleep roll a d4 on a 2 half and on a 1 all of your food is destroyed.<br/>
+  Wet: Increase the dice size of Hot and Cold Climates to d6's. Unprotected food may spoil, if you are not sheltered during a sleep roll a d4. On 2 half, and on 1 all, of your food is destroyed.<br/>
   Dry: Reduces the time needed to drink your Water quota by 1 day.
   <hr/>
   <h3>Shelter:</h3>
