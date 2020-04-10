@@ -14,7 +14,8 @@ export default {
     [
       "Pool: Increase your maximum well by 3.",
       "Third Eye: You are immune to the Blind effect.",
-      "Focused: Add G to your defensive Will checks."
+      "Focused: Add G to your defensive Will checks.",
+      "Channeled Aether: [Activate] As an Activation Action you may delay any Power you use by up to G turns. The Power's targeting does not move from the original location. When the Power takes effect, you may treat damage/healing/effect dice up to the number of turns delayed as if they rolled their maximum value."
     ],
     [
       "Pond: Increase your maximum well by 5.",
