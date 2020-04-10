@@ -46,6 +46,9 @@ export default {
   If they pass less than ¼ of the checks it's a <b>Hard Failure</b>, they don't succeed and the GM can impose heavy penalties, kill a player, end the story, whatever narratively makes sense, award G points in XP.</span><br/>
 
   <hr/>
+  <h3>Concentrated Effort:</h3>
+  <span>You may attempt a Skill check while taking some time out of combat to give it your best effort. After 30 minutes of deliberate effort and without any actions stopping your attempt, you may perform the Skill check as if you rolled a 20 (This does not count as a Natural 20 or as Critical).</span>
+  <hr/>
   <h3>Skills List:</h3>
   <ul>
       <li>Mechanics (maintaining, repairing, or improving non-cybernetic technology)</li>
