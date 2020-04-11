@@ -43,7 +43,9 @@ function App() {
 }
 
 //  TODO:
-/*  Go through the ideas part at the bottom of the google doc and add them into the main text
+/*  
+    Possibly add utility powers to the Source's as Source Proficiencies
+    Go through the ideas part at the bottom of the google doc and add them into the main text
     Go back over the rules and iterate/refine them
 
     Make a rough draft of a character sheet

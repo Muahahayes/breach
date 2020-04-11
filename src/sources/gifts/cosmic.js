@@ -237,7 +237,7 @@ export default [
         ],
         [
           "Reach: Increase the range to 30 ft.",
-          "Magnitude: Increase the damage by 2d10.",
+          "Magnitude: Increase the total damage by 2d10.",
           "Luck: If any creature Hard Failed their check, you don't gain a -1 Unfavored on your next d20 roll.",
           "Bad Karma: [Activate] Any creature that Soft Failed their check considers their next Soft Fail of any kind to be a Hard Fail."
         ],
