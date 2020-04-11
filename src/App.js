@@ -43,26 +43,30 @@ function App() {
 }
 
 //  TODO:
-/*  Write creation.js
-    Write rpg.js
+/*  Write rpg.js
     Go through the ideas part at the bottom of the google doc and add them into the main text
     Go back over the rules and iterate/refine them
 
     Make a rough draft of a character sheet
     Start adding pages of content so there's enough for a playtest campaign this summer?
-    Go back over the rules and iterate/refine them
+    Go back over the rules and iterate/refine them    
 
-    Make a login system, only allow users to see the book, put login and guidebook links in a smaller navbar above content-head
-    Make a character sheet wizard, saves a sheet to a user
-    Make roll calculator, pulls a character from the user
-
-    Make beastiary, put link to it in the smaller navbar (playtest ready at this point)
+    Make beastiary, put link to it in the smaller navbar (playtest ready at this point if *I* GM it)
     Go back over the rules and iterate/refine them
 
     Make GM guide, put link in the smaller navbar
     Go back over the rules and iterate/refine them
 
+    Make a login system, only allow users to see the book, put login and guidebook links in a smaller navbar above content-head
+    Make a character sheet wizard, saves a sheet to a user
+    Make roll calculator, pulls a character from the user
+    (Now in ALPHA state, playtestable for other GMs)
+
     Work with Ryan on an intro campaign and Lore
+    While Ryan writes stuff, work on refactoring the site with a good CSS
+    Go through playtesting feedback and iterate/refine rules and content, after this point no more system-wide or core-rule changes can be made
+    When playtesting is happy with the state of the system and there's an intro campaign ready to go, make this all public (patreon?)
+    (Now in BETA state, playable by non-testers)
 */
 
 function Home() {
