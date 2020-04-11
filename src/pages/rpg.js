@@ -8,7 +8,7 @@ export default {
       The GM controls the world of the game, they are responsible for creating scenarios and events for the Players to respond to. They craft the environment and control the flow of the story.
       The Players each control a Character, a single person who exists within the GM's world and is the vehicle in which the Player explores and interacts with that world. Through their Character, they are the protagonists of the story and navigate through the narrative provided by the GM.<br/>
       Remember, this story is told <i>collaboratively</i> between the Players and the GM. The GM will present a situation to the Players, and the Players will voice some action they wish their Character to take. After rolling dice and using their Character's capabilities, the RPG system will determine how successful the Character's action is.
-      This is the primary difference between an RPG and simply sitting in a circle tellilng stories, because there is luck and a mechanical system involved no one person has absolute control over the story and unexpected outcomes occur fairly regularly. Don't be scared of this! This uncertainty is a catalyst to push the Players to think creatively and move forward to make a better outcome for their Character and its story.<br/>
+      This is the primary difference between an RPG and simply sitting in a circle telling stories, because there is luck and a mechanical system involved no one person has absolute control over the story and unexpected outcomes occur fairly regularly. Don't be scared of this! This uncertainty is a catalyst to push the Players to think creatively and move forward to make a better outcome for their Character and its story.<br/>
     </p><hr/>
     <h3>Characters</h3>
     <p>

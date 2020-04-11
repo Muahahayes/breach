@@ -43,8 +43,7 @@ function App() {
 }
 
 //  TODO:
-/*  Write rpg.js
-    Go through the ideas part at the bottom of the google doc and add them into the main text
+/*  Go through the ideas part at the bottom of the google doc and add them into the main text
     Go back over the rules and iterate/refine them
 
     Make a rough draft of a character sheet
@@ -55,6 +54,7 @@ function App() {
     Go back over the rules and iterate/refine them
 
     Make GM guide, put link in the smaller navbar
+    ***More TODO will show up here making the GM guide***
     Go back over the rules and iterate/refine them
 
     Make a login system, only allow users to see the book, put login and guidebook links in a smaller navbar above content-head

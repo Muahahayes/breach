@@ -34,11 +34,11 @@ function Nav() {
       <li id="race-list" className="list" style={hidden}> 
         <ul>
         <li><Link style={navStyle} to="/races/human">Human</Link></li>
-        <li><Link style={navStyle} to="/races/sylvan">Sylvan</Link></li>
-        <li><Link style={navStyle} to="/races/darkin">Darkin</Link></li>
-        <li><Link style={navStyle} to="/races/aeth">Aeth</Link></li>
         <li><Link style={navStyle} to="/races/halfling">Halfling</Link></li>
         <li><Link style={navStyle} to="/races/giant">Giant</Link></li>
+        <li><Link style={navStyle} to="/races/sylvan">Sylvan</Link></li>
+        <li><Link style={navStyle} to="/races/darkin">Darkin</Link></li>
+        <li><Link style={navStyle} to="/races/aeth">Aeth</Link></li>      
         <li><Link style={navStyle} to="/races/trollkin">Trollkin</Link></li>
         <li><Link style={navStyle} to="/races/pix">Pix</Link></li>
         <li><Link style={navStyle} to="/races/atal">Atal</Link></li>
