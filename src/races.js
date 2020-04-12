@@ -61,6 +61,7 @@ function parseRace(raceJSON) {
     let appear = [];
     let stats = [];
     let racials = [];
+    let pic;
     parseContent(raceJSON.description, desc);
     parseContent(raceJSON.appearance, appear);
     parseContent(raceJSON.stats, stats);
@@ -69,21 +70,13 @@ function parseRace(raceJSON) {
     // Format for displaying the race's information
     return (
       <div className="content-body">
-        {/* <b>Description: </b>{raceJSON.description}
-        <br/><br/>
-        <b>Appearance: </b>
-        {raceJSON.appearance}
-        <br/><br/>
-        <b>Base Stats:</b>
-        {stats}
-        <br/><br/>
-        <b>Racial Features:</b>
-        {racials} */}
+        <div className="description">
+        {(raceJSON.image)?<img src={raceJSON.image} alt={raceJSON.name+" Profile Picture"} className="descPic"/>:null}
         <h3>Description:</h3>
-        {desc}
+        {desc}        
         <h3>Appearance:</h3>
         {appear}
-        <hr/>
+        </div><hr/>
         <h3>Base Stats:</h3>
         {stats}
         <hr/>
