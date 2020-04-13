@@ -27,9 +27,6 @@ body {
   .nav-items .btn {
     font-size: 1.5em;
   }
-  .nav-top {
-    display: none;
-  }
   .nav-padding {
     position: absolute;
     height: 100px;
@@ -156,7 +153,7 @@ body {
     width: 10px;
   }
   ::-webkit-scrollbar-track {
-    background: #d0d0d0;
+    background: #a0a0a0;
   }
   ::-webkit-scrollbar-thumb {
     background: #555;
@@ -312,7 +309,7 @@ h3 {
   position: fixed;
   top: 30;
   z-index: 10;  
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 .nav-items li {
@@ -331,6 +328,15 @@ h3 {
 .nav-items .list ul li {
   padding-top: 0;
   padding-bottom: 0.25em;
+}
+
+.nav-top {
+  padding:0;
+  margin:0;
+}
+
+.nav-top h3 {
+  margin:0;
 }
 
 /* .nav-items li :hover {
@@ -384,7 +390,7 @@ ul{
   padding-inline-start: 20px;
 }
 
-.btn:hover{
+.listBtn:hover{
   cursor: pointer;
 }
 
