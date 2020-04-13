@@ -14,7 +14,11 @@ function App() {
   return (
     <div className="App">     
       <Router>
-        <Nav />
+        <Switch>
+          <Route path="/:b" component={Nav}/>
+          <Route path="/" component={Nav}/>
+        </Switch>
+        {/* <Nav /> */}
         <div className="fade"/>
         <div className="nav-padding">
           <img src={menuPic} alt="" height="50" width="50" className="hamburger"/>
@@ -32,7 +36,8 @@ function App() {
           <Route path="/sources/:s/gifts" component={Gifts}/>
           <Route path="/sources/:s" component={Sources}/>          
           <Route path="/gifts/:s/:g" component={Gifts}/>
-          <Route path="/lore/:l" component={Lore}/>
+          <Route path="/world/:u/:p" component={Lore}/>
+          <Route path="/world/:p" component={InfoPage}/>
           <Route path="/rules/:r" component={Rules}/>
           <Route path="/:p" component={InfoPage}/>
           <Route path="/" exact component={Home}/>

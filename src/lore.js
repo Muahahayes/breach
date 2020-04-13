@@ -1,11 +1,13 @@
 import React from 'react';
 
 function Lore({ match }) {
-  if (match && match.params && match.params.l) {
-    let page = match.params.l;
-    let content, name
+  if (match && match.params && match.params.p) {
+    let page, content, name, url
+    console.log(match)
+    url = match.params.u
+    page = match.params.p
     try {
-      let pageJSON = require(`./lore/${page}.js`).default;
+      let pageJSON = require(`./${url}/${page}.js`).default;
       name = pageJSON.name;
       // content = parsePage(pageJSON);
       content = pageJSON.content;
