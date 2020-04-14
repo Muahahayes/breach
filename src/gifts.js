@@ -264,11 +264,13 @@ function Gifts({ match }) {
                   <input className ="searchBar" type="search" id="attributeSearch" name="attributeSearch" onChange={attributes} placeholder="[Attribute]" tabIndex={2} title="Searches for Gifts with any attribute that include your text within the attribute name. Add a + between attributes to narrow the search to match multiple attributes. (eg. Ranged+Action)"></input>            
                 </span>
     }
-    
+    let {name} = require(`./sources/${match.params.s}`).default;
+    console.log(name)
     return (
       <div className="content">
         <div className="content-head">
-          <h1>{match.params.s.toUpperCase()}</h1>
+          {/* <h1>{match.params.s.toUpperCase()}</h1> */}
+          <h1>{name} Gifts</h1>
         </div>
         <div className={"content-body gift-list"}>
           <br/>

@@ -15,6 +15,8 @@ export default {
     </p><ul>
     <li><a href="/sources/psychic/gifts">Psychic</a></li>
     <li><a href="/sources/cosmic/gifts">Cosmic</a></li>
+    <li><a href="/sources/runic/gifts">Runic Arts</a></li>
+    <li><a href="/sources/bloodline/gifts">Ancient Bloodline</a></li>
     <li><a href="/sources/mutation/gifts">Mutation</a></li>
     </ul>
   </div>
