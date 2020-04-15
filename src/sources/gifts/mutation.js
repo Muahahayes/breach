@@ -40,7 +40,7 @@ export default [
           "Instinct: On creatures with a Will less than ½ G, the effect lasts G turns."
         ],
         [
-          "Fluorescent: Raises the surroundings by 1 light level, up to 10min.",
+          "Fluorescent: Raises the surroundings to Low Lighting, up to 10min.",
           "Distracting: [Activate] Subtract G from any attack rolls against allies in melee range for 1 turn."
         ],
         [
