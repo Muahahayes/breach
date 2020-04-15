@@ -23,5 +23,8 @@ export default {
       "Power Nap: You gain half the ae of taking a Break when you are afflicted by the Sleep effect.",
       "Slumber: Increase the ae gained from a Full Sleep by 5."
     ]
+  ],
+  lesser: [
+    
   ]
 }

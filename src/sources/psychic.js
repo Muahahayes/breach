@@ -11,7 +11,7 @@ export default {
       "Iron Will: Subtract your Will from the difficulty of Psychic Fatigue checks.",
       "Link: You can initiate Psychic Links with other persons as a Minor Action. You can always be Linked by other Psychics capable of initiating Links even if you don't have this Proficiency or the Psychic Source. While Linked you may communicate silently with one another using any Language you share. If you move further than 100 ft apart the Link is broken.",
       "Psi Network: You can tap into the Psi Network of your current city if a Psi Network exists, giving you access to information and long range communication.",
-      "Mind Over Matter: Every 2 Proficiency you put into Mind Over Matter gives you 1 AP you can spend on any Attribute except Will. (Cannot increase an Attribute higher than {2 * G}). (Repeatable up to G)"
+      "Mind Over Matter: Every 2 Proficiency you put into Mind Over Matter gives you 1 AP you can spend on any Attribute except Will. (Cannot increase an Attribute higher than [G + 3]). (Repeatable up to G)"
     ],
     [
       "Focused: Add G to your defensive Will checks."
@@ -22,5 +22,8 @@ export default {
     [
       "Mental Resilience: After putting 3 points into Mental Resilience you gain resistance to Mental damage, reducing damage taken from Mental damage types by half. (Repeatable up to 3)"
     ]
+  ],
+  lesser: [
+    
   ]
 }
