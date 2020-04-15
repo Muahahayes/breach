@@ -31,7 +31,7 @@ export default [
           "Greater Reach: If the Engraved object is a Ranged Weapon, increase it's range by 10 ft. Also, increase the radius of Burst by 10 ft."
         ],
         [
-          "Evoke: [Activate] Increase this Gift's Fade to 20 points. Deal 1d10 damage to every creature who's Avoidance would be hit by your attack within a 20 ft radius of your target for each Fade point caused by Evoke.",
+          "Evoke: [Activate] Increase this Gift's Fade to 20 points. Deal 1d10 damage to your target and every creature who's Avoidance would be hit by your attack within a 20 ft radius of your target for each Fade point caused by Evoke.",
           "Shine: Increase the uses of Glow by one per day."
         ]
       ]
