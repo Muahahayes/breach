@@ -4,10 +4,20 @@ export default {
 name: 'Exploring the World',
 content: <div>
  <h3>Awareness:</h3>
-  Creatures cannot perform actions towards, or with the assumption of the existence of, another creature it is not aware of. If a creature is aware of another creature's existence but not its location it may perform actions which assumes it exists but may not target it directly. When a creature is in your line of sight (within 100 ft and the view is not obstructed) and not actively attempting to Hide or Sneak you become aware of it and it's location. If you enter an area and a creature of a size smaller than you is in line of sight, not moving, and not attempting to be noticed, it will be Hiding by default with a bonus to the Hide equal to its G. 
+  Creatures cannot perform actions towards, or with the assumption of the existence of, another creature it is not aware of. If a creature is aware of another creature's existence but not its location it may perform actions which assumes it exists but may not target it directly. When a creature is in your line of sight (within 100 ft and the view is not obstructed) and not actively attempting to Hide or Sneak you become aware of it and it's location. If you enter an area and a creature of a size smaller than you is in line of sight, not moving, and not attempting to be noticed, it will be Hiding by default with a +1 Favored to the Hide roll. 
+  <hr/>
+ <h3>Lighting:</h3>
+  The lighting condition of an environment come in 5 stages:
+  <ul>
+    <li><b>Harsh:</b> Subtract 1 from rolls vs Avoidance. -1 Unfavored to Stealth/Hide rolls.</li>
+    <li><b>Normal:</b> Good visibility, the default lighting condition if not otherwise stated.</li>
+    <li><b>Low:</b> +1 Favored to Stealth and Hide rolls. Restricts your visual Awareness to 50 ft.</li>
+    <li><b>Dark:</b> +2 Favored to Stealth and Hide rolls. -1 Unfavored to Search rolls. Restricts your visual Awareness to 20 ft.</li>
+    <li><b>Pitch Black:</b> +3 Favored to Stealth and Hide rolls. -2 Unfavored to Search rolls. Restricts your visual Awareness to 0ft.</li>
+  </ul>
   <hr/>
  <h3>Hiding or Sneaking:</h3>
-  When a creature is standing still it may attempt to Hide, if a creature is not aware of it and enters line of sight it rolls a Awareness check vs the Hide check to gain awareness of it. The same applies for Sneaking while a creature is moving. If a creature suspects that something it is not aware of may be in its line of sight it may do a Search check vs the Hide/Sneak check of the creatures.
+  When a creature is standing still it may attempt to Hide, if a creature is not aware of it and enters line of sight it rolls a Awareness check vs the Hide check to gain awareness of it. The same applies for Sneaking while a creature is moving. If a creature suspects that something it is not aware of may be in its line of sight it may do a Search check vs the Hide/Sneak check of the creature, on a Hard Success it is aware of the creature and its location, on a Soft Success it is only aware of its existence, and on a Fail it is not aware of the creature.
   <hr/>
  <h3>Traveling:</h3>
   When not in combat you may move up to your travel distance (Stamina multiplied by 5 miles (if it is positive) plus 5 miles, subtract 1 mile for each negative stamina you have) in a day (usually only applicable when traveling long distances or traversing a city repeatedly in a day). Traversing over difficult terrain such as mountains, deserts or swamps limits your movement to half your normal distance. 
@@ -19,12 +29,14 @@ content: <div>
   <hr/>
  <h3>Size:</h3>
   Creature's come in many shapes and sizes. When moving, you may only pass through another creature's space if you are not in the same Size Tier. Gain a -G reduction when initiating a Grapple against a smaller creature, but gain a +G bonus when maintaining the Grapple. When a creature of a higher Size category is standing between you and an attacker, you gain +G Avoidance to ranged attacks and powers.<br/>
-  Tiny: Less than 2' tall/long.<br/>
-  Small: 2'-5' tall/long.<br/>
-  Medium: 5'-8' tall/long.<br/>
-  Large: 8'-12' tall/long.<br id="hunger"/>
-  Huge: 12'-20' tall/long.<br/>
-  Gigantic: More than 20' tall/long.<br/>
+  <ul>
+    <li>Tiny: Less than 2' tall/long.</li>
+    <li>Small: 2'-5' tall/long.</li>
+    <li>Medium: 5'-8' tall/long.</li>
+    <li id="hunger">Large: 8'-12' tall/long.</li>
+    <li>Huge: 12'-20' tall/long.</li>
+    <li>Gigantic: More than 20' tall/long.</li>
+  </ul>
   <hr/>
   <h3>Hunger:</h3> 
   Your character needs food and water to live. Your character requires 5 Food Points (FP) + 1 for every 10lb of your character's weight and requires 5 Water Points (WP) in a 3 day period. (Food points can be thought of as about 1,000 calories, for ease of play they are simplified and food from official sources are given FP instead. For homebrewing new foods follow a 1,000 calorie per 1 FP rule of thumb. Water is simplified to about 1 WP per quart/liter). <br/>
