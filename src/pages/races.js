@@ -21,7 +21,7 @@ export default {
     <ul>
       <li><Link to="/races/human">Human</Link></li>
       <li><Link to="/races/halfling">Halfling</Link></li>
-      <li><Link to="/races/giant">Giant</Link></li>
+      <li><Link to="/races/alycon">Alycon</Link></li>
       <li><Link to="/races/sylvan">Sylvan</Link></li>
       <li><Link to="/races/darkin">Darkin</Link></li>
       <li><Link to="/races/aeth">Aeth</Link></li>
