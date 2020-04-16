@@ -22,6 +22,34 @@ export default [
           "Sturdy: During a Rampage with Numb active, you may use Protection once without referring to or counting towards your daily limit."
         ]
       ]
+    },
+    {
+      name: "Bloodthirst",
+      attributes: "[Action] [Melee]",
+      description: "On touch you attempt to pierce a creature with your teeth or fingers, dealing 1d8 damage. Costs 1 Bloodlust.",
+      proficiencies: [
+        [
+          "Fury: On a hit, gain an additional Bloodlust.",
+		      "Thirst: [Activate] On a hit, as an Activation Action heal G Survival."
+        ],
+        [
+          "Impact: Increase the damage to 1d10.",
+		      "Hunger: You may use Bloodthirst for free if you are in Apathy."
+        ],
+        [
+          "Anticoagulant: [Activate] On a hit, as an Activation Action the target Bleeds once after 5 turns.",
+          "Magnitude: Increase the damage to 2d6.",
+          "Feed: Thirst gains G more Survival and deals G more damage."
+        ],
+        [
+          "Flow: Anticoagulant Bleeds after 2 fewer turns.",
+          "Drain: Thirst and Anticoagulant may both be used with the same Activation Action.",
+          "Overwhelming: Increase the damage to 2d8."
+        ],
+        [
+          "Rupture: Anticoagulant Bleeds after 1 fewer turn, and may Bleed 2 more times."
+        ]
+      ]
     }
   ] // 1G
 ]

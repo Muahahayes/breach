@@ -6,7 +6,8 @@ export default {
   proficiencies: [
     [
       "Thick Skin: Increase your max survival by 5. (Repeatable up to G)",
-      "Retractable Canines: Your canine teeth are sharp and can extend to twice their length."
+      "Retractable Canines: Your canine teeth are sharp and can extend to twice their length.",
+      "Study: Whenever you level up, you may select 1 Lesser Gift for free without spending a Proficiency."
     ],
     [
       "Ancestral Strength: Add G to your Strength checks.",
@@ -14,10 +15,11 @@ export default {
       "Dark Dreams: You retain up to 2 Bloodlust when you Full Sleep."
     ],
     [
-
+      "Regenerative: Gain +G to any healing you receive from a Gift."
     ]
   ],
   lesser: [
-    
+    "Conjure Fire: [Minor] [Self] You create a small fire which floats above your hand. You may drop the fire, if it lands on a flammable material it is lit aflame, otherwise the fire snuffs out. The fire raises the nearby surroundings from Pitch Black to Dark or Dark to Low within 15 ft. Does not cost any Bloodlust.",
+    "Glamour: [Action] [Self] You mask your face with an illusion to appear like any person of your Race you have seen. If you enter Apathy this effect ends. Costs 1 Bloodlust."
   ]
 }

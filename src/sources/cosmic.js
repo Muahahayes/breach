@@ -5,7 +5,8 @@ export default {
   resource: "Cosmic Well: You gain a Well of Aether (ae) within your soul. Your Well can hold up to [5 + G + Will] ae at one time. You gain [5 + G] ae from a Full Sleep, and an amount equal to [G + Will] when you take a Break. If you reach 0 ae you will be rendered unconscious and you will regain 1 ae if you are woken up, or 5 if you fully sleep.\nElemental Soul: Choose an Elemental, Spirit, or Darkness damage type. Your Well is attuned to this element. Add G damage to any damage you deal with this element. You are resistant to this damage type.",
   proficiencies: [
     [
-      "Willful: Add 1 to your Will attribute."
+      "Willful: Add 1 to your Will attribute.",
+      "Study: Whenever you level up, you may select 1 Lesser Gift for free without spending a Proficiency."
     ],
     [
       "Deep Well: Increase your maximum well by 3.",
@@ -25,6 +26,7 @@ export default {
     ]
   ],
   lesser: [
-    
+    "Bind: [Action] [Melee] You reach out and touch two objects and press them together. If the two objects are broken pieces of the same original object they are reconnected and repaired, otherwise the two objects are fused together at the point of contact with a mix of the two materials creating a weld with its strength equal to the average hardness of the two materials.",
+    "Illuminate: [Minor] [Touch] You touch an object, imbuing it with Aether. For 1 hour the object emits a soft glow which raises the surroundings from Low to Normal light, or from Dark or Pitch Black to Low Light."
   ]
 }

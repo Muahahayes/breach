@@ -252,6 +252,26 @@ export default [
           "Karmic Explosion: [Activate] Instead of its usual effects and ignoring any proficiencies, deal 2d10 + Will damage for each ae spent in an area with a radius of 20 ft that is centered at a location you can see within 50 ft. Every creature within the area must roll a d20 + Athletics vs Power, on any Success they take half the damage, on a Soft Fail they take full damage and are stunned for 1 turn, on a Hard Fail they take 5 Life damage directly instead of the normal damage and are stunned for 2 turns. This effect costs all of your current ae and requires at least half your Max ae to be spent. The unconscious effect from hitting 0 ae from this cost lasts for at least 1 hour regardless of any attempts to wake you."
         ]
       ]
+    },
+    {
+      name: "Kharmic Bubble",
+      attributes: "[Action] [AoE]",
+      description: "Creates a Field of twisted Aether around yourself with a radius of 10 ft which distorts the karmic balance of the area. Whenever a creature within this Field deals damage to another creature they receive 1d4 damage of the same type. Costs 3 ae and lasts for 2 turns. If you are incapacitated the effect ends.",
+      proficiencies: [
+        [],[],
+        [
+          "Duration: When the effect reaches the end of its duration, you may extend it by 1 turn for 1 ae. (1 Additional optional extension with each repeated proficiency).",
+          "Empowered: Add your Will to the damage roll.",
+          "Impact: Increase the damage to 1d8."        
+        ],
+        [
+          "Greater Impact: Increase the damage to 1d10, requires Impact.",
+          "True Kharma: This damage ignores damage resistances/immunities and cannot be reduced.",
+          "Increases the radius by 5 ft. (Repeatable up to a total increase of 20)",
+          "Violence: [Activate] When you create the bubble, you may make the bubble encourage violence, which gives all attack rolls within the field a +1 Favored during the duration.",
+          "Peace: [Activate] When you create the bubble, you may make the bubble discourage violence, which gives all attack rolls within the field a -1 Unfavored during the duration."        
+        ]
+      ]
     }
   ]// 3G
 ]

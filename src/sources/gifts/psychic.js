@@ -128,6 +128,27 @@ export default [
           "Inferno: Increase the radius of Combustion by 100 ft."
         ]
       ]
+    },
+    {
+      name: "Foresight",
+      attributes: "[Free] [Self]",
+      description: "Use while performing a skill check, the next time you use that same skill (After at least an hour has passed), add double your normal skill bonus to that roll. This roll cannot Hard Succeed. You may store one Foresight roll at a time, you may not store a Foresight roll from a skill check that is using a Foresight roll.",
+      proficiencies: [
+        [
+          "Forecast: [Free Action] Before rolling any d20 you may call out a number between 1-4. Roll a d4 and the d20, if you roll your chosen d4 number you may 'save' the number shown on the d20 and do not need to roll a Psychic Fatigue check. The next time you use a d20 for the same purpose, you may substitute the roll with the saved number. If you fail to roll your chosen number, roll a Psychic Fatigue check. You can store a Forecast roll once per full sleep.",
+		      "Mulligan: If you fail to guess correctly but succeed the Psychic Fatigue check from the Forecast proficiency you may attempt your Forecast again. Limit of one Mulligan per Forecast used."
+        ],
+        [
+          "Prophetic: You may store a Forecast roll 2 additional times per full sleep, but may only store one roll at a time.",
+          "Clairvoyant: You may store a second Foresight roll at a time.",
+          "Premonition: As a Minor Action you may roll a Speed check, at the start of any round in the current combat you may use this result instead of rolling a Speed check, this uses up the Premonition result. You may store one Premonition result at one time.",
+          "Clarity: [Free Action] When rolling any d20 (even a Skill check not affected by Foresight) you may substitute it with a d10+10 (Once per day). Rolling a 1 or a 10 on this d10 does not count as 'natural'.",
+          "Inspiration: When using the Clarity proficiency, if the d20 being substituted was from a Foresight triggering Skill check, you may choose to either add your Will to the result, or this roll does not count towards Clarity's once per day limit (But once this limit has been used, Inspiration can not trigger)."
+        ],
+        [
+          "Focused: You may attempt a Forecast roll after seeing the result of the d20 roll."
+        ]
+      ]
     }
   ],// 1G
   [// 2G

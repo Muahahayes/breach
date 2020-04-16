@@ -14,9 +14,13 @@ export default {
       "Expanded Lungs: You can hold your breath twice as long.",
       "Owl Neck: You can face behind you without turning your body, and you can rotate your head upside down.",
       "Genetic Morph: At 5 stacks, gain a new Gift up to [3 G] which does not use a Full Action. This does not apply to your number of Gifts and does not count as Leveling Up. (Repeatable up to 5 stacks)"
+    ],
+    [
+      "Regenerative: Gain +G to any healing you receive."
     ]
   ],
   lesser: [
-    
+    "Beast Rapport: [Minor] [Self] For 1 hour you release pheromones which calm beasts who are aware of you. While this effect is active, you may make Charm attempts with beasts with a Will less than 0 which you and your allies have not harmed. On a successful Charm attempt, the beast will not act violently towards you until this effect ends. Causes G Strain.",
+    "Venom Resistance: [Minor] [Self] For 1 hour your stomach becomes hyper-vigilant against Poisons. You may taste and consume Poisoned food without gaining any Poison effects, and you are aware of if the food is Poisoned when you taste it. Causes 1 Strain."
   ]
 }
