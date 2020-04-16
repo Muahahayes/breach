@@ -1,3 +1,4 @@
+import React from 'react';
 export default {
   name:"Trollkin",
   description:"Trollkin are an offshoot of the Troll species. They're smarter than a typical Troll but much smaller. Trollkin are seclusive and don't venture into cities often, often living alone or in a small group of less than a dozen. They are suspicious and don't warm to strangers quickly.",

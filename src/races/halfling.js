@@ -1,3 +1,4 @@
+import React from 'react';
 export default {
   name:"Halfling",
   description:`Halflings are a curious and optimistic people. They keep tight knit communities and make friends for life. They feel a kinship with Humans, and often settle in shared rural villages. They enjoy a simple life, and would rather drink and share songs than chase any lofty ambitions.`, 

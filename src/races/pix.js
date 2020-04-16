@@ -1,3 +1,4 @@
+import React from 'react';
 export default {
   name:"Pix",
   description:`The Pix are a small race of the old world. They are known as great craftsmen of intricate designs and mechanics, making use of their Flourish ability to manipulate the cogs or wires of devices they work on without the need for precision tools. They are playful, and tend to pull pranks on the larger races, but their word is their bond and if money or favors change hands they will deliver the product or service as promised. Because of this, they don't usually do well in politics and are often overlooked by authority figures. Due to their lighthearted nature, short sighted spending habits, and non-confrontational attitudes many Pix find themselves in servitude in various forms, which lead to generational contracts of Pix families fulfilling the duties promised by their ancestors.`, 

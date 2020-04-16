@@ -10,7 +10,7 @@ content: <div>
   The lighting condition of an environment come in 5 stages:
   <ul>
     <li><b>Harsh:</b> Subtract 1 from rolls vs Avoidance. -1 Unfavored to Stealth/Hide rolls.</li>
-    <li><b>Normal:</b> Good visibility, the default lighting condition if not otherwise stated.</li>
+    <li><b>Medium:</b> Good visibility, the default lighting condition if not otherwise stated.</li>
     <li><b>Low:</b> +1 Favored to Stealth and Hide rolls. Restricts your visual Awareness to 50 ft.</li>
     <li><b>Dark:</b> +2 Favored to Stealth and Hide rolls. -1 Unfavored to Search rolls. Restricts your visual Awareness to 20 ft.</li>
     <li><b>Pitch Black:</b> +3 Favored to Stealth and Hide rolls. -2 Unfavored to Search rolls. Restricts your visual Awareness to 0ft.</li>

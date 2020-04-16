@@ -1,3 +1,4 @@
+import React from 'react';
 export default {
   name:"Aeth",
   description:`The Aeth are a wandering race that came through a Breach 100 years ago. Their home world was destroyed over 1000 years ago and they have moved from world to world ever since.`, 

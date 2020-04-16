@@ -1,3 +1,4 @@
+import React from 'react';
 export default {
   name:"Sylvan",
   description:"The Sylvan are very close to nature and live in the wild and untamed regions of the world. Due to an inconsistent oral tradition, their history is vague and doesn't reach back more than one or two hundred years. It is speculated that they branched off from humans thousands of years ago as some humans stayed in the wild to become more in tune with nature, while humans as we know today began to tame and domesticate their environment. They are known for their whimsical 'in the moment' lifestyle, and they are easily excited by seeing a Sylvan of a type they are unfamiliar with. They make friends with other Sylvans nearly instantly, and warm up to other races quickly as well. In modern times more and more young Sylvan are moving into the more populated areas of the world to befriend and learn about the other races.",

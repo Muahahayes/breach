@@ -1,3 +1,4 @@
+import React from 'react';
 export default {
   name:"Atal",
   description:`The Atal have been in a state of civil war for millennia between 2 closely related species with a shared homeland. They hail from the tropical continent of Etzal to the south, where the two species contend for dominance in a never ending feud. In recent times they've brokered an uneasy peace to end physical hostilities, but they compete fiercely in all matters of culture, trade, and diplomacy on the global stage.`, 

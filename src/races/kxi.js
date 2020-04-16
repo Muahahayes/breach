@@ -1,3 +1,4 @@
+import React from 'react';
 export default {
   name:"Kx'i",
   description:"The Kx'i are a strange insect-like race that joined human society only within the last 50 years. They are known for the strength and cunning, but their mobility and flexibility falls behind the mammalian races. The Kx'i have a long tradition of revering Psychics, much like modern human culture, and have made their way up in urban society despite the discomfort they create. They tend to cluster into large communities with trict hierarchies, typically following a revered family of Kx'i that rule for generations. The Aeth claim they've never seen their kind in a Breach and must be from below the earth, but the Darkin claim they are not of this world. The Kx'i don't confirm or deny either claim and keep their history to themselves.",
