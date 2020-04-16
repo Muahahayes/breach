@@ -1,10 +1,10 @@
 export default {
   name:"Human",
   image:"https://cdn.discordapp.com/attachments/316751799031824385/698476701101064292/1586599947839.png",
-  description:"Humans are the most common race in the world. They are diligent and industrial, and have a continual drive for progress and exploration. Humans are mostly unremarkable and don't tend to be stronger or weaker in most aspects of modern living, their success stems from their cultural motivation for progress more than any inherent genetic advantages. They are less familiar with the supernatural powers of the world and are naturally skeptical or even distrusting of persons with Gifts outside of the Cybernetic Augmentation Source.",
-  appearance:"Humans come in many different skin tones and build. The many different ethnicity of humans all intermixed as civilization developed and other sentient species began to join human society. The racial barrier between humans relaxed as their commonality became more apparent compared to other species.",
+  description:"Despite sharing the stage with many new races, Humans are still the most common race found throughout the world, inhabiting their environment of choice comfortably and adapting themselves technologically where needed. They are diligent and industrious, with their continual drive for progress and exploration pushing them to the edges of discovery. While humanity is generally content to remain unremarkable and don't tend to be more or less prosperous than other races in many aspects of social and political life, their success stems primarily from a relentless and deep cultural motivation for progress and establishment of tradition. Humans are usually less familiar and comfortable with the emerging supernatural powers of new arrivals to what many of them see as <i>their world</i> and are more naturally skeptical or even distrusting of people with Gifts outside of the Cybernetic Augmentation Source.",
+  appearance:"Humans come in many different skin tones and build. While perceptible physical differences are still seen between many humans, races have become increasingly intermixed genetically as civilization developed and other sentient species began to join society. The racial barrier between humans relaxed as their commonality became more pronounced when compared to more significant differences seen with other emergent species.",
   stats:[
-    "Physical Build: 5'-6'2\", 100-250lb, 100 years, 2 legs and 2 arms",
+    "Physical Build: 5'-6'6\", 100-250lb, 100 years, 2 legs and 2 arms",
     "Base Attributes: Strength 1, Agility 1, Stamina 1, Will 1",
     "Speed: 1d6 + 1",
     "Creation AP: 5",
