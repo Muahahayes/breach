@@ -21,6 +21,12 @@ export default {
     [
       "Sense Aether: [Action] [AoE] You open your senses to your surroundings and look upon this Gift's Lesser Engraving. It emits a soft glow signifying if there is an active Gift effect (Prioritizing nearest Gift) within 30 ft of you and which Source caused it, which you can understand. If there is no active Gift, the glow quickly goes dull.",
       "Illuminate: [Minor] [Touch] You touch an object, Engraving a Rune of Illumination upon it. For 1 hour the object emits a soft glow which raises the surroundings from Low to Normal light, or from Dark or Pitch Black to Low Light."
+    ],
+    [
+      "Runic Munitions: Spend 10 minutes to Engrave up to 30 pieces of ammo. Increase the damage of any ranged attack using this ammo by G."
+    ],
+    [
+      "Sealing Shot: [Action] [Touch] Spend 10 minutes to Engrave a creature's full true name onto a piece of ammo and roll a d20 + Power, if you land a ranged attack with that ammo that creature must make a Will check vs the Power roll engraved or they are Silenced and Snared for G rounds."
     ]
   ]
 }
