@@ -401,7 +401,7 @@ ul{
   cursor: pointer;
 }
 
-.giftEntry {
+.searchEntry {
   margin-block-start: 1em;
   background: rgb(220, 220, 200);
   border-style: solid;
@@ -409,7 +409,7 @@ ul{
   border-color: rgb(200, 200, 180);
 }
 
-.giftEntry h2 {
+.searchEntry h2 {
   padding-top: 0;
   margin-top: 0;
 }
@@ -419,12 +419,14 @@ ul{
   margin-top: 0;
 }
 
-.gift h3 {
+.gift h2, .creature h2 {
   padding-top: 0;
   margin-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 2px;
 }
 
-.giftHR {
+.searchHR {
   border-top: 2px dashed black;
   margin-top: 1em;
   margin-bottom: 0.5em;
@@ -449,9 +451,30 @@ tbody {
 tr:nth-child(even) {
   background-color: rgb(230, 230, 205);
 }
+
 tr:first-child {
   background-color: rgb(70, 70, 80);
   color: rgb(255,255,255);
+}
+
+.blankTable tbody{
+  justify-self: left;
+}
+
+.blankTable th, .blankTable td {
+  border: 0px;
+  text-align: end;
+}
+
+.blankTable tr {
+  background-color: transparent;
+  color: black;
+}
+
+table.blankTable {
+  border: 0;
+  margin: 0;
+  width: 50%;
 }
 
 .clearable{

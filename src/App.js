@@ -6,6 +6,7 @@ import Sources from './sources';
 import Gifts from './gifts';
 import Rules from './rules';
 import Lore from './lore';
+import Creatures from './creatures';
 import menuPic from './pics/menu.png'
 import InfoPage from './infoPage';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
@@ -36,6 +37,9 @@ function App() {
           <Route path="/sources/:s/gifts" component={Gifts}/>
           <Route path="/sources/:s" component={Sources}/>          
           <Route path="/gifts/:s/:g" component={Gifts}/>
+          <Route path="/world/creatures" exact component={Creatures}/>
+          <Route path="/world/creatures/:t/:c" component={Creatures}/>
+          <Route path="/world/creatures/:t" component={Creatures}/>
           <Route path="/world/:u/:p" component={Lore}/>
           <Route path="/world/:p" component={InfoPage}/>
           <Route path="/rules/:r" component={Rules}/>

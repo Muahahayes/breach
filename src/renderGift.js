@@ -8,7 +8,6 @@ function renderGift(gift, source) {
   parseContent(gift.description, description);
   parseContent(gift.attributes, attributes);
   if (!source) { // render the full gift
-    console.log(gift)
     let proficiencies = [];
     for (let level in gift.proficiencies) {
       if (gift.proficiencies[level].length > 0) {

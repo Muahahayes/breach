@@ -1,66 +1,79 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import renderGift from './renderGift';
+import renderCreature from './renderCreature';
 
-function Gifts({ match }) {
-  if (match && match.params && match.params.g) { // individual gift
-    let giftName = match.params.g;
-    giftName = giftName.split('_').join(' ');
-    let source = require(`./sources/gifts/${match.params.s}`);
-    let gift;
-    let giftLevel;
-    for (let level in source.default) {
-      for (let g of source.default[level]) {
-        if (g.name.toLowerCase() === giftName.toLowerCase()) {
-          gift = g;
-          giftLevel = Number(level) + 1;
-          continue;
-        }
-      }
-      if (gift) continue;
+function Creatures({ match }) {
+  if (match && match.params && match.params.c && match.params.t) { // individual creature
+    let creatureName = match.params.c;
+    creatureName = creatureName.split('_').join(' ');
+    let creature;
+    let cType;
+    try {
+      cType = require(`./creatures/types/${match.params.t}`).default;
     }
-    if (!gift) {
+    catch (e) {
       return (
         <div className="content">
         <div className="content-head">
-          <h1>{giftName}</h1>
+          <h1>{creatureName}</h1>
         </div>
         <div className="content-body">
-          No gift found for this page!
+          No creature found for this page!
+        </div>  
+      </div>
+      );
+    }
+    for (let level in cType) {
+      for (let c of cType[level]) {
+        if (c.name.toLowerCase() === creatureName.toLowerCase()) {
+          creature = c;
+          continue;
+        }
+      }
+      if (creature) continue;
+    }
+    if (!creature) {
+      return (
+        <div className="content">
+        <div className="content-head">
+          <h1>{creatureName}</h1>
+        </div>
+        <div className="content-body">
+          No creature found for this page!
         </div>  
       </div>
       );
     }
     else {
-      let sourceName = match.params.s;
-      sourceName = sourceName.split('');
-      sourceName[0] = sourceName[0].toUpperCase();
-      sourceName = sourceName.join('');
       return (        
         <div className="content">
           <div className="content-head">
-            <h1>[{giftLevel} G] {gift.name}</h1>
+            <h1>[{creature.level} G] {creature.name}</h1>
           </div>
           <div className="content-body">
-            Return to <Link to={`/sources/${match.params.s}/gifts`}>{sourceName}</Link> Gifts
-            {renderGift(gift)}
+            Return to <Link to={`/world/creatures/${match.params.t}`}>{match.params.t}</Link> creatures.
+            <br/>
+            {renderCreature(creature)}
           </div>  
         </div>
-      );  
+      );    
     }
-    
   }
-  else if (match && match.params && match.params.s) { // source, render all gifts
-    let source = require(`./sources/gifts/${match.params.s}`);
-    let gifts = source.default;
+  else if (match && match.params && match.params.t) { // source, render all creatures
+    let cType = require(`./creatures/${match.params.t}`).default;
+    let creatures = require(`./creatures/types/${match.params.t}`).default;
     let content = [];
-
-    for (let level in gifts) {
+    console.log(creatures)
+    for (let level in creatures) {
+      console.log(level)
       let levelContent = [];
       if (level > 0) levelContent.push(<hr className="searchHR"/>);
       levelContent.push(<h2>[{Number(level)+1} G]</h2>);
-      for (let gift of gifts[level]) {
-        if (gift) levelContent.push(<div className={`searchEntry`} id={gift.name}>{renderGift(gift, match.params.s)}</div>);
+      for (let creature of creatures[level]) {
+        console.log(creature)
+        if (creature.name) {
+          levelContent.push(<div className={`searchEntry`} id={creature.name}>{renderCreature(creature, match.params.t)}</div>);
+        }
       }
       let idStr = `level${Number(level)+1}`
       let levelBlock = React.createElement("div", {className: "levelBlock", id: idStr}, levelContent);
@@ -71,7 +84,7 @@ function Gifts({ match }) {
     function filter(otherCalled) {
       let bar = document.getElementById('levelSearch');
       let str = bar.value;
-      let otherBar = document.getElementById('giftSearch');
+      let otherBar = document.getElementById('creaturesearch');
       let otherBar2 = document.getElementById('attributeSearch');
       if (otherBar.value !== '' && otherCalled !== 'yes') {
         otherBar.value = '';
@@ -115,7 +128,7 @@ function Gifts({ match }) {
     }
 
     function search(otherCalled) {
-      let bar = document.getElementById('giftSearch');
+      let bar = document.getElementById('creaturesearch');
       let str = bar.value;
       let otherBar = document.getElementById('levelSearch');
       let otherBar2 = document.getElementById('attributeSearch');
@@ -175,7 +188,7 @@ function Gifts({ match }) {
       let bar = document.getElementById('attributeSearch');
       let str = bar.value;
       console.log(str)
-      let otherBar = document.getElementById('giftSearch');
+      let otherBar = document.getElementById('creaturesearch');
       let otherBar2 = document.getElementById('levelSearch');
       if (otherBar.value !== '' && otherCalled !== 'yes') {
         otherBar.value = '';
@@ -199,7 +212,7 @@ function Gifts({ match }) {
           hr.style.display = 'block';
         }
       }
-      else { // only show gifts that have attributes that include str
+      else { // only show creatures that have attributes that include str
         let blocks = document.getElementsByClassName('levelBlock');
         let needHR = false;
         for (let block of blocks) {
@@ -242,12 +255,12 @@ function Gifts({ match }) {
                   </span>
                   <br/>
                   <br/>
-                  <label className="searchLabel" htmlFor="giftSearch">Search Gift:</label>            
-                  <input className ="searchBar" type="search" id="giftSearch" name="giftSearch" onChange={search.bind(null, false)} placeholder="Gift" tabIndex={2} title="Searches for a Gift name starting with your text, add a * to the front to search for Gifts that include your text within their name. (eg. *oc finds Shock)"></input>      
+                  <label className="searchLabel" htmlFor="creaturesearch">Search creature:</label>            
+                  <input className ="searchBar" type="search" id="creaturesearch" name="creaturesearch" onChange={search.bind(null, false)} placeholder="creature" tabIndex={2} title="Searches for a creature name starting with your text, add a * to the front to search for creatures that include your text within their name. (eg. *oc finds Shock)"></input>      
                   <br/>
                   <br/>
                   <label className="searchLabel" htmlFor="attributeSearch">Search Attributes:</label>            
-                  <input className ="searchBar" type="search" id="attributeSearch" name="attributeSearch" onChange={attributes} placeholder="[Attribute]" tabIndex={2} title="Searches for Gifts with any attribute that include your text within the attribute name. Add a + between attributes to narrow the search to match multiple attributes. (eg. Ranged+Action)"></input>        
+                  <input className ="searchBar" type="search" id="attributeSearch" name="attributeSearch" onChange={attributes} placeholder="[Attribute]" tabIndex={2} title="Searches for creatures with any attribute that include your text within the attribute name. Add a + between attributes to narrow the search to match multiple attributes. (eg. Ranged+Action)"></input>        
                 </p> 
                   
     }
@@ -258,25 +271,28 @@ function Gifts({ match }) {
                     <label className="searchLabel" htmlFor="levelSearch">Filter Level:</label>
                     <input className ="searchBar" type="search" id="levelSearch" name="levelSearch" onChange={filter} placeholder="G#" tabIndex={1}></input>
                   </span>
-                  <label className="searchLabel" htmlFor="giftSearch">Search Gifts:</label>            
-                  <input className ="searchBar" type="search" id="giftSearch" name="giftSearch" onChange={search} placeholder="Gift" tabIndex={2} title="Searches for a Gift name starting with your text, add a * to the front to search for Gifts that include your text within their name. (eg. *oc finds Shock)"></input>  
+                  <label className="searchLabel" htmlFor="creaturesearch">Search creatures:</label>            
+                  <input className ="searchBar" type="search" id="creaturesearch" name="creaturesearch" onChange={search} placeholder="creature" tabIndex={2} title="Searches for a creature name starting with your text, add a * to the front to search for creatures that include your text within their name. (eg. *oc finds Shock)"></input>  
                   <label className="searchLabel" htmlFor="attributeSearch">Search Attributes:</label>            
-                  <input className ="searchBar" type="search" id="attributeSearch" name="attributeSearch" onChange={attributes} placeholder="[Attribute]" tabIndex={2} title="Searches for Gifts with any attribute that include your text within the attribute name. Add a + between attributes to narrow the search to match multiple attributes. (eg. Ranged+Action)"></input>            
+                  <input className ="searchBar" type="search" id="attributeSearch" name="attributeSearch" onChange={attributes} placeholder="[Attribute]" tabIndex={2} title="Searches for creatures with any attribute that include your text within the attribute name. Add a + between attributes to narrow the search to match multiple attributes. (eg. Ranged+Action)"></input>            
                 </span>
     }
-    let {name} = require(`./sources/${match.params.s}`).default;
-    console.log(name)
     return (
       <div className="content">
         <div className="content-head">
-          {/* <h1>{match.params.s.toUpperCase()}</h1> */}
-          <h1>{name} Gifts</h1>
+          <h1>{cType.name} Creatures</h1>
         </div>
-        <div className={"content-body search-list"}>
-          <br/>
-          {filterEl}
-          <br/>
-          {content}
+        <div className="content-body">
+          <div className="description">
+            {(cType.image)?<img src={cType.image} alt={cType.name+" Profile Picture"} className="descPic"/>:null}
+            {cType.description}
+          </div>
+          <div className="search-list">
+            <br/>
+            {filterEl}
+            <br/>
+            {content}
+          </div>
         </div>  
       </div>
     ); 
@@ -285,14 +301,14 @@ function Gifts({ match }) {
     return (
       <div className="content">
         <div className="content-head">
-          <h1>GIFTS</h1>
+          <h1>Creatures</h1>
         </div>
         <div className="content-body">
-          No gifts found for this page!
+          No creatures found for this page!
         </div>  
       </div>
     ); 
   }
 }
 
-export default Gifts;
+export default Creatures;
