@@ -48,7 +48,7 @@ creatures:[
       name: 'Bob',
       description: 'Oh no its bob',
       image: null,
-      attributes: '[Bob] [Human]',
+      attributes: '[Bob] [Human]', // arbitrary, used for searching
       level: 2,
       stats: {
         'life': 10,

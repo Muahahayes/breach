@@ -251,8 +251,8 @@ function Creatures({ match }) {
                   </span>
                   <br/>
                   <br/>
-                  <label className="searchLabel" htmlFor="creaturesearch">Search creature:</label>            
-                  <input className ="searchBar" type="search" id="creaturesearch" name="creaturesearch" onChange={search.bind(null, false)} placeholder="creature" tabIndex={2} title="Searches for a creature name starting with your text, add a * to the front to search for creatures that include your text within their name. (eg. *oc finds Shock)"></input>      
+                  <label className="searchLabel" htmlFor="creaturesearch">Search Creatures:</label>            
+                  <input className ="searchBar" type="search" id="creaturesearch" name="creaturesearch" onChange={search.bind(null, false)} placeholder="Creature" tabIndex={2} title="Searches for a creature name starting with your text, add a * to the front to search for creatures that include your text within their name. (eg. *oc finds Shock)"></input>      
                   <br/>
                   <br/>
                   <label className="searchLabel" htmlFor="attributeSearch">Search Attributes:</label>            
@@ -267,8 +267,8 @@ function Creatures({ match }) {
                     <label className="searchLabel" htmlFor="levelSearch">Filter Level:</label>
                     <input className ="searchBar" type="search" id="levelSearch" name="levelSearch" onChange={filter} placeholder="G#" tabIndex={1}></input>
                   </span>
-                  <label className="searchLabel" htmlFor="creaturesearch">Search creatures:</label>            
-                  <input className ="searchBar" type="search" id="creaturesearch" name="creaturesearch" onChange={search} placeholder="creature" tabIndex={2} title="Searches for a creature name starting with your text, add a * to the front to search for creatures that include your text within their name. (eg. *oc finds Shock)"></input>  
+                  <label className="searchLabel" htmlFor="creaturesearch">Search Creatures:</label>            
+                  <input className ="searchBar" type="search" id="creaturesearch" name="creaturesearch" onChange={search} placeholder="Creature" tabIndex={2} title="Searches for a creature name starting with your text, add a * to the front to search for creatures that include your text within their name. (eg. *oc finds Shock)"></input>  
                   <label className="searchLabel" htmlFor="attributeSearch">Search Attributes:</label>            
                   <input className ="searchBar" type="search" id="attributeSearch" name="attributeSearch" onChange={attributes} placeholder="[Attribute]" tabIndex={2} title="Searches for creatures with any attribute that include your text within the attribute name. Add a + between attributes to narrow the search to match multiple attributes. (eg. Ranged+Action)"></input>            
                 </span>

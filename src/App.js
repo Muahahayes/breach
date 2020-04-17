@@ -53,29 +53,27 @@ function App() {
 
 //  TODO:
 /*  
-    Possibly add utility powers to the Source's as Source Proficiencies
-    Go through the ideas part at the bottom of the google doc and add them into the main text
-    Go back over the rules and iterate/refine them
-
-    Make a rough draft of a character sheet
+    Daily: Add 2 Gifts and 2 Lesser Gifts
+    Daily: Add 2 Creatures
+    Ryan is now writing content, up to him what he prioritizes while I get things working in the background
+    
     Equipment
     finish Exploration.js
-    Start adding pages of content so there's enough for a playtest campaign this summer?
-    Go back over the rules and iterate/refine them    
-
-    Make and populate beastiary, put link to it in the smaller navbar (playtest ready at this point if *I* GM it)
-    Go back over the rules and iterate/refine them
+    Make a rough draft of a character sheet
+    Start adding pages of content so there's enough for a playtest campaign this summer?    
+    Go back over the rules and iterate/refine them (playtest ready at this point if *I* GM it)
 
     Make GM guide, put link in the smaller navbar
     ***More TODO will show up here making the GM guide***
     Go back over the rules and iterate/refine them
 
-    Make a login system, only allow users to see the book, put login and guidebook links in a smaller navbar above content-head
+    Make a login system, only allow users to see the World and GM books, put login and guidebook links in a smaller navbar above content-head
     Make a character sheet wizard, saves a sheet to a user
     Make roll calculator, pulls a character from the user
+    Reading the player book is *free* but the user tools require an account login
     (Now in ALPHA state, playtestable for other GMs)
 
-    Work with Ryan on an intro campaign and Lore
+    Work with Ryan on an intro campaign
     While Ryan writes stuff, work on refactoring the site with a good CSS
     refactor the site to have content pages load from a separate site I make as an API, so all the content doesn't load in one chunk at the start
     Go through playtesting feedback and iterate/refine rules and content, after this point no more system-wide or core-rule changes can be made

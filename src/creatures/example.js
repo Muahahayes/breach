@@ -9,7 +9,7 @@ creatures:[
       name: '',
       description: '',
       image: '',
-      attributes: '',
+      attributes: '', // arbitrary, used for searching
       level: 0,
       stats: {
         'life': 0,
