@@ -6,7 +6,6 @@ export default {
   proficiencies: [
     [
       "Thick Skin: Increase your max survival by 5. (Repeatable up to G)",
-      "Coiled Muscle: Increases your jump height. (Repeatable 2ft, 4ft, 6ft)",
       "Retractable Canines: Your canine teeth are sharp and can extend to twice their length.",
       "Tail: If you did not already have one, gain a tail of your animal choice. You gain +1 to Agility checks."
     ],
@@ -20,7 +19,12 @@ export default {
     ]
   ],
   lesser: [
-    "Beast Rapport: [Minor] [Self] For 1 hour you release pheromones which calm beasts who are aware of you. While this effect is active, you may make Charm attempts with beasts with a Will less than 0 which you and your allies have not harmed. On a successful Charm attempt, the beast will not act violently towards you until this effect ends. Causes G Strain.",
-    "Venom Resistance: [Minor] [Self] For 1 hour your stomach becomes hyper-vigilant against Poisons. You may taste and consume Poisoned food without gaining any Poison effects, and you are aware of if the food is Poisoned when you taste it. Causes 1 Strain."
+    [
+      "Beast Rapport: [Minor] [Self] For 1 hour you release pheromones which calm beasts who are aware of you. While this effect is active, you may make Charm attempts with beasts with a Will less than 0 which you and your allies have not harmed. On a successful Charm attempt, the beast will not act violently towards you until this effect ends. Causes 1 Strain.",
+      "Venom Resistance: [Minor] [Self] For 1 hour your stomach becomes hyper-vigilant against Poisons. You may taste and consume Poisoned food without gaining any Poison effects, and you are aware of if the food is Poisoned when you taste it. Causes 1 Strain."
+    ],
+    [
+      "Coiled Muscle: [Minor] [Self] For 10 min the muscles in your legs coil and flex, increasing your jump height by 5 ft. Causes 1 strain."
+    ]
   ]
 }

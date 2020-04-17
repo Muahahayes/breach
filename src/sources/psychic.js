@@ -2,11 +2,12 @@ export default {
   name: "Psychic",
   slogan: "The Powers of the Mind",
   description: "Psychics are an established class of 'better' creatures with a genetic advantage within the urban society, they developed about 200 years ago early on in the industrial boom. Using their unique Aether within themselves, they intuitively feel in tune with the world and can resonate with the Aether around them to impose changes upon it. They created the modern capitalist state by taking advantage of the non-psionic peoples and established themselves as the upper class.",
-  resource: "Psychic Fatigue: When you use any kind of action (even a Free Action) to use a Gift, roll a d20. If you roll lower than [9 + G] (or a natural 1) you fail to contain the energies within your mind causing a Psychic Break. Cancel that Gift's effect and you cannot use any of your Gifts or Lesser Gifts until you fully sleep or take a break. If you are Feared or Stunned you must make a Psychic Fatigue check each turn of the effect's duration.",
+  resource: "Psychic Fatigue: When you use any kind of action (even a Free Action) to use a Gift or Lesser Gift, roll a d20. If you roll lower than [9 + G] (or a natural 1) you fail to contain the energies within your mind causing a Psychic Break. Cancel that Gift's effect and you cannot use any of your Gifts or Lesser Gifts until you fully sleep or take a break. If you are Feared or Stunned you must make a Psychic Fatigue check each turn of the effect's duration.",
   proficiencies: [
     [
       "Mental Fortitude: Subtract 1 from the difficulty of Psychic Fatigue checks (to a minimum of 8). (Repeatable)",
-      "Study: Whenever you level up, you may select 1 Lesser Gift for free without spending a Proficiency."
+      "Study: Whenever you level up, you may select 1 Lesser Gift for free without spending a Proficiency.",
+      "Charismatic: Gain a +G to Charm attempts against persons with a Will less than 2."
     ],
     [
       "Iron Will: Subtract your Will from the difficulty of Psychic Fatigue checks.",
@@ -24,8 +25,16 @@ export default {
     ]
   ],
   lesser: [
-    "Greater Flourish: [Action] [Ranged] For 10 minutes, within 30 ft you may manipulate objects and/or lift objects weighing no more than 5G pounds up to 30 ft in the air. Do not make a Psychic Fatigue check.",
-    "Link: [Minor] [Ranged] You can initiate Psychic Links with other persons as a Minor Action. While Linked you may communicate silently with one another using any Language you share. If you move further than 100 ft apart the Link is broken. Lasts 1 hour, the effect ends prematurely if you enter a Psychic Break.",
-    "Psi Network: [Free] [Melee] You can tap into the Psi Network of your current city if a Psi Network exists at any Network Crystal, giving you access to information and long range communication."
+    [
+      "Greater Flourish: [Action] [Ranged] For 10 minutes, within 30 ft you may manipulate objects and/or lift objects weighing no more than 5G pounds up to 30 ft in the air. Requires use of your hand. Do not make a Psychic Fatigue check.",
+      "Link: [Minor] [Ranged] You can initiate Psychic Links with other persons as a Minor Action. While Linked you may communicate silently with one another using any Language you share. If you move further than 100 ft apart the Link is broken. Lasts 1 hour, the effect ends prematurely if you enter a Psychic Break.",
+      "Psi Network: [Free] [Touch] You can tap into the Psi Network of your current city if a Psi Network exists at any Network Crystal, giving you access to information and long range communication. Do not make a Psychic Fatigue check."
+    ],
+    [
+      "Resonance: [Action] [Ranged] For 10 minutes you open your senses to feel the minds of creature's within 30 ft. Ignore the effects of lighting conditions for Search and Awareness checks against creatures with a Will of at least 0. You may make these checks against creature's out of your line of sight. This effect ends prematurely if you enter a Psychic Break."
+    ],
+    [
+      "Hypnotic: [Action] [Melee] Touch the forehead of a person with no Source and a Will under 2 who you have not recently harmed. Make a Charm attempt against the person, on a success gain twice the normal Regard."
+    ]
   ]
 }
