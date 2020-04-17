@@ -174,7 +174,6 @@ function Gifts({ match }) {
     function attributes(otherCalled) {
       let bar = document.getElementById('attributeSearch');
       let str = bar.value;
-      console.log(str)
       let otherBar = document.getElementById('giftSearch');
       let otherBar2 = document.getElementById('levelSearch');
       if (otherBar.value !== '' && otherCalled !== 'yes') {
@@ -265,7 +264,6 @@ function Gifts({ match }) {
                 </span>
     }
     let {name} = require(`./sources/${match.params.s}`).default;
-    console.log(name)
     return (
       <div className="content">
         <div className="content-head">

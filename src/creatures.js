@@ -9,7 +9,7 @@ function Creatures({ match }) {
     let creature;
     let cType;
     try {
-      cType = require(`./creatures/types/${match.params.t}`).default;
+      cType = require(`./creatures/${match.params.t}`).default.creatures;
     }
     catch (e) {
       return (
@@ -61,16 +61,13 @@ function Creatures({ match }) {
   }
   else if (match && match.params && match.params.t) { // source, render all creatures
     let cType = require(`./creatures/${match.params.t}`).default;
-    let creatures = require(`./creatures/types/${match.params.t}`).default;
+    let creatures = cType.creatures;
     let content = [];
-    console.log(creatures)
     for (let level in creatures) {
-      console.log(level)
       let levelContent = [];
       if (level > 0) levelContent.push(<hr className="searchHR"/>);
       levelContent.push(<h2>[{Number(level)+1} G]</h2>);
       for (let creature of creatures[level]) {
-        console.log(creature)
         if (creature.name) {
           levelContent.push(<div className={`searchEntry`} id={creature.name}>{renderCreature(creature, match.params.t)}</div>);
         }
@@ -187,7 +184,6 @@ function Creatures({ match }) {
     function attributes(otherCalled) {
       let bar = document.getElementById('attributeSearch');
       let str = bar.value;
-      console.log(str)
       let otherBar = document.getElementById('creaturesearch');
       let otherBar2 = document.getElementById('levelSearch');
       if (otherBar.value !== '' && otherCalled !== 'yes') {
@@ -297,6 +293,31 @@ function Creatures({ match }) {
       </div>
     ); 
   }
+  else if (match && match.params && match.params.b) {
+    let content, name
+    try {
+      let pageJSON = require(`./bestiary.js`).default;
+      name = pageJSON.name;
+      // content = parsePage(pageJSON);
+      content = pageJSON.content;
+    }
+    catch(e) {
+      name = 'Bestiary'
+      content = <p>
+                  The {name} page doesn't exist!
+                </p>
+    }
+    return (
+      <div className="content">
+        <div className="content-head">
+          <h1>{name}</h1>
+        </div>
+        <div className="content-body">
+          {content}
+        </div>
+      </div>
+    );
+  }
   else {
     return (
       <div className="content">
@@ -304,7 +325,7 @@ function Creatures({ match }) {
           <h1>Creatures</h1>
         </div>
         <div className="content-body">
-          No creatures found for this page!
+          No creatures found for this page!!
         </div>  
       </div>
     ); 
