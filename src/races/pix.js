@@ -5,7 +5,7 @@ export default {
   appearance:`They have pointed features and colorful skin of 1-3 gradient hues of pastel tones. They have 4 small thin wings sprouting from their backside which buzz quickly to lift them into the air.`,
   stats:[
     "Physical Build: 1'6\"-2', 10-20lb, 300 years, 2 legs, 2 arms, 4 wings",
-    "Base Stats: Strength -1, Agility 3, Stamina 0, Will 2",
+    "Base Stats: Strength -1, Agility 3, Stamina 0, Will 3",
     "Speed: 1d4",
 		"Creation AP: 3",
 		"Favored Skills: Charm, Mechanics, Cybernetics, Insight, History, Awareness, Hide, Perform, Art",

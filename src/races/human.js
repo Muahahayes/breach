@@ -14,8 +14,8 @@ export default {
     "Languages: Imperial, Any playable race's language"
   ],
   racials:[
-    "Adaptable: You may double the bonus of any Favored Skill for 1 check, once per day.",
+    "Adaptable: You may add G to any Favored Skill for 1 check, once per day.",
     "Cultured: Choose an Urban or Rural background. Urban or Outdoorsman is now a Favored Skill.",
-    "Potential: Once per lifetime, learn a Technique you are within 5 points short of meeting a requirement."
+    "Potential: Once per lifetime, learn a Technique if you are within 5 points short of meeting a requirement."
   ]
 }
