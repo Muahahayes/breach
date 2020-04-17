@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 export default {
   "name": "Races",
   "content": <div>
-    <p>There are many races which now, after much time of racial turmoil that reverberates still to this day, inhabit our modern world alongside humanity. At first, Humans roamed the Earth in search of meaning without much hope of finding lifeforms of relative intelligence or willpower. Any creature with a Will of at least 1, or belongs to a playable race (listed below, or, introduced by your GM), is considered a person and is to be treated as a sentient entity. <br/>
+    <p>There are many races which now, after much time of racial turmoil that reverberates still to this day, inhabit our modern world alongside humanity. At first, Humans roamed the Earth in search of meaning without much hope of finding lifeforms of relative intelligence or willpower. Any creature with a Will of at least 0, or belongs to a playable race (listed below, or, introduced by your GM), is considered a person and is to be treated as a sentient entity. <br/>
     As the world became increasingly globalized and technologically interconnected, unique languages homogenized within each race; resulting in modern races having only one common language (pretty easy, right?). If a person knows a language that another person knows, they may communicate between each other in any available verbal or written forms. With time you will discover that each race has its own unique culture and opinions of other races, examples will be given throughout this section but your GM may replace these descriptions and common interactions entirely using their own discretion or even replace races completely within the format.</p>    
     <p>Each race has a description with this format:</p>
     <ul>
