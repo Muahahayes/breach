@@ -118,8 +118,8 @@ function Nav({ match }) {
         <li><Link style={navStyle} to="/world/lore/world">The World</Link></li>
         </ul>
       </li>
-      <li><Link style={navStyle} to="/world/creatures" id="beast-link" onClick={show.bind(null,'beast')}>Bestiary</Link> <span className="listBtn" id="beast-btn" onClick={toggle.bind(null,'beast')}>▼</span></li>
-      <li id="beast-list" className="list" style={hidden}>
+      <li><Link style={navStyle} to="/world/creatures" id="creatures-link" onClick={show.bind(null,'creatures')}>Creatures</Link> <span className="listBtn" id="creatures-btn" onClick={toggle.bind(null,'creatures')}>▼</span></li>
+      <li id="creatures-list" className="list" style={hidden}>
         <ul>
         <li><Link style={navStyle} to="/world/creatures/humanoid">Humanoids</Link></li>
         </ul>

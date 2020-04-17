@@ -37,12 +37,12 @@ function App() {
           <Route path="/sources/:s/gifts" component={Gifts}/>
           <Route path="/sources/:s" component={Sources}/>          
           <Route path="/gifts/:s/:g" component={Gifts}/>
-          <Route path="/world/creatures" exact component={Bestiary}/>
           <Route path="/world/creatures/:t/:c" component={Creatures}/>
           <Route path="/world/creatures/:t" component={Creatures}/>
-          <Route path="/world/:u/:p" component={Lore}/>
-          <Route path="/world/:p" component={InfoPage}/>
+          <Route path="/world/lore/:p" component={Lore}/>
+          <Route path="/world/:w" component={InfoPage}/>
           <Route path="/rules/:r" component={Rules}/>
+          <Route path="/gm/:g" component={InfoPage}/>
           <Route path="/:p" component={InfoPage}/>
           <Route path="/" exact component={Home}/>
         </Switch>
@@ -87,12 +87,6 @@ function Home() {
   return (
   InfoPage({match:{params:{p:"home"}}})
   );
-}
-
-function Bestiary() {
-  return (
-    Creatures({match:{params:{b:true}}})
-  )
 }
 
 export default App;

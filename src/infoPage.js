@@ -1,11 +1,14 @@
 import React from 'react';
 
 function InfoPage({ match }) {
-  if (match && match.params && match.params.p) {
-    let page = match.params.p;
-    let content, name
+  if (match && match.params && (match.params.p || match.params.w)) {
+    let page = (match.params.p)?match.params.p:match.params.w;
+    let content, name, folder;
+    if (match.params.p) folder = 'pages';
+    else if (match.params.w) folder = 'world';
+    else if (match.params.g) folder = 'gm';
     try {
-      let pageJSON = require(`./pages/${page}.js`).default;
+      let pageJSON = require(`./${folder}/${page}.js`).default;
       name = pageJSON.name;
       // content = parsePage(pageJSON);
       content = pageJSON.content;
