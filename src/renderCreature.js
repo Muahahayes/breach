@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import parseContent from './parseContent';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 
 function renderCreature(creature, cType) {
   if (!cType) { // render full creature on its own page

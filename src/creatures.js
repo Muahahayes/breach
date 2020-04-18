@@ -59,7 +59,7 @@ function Creatures({ match }) {
       );    
     }
   }
-  else if (match && match.params && match.params.t) { // source, render all creatures
+  else if (match && match.params && match.params.t) { // type, render all creatures
     let cType = require(`./creatures/${match.params.t}`).default;
     let creatures = cType.creatures;
     let content = [];
@@ -325,7 +325,7 @@ function Creatures({ match }) {
           <h1>Creatures</h1>
         </div>
         <div className="content-body">
-          No creatures found for this page!!
+          No creatures found for this page!
         </div>  
       </div>
     ); 

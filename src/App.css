@@ -70,7 +70,7 @@ body {
     padding-left: 2%;
     max-width: 97%;
     width: 97%;
-    margin-block-start: 13.5vh;
+    margin-block-start: 14vh;
   }
   table {
     width: 90%;
@@ -265,7 +265,7 @@ body {
 } /* Media: Desktop */
 @media only screen and (max-height:450px) {
   .content-body {
-    margin-block-start: 75px;
+    margin-block-start: 80px;
   }
   .descPic {
     margin-block-start: 20px;

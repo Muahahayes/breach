@@ -61,7 +61,6 @@ function parseRace(raceJSON) {
     let appear = [];
     let stats = [];
     let racials = [];
-    let pic;
     parseContent(raceJSON.description, desc);
     parseContent(raceJSON.appearance, appear);
     parseContent(raceJSON.stats, stats);

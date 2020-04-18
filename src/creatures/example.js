@@ -5,7 +5,7 @@ name: 'name',
 description: <p>blahblah</p>,
 creatures:[
   [// 1G
-    { // select all this to copy paste, and if you highlight it all and ctrl+/ it will comment/uncomment it all
+    { // select all this to copy paste
       name: '',
       description: '',
       image: '',

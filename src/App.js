@@ -4,6 +4,7 @@ import Nav from './nav';
 import Races from './races';
 import Sources from './sources';
 import Gifts from './gifts';
+import Equipment from './equipment';
 import Rules from './rules';
 import Lore from './lore';
 import Creatures from './creatures';
@@ -37,6 +38,8 @@ function App() {
           <Route path="/sources/:s/gifts" component={Gifts}/>
           <Route path="/sources/:s" component={Sources}/>          
           <Route path="/gifts/:s/:g" component={Gifts}/>
+          <Route path="/equipment/:t/:e" component={Equipment}/>
+          <Route path="/equipment/:t" component={Equipment}/>
           <Route path="/world/creatures/:t/:c" component={Creatures}/>
           <Route path="/world/creatures/:t" component={Creatures}/>
           <Route path="/world/lore/:p" component={Lore}/>
