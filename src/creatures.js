@@ -296,13 +296,13 @@ function Creatures({ match }) {
   else if (match && match.params && match.params.b) {
     let content, name
     try {
-      let pageJSON = require(`./bestiary.js`).default;
+      let pageJSON = require(`./world/creatures.js`).default;
       name = pageJSON.name;
       // content = parsePage(pageJSON);
       content = pageJSON.content;
     }
     catch(e) {
-      name = 'Bestiary'
+      name = 'Creatures'
       content = <p>
                   The {name} page doesn't exist!
                 </p>
