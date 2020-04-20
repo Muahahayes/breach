@@ -457,6 +457,10 @@ tr:first-child {
   color: rgb(255,255,255);
 }
 
+.tableDiv {
+  overflow-x: auto;
+}
+
 .blankTable tbody{
   justify-self: left;
 }

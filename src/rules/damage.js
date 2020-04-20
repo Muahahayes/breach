@@ -49,39 +49,45 @@ content: <div>
   <h3>Full Injury Tables:</h3>
   <p>While playing the Full Ruleset, roll 2d10. Apply the first d10 to the Severity table. Apply the second d10 to the Body or Mind tables for Physical/Elemental or Mental damage types respectively. <br/>
     If the attack that caused the Injury was a Critical Hit and you roll a 6 or higher on the Severity Table, treat this as a Disabling Injury. The Injury cannot be cured by a Full Sleep or Powers/Techniques unless it specifically heals Disability.</p>
-  <table>
-    <caption>Severity Table</caption>
-    <tbody> 
-    <tr><td>d10</td><td>Severity</td><td>Effect</td></tr>
-    <tr><td>1-2</td><td>Mild</td><td>No Effect</td></tr>
-    <tr><td>3-5</td><td>Moderate</td><td>Read Body/Mind</td></tr>
-    <tr><td>6-8</td><td>Heavy</td><td>Read Body/Mind</td></tr>
-    <tr><td>9-10</td><td>Extreme</td><td>Read Body/Mind</td></tr>
-    </tbody>
-  </table>
-  <div className="injuryDiv">
-    <table className="injuryTable">
-      <caption>Body Injuries</caption>
+  <div className="tableDiv">
+    <table>
+      <caption>Severity Table</caption>
       <tbody> 
-      <tr><td>d10</td><td>Severity</td><td>Moderate</td><td>Heavy</td><td>Extreme</td></tr>
-      <tr><td>1-2</td><td>Legs</td><td>-5ft speed</td><td>Moderate and always Prone</td><td>Heavy and can't use Movement Action</td></tr>
-      <tr><td>3-4</td><td>Lower Body</td><td>-1 Avoidance</td><td>-G Avoidance</td><td>Heavy and 1/2 Carry Weight</td></tr>
-      <tr><td>5-6</td><td>Arms</td><td>-1 Attack Rolls</td><td>-G Attack Rolls</td><td>Heavy and cannot use 1 arm</td></tr>
-      <tr><td>7-9</td><td>Upper Body</td><td>-G Survival</td><td>Moderate and lose 1 additional Life</td><td>Heavy but -1/2 Survival instead of -G</td></tr>
-      <tr><td>10</td><td>Head</td><td>Unfavored -1 All Rolls (up to -3)</td><td>Moderate and roll a Moderate effect from the Mental Damage injury table</td><td>Heavy and Unconscious until this Injury is cured</td></tr>
+      <tr><td>d10</td><td>Severity</td><td>Effect</td></tr>
+      <tr><td>1-2</td><td>Mild</td><td>No Effect</td></tr>
+      <tr><td>3-5</td><td>Moderate</td><td>Read Body/Mind</td></tr>
+      <tr><td>6-8</td><td>Heavy</td><td>Read Body/Mind</td></tr>
+      <tr><td>9-10</td><td>Extreme</td><td>Read Body/Mind</td></tr>
       </tbody>
     </table>
-    <table className="injuryTable">
-      <caption>Mind Injuries</caption>
-      <tbody> 
-      <tr><td>d10</td><td>Severity</td><td>Moderate</td><td>Heavy</td><td>Extreme</td></tr>
-      <tr><td>1-2</td><td>Memory</td><td>On your next turn you cannot use an action on any creature which is not in line of sight at the start of your turn</td><td>Give your character sheet to the GM, you cannot look at the sheet until this injury is cured</td><td>Heavy and any time you try to recall a name, location, or event roll a d4, on a 1 you don't remember any of it and on a 2 or 3 you forget some meaningful detail</td></tr>
-      <tr><td>3-4</td><td>Balance</td><td>-1 Avoidance</td><td>-G Avoidance</td><td>Heavy and 1/2 Carry Weight</td></tr>
-      <tr><td>5-6</td><td>Sensory</td><td>-1 Attack Rolls</td><td>-G Attack Rolls</td><td>Heavy and cannot use 1 arm</td></tr>
-      <tr><td>7-9</td><td>Emotional</td><td>-G Max Survival</td><td>Moderate and lose 1 additional Life</td><td>Heavy but -1/2 Survival instead of -G</td></tr>
-      <tr><td>10</td><td>Cognitive</td><td>Unfavored -1 All Rolls (up to -3)</td><td>Moderate and roll a Moderate effect from the Mental Damage injury table</td><td>Heavy and Asleep until this Injury is cured</td></tr>
-      </tbody>
-    </table>
+  </div>
+  <div className="tableDiv">
+    <div className="injuryDiv">
+      <table className="injuryTable">
+        <caption>Body Injuries</caption>
+        <tbody> 
+        <tr><td>d10</td><td>Severity</td><td>Moderate</td><td>Heavy</td><td>Extreme</td></tr>
+        <tr><td>1-2</td><td>Legs</td><td>-5ft speed</td><td>Moderate and always Prone</td><td>Heavy and can't use Movement Action</td></tr>
+        <tr><td>3-4</td><td>Lower Body</td><td>-1 Avoidance</td><td>-G Avoidance</td><td>Heavy and 1/2 Carry Weight</td></tr>
+        <tr><td>5-6</td><td>Arms</td><td>-1 Attack Rolls</td><td>-G Attack Rolls</td><td>Heavy and cannot use 1 arm</td></tr>
+        <tr><td>7-9</td><td>Upper Body</td><td>-G Survival</td><td>Moderate and lose 1 additional Life</td><td>Heavy but -1/2 Survival instead of -G</td></tr>
+        <tr><td>10</td><td>Head</td><td>Unfavored -1 All Rolls (up to -3)</td><td>Moderate and roll a Moderate effect from the Mental Damage injury table</td><td>Heavy and Unconscious until this Injury is cured</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div className="tableDiv">
+      <table className="injuryTable">
+        <caption>Mind Injuries</caption>
+        <tbody> 
+        <tr><td>d10</td><td>Severity</td><td>Moderate</td><td>Heavy</td><td>Extreme</td></tr>
+        <tr><td>1-2</td><td>Memory</td><td>On your next turn you cannot use an action on any creature which is not in line of sight at the start of your turn</td><td>Give your character sheet to the GM, you cannot look at the sheet until this injury is cured</td><td>Heavy and any time you try to recall a name, location, or event roll a d4, on a 1 you don't remember any of it and on a 2 or 3 you forget some meaningful detail</td></tr>
+        <tr><td>3-4</td><td>Balance</td><td>-1 Avoidance</td><td>-G Avoidance</td><td>Heavy and 1/2 Carry Weight</td></tr>
+        <tr><td>5-6</td><td>Sensory</td><td>-1 Attack Rolls</td><td>-G Attack Rolls</td><td>Heavy and cannot use 1 arm</td></tr>
+        <tr><td>7-9</td><td>Emotional</td><td>-G Max Survival</td><td>Moderate and lose 1 additional Life</td><td>Heavy but -1/2 Survival instead of -G</td></tr>
+        <tr><td>10</td><td>Cognitive</td><td>Unfavored -1 All Rolls (up to -3)</td><td>Moderate and roll a Moderate effect from the Mental Damage injury table</td><td>Heavy and Asleep until this Injury is cured</td></tr>
+        </tbody>
+      </table>
+    </div>
   </div>
 </div>
 }
