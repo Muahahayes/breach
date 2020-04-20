@@ -75,7 +75,7 @@ function Equipment({match}) {
     }
 
     let keyRow = [];
-    keyRow.push(<td>Name</td>)
+    keyRow.push(<td style={{width:'35%'}}>Name</td>)
     for (let stat of eType.stats) {
       let statName = stat[0].toUpperCase();
       statName += stat.slice(1);
@@ -102,10 +102,12 @@ function Equipment({match}) {
             {eType.description}
           </div>
           <br/>
+          <div className="tableDiv">
           <table style={{width:'80%', marginLeft:'10%'}}>
             <tr>{keyRow}</tr>
             {equipmentRows}
           </table>
+          </div>
         </div>
       </div>
     );
