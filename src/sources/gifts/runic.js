@@ -2,8 +2,11 @@ export default [
   [ // 1G
     {
       name: "Engraved Weapon",
-      attributes: "[Action] [Self]",
-      description: "By pressing your finger against an object you may imbue it with an Engraving of Empowerment and attune it with an Engraving upon your body. While you are holding the object, when you make a basic attack with the object you may add 1d4 to the damage result. You may only Engrave one object at a time, and may only Engrave an object once per day. You may remove the Engraving at any time as a Free Action. Fade points on this Engraving apply to any Attack roll with the object if you intend to use the effects of this Gift.",
+      attributes: "[Action] [Touch]",
+      description: "By pressing your finger against an object you may imbue it with an Engraving of Empowerment and attune it with an Engraving upon your body. " 
+      + "While you are holding the object, when you make a basic attack with the object you may add 1d4 to the damage result. "
+      + "You may only Engrave one object at a time, and may only Engrave an object once per day. You may remove the Engraving at any time as a Free Action. "
+      + "Fade points on this Engraving apply to any Attack roll with the object if you intend to use the effects of this Gift. Lasts for 1 day.",
       proficiencies: [
         [
           "Empowered: Add your Will to the damage given by this Gift.",
@@ -38,8 +41,9 @@ export default [
     },
     {
       name: "Ward",
-      attributes: "[Action] [Melee]",
-      description: "By pressing your finger against an object you imbue it with an Engraving of Warding and attune it to an Engraving upon your body. The effect lasts 1 hour. You are aware of the object's location and whoever is touching it. You may only have 1 Ward active at a time.",
+      attributes: "[Action] [Touch]",
+      description: "By pressing your finger against an object you imbue it with an Engraving of Warding and attune it to an Engraving upon your body. The effect lasts 1 hour. "
+      +"You are aware of the object's location and whoever is touching it. You may only have 1 Ward active at a time.",
       proficiencies: [
         [
           "Hinderance: [Activate] When you create the Ward, you may give it an Hindering effect. All creatures within 10 ft of the Ward receive a -G to their Speed rolls after determining turn order.",
@@ -60,14 +64,62 @@ export default [
           "Renewing: Whenever a creature effected by Vigor rolls a Speed value higher than they could have without the Vigor effect, they heal 1d6 damage."
         ]
       ]
+    },
+    {
+      name: "Imbued Sight",
+      attributes: "[Passive] [Self]",
+      description: "Engravings upon your eyes grant you enhanced sight. Gain a +G to Search checks vs the Hide Skill. Only 1 proficiency may be active per eye at one time. "
+      +"You must make a choice for each eye when you Awaken this Engraving, and that choice lasts until this Engraving becomes Suppressed.",
+      proficiencies: [
+        [],
+        [
+          "Heat Sight: You can now see heat through most solid objects which are less than 5 ft thick.",
+          "Zoom: You may reduce your periferal vision, but double your view distance. Your ranged attacks gain +G to the attack roll if you attacked that target on the previous turn."
+        ],
+        [
+          "Dark Sight: You can see in any lighting condition that is not Pitch Black as if it were Medium.",
+          "Alert: [React] [Activate] You can track moving targets more easily. You may nullify any effect active on the target of your Ranged Attacks that reduces your attack roll as an Activation Action. "
+          +"If a creature moves into and then out of your field of view in one movement, you may do a basic ranged attack against it as a React Action."
+        ],
+        [
+          "Piercing Sight: Your Heat Sight may now see the normal appearance, not just heat.",
+          "Third Eye: You gain an additional eye which may be placed anywhere on your body. This proficiency does not count towards your limit, but this eye may not gain other proficiencies. "
+          +"If this eye can see a threat, it cannot flank you."
+        ]
+      ]
     }
-  ] // 1G
+  ], // 1G
+  [ // 2G
+    {
+      name: "Imbued Projection",
+      attributes: "[Action] [Touch]",
+      description: "By pressing your finger against a Projection Plating unit, you imbue it with an Engraving of Protection and attune it with an Engraving upon your body. "
+      +"Increase the Shielding granted by the Projection Plating by G. Lasts 1 hour.",
+      proficiencies: [
+        [],
+        [
+          "Empowered: Add your Will to the Shielding granted.",
+          "Protection: Whenever the user of the Projection Plating loses 1 Life they may spend their React to roll a [d20 - Fade] vs 10. "
+          +"On a success, reboot the Projection Plating with half its usual effect. Causes 1 Fade."
+        ],
+        [
+          "Deflection: While their Projection Plating is active, increase the effect of their Deflector by 2.",
+          "Reactive: Protection no longer spends their React action."
+        ],
+        [
+          "Repelling: While their Projection Plating is active, increase their Avoidance by 1.",
+          "Vigilant Deflection: Deflection is active even when their Projection Plating is not active."
+        ]
+      ]
+    }
+  ] // 2G
 ]
-// {
-//   name: "",
-//   attributes: "",
-//   description: "",
-//   proficiencies: [
-//    
-//   ]
-// }
+/*
+{
+  name: "",
+  attributes: "",
+  description: "",
+  proficiencies: [
+  ]
+}
+*/

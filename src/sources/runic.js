@@ -9,12 +9,13 @@ export default {
       "Study: Whenever you level up, you may select 1 Lesser Gift for free without spending a Proficiency."
     ],
     [
-      "Energized: While a Gift has 0 Fade points, add +1 to any damage it deals.",
-      "Proficient: When you level up, you may select 4 Gifts instead of 3."
+      "Energized: While a Gift has 0 Fade points, add +1 to any damage it deals."
+      
     ],
     [
       "Greater Energized: Increase Energized to +G.",
-      "Receptive: Gain +G to any healing you receive from a Cosmic or Runic Gift."
+      "Receptive: Gain +G to any healing you receive from a Cosmic or Runic Gift.",
+      "Proficient: When you level up, you may select 4 Gifts instead of 3. At least 1 Gift must be below 3G."
     ]
   ],
   lesser: [
