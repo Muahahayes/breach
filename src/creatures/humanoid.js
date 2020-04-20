@@ -9,7 +9,7 @@ creatures:[
       name: 'Lesser Goblin',
       description: 'Angry little gobbo Angry little gobbo Angry little gobbo Angry little gobbo Angry little gobbo Angry little gobbo Angry little gobbo Angry little gobbo Angry little gobbo Angry little gobbo Angry little gobbo Angry little gobbo Angry little gobbo Angry little gobbo Angry little gobbo Angry little gobbo Angry little gobbo Angry little gobbo Angry little gobbo ',
       image:'https://cdn.discordapp.com/attachments/575187645601153024/700477642364944464/ugly-goblin-260nw-715354072.png',
-      attributes: '[Green] [Smelly]',
+      attributes: '[Green] [Smelly] [Biological]',
       level: 1,
       stats: {
         'life': 2,
@@ -48,7 +48,7 @@ creatures:[
       name: 'Bob',
       description: 'Oh no its bob',
       image: null,
-      attributes: '[Bob] [Human]', // arbitrary, used for searching
+      attributes: '[Bob] [Human] [Biological]', // arbitrary, used for searching
       level: 2,
       stats: {
         'life': 10,
