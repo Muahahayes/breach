@@ -51,7 +51,17 @@ export default [
         ]
       ]
     }
-  ] // 1G
+  ], // 1G
+  [// 2G
+    {
+      name: "Dark Shot",
+      attributes: "[Action] [Ranged]",
+      description: "Use a Ranged Weapon to make a basic Ranged Weapon attack. Add 1d4 Darkness damage to the attack. Costs 1 Bloodlust.",
+      proficiencies: [
+        
+      ]
+    }
+  ]// 2G
 ]
 // {
 //   name: "",
