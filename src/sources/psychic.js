@@ -27,7 +27,7 @@ export default {
   lesser: [
     [
       "Greater Flourish: [Action] [Ranged] For 10 minutes, within 30 ft you may manipulate objects and/or lift objects weighing no more than 5G pounds up to 30 ft in the air. Requires use of your hand. Do not make a Psychic Fatigue check.",
-      "Link: [Minor] [Ranged] You can initiate Psychic Links with other persons as a Minor Action. While Linked you may communicate silently with one another using any Language you share. If you move further than 100 ft apart the Link is broken. Lasts 1 hour, the effect ends prematurely if you enter a Psychic Break.",
+      "Link: [Action] [Ranged] You can initiate Psychic Links with other persons as an Action. While Linked you may communicate silently with one another using any Language you share. If you move further than 100 ft apart the Link is broken. Lasts 1 hour, the effect ends prematurely if you enter a Psychic Break.",
       "Psi Network: [Free] [Touch] You can tap into the Psi Network of your current city if a Psi Network exists at any Network Crystal, giving you access to information and long range communication. Do not make a Psychic Fatigue check."
     ],
     [

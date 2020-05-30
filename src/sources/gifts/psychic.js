@@ -21,7 +21,7 @@ export default [
           "Shout: [Activate] Instead of dealing damage or other effects, as an Activation Action you may inflict Stun on every target hit for 1 turn. Roll an additional Psychic Fatigue check for each target hit. You do not regain this Activation Action on your next turn."
         ],
         [
-          "Echo: As a Minor Action you may do a second Psi Burst, this second use must not use the same status effect as the first but may use your Activation Action a second time.",
+          "Echo: [Action] As an Action you may do a second Psi Burst, this second use must not use the same status effect as the first but may use your Activation Action a second time.",
           "Telepathic: You may roll your attack vs their Armor + Will instead, this Power deals Psychic damage instead of Kinetic when used this way." 
         ],
         [
@@ -96,8 +96,8 @@ export default [
     },
     {
       name: "Pyrokinesis",
-      attributes: "[Action] [Minor] [Ranged]",
-      description: "As a Minor Action you may either snuff out a torch sized flame within 10 ft, or ignite a small flame in your hand which you may hold for up to 10 minutes or throw up to 10ft away. If you throw the flame, it must land on a flammable surface or it will snuff out. As a Full Action you may ignite a flame which quickly grows and fans out from your hand in a 10 ft cone in front of you. Every creature within the area must roll a d20 + Athletics vs Power to avoid the fire. On a Success they avoid being hit. Deal 1d4 Fire damage to every creature that Fails.",
+      attributes: "[Action] [Ranged]",
+      description: "As an Action you may either snuff out a torch sized flame within 10 ft, or ignite a small flame in your hand which you may hold for up to 10 minutes or throw up to 10ft away. If you throw the flame, it must land on a flammable surface or it will snuff out. As a Full Action you may ignite a flame which quickly grows and fans out from your hand in a 10 ft cone in front of you. Every creature within the area must roll a d20 + Athletics vs Power to avoid the fire. On a Success they avoid being hit. Deal 1d4 Fire damage to every creature that Fails.",
       proficiencies: [
         [
           "Empowered: Add your Will to any damage done by Pyrokinesis.",
@@ -107,13 +107,13 @@ export default [
           "Blaze: [Action] As a Full Action, you ignite a streak of fire that shoots out in a straight line. Make a ranged Power attack against a creature you can see within 30 ft. On a hit deal 1d8 Fire damage.",
           "Heat: Increase the damage of Pyrokinesis' Full Action attack to 1d6.",
           "Warmth: [Free] You may produce a radiant heat at will, warming the area around you by 10 F within 10 ft. Lasts as long as desired. This effect is disabled if you enter Psychic Exhaustion.",
-          "Manipulation: [Minor] As a Minor Action you gather the fire within a 5 ft radius you can see within 10 ft and may move it up to 20 ft in any direction. Any creature within the fire's destination must roll a d20 + Athletics vs Power to avoid the fire, On a Success they avoid being hit. Deal 1d4 Fire damage to every creature that Fails."
+          "Manipulation: [Action] As an Action you gather the fire within a 5 ft radius you can see within 10 ft and may move it up to 20 ft in any direction. Any creature within the fire's destination must roll a d20 + Athletics vs Power to avoid the fire, On a Success they avoid being hit. Deal 1d4 Fire damage to every creature that Fails."
         ],
         [
           "Ignition: [Activate] Whenever one or more creatures Hard Fail a check to avoid fire from Pyrokinesis, you may spend an Activation Action to apply a Burn to the creatures for 2 turns which deals 1d4 Fire damage.",
-          "Reach: Your base Pyrokinesis Minor Action can snuff or throw flames up to 20 ft away, your base Pyrokinesis Full Action effects a 15 ft cone, and your Manipulation proficiency can move fire up to 30 ft.",
+          "Reach: Your base Pyrokinesis Action can snuff or throw flames up to 20 ft away, your base Pyrokinesis Full Action effects a 15 ft cone, and your Manipulation proficiency can move fire up to 30 ft.",
           "Impact: Increase the damage of the base Pyrokinesis Full Action and Manipulation proficiency to 1d6, and increase the damage of Blaze to 1d10.",
-          "Flash: [Minor] As a Full Action you may release a spark which briefly shines a bright light in a 50 ft radius. All creature's receive a -1 Unfavored on their Stealth and Hide checks until the end of the next Round."        
+          "Flash: [Action] As a Full Action you may release a spark which briefly shines a bright light in a 50 ft radius. All creature's receive a -1 Unfavored on their Stealth and Hide checks until the end of the next Round."        
         ],
         [
           "Kindling: You may activate Ignition on Soft Fails. The Burn now deals 1d6 damage over 3 turns.",
@@ -141,7 +141,7 @@ export default [
         [
           "Prophetic: You may store a Forecast roll 2 additional times per full sleep, but may only store one roll at a time.",
           "Clairvoyant: You may store a second Foresight roll at a time.",
-          "Premonition: As a Minor Action you may roll a Speed check, at the start of any round in the current combat you may use this result instead of rolling a Speed check, this uses up the Premonition result. You may store one Premonition result at one time.",
+          "Premonition: As an Action you may roll a Speed check, at the start of any round in the current combat you may use this result instead of rolling a Speed check, this uses up the Premonition result. You may store one Premonition result at one time.",
           "Clarity: [Free Action] When rolling any d20 (even a Skill check not affected by Foresight) you may substitute it with a d10+10 (Once per day). Rolling a 1 or a 10 on this d10 does not count as 'natural'.",
           "Inspiration: When using the Clarity proficiency, if the d20 being substituted was from a Foresight triggering Skill check, you may choose to either add your Will to the result, or this roll does not count towards Clarity's once per day limit (But once this limit has been used, Inspiration can not trigger)."
         ],
@@ -201,7 +201,7 @@ export default [
     {
       name: "Threads",
       attributes: "[Ranged] [Action] [Contract]",
-      description: "Select a creature you are aware of within 50 ft. You reach out with your mind and attach a Thread to the mind of that creature. The creature is made aware of you. You may extend your line of sight to include that creature's line of sight. The creature may, as a Minor Action, make a Will check vs your own Will check to remove the Thread. The Thread lasts for 30 minutes, or until the creature becomes unconscious or the creature moves 1 mile away from you. Up to 1 Thread may be active at one time. A creature may only have 1 Thread attached to it at one time.",
+      description: "Select a creature you are aware of within 50 ft. You reach out with your mind and attach a Thread to the mind of that creature. The creature is made aware of you. You may extend your line of sight to include that creature's line of sight. The creature may, as an Action, make a Will check vs your own Will check to remove the Thread. The Thread lasts for 30 minutes, or until the creature becomes unconscious or the creature moves 1 mile away from you. Up to 1 Thread may be active at one time. A creature may only have 1 Thread attached to it at one time.",
       proficiencies: [
         [],
         [
@@ -210,7 +210,7 @@ export default [
  		      "Duration: Your Threads now last for 1 day."
         ],
         [
-          "Command: When a Thread is attached to a creature which is not a person, you may convert the creature into a minion. On its turn you may make it do a Full or Minor Action and a Movement Action, doing so uses your Activation Action. To convert the creature you must make a Will check vs its own d20 + (G + Will) check. On the first turn of every combat and after a Full Sleep, the creature may attempt to remove the Thread.",
+          "Command: When a Thread is attached to a creature which is not a person, you may convert the creature into a minion. On its turn you may make it do a Full Action and a Movement Action, doing so uses your Activation Action. To convert the creature you must make a Will check vs its own d20 + (G + Will) check. On the first turn of every combat and after a Full Sleep, the creature may attempt to remove the Thread.",
           "Influence: While a person has a Thread attached to them, increase their Regard for you by G."
         ],
         [

@@ -28,7 +28,7 @@ export default [
     },
     {
       name: "Dermal Markings",
-      attributes: "[Minor] [Self]",
+      attributes: "[Action] [Self]",
       description: "Roll a Disruption check. All enemies that can See you must roll an Insight check vs your Disruption. Any that fail are Taunted for 1 turn. Causes G Strain. On a natural 1 for the Disruption check the Strain is doubled.",
       proficiencies: [
         [
@@ -150,7 +150,7 @@ export default [
     {
       name: "Shapeshift",
       attributes: "[Action] [Self]",
-      description: "You may take on the form and appearance of any creature who you have touched and is equal or lesser G than yourself. While in this form your Strength, Agility and Stamina stats match the values of the creature's stats, you can use [1 G] Powers as an additional Activation Action and you gain any Passive physical traits of the creature. When you have lost Life equal to your G during your transformation, or as a Minor Action on your turn voluntarily, you immediately revert to your normal form, negate any remaining damage received, set your Strain to ½ your max Survival, and reset your Survival to its full value. Usable once per Full Sleep.",
+      description: "You may take on the form and appearance of any creature who you have touched and is equal or lesser G than yourself. While in this form your Strength, Agility and Stamina stats match the values of the creature's stats, you can use [1 G] Powers as an additional Activation Action and you gain any Passive physical traits of the creature. When you have lost Life equal to your G during your transformation, or as an Action on your turn voluntarily, you immediately revert to your normal form, negate any remaining damage received, set your Strain to ½ your max Survival, and reset your Survival to its full value. Usable once per Full Sleep.",
       proficiencies: [
         [],
         [
@@ -209,7 +209,7 @@ export default [
     },
     {
       name: "Flurry",
-      attributes: "[Minor] [Melee]",
+      attributes: "[Action] [Melee]",
       description: "After performing a basic attack action, perform a basic attack action on the same target. Causes Strain equal to 10% of your max survival (rounded down, minimum of 1).",
       proficiencies: [
         [],[],

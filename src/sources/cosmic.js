@@ -28,7 +28,7 @@ export default {
   lesser: [
     [
       "Bind: [Action] [Melee] You reach out and touch two objects and press them together. If the two objects are broken pieces of the same original object they are reconnected and repaired, otherwise the two objects are fused together at the point of contact with a mix of the two materials creating a weld with its strength equal to the average hardness of the two materials.",
-      "Illuminate: [Minor] [Touch] You touch an object, imbuing it with Aether. For 1 hour the object emits a soft glow which raises the surroundings from Low to Normal light, or from Dark or Pitch Black to Low Light."
+      "Illuminate: [Action] [Touch] You touch an object, imbuing it with Aether. For 1 hour the object emits a soft glow which raises the surroundings from Low to Normal light, or from Dark or Pitch Black to Low Light."
     ],
     [
       "Greater Flourish: [Action] [Ranged] For 10 minutes, within 30 ft you may manipulate objects and/or lift objects weighing no more than 5G pounds up to 30 ft in the air. Costs 1 ae."

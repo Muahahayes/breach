@@ -20,7 +20,7 @@ export default {
   ],
   lesser: [
     [
-      "Conjure Fire: [Minor] [Self] You create a small fire which floats above your hand. You may drop the fire, if it lands on a flammable material it is lit aflame, otherwise the fire snuffs out. The fire raises the nearby surroundings from Pitch Black to Dark or Dark to Low within 15 ft. Does not cost any Bloodlust.",
+      "Conjure Fire: [Action] [Self] You create a small fire which floats above your hand. You may drop the fire, if it lands on a flammable material it is lit aflame, otherwise the fire snuffs out. The fire raises the nearby surroundings from Pitch Black to Dark or Dark to Low within 15 ft. Does not cost any Bloodlust.",
       "Glamour: [Action] [Self] You mask your face with an illusion to appear like any person of your Race you have seen. If you enter Apathy this effect ends. Costs 1 Bloodlust."
     ],
     [

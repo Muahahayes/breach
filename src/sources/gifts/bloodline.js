@@ -2,7 +2,7 @@ export default [
   [ // 1G
     {
       name: "Rampage",
-      attributes: "[Minor] [Self]",
+      attributes: "[Action] [Self]",
       description: "Your blood boils with rage throwing you into a violent Rampage. Spend up to 5 Bloodlust to enter a Rampage for that many turns. During a Rampage you cannot be put to sleep, incapacitated, stunned, feared or have your movement impaired. Your Rampage ends early if you enter Apathy. A turn counts as 2 towards the duration if you do not deal any damage to a creature during that turn.",
       proficiencies: [
         [

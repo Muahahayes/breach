@@ -14,7 +14,7 @@ export default {
   ],
   racials:[
     "Low Light Vision: You can see in Low Light up to 50 ft as if it was Medium Light.",
-		"Cave Dweller: You may move your full Movement while climbing. Also, once per day you may remove 1 movement impairing effect from yourself as a Minor Action.",
+		"Cave Dweller: You may move your full Movement while climbing. Also, once per day you may remove 1 movement impairing effect from yourself as a Full Action.",
 		"Lurk: Gain +1 Favored to Attack and Power rolls during your first turn in a combat while in Low Light."
   ]
 }

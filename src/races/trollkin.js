@@ -15,6 +15,6 @@ export default {
   racials:[
     "Stony: Take -G damage from Physical damage attacks.",
 		"Geology: Gain +G to scavenge checks for metal or rock based supplies.",
-		"Curl: Curl up into a ball as a Full Action, impose a -G to physical attack rolls against you. Doing any Full or Movement Action will cancel the Curl effect."
+		"Curl: Curl up into a ball as a Full Action, impose a -G to physical attack rolls against you. You must spend a Full Action to maintain the Curl effect each round. Usable G times per Full Sleep."
   ]
 }
