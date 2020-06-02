@@ -34,8 +34,8 @@ export default {
       "Greater Flourish: [Action] [Ranged] For 10 minutes, within 30 ft you may manipulate objects and/or lift objects weighing no more than 5G pounds up to 30 ft in the air. Costs 1 ae."
     ],
     [
-      "Harmony: [Activate] [Self] Choose a Quirk when you take this Lesser Gift. Whenever you gain a Favored bonus with this Quirk, if you Hard Succeed on the d20 roll you may use your Activation Action to gain G ae.",
-      "Desperation: [Activate] [Self] Choose a Quirk when you take this Lesser Gift. Whenever you gain an Unfavored penalty with this Quirk, if you succeed on the d20 roll you may use your Activation Action as a Full Action during this turn." // TEST THIS: could throw off action economy?
+      "Harmony: [Activate] [Self] Choose a Quirk when you take this Lesser Gift. Whenever you gain a Favored bonus with this Quirk, if you Hard Succeed on the d20 roll you may use your Activation Action to gain G ae. (Repeatable up to G times, choose another Quirk with each repeat)",
+      "Desperation: [Activate] [Self] Choose a Quirk when you take this Lesser Gift. Whenever you gain an Unfavored penalty with this Quirk, if you succeed on the d20 roll you may use your Activation Action as a Full Action during this turn. Usable once per Full Sleep." // TEST THIS: could throw off action economy?
     ]
   ]
 }

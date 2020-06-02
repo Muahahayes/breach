@@ -2,7 +2,7 @@ export default {
   name: "Runic Arts",  
   slogan: "The Powers of Engraving",
   description: "[Flavor Text]",
-  resource: "Engravings: When you level up, instead of selecting 1 Gift you may select 3 (these Gifts collectively count as 1 towards your G). You Engrave these Gifts onto your body to attune yourself to their power. Whenever you select a Lesser Gift, you apply a Lesser Engraving upon your body. You may only use a Gift if that Gift's Engraving is awakened, and may only use a Lesser Gift if that Lesser Gift's Lesser Engraving is awakened. After a Full Sleep all of your currently awakened Engravings become suppressed and then you may select up to G Engravings and G Minor Engravings, these Engraving awaken with Aether and glow brightly on your skin. After a Break you may awaken 1 Engraving by suppressing a different Engraving which is currently awakened. When you gain a Proficiency you may only apply it to a currently awakened Engraving, you may only use Proficiencies that are on currently awakened Engravings.\nFading: Whenever you use an Engraving it will gain a point of Fade. Each point of Fade reduces all d20 rolls done with that Engraving by 1 up to a maximum of 20. All Fades are removed when you finish a Full Sleep.",
+  resource: "Engravings: When you level up, instead of selecting 1 Gift you may select 3 (these Gifts collectively count as 1 towards your G). You Engrave these Gifts onto your body to attune yourself to their power. Whenever you select a Lesser Gift, you apply a Lesser Engraving upon your body. You may only use a Gift if that Gift's Engraving is awakened, and may only use a Lesser Gift if that Lesser Gift's Lesser Engraving is awakened. After a Full Sleep all of your currently awakened Engravings become suppressed and then you may select up to G Engravings and G Minor Engravings, these Engraving awaken with Aether and glow brightly on your skin. After a Break you may awaken 1 Engraving by suppressing a different Engraving which is currently awakened. When you gain a Proficiency you may only apply it to a currently awakened Engraving, you may only use Proficiencies that are on currently awakened Engravings.\nFading: Whenever you use an Engraving it will gain a point of Fade. Each point of Fade reduces all d20 rolls done with that Engraving by 1 up to a maximum of 20. All Fades are removed when you finish a Full Sleep. Fade points cannot go below zero.",
   proficiencies: [
     [
       "Sustain: Whenever you roll a natural 20 while using a Gift, you may subtract the Fade points on that Gift by 1.",
@@ -27,7 +27,8 @@ export default {
       "Runic Munitions: [Action] [Touch] Spend 10 minutes to Engrave up to 30 pieces of ammo. Increase the damage of any ranged attack using this ammo by G."
     ],
     [
-      "Sealing Shot: [Action] [Touch] Spend 10 minutes to Engrave a creature's full true name onto a piece of ammo and roll a d20 + Power, if you land a ranged attack with that ammo that creature must make a Will check vs the Power roll engraved or they are Silenced and Snared for G rounds. Usable once per Full Sleep."
+      "Sealing Shot: [Action] [Touch] Spend 10 minutes to Engrave a creature's full true name onto a piece of ammo and roll a d20 + Power, if you land a ranged attack with that ammo that creature must make a Will check vs the Power roll engraved or they are Silenced and Snared for G rounds. Usable once per Full Sleep.",
+      "Invigorate: [Activation] [Self] Choose a Quirk when you take this Lesser Gift. Whenever you gain a Favored bonus with this Quirk you may use your Activation Action to subtract 1 Fade from any awakened Rune."
     ]
   ]
 }

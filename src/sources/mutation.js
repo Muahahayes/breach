@@ -25,6 +25,9 @@ export default {
     ],
     [
       "Coiled Muscle: [Action] [Self] For 10 min the muscles in your legs coil and flex, increasing your jump height by 5 ft. Causes 1 strain."
+    ],
+    [
+      "Respite: [Activate] [Self] Choose a Quirk when you take this Lesser Gift. Whenever you gain a Favored bonus with this Quirk, if you Hard Succeed on the d20 roll you may use your Activation Action to remove G Strain. (Repeatable up to G times, choose another Quirk with each repeat)"
     ]
   ]
 }

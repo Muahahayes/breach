@@ -34,7 +34,8 @@ export default {
       "Resonance: [Action] [Ranged] For 10 minutes you open your senses to feel the minds of creature's within 30 ft. Ignore the effects of lighting conditions for Search and Awareness checks against creatures with a Will of at least 0. You may make these checks against creature's out of your line of sight. This effect ends prematurely if you enter a Psychic Break."
     ],
     [
-      "Hypnotic: [Action] [Melee] Touch the forehead of a person with no Source and a Will under 2 who you have not recently harmed. Make a Charm attempt against the person, on a success gain twice the normal Regard."
+      "Hypnotic: [Action] [Melee] Touch the forehead of a person with no Source and a Will under 2 who you have not recently harmed. Make a Charm attempt against the person, on a success gain twice the normal Regard.",
+      "Fortunate: [Activation] [Self] Choose a Quirk when you take this Lesser Gift. Whenever you gain a Favored bonus with this Quirk, if you roll a Soft Success on the d20 roll you may use your Activation Action to count it as a Hard Success. Usable once per Full Sleep."
     ]
   ]
 }
