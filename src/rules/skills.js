@@ -4,7 +4,7 @@ export default {
   name: "Skills",
   content: <div>
   <span>A Skill increases the result of d20 rolls which attempt to accomplish some task. All Skills start at 0 and are increased by the starting points given by your Race and by gaining <Link to="leveling">XP</Link> from when you <b>Hard Succeed</b> or <b>Hard Fail</b>.</span><br/>
-
+{/* Make skills a percentile roll (2 d10s read as tens and ones digits) instead of a d20? So skills scaling really high makes sense, and then Attribute checks are still d20 so attributes effectively scale 5x faster than skills */}
   <hr/>
   <h3>Hard/Soft Rolls:</h3>
   <span>When you roll a d20 to pass a check, there are 4 different tiers of results: <br/>
