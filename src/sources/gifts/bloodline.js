@@ -60,10 +60,53 @@ export default [
       proficiencies: [
         
       ]
+    },
+    {
+      name: "Sillouete",
+      attributes: "[Action] [Self]",
+      description: "A shadowy form rises from your shadow. It stays attached to your shadow and your shadow is pulled around with it, but if your shadow disappears the Sillouete is destroyed. The Sillouete may use 1 of your Full Actions per turn to interact with an object, do a melee attack for 1d6 damage, or to use a melee Gift of 2G or lower without proficiency effects. Spend 1 Bloodlust to summon and 1 Bloodlust per subsequent turn (or 1 minute out of combat) to maintain the Sillouete.",
+      proficiencies: [
+        
+      ]
+    },
+    {
+      name: "Bind Daemon",
+      attributes: "[Action] [Touch]",
+      description: "You reach out and touch the forehead of a creature which is at 1 Life or below, by speaking its name and spending 5 Bloodlust you bind it to your service as your Daemon. The creature may make a Will check vs your Will to resist the effect, on a success it is not bound and on a Hard Success it can never be bound by you using this Gift against its will. The Daemon must make every effort to be within 1 mile of you, cannot directly cause you harm, and you may as an Action spend 1 Bloodlust per creature's G level to force the Daemon to do any Action you choose (only if it is capable of carrying it out and will not cause direct harm to the Daemon). Any additional conditions the Daemon agrees to before the binding must also be obeyed. The Daemon comes to your side when called. This binding lasts until the Daemon is destroyed, you die, or you spend an hour releasing the binding. You may only have one binding at a time.",
+      proficiencies: [
+        [],[],
+        [
+          "Pressure: You may add your G to your Will check.",
+          "Pair: You may have a second binding active at one time. They both must be bound with the same set of conditions."
+        ],
+        [
+          "Trio: You may have a third binding active at one time. They may have different sets of conditions. Requires Pair.",
+          "Domination: You gain Favored +2 in any opposing skill checks against one of your Daemon."
+        ],
+        [
+          "Dark Gift: You may bestow each of your Daemon with a Gift you possess up to 2G and not including Bind Daemon.",
+          "Company: You may have up to five bindings active at one time. Requires Trio."
+        ],
+        [
+          "Crowd: You may have up to ten bindings active at one time. Requires Company.",
+          "Greater Gift: You may bestow Gifts up to 3G. Requires Dark Gift."
+        ],
+        [
+          "Cult: You may have up to one hundred bindings active at one time. Requires Crowd.",
+          "Patron: You may bestow Gifts up to 4G, including Bind Daemon."
+        ]
+      ]
     }
   ],// 2G
   [// 3G
-    
+    {
+      name: "Bloodsurge",
+      attributes: "[Action] [Self]",
+      description: "As a Full Action you draw more energy into your body. The next time you gain Bloodlust, increase the amount gained by 1.",
+      proficiencies: [
+        
+      ]
+    }
   ]// 3G
 ]
 // {
