@@ -222,7 +222,7 @@ export default [
     {
       name: "Dark Ritual",
       attributes: "[Self] [Activate] [Passive]",
-      description: "Choose 1 Power from the Ancient Bloodlines Source, this is now a Cosmic Forces Power you may use. If this Power spends or gains any Bloodlust, substitute it with Aether. Using this Power uses your Activation Action in addition to the Action requirements of the selected Power.",
+      description: "Choose 1 Gift from the Ancient Bloodlines Source, this is now a Cosmic Forces Power you may use. If this Power spends or gains any Bloodlust, substitute it with Aether. Using this Power uses your Activation Action in addition to the Action requirements of the selected Power.",
       proficiencies: []
     },
     {

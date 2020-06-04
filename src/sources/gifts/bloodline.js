@@ -106,7 +106,13 @@ export default [
       proficiencies: [
         
       ]
-    }
+    },
+    {
+      name: "Ancestral Telepathy",
+      attributes: "[Activate] [Self] [Passive]",
+      description: "Choose 1 Gift from the Psychic Source. This is now an Ancient Bloodlines Power you may use. If it causes a Psychic Fatigue check, it instead costs 1 Bloodlust. Using this Power uses your Activation Action in addition to the Action requirements of the selected Power.",
+      proficiencies: []
+    }    
   ]// 3G
 ]
 // {

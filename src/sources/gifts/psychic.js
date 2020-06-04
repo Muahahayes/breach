@@ -134,7 +134,7 @@ export default [
       attributes: "[Free] [Self]",
       description: "Use while performing a skill check, the next time you use that same skill (After at least an hour has passed), add double your normal skill bonus to that roll. This roll cannot Hard Succeed. You may store one Foresight roll at a time, you may not store a Foresight roll from a skill check that is using a Foresight roll.",
       proficiencies: [
-        [
+        [// TODO: if skills become percentile, redo forecast. instead, you 'save' ONE of the d10 rolls (and if its tens or ones digit) and may use that in the next percentile roll
           "Forecast: [Free Action] Before rolling any d20 you may call out a number between 1-4. Roll a d4 and the d20, if you roll your chosen d4 number you may 'save' the number shown on the d20 and do not need to roll a Psychic Fatigue check. The next time you use a d20 for the same purpose, you may substitute the roll with the saved number. If you fail to roll your chosen number, roll a Psychic Fatigue check. You can store a Forecast roll once per full sleep.",
 		      "Mulligan: If you fail to guess correctly but succeed the Psychic Fatigue check from the Forecast proficiency you may attempt your Forecast again. Limit of one Mulligan per Forecast used."
         ],
@@ -232,7 +232,7 @@ export default [
     {
       name: "Psychosomatic",
       attributes: "[Activate] [Self] [Passive]",
-      description: "Choose 1 Power from the Mutation Source at the time you take this Gift. This is now a Psychic Awakening Power you may use. If it causes, refers to, uses, or spends Strain you instead use 1 Psychic Fatigue check for every G Strain. Using this Power uses your Activation Action in addition to the Action requirements of the selected Power.",
+      description: "Choose 1 Gift from the Mutation Source at the time you take this Gift. This is now a Psychic Awakening Power you may use. If it causes, refers to, uses, or spends Strain you instead use 1 Psychic Fatigue check for every G Strain. Using this Power uses your Activation Action in addition to the Action requirements of the selected Power.",
       proficiencies: []
     },
     {

@@ -202,9 +202,9 @@ export default [
   ], // 2G
   [ // 3G
     {
-      name: "Artificial Evolution",
+      name: "Runic Evolution",
       attributes: "[Activate] [Self] [Passive]",
-      description: "You gain a Module Chip that is embedded into your brain, your brain has evolved to interface with it but cannot handle loading new Augments onto it. Choose 1 Gift from the Cybernetic Augmentations Source, that is now a Mutant Power you may use. Gain G Strain whenever you use this power, and if it causes any Faults beyond the passive Fault from failing a roll, gain an additional G Strain for each Fault. Using this Power uses your Activation Action in addition to the Action requirements of the selected Power.",
+      description: "Your DNA forms a runic word, your body has evolved to use it but cannot Awaken any other runes. Choose 1 Gift from the Runic Arts Source, that is now a Mutant Power you may use. Gain G Strain for each point of Fade the Gift gains. Using this Power uses your Activation Action in addition to the Action requirements of the selected Power.",
       proficiencies: []
     },
     {
