@@ -137,7 +137,30 @@ export default [
         ]
       ]
     }    
-  ]// 3G
+  ],// 3G
+  [
+    {
+      name: "Shroud",
+      attributes: "[Action] [AoE] [Self]",
+      description: "A dark energy radiates from your body and extends for 10 ft. The energy persists for 10 minutes and during that time creatures within the energy gain a +G to Hide checks. While the energy radiates, any creature other than yourself within the energy cannot use their Activate Action. The effect ends prematurely if you enter Apathy. Costs 1 Bloodlust per minute.",
+      proficiencies: [
+        [],[],[],
+        [
+          "Nullify: As a Free Action, whenever a creature within 10 ft attempts to use a Gift, you may spend 1 Bloodlust to prevent the attempt.",
+          "Unravel: Whenever a creature, object, or an Engraving upon an object created by a Gift enters the dark energy of the Shroud, you may spend 1 Bloodlust as a Free Action to destroy it.",
+          "Persistent: The effect lasts 1 hour, and is immune to any Gifts or effects that attempt to remove it or prevent the initial use of this Gift, including another Shroud. No longer costs Bloodlust per minute."
+        ],
+        [
+          "Reach: Increase the range the energy radiates to 30 ft.",
+          "Unmaker: The Unravel effect no longer costs Bloodlust and you may choose to make the effect happen automatically without your awareness."
+        ],
+        [
+          "Immunity: [Activate] Spend your Activation Action at the initial casting of Shroud. During this Shroud effect, any Gift that targets you or anywhere within the dark energy of the Shroud fails.",
+          "Suppression: [Activate] Spend your Activation Action at the initial casting of Shroud. During this Shroud effect, Nullify may be used on any creature within the dark energy of the Shroud and no longer costs Bloodlust."
+        ]
+      ]
+    }    
+  ]
 ]
 // {
 //   name: "",
