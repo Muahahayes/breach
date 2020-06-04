@@ -71,7 +71,7 @@ export default [
     },
     {
       name: "Bind Daemon",
-      attributes: "[Action] [Touch]",
+      attributes: "[Action] [Touch] [Minion]",
       description: "You reach out and touch the forehead of a creature which is at 1 Life or below, by speaking its name and spending 5 Bloodlust you bind it to your service as your Daemon. The creature may make a Will check vs your Will to resist the effect, on a success it is not bound and on a Hard Success it can never be bound by you using this Gift against its will. The Daemon must make every effort to be within 1 mile of you, cannot directly cause you harm, and you may as an Action spend 1 Bloodlust per creature's G level to force the Daemon to do any Action you choose (only if it is capable of carrying it out and will not cause direct harm to the Daemon). Any additional conditions the Daemon agrees to before the binding must also be obeyed. The Daemon comes to your side when called. This binding lasts until the Daemon is destroyed, you die, or you spend an hour releasing the binding. You may only have one binding at a time.",
       proficiencies: [
         [],[],
@@ -84,7 +84,7 @@ export default [
           "Domination: You gain Favored +2 in any opposing skill checks against one of your Daemon."
         ],
         [
-          "Dark Gift: You may bestow each of your Daemon with a Gift you possess up to 2G and not including Bind Daemon.",
+          "Dark Gift: You may bestow each of your Daemon with a Gift you possess up to 2G and not including Minion Gifts.",
           "Company: You may have up to five bindings active at one time. Requires Trio."
         ],
         [
@@ -112,6 +112,30 @@ export default [
       attributes: "[Activate] [Self] [Passive]",
       description: "Choose 1 Gift from the Psychic Source. This is now an Ancient Bloodlines Power you may use. If it causes a Psychic Fatigue check, it instead costs 1 Bloodlust. Using this Power uses your Activation Action in addition to the Action requirements of the selected Power.",
       proficiencies: []
+    },
+    {
+      name: "Homunculus",
+      attributes: "[Action] [Touch] [Minion]",
+      description: "You spend a Full Action, 5 Bloodlust and 1 hour to touch approximately 1 human body's weight in blood, meat, and bone. You create a Homunculus, a crude creature that visually looks like yourself. The Homunculus has 1 Life, 5 Survival, your own Strength and Agility scores from when you were level 1G, 1 Stamina, and 0 Will. It is considered level 1G. The Homunculus takes basic commands, but cannot speak or write, and lasts until it or you are killed. You must spend a Full Action to command the Homunculus to use either a Full Action or Movement Action during comabt, but it may be told to repeat that Action until commanded again. You may only have 1 Homunculus at one time.",
+      proficiencies: [
+        [],[],
+        [
+          "Mimicry: The Homunculus may speak any language you know. It needs specific directions on what to say but may be taught to say certain responses to certain stimuli (Such as \"Homunculus, say hello if someone greets you\")."
+        ],
+        [
+          "Dark Gift: The Homunculus gains a Gift you had at level 1G. You must spend an Action to command it to use the Gift in combat.",
+          "Sturdy: The Homunculus gains 1 Life and 5 Survival.",
+          "Physique: The Homunculus now has your current Strength and Agility scores."
+        ],
+        [
+          "Greater Gift: The Homunculus gains a Gift you had at up to level 3G not including Minion Gifts. Requires Dark Gift",
+          "Intelligence: The Homunculus gains 2 Will. It may start to make decisions for itself and act without direct commands.",
+          "Tough: The Homunculus gains 2 Life. Requires Sturdy."
+        ],
+        [
+          "Clone: The Homunculus now has your Strength, Agility, Stamina, Will, Life and Survival scores. It can think and act for itself. It possesses all Gifts you possessed before you reached level 6G, excluding Minion Gifts. Requires Mimicry, Greater Gift, Tough, Intelligence, and Physique."
+        ]
+      ]
     }    
   ]// 3G
 ]
