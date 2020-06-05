@@ -210,7 +210,7 @@ export default [
     {
       name: "Flurry",
       attributes: "[Action] [Melee]",
-      description: "After performing a basic attack action, perform a basic attack action on the same target. Causes Strain equal to 10% of your max survival (rounded down, minimum of 1).",
+      description: "After performing a basic melee attack action, perform a basic melee attack action on the same target. Causes Strain equal to 10% of your max survival (rounded down, minimum of 1).",
       proficiencies: [
         [],[],
         [
