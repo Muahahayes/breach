@@ -58,7 +58,23 @@ export default [
       attributes: "[Action] [Ranged]",
       description: "Use a Ranged Weapon to make a basic Ranged Weapon attack. Add 1d4 Darkness damage to the attack. Costs 1 Bloodlust.",
       proficiencies: [
-        
+        [],
+        [
+          "Sharp Aim: Permanently add 1 to your Marksmanship Skill.",
+          "Empowered: Add your Will to the damage dealt.",
+          "Twin Shot: If Dark Shot hits, you may make a basic Ranged Weapon attack on the same target for free."
+        ],
+        [
+          "Impact: Increase the damage die to 1d6.",
+          "Fork: Your Twin Shot may be used on any target within range."
+        ],
+        [
+          "Deadly Aim: Permanently add 2 to your Marksmanship Skill",
+          "Dark Twin: You may spend Bloodlust to use Dark Shot with your Twin Shot attack."
+        ],
+        [
+          "Overwhelm: [Activate] If your Dark Shot deals a killing blow you may use any Gift which costs Bloodlust. This may only trigger once per turn."
+        ]
       ]
     },
     {
@@ -66,7 +82,10 @@ export default [
       attributes: "[Action] [Self]",
       description: "A shadowy form rises from your shadow. It stays attached to your shadow and your shadow is pulled around with it, but if your shadow disappears the Sillouete is destroyed. The Sillouete may use 1 of your Full Actions per turn to interact with an object, do a melee attack for 1d6 damage, or to use a melee Gift of 2G or lower without proficiency effects. Spend 1 Bloodlust to summon and 1 Bloodlust per subsequent turn (or 1 minute out of combat) to maintain the Sillouete.",
       proficiencies: [
-        
+        [],
+        [
+          
+        ]
       ]
     },
     {
