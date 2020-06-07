@@ -157,7 +157,7 @@ export default [
       ]
     }    
   ],// 3G
-  [
+  [// 4G
     {
       name: "Shroud",
       attributes: "[Action] [AoE] [Self]",
@@ -179,7 +179,7 @@ export default [
         ]
       ]
     }    
-  ]
+  ]// 4G
 ]
 // {
 //   name: "",
