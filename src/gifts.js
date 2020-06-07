@@ -57,8 +57,10 @@ function Gifts({ match }) {
 
     for (let level in gifts) {
       let levelContent = [];
-      if (level > 0) levelContent.push(<hr className="searchHR"/>);
-      levelContent.push(<h2>[{Number(level)+1} G]</h2>);
+      if (gifts[level].length > 0) {
+        if (level > 0) levelContent.push(<hr className="searchHR"/>);
+        levelContent.push(<h2>[{Number(level)+1} G]</h2>);
+      }      
       for (let gift of gifts[level]) {
         if (gift) levelContent.push(<div className={`searchEntry`} id={gift.name}>{renderGift(gift, match.params.s)}</div>);
       }

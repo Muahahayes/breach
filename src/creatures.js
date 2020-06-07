@@ -65,8 +65,10 @@ function Creatures({ match }) {
     let content = [];
     for (let level in creatures) {
       let levelContent = [];
-      if (level > 0) levelContent.push(<hr className="searchHR"/>);
-      levelContent.push(<h2>[{Number(level)+1} G]</h2>);
+      if (creatures[level].length > 0) {
+        if (level > 0) levelContent.push(<hr className="searchHR"/>);
+        levelContent.push(<h2>[{Number(level)+1} G]</h2>);
+      }      
       for (let creature of creatures[level]) {
         if (creature.name) {
           levelContent.push(<div className={`searchEntry`} id={creature.name}>{renderCreature(creature, match.params.t)}</div>);
