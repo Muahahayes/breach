@@ -132,6 +132,7 @@ function Nav({ match }) {
       <li id="creatures-list" className="list" style={hidden}>
         <ul>
         <li><Link style={navStyle} to="/world/creatures/humanoid">Humanoids</Link></li>
+        <li><Link style={navStyle} to="/world/creatures/undead">Undead</Link></li>
         </ul>
       </li>
     </ul>

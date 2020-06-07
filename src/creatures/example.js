@@ -6,10 +6,10 @@ description: <p>blahblah</p>,
 creatures:[
   [// 1G
     { // select all this to copy paste
-      name: '',
-      description: '',
-      image: '',
-      attributes: '', // arbitrary, used for searching
+      name: ``,
+      description: ``,
+      image: ``,
+      attributes: ``, // arbitrary, used for searching
       level: 0,
       stats: {
         'life': 0,
@@ -36,10 +36,10 @@ creatures:[
         'Disruption: 0'
       ],
       actions: [ // write various actions here
-        '',
-        ''
+        ``,
+        ``
       ]
-    }
+    }  // end of a creature, select up to this point to copy paste
   ],
   [// 2G
 

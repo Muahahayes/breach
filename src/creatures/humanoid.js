@@ -9,7 +9,7 @@ creatures:[
       name: 'Lesser Goblin',
       description: 'Angry little gobbo Angry little gobbo Angry little gobbo Angry little gobbo Angry little gobbo Angry little gobbo Angry little gobbo Angry little gobbo Angry little gobbo Angry little gobbo Angry little gobbo Angry little gobbo Angry little gobbo Angry little gobbo Angry little gobbo Angry little gobbo Angry little gobbo Angry little gobbo Angry little gobbo ',
       image:'https://cdn.discordapp.com/attachments/575187645601153024/700477642364944464/ugly-goblin-260nw-715354072.png',
-      attributes: '[Green] [Smelly] [Biological]',
+      attributes: '[Green] [Goblin] [Biological]',
       level: 1,
       stats: {
         'life': 2,
@@ -44,11 +44,11 @@ creatures:[
     }
   ],// 1G
   [// 2G
-    { // select all this to copy paste, and if you highlight it all and ctrl+/ it will comment/uncomment it all
+    {
       name: 'Bob',
       description: 'Oh no its bob',
       image: null,
-      attributes: '[Bob] [Human] [Biological]', // arbitrary, used for searching
+      attributes: '[Bob] [Human] [Biological]',
       level: 2,
       stats: {
         'life': 10,
@@ -60,7 +60,7 @@ creatures:[
         'stamina': 10,
         'will': 10
       },
-      skills:[ // you can add other skills if they'd be relevant to the creature, these ones are just the combat related ones
+      skills:[
         'Athletics: 10',
         'Martial Arms: 10',
         'Marksmanship: 10',
@@ -74,7 +74,7 @@ creatures:[
         'Insight: 10',
         'Disruption: 10'
       ],
-      actions: [ // write various actions here
+      actions: [
         'Wreck: [Action] [Ranged] Bob wrecks everyone\'s shit in a 100ft radius, dealing 10d10 Bob damage.'
       ]
     }
@@ -82,11 +82,11 @@ creatures:[
 ]
 }
 /*
-{ // select all this to copy paste
+{ // select all this to copy paste, and if you highlight it all and ctrl+/ it will comment/uncomment it all
   name: '',
   description: '',
   image: '',
-  attributes: '',
+  attributes: '',  // arbitrary, used for searching
   level: 0,
   stats: {
     'life': 0,
