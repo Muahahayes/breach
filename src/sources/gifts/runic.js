@@ -87,6 +87,29 @@ export default [
           +"If this eye can see a threat, it cannot flank you."
         ]
       ]
+    },
+    {
+      name: "Resonance",
+      attributes: "[Action] [React] [Self] [Touch]",
+      description: "As an Action you reach out and touch a willing creature. A small rune of Resonance alights upon them. As Reaction when they roll a d6, roll a d6 for yourself. If the sum of the two d6 rolls is equal to 7, you may add this rune's Fade (or a minimum of 1) to their roll. If the sum is equal to 2, subtract this rune's Fade from their roll instead.",
+      proficiencies: [
+        [
+          "Approximation: The sum may equal 8 as well.",
+          "Dim: This rune begins with 2 Fade when it is awakened after a Full Sleep."
+        ],
+        [
+          "Perfect: The sum may equal 12 as well, when the sum equals 12 you may also add your G to their roll.",
+          "Snake-Eyes: You no longer need to subtract your Fade from their roll when the sum is equal to 2.",
+          "Faded: This rune begins with 5 Fade when it is awakened after a Full Sleep. Requires Dim."
+        ],
+        [
+          "Harmony: [Activate] As an Activation Action when another of your runes gains Fade, you may apply Fade to this rune as well.",
+          "Cobra-Eyes: When the sum is 2 you may add this rune's Fade to their roll. Requires Snake-Eyes."
+        ],
+        [
+          "Darkened: This rune begins with 10 Fade when it is awakened after a Full Sleep. Requires Faded."
+        ]
+      ]
     }
   ], // 1G
   [ // 2G
@@ -99,7 +122,7 @@ export default [
         [],
         [
           "Empowered: Add your Will to the Shielding granted.",
-          "Protection: Whenever the user of the Projection Plating loses 1 Life they may spend their React to roll a [d20 - Fade] vs 10. "
+          "Protection: [React] Whenever the user of the Projection Plating loses 1 Life they may spend their React to roll a [d20 - Fade] vs 10. "
           +"On a success, reboot the Projection Plating with half its usual effect. Causes 1 Fade."
         ],
         [
@@ -111,6 +134,32 @@ export default [
           "Vigilant Deflection: Deflection is active even when their Projection Plating is not active."
         ]
       ]
+    },
+    {
+      name: "Overload",
+      attributes: "[Action] [Melee]",
+      description: "When a single target attack with a Fade penalty on its roll hits its target, you may spend an Action to add that attack's Fade to the damage dealt.",
+      proficiencies: [
+        [],
+        [
+          "Empowered: Add your Will to the damage dealt.",
+          "Faded: Overload gains an additional Fade when used."
+        ],
+        [
+          "Impact: You may add Overload's Fade to the damage dealt instead of the original attack's Fade."
+        ],
+        [
+          "Greater Impact: You may add both Overload's Fade and the original attack's Fade to the damage dealt. Requires Impact.",
+          "Forked: [Activate] As an Activation Action you may use Overload on attacks which hit up to 3 targets."
+        ],
+        [
+          "Discharge: [Activate] As an Activation Action you may use Overload on attacks that hit more than 3 targets. Requires Forked.",
+          "Meltdown: [Activate] Roll a d20 - Fade vs 5. On a success, you may add Overload's Fade a second time to the damage dealt. On a fail you may not add Overload's Fade to the attack at all. Causes 1 additional Fade."
+        ],
+        [
+          "Catastrophy: Meltdown also adds the original attack's Fade a second time."
+        ]
+      ]
     }
   ], // 2G
   [// 3G
@@ -119,8 +168,31 @@ export default [
       attributes: "[Activate] [Self] [Passive]",
       description: "Choose 1 Gift from the Cosmic Source at the time you take this Gift. This is now a Runic Arts Power you may use. This Power gains 1 Fade for every 2 ae required. Using this Power uses your Activation Action in addition to the Action requirements of the selected Power.",
       proficiencies: []
+    },
+    {
+      name: "Mimicry",
+      attributes: "[Action] [Self]",
+      description: "As an Action the rune re-lights your most recently used rune, allowing you to use that rune again without any proficiencies. Applies the Fade penalty of this rune as well as the rune being reused as well as adding Fade to that rune.",
+      proficiencies: [
+        [],[],
+        [
+          "Ease: Do not add the base Fade of using a rune to the rune being reused.",
+          "Mild Effect: You may also reuse one proficiency on the rune being reused, excluding proficiencies that require any kind of action cost."
+        ],
+        [
+          "Moderate Effect: You may reuse one additional proficiency. Requires Mild Effect.",
+          "Effortless: Do not apply the Fade penalty of the rune being reused.",
+          "Active: You may reuse proficiencies that require an Activation Action without needing to use another Activation Action."
+        ],
+        [
+          "Greater Effect: You may reuse one additional proficiency. Requires Moderate Effect."
+        ]
+      ]
     }
-  ]// 3G
+  ],// 3G
+  [// 4G
+    
+  ]// 4G
 ]
 /*
 {

@@ -9,13 +9,22 @@ export default {
       "Study: Whenever you level up, you may select 1 Lesser Gift for free without spending a Proficiency."
     ],
     [
-      "Energized: While a Gift has 0 Fade points, add +1 to any damage it deals."
-      
+      "Energized: While a Gift has 0 Fade points, add +1 to any damage it deals.",
+      "Twilight: When an effect uses a rune's current Fade, you may add 1 to the effect."
     ],
     [
       "Greater Energized: Increase Energized to +G.",
       "Receptive: Gain +G to any healing you receive from a Cosmic or Runic Gift.",
-      "Proficient: When you level up, you may select 4 Gifts instead of 3. At least 1 Gift must be below 3G."
+      "Proficient: When you level up, you may select 4 Gifts instead of 3. At least 1 Gift must be below 3G.",
+      "Dusk: Increase the effect of Twilight by 1."
+    ],
+    [
+      "Nightfall: Increase the effect of Twilight by 1.",
+      "Light: You may awaken one additional rune after a Full Sleep. You may not awaken a rune above 3G while using Light."
+    ],
+    [
+      "Ascended: You may use Light while a rune above 3G is awakened.",
+      "Shine: Light my awaken one additional rune."
     ]
   ],
   lesser: [
@@ -29,7 +38,8 @@ export default {
     ],
     [
       "Sealing Shot: [Action] [Touch] Spend 10 minutes to Engrave a creature's full true name onto a piece of ammo and roll a d20 + Power, if you land a ranged attack with that ammo that creature must make a Will check vs the Power roll engraved or they are Silenced and Snared for G rounds. Usable once per Full Sleep.",
-      "Invigorate: [Activation] [Self] Choose a Quirk when you take this Lesser Gift. Whenever you gain a Favored bonus with this Quirk you may use your Activation Action to subtract 1 Fade from any awakened Rune."
+      "Invigorate: [Activation] [Self] Choose a Quirk when you take this Lesser Gift. Whenever you gain a Favored bonus with this Quirk you may use your Activation Action to subtract 1 Fade from any awakened Rune.",
+      "Feedback: [Passive] [Self] Whenever you roll a Hard Fail, you may apply 1 Fade to a rune of your choice which is currently awakened."
     ]
   ]
 }
