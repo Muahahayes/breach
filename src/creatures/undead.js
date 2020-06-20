@@ -12,6 +12,7 @@ creatures:[
       attributes: '[Mindless]', // arbitrary, used for searching
       level: 1,
       stats: {
+        'actions': 1,
         'life': 1,
         'survival': 10,
         'avoidance': 10,
@@ -52,6 +53,7 @@ creatures:[
         attributes: `[Sentient]`, // arbitrary, used for searching
         level: 3,
         stats: {
+          'actions': 2,
           'life': 5,
           'survival': 15,
           'avoidance': 14,

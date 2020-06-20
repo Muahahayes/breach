@@ -47,7 +47,7 @@ function renderCreature(creature, cType) {
           </tbody>
         </table>
         <hr/>
-        <h3>Actions:</h3>
+        <h3>Actions [{stats.actions}]:</h3>
         {actions}
         </Fragment>
     );

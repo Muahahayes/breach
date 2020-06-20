@@ -12,6 +12,7 @@ creatures:[
       attributes: '[Green] [Goblin] [Biological]',
       level: 1,
       stats: {
+        'actions': 1,
         'life': 2,
         'survival': 6,
         'avoidance': 12,
@@ -51,6 +52,7 @@ creatures:[
       attributes: '[Bob] [Human] [Biological]',
       level: 2,
       stats: {
+        'actions': 5,
         'life': 10,
         'survival': 100,
         'avoidance': 20,
@@ -89,6 +91,7 @@ creatures:[
   attributes: '',  // arbitrary, used for searching
   level: 0,
   stats: {
+    'actions': 0,
     'life': 0,
     'survival': 0,
     'avoidance': 0,

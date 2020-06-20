@@ -12,6 +12,7 @@ creatures:[
       attributes: ``, // arbitrary, used for searching
       level: 0,
       stats: {
+        'actions': 0,
         'life': 0,
         'survival': 0,
         'avoidance': 0,
