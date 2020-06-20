@@ -60,7 +60,8 @@ export default [
           "Overwhelming: [Contract] Increase the size of the first die rolled. Requires 3 points in Impact. (Repeatable d12, d20)"
         ],
         [
-          "Subconscious: Now the first time in a combat with a creature when you use Subtle and deal damage with this Shock, if you succeed and do not damage their Life they are not alerted to your presence."
+          "Subconscious: Now the first time in a combat with a creature when you use Subtle and deal damage with this Shock, if you succeed and do not damage their Life they are not alerted to your presence.",
+          "Twin Shock: [Activate] [Action] As an Activation Action you may use a Full Action to cast an exact copy of this Shock at the same target. This second Shock costs 3 ae and may use a different damage type if you have taken the Elemental proficiency."
         ]
       ]
     },

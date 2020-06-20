@@ -172,7 +172,7 @@ export default [
     {
       name: "Mimicry",
       attributes: "[Action] [Self]",
-      description: "As an Action the rune re-lights your most recently used rune, allowing you to use that rune again without any proficiencies. Applies the Fade penalty of this rune as well as the rune being reused as well as adding Fade to that rune.",
+      description: "As an Action the rune re-lights your most recently used rune, allowing you to use that rune again without any proficiencies. This allows you to ignore the limitation on using an Action for the same purpose twice in one turn. Applies the Fade penalty of this rune as well as the rune being reused as well as adding Fade to that rune.",
       proficiencies: [
         [],[],
         [

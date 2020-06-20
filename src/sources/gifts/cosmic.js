@@ -21,7 +21,7 @@ export default [
         ],
         [
           "Subtle: [Activate] As an Activation Action you may suppress the sound of the blast and smooth out the ripple effect. If a creature(s) within range is not aware of you, you may roll a Hide check vs the Awareness Roll of the creature(s). If you succeed and do not damage the creature, this Shock does not alert them to your presence. If you succeed and damage the creature, they are aware of you but not your location.",
-          "Twin Shock: [Activate] As an Activation Action you may cast an exact copy of a Shock you cast as a Full Action this turn at a second target within range. This second Shock costs 3 ae and may use a different damage type if you have taken the Elemental proficiency."
+          "Twin Shock: [Activate] [Action] As an Activation Action you may use a Full Action to cast an exact copy of this Shock at a second target within range. This second Shock costs 3 ae and may use a different damage type if you have taken the Elemental proficiency."
         ]
       ]
     },
@@ -46,7 +46,7 @@ export default [
           "Prismatic: Hardened now applies to Elemental and Mental damage (except for Darkness)."
         ],
         [
-          "Shatter: [Activate] When the person's Shielding drops to 0 from damage, you roll a Will check vs Agility for all creatures within 10 ft, deal 1d10 Spirit damage to any creature that fails the check.",
+          "Shatter: [Activate] When the person's Shielding drops to 0 from damage, roll a Will check vs Agility for all creatures within 10 ft, deal 1d10 Spirit damage to any creature that fails the check.",
           "Bounce: [Activate] If at least 1 point of Shielding from Spirit Shield remains after being hit by an attack, roll a d4. On a 4, apply the Spirit Shield effect to another person within 30 ft and within line of sight. Costs G ae."
         ],
         [

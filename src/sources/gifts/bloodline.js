@@ -30,7 +30,8 @@ export default [
       proficiencies: [
         [
           "Fury: On a hit, gain an additional Bloodlust.",
-		      "Thirst: [Activate] On a hit, as an Activation Action heal G Survival."
+          "Thirst: [Activate] On a hit, as an Activation Action heal G Survival.",
+          "Assault: [Action] As an Action, you may put extra effort into the attack. Roll each damage die twice when adding up your damage dealt."
         ],
         [
           "Impact: Increase the damage to 1d10.",
@@ -66,11 +67,13 @@ export default [
         ],
         [
           "Impact: Increase the damage die to 1d6.",
-          "Fork: Your Twin Shot may be used on any target within range."
+          "Fork: Your Twin Shot may be used on any target within range.",
+          "Focused: [Action] As an Action, you may focus more power into your shot. Roll each base damage die of your Ranged Weapon twice when adding up your damage dealt."
         ],
         [
           "Deadly Aim: Permanently add 2 to your Marksmanship Skill",
-          "Dark Twin: You may spend Bloodlust to use Dark Shot with your Twin Shot attack."
+          "Dark Twin: You may spend Bloodlust to use Dark Shot with your Twin Shot attack.",
+          "Piercing Shot: [Action] As an Action, you may attempt to apply the Sundered effect to the victim hit. They may roll d20 + Stamina vs your Use Power to resist the effect."
         ],
         [
           "Overwhelm: [Activate] If your Dark Shot deals a killing blow you may use any Gift which costs Bloodlust. This may only trigger once per turn."
