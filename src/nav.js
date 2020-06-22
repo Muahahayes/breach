@@ -3,6 +3,7 @@ import './App.css';
 import { Link } from 'react-router-dom';
 
 function Nav({ match }) {
+  window.scroll(0,0);
   const navStyle = {
     color: 'white'
   };

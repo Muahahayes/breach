@@ -233,6 +233,14 @@ function Gifts({ match }) {
       }
     }
 
+    function hidePopup() {
+      console.log('hidePopup')
+      let modal = document.getElementById('popup-modal');
+      let screen = document.getElementById('popup-screen');
+      modal.style.display = 'none';
+      screen.style.display = 'none';
+    }
+
     let filterEl;
     if (document.defaultView.screen.availWidth < 800) {
       filterEl =    
@@ -273,6 +281,8 @@ function Gifts({ match }) {
           <h1>{name} Gifts</h1>
         </div>
         <div className={"content-body search-list"}>
+          <div id="popup-screen" onClick = {hidePopup}></div>
+          <div id="popup-modal"></div>
           <br/>
           {filterEl}
           <br/>

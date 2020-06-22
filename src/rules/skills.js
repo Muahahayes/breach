@@ -4,7 +4,7 @@ export default {
   name: "Skills",
   content: <div>
   <span>A Skill increases the result of d20 rolls which attempt to accomplish some task. All Skills start at 0 and are increased by the starting points given by your Race and by gaining <Link to="leveling">XP</Link> from when you <b>Hard Succeed</b> or <b>Hard Fail</b>.</span><br/>
-{/* Make skills a percentile roll (2 d10s read as tens and ones digits) instead of a d20? So skills scaling really high makes sense, and then Attribute checks are still d20 so attributes effectively scale 5x faster than skills */}
+{/* Make skills a percentile roll (2 d10s read as tens and ones digits) instead of a d20? So skills scaling really high makes sense, and then Attribute checks are still d20 so attributes effectively scale 5x faster than skills. Note, if we do this then Hard/Soft should be 10 instead of 5 when rolling a d100 */}
   <hr/>
   <h3>Hard/Soft Rolls:</h3>
   <span>When you roll a d20 to pass a check, there are 4 different tiers of results: <br/>
@@ -39,11 +39,11 @@ export default {
 
   <hr/>
   <h3>Scenarios:</h3>
-  <span>Short challenging moments that require multiple skill checks to overcome (navigating a vehicle through a chase, climbing a crumbling cliff side, hacking into a strong network, etc). <br/>
+  <span>Short challenging moments that require multiple skill checks to overcome (navigating a vehicle through a chase, climbing a crumbling cliff side, hacking into a strong network, etc). May involve multiple creatures.<br/>
   If the players pass ¾ of the checks the overall scenario is a <b>Hard Success</b>, award G points in XP and they succeed without consequences. <br/>
   If they pass ½ of the checks the overall scenario is a <b>Soft Success</b>, they succeed with some kind of compromise or cost. <br/>
   If they pass ¼ of the checks it's a <b>Soft Failure</b>, they don't succeed and have the normal consequences and the story continues down a narratively reasonable path, probably a harder one or a plan B. <br/>
-  If they pass less than ¼ of the checks it's a <b>Hard Failure</b>, they don't succeed and the GM can impose heavy penalties, kill a player, end the story, whatever narratively makes sense, award G points in XP.</span><br/>
+  If they pass less than ¼ of the checks it's a <b>Hard Failure</b>, they don't succeed and the GM can impose heavy penalties; kill a player, end the quest, whatever narratively makes sense. Award G points in XP.</span><br/>
 
   <hr/>
   <h3>Concentrated Effort:</h3>

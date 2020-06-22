@@ -129,6 +129,27 @@ body {
     padding-top: 0;
     padding-bottom: 0;
   }
+  #popup-screen {
+    background-color: #333;
+    opacity: 75%;
+    position: fixed;
+    margin-top: -10px;
+    margin-left: -10px;
+    width: 110%;
+    height: 110%;
+    z-index: 1;
+    display: none;
+  }
+  #popup-modal {
+    background-color: rgb(220, 220, 200);
+    opacity: 100%;
+    position: absolute;
+    margin-left: 8%;
+    margin-top: 5%;
+    width: 75%;
+    z-index: 2;
+    display: none;
+  }
   .description {
     overflow: auto;
   }
@@ -243,6 +264,39 @@ body {
     font-size: 1.5em;
     padding-top: 0;
     padding-bottom: 0;
+  }
+  #popup-screen {
+    background-color: #333;
+    opacity: 75%;
+    position: fixed;
+    margin-inline-start: -5px;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: none;
+  }
+  #popup-modal {
+    background-color: rgb(200, 200, 180);
+    opacity: 100%;
+    position: absolute;
+    margin-left: 8%;
+    margin-top: 5%;
+    width: 75%;
+    z-index: 2;
+    display: none;
+  }
+  #modal-body {
+    background: rgb(245, 245, 225);
+    margin: 10px;
+  }
+  #modal-body div {
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+  .popup-link {
+    cursor: pointer;
+    color:blue;
+    text-decoration: underline;
   }
   .injuryDiv {
     display: flex;
@@ -363,7 +417,7 @@ h3 {
 
 .hamburger {
   cursor: pointer;
-  z-index: 2;
+  z-index: 4;
 }
 
 
@@ -371,6 +425,7 @@ h3 {
   display: flex;
   margin-block-end: 2em;
   background: none;
+  z-index: 0;
 }
 
 .content-head{
@@ -381,7 +436,7 @@ h3 {
   top: 0;
   background: rgb(70,70,80);
   color: white;
-  z-index: 1;
+  z-index: 3;
   display: flex;
   flex-direction: column;
   justify-content: center;

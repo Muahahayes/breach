@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 import parseContent from './parseContent';
 import { Link } from 'react-router-dom'
 
@@ -34,7 +35,8 @@ function renderGift(gift, source) {
     let giftName = gift.name.toLowerCase().split(' ').join('_');
     return (
       <div className="gift">
-        <h2><Link to={`/gifts/${source}/${giftName}`}>{gift.name}</Link></h2>
+        {(window.matchMedia(' (max-width: 800px) ').matches) ? <h2><Link to={`/gifts/${source}/${giftName}`}>{gift.name}</Link></h2> : <h2 className="popup-link" onClick = {showPopup.bind(null, gift.name, source)}>{gift.name}</h2>}
+        
         <span><b className="attributes">{gift.attributes}</b></span>
         <br/>
         {description}
@@ -42,5 +44,43 @@ function renderGift(gift, source) {
     );
   }
 }
+
+function showPopup(giftName, sourceName) {
+  let modal = document.getElementById('popup-modal');
+  let screen = document.getElementById('popup-screen');
+  console.log(sourceName);
+  let source = require(`./sources/gifts/${sourceName}`);
+  let gift;
+  for (let level in source.default) {
+    for (let g of source.default[level]) {
+      if (g.name.toLowerCase() === giftName.toLowerCase()) {
+        gift = g;
+        continue;
+      }
+    }
+    if (gift) continue;
+  }
+  if (!gift) {
+    modal.innerHTML = <div className="content">
+      <div className="content-head">
+        <h1>{giftName}</h1>
+      </div>
+      <div className="content-body">
+        No gift found for this page!
+      </div>  
+    </div>
+  }
+  else {
+    let content = <div id="modal-body">
+      <div style={{display:'flex', justifyContent:'space-around'}}><span style={{fontSize:'0.8rem'}}><a style={{fontSize:'2.5rem'}} href={`/gifts/${sourceName}/${giftName.split(' ').join('_')}`}>{giftName}</a> (link to page)</span></div>
+      {renderGift(gift)}
+    </div>
+    ReactDOM.render(content, modal)
+  }
+  screen.style.display = 'block';
+  modal.style.display = 'block';
+  window.scroll(0,0);
+}
+
 
 export default renderGift;
