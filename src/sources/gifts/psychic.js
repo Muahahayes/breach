@@ -77,16 +77,17 @@ export default [
           "Sheath: You may use Psionic Blade with a sharp or piercing damage melee weapon.", 
           "Horrific: [Activate] Instead of dealing the additional psychic damage, you may Frighten the target for one turn.",
           "Thundering Blade: You may use electric damage instead of psychic.",
-          "Impact: Increases the damage to 1d6."          
+          "Impact: Increases the damage to 1d6."
         ],
         [
           "Swift Strike: [Activate] After landing a melee hit, add G to your next speed roll when determining turn order.", 
           "Phase: [Activate] The blade cuts through armor more effectively, add G to your attack roll.",
-          "Magnitude: Increases the damage to 1d8. Requires Impact."
+          "Magnitude: Increases the damage to 1d8. Requires Impact.",
+          "Quirked: When using a Quirk on this attack, increase the damage to 1d10."
         ],
         [
           "Cleave: [Activate] When you hit your target, deal the Psionic Blade damage to each creature within melee range of the target which has an avoidance lower than the attack roll.", 
-          "Overwhelming: [Activate] Increases the damage to 2d6. Reroll any of these dice that roll a 1. Keep the new result. Requires Magnitude.",
+          "Overwhelming: [Activate] Increases the damage to 2d6. Reroll any of these dice that roll a 1. Keep the new result. Requires Magnitude. Increases the effect of Quirked to 2d8.",
           "Rapid: Psionic Blade is usable more than once per turn, but only once per attack."
         ],
         [

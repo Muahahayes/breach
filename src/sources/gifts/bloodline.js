@@ -26,7 +26,7 @@ export default [
     {
       name: "Bloodthirst",
       attributes: "[Action] [Melee]",
-      description: "On touch you attempt to pierce a creature with your teeth or fingers, dealing 1d8 damage. Costs 1 Bloodlust.",
+      description: "As an Action, on touch you attempt to pierce a creature with your teeth or fingers, dealing 1d8 + Strength damage. Costs 1 Bloodlust.",
       proficiencies: [
         [
           "Fury: On a hit, gain an additional Bloodlust.",
@@ -35,20 +35,68 @@ export default [
         ],
         [
           "Impact: Increase the damage to 1d10.",
-		      "Hunger: You may use Bloodthirst for free if you are in Apathy."
+          "Hunger: You may use Bloodthirst for free if you are in Apathy.",
+          "Quirked: When using a Quirk on this attack, Increase the damage to 2d6."
         ],
         [
           "Anticoagulant: [Activate] On a hit, as an Activation Action the target Bleeds once after 5 turns.",
-          "Magnitude: Increase the damage to 2d6.",
+          "Magnitude: Increase the damage to 2d6. Increase the effect of Quirked to 2d8.",
           "Feed: Thirst gains G more Survival and deals G more damage."
         ],
         [
           "Flow: Anticoagulant Bleeds after 2 fewer turns.",
           "Drain: Thirst and Anticoagulant may both be used with the same Activation Action.",
-          "Overwhelming: Increase the damage to 2d8."
+          "Overwhelming: Increase the damage to 2d8. Increase the effect of Quirked to 2d10."
         ],
         [
           "Rupture: Anticoagulant Bleeds after 1 fewer turn, and may Bleed 2 more times."
+        ]
+      ]
+    },
+    {
+      name: "Sanguine Strike",
+      attributes: "[Action] [Melee]",
+      description: "As an additional Action you channel darkness into a basic melee attack. Add a d4 for each point of Will you possess to the damage dealt by the attack. Costs 2 Bloodlust.",
+      proficiencies: [
+        [
+          "Empowered: Add your Will to the damage dealt.",
+          "Fury: On a Hard Success, gain an additional Bloodlust."
+        ],
+        [
+          "Confirm: You may choose to apply Sanguine Strike after a basic melee attack has been determined to hit.",
+          "Impact: Increase the size of Sanguine Strike's dice to a d6.",
+          "Energized: The damage added by Sanguine Strike is now Darkness damage."
+        ],
+        [
+          "Hellfire: Your weapon alights in flame as it strikes, the creature must roll a 20 + Stamina vs your own d20 + Will. On a fail they are Burned, dealing 1d6 Fire damage over 2 turns. On a Hard Fail the Burn deals 1d8 damage over 3 turns instead.",
+          "Quirked: When using a Quirk on this attack, increase the size of Sanguine Strike's dice to a d10. Requires Impact.",
+          "Penetration: This attack ignores the target's Aegis."
+        ],
+        [
+          "Greater Impact: Increase the size of Sanguine Strike's dice to a d8. Increase the effect of Quirked to a d12.",
+          "Effortless: [Activate] When you use Sanguine Strike you may spend an Activation Action to roll a d4. On a 4, you do not spend a Full Action for this use of Sanguine Strike.",
+          "Cleave: [Activate] If a creature dies from this attack, you may spend an Activation Action to roll an Attack roll against another creature within reach. On a Soft Success, deal half this attack's damage to that creature. On a Hard Success, deal full damage."
+        ],
+        [
+          "Magnitude: Increase the size of Sanguine Strike's dice to a d10. Increase the effect of Quirked to 2d8.",
+          "Ease: Effortless also applies on a 3."
+        ]
+      ]
+    },
+    {
+      name: "Darkflight",
+      attributes: "[Action] [Self]",
+      description: "Dark wings sprout from your shoulders, doubling your normal jumping height and distance during your Movement. The wings fade away after the round. Costs 1 Bloodlust.",
+      proficiencies: [
+        [
+          "Corporeal: The wings persist for G rounds after the first, allowing you to leap again during your Movement.",
+          "Gust: After jumping while Darkflight is active, you may push creatures within 10ft of where you started your jump and/or where you land up to 10ft away."
+        ],
+        [
+          "Dive: [Activate] If you land on top of a creature after leaping at least half your maximum movement distance you may make a basic Melee attack as an Activation Action. Costs 1 Bloodlust."
+        ],
+        [
+          "Shadowflight: While Darkflight is active, as your movement action, if you are standing out of direct light you may disappear and reappear in another location out of direct light within your maximum movement."
         ]
       ]
     }
@@ -124,7 +172,7 @@ export default [
     {
       name: "Bloodsurge",
       attributes: "[Action] [Self]",
-      description: "As a Full Action you draw more energy into your body. The next time you gain Bloodlust, increase the amount gained by 1.",
+      description: "As a Full Action you draw more energy into your body. The next time you gain Bloodlust, increase the amount gained by G.",
       proficiencies: [
         
       ]

@@ -15,7 +15,8 @@ export default {
       "Dark Dreams: You retain up to 2 Bloodlust when you Full Sleep."
     ],
     [
-      "Regenerative: Gain +G to any healing you receive from a Gift."
+      "Regenerative: Gain +G to any healing you receive from a Gift.",
+      "Ancient Endurance: Increase your Stamina by 1."
     ]
   ],
   lesser: [
@@ -27,7 +28,7 @@ export default {
       "Grudge: [Action] [Ranged] You perform a ritual for 10 minutes to curse a creature with a Grudge within 1 mile. Speak their true full name and describe a nightmarish creature or situation, every night for G months the target creature will experience a nightmare you described during every Full Sleep. At 5G you may cause a nightmarish creature to appear to them in a shadowy form in the corner of their vision at random moments during the day."
     ],
     [
-      "Blood Oath: [Activate] [Self] Choose a Quirk when you take this Lesser Gift. Whenever you gain a Favored bonus from this Quirk you may spend 1 Bloodlust and use your Activation Action to heal G health. (Repeatable up to G times, choose another Quirk with each repeat)",
+      "Blood Oath: [Activate] [Self] Choose a Quirk when you take this Lesser Gift. Whenever you gain a Favored bonus from this Quirk you may spend 1 Bloodlust and use your Activation Action to heal G survival. (Repeatable up to G times, choose another Quirk with each repeat)",
       "Dark Strike: [Activate] [Self] Choose a Quirk when you take this Lesser Gift. Whenever you gain a Favored bonus from this Quirk on a damaging attack you may spend 1 Bloodlust and use your Activation Action to dead an additional Gd4 damage."
     ]
   ]

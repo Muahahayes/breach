@@ -110,6 +110,29 @@ export default [
           "Darkened: This rune begins with 10 Fade when it is awakened after a Full Sleep. Requires Faded."
         ]
       ]
+    },
+    {
+      name: "Embolden",
+      attributes: "[Action] [Touch]",
+      description: "As an Action you reach out and touch a willing creature. A small rune of Embolden alights upon them. On their next Attack roll, add 5 minus this rune's Fade to the result. If their roll fails, cause 1 additional Fade.",
+      proficiencies: [
+        [
+          "Empowered: Add your Will to this rune's effect."
+        ],
+        [
+          "Potency: Add 5 to this rune's effect.",
+          "Effortless: Their roll only causes an additional Fade on a Hard Fail."
+        ],
+        [
+          "Greater Potency: Add your G to this rune's effect.",
+          "Ease: This rune doesn't cause a base Fade if the creature's roll is a Hard Success.",
+          "Boost: Embolden may be used on Use Power rolls."
+        ],
+        [
+          "Quirked: Their roll may use a Quirk without imposing an Unfavored penalty.",
+          "Willful: Embolden may be used on any roll that uses the creature's Will. Requires Boost."
+        ]
+      ]
     }
   ], // 1G
   [ // 2G
@@ -160,13 +183,40 @@ export default [
           "Catastrophy: Meltdown also adds the original attack's Fade a second time."
         ]
       ]
+    },
+    {
+      name: "Flux",
+      attributes: "[Action] [Ranged]",
+      description: "On your turn, as an Action you release the energy within this rune to cause Flux on a creature you can see. On that creature's next Attack or Power roll, subtract 10 minus this rune's Fade (to a minimum of 0) from that roll. If their roll still succeeds, cause 1 additional Fade. The creature may attempt a d20 + Will vs your Use Power to resist this effect.",
+      proficiencies: [
+        [],
+        [
+          "Empowered: Add your Will to the amount subtracted.",
+          "Refresh: If their roll is a Hard Fail, this Flux causes 1 fewer Fade."
+        ],
+        [
+          "Impede: You may ready this Action as a React, Flux applies to the creature's current Attack or Power roll when used in this way.",
+          "Befuddle: You may use Flux on any roll that uses the creature's Will.",
+          "Effortless: This rune no longer causes an additional Fade if the creature's roll Soft Succeeds."
+        ],
+        [
+          "Greater Empowered: Add your G to the amount subtracted. Requires Empowered.",
+          "Ease: This rune no longer causes an additional Fade if the creature's roll succeeds. Requires Effortless."
+        ],
+        [
+          "Daze: Instead of its usual effect, Flux may give the creature the Dumb effect until it ends 2 turns or 10 minutes has past."
+        ],
+        [
+          "Boggle: Daze, when used outside of combat, may last for 2 hours. After 1 hour the creature may attempt to end the effect by rolling a d20 + Will vs your Use Power."
+        ]
+      ]
     }
   ], // 2G
   [// 3G
     {
       name: "Cosmic Rune",
       attributes: "[Activate] [Self] [Passive]",
-      description: "Choose 1 Gift from the Cosmic Source at the time you take this Gift. This is now a Runic Arts Power you may use. This Power gains 1 Fade for every 2 ae required. Using this Power uses your Activation Action in addition to the Action requirements of the selected Power.",
+      description: "Choose 1 Gift from the Cosmic Source at the time you take this Gift. This is now a Runic Arts Power you may use. This Power gains 1 Fade for every 2 ae required, rounding up. Using this Power uses your Activation Action in addition to the Action requirements of the selected Power.",
       proficiencies: []
     },
     {

@@ -15,7 +15,8 @@ export default {
       "Genetic Morph: At 5 stacks, gain a new Gift up to [3 G] which does not use a Full Action. This does not apply to your number of Gifts and does not count as Leveling Up. (Repeatable up to 5 stacks)"
     ],
     [
-      "Regenerative: Gain +G to any healing you receive."
+      "Regenerative: Gain +G to any healing you receive.",
+      "Evolutionary Endurance: Increase your Stamina by 1."
     ]
   ],
   lesser: [
