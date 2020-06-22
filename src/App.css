@@ -276,20 +276,20 @@ body {
     display: none;
   }
   #popup-modal {
-    background-color: rgb(200, 200, 180);
+    background-color: rgb(245, 245, 225);
     opacity: 100%;
     position: absolute;
-    margin-left: 8%;
+    margin-left: 5%;
     margin-top: 5%;
-    width: 75%;
+    width: 78%;
     z-index: 2;
     display: none;
+    border-radius: 12px;
+    border-style: solid;
+    border-width: 10px;
+    border-color: rgb(200, 200, 180);
   }
   #modal-body {
-    background: rgb(245, 245, 225);
-    margin: 10px;
-  }
-  #modal-body div {
     margin-left: 2px;
     margin-right: 2px;
   }
@@ -460,8 +460,9 @@ ul{
   margin-block-start: 1em;
   background: rgb(220, 220, 200);
   border-style: solid;
-  border-width: 2px;
+  border-width: 4px;
   border-color: rgb(200, 200, 180);
+  border-radius: 8px;
 }
 
 .searchEntry h2 {
