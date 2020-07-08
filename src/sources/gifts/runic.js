@@ -238,6 +238,25 @@ export default [
           "Greater Effect: You may reuse one additional proficiency. Requires Moderate Effect."
         ]
       ]
+    },
+    {
+      name: "Phase",
+      attributes: "[Self] [Action]",
+      description: "As an Action, your physical form phases into an aether form for 1 round or 1 minute out of combat. While phased you pass through solid objects, cannot interact with the physical world and float freely while conserving your momentum. You become immune to attacks/powers which do not deal elemental or mental damage types, or does not inflict a curse status effect. Phase ends early if you take damage. When passing through an object, being attacked, or being targeted by a negative effect, roll a d20 + Use Power vs 10. On any result other than a Hard Success, gain 1 Fade on this rune. On a Soft Fail you are no longer phasing after resolving the attack or effect. On a Hard Fail you are no longer phasing before resolving the attack or effect. On any Fail involving an object, you do not pass through the object.",
+      proficiencies: [
+        [],[],
+        [
+          "Propel: You may move at half your movement distance in any direction in 3D space while phased.",
+          "Ease: When you get a Soft Success while passing through objects, being attacked, or being targeted by negative effects, you no longer gain a Fade."
+        ],
+        [
+          "Water Phasing: Instead of its usual effect, you may enter a special form of Phase. In this form, from your perspective water has all of the properties of air and none of the properties of water. Cannot use any proficiencies that do not specifically work with Water Phasing.",
+          "Engrave: As an Action you may reach out and touch a creature. That creature gains the effects of Phase or Water Phasing. If the creature is unwilling, it must contest a d20 + Use Power vs your Use Power."
+        ],
+        [
+          "Glide: You may move your full movement distance. Requires Propel."
+        ]
+      ]
     }
   ],// 3G
   [// 4G
