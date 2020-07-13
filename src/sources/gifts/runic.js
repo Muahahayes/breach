@@ -114,7 +114,7 @@ export default [
     {
       name: "Embolden",
       attributes: "[Action] [Touch]",
-      description: "As an Action you reach out and touch a willing creature. A small rune of Embolden alights upon them. On their next Attack roll, add 5 minus this rune's Fade to the result. If their roll fails, cause 1 additional Fade.",
+      description: "As an Action you reach out and touch a willing creature. A small rune of Emboldening alights upon them. On their next Attack roll, add 5 minus this rune's Fade to the result. If their roll fails, cause 1 additional Fade.",
       proficiencies: [
         [
           "Empowered: Add your Will to this rune's effect."
@@ -126,11 +126,15 @@ export default [
         [
           "Greater Potency: Add your G to this rune's effect.",
           "Ease: This rune doesn't cause a base Fade if the creature's roll is a Hard Success.",
-          "Boost: Embolden may be used on Use Power rolls."
+          "Boost: [Activate] As an Activation Action, Embolden may be used on Use Power rolls."
         ],
         [
           "Quirked: Their roll may use a Quirk without imposing an Unfavored penalty.",
-          "Willful: Embolden may be used on any roll that uses the creature's Will. Requires Boost."
+          "Willful: [Activate] As an Activation Action, Embolden may be used on any roll that uses the creature's Will. Requires Boost.",
+          "Fortune: [Activate] As an Activation Action, instead of its usual effects you may cause their next d20 Skill roll to treat any Hard Fail as a Soft Fail. You may use this proficiency once per Full Sleep."
+        ],
+        [
+          "Prosper: You may use Fortune any number of times until it is used on a roll which results in a Hard Fail. After this happens, you may not use Fortune again until you finish a Full Sleep."
         ]
       ]
     }
