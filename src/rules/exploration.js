@@ -66,6 +66,9 @@ content: <div>
   <h3>Shelter:</h3>
   If you spend 30 min setting up a tent or other form of shelter (you may need to scavenge for supplies) you gain an extra 25% Life during a Full Sleep. Also, you are protected from various Climate effects while you are inside your shelter.
   <hr/>
+  <h3>Downtime:</h3>
+  If a player spends a full day without engaging in combat or rolling a Skill check they may practice a Skill (recommended to RP or briefly explain what they are doing to practice that Skill). Roll a d10, on a 6 or greater they gain 1 XP using that Skill. On a 5 or lower, they may add 1 to their next downtime practice roll (stacking up to 5). A player may only gain up to 1 Proficiency amount of XP during consecutive downtime days.
+  <hr/>
   <h3>Real Estate:</h3> (based on regional standard of living, more to read later) 
   <hr/>
   <h3>Vehicles:</h3> (adds to your movement distance while in combat and is needed for some techniques, must move at least half your movement or Brake, while Braked the next move is reduced by half as your vehicle starts moving again. Write additional out of combat stuff about using it and maintaining it. Adds x miles to travel distance)
