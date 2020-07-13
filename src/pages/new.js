@@ -6,7 +6,7 @@ export default {
     <p>If you've played similar Tabletop RPG games before, this section will go over what to expect from a session of Breach. We'll start with what's the same in brief, and then go over what's new in detail.</p>
     <hr/>
     <p><b>What's the Same?</b><br/>
-    Breach is an action/adventure style RPG where you cooperatively create a story with a group of players and a GM (Game Master, some RPG's may call this a Dungeon Master or something similar). There are pre-written campaigns made by the Breach team for your GM to run, or they may choose to come up with their own story and setting! You can bring your same bag of dice to the table, Breach uses the classic polyhedral set of d4, d6, d8, d10, d12 and d20 dice. Just like other Tabletop RPGs, the story is driven by players voicing an action and then rolling dice to determine the result.<br/>
+    Breach is an action/adventure style RPG where you cooperatively create a story with a group of players and a GM (Game Master, some RPG's may call this a Dungeon Master or something similar). There are pre-written campaigns made by the Breach team for your GM to run (coming in the future!), or they may choose to come up with their own story and setting! You can bring your same bag of dice to the table, Breach uses the classic polyhedral set of d4, d6, d8, d10, d12 and d20 dice. Just like other Tabletop RPGs, the story is driven by players voicing an action and then rolling dice to determine the result.<br/>
     <br/>
     Here's a short list of other game mechanics that may look familiar</p>
     <ul>
@@ -42,7 +42,7 @@ export default {
     In Breach, every round of combat the creatures involved roll their Speed to determine how far they can move during their turn. The turn order is based on the highest to lowest movement distances of the creatures. This means we have a Dynamic Turn Order, which can change each round.<br/>
     <br/>
     <b>XP:</b> Now with less murder-hobo! (See <Link to="/rules/leveling">XP</Link>)<br/>
-    In Breach you no longer gain XP from killing. Instead, it's tied into the Skill system. When you Hard Succeed or Hard Fail at a Skill check, you gain 1 XP. Every 5 XP you can pick a Proficiency from your Source/Gifts and a Skill increases by 1.
+    In Breach you no longer gain XP from killing random creatures. Instead, it's tied into the Skill system. When you Hard Succeed or Hard Fail at a Skill check, you gain 1 XP. Every 5 XP you can pick a Proficiency from your Source/Gifts and a Skill increases by 1.
     You can still gain XP from combat, because most ways of attacking rely on Skill checks. But now, there's other ways of leveling up. Ever wanted to play a merchant or a thief (that didn't need to kill?), now you can level and keep up with the party without shedding a drop of blood!<br/>
     <br/>
     <b>Succeed/Fail:</b> Hard what? (See <Link to="/rules/skills">Skills</Link>)<br/>

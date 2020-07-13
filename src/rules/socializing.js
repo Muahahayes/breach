@@ -23,7 +23,7 @@ export default {
       If the loss was due to a Hard Fail the GM may, at their discretion, impose consequences beyond the person standing their ground. 
       If you lose an Argument with a person, you may not initiate a similar Argument with them for a full day. 
       For each repeated attempt at a similar Argument add 1 to their Agreement threshold. 
-      If the person currently has an involuntary effect placed upon them by you, your Persuasion rolls have a -1 Unfavored penalty.</span><br/>
+      If the person currently has an involuntary effect placed upon them by you, your Persuasion rolls have a -1 Unfavored penalty.</span><br/><br/>
       <span><b>Supporting an Argument:</b></span><br/>
       <span>Any number of persons may attempt to support your argument. Each person rolls a d20 + their Persuasion, take the highest value. Apply that value to an argument check against the argument's opposing person. On a Success, gain an Agreement point. On a Hard Fail, count this towards your fails. On a Soft Fail, this has no effect on the argument.</span>
     <hr/>

@@ -40,10 +40,10 @@ export default {
   <hr/>
   <h3>Scenarios:</h3>
   <span>Short challenging moments that require multiple skill checks to overcome (navigating a vehicle through a chase, climbing a crumbling cliff side, hacking into a strong network, etc). May involve multiple creatures.<br/>
-  If the players pass ¾ of the checks the overall scenario is a <b>Hard Success</b>, award G points in XP and they succeed without consequences. <br/>
+  If the players pass ¾ of the checks the overall scenario is a <b>Hard Success</b>, award a Proficiency and they succeed without consequences. <br/>
   If they pass ½ of the checks the overall scenario is a <b>Soft Success</b>, they succeed with some kind of compromise or cost. <br/>
-  If they pass ¼ of the checks it's a <b>Soft Failure</b>, they don't succeed and have the normal consequences and the story continues down a narratively reasonable path, probably a harder one or a plan B. <br/>
-  If they pass less than ¼ of the checks it's a <b>Hard Failure</b>, they don't succeed and the GM can impose heavy penalties; kill a player, end the quest, whatever narratively makes sense. Award G points in XP.</span><br/>
+  If they pass ¼ of the checks it's a <b>Soft Failure</b>, they don't succeed and have mild to moderate consequences. Then the story continues down a narratively reasonable path, probably a harder one or a plan B. <br/>
+  If they pass less than ¼ of the checks it's a <b>Hard Failure</b>, they don't succeed and the GM can impose heavy penalties; kill a player, end the quest, whatever narratively makes sense. Award a Proficiency.</span><br/>
 
   <hr/>
   <h3>Concentrated Effort:</h3>
