@@ -87,7 +87,7 @@ export default [
         ],
         [
           "Cleave: [Activate] When you hit your target, deal the Psionic Blade damage to each creature within melee range of the target which has an avoidance lower than the attack roll.", 
-          "Overwhelming: [Activate] Increases the damage to 2d6. Reroll any of these dice that roll a 1. Keep the new result. Requires Magnitude. Increases the effect of Quirked to 2d8.",
+          "Overwhelming: [Activate] Increases the damage to 2d6. Reroll any of these dice that roll a 1. Keep the new result. Requires Magnitude. Also, passively increase the effect of Quirked to 2d8.",
           "Rapid: Psionic Blade is usable more than once per turn, but only once per attack."
         ],
         [
@@ -149,6 +149,38 @@ export default [
         ],
         [
           "Focused: You may attempt a Forecast roll after seeing the result of the d20 roll."
+        ]
+      ]
+    },
+    {
+      name: "Pursuit",
+      attributes: "[Action] [Melee]",
+      description: "When you hit a creature with a basic melee attack you may spend a Full Action to begin a Pursuit on that creature. The creature must roll a d20 + Will vs the value of your attack roll. On a Soft Fail they are under a Pursuit for your next 2 turns. On a Hard Fail the Pursuit lasts 3 turns. During a Pursuit, whenever you hit that creature with a basic melee attack roll a Psychic Fatigue check and if you succeed add 1d4 to the damage dealt. Only one creature may be under your Pursuit at a time.",
+      proficiencies: [
+        [
+          "Quirked: Whenever you apply a Quirk in a roll involving the creature, gain Favored +1 to the roll.",
+          "Empowered: Add your Will to the damage dealt by Pursuit."
+        ],
+        [
+          "Impact: Increase the damage to 1d6.",
+          "Ease: You no longer need to make a Psychic Fatigue check when Pursuit triggers from a basic melee attack.",
+          "Gifted: You may trigger Pursuit on any attack or power which deals damage while you are within 10 feet of the creature."
+        ],
+        [
+          "Magnitude: Increase the damage to 1d8. Requires Impact.",
+          "Chase: [React] If the creature moves further than 10 feet away from you, as a Reaction Action you may move 10 feet towards the creature.",
+          "Pressure: While a creature is under your Pursuit, you may give the creature an Unfavored -1 to attack and power rolls against you, but you do not gain the benefits of the Advantage proficiency. Requires Advantage.",
+          "Advantage: While a creature is under your Pursuit, gain Favored +1 to your basic melee attack rolls against that creature."
+        ],
+        [
+          "Fork: You may apply your Pursuit to a second creature at a time.",
+          "Split: [Activate] If two creatures have your Pursuit and are both within 10 feet of you, you may use your Activation Action to perform a basic melee attack on each of the creatures.",
+          "Relentless: Chase also allows you to make a basic melee attack on the creature as a Free Action.",
+          "Force: Whenever you apply a Quirk to a roll which results in damage, increase the damage by 1d6."
+        ],
+        [
+          "Favored: Advantage now applies to any rolls against the creature.",
+          "Debilitate: [Activate] When Pursuit deals damage, you may instead deal 0 damage and reduce the creature's survival by half the damage it would have dealt. This survival is restored if the creature receives healing equal to its original max survival or when it completes a Full Sleep."
         ]
       ]
     }
@@ -261,3 +293,12 @@ export default [
     }
   ]// 3G
 ]
+/*
+{
+  name: "",
+  attributes: "",
+  description: "",
+  proficiencies: [
+  ]
+}
+*/
