@@ -51,15 +51,16 @@ export default {
   <hr/>
   <h3>Skills List:</h3>
   <ul>
-      <li>Mechanics (maintaining, repairing, or improving non-cybernetic technology)</li>
-      <li>Cybernetics (maintaining, repairing, or improving cybernetic technology)</li>
-      <li>Techno-craft (can find blueprints and craft advanced tools and weaponry)</li>
-      <li>Athletics (running, jumping, climbing, swimming, and other aerobic activities that take specific skills)</li>
-      <li>Charm (improving a person's opinion of yourself, not a specific moment)</li>
-      <li>Persuasion (convincing a person to do an action or believe an idea, specific moment)</li>
+      <li>Mechanics (maintaining, repairing, or improving technology)</li>
+      <li>Craftsman (can find blueprints and craft advanced tools and weaponry)</li>
+      <li>Athletics (running, climbing, swimming, and other physical activities that require practiced use of non-flexible motions)</li>
+      <li>Acrobatics (jumping, contorting, dodging, and other physical activities that require mobility and flexibility)</li>
+      <li>Charm (improving a person's opinion of yourself, long term effect)</li>
+      <li>Persuasion (convincing a person to do an action or believe an idea, short term effect)</li>
       <li>Insight (recognizing when someone is lying or is hiding their intentions)</li>
       <li>History (knowledge of the background of an area, or the details of major events/figures)</li>
-      <li>Logic (mental capability of finding patterns and solving structured puzzles)</li>
+      <li>Logic (mental capability of math, physical sciences and solving structured puzzles)</li>
+      <li>Cosmology (mental capability of the stars, Aether, and related phenomena</li>
       <li>Marksmanship (expertise with ranged weapons)</li>
       <li>Martial Arms (expertise with melee weapons)</li>
       <li>Use Power (using your Powers to accomplish a task or attack a creature, or contesting the effect of an enemy Power)</li>
@@ -69,14 +70,17 @@ export default {
       <li>Hide (avoiding being noticed/found by others while staying still)</li>
       <li>Awareness (passively noticing things in the surrounding area)</li>
       <li>Search (actively finding things in the surrounding area)</li>
+      <li>Investigation (finding information or clues hiding in plain sight)</li>
       <li>Medicine (knowledge of medical science, expertise with medical equipment)</li>
+      <li>Nature (knowledge of biology, zoology and botony related sciences)</li>
       <li>Outdoorsman (survival skills in a natural environment)</li>
       <li>Urban (survival skills in an industrial environment)</li>
-      <li>Street Talk (ability to interact with urban locals and gain information)</li>
+      <li>Social (knowledge of society and ability to interact with locals to gain information)</li>
       <li>Disruption (ability to distract or causes commotion in a group)</li>
       <li>Perform (ability to entertain or carry out an active artistic skill)</li>
       <li>Art (creation of a static/physical piece of art)</li>
       <li>Cooking (creation of edible foods/drinks)</li>
   </ul>
+  <span>Note: Some Skills may have more fleshed out details in common uses explained in the <Link to="exploration">Exploration</Link> page.</span>
 </div>
 }

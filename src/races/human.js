@@ -9,13 +9,13 @@ export default {
     "Base Attributes: Strength 1, Agility 1, Stamina 1, Will 1",
     "Speed: 1d6 + 1",
     "Creation AP: 5",
-    "Favored Skills: Art, Cybernetics, Athletics, Persuasion, Search, Medicine, Street Talk, Disruption",
+    "Favored Skills: Art, Logic, Athletics, Persuasion, Search, Medicine, Social, Disruption",
     "Creation Skill Points: 12",
     "Languages: Imperial, Any playable race's language"
   ],
   racials:[
-    "Adaptable: You may add G to any Favored Skill for 1 check, once per day.",
-    "Cultured: Choose an Urban or Rural background. Urban or Outdoorsman is now a Favored Skill.",
+    "Adaptable: You may gain a Favored +1 to any Favored Skill for 1 roll, once per day.",
+    "Cultured: Choose an Urban or Rural background. Urban or Outdoorsman is now a Favored Skill and gains 2 points.",
     "Potential: Once per lifetime, learn a Technique if you are within 5 points short of meeting a requirement."
   ]
 }

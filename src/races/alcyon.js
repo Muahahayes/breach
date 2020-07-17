@@ -8,7 +8,7 @@ export default {
     "Base Stats: Strength 3, Agility 0, Stamina 3, Will 0",
     "Speed: 1d6",
 		"Creation AP: 3",
-		"Favored Skills: Mechanics, Athletics, Insight, Martial Arms, Awareness, Urban, Street Talk",
+		"Favored Skills: Mechanics, Athletics, Insight, Martial Arms, Awareness, Urban, Disruption",
 		"Creation Skill Points: 8",
 		"Languages: Imperial, Any playable race's language or Giantfolk if they were raised with the old tongue"
 ],

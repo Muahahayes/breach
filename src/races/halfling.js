@@ -8,13 +8,13 @@ export default {
     "Base Stats: Strength 1, Agility 2, Stamina 1, Will 2",
     "Speed: 1d4 + 2",
 		"Creation AP: 3",
-		"Favored Skills: Charm, Insight, History, Hide, Awareness, Perform, Outdoorsman, Street Talk",
+		"Favored Skills: Charm, Insight, History, Hide, Awareness, Perform, Nature, Outdoorsman, Social",
 		"Creation Skill Points: 12",
 		"Languages: Imperial, Any playable race's language"
 ],
   racials:[
     "Friendly: Gain a +1 to the regard gained by the first Charm success you have on a person in their lifetime.",
-		"Ballad: They have heard many tales of the world in the form of songs. May gain a +G bonus to History checks, but only if afterwards they sing a few lines of a folk song (player improvised) pertaining to the story being remembered, accuracy depending on if they succeeded the check.",
+		"Ballad: They have heard many tales of the world in the form of songs. May gain a Favored +1 to History checks, but only if afterwards they sing a few lines of a folk song (player improvised) pertaining to the story being remembered, accuracy depending on if they succeeded the check.",
 		"Optimism: Once per day, you may treat a Hard Fail as a Soft Fail. You still gain any XP earned."
   ]
 }

@@ -8,13 +8,13 @@ export default {
     "Base Attributes: Strength 1, Agility 0, Stamina 2, Will 2",
     "Speed: 1d4 + 2",
     "Creation AP: 4",
-    "Favored Skills: Cybernetics, Insight, History, Logic, Marksmanship, Hide, Search, Disruption",
+    "Favored Skills: Craftsman, Insight, History, Logic, Marksmanship, Hide, Search, Investigation, Disruption",
     "Creation Skill Points: 10",
     "Languages: Darkin, Any playable race's language"
   ],
   racials:[
-    "Low Light Vision: You can see in Low Light up to 50 ft as if it was Medium Light.",
+    "Low Light Vision: You can see in Low Light up to 100 ft as if it was Medium Light, and Dark up to 50 ft as if it were Low Light.",
 		"Cave Dweller: You may move your full Movement while climbing. Also, once per day you may remove 1 movement impairing effect from yourself as a Full Action.",
-		"Lurk: Gain +1 Favored to Attack and Power rolls during your first turn in a combat while in Low Light."
+		"Lurk: Gain +1 Favored to Attack and Power rolls during your first turn in a combat while in Low Light or darker."
   ]
 }

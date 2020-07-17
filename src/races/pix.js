@@ -8,7 +8,7 @@ export default {
     "Base Stats: Strength -1, Agility 3, Stamina 0, Will 3",
     "Speed: 1d4",
 		"Creation AP: 3",
-		"Favored Skills: Charm, Mechanics, Cybernetics, Insight, History, Awareness, Hide, Perform, Art",
+		"Favored Skills: Charm, Mechanics, Craftsman, Insight, History, Awareness, Hide, Cosmology, Art",
 		"Creation Skill Points: 14",
 		"Languages: Sylvan, Imperial, Any playable race's language"
 ],
