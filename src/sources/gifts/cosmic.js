@@ -272,8 +272,33 @@ export default [
           "Peace: [Activate] When you create the bubble, you may make the bubble discourage violence, which gives all attack rolls within the field a -1 Unfavored during the duration."        
         ]
       ]
+    },
+    {
+      name: "Blink",
+      attributes: "[Action] [Self]",
+      description: "You close your eyes for a moment to focus as your body becomes pulled by cosmic forces towards a new location. After 1 second of focusing you appear in a location within 20 feet and within your line of sight. This does not count as movement and you do not interact with any physical objects or creatures between you and your new location. Costs 2 ae.",
+      proficiencies: [
+        [],[],
+        [
+          "Empowered: Increase the range of your Blink by 5 feet multiplied by your Will.",
+          "Rewind: Until the end of your next turn, or for 1 minute out of combat, you may spend 1 ae to return to your original location even if you are no longer within line of sight of that location. The effect fails if you are no longer within 1 mile."
+        ],
+        [
+          "Teleport: [Action] As an Action you may focus for a full minute to transport yourself to any location you have previously been to within a 5 mile radius. This costs 5 ae.",
+          "Extended Travel: Your Teleport now reaches up to 100 miles.",
+          "Escape: [React] As a React Action when taking damage you may Blink. This Blink has a reduced range of 10 feet."
+        ],
+        [
+          "Portal: [Activation] As an Activation Action, when you Teleport or Blink you may leave an opening in space behind you. Creatures that move through the Portal will arrive at your Teleport/Blink destination. The Portal closes after 1 turn, or 1 minute out of combat. Costs an additional 3 ae.",
+          "Door: You may extend the duration of your Portal by spending 1 ae for every 1 turn or 1 minute out of combat."
+        ],
+        [
+          "Interplanetary: Your Teleport now has no range limits and can be used between different planets.",
+          "Gate: Your Portal may persist for as long as you will it and a linked Portal will appear at the destination which creatures can use to return. The Portal will close if you die, or if another Cosmic with the Gate proficiency spends 1 day to close it. You may keep up to G Portals open with Gate at one time. Costs 5 ae to use the Gate proficiency to either make Portals persist or close. Requires Door."
+        ]
+      ]
     }
-  ]// 3G
+  ],// 3G
 ]
 // {
 //   name: "",
