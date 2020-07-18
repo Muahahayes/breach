@@ -55,6 +55,7 @@ content: <div>
   When there is information or a clue in the immediate area, you may roll an Investigation check to find/discover it. The GM may choose an appropriate difficulty for this check depending on how obscure/hidden it is or how difficult it is to recognize the clue. Investigation applies to things "hiding in plain sight" such as looking through papers or finding a symbol on a tapestry and is not the same as finding a hidden object in an unknown location.<br/>
   When you suspect an object may be in your surroundings, you  may roll a Search check to find it. The GM may choose an appropriate difficulty for this check depending on how well hidden the object is or how wide your Search area must reach.
   <br/>
+  <hr/>
   <h3>Currency:</h3>
   The Urban society uses a currency called Virtua, a cryptocurrency that is stored in the Psi Network. Non-psychics must visit a Broker to check on their balance. Citizens are given a V-Chip to carry out transactions, a small card with a built-in crystal chip that resonates with the Psi Network. Two persons each holding their V-Chip against each other will resonate the chips, the person to speak a value will send that value to the other person's V balance on the network. The Consortium can check the network at any time to see transaction histories and the citizen's ID associated with the chips involved. Unmarked chips are made by illegal Brokers who trade materials or give a debt for non-citizens or citizens trying to be untracked to have a V-Chip without their ID. Unmarked chips still have a unique ID, and if the Consortium are able to associate the ID with you they may assign that ID to you and track you through your transactions.<br/>
   Outside of Urban society smaller villages or foreigners do not use Virtua. They may use bartering for physical goods, or trade in precious metals. In general, 1 piece of gold (unmarked, plain chunks of metal about the size of half your thumb) is worth 100 Virtua. 1 piece of silver is worth 50 Virtua.
@@ -69,7 +70,7 @@ content: <div>
   Dry: Reduces the time needed to drink your Water quota by 1 day.
   <hr/>
   <h3>Shelter:</h3>
-  If you spend 30 min setting up a tent or other form of shelter (you may need to scavenge for supplies) you gain an extra 25% Life during a Full Sleep. Also, you are protected from various Climate effects while you are inside your shelter.
+  You may spend 30 min setting up a tent or other form of shelter (you may need to scavenge for supplies). You are protected from various Climate effects while you are inside your shelter.
   <hr/>
   <h3>Downtime:</h3>
   If a player spends a full day without engaging in combat, travelling more than 5 miles, or rolling a Skill check they may practice a Skill (recommended to RP or briefly explain what they are doing to practice that Skill). Roll a d10, on a 6 or greater they gain 1 XP using that Skill. On a 5 or lower, they may add 1 to their next downtime practice roll (stacking up to 5). A player may only gain up to 1 Proficiency amount of XP during consecutive downtime days.
@@ -77,6 +78,5 @@ content: <div>
   <h3>Real Estate:</h3> (based on regional standard of living, more to read later) 
   <hr/>
   <h3>Vehicles and Mounts:</h3> (adds to your movement distance while in combat and is needed for some techniques, must move at least half your movement or Brake, while Braked the next move is reduced by half as your vehicle starts moving again. Write additional out of combat stuff about using it and maintaining it. Adds x miles to travel distance)
-
 </div>
 }
