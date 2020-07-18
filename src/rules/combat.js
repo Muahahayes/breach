@@ -47,7 +47,7 @@ content: <div>
   <p>You may spend a Full Action to begin Blocking, you may attempt Block checks as a Free Action against any attack which hits you until your next Turn. Block checks are done by rolling [Block + Strength] vs the result of the attack roll which hit you. You may only Block if you are holding a melee weapon or <Link to="/equipment/aegis">Aegis</Link>. On any Success, you reduce the damage amount of the attack by the difference between the rolls plus an additional amount based on your Aegis. On a Hard Fail, you are no longer Blocking.</p>
   <hr/>
   <h3>Prone:</h3>
-  <p>If you fall or are knocked to the ground you are Prone. While Prone you cannot use your Full or Movement Actions. When rolling your Speed dice at the start of a round, if you are Prone the result is reduced by half. On your turn you may stand up and end the Prone effect as a Movement Action. While you are Prone, enemy attacks are Favored +1 against you. Your defensive rolls while prone are considered a Hard Fail when you roll a Soft Fail.</p>
+  <p>If you fall or are knocked to the ground you are Prone. While Prone you cannot use your Movement Action except to stand up, and you begin your turn with only 1 Full Action. When rolling your Speed dice at the start of a round, if you are Prone the result is reduced by half. On your turn you may stand up and end the Prone effect as a Movement Action. While you are Prone, enemy attacks are Favored +1 against you. Your defensive rolls while prone are considered a Hard Fail when you roll a Soft Fail.</p>
 
 </div>
 }
