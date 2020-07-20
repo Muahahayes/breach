@@ -210,22 +210,22 @@ export default [
     {
       name: "Disruption",
       attributes: "[Action] [Ranged] [Contract]",
-      description: "You reach out with your mind to disrupt the flow of energy within a creature you can see. On that creature's next turn, you nullify the first use of a Power it used on its previous turn. Roll a normal Psychic Fatigue check to place the Disruption on them. The first time they attempt to use a Disrupted Power roll additional Psychic Fatigue checks equal to the G of the Power they attempt to use, if you succeed they cannot use the Power and lose any Actions the Power required. If you fail one of the additional checks they may use the Power but you do not go into Psychic Exhaustion.",
+      description: "You reach out with your mind to disrupt the flow of energy within a creature you can see. Roll your normal Psychic Fatigue check to place a Disruption on a Power they used on their most recent turn. This Disruption lasts until the end of their next turn. When they attempt to use a Disrupted Power roll additional Psychic Fatigue checks equal to the G of the Power they attempt to use, if you succeed they cannot use the Power and lose any Actions the Power required. If you fail one of the additional checks they may use the Power but you do not go into Psychic Exhaustion.",
       proficiencies: [
         [],
         [
-          "Suppress: Reduce the number of Psychic Fatigue checks required to Disrupt a Power by 1 (to a minimum of 1 check)."
+          "Suppress: Reduce the number of Psychic Fatigue checks required to Disrupt a Power by 1 (to a minimum of 1 check) (Repeatable)."
         ],
         [
-          "Counter: [React] As a Reaction, you may attempt to nullify a Psychic or Cosmic Power before it takes effect, roll Psychic Fatigue checks equal to the G of the Power plus 1.", 
+          "Counter: [React] As a Reaction, you may attempt to Disrupt a Psychic or Cosmic Power before it takes effect, roll Psychic Fatigue checks equal to the G of the Power plus 1. If you succeed they cannot use the Power and lose any Actions required. If you fail one of these checks they may use the Power and you do not enter Psychic Exaustion.", 
 		      "Smother: Increase the reduction from Suppress by 1 (to a minimum of 1 check)."
         ],
         [
-          "Disable: When you successfully nullify a Power, that Power is eligible for nullifying on the next turn.",
+          "Disable: When you successfully nullify a Power, that Power remains Disrupted for one more turn.",
 		      "Denial: Reduce the number of Psychic Fatigue checks required to Counter a Power by 2 (to a minimum of 1 check)."
         ],
         [
-          "Permission: [Activate] When you successfully nullify a Power for a second time in a row, roll a Power vs Will check against the creature. On a success, the creature may only attempt to use that Power when you give it permission. After a Full Sleep the creature may attempt a Power vs Will check to end this effect."
+          "Permission: [Activate] When you successfully nullify a creature's Power twice in a row, roll a Power vs Will check against the creature. On a success, the creature may only attempt to use that Power when you give it permission. After every Full Sleep the creature may attempt another Power vs Will check to end this effect."
         ],
         [
           "Dominate: [Activate] When a creature fails the check to end the effect of Permission, Permission may deny attempts to use any Power from its Source."
@@ -266,7 +266,7 @@ export default [
     {
       name: "Psychosomatic",
       attributes: "[Activate] [Self] [Passive]",
-      description: "Choose 1 Gift from the Mutation Source at the time you take this Gift. This is now a Psychic Awakening Power you may use. If it causes, refers to, uses, or spends Strain you instead use 1 Psychic Fatigue check for every G Strain. Using this Power uses your Activation Action in addition to the Action requirements of the selected Power.",
+      description: "At the time you take this Gift, choose 1 Gift from the Mutation Source which is of [3 G] or below, this is now a Psychic Awakening Power you may use. If it causes, refers to, uses, or spends Strain you instead use 1 Psychic Fatigue check for every G Strain. Using this Power uses your Activation Action in addition to the Action requirements of the selected Power.",
       proficiencies: []
     },
     {
@@ -288,6 +288,28 @@ export default [
         [
           "Zealous: When the victim lowers their regard for an assisting person, lower it by 2.",
 		      "Devoted: [Activate] Assisted and triggered checks cannot Hard Succeed if their regard for the Psychic is greater than 0. They gain 1 regard for the Psychic whenever they Hard Fail any check against this Power up to a Max regard of 5."
+        ]
+      ]
+    },
+    {
+      name: "Mind Flay",
+      attributes: "[Action] [Ranged]",
+      description: "Point at a creature in your line of sight within 50 ft. Dark and twisted horrors flash before their eyes. Roll a d20 + Use Power vs their Insight. On a Success they may not target you with an Action on their next turn. On a Hard Success they are Feared for 1 turn and must move away from you.",
+      proficiencies: [
+        [],[],
+        [
+          "Trauma: [Activation] After the Fear effect ends, as an Activation Action you may induce Trauma. The Trauma causes the creature to receive an Unfavored -1 for all d20 rolls against you. The Trauma persists until it succeeds a d20 roll against you or a Psychic with a higher Use Power Skill than your own spends 1 hour to end the effect.",
+          "Terrify: You may perform an additional Psychic Fatigue check before rolling your Use Power check against the creature, if you succeed the target will also receive the Fear effect on a Soft Success.",
+          "Probe: You probe into their mind and gain greater insight into their secrets. After a successful Mind Flay, your next Insight roll against the creature has a Favored +1."
+        ],
+        [
+          "Nightmare: While under the Trauma effect, the creature will experience vivid nightmares about you during every Full Sleep. After experiencing its first nightmare, the Trauma effect becomes an Unfavored -2.",
+          "Cracked: Reduce the creature's Will by 1 until the Trauma effect ends.",
+          "Depression: After the Fear effect ends, the creature receives an Unfavored -1 on its next Perform, Art, Cooking, Charm or Craftsman Skill check."
+        ],
+        [
+          "Inescapable: The Trauma effect no longer ends on a Soft Success.",
+          "Madness: After the Trauma effect has persisted for 1 week the creature becomes Dumb and reduces its Will by 1 until the Trauma effect ends."
         ]
       ]
     }
