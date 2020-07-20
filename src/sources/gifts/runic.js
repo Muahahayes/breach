@@ -220,7 +220,7 @@ export default [
     {
       name: "Cosmic Rune",
       attributes: "[Activate] [Self] [Passive]",
-      description: "Choose 1 Gift from the Cosmic Source at the time you take this Gift. This is now a Runic Arts Power you may use. This Power gains 1 Fade for every 2 ae required, rounding up. Using this Power uses your Activation Action in addition to the Action requirements of the selected Power.",
+      description: "At the time you take this Gift, choose 1 Gift from the Cosmic Source, this is now a Runic Arts Power you may use. This Power gains 1 Fade for every 2 ae required, rounding up, and your maximum ae is considered 10 when calculating effects based on your maximum. Using this Power uses your Activation Action in addition to the Action requirements of the selected Power.",
       proficiencies: []
     },
     {
