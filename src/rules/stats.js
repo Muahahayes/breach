@@ -41,7 +41,7 @@ export default {
     <hr id="favored"/>
     <h3>Favored/Unfavored Rolls:</h3>
     <p>In some circumstances, the situation might favor or unfavor a dice roll. In these cases, a bonus/penalty is applied to the favored/unfavored roll respectively, with the degree of the bonus/penalty being +/- in tiers based on the creature's G. 1G, 2G, or 3G depending on how strong of an influence the situation has. Any single roll cannot have more than an Unfavored -3 penalty or a Favored +3 bonus.
-      If more than 1 Bonus/Penalty is active, add together the +/- numbers to determine the final result (with a maximum of +/- 3). For example, a player with a Favored +3 bonus has been given an Unfavored -1 penalty. +3 added to -1 equals +2. The player would add 2G to their roll.
+      If more than 1 Bonus/Penalty is active, add together the +/- numbers to determine the final result (with a maximum of +/- 3). For example, a player with a Favored +3 bonus has been given an Unfavored -1 penalty. +3 added to -1 equals +2 so the player would add 2G to their roll. When rolling an opposing roll against another creature an Unfavored bonus is based on the opposing creature's G instead of your own.
     </p>
     <hr/>
     <span><b>A note on numbers:</b> Whenever you calculate a fraction of a number, if the result is not a whole number you must round down to the nearest non-zero whole number (If it is zero, treat it as 1).</span><br/>
