@@ -11,7 +11,8 @@ export default {
     ],
     [
       "Iron Will: Subtract your Will from the difficulty of Psychic Fatigue checks.",
-      "Mind Over Matter: Every 2 Proficiency you put into Mind Over Matter gives you 1 AP you can spend on any Attribute except Will. (Cannot increase an Attribute higher than [G + 3]). (Repeatable up to G)"
+      "Mind Over Matter: Every 2 Proficiency you put into Mind Over Matter gives you 1 AP you can spend on any Attribute except Will. (Cannot increase an Attribute higher than [G + 3]). (Repeatable up to G)",
+      "Mental Map: You are always aware of which direction is True North and what time of day it is."
     ],
     [
       "Focused: Add G to your defensive Will checks.",
