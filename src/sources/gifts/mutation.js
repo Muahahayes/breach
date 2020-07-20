@@ -3,7 +3,7 @@ export default [
     {
       name: "Harden",
       attributes: "[React] [Self]",
-      description: "Your skin can flex and morph to become a hard like armor. When you receive damage, you may reduce the damage taken by an amount equal to your current Strain. Afterwards, causes G Strain. May only be used while Blocking and may only be used twice per day. Regain a use after taking a Break, or regain all uses after a Full Sleep.",
+      description: "Your skin can flex and morph to become a hard like armor. When you receive damage, you may reduce the damage taken by an amount equal to your current Strain. Afterwards, causes 2 Strain. May only be used while Blocking and may only be used twice per day. Regain a use after taking a Break, or regain all uses after a Full Sleep.",
       proficiencies: [
         [
           "Calloused: Reduce the damage taken by an additional amount equal to G.",
@@ -15,7 +15,7 @@ export default [
         ],
         [
           "Reactive Skin: You may use Harden while not Blocking.",
-          "Quills: Increase the size of the Spines or Quill Spray die, causes G Strain per size increase. (Repeatable d6, d8, d10)"
+          "Quills: Increase the size of the Spines or Quill Spray die, causes 1 Strain per size increase. (Repeatable d6, d8, d10)"
         ],
         [
           "Quill Spray: [Activate] When you use Harden, you may release a spray of quills around. Every creature within 10ft must roll an Agility check vs your current Strain, you deal 1d4 piercing damage to any Soft Fail and an additional G damage to any Hard Fail."
@@ -29,7 +29,7 @@ export default [
     {
       name: "Dermal Markings",
       attributes: "[Action] [Self]",
-      description: "Roll a Disruption check. All enemies that can See you must roll an Insight check vs your Disruption. Any that fail are Taunted for 1 turn. Causes G Strain. On a natural 1 for the Disruption check the Strain is doubled.",
+      description: "Roll a Disruption check. All enemies that can See you must roll an Insight check vs your Disruption. Any that fail are Taunted for 1 turn. Causes 1 Strain. On a natural 1 for the Disruption check the Strain is doubled.",
       proficiencies: [
         [
           "Infuriate: On an enemy's Hard Fail the effect lasts an additional turn.",
@@ -63,7 +63,7 @@ export default [
         ],
         [
           "Sharpened: Your unarmed melee attack now deals 1d8 sharp damage.",
-          "Poisoned: [Activate] Your unarmed melee attack now may apply a Poison if it naturally rolls 15+ on its attack and hits. This Poison deals 1d4 nature damage per turn, afterwards if the enemy rolls d20+Stamina above {10 + G} the Poison effect ends."
+          "Poisoned: [Activate] Your unarmed melee attack now may apply a Poison if it naturally rolls 15+ on its attack and hits. This Poison deals 1d4 nature damage per turn, afterwards if the enemy rolls d20 + Stamina vs [10 + G] the Poison effect ends."
         ],
         [
           "Razors: Your unarmed melee attack now deals 1d10 sharp damage.",
@@ -74,7 +74,7 @@ export default [
     {
       name: "Budding",
       attributes: "[Action] [Melee]",
-      description: "You have ten flowers budding on your skin. You may have one burst and shower a creature (not yourself) in melee range with parasitic pollen which clings onto their skin. Whenever you fully sleep or take a break while eating a full meal you regain all flowers, choose 1 color of flower and if they all heal or deal damage. The flowers do the effect chosen on creatures the pollen touches for 1d6 healing/damage. Causes G Strain to burst a flower.",
+      description: "You have ten flowers budding on your skin. You may have one burst and shower a creature (not yourself) in melee range with parasitic pollen which clings onto their skin. Whenever you fully sleep or take a break while eating a full meal you regain all flowers, choose 1 color of flower and if they all heal or deal damage. The flowers do the effect chosen on creatures the pollen touches for 1d6 healing/damage. Causes 1 Strain to burst a flower.",
       proficiencies: [
         [
           "Empowered: Add your Will to the amount healed.",
@@ -83,7 +83,7 @@ export default [
 	        "Garden: You may bud up to G more flowers."
         ],
         [
-          "Bloom: You may burst a second flower which affects a secondary target. Causes G Strain.",
+          "Bloom: You may burst a second flower which affects a secondary target. Causes 2 Strain.",
 	        "Bountiful: Increase the healing or damage to 1d8 (take again for the other choice), may attract pollinating insects such as bees more frequently.",
 	        "Hyper-allergenic: Causes sneezing/allergy responses. Unfavored -1 to the victim's attack rolls for 1 turn."
         ],
@@ -93,7 +93,7 @@ export default [
         ],
         [
           "Bouquet: Your flowers take on a multitude of colors at once, and you can choose to heal or damage at the moment of bursting on an individual flower basis.",
-          "Puff: Bloom may burst a third flower which affects a tertiary target. Causes additional G Strain.",
+          "Puff: Bloom may burst a third flower which affects a tertiary target. Causes an additional 2 Strain.",
           "Meadow: Garden may bud up to G more flowers."
         ],
         [
@@ -104,7 +104,7 @@ export default [
     {
       name: "Transfusion",
       attributes: "[Action] [Melee]",
-      description: "You reach out and touch a creature. You inject them with a spine from your wrist, transferring some small portion of your blood into their system, healing them for 1d8. Causes G Strain.",
+      description: "You reach out and touch a creature. You inject them with a spine from your wrist, transferring some small portion of your blood into their system, healing them for 1d8. Causes 1 Strain.",
       proficiencies: [
         [
           "Empowered: Add your Will to the amount healed.",
@@ -134,16 +134,44 @@ export default [
     {
       name: "Tight Reflexes",
       attributes: "[React] [Self]",
-      description: "When attacked by a melee or ranged weapon attack you may Dodge, reducing their attack roll by G. Causes G Strain.",
+      description: "When attacked by a melee or ranged weapon attack you may Dodge, reducing their attack roll by G. Causes 2 Strain.",
       proficiencies: [
-        [],[],
+        [],
+        [
+          "Nimble: [Activation] Whenever you roll for the Acrobatics Skill, you may spend an Activation Action to gain a Favored +1 on the roll."
+        ],
         [
           "Reactive: You may perform a second React Action per Round."
         ],
+        [
+          "Proactive: [Activate] As an Activation Action you may perform a third Action in a turn. Cannot be used with any Action that does not cause Strain, and this Action causes double the usual Strain. Usable G times per day.",
+          "Evasive: [Passive] Increase your Avoidance by 1."
+        ]
+      ]
+    },
+    {
+      name: "Barkskin",
+      attributes: "[Action] [Self]",
+      description: "Your skin hardens with a thick bark. Gain 1d6 Shielding. Barkskin effects persist until your Shielding reaches 0. Gain a Favored +1 to Hide rolls while in a forested environment. Causes 2 Strain.",
+      proficiencies: [
         [],
         [
-          "Proactive: [Activate] As an Activation Action you may perform a second Action in a turn. Cannot be used with any Action that does not cause Strain, and causes double the usual Strain. Usable G times per day.",
-          "Evasive: [Passive] Increase your Avoidance by 1."
+          "Empowered: Add your Will to the amount of Shielding.",
+          "Ease: If you roll a 3 or less on the Shielding roll, Barkskin causes 1 less Strain."
+        ],
+        [
+          "Potency: Increase the Shielding to 1d8.",
+          "Hard: After using Barkskin reduce Blunt damage taken by G",
+          "Treeherder: After using Barkskin gain a Favored +1 to Nature rolls related to plants.",
+          "Relaxed: Barkskin no longer causes an additional Strain for rolling a maximum value."
+        ],
+        [
+          "Greater Potency: Increase the Shielding to 1d10. Requires Potency.",
+          "Effortless: Ease now triggers on a 5 or less.",
+          "Natural Growth: After using Barkskin increase all healing received by G."
+        ],
+        [
+          "Evergreen: If you are in direct sunlight your Barkskin does not cause Strain, also you may roll your Barkskin die twice and keep the higher result."
         ]
       ]
     },
@@ -204,7 +232,7 @@ export default [
     {
       name: "Runic Evolution",
       attributes: "[Activate] [Self] [Passive]",
-      description: "Your DNA forms a runic word, your body has evolved to use it but cannot Awaken any other runes. Choose 1 Gift from the Runic Arts Source, that is now a Mutant Power you may use. Gain G Strain for each point of Fade the Gift gains. Using this Power uses your Activation Action in addition to the Action requirements of the selected Power.",
+      description: "Your DNA forms a runic word, your body has evolved to use it but cannot Awaken any other runes. At the time you take this Gift, choose 2 Gifts from the Runic Arts Source which is of [3 G] or below, these are now Mutant Powers you may use. These Gifts gain Fade as a Runic Arts Gift normally would. Using this Power uses your Activation Action in addition to the Action requirements of the selected Power.",
       proficiencies: []
     },
     {
