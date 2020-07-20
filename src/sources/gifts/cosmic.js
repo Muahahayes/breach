@@ -63,7 +63,7 @@ export default [
       proficiencies: [
         [
           "Empowered: Add your Will to the amount healed.",
-          "Ease Pain: [Activate] Reduces Strain on the target by the amount healed (before healing)."
+          "Ease Pain: [Activate] You may spend any amount of the healing to reduce their Strain instead of healing them, and then heal them with the remaining amount."
         ],
         [
           "Potency: Increase the amount healed to 1d8. Increases the cost by 1 ae.",
@@ -71,11 +71,11 @@ export default [
         ],
         [
           "Clear Mind: [Activate] The target may ignore their next Psychic Fatigue check.",
-          "Restore: Instead of healing Soul Stitching may end any Blind, Deafen, or Immobilizing effects originating from a Cosmic or Psychic Source. Costs 1 additional ae when used in this way.",
+          "Restore: Instead of healing Soul Stitching may end any Blind, Deafen, or Immobilizing effects not originating from a Ancient Bloodline or Mutation Source. Costs 1 additional ae when used in this way.",
           "Reach: [Activate] You may cast Soul Stitching on a target up to 20 ft away. Only the Empowered, Experienced, Potency, Greater Healing, and Renew proficiencies may be active when the Power is used in this way. Costs 1 additional ae when used in this way."
         ],
         [
-          "Revival: May overheal into positive values when used on a target below 1 Life. Costs 1 additional ae when used in this way.",
+          "Revival: When used on a target below 1 Life, restore 1 Life instead of its usual effects. Costs 1 additional ae when used in this way.",
           "Greater Healing: Increase the amount healed to 1d10. Requires Potency. Increases the cost by 1 ae."
         ],
         [
@@ -222,7 +222,7 @@ export default [
     {
       name: "Dark Ritual",
       attributes: "[Self] [Activate] [Passive]",
-      description: "Choose 1 Gift from the Ancient Bloodlines Source, this is now a Cosmic Forces Power you may use. If this Power spends or gains any Bloodlust, substitute it with Aether. Using this Power uses your Activation Action in addition to the Action requirements of the selected Power.",
+      description: "At the time you take this Gift, choose 1 Gift from the Ancient Bloodlines Source which is of [3 G] or below, this is now a Cosmic Forces Power you may use. If this Power spends or gains any Bloodlust, substitute it with Aether. Using this Power uses your Activation Action in addition to the Action requirements of the selected Power.",
       proficiencies: []
     },
     {
