@@ -141,10 +141,21 @@ export default [
   ], // 1G
   [ // 2G
     {
+      name: "Mystical Muse",
+      attributes: "[Action] [Touch]",
+      description: "You enscribe a Rune of the Muse into a musical instrument and attune it with an Engraving upon your body. When you use the instrument to do a Perform roll gain a Favored +1. You may enscribe one instrument at a time.",
+      proficiencies: [
+        [],
+        [
+          "Inspiring Sonnet: [Action] You recite a poem which inspires courage in the hearts of your comrades. Every ally who hears it gains a Favored +1 on their next basic Attack roll."
+        ]//TODO more
+      ]
+    },
+    {
       name: "Imbued Projection",
       attributes: "[Action] [Touch]",
-      description: "By pressing your finger against a Projection Plating unit, you imbue it with an Engraving of Protection and attune it with an Engraving upon your body. "
-      +"Increase the Shielding granted by the Projection Plating by G. Lasts 1 hour.",
+      description: "By pressing your finger against a Projection Plating unit, you imbue it with an Engraving of Protection. "
+      +"Increase the Shielding granted by the Projection Plating by G. Lasts 1 hour. You may imbue one Projection Plating unit at a time.",
       proficiencies: [
         [],
         [
@@ -154,7 +165,8 @@ export default [
         ],
         [
           "Deflection: While their Projection Plating is active, increase the effect of their Deflector by 2.",
-          "Reactive: Protection no longer spends their React action."
+          "Reactive: Protection no longer spends their React action.",
+          "Protector: You may imbue one additional Projection Plating unit."
         ],
         [
           "Repelling: While their Projection Plating is active, increase their Avoidance by 1.",
@@ -213,6 +225,18 @@ export default [
         [
           "Boggle: Daze, when used outside of combat, may last for 2 hours. After 1 hour the creature may attempt to end the effect by rolling a d20 + Will vs your Use Power."
         ]
+      ]
+    },
+    {
+      name: "Arcane Bolt",
+      attributes: "[Action] [Ranged]",
+      description: "Shoot a basic Ranged Attack with a shot empowered by runic power. If the attack hits, roll a d20 + Use Power vs [10 + Fade]. On a Success a bolt of energy leaps out of your weapon and strikes at the target as another basic Ranged Attack, dealing kinetic damage.",
+      proficiencies: [
+        [],
+        [
+          "Empowered: Add your Will to the bolt of energy's damage.",
+          "True Shot: On a Hard Success do not roll for the bolt of energy to hit, it cannot miss."
+        ]//TODO more
       ]
     }
   ], // 2G
