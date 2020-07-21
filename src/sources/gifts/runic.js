@@ -18,7 +18,7 @@ export default [
           "Overwhelming: Surge rolls an additional die and adds its damage. (Repeatable up to G)",
           "Hazard: Increase any Injury table rolls caused by this Gift by 1.",
           "Reach: If the Engraved object is a Ranged Weapon, increase it's range by 10 ft.",
-          "Glow: Once per day, you may treat the usage of this Gift as if it had no Fade points."
+          "Glow: Once per Break, you may treat the usage of this Gift as if it had no Fade points."
         ],
         [
           "Greater Impact: Increase the damage of this Gift to 1d8. Requires Impact.",
@@ -27,7 +27,7 @@ export default [
           "Greater Surge: Increase the damage of Surge to 1d6."
         ],
         [
-          "Ease: Effortless also subtracts 1 Fade from this Engraving.",
+          "Ease: Effortless also subtracts 1 Fade from this Gift.",
           "Resonant: Surge may be used if this Gift has G or fewer Fade points. Surge no longer causes additional Fade.",
           "Magnitude: Increase the damage of this Gift to 1d10. Requires Greater Impact.",
           "Desperate: [Activate] If this Gift has 10 or more Fade points, you may add 1d10 to its damage. Causes 1 additional Fade.",
@@ -35,7 +35,38 @@ export default [
         ],
         [
           "Evoke: [Activate] Increase this Gift's Fade to 20 points. Deal 1d10 damage to your target and every creature who's Avoidance would be hit by your attack within a 20 ft radius of your target for each Fade point caused by Evoke.",
-          "Shine: Increase the uses of Glow by one per day."
+          "Shine: Increase the uses of Glow by one per Break."
+        ]
+      ]
+    },
+    {
+      name: "Runic Blast",
+      attributes: "[Action] [Ranged]",
+      description: "Point to a creature or object you can see within 30 ft, a rune alights on your palm and releases a blast of energy at the target. This makes a moderate clapping sound on impact. Deal 1d8 Kinetic damage.",
+      proficiencies: [
+        [
+          "Empowered: Add your Will to the damage dealt.",
+          "Surge: [Activate] If this Gift has zero Fade points, add an additional 1d6 damage. Causes 1 additional Fade."
+        ],
+        [
+          "Impact: Increase the damage of this Gift to 1d10",
+          "Reach: Increase the range to 50 ft.",
+          "Glow: Once per Break, you may treat the usage of this Gift as if it had no Fade points."
+        ],
+        [
+          "Greater Impact: Increase the damage of this Gift to 1d12. Requires Impact.",
+          "Burst: [Activate] If this Gift has G or fewer Fade points, you may deal the Runic Blast damage to every creature who's Avoidance would be hit by your attack within a 10 ft radius of your attack's target.",
+          "Effortless: If any Runic Blast damage die rolls its maximum value, this use of Runic Blast does not cause any Fade.",
+          "Greater Surge: Increase the damage of Surge to 1d8."
+        ],
+        [
+          "Ease: Effortless also subtracts 1 Fade from this Gift.",
+          "Resonant: Surge may be used if this Gift has G or fewer Fade points. Surge no longer causes additional Fade.",
+          "Magnitude: Increase the damage of this Gift to 2d8. Requires Greater Impact."
+        ],
+        [
+          "Shine: Increase the uses of Glow by one per Break.",
+          "Aftershock: Whenever you Hard Succeed the Use Power roll to hit with Runic Blast you may do another Runic Blast as a Free Action."
         ]
       ]
     },
@@ -46,20 +77,20 @@ export default [
       +"You are aware of the object's location and whoever is touching it. You may only have 1 Ward active at a time.",
       proficiencies: [
         [
-          "Hinderance: [Activate] When you create the Ward, you may give it an Hindering effect. All creatures within 10 ft of the Ward receive a -G to their Speed rolls after determining turn order.",
+          "Hinderance: [Activate] When you create the Ward, you may give it an Hindering effect. All creatures within 10 ft of the Ward receive -G on their next Speed roll after determining turn order.",
           "Retaliate: [Activate] When you create the Ward, you may give it a Retaliating effect. Whenever a creature within 30 ft of the Ward harms you, the Ward will attempt a Power attack vs Avoidance to blast a shot of energy at them, dealing 1d6 Kinetic damage. Causes 1 Fade.",
-          "Vigor: [Activate] When you create the Ward, you may give it an Invigorating effect. All creatures you choose within 30 ft of the ward receive a +G to their Speed rolls after determining turn order.",
-          "Muse: If you imbue an instrument as a Ward, increase your Perform checks with that instrument by G. If you imbue an art tool as a Ward, increase your Art checks with that tool by G."
+          "Vigor: [Activate] When you create the Ward, you may give it an Invigorating effect. All creatures you choose within 10 ft of the ward receive +G on their next Speed roll after determining turn order.",
+          "Muse: If you imbue an instrument as a Ward, gain a Favored +1 on Perform checks with that instrument (does not stack with Mystical Muse). If you imbue an art tool as a Ward, gain a Favored +1 on Art checks with that tool."
         ],
         [
           "Sluggish: Hinderance now applies its effect before determining turn order.",
           "Impact: Increase the damage of Retaliate to 1d8.",
           "Elemental: Choose an Elemental damage type, your Retaliate may be Kinetic energy or any element you chose with this Proficiency. (1 Additional element with each repeated proficiency, a single Ward can only select one damage type when created)",
-          "Empowered: Creatures effected by Vigor may choose to add your Will to any d20 or damage roll, they may only do this one time while effected by this Ward."
+          "Empowered: Creatures effected by Vigor may choose to add your Will to any d20 or damage roll, they may only do this one time while affected by this Ward."
         ],
         [
           "Multiplex: You may have a second Ward active at a time.",
-          "Reach: Hinderance's range is increased to 30 ft.",
+          "Reach: Hinderance and Vigor's range are increased to 30 ft.",
           "Aggressive: If Retaliate doesn't attack any creatures during a round, at the end of the round you may choose to have it attack the nearest non-allied creature.",
           "Renewing: Whenever a creature effected by Vigor rolls a Speed value higher than they could have without the Vigor effect, they heal 1d6 damage."
         ]
@@ -147,8 +178,14 @@ export default [
       proficiencies: [
         [],
         [
-          "Inspiring Sonnet: [Action] You recite a poem which inspires courage in the hearts of your comrades. Every ally who hears it gains a Favored +1 on their next basic Attack roll."
-        ]//TODO more
+          "Inspiring Sonnet: [Action] You recite a poem which inspires courage in the hearts of your comrades. Every ally who hears it gains a Favored +1 on their next basic Attack roll.",
+          "Piercing Chord: [Action] You play a sharp progression of notes which causes great discomfort to all who hear it. Creatures who hear it must roll a d20 + Will vs [10 + Fade] to resist the chord, on a Fail they take 1d4 damage and on a Hard Fail they also are Deaf for 1 turn.",
+          "Busking: When you Hard Succeed a Perform check using your enscribed instrument in a public place roll a 1d10 and gain that many Virtua from passing listeners. You may benefit from this proficiency once per Break."
+        ],//TODO more
+        [
+          "Allegro: [Action] You play a jolly tune that inspires swiftness in the hearts of your comrades. Every ally who hears it gains +1 to their next Speed roll.",
+          "Focused Acoustics: When you use an Action to use a Mystical Muse Proficiency, you may select which creatures are targeted by the effect."
+        ]
       ]
     },
     {
@@ -192,11 +229,11 @@ export default [
           "Forked: [Activate] As an Activation Action you may use Overload on attacks which hit up to 3 targets."
         ],
         [
-          "Discharge: [Activate] As an Activation Action you may use Overload on attacks that hit more than 3 targets. Requires Forked.",
+          "Discharge: Forked may now be used on attacks which hit more than 3 targets.",
           "Meltdown: [Activate] Roll a d20 - Fade vs 5. On a success, you may add Overload's Fade a second time to the damage dealt. On a fail you may not add Overload's Fade to the attack at all. Causes 1 additional Fade."
         ],
         [
-          "Catastrophy: Meltdown also adds the original attack's Fade a second time."
+          "Catastrophy: Meltdown also attempts to add the original attack's Fade a second time."
         ]
       ]
     },
@@ -236,7 +273,14 @@ export default [
         [
           "Empowered: Add your Will to the bolt of energy's damage.",
           "True Shot: On a Hard Success do not roll for the bolt of energy to hit, it cannot miss."
-        ]//TODO more
+        ],
+        [
+          "Ensnared: [Activation] On a Hard Success and as an Activation Action Arcane Bolt may Slow -10 ft for 2 turns instead of dealing damage.",
+          "Paralyzing: [Activation] On a Hard Success and as an Activation Action Arcane Bolt may Paralyze for 1 turn instead of dealing damage."
+        ],
+        [
+          "Echo: If Arcane Bolt hits, you may roll a second time to fire a second Arcane Bolt."
+        ]
       ]
     }
   ], // 2G
