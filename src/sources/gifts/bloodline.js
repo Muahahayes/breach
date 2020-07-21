@@ -57,7 +57,7 @@ export default [
     {
       name: "Sanguine Strike",
       attributes: "[Action] [Melee]",
-      description: "As an additional Action you channel darkness into a basic melee attack. Add a d4 for each point of Will you possess to the damage dealt by the attack. Costs 2 Bloodlust.",
+      description: "As an additional Action you channel darkness into a basic melee attack before determining if the attack hits. Add a d4 for each point of Will you possess to the damage dealt by the attack. Costs 2 Bloodlust.",
       proficiencies: [
         [
           "Empowered: Add your Will to the damage dealt.",
@@ -66,7 +66,8 @@ export default [
         [
           "Confirm: You may choose to apply Sanguine Strike after a basic melee attack has been determined to hit, but before discovering if it is a Soft or Hard Success.",
           "Impact: Increase the size of Sanguine Strike's dice to a d6.",
-          "Energized: The damage added by Sanguine Strike is now Darkness damage."
+          "Energized: The damage added by Sanguine Strike is now Darkness damage.",
+          "Martial Expertise: Permanently add 1 to your Martial Arms Skill."
         ],
         [
           "Hellfire: Your weapon alights in flame as it strikes, the creature must roll a 20 + Stamina vs your own d20 + Will. On a fail they are Burned, dealing 1d6 Fire damage over 2 turns. On a Hard Fail the Burn deals 1d8 damage over 3 turns instead.",
@@ -74,12 +75,13 @@ export default [
           "Penetration: This attack ignores the target's Aegis."
         ],
         [
-          "Greater Impact: Increase the size of Sanguine Strike's dice to a d8. Increase the effect of Quirked to a d12.",
+          "Greater Impact: Increase the size of Sanguine Strike's dice to a d8. Increase the effect of Quirked to a d12. Requires Impact.",
           "Effortless: [Activate] When you use Sanguine Strike you may spend an Activation Action to roll a d4. On a 4, you do not spend a Full Action for this use of Sanguine Strike.",
-          "Cleave: [Activate] If a creature dies from this attack, you may spend an Activation Action to roll an Attack roll against another creature within reach. On a Soft Success, deal half this attack's damage to that creature. On a Hard Success, deal full damage."
+          "Cleave: [Activate] If a creature dies from this attack, you may spend an Activation Action to roll an Attack roll against another creature within reach. On a Soft Success, deal half this attack's damage to that creature. On a Hard Success, deal full damage.",
+          "Deadly Expertise: Permanently add 2 to your Martial Arms Skill."
         ],
         [
-          "Magnitude: Increase the size of Sanguine Strike's dice to a d10. Increase the effect of Quirked to 2d8.",
+          "Magnitude: Increase the size of Sanguine Strike's dice to a d10. Increase the effect of Quirked to 2d8. Requires Greater Impact.",
           "Ease: Effortless also applies on a 3."
         ]
       ]
