@@ -201,8 +201,8 @@ export default [
     },
     {
       name: "Seedling",
-      attributes: "[Action] [Pet]",
-      description: "You release a seed onto the ground which sprouts into a Tiny sized Plant Creature. The Seedling is completely under your control and has a Movement and Full Action, the Seedling has small limbs for movement but no limbs for interacting with objects or creatures. The Seedling has 1 Life, 2G Survival, 10 ft of movement, 2 Strength, 1 Agility, 2 Stamina, and 0 Will. The Seedling cannot be controlled by another person unless they control you. One Seedling may exist at a time. Lasts 10 minutes. Cannot be taken with the Broodling Power. Causes G Strain.",
+      attributes: "[Action] [Minion]",
+      description: "You release a seed onto the ground which sprouts into a Tiny sized Plant Creature. The Seedling is completely under your control and has a Movement and Full Action, the Seedling has small limbs for movement but no limbs for interacting with objects or creatures. The Seedling has 1 Life, [2 * G] Survival, 10 ft of movement, 2 Strength, 1 Agility, 1 Stamina, and 0 Will. The Seedling cannot be controlled by another person unless they control you. One Seedling may exist at a time. Lasts 10 minutes. Cannot be taken if you possess a Minion Gift. Causes 2 Strain.",
       proficiencies: [
         [],
         [
@@ -224,6 +224,17 @@ export default [
         [
           "Garden: You may have 2 more Seedlings at one time. This Power may produce 2 per action.",
 	        "Entangle: Seedlings add an additional G to their Grapple check and Vines deals 1d6 damage."
+        ]
+      ]
+    },
+    {
+      name: "Broodling",
+      attributes: "[Action] [Minion]",
+      description: "You may birth a Small sized creature with mammal traits. The Broodling is not completely under your control but may be given verbal commands (which it interprets to the best of its ability and cannot handle complex sequences) and has a Movement and Full Action. The Broodling has small limbs for movement and 2 fore-limbs for interacting with objects or creatures but cannot use mechanical tools. The Broodling has 1 Life, [5 * G] Survival, 20 ft of movement, 3 Strength, 3 Agility, 1 Stamina, and 0 Will. One Broodling may exist at a time. Lasts 1 day. Cannot be taken if you possess a Minion Gift. Causes Strain equal to 10% of your base max survival and takes 10 minutes of uninterrupted effort.",
+      proficiencies: [
+        [],
+        [
+          //TODO
         ]
       ]
     }
