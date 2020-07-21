@@ -40,14 +40,13 @@ content: <div>
   <b>Line:</b> In a chosen direction, all creatures/objects between the source and a point at the end of the effect's range in that direction are caught in the effect.</p>
   <hr/>
   <h3>Grappling:</h3>
-  <p>While Grappled a creature cannot make Full or Movement Actions on their Turn. You may initiate a Grapple by rolling an Unarmed Melee Attack, and if you hit instead of dealing damage you enter a Grapple contest with the target. Roll Strength vs their Agility, on a Hard Success you succeed in Grappling them, on a Soft Success they are Grappled for only one turn. On a Soft Fail they are not Grappled, on a Hard Fail they are not Grappled and you lose your React for this Round.<br/>
-  If you succeed in Grappling them, on each of your turns you must spend your a Full Action to maintain the Grapple. On each of the creature's turns they may reroll their Agility check vs your original Strength roll. If they Succeed they end the Grapple. If they Fail they add a Favored +1 to their next attempt (up to +3).</p>
+  <p>While Grappled a creature cannot make Full or Movement Actions on their Turn. You may initiate a Grapple by rolling an Unarmed Melee Attack, and if you hit instead of dealing damage you enter a Grapple contest with the target. Roll Athletics vs their Athletics or Acrobatics, on a Hard Success you succeed in Grappling them, on a Soft Success they are Grappled for only one turn. On a Soft Fail they are not Grappled, on a Hard Fail they are not Grappled and you lose your React for this Round.<br/>
+  If you succeed in Grappling them, on each of your turns you must spend a Full Action to maintain the Grapple. On each of the creature's turns they may reroll their check vs your original Athletics roll. If they Succeed they end the Grapple. If they Fail they add a Favored +1 to their next attempt (up to +3).</p>
   <hr/>
   <h3>Blocking:</h3>
   <p>You may spend a Full Action to begin Blocking, you may attempt Block checks as a Free Action against any attack which hits you until your next Turn. Block checks are done by rolling [Block + Strength] vs the result of the attack roll which hit you. You may only Block if you are holding a melee weapon or <Link to="/equipment/aegis">Aegis</Link>. On any Success, you reduce the damage amount of the attack by the difference between the rolls plus an additional amount based on your Aegis. On a Hard Fail, you are no longer Blocking.</p>
   <hr/>
   <h3>Prone:</h3>
   <p>If you fall or are knocked to the ground you are Prone. While Prone you cannot use your Movement Action except to stand up, and you begin your turn with only 1 Full Action. When rolling your Speed dice at the start of a round, if you are Prone the result is reduced by half. On your turn you may stand up and end the Prone effect as a Movement Action. While you are Prone, enemy attacks are Favored +1 against you. Your defensive rolls while prone are considered a Hard Fail when you roll a Soft Fail.</p>
-
 </div>
 }
