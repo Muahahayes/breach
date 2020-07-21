@@ -113,6 +113,7 @@ function Nav({ match }) {
           <li><Link style={navStyle} to="/equipment/deflector">Deflectors</Link></li>
           <li><Link style={navStyle} to="/equipment/plating">Projection Plating</Link></li>
           <li><Link style={navStyle} to="/equipment/aegis">Aegis</Link></li>
+          <li><Link style={navStyle} to="/equipment/tool">Tools/Misc</Link></li>
           </ul>
         </li>
       </ul>

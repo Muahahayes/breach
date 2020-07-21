@@ -66,11 +66,12 @@ function App() {
     Start adding pages of content so there's enough for a playtest campaign this summer?    
     Go back over the rules and iterate/refine them (playtest ready at this point if *I* GM it)
 
+    Refactor the site to have content pages load from a separate site I make as an API, so all the content doesn't load in one chunk at the start
     Make GM guide, put link in the smaller navbar
     ***More TODO will show up here making the GM guide***
     Go back over the rules and iterate/refine them
 
-    Make a login system, only allow users to see the World and GM books, put login and guidebook links in a smaller navbar above content-head
+    Make a login system, only allow official users to see the World and GM books, put login and guidebook links in a smaller navbar above content-head
     Make a character sheet wizard, saves a sheet to a user
     Make roll calculator, pulls a character from the user
     Reading the player book is *free* but the user tools require an account login
@@ -78,7 +79,6 @@ function App() {
 
     Work with Ryan on an intro campaign
     While Ryan writes stuff, work on refactoring the site with a good CSS
-    refactor the site to have content pages load from a separate site I make as an API, so all the content doesn't load in one chunk at the start
     Go through playtesting feedback and iterate/refine rules and content, after this point no more system-wide or core-rule changes can be made
     When playtesting is happy with the state of the system and there's an intro campaign ready to go, make this all public (patreon?)
     (Now in BETA state, playable by non-testers)

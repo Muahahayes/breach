@@ -10,21 +10,21 @@ export default {
     {
       name: 'Off-brand Dx100',
       description: 'An unlicensed reproduction of a Dx100 Personal Deflector, a knock-off of a low grade unit that offers little protection.',
-      price: 20,
+      price: 40,
       reduction: 2,
       tag: 'personal'
     },
     {
       name: 'Off-brand Dx200',
       description: 'An unlicensed reproduction of a Dx200 Personal Deflector',
-      price: 60,
+      price: 75,
       reduction: 4,
       tag: 'personal'
     },
     {
       name: 'Dx100 PD',
       description: 'An official Dx100 Personal Deflector, an entry level unit for the general public.',
-      price: 50,
+      price: 60,
       reduction: 3,
       tag: 'personal'
     },

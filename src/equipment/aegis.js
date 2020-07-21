@@ -10,6 +10,16 @@ export default {
   stats: ['price', 'avoidance', 'hits', 'reduction', 'strength', 'tags'],
   equipment: [ 
     {
+      name: 'Off-Brand AGS Mk1',
+      description: 'A poor reproduction of the AGS Mk1 for use to protect oneself from thugs and miscreants in lower society.',
+      price: 100,
+      avoidance: 1,
+      hits: 5,
+      reduction: 2,
+      strength: 2,
+      tags: 'Off-Brand'
+    },
+    {
       name: 'AGS Mk1',
       description: 'The AGS Mk1 is the standard issue Aegis for bodyguards and security escorts. A basic unit with average value in each stat.',
       price: 200,

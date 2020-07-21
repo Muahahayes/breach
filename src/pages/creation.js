@@ -13,7 +13,7 @@ export default {
       <li><b>Assign your <Link to="/rules/skills">Skill</Link> Points:</b> Using the Creation SP from your Race, distribute these points across your Skills. A Skill may never be more than 5 times your level. If a Skill is not listed in your Race's Favored Skills, it costs 2 points for every Skill point increased. Any Skills you did not assign points to will start at 0.</li>
       <li><b>Select your <Link to="/sources">Source</Link>:</b> This Source will be the origin of your character's Gifts, it sets them apart from the common public.</li>
       <li><b>Select your first <Link to="/gifts">Gift</Link>:</b> You may only select Gifts from your Source, and it must be [1 G]. As you level up you will select a new Gift at each level, and it must be a [G] equal or less than your level.</li>
-      <li><b>Starting Equipment:</b> Coming Soon!</li>
+      <li><b>Starting <Link to="/equipment">Equipment</Link>:</b> Refer to the Equipment tables, you may spend up to 200 Virtua on Equipment which your character will start their story possessing. You may not spend more than 100 Virtua on a single piece of Starting Equipment.</li>
     </ul>
     <hr/>
     <h3>Creating a Character at higher levels:</h3>
@@ -21,11 +21,11 @@ export default {
     <hr/>
     <h3>Example Character Build:</h3>
     <span>Bob wants to play Breach with his friends, but he needs a character first! Bob's always been a fan of sneaky lizard races in his RPG playing, so he names his character Argo and writes 5 Quirks that describe him as a thief who upset a crime syndicate and is now on the run.
-      He selects the Atal race, specifically the Akkso'Atal subrace and he writes down the Atal racial features as well as the Akkso features. He has 3 AP to distribute, he puts 2 into Agility and 1 into Stamina so he is sneaky but has some more survivability. He has 2 Stamina, so he has 5 + 2 maximum Life and 10 + 2 maximum Survival.
-      Next, Bob looks at the 8 Skill Points given by the Atal race. He puts 5 into Sneak (his limit is 5 at level 1, since Skills cannot go above 5 times your level) and the remaining 3 into Hide. Now his character Argo is sneaky and can be a more effective "Thief", the arbitrary Role Quirk he had written.
-      Now that Bob's character has an identity, race, and skills, he looks at the Sources to find one that best fits the playstyle he's going for. He likes the Dermal Markings Gift because of its Hide boosting Proficiency called Camouflage, along with some other melee focused abilities, in the Mutation Source so he selects Mutation. 
+      He selects the Atal race, specifically the Akkso'Atal subrace and he writes down the Atal racial features as well as the Akkso features. He has 3 AP to distribute, he puts 2 into Agility and 1 into Stamina so he is sneaky but has some more survivability. He has 2 Stamina, so he has 3 + 2 maximum Life and 10 + 2 maximum Survival.
+      Next, Bob looks at the 8 Skill Points given by the Atal race. He puts 5 into Hide (his limit is 5 at level 1, since Skills cannot go above 5 times your level) and the remaining 3 into Sneak. Now his character Argo is sneaky and can be a more effective "Thief", the arbitrary Role Quirk he had written.
+      Now that Bob's character has an identity, race, and skills, he looks at the Sources to find one that best fits the playstyle he's going for. He likes the Dermal Markings Gift because of its Hide boosting Proficiency called Camouflage, along with some other melee focused abilities in the Mutation Source, so he selects Mutation. 
       He looks through Mutation's [1 G] Gifts and settles on Retractable Claws as his first choice, it helps him in combat right away and he can pick up Dermal Markings at level 2 when he wants more utility.
-      Finally, Bob looks through the Equipment Table and (equipment rules here, he selects some starter gear with some kind of budget). Bob fills out his character sheet with these choices and can now take Argo to the table to play with his friends next weekend, creation is complete!
+      Finally, Bob looks through the Equipment Table and spends his 200 Virtua on 2 Shivs, a Light Bow, and a Dx100 PD. The remaining Virtua he spends on some tools and ammunition. Bob fills out his character sheet with these choices and can now take Argo to the table to play with his friends next weekend, creation is complete!
     </span>
   </div>
 }
