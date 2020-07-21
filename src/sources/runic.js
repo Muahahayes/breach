@@ -30,7 +30,7 @@ export default {
       //6
     ],
     [
-      "Extended Gifts: Gain a new Gift from your Source of [3 G] or less (Repeatable up to 3)."
+      "Extended Gifts: Gain 2 new Gifts from your Source of [3 G] or less and also increase the number of gifts that you can Awaken by 1 (Repeatable up to 3)."
       //TODO add capstone proficiencies, powerful effects but can only pick 1
     ]
   ],
