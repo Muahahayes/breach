@@ -30,6 +30,41 @@ content: <div>
   </ul>  
   </p>
   <hr/>
+  <h3>Status Effects:</h3>
+  <p>
+    <b>Immunity:</b> When a creature is Immune to a Status Effect any attempt to cause that Status Effect on the creature automatically fails and if they currently have this type of Status Effect when they gain Immunity the effect immediately ends.<br/><br/>
+    <b>Sensory/Cognitive Effects:</b><br/>
+    <ul>
+      <li><b>Blind:</b> You cannot see with your eyes. Any Attack or Skill roll which would normally require sight receives an Unfavored -2. You are unaware of creatures you have not heard or felt recently. You cannot React to anything you can't hear/feel.</li>
+      <li><b>Deaf:</b> You cannot hear with your ears. You are unaware of the location of creatures you have not seen or felt recently. You cannot React to anything not directly in your line of sight or you cannot feel.</li>
+      <li><b>Silence:</b> You are unable to speak or produce other sounds with your throat.</li>
+      <li><b>Unconscious:</b> You are unaware of your surroundings. You cannot use any Actions. If you are Unconscious for 2 hours it counts as a Break, and after 6 hours you are considered Sleeping.</li>
+      <li><b>Sleep:</b> You are unaware of your surroundings. You cannot use any Actions. If the Sleep effect lasts for longer than 1 hour it counts as taking a Break, after 6 hours it counts as a Full Sleep.</li>
+      <li><b>Stun:</b> You cannot use any Actions.</li>
+      <li><b>Fear:</b> You must attempt to use your full Movement to move away from the source of the Fear effect. You cannot use an Action that targets the source of the Fear effect.</li>
+      <li><b>Taunt:</b> You must move towards the source of the Taunt effect either up to your full Movement or until you are within range and use an attack or Power you possess. Your first Full Action on your turn must have targeting which includes the source of the Taunt effect.</li><br/>
+    </ul>
+    <b>Immobilize Effects:</b>
+    <ul>
+      <li><b>Paralyze:</b> You can only do 1 of your Actions (Full, Movement, React, Activation) per round.</li>
+      <li><b>Snare:</b> You cannot use your Movement Action.</li>
+      <li><b>Slow:</b> Your Movement distance is reduced, the amount is defined by the source of the Slow effect.</li>
+      <li><b>Cripple:</b> The limb that has this effect cannot be used in any Actions. If only 1 leg is not crippled you may move, but your Movement is reduced by half.</li><br/>
+    </ul>
+    <b>Soul Effects:</b>
+    <ul>
+    <li><b>Curse:</b> A Status Effect with a Curse has its normal effect but cannot be removed until the Curse has been removed.</li>
+    <li><b>Dumb:</b> Written and spoken Language, and all symbolic or pictographic information are all gibberish to you. Any of these things that come from you also appear as gibberish to other creatures.</li>
+    <li><b>Sunder:</b> For the duration, your maximum Survival is set to 1. When this effect ends your current and max Survival returns to the values it had when the effect began.</li><br/>
+    </ul>
+    <b>Passive Damage Effects:</b>
+    <ul>
+    <li><b>Poison:</b> Deals Nature damage each turn until succeeding at some Stamina check. The amount of damage, the difficulty of the check, and duration are given by the source of the Poison. A creature may have 1 Poison effect at a time, the highest difficulty check taking priority.</li>
+    <li><b>Burn:</b> Deals Fire damage each turn until spending an Action putting out the fire, or when the duration ends. The damage and duration are given by the source of the Burn. A creature may have 1 Burn effect at a time, the highest damage taking priority.</li>
+    <li><b>Bleed:</b> You lose 1 Life every x number of turns until a creature succeeds a Medicine check vs the Attack roll of the damage source (or a given difficulty) or you are healed to your max Life. The period of turns is given by the source of the Bleed. Some bleeds only occur a limited number of times. A creature may have 1 Bleed effect at a time, the shortest period bleed taking priority.</li>
+    </ul>
+  </p>
+  <hr/>
   <h3 id="injury">Injury:</h3>
   <p>When you receive an injury for any reason roll 2d10, the first roll decides the severity. The second roll decides where the injury occurs (Physical/Elemental damage effects the body, and Mental effects the mind). If at any time all 5 areas of the Body or Mind have an Extreme injury you instantly drop to 0 Life and become <Link to="/rules/stats">Dying</Link>. When a Life point is healed you may select 1 Injury to be removed. Life points for Extreme severity Injuries cannot be healed until the Injury is cured.</p>
   <h3>Simplified Injury Table:</h3>
