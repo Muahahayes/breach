@@ -17,6 +17,19 @@ export default {
     [
       "Regenerative: Gain +G to any healing you receive from a Gift.",
       "Ancient Endurance: Increase your Stamina by 1."
+    ],
+    [
+      //4
+    ],
+    [
+      //5
+    ],
+    [
+      //6
+    ],
+    [
+      "Extended Gifts: Gain a new Gift from your Source of [3 G] or less (Repeatable up to 3)."
+      //TODO add capstone proficiencies, powerful effects but can only pick 1
     ]
   ],
   lesser: [

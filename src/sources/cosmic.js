@@ -23,6 +23,16 @@ export default {
       "Attuned Chakra: Select 1 elemental damage type. You are resistant to damage of that type.",
       "Power Nap: You gain half the ae of taking a Break when you are afflicted by the Sleep effect.",
       "Slumber: Increase the ae gained from a Full Sleep by 5."
+    ],
+    [
+      //5
+    ],
+    [
+      //6
+    ],
+    [
+      "Extended Gifts: Gain a new Gift from your Source of [3 G] or less (Repeatable up to 3)."
+      //TODO add capstone proficiencies, powerful effects but can only pick 1
     ]
   ],
   lesser: [

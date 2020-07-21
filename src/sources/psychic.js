@@ -23,6 +23,13 @@ export default {
     ],
     [
       "Mental Resilience: After putting 3 points into Mental Resilience you gain resistance to Mental damage, reducing damage taken from Mental damage types by half. (Repeatable up to 3)"
+    ],
+    [
+      //6
+    ],
+    [
+      "Extended Gifts: Gain a new Gift from your Source of [3 G] or less (Repeatable up to 3)."
+      //TODO add capstone proficiencies, powerful effects but can only pick 1
     ]
   ],
   lesser: [
