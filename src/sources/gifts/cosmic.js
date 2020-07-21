@@ -3,14 +3,14 @@ export default [
     {
       name: "Shock",
       attributes: "[Action] [Ranged] [Single Target]",
-      description: "Point at a creature or object within 30ft. You release a blast of kinetic energy at the target dealing 1d4 kinetic damage. This makes a moderate clapping sound on impact. It creates a distorted ripple through the air as it travels to its target. Costs 1 ae.",
+      description: "Point at a creature or object within 30ft. You release a blast of kinetic energy at the target dealing 1d6 kinetic damage. This makes a moderate clapping sound on impact. It creates a distorted ripple through the air as it travels to its target. Costs 1 ae.",
       proficiencies: [
         [
           "Empowered: Add your Will to the damage roll.",
           "Forceful: Add 1d4 to the damage roll, this increases the cost by 1 ae per die. (1 Additional optional die with each repeated proficiency, repeatable up to [2 * G])"
         ],
         [
-          "Impact: Increase the size of the first die rolled. (1 Additional optional size increase with each repeated proficiency, repeatable d6, d8, d10)",
+          "Impact: Increase the size of the first die rolled. (1 Additional optional size increase with each repeated proficiency, repeatable d8, d10, d12)",
           "Elemental: Choose an elemental damage type (or Spirit/Darkness, but only if you have that Elemental Soul type), your shock may be kinetic energy or any element you chose with this Proficiency. (1 Additional element with each repeated proficiency, a single shock may only be one damage type)."
         ],
         [

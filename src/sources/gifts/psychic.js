@@ -9,23 +9,23 @@ export default [
     {
       name: "Psi Burst",
       attributes: "[Action] [Ranged] [AOE]",
-      description: "Releases a burst of psychic energy in a 30 ft range centered on your character. Roll d20 + Power, every creature within the effect must roll a Will check vs this roll. Deals 1 kinetic damage on a failed Will check.",
+      description: "Releases a burst of psychic energy in a 30 ft range centered on your character. Roll d20 + Use Power, every creature within the effect must roll a Will check vs this roll. Deals 1 kinetic damage on a failed Will check.",
       proficiencies: [
         [
-          "Scream: [Activate] Instead of dealing damage or other effects, you may inflict Fear on every target hit for G turns, at the end of each turn they may roll a Will check vs {15 + Will} to end the effect.",
+          "Scream: [Activate] Instead of dealing damage or other effects, you may inflict Fear on every target hit for G turns, at the end of each turn they may roll a Will check vs [15 + Will] to end the effect.",
           "Feedback: [Activate] Instead of dealing damage or other effects, you may force a Psychic Fatigue check on every target hit which has a Psychic Source."
         ],
         [
           "Wave: In addition to dealing damage, you may push all targets hit 10 ft away from you.",
-          "Impact: Increases the damage to {1d4 + G}.",
+          "Impact: Increases the damage to 1d4 + Will.",
           "Shout: [Activate] Instead of dealing damage or other effects, as an Activation Action you may inflict Stun on every target hit for 1 turn. Roll an additional Psychic Fatigue check for each target hit. You do not regain this Activation Action on your next turn."
         ],
         [
           "Echo: [Action] As an Action you may do a second Psi Burst, this second use must not use the same status effect as the first but may use your Activation Action a second time.",
-          "Telepathic: You may roll your attack vs their Armor + Will instead, this Power deals Psychic damage instead of Kinetic when used this way." 
+          "Telepathic: You may roll your attack vs their Avoidance + Will instead, this Power deals Psychic damage instead of Kinetic when used this way." 
         ],
         [
-          "Magnitude: Increases the damage to 1d6 + G.",
+          "Magnitude: Increases the damage to 1d6 + Will.",
           "Focused: You may direct your Psi Burst at a single creature in range. Instead of dealing damage or other effects, inflict Dumb on hit for G turns."
         ],
         [
@@ -36,14 +36,14 @@ export default [
     {
       name: "Shock",
       attributes: "[Action] [Ranged] [Single Target] [Contract]",
-      description: "Point at a creature or object within 30ft. You release a blast of psychic energy at the target dealing 1d4 psychic damage. The creature affected by Shock can hear a screeching in their mind, but otherwise it makes no sound. It creates a warped cascade of light as it travels to its target.",
+      description: "Point at a creature or object within 30ft. You release a blast of psychic energy at the target dealing 1d6 psychic damage. The creature affected by Shock can hear a screeching in their mind, but otherwise it makes no sound. It creates a warped cascade of light as it travels to its target.",
       proficiencies: [
         [
           "Empowered: Add your Will to the damage roll.",
           "Forceful: Add 1d4 to the damage roll. (Repeatable up to G)"
         ],
         [
-          "Impact: Increase the size of the first die rolled. (Repeatable d6, d8, d10)",
+          "Impact: Increase the size of the first die rolled. (Repeatable d8, d10, d12)",
           "Telekinetic: Your shock may use kinetic energy, dealing blunt type damage.",
           "Tranquility: You may still use Shock while afflicted by Psychic Break, however only the Empowered and Impact proficiencies will benefit your shocks used in this way."
         ],
@@ -57,11 +57,11 @@ export default [
         ],
         [
           "Subtle: [Activate] As an Activation Action you may suppress the light emitted by the Shock. If a creature(s) within range is not aware of you, you may roll a Hide check vs the Awareness Roll of the creature(s). If you succeed and do not damage the creature, this Shock does not alert them to your presence. If you succeed and damage the creature, they are aware of you but not your location.",
-          "Overwhelming: [Contract] Increase the size of the first die rolled. Requires 3 points in Impact. (Repeatable d12, d20)"
+          "Overwhelming: [Contract] Increase the size of the first die rolled to a d20. Requires 3 points in Impact."
         ],
         [
           "Subconscious: Now the first time in a combat with a creature when you use Subtle and deal damage with this Shock, if you succeed and do not damage their Life they are not alerted to your presence.",
-          "Twin Shock: [Activate] [Action] As an Activation Action you may use a Full Action to cast an exact copy of this Shock at the same target. This second Shock costs 3 ae and may use a different damage type if you have taken the Elemental proficiency."
+          "Twin Shock: [Activate] [Action] As an Activation Action you may use a Full Action to cast an exact copy of this Shock at the same target. This second Shock costs 3 ae and may use a different damage type if you have taken the Telekinetic proficiency."
         ]
       ]
     },
