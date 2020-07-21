@@ -7,7 +7,8 @@ export default {
     [
       "Thick Skin: Increase your max survival by 5. (Repeatable up to G times)",
       "Retractable Canines: Your canine teeth are sharp and can extend to twice their length.",
-      "Study: Whenever you level up, you may select 1 Lesser Gift for free without spending a Proficiency."
+      "Study: Whenever you level up, you may select 1 Lesser Gift for free without spending a Proficiency.",
+      "Two-Handed Speed: If your two-handed weapon reduces your Speed while equipped, reduce the penalty by 1 (to a minimum of 0)."
     ],
     [
       "Ancestral Strength: Add G to your Strength checks.",
@@ -16,7 +17,8 @@ export default {
     ],
     [
       "Regenerative: Gain +G to any healing you receive from a Gift.",
-      "Ancient Endurance: Increase your Stamina by 1."
+      "Ancient Endurance: Increase your Stamina by 1.",
+      "Two-Handed Tempo: Two-Handed Speed reduces the penalty by an additional 2 (to a minimum of 0)."
     ],
     [
       //4

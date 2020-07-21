@@ -7,7 +7,8 @@ export default {
     [
       "Mental Fortitude: Subtract 1 from the difficulty of Psychic Fatigue checks (to a minimum of 8). (Repeatable)",
       "Study: Whenever you level up, you may select 1 Lesser Gift for free without spending a Proficiency.",
-      "Charismatic: Gain a +G to Charm attempts against persons with a Will less than 2."
+      "Charismatic: Gain a +G to Charm attempts against persons with a Will less than 2.",
+      "Two-Handed Speed: If your two-handed weapon reduces your Speed while equipped, reduce the penalty by 1 (to a minimum of 0)."
     ],
     [
       "Iron Will: Subtract your Will from the difficulty of Psychic Fatigue checks.",
@@ -16,7 +17,8 @@ export default {
     ],
     [
       "Focused: Add G to your defensive Will checks.",
-      "Uncensored: Once per day you may at will end a Silence status effect active on you."
+      "Uncensored: Once per day you may at will end a Silence status effect active on you.",
+      "Two-Handed Tempo: Two-Handed Speed reduces the penalty by an additional 2 (to a minimum of 0)."
     ],
     [
       "No Resistance: Roll your Psychic Fatigue checks after the main roll of using a Gift. Whenever you Hard Succeed while using a Gift, you do not make the base Psychic Fatigue check for that use of that Gift."

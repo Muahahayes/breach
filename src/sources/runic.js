@@ -6,7 +6,8 @@ export default {
   proficiencies: [
     [
       "Sustain: Whenever you roll a natural 20 while using a Gift, you may subtract the Fade points on that Gift by 1.",
-      "Study: Whenever you level up, you may select 1 Lesser Gift for free without spending a Proficiency."
+      "Study: Whenever you level up, you may select 1 Lesser Gift for free without spending a Proficiency.",
+      "Two-Handed Speed: If your two-handed weapon reduces your Speed while equipped, reduce the penalty by 1 (to a minimum of 0)."
     ],
     [
       "Energized: While a Gift has 0 Fade points, add +1 to any damage it deals.",

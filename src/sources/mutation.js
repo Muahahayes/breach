@@ -7,7 +7,8 @@ export default {
     [
       "Thick Skin: Increase your max survival by 5. (Repeatable up to G times)",
       "Retractable Canines: Your canine teeth are sharp and can extend to twice their length.",
-      "Tail: If you did not already have one, gain a tail of your animal choice. You gain +1 to Agility checks."
+      "Tail: If you did not already have one, gain a tail of your animal choice. You gain +1 to Agility checks.",
+      "Two-Handed Speed: If your two-handed weapon reduces your Speed while equipped, reduce the penalty by 1 (to a minimum of 0)."
     ],
     [
       "Expanded Lungs: You can hold your breath twice as long.",
