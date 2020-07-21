@@ -187,7 +187,7 @@ export default [
     },
     {
       name: "Fortitude",
-      attributes: "[Action] [Range]",
+      attributes: "[Action] [Ranged]",
       description: "Point at a creature you can see within 30 ft, you weave a shroud of spirit energy around their body to protect them from harm. Increases the target's Max Survival by 1d8. Lasts 1 hour. If they receive Darkness damage equal to at least half their Max Survival from one attack, or if they drop below 1 Life, the effect ends. A creature may only benefit from one Fortitude effect at one time, if Fortitude is used on a creature with a current Fortitude effect the Max Survival is increased by the greater of the two values and any secondary effects are replaced by the new Fortitude. Costs 2 ae.",
       proficiencies: [
         [],
@@ -215,6 +215,18 @@ export default [
         [
           "Endure: When the creature reaches 1 Life while Fortitude is active, they immediately cure up to 2 Mild or Moderate Injuries, heal 2 Life and fully restore their Survival. Afterwards, the current Fortitude effect ends and the creature may not receive any Fortitude effects except for Bolster for 1 hour."
         ]
+      ]
+    },
+    {
+      name: "Soul Rend",
+      attributes: "[Action] [Ranged]",
+      description: "Point at a creature you can see and rip at their soul dealing 1d6 spirit damage. If they are currently at 1 Life this applies a Mark of Rending upon them. If they die while Marked the cosmic gains 1 Soul Fragment. If they heal at least 1 point of Survival the Mark is removed. Costs 2 ae.",
+      proficiencies: [
+        [],
+        [
+          "Haunt: [Action] Point at a creature you can see and release a Soul Fragment upon them. They must roll a d20 + Will vs [10 + G] or else become cursed with a Haunting. While Haunted they receive a Unfavored -1 on any roll for an Action which deals damage. Lasts for 3 turns.",
+          "Vengence: [Action] Point at a creature you can see and release a Soul Fragment upon them. They must roll a d20 + Will vs [10 + G] or else by struck by a Spirit of Vengence. They take 2d8 spirit damage. If they rolled a Hard Fail they are also gripped by the spirit, Snaring them for 1 turn."
+        ]//TODO more
       ]
     }
   ],// 2G
