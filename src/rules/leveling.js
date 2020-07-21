@@ -11,7 +11,8 @@ export default {
     <hr/>
     <h3>Leveling Up:</h3>
     <span>When you gain enough XP for your next level you must select a new Gift from your Source after your next Full Sleep. Also, the Proficiency you gain from this XP cannot be used on this new Gift. Gain max <Link to="stats">Survival</Link> equal to your Stamina. Reset XP to 0 plus any leftover XP past the leveling threshold. Your number of Gifts acts as a benchmark of your progression and some Powers cannot be selected until you reach certain thresholds as denoted by Gift Level (referred to as G). Every even numbered G, increase one <Link to="stats">Attribute</Link> by 1.<br/>
-    If you are making a character at higher than 1G: for each G you skipped, select proficiencies at each G equal to the number listed on the XP chart below obeying the [G] limits of that G. (eg. A 3G character would select 3 [1 G] proficiencies and 5 [1 G] or [2 G] proficiencies). Then, add those proficiencies together to use as Skill points and increase any of your Skills by distributing these points (remember, a Skill can only be as high as 5 times your G). (eg. A 3G character would distribute 8 Skill points to any Skills they like). Remember, Techniques are learned through story progression and cannot be arbitrarily chosen at character creation, even for characters created above 1G!
+    If you are making a character at higher than 1G: for each G you skipped, select proficiencies at each G equal to the number listed on the XP chart below obeying the [G] limits of that G. (eg. A 3G character would select 3 [1 G] proficiencies and 5 [1 G] or [2 G] proficiencies). Then, add those proficiencies together to use as Skill points and increase any of your Skills by distributing these points (remember, a Skill can only be as high as 5 times your G). (eg. A 3G character would distribute 8 Skill points to any Skills they like). Remember, Techniques are learned through story progression and cannot be arbitrarily chosen at character creation, even for characters created above 1G!<br/>
+    Note: 7G is the maximum level you can attain, but you may continue to gain Proficiencies and increase your Skills.
     </span><br/><br/>
     <table>
       <tbody>
@@ -22,7 +23,7 @@ export default {
       <tr><td>4</td><td>60</td><td>12</td></tr>
       <tr><td>5</td><td>100</td><td>20</td></tr>
       <tr><td>6</td><td>100</td><td>20</td></tr>
-      <tr><td>7</td><td>100</td><td>20</td></tr>
+      <tr><td>7</td><td>---</td><td>&#8734;</td></tr>
       </tbody>
     </table>
   </div>
