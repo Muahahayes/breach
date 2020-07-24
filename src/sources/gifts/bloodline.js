@@ -3,7 +3,7 @@ export default [
     {
       name: "Rampage",
       attributes: "[Action] [Self]",
-      description: "Your blood boils with rage throwing you into a violent Rampage. Spend up to 5 Bloodlust to enter a Rampage for that many turns. During a Rampage you cannot be put to sleep, incapacitated, stunned, feared or have your movement impaired. Your Rampage ends early if you enter Apathy. A turn counts as 2 towards the duration if you do not deal any damage to a creature during that turn.",
+      description: "Your blood boils with rage throwing you into a violent Rampage. Spend up to 5 Bloodlust to enter a Rampage for that many turns. During a Rampage you are immune to to Sleep, Unconscious, Stun, Fear, and Immobilize effects. Your Rampage ends early if you enter Apathy. A turn counts as 2 towards the duration if you do not deal any damage to a creature during that turn.",
       proficiencies: [
         [
           "Duration: Increase the maximum turns, and maximum cost, by 2. (Repeatable)",
@@ -13,10 +13,10 @@ export default [
         [
           "Protection: During Rampage, subtract 6 from an Injury Severity roll after seeing the result (to a minimum of 1), usable once per day. ",
           "Hyper: Gain +G to your Speed rolls during Rampage.",
-          "Overpower: [Activate] As an Activation Action during your Rampage before making an attack, gain +1 Favored to that attack roll. The next attack against you gains +1 Favored."
+          "Overpower: [Activate] As an Activation Action during your Rampage before making an attack, gain a Favored +1 to that attack roll. The next attack against you gains a Favored +1."
         ],
         [
-          "Roar: When beginning your Rampage, you may Roar to attempt to Taunt to every hostile creature within 30 ft of you. Roll a d20 + Disruption, each creature rolls d20 + Will to contest your roll, any that fail are Taunted for 1 turn.",
+          "Roar: When beginning your Rampage, you may Roar to attempt to Taunt every hostile creature within 30 ft of you. Roll a d20 + Disruption, each creature rolls d20 + Will to contest your roll, any that fail are Taunted for 1 turn.",
           "Frenzy: During the Rampage, you may drop below 1 Life without experiencing any of the effects of Dying. If you are still below 1 Life at the end of your Rampage you immediately fall prone and begin Dying."
         ],
         [
@@ -102,6 +102,19 @@ export default [
           "Shadowflight: While Darkflight is active, as your movement action, if you are standing out of direct light you may disappear and reappear in another location out of direct light within your maximum movement."
         ]
       ]
+    },
+    {
+      name: "Hemotremor",
+      attributes: "[Action] [AOE]",
+      description: "You release a wave of dark energy 30 ft around you. Roll a d20 + Use Power. All creatures must roll a d20 + Will vs your roll, any that fail take 1d4 Darkness damage. Costs 2 Bloodlust.",
+      proficiencies: [
+        [
+          "Empowered: Add your Will to the damage dealt."
+        ],
+        [
+          "Malignant: Add G to the Severity roll of any Injury caused by Hemotremor's damage."
+        ]//TODO more
+      ]
     }
   ], // 1G
   [// 2G
@@ -174,6 +187,35 @@ export default [
           "Patron: You may bestow Gifts up to 4G, including Bind Daemon."
         ]
       ]
+    },
+    {
+      name: "Hex",
+      attributes: "[Action] [Ranged]",
+      description: "Point at a creature you can see within 30 ft. and make a Use Power attack. On a hit, apply a Hex Curse to the target. While Hexed, the creature receives an Unfavored -1 on rolls to resist or avoid negative effects or attacks by you. Lasts 1 hour. Costs 2 Bloodlust.",
+      proficiencies: [
+        [],
+        [
+          /*
+          ideas: 
+          increase injury severity rolls
+          reduce Use Power
+          chance to cause Fear effect if they hit you
+          slow -2
+          shorten hunger/thirst quota by 1 day
+          */
+        ]
+      ]
+    },
+    {
+      name: "Sacrifice",
+      attributes: "[Action] [Melee]",
+      description: "After hitting a creature with a melee attack or power, if that creature is at 1 Life you may apply a Mark of Sacrifice upon them. If they die while Marked the user gains 1 Soul Fragment. If they heal at least 1 point of Survival the Mark is removed. Costs 2 Bloodlust.",
+      proficiencies: [
+        [],
+        [
+          // consume soul fragments to gain self buffs, note that soul fragment is the same thing in cosmic's Soul Rend so these powers can work together using that shared resource
+        ]
+      ]
     }
   ],// 2G
   [// 3G
@@ -238,6 +280,6 @@ export default [
 //   attributes: "",
 //   description: "",
 //   proficiencies: [
-    
+        
 //   ]
 // }

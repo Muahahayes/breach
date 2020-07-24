@@ -309,6 +309,26 @@ export default [
           "Gate: Your Portal may persist for as long as you will it and a linked Portal will appear at the destination which creatures can use to return. The Portal will close if you die, or if another Cosmic with the Gate proficiency spends 1 day to close it. You may keep up to G Portals open with Gate at one time. Costs 5 ae to use the Gate proficiency to either make Portals persist or close. Requires Door."
         ]
       ]
+    },
+    {
+      name: "Mirror Force",
+      attributes: "[Action] [React] [Self]",
+      description: "As an Action, declare a status effect. For the next 1 round if you are targetted by an attempt to inflict you with that status effect but you resist or avoid it, you may spend your React to reflect the status effect back upon its origin. Costs 1 ae to declare, and 1 ae to reflect.",
+      proficiencies: [
+        [],[],
+        [
+          /*
+          ideas:
+          reflect missed attacks of a declared damage type
+          reflect on behalf of nearby allies
+          increase damage reflected
+          declare a whole category of status effects
+          declare a whole category of damage types
+          declare both a status effect and a damage type
+          can reflect a second time for free
+          */
+        ]
+      ]
     }
   ],// 3G
 ]
