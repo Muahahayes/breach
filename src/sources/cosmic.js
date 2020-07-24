@@ -41,11 +41,13 @@ export default {
       "Illuminate: [Action] [Touch] You touch an object, imbuing it with Aether. For 1 hour the object emits a soft glow which raises the surroundings from Low to Normal light, or from Dark or Pitch Black to Low Light."
     ],
     [
-      "Greater Flourish: [Action] [Ranged] For 10 minutes, within 30 ft you may manipulate objects and/or lift objects weighing no more than 5G pounds up to 30 ft in the air. Costs 1 ae."
+      "Greater Flourish: [Action] [Ranged] For 10 minutes, within 30 ft you may manipulate objects and/or lift objects weighing no more than 5G pounds up to 30 ft in the air. Costs 1 ae.",
+      "Cord: [Action] [Ranged] A silvery rope of spirit energy extends from your hand up to a length of 10 ft. It can be used as rope, but can only physically interact with living flesh. The cord can only by broken by a d20 + Strength vs 10 + Use Power. Lasts up to 1 day. Costs 1 ae."
     ],
     [
       "Harmony: [Activate] [Self] Choose a Quirk when you take this Lesser Gift. Whenever you gain a Favored bonus with this Quirk, if you Hard Succeed on the d20 roll you may use your Activation Action to gain G ae. (Repeatable up to G times, choose another Quirk with each repeat)",
-      "Desperation: [Activate] [Self] Choose a Quirk when you take this Lesser Gift. Whenever you gain an Unfavored penalty with this Quirk, if you succeed on the d20 roll you may use your Activation Action as a Full Action during this turn. Usable once per Full Sleep." // TEST THIS: could throw off action economy?
+      "Desperation: [Activate] [Self] Choose a Quirk when you take this Lesser Gift. Whenever you gain an Unfavored penalty with this Quirk, if you succeed on the d20 roll you may use your Activation Action as a Full Action during this turn. Usable once per Full Sleep.", // TEST THIS: could throw off action economy?
+      "Binding of Honesty: [Action] [Touch] While touching a creature you can create a Binding of Honesty. Until you are no longer touching the creature they are compelled to tell the truth. If they knowingly attempt to lie, they must succeed a Will vs Will check. On a Soft Fail they may still lie by omission. On a Hard Fail they must tell the full truth. Lasts up to 1 hour. Costs 2 ae."
     ]
   ]
 }

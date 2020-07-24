@@ -37,15 +37,16 @@ export default {
   lesser: [
     [
       "Conjure Fire: [Action] [Self] You create a small fire which floats above your hand. You may drop the fire, if it lands on a flammable material it is lit aflame, otherwise the fire snuffs out. The fire raises the nearby surroundings from Pitch Black to Dark or Dark to Low within 15 ft. Does not cost any Bloodlust.",
-      "Glamour: [Action] [Self] You mask your face with an illusion to appear like any person of your Race you have seen. If you enter Apathy this effect ends. Costs 1 Bloodlust."
+      "Glamour: [Action] [Self] You mask your face with an illusion to appear like any person of your Race you have seen. If you enter Apathy this effect ends. Costs 1 Bloodlust.",
+      "Evocation: [Action] [Self] As a Full Action you draw more energy into your body. The next time you gain Bloodlust, increase the amount gained by G. You may use Evocation up to G times per Full Sleep."
     ],
     [
-      "Grudge: [Action] [Ranged] You perform a ritual for 10 minutes to curse a creature with a Grudge within 1 mile. Speak their true full name and describe a nightmarish creature or situation, every night for G months the target creature will experience a nightmare you described during every Full Sleep. At 5G you may cause a nightmarish creature to appear to them in a shadowy form in the corner of their vision at random moments during the day."
+      "Grudge: [Action] [Ranged] You perform a ritual for 10 minutes to curse a creature with a Grudge within 1 mile. Speak their true full name and describe a nightmarish creature or situation, every night for G months the target creature will experience a nightmare you described during every Full Sleep. At 5G you may cause a nightmarish creature to appear to them in a shadowy form in the corner of their vision at random moments during the day. Costs 1 Bloodlust.",
+      "Red-Eye: [Action] [Self] Your eyes alight with a flash of red. You can see as if the surrounding light were 1 stage brighter. Lasts up to 1 hour. Costs 1 Bloodlust."
     ],
     [
       "Blood Oath: [Activate] [Self] Choose a Quirk when you take this Lesser Gift. Whenever you gain a Favored bonus from this Quirk you may spend 1 Bloodlust and use your Activation Action to heal G survival. (Repeatable up to G times, choose another Quirk with each repeat)",
-      "Dark Strike: [Activate] [Self] Choose a Quirk when you take this Lesser Gift. Whenever you gain a Favored bonus from this Quirk on a damaging attack you may spend 1 Bloodlust and use your Activation Action to dead an additional Gd4 damage.",
-      "Evocation: [Action] [Self] As a Full Action you draw more energy into your body. The next time you gain Bloodlust, increase the amount gained by G."
+      "Dark Strike: [Activate] [Self] Choose a Quirk when you take this Lesser Gift. Whenever you gain a Favored bonus from this Quirk on a damaging attack you may spend 1 Bloodlust and use your Activation Action to dead an additional Gd4 damage."
     ]
   ]
 }

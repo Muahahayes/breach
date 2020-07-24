@@ -45,9 +45,10 @@ export default {
       "Rune of Alarm: [Action] [Touch] Spend 1 minute touching an object to Engrave it. You are aware of any creature within 3 feet of the Rune."
     ],
     [
-      "Sealing Shot: [Action] [Touch] Spend 10 minutes to Engrave a creature's full true name onto a piece of ammo and roll a d20 + Power, if you land a ranged attack with that ammo that creature must make a Will check vs the Power roll engraved or they are Silenced and Snared for G rounds. Usable once per Full Sleep.",
+      "Sealing Shot: [Action] [Touch] Spend 10 minutes to Engrave a creature's full true name onto a piece of ammo and roll a d20 + Power, if a ranged attack hits with that ammo that creature must make a Will check vs the Power roll engraved or they are Silenced and Snared for G rounds. Usable once per Full Sleep.",
       "Invigorate: [Activation] [Self] Choose a Quirk when you take this Lesser Gift. Whenever you gain a Favored bonus with this Quirk you may use your Activation Action to subtract 1 Fade from any awakened Rune.",
-      "Feedback: [Activation] [Self] Whenever you roll a Hard Fail, as an Activation Action you may apply 1 Fade to a rune of your choice which is currently awakened."
+      "Feedback: [Activation] [Self] Whenever you roll a Hard Fail, as an Activation Action you may apply 1 Fade to a rune of your choice which is currently awakened.",
+      "Glyph of Honesty: [Action] [AOE] By running your palm along a flat surface you create a circle of runes. While within it, creatures that attempt to knowingly lie must succeed a d20 + Will vs Will or be compelled to tell the truth. On a Soft Fail they may still lie by omission. On a Hard Fail they must tell the full truth."
     ]
   ]
 }
