@@ -105,6 +105,7 @@ function Nav({ match }) {
           <li><Link style={navStyle} to="/sources/mutation/gifts">Mutation</Link></li>
           </ul>
         </li>
+        <li><Link style={navStyle} to="/techniques">Techniques</Link></li>
         <li><Link style={navStyle} to="/equipment" id="equipment-link" onClick={show.bind(null,'equipment')}>Equipment</Link> <span className="listBtn" id="equipment-btn" onClick={toggle.bind(null,'equipment')}>▼</span></li>
         <li id="equipment-list" className="list" style={hidden}>
           <ul>

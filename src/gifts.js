@@ -234,7 +234,6 @@ function Gifts({ match }) {
     }
 
     function hidePopup() {
-      console.log('hidePopup')
       let modal = document.getElementById('popup-modal');
       let screen = document.getElementById('popup-screen');
       modal.style.display = 'none';
@@ -244,40 +243,39 @@ function Gifts({ match }) {
     let filterEl;
     if (document.defaultView.screen.availWidth < 800) {
       filterEl =    
-                <p className="searchSpan">
-                  <span className="searchBox">
-                    <label className="searchLabel" htmlFor="levelSearch">Filter Level:</label>
-                    <input className ="searchBar" type="tel" id="levelSearch" name="levelSearch" onChange={filter.bind(null, false)} placeholder="G#" tabIndex={1}></input>                  
-                  </span>
-                  <br/>
-                  <br/>
-                  <label className="searchLabel" htmlFor="giftSearch">Search Gift:</label>            
-                  <input className ="searchBar" type="search" id="giftSearch" name="giftSearch" onChange={search.bind(null, false)} placeholder="Gift" tabIndex={2} title="Searches for a Gift name starting with your text, add a * to the front to search for Gifts that include your text within their name. (eg. *oc finds Shock)"></input>      
-                  <br/>
-                  <br/>
-                  <label className="searchLabel" htmlFor="attributeSearch">Search Attributes:</label>            
-                  <input className ="searchBar" type="search" id="attributeSearch" name="attributeSearch" onChange={attributes} placeholder="[Attribute]" tabIndex={2} title="Searches for Gifts with any attribute that include your text within the attribute name. Add a + between attributes to narrow the search to match multiple attributes. (eg. Ranged+Action)"></input>        
-                </p> 
+      <p className="searchSpan">
+        <span className="searchBox">
+          <label className="searchLabel" htmlFor="levelSearch">Filter Level:</label>
+          <input className ="searchBar" type="tel" id="levelSearch" name="levelSearch" onChange={filter.bind(null, false)} placeholder="G#" tabIndex={1}></input>                  
+        </span>
+        <br/>
+        <br/>
+        <label className="searchLabel" htmlFor="giftSearch">Search Gift:</label>            
+        <input className ="searchBar" type="search" id="giftSearch" name="giftSearch" onChange={search.bind(null, false)} placeholder="Gift" tabIndex={2} title="Searches for a Gift name starting with your text, add a * to the front to search for Gifts that include your text within their name. (eg. *oc finds Shock)"></input>      
+        <br/>
+        <br/>
+        <label className="searchLabel" htmlFor="attributeSearch">Search Attributes:</label>            
+        <input className ="searchBar" type="search" id="attributeSearch" name="attributeSearch" onChange={attributes} placeholder="[Attribute]" tabIndex={2} title="Searches for Gifts with any attribute that include your text within the attribute name. Add a + between attributes to narrow the search to match multiple attributes. (eg. Ranged+Action)"></input>        
+      </p> 
                   
     }
     else {
       filterEl =  
-                <span className="searchSpan">
-                  <span className="searchBox">
-                    <label className="searchLabel" htmlFor="levelSearch">Filter Level:</label>
-                    <input className ="searchBar" type="search" id="levelSearch" name="levelSearch" onChange={filter} placeholder="G#" tabIndex={1}></input>
-                  </span>
-                  <label className="searchLabel" htmlFor="giftSearch">Search Gifts:</label>            
-                  <input className ="searchBar" type="search" id="giftSearch" name="giftSearch" onChange={search} placeholder="Gift" tabIndex={2} title="Searches for a Gift name starting with your text, add a * to the front to search for Gifts that include your text within their name. (eg. *oc finds Shock)"></input>  
-                  <label className="searchLabel" htmlFor="attributeSearch">Search Attributes:</label>            
-                  <input className ="searchBar" type="search" id="attributeSearch" name="attributeSearch" onChange={attributes} placeholder="[Attribute]" tabIndex={2} title="Searches for Gifts with any attribute that include your text within the attribute name. Add a + between attributes to narrow the search to match multiple attributes. (eg. Ranged+Action)"></input>            
-                </span>
+      <span className="searchSpan">
+        <span className="searchBox">
+          <label className="searchLabel" htmlFor="levelSearch">Filter Level:</label>
+          <input className ="searchBar" type="search" id="levelSearch" name="levelSearch" onChange={filter} placeholder="G#" tabIndex={1}></input>
+        </span>
+        <label className="searchLabel" htmlFor="giftSearch">Search Gifts:</label>            
+        <input className ="searchBar" type="search" id="giftSearch" name="giftSearch" onChange={search} placeholder="Gift" tabIndex={2} title="Searches for a Gift name starting with your text, add a * to the front to search for Gifts that include your text within their name. (eg. *oc finds Shock)"></input>  
+        <label className="searchLabel" htmlFor="attributeSearch">Search Attributes:</label>            
+        <input className ="searchBar" type="search" id="attributeSearch" name="attributeSearch" onChange={attributes} placeholder="[Attribute]" tabIndex={2} title="Searches for Gifts with any attribute that include your text within the attribute name. Add a + between attributes to narrow the search to match multiple attributes. (eg. Ranged+Action)"></input>            
+      </span>
     }
     let {name} = require(`./sources/${match.params.s}`).default;
     return (
       <div className="content">
         <div className="content-head">
-          {/* <h1>{match.params.s.toUpperCase()}</h1> */}
           <h1>{name} Gifts</h1>
         </div>
         <div className={"content-body search-list"}>

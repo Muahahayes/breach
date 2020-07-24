@@ -5,6 +5,7 @@ import Races from './races';
 import Sources from './sources';
 import Gifts from './gifts';
 import Equipment from './equipment';
+import Techniques from './techniques';
 import Rules from './rules';
 import Lore from './lore';
 import Creatures from './creatures';
@@ -40,6 +41,8 @@ function App() {
           <Route path="/gifts/:s/:g" component={Gifts}/>
           <Route path="/equipment/:t/:e" component={Equipment}/>
           <Route path="/equipment/:t" component={Equipment}/>
+          <Route path="/techniques/:t" component={Techniques}/>
+          <Route path="/techniques" component={Techniques}/>
           <Route path="/world/creatures/:t/:c" component={Creatures}/>
           <Route path="/world/creatures/:t" component={Creatures}/>
           <Route path="/world/lore/:p" component={Lore}/>

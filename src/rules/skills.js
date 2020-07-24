@@ -60,7 +60,7 @@ export default {
       <li>Insight (recognizing when someone is lying or is hiding their intentions)</li>
       <li>History (knowledge of the background of an area, or the details of major events/figures)</li>
       <li>Logic (mental capability of math, physical sciences and solving structured puzzles)</li>
-      <li>Cosmology (mental capability of the stars, Aether, and related phenomena</li>
+      <li>Cosmology (mental capability of the stars, Aether, and related phenomena)</li>
       <li>Marksmanship (expertise with ranged weapons)</li>
       <li>Martial Arms (expertise with melee weapons)</li>
       <li>Use Power (using your Powers to accomplish a task or attack a creature, or contesting the effect of an enemy Power)</li>

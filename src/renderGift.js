@@ -36,7 +36,6 @@ function renderGift(gift, source) {
     return (
       <div className="gift">
         {(window.matchMedia(' (max-width: 800px) ').matches) ? <h2><Link to={`/gifts/${source}/${giftName}`}>{gift.name}</Link></h2> : <h2 className="popup-link" onClick = {showPopup.bind(null, gift.name, source)}>{gift.name}</h2>}
-        
         <span><b className="attributes">{gift.attributes}</b></span>
         <br/>
         {description}
