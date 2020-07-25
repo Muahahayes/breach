@@ -61,7 +61,7 @@ content: <div>
     <ul>
     <li><b>Poison:</b> Deals Nature damage each turn until succeeding at some Stamina check. The amount of damage, the difficulty of the check, and duration are given by the source of the Poison. A creature may have 1 Poison effect at a time, the highest difficulty check taking priority.</li>
     <li><b>Burn:</b> Deals Fire damage each turn until spending an Action putting out the fire, or when the duration ends. The damage and duration are given by the source of the Burn. A creature may have 1 Burn effect at a time, the highest damage taking priority.</li>
-    <li><b>Bleed:</b> You lose 1 Life every x number of turns until a creature succeeds a Medicine check vs the Attack roll of the damage source (or a given difficulty) or you are healed to your max Life. The period of turns is given by the source of the Bleed. Some bleeds only occur a limited number of times. A creature may have 1 Bleed effect at a time, the shortest period bleed taking priority.</li>
+    <li><b>Bleed:</b> Loses 1 Life every x number of turns until a creature succeeds a Medicine check vs the Attack roll of the damage source (or a given difficulty) or the creature is healed to max Life. The period of turns is given by the source of the Bleed. Some bleeds only occur a limited number of times. A creature may have 1 Bleed effect at a time, the shortest period bleed taking priority but taking the duration of the longest duration Bleed.</li>
     </ul>
   </p>
   <hr/>
