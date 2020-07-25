@@ -313,7 +313,27 @@ export default [
         ]
       ]
     }
-  ]// 3G
+  ],// 3G
+  [// 4G
+    {
+      name: "Madness",
+      attributes: "[Action] [Melee]",
+      description: "As an Action you reach out and grab a creature's head. Make a basic melee attack roll with an Unfavored -1. On a hit, instead of dealing damage you assault their mind with Madness. Roll a d20 + Charm vs Insight. On any Fail the creature resists you and there is no effect. On a Soft Success the creature is Stunned for 1 turn, roll an additional Psychic Fatigue check. On a Hard Success the creature is driven mad and must attempt to perform damaging actions against a random creature which is hostile towards you on its next turn. If no creatures nearby are hostile towards you the creature spends its turn moving up to half of its movement distance away from you and will attack any creature near it at random.",
+      proficiencies: [
+        [],[],[],
+        [
+          "Empowered: Add your Will to the Charm roll",
+          "Unstable: [Activate] As an Activation Action you may cause the madness to become even more unstable. Roll a d6. On a 1 the creature snaps out of it and the madness effect ends prematurely. On a 2-3 the creature becomes enraged and gains a Favored +1 to its attack rolls on its next turn. On a 4-5 the creature screeches in horror and takes 3d6 Psychic damage. On a 6 the creature is driven mad for 1 additional turn and is immune to Sensory/Cognitive Status Effects during the madness.",
+          "Sightless: [Activate] As an Activation Action the Madness causes the creature to go Blind after the primary effect ends. On each of its turns it may attempt a d20 Insight roll against your original Charm roll, on a Success the Blind effect ends."
+        ],
+        [
+          "Feral: [Activate] As an Activation Action, if the creature is 2 or more levels below you the creature is permanently driven mad. It will wander the world randomly and attack any creature it encounters. This effect may be removed by a person immobilizing the creature and spending 1 hour to roll a d20 + Charm vs your original Madness Charm roll, on a Success the effect is removed.",
+          "Maddening Howl: On rolling a 4 or higher on an Unstable roll, or if under the effect of Feral, any creature attacked by the mad creature must roll a d20 Insight vs your original Madness Charm roll. On a Soft Fail they take 1d8 Psychic Damage. On a Hard Fail they are also driven mad and receive a Madness effect with their own Unstable roll.",
+          "Touch of Madness: You are more familiar with how the mind can fall apart and passively gain immunity to the Dumb Status Effect."
+        ]
+      ]
+    }
+  ]// 4G
 ]
 /*
 {
