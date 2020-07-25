@@ -18,7 +18,7 @@ export default {
     [
       "Regenerative: Gain +G to any healing you receive from a Gift.",
       "Ancient Endurance: Increase your Stamina by 1.",
-      "Two-Handed Tempo: Two-Handed Speed reduces the penalty by an additional 2 (to a minimum of 0)."
+      "Two-Handed Tempo: Two-Handed Speed reduces the penalty by an additional 1 (to a minimum of 0)."
     ],
     [
       //4
