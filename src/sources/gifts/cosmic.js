@@ -174,14 +174,16 @@ export default [
         ],
         [
           "Greater Barrier: Add your G to the Barrier roll.",
-          "Turbulent: The wall deals 1d4 + Will blunt damage to any creature that passes through it. Cannot be taken with the Deflection or Potency proficiency.",
-          "Deflection: Reduces the attack roll of ranged attacks by -1 if they touch the wall. Cannot be taken with the Turbulent or Potency proficiency.",
-          "Potency: Increase the Barrier roll to 1d6. Cannot be taken with the Deflection or Turbulent proficiency."
+          "Turbulent: [Activate] As an Activation Action when creating the Barrier, the wall deals 1d4 + Will blunt damage to any creature that passes through it.",
+          "Deflection: [Activate] As an Activation Action when creating the Barrier, reduce the attack roll of ranged attacks by -1 if they touch the wall.",
+          "Potency: [Activate] As an Activation Action when creating the Barrier, increase the Barrier roll to 1d6.",
+          "Wind: The wall prevents gases and liquids from passing through and deflects them upwards with a gust of wind. Medium or smaller creatures which attempt to Fly through the Barrier are lifted to the height of the Barrier and lose movement equal to this elevating effect."
         ],
         [
           "Maelstrom: Increases Turbulent to 1d6 + Will.",
           "Warped: Increase Deflection to -3.",
-          "Bulwark: Increase Potency to 1d8."
+          "Bulwark: Increase Potency to 1d8.",
+          "Updraft: You may choose to increase the movement of a creature when it is lifted by the Wind proficiency instead of it losing movement due to being elevated. You may also lift willing creatures to the height of the Barrier if they step into it."
         ]
       ]
     },
