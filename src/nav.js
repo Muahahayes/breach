@@ -91,7 +91,7 @@ function Nav({ match }) {
           <li><Link style={navStyle} to="/sources/psychic">Psychic</Link></li>
           <li><Link style={navStyle} to="/sources/cosmic">Cosmic</Link></li>
           <li><Link style={navStyle} to="/sources/runic">Runic Arts</Link></li>
-          <li><Link style={navStyle} to="/sources/bloodline">Ancient Bloodline</Link></li>
+          <li><Link style={navStyle} to="/sources/bloodline">Bloodline</Link></li>
           <li><Link style={navStyle} to="/sources/mutation">Mutation</Link></li>
           </ul>
         </li>
@@ -101,7 +101,7 @@ function Nav({ match }) {
           <li><Link style={navStyle} to="/sources/psychic/gifts">Psychic</Link></li>
           <li><Link style={navStyle} to="/sources/cosmic/gifts">Cosmic</Link></li>
           <li><Link style={navStyle} to="/sources/runic/gifts">Runic Arts</Link></li>
-          <li><Link style={navStyle} to="/sources/bloodline/gifts">Ancient Bloodline</Link></li>
+          <li><Link style={navStyle} to="/sources/bloodline/gifts">Bloodline</Link></li>
           <li><Link style={navStyle} to="/sources/mutation/gifts">Mutation</Link></li>
           </ul>
         </li>
