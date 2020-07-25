@@ -248,7 +248,18 @@ export default [
           "Clone: The Homunculus now has your Strength, Agility, Stamina, Will, Life and Survival scores. It can think and act for itself. It possesses all Gifts you possessed before you reached level 6G, excluding Minion Gifts. Requires Mimicry, Greater Gift, Tough, Intelligence, and Physique."
         ]
       ]
-    }    
+    },
+    {
+      name: "Miasma",
+      attributes: "[Action] [AOE] [Melee]",
+      description: "As an Action you release a cloud of poisonous gas from your body, which floats in place and takes up an area with a radius of 10 ft. Any creature other than yourself that is within the cloud must roll a d20 + Stamina vs [10 + Use Power] each turn they are within the cloud. On a Fail they take 2d8 Nature damage, on a Hard Fail they are also Poisoned for an additional 2d4 Nature damage for 3 turns with a difficulty of [10 + Use Power].",
+      proficiencies: [
+        [],[],
+        [
+          //TODO
+        ]
+      ]
+    }
   ],// 3G
   [// 4G
     {
@@ -280,6 +291,6 @@ export default [
 //   attributes: "",
 //   description: "",
 //   proficiencies: [
-        
+
 //   ]
 // }
