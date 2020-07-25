@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import renderTechnique from './renderTechniques';
-import techniques from './techniques/techniques';
 
 function Techniques({ match }) {
   if (match && match.params && match.params.t) { // individual technique
