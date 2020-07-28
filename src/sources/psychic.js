@@ -24,7 +24,7 @@ export default {
       "No Resistance: Roll your Psychic Fatigue checks after the main roll of using a Gift. Whenever you Hard Succeed while using a Gift, you do not make the base Psychic Fatigue check for that use of that Gift."
     ],
     [
-      "Mental Resilience: After putting 3 points into Mental Resilience you gain resistance to Mental damage, reducing damage taken from Mental damage types by half. (Repeatable up to 3)"
+      "Mental Resilience: After putting 3 points into Mental Resilience you gain resistance to Mental damage types. (Repeatable up to 3)"
     ],
     [
       //6

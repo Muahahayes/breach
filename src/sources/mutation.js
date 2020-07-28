@@ -20,7 +20,7 @@ export default {
       "Evolutionary Endurance: Increase your Stamina by 1."
     ],
     [
-      //4
+      "Photosynthesis: You gain 1 Food Point whenever you take a Break in direct sunlight."
     ],
     [
       //5

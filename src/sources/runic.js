@@ -25,13 +25,13 @@ export default {
     ],
     [
       "Ascended: You may use Light while a rune above 3G is awakened.",
-      "Shine: Light may awaken one additional rune."
+      "Greater Light: Light may awaken one additional rune."
     ],
     [
-      //6
+      "Major Light: Light may awaken one additional rune."
     ],
     [
-      "Extended Gifts: Gain 2 new Gifts from your Source of [3 G] or less and also increase the number of gifts that you can Awaken by 1 (Repeatable up to 3)."
+      "Extended Gifts: Gain 2 new Gifts from your Source of [3 G] or less (Repeatable up to 3)."
       //TODO add capstone proficiencies, powerful effects but can only pick 1
     ]
   ],

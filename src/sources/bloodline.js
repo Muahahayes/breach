@@ -24,7 +24,7 @@ export default {
       //4
     ],
     [
-      //5
+      "Timeless: You do not age and will no longer die of age, natural illnesses, or hunger and thirst."
     ],
     [
       //6
