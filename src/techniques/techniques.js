@@ -72,6 +72,12 @@ export default {
     skill: "Martial Arms | Marksman",
     requirement: 15,
     description: "Through your battle experience you can recognize when a creature is near death. When a creature you can see is at 1 Life and drops below half their max Survival you are alerted to this. While they are in this state, your basic Attack Action gains a Favored +2 against them and deals an extra Gd4 damage."
+  },
+  "water tap" : {
+    name: "Water Tap",
+    skill: "Nature | Outdoorsman",
+    requirement: 10,
+    description: "You know how to draw water from trees and large plants. When you take a Break near a tree or large plant you can generate 1 Water Point which may be drunk by an ally or stored for later use.\n\nWhen your Skill has increased to 15 you may generate a second Water Point."
   }
 }
 /*
