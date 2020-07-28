@@ -17,7 +17,7 @@ content: <div>
   <b>Elemental types:</b><br/>
   <ul>
     <li><b>Fire:</b> Damaged caused by extreme heat or burning.</li>
-    <li><b>Water/Ice:</b> Damaged caused by drowning, extreme cold, or crashing waves.</li>
+    <li><b>Water:</b> Damaged caused by drowning, extreme cold, or crashing waves.</li>
     <li><b>Nature:</b> Damaged caused by poisons, disease, or supernatural plant life.</li>
     <li><b>Electric:</b> Damaged caused by lightning, electricity, or other electromagnetic energy.</li><br/>
   </ul>
@@ -48,7 +48,7 @@ content: <div>
     <ul>
       <li><b>Paralyze:</b> You can only do 1 of your Actions (Full, Movement, React, Activation) per round.</li>
       <li><b>Snare:</b> You cannot use your Movement Action.</li>
-      <li><b>Slow:</b> Your Movement distance is reduced, the amount is defined by the source of the Slow effect.</li>
+      <li><b>Slow:</b> Your Speed roll is reduced, the amount is defined by the source of the Slow effect.</li>
       <li><b>Cripple:</b> The limb that has this effect cannot be used in any Actions. If only 1 leg is not crippled you may move, but your Movement is reduced by half.</li><br/>
     </ul>
     <b>Soul Effects:</b>
