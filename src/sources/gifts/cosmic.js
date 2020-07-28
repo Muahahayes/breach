@@ -3,7 +3,7 @@ export default [
     {
       name: "Shock",
       attributes: "[Action] [Ranged] [Single Target]",
-      description: "Point at a creature or object within 30ft. You release a blast of kinetic energy at the target dealing 1d6 kinetic damage. This makes a moderate clapping sound on impact. It creates a distorted ripple through the air as it travels to its target. Costs 1 ae.",
+      description: "Point at a creature or object within 30ft and make a Power Attack roll. You release a blast of kinetic energy at the target dealing 1d6 kinetic damage. This makes a moderate clapping sound on impact. It creates a distorted ripple through the air as it travels to its target. Costs 1 ae.",
       proficiencies: [
         [
           "Empowered: Add your Will to the damage roll.",
@@ -59,7 +59,7 @@ export default [
     {
       name: "Soul Stitching",
       attributes: "[Action] [Melee]",
-      description: "The Cosmic lays their hand upon a creature and weaves the Aether within their body to close up their wounds. Heal 1d6 damage from that person. Costs 1 ae.",
+      description: "Lay your hand upon a creature and weave the Aether within their body to close up their wounds. Heal 1d6 damage from that person. Costs 1 ae.",
       proficiencies: [
         [
           "Empowered: Add your Will to the amount healed.",
@@ -90,7 +90,7 @@ export default [
     {
       name: "Hydromancy",
       attributes: "[Action] [Action] [Ranged] [Elemental]",
-      description: "Requires your Elemental Soul to be the Water type. As a Full Action you may create water in an area you can see in a sphere with a radius of 5 ft which centers around a point within 10 ft of you. After creation you may use this Power's Action Action to move it or else it will fall to the ground, you may move this water up to 20 ft in any direction in a wave-like shape and once reaching its destination it falls to the ground. Any creature that is pushed by the water must roll a d20 + Athletics vs Power to resist being moved. On a Success they do not move, on a Soft Fail they are carried with the water to its destination and on a Hard Fail they are also dealt 1d6 Water damage. Costs 1 ae.",
+      description: "Requires your Elemental Soul to be the Water type. As a Full Action you may create water in an area you can see in a sphere with a radius of 5 ft which centers around a point within 10 ft of you. After creation you may use this Power's Action Action to move it or else it will fall to the ground, you may move this water up to 20 ft in any direction in a wave-like shape and once reaching its destination it falls to the ground. Any creature that is pushed by the water must roll a d20 + Agility vs [10 + Power] to resist being moved. On a Success they do not move, on a Soft Fail they are carried with the water to its destination and on a Hard Fail they are also dealt 1d6 Water damage. Costs 1 ae.",
       proficiencies: [
         [
           "Manipulation: [Action] As an Action you pull together water you can see within 10 ft of you and the water forms into a sphere with a 5 ft radius, if the source of the water has a volume greater than a 5 ft sphere the excess water is left behind. You may move this water just like you would use an Action to move water you have created with Hydromancy. Costs 1 ae.",
@@ -126,7 +126,7 @@ export default [
     {
       name: "Pyromancy",
       attributes: "[Action] [Action] [Ranged] [Elemental]",
-      description: "Requires your Elemental Soul to be the Fire type. As an Action you may either snuff out a torch sized flame within 10 ft, or ignite a small flame in your hand which you may hold for up to 10 minutes or throw up to 10ft away. If you throw the flame, it must land on a flammable surface or it will snuff out. As a Full Action you may ignite a flame which quickly grows and fans out from your hand in a 10 ft cone in front of you. Every creature within the area must roll a d20 + Athletics vs Power to avoid the fire. On a Success they avoid being hit. Deal 1d4 Fire damage to every creature that Fails. Costs 1 ae.",
+      description: "Requires your Elemental Soul to be the Fire type. As an Action you may either snuff out a torch sized flame within 10 ft, or ignite a small flame in your hand which you may hold for up to 10 minutes or throw up to 10ft away. If you throw the flame, it must land on a flammable surface or it will snuff out. As a Full Action you may ignite a flame which quickly grows and fans out from your hand in a 10 ft cone in front of you. Every creature within the area must roll a d20 + Agility vs [10 + Power] to avoid the fire. On a Success they avoid being hit. Deal 1d4 Fire damage to every creature that Fails. Costs 1 ae.",
       proficiencies: [
         [
           "Empowered: Add your Will to any damage done by Pyromancy.",
@@ -136,7 +136,7 @@ export default [
           "Blaze: [Action] As a Full Action, you ignite a streak of fire that shoots out in a straight line. Make a ranged Power attack against a creature you can see within 30 ft. On a hit deal 1d8 Fire damage. Costs 1 ae.",
           "Heat: Increase the damage of Pyromancy' Full Action attack to 1d6.",
           "Warmth: [Free] You may produce a radiant heat at will, warming the area around you by 10 F within 10 ft. This effect is disabled when you are at 0 ae.",
-          "Manipulation: [Action] As an Action you gather the fire within a 5 ft radius you can see within 10 ft and may move it up to 20 ft in any direction. Any creature within the fire's destination must roll a d20 + Athletics vs Power to avoid the fire, On a Success they avoid being hit. Deal 1d4 Fire damage to every creature that Fails. Costs 1 ae."
+          "Manipulation: [Action] As an Action you gather the fire within a 5 ft radius you can see within 10 ft and may move it up to 20 ft in any direction. Any creature within the fire's destination must roll a d20 + Agility vs [10 + Power] to avoid the fire, On a Success they avoid being hit. Deal 1d4 Fire damage to every creature that Fails. Costs 1 ae."
         ],
         [
           "Ignition: [Activate] Whenever one or more creatures Hard Fail a check to avoid fire from Pyromancy, you may spend an Activation Action to apply a Burn to the creatures for 2 turns which deals 1d4 Fire damage.",
@@ -222,12 +222,31 @@ export default [
     {
       name: "Soul Rend",
       attributes: "[Action] [Ranged]",
-      description: "Point at a creature you can see and rip at their soul dealing 1d6 spirit damage. If they are currently at 1 Life this applies a Mark of Rending upon them. If they die while Marked the cosmic gains 1 Soul Fragment. If they heal at least 1 point of Survival the Mark is removed. Costs 2 ae.",
+      description: "Point at a creature you can see within 30 ft and tear at their soul dealing 1d6 spirit damage. If they are currently at 1 Life this applies a Mark of Rending upon them. If they die while Marked the cosmic gains 1 Soul Fragment. If they heal at least 1 point of Survival the Mark is removed. Costs 2 ae.",
       proficiencies: [
         [],
         [
           "Haunt: [Action] Point at a creature you can see and release a Soul Fragment upon them. They must roll a d20 + Will vs [10 + G] or else become cursed with a Haunting. While Haunted they receive a Unfavored -1 on any roll for an Action which deals damage. Lasts for 3 turns.",
           "Vengence: [Action] Point at a creature you can see and release a Soul Fragment upon them. They must roll a d20 + Will vs [10 + G] or else by struck by a Spirit of Vengence. They take 2d8 spirit damage. If they rolled a Hard Fail they are also gripped by the spirit, Snaring them for 1 turn."
+        ]//TODO more
+      ]
+    },
+    {
+      name: "Cryonic Flash",
+      attributes: "[Action] [Ranged]",
+      description: "Reach out towards a creature you can see within 30 ft, a flash of Aether is released from your body and a wave of cold washes over them. They must roll a d20 + Will vs [10 + Power] to resist the effect. On a Fail they take 1d8 Water damage. On a Hard Fail they also are Slowed -1 for 1 turn. Costs 2 ae.",
+      proficiencies: [
+        [],
+        [
+          "Empowered: Add your Will to the damage dealt.",
+          "Freeze: [Action] You may freeze a body of water you can see within 10 ft of you. You can freeze a size of water equal to a sphere with a radius of 5 ft. Any creature within the water is Snared, and on its turn must make an Athletics check vs Power to break free. On a Fail it remains Snared, on a Success it is no longer snared, but on a Soft Success it is Slowed for 1 turn. Costs 2 ae."
+        ],
+        [
+          "Deep Cold: Creatures are now Slowed on a Soft Fail.",
+          "Frigid Wave: [Activate] As an Activation Action, Cryonic Flash effects every creature within 30 ft in the direction you are facing. Costs 2 additional ae."
+        ],
+        [
+          "Rooted: When you use Cryonic Flash, you may decide if all creatures affected are Slowed or Snared if they Hard Fail their roll."
         ]//TODO more
       ]
     }

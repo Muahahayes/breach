@@ -282,6 +282,24 @@ export default [
           "Echo: If Arcane Bolt hits, you may roll a second time to fire a second Arcane Bolt."
         ]
       ]
+    },
+    {
+      name: "Quiet",
+      attributes: "[Action] [AOE]",
+      description: "By tracing a rune in the air you create a Rune of Quiet. All sound within 10 ft of the rune is Silenced, all creatures within the area are Deaf. The rune glows brightly, cannot be moved and persists for 1 minute.",
+      proficiencies: [
+        [],
+        [
+          /*
+            ideas:
+            longer duration
+            20 ft range
+            can choose for all creatures to not be made Deaf
+            can choose for sounds to exist within the area but can't be heard from outside the area
+            as an activation can impose a difficulty check to use Cosmic powers
+          */
+        ]
+      ]
     }
   ], // 2G
   [// 3G

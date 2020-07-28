@@ -162,8 +162,7 @@ export default [
         [
           "Potency: Increase the Shielding to 1d8.",
           "Hard: After using Barkskin reduce Blunt damage taken by G",
-          "Treeherder: After using Barkskin gain a Favored +1 to Nature rolls related to plants.",
-          "Relaxed: Barkskin no longer causes an additional Strain for rolling a maximum value."
+          "Treeherder: After using Barkskin gain a Favored +1 to Nature rolls related to plants."
         ],
         [
           "Greater Potency: Increase the Shielding to 1d10. Requires Potency.",
@@ -266,6 +265,22 @@ export default [
         [
           "Overwhelm: [Activate] If Flurry deals a killing blow, you may perform a Mutation that causes Strain. This may only trigger once per turn."
         ]        
+      ]
+    },
+    {
+      name: "Swarm",
+      attributes: "[Action] [AOE]",
+      description: "A swarm of flying insects spew forth from your body, attacking all creatures within a 10 ft radius and quickly die afterwards. All creatures in the afflicted area must roll a d20 + Stamina vs [10 + Power], on a Fail they take 1d8 Nature damage. Causes 3 Strain.",
+      proficiencies: [
+        [],[],
+        [
+          /*
+            ideas:
+            insect swarm can apply a poison on a Hard Fail
+            insect swarm has 20 ft range
+            as an activation, can do a swarm of hairless rodents which persist for 2 turns and deal damage in the area each turn 
+          */
+        ]
       ]
     }
   ], // 3G
