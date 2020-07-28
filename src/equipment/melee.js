@@ -14,6 +14,7 @@ export default {
       damage: '1d6 + Strength Blunt',
       strength: 1,
       agility: '-',
+      weight: 1,
       tags: 'one-handed, metal'
     },
     {
@@ -23,6 +24,7 @@ export default {
       damage: '1d6 + Agility Sharp',
       strength: '-',
       agility: 1,
+      weight: 1,
       tags: 'one-handed'
     },
     {
@@ -32,6 +34,7 @@ export default {
       damage: '1d8 + Strength Sharp',
       strength: 1,
       agility: '-',
+      weight: 1,
       tags: 'one-handed, metal'
     },
     {
@@ -41,6 +44,7 @@ export default {
       damage: '1d8 + Strength Blunt',
       strength: 2,
       agility: '-',
+      weight: 1,
       tags: 'one-handed, metal'
     },
     {
@@ -50,6 +54,7 @@ export default {
       damage: '1d8/1d10 + Strength Sharp',
       strength: 2,
       agility: 1,
+      weight: 2,
       tags: 'one-handed, two-handed, metal'
     },
     {
@@ -59,6 +64,7 @@ export default {
       damage: '1d12 + Strength Blunt',
       strength: 3,
       agility: 1,
+      weight: 3,
       tags: 'two-handed, metal, slow'
     }
   ]
@@ -71,6 +77,7 @@ export default {
   damage: '',
   strength: '-',
   agility: '-',
+  weight: 0,
   tags: ''
 }
 */

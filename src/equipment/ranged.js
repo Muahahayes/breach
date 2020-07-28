@@ -17,6 +17,7 @@ export default {
   range: '',
   will: '-',
   agility: '-',
+  weight: 0,
   tags: ''
 }
 */

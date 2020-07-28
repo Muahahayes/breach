@@ -23,10 +23,10 @@ export default {
       <li><span>Stamina (Life and endurance)</span><br/></li>
     </ul>
     <br/>
-    <span><b>Strength Benefits:</b> Every point of Strength increases your Carry Weight by 50lb. Add your Strength value to your melee attack damage.</span><br/>
+    <span><b>Strength Benefits:</b> Every point of Strength increases your Equip Weight by 1. Add your Strength value to your unarmed attack damage and most melee weapons.</span><br/>
     <span><b>Agility Benefits:</b> Agility is used to avoid some area of effect attacks. Add your Agility value to your Avoidance stat.</span><br/>
     <span><b>Will Benefits:</b> Will is used to resist some non-physical effects or empower some Gifts.</span><br/>
-    <span><b>Stamina Benefits:</b> Every point of Stamina increases your Survival by 1 and the distance you can travel per day by 5 miles. Every even number of Stamina increases your Life by 1.</span><br/>
+    <span><b>Stamina Benefits:</b> Every point of Stamina increases your Survival and Life by 1 and the distance you can travel per day by 5 miles.</span><br/>
     <br/>
     <span><b>Stat Checks:</b> Some Powers, Techniques, and Attacks will contest an Attribute check. These checks can Hard Succeed or Hard Fail like a <Link to="skills">Skill</Link> check but do not give <Link to="leveling">XP</Link>.</span><br/>
     <br/>

@@ -12,6 +12,7 @@ export default {
       description: 'An unlicensed reproduction of a Dx100 Personal Deflector, a knock-off of a low grade unit that offers little protection.',
       price: 40,
       reduction: 2,
+      weight: 1,
       tag: 'personal'
     },
     {
@@ -19,6 +20,7 @@ export default {
       description: 'An unlicensed reproduction of a Dx200 Personal Deflector',
       price: 75,
       reduction: 4,
+      weight: 1,
       tag: 'personal'
     },
     {
@@ -26,6 +28,7 @@ export default {
       description: 'An official Dx100 Personal Deflector, an entry level unit for the general public.',
       price: 60,
       reduction: 3,
+      weight: 1,
       tag: 'personal'
     },
     {
@@ -33,6 +36,7 @@ export default {
       description: 'An official Dx200 Personal Deflector, the standard unit for low-rank security workers in many agencies.',
       price: 100,
       reduction: 5,
+      weight: 2,
       tag: 'personal'
     }
   ]
@@ -43,6 +47,7 @@ export default {
   description: '',
   price: 0,
   reduction: 0,
+  weight: 0,
   tag: ''
 }
 */

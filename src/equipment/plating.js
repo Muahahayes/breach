@@ -17,6 +17,7 @@ export default {
   shielding: 0,
   avoidance: 0,
   strength: '-',
+  weight: 0,
   tags: ''
 }
 */

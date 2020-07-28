@@ -17,6 +17,7 @@ export default {
       hits: 5,
       reduction: 2,
       strength: 2,
+      weight: 2,
       tags: 'Off-Brand'
     },
     {
@@ -27,6 +28,7 @@ export default {
       hits: 10,
       reduction: 5,
       strength: 2,
+      weight: 2,
       tags: 'AGS'
     },
     {
@@ -37,6 +39,7 @@ export default {
       hits: 2,
       reduction: 3,
       strength: 1,
+      weight: 1,
       tags: 'Splint'
     },
     {
@@ -47,6 +50,7 @@ export default {
       hits: 20,
       reduction: 5,
       strength: 3,
+      weight: 2,
       tags: 'Bulwark'
     },
     {
@@ -57,6 +61,7 @@ export default {
       hits: 12,
       reduction: 8,
       strength: 2,
+      weight: 2,
       tags: 'AGS'
     },
     {
@@ -67,6 +72,7 @@ export default {
       hits: 20,
       reduction: 10,
       strength: 3,
+      weight: 3,
       tags: 'Unique, Special'
     }
   ]
@@ -80,6 +86,7 @@ export default {
   hits: 0,
   reduction: 0,
   strength: '-',
+  weight: 0,
   tags: ''
 }
 */
