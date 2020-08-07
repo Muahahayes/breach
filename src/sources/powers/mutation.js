@@ -1,13 +1,13 @@
 export default [
-  [// 1G
+  [// LVL 1
     {
       name: "Harden",
       attributes: "[React] [Self]",
-      description: "Your skin can flex and morph to become a hard like armor. When you receive damage, you may reduce the damage taken by an amount equal to your current Strain. Afterwards, causes 2 Strain. May only be used while Blocking and may only be used twice per day. Regain a use after taking a Break, or regain all uses after a Full Sleep.",
+      description: "Your skin can flex and morph to become a hard like armor. When you receive damage, you may reduce the damage taken by an amount equal to your current Strain. Afterwards, causes 2 Strain. May only be used while Blocking and may only be used twice per Full Sleep. Regain a use after taking a Break, or regain all uses after a Full Sleep.",
       proficiencies: [
         [
-          "Calloused: Reduce the damage taken by an additional amount equal to G.",
-          "Frequency: Increase the number of times you may use this per day by 1. (Repeatable up to 4)"
+          "Calloused: Reduce the damage taken by an additional amount equal to your level.",
+          "Frequency: Increase the number of times you may use this per Full Sleep by 1. (Repeatable up to 4)"
         ],
         [
           "Spines: [Activate] If you use Harden against a melee attack, deal 1d4 piercing damage to the attacker.",
@@ -18,7 +18,7 @@ export default [
           "Quills: Increase the size of the Spines or Quill Spray die, causes 1 Strain per size increase. (Repeatable d6, d8, d10)"
         ],
         [
-          "Quill Spray: [Activate] When you use Harden, you may release a spray of quills around. Every creature within 10ft must roll an Agility check vs your current Strain, you deal 1d4 piercing damage to any Soft Fail and an additional G damage to any Hard Fail."
+          "Quill Spray: [Activate] When you use Harden, you may release a spray of quills around. Every creature within 10ft must roll an Agility check vs your current Strain, you deal 1d4 piercing damage to any Soft Fail and additional damage equal to your level to any Hard Fail."
         ],
         [
           "Armored Skin: [Passive] While Blocking, increase your Avoidance by 2.",
@@ -33,15 +33,15 @@ export default [
       proficiencies: [
         [
           "Infuriate: On an enemy's Hard Fail the effect lasts an additional turn.",
-          "Stripes: You may, instead of its normal effect, subtract G from attack rolls against you for 1 turn.",
-          "Camouflage: You may, instead of its normal effect, add G to Hide checks for 10min."
+          "Stripes: You may, instead of its normal effect, subtract LVL from attack rolls against you for 1 turn.",
+          "Camouflage: You may, instead of its normal effect, add LVL to Hide checks for 10min."
         ],
         [
-          "Instinct: On creatures with a Will less than ½ G, the effect lasts G turns."
+          "Instinct: On creatures with a Will less than ½ your level, the effect lasts a number of turns equal to your level."
         ],
         [
           "Fluorescent: Raises the surroundings to Low Lighting, up to 10min.",
-          "Distracting: [Activate] Subtract G from any attack rolls against allies in melee range for 1 turn."
+          "Distracting: [Activate] Subtract LVL from any attack rolls against allies in melee range for 1 turn."
         ],
         [
           "Primal: [Activate] The Instinct effect now lasts until they lose awareness of you for as long as you spend your Activation Action each turn. They may roll an Insight check vs your original Disruption roll on each turn to end the effect."
@@ -54,16 +54,16 @@ export default [
       description: "You can extend 3 inch claws from your fingers or toes at will. These claws are durable and if broken can be regrown. Your unarmed melee attack now deals 1d6 sharp damage.",
       proficiencies: [
         [
-          "Chiseling: You can use your claws to carve basic shapes into rock or softer materials, gain +G to Art checks involving Stonecrafting or Pottery. Additionally your Athletics checks gain +G if you are climbing.",
+          "Chiseling: You can use your claws to carve basic shapes into rock or softer materials, add your level to Art checks involving Stonecrafting or Pottery. Additionally add your level to your Athletics checks if you are climbing.",
           "Elongate: You can extend the claws up to 6 inches."
         ],
         [
-          "Barbed: You gain +G to attempts to Grapple or maintain a Grapple.",
-          "Precision: Add +G to your unarmed melee attack damage."
+          "Barbed: You add your level to attempts to Grapple or maintain a Grapple.",
+          "Precision: Add your level to your unarmed melee attack damage."
         ],
         [
           "Sharpened: Your unarmed melee attack now deals 1d8 sharp damage.",
-          "Poisoned: [Activate] Your unarmed melee attack now may apply a Poison if it naturally rolls 15+ on its attack and hits. This Poison deals 1d4 nature damage per turn, afterwards if the enemy rolls d20 + Stamina vs [10 + G] the Poison effect ends."
+          "Poisoned: [Activate] Your unarmed melee attack now may apply a Poison if it naturally rolls 15+ on its attack and hits. This Poison deals 1d4 nature damage per turn, afterwards if the enemy rolls d20 + Stamina vs [10 + LVL] the Poison effect ends."
         ],
         [
           "Razors: Your unarmed melee attack now deals 1d10 sharp damage.",
@@ -79,8 +79,8 @@ export default [
         [
           "Empowered: Add your Will to the amount healed.",
           "Passion: Add your Will to the amount damaged.",
-	        "Perennial: When you switch flowers, you may keep up to G flowers from the previous budding.",
-	        "Garden: You may bud up to G more flowers."
+	        "Perennial: When you switch flowers, you may keep up to LVL flowers from the previous budding.",
+	        "Garden: You may bud up to LVL more flowers."
         ],
         [
           "Bloom: You may burst a second flower which affects a secondary target. Causes 2 Strain.",
@@ -89,15 +89,15 @@ export default [
         ],
         [
           "Poisonous: [Activate] Your pollen's damage may apply a Poison if it naturally rolls 15+ on its attack and hits. This Poison deals 1d4 nature damage per turn, afterwards if the enemy rolls d20+Stamina above {10 + G} the Poison effect ends.",
-	        "Blossom: [Activate] The pollen grows into small flowers on the target after healing them, healing an additional 1d4 on each of your turns for G turns."
+	        "Blossom: [Activate] The pollen grows into small flowers on the target after healing them, healing an additional 1d4 on each of your turns for LVL turns."
         ],
         [
           "Bouquet: Your flowers take on a multitude of colors at once, and you can choose to heal or damage at the moment of bursting on an individual flower basis.",
           "Puff: Bloom may burst a third flower which affects a tertiary target. Causes an additional 2 Strain.",
-          "Meadow: Garden may bud up to G more flowers."
+          "Meadow: Garden may bud up to LVL more flowers."
         ],
         [
-          "Deep Roots: Your Blossom effect lasts G more turns, and your pollen healing is increased to 1d10."
+          "Deep Roots: Your Blossom effect lasts LVL more turns, and your pollen healing is increased to 1d10."
         ]
       ]
     },
@@ -108,15 +108,15 @@ export default [
       proficiencies: [
         [
           "Empowered: Add your Will to the amount healed.",
-          "Heated: [Activate] Your blood is now a higher temperature. You feel warm to the touch, you take -G cold damage, and the Climate affects you as if the temperature was 10°F warmer. Additionally, your Transfusion target may gain G Bloodlust when healed. Cannot take with Cold-Blooded."
+          "Heated: [Activate] Your blood is now a higher temperature. You feel warm to the touch, you take -G cold damage, and the Climate affects you as if the temperature was 10°F warmer. Additionally, your Transfusion target may gain LVL Bloodlust when healed. Cannot take with Cold-Blooded."
         ],
         [
-          "Rejection: You may inject a malignant portion of blood. The victim's system rejects this blood, taking 1d8 nature damage instead of healing. Additionally, they lose G Bloodlust after this damage.",
+          "Rejection: You may inject a malignant portion of blood. The victim's system rejects this blood, taking 1d8 nature damage instead of healing. Additionally, they lose LVL Bloodlust after this damage.",
 	        "Cold-Blooded: [Activate] Your blood now relies on the temperature around you, and tends to be colder. You take -G fire damage and the Climate affects you as if the temperature was 10°F colder. Additionally, your Transfusion target may ignore their next Psychic Fatigue check. Cannot take with Heated."
         ],
         [
           "Potency: Increases the amount healed to 1d10.",
-          "Gifted: Add G to the amount healed.",
+          "Gifted: Add LVL to the amount healed.",
           "Purity: Instead of healing, may cure the target of any Poison effects."
         ],
         [
@@ -129,8 +129,8 @@ export default [
         ]
       ]
     }
-  ], // 1G
-  [ // 2G
+  ], // LVL 1
+  [ // LVL 2
     {
       name: "Tight Reflexes",
       attributes: "[React] [Self]",
@@ -144,7 +144,7 @@ export default [
           "Reactive: You may perform a second React Action per Round."
         ],
         [
-          "Proactive: [Activate] As an Activation Action you may perform a third Action in a turn. Cannot be used with any Action that does not cause Strain, and this Action causes double the usual Strain. Usable G times per day.",
+          "Proactive: [Activate] As an Activation Action you may perform a third Action in a turn. Cannot be used with any Action that does not cause Strain, and this Action causes double the usual Strain. Usable LVL times per day.",
           "Evasive: [Passive] Increase your Avoidance by 1."
         ]
       ]
@@ -177,16 +177,16 @@ export default [
     {
       name: "Shapeshift",
       attributes: "[Action] [Self]",
-      description: "You may take on the form and appearance of any creature who you have touched and is equal or lesser G than yourself. While in this form your Strength, Agility and Stamina stats match the values of the creature's stats, you can use [1 G] Powers as an additional Activation Action and you gain any Passive physical traits of the creature. When you have lost Life equal to your G during your transformation, or as an Action on your turn voluntarily, you immediately revert to your normal form, negate any remaining damage received, set your Strain to ½ your max Survival, and reset your Survival to its full value. Usable once per Full Sleep.",
+      description: "You may take on the form and appearance of any creature who you have touched and is equal or lesser level than yourself. While in this form your Strength, Agility and Stamina stats match the values of the creature's stats, you can use [LVL 1] Powers with an additional Activation Action and you gain any Passive physical traits of the creature. When you have lost Life equal to your LVL during your transformation, or as an Action on your turn voluntarily, you immediately revert to your normal form, negate any remaining damage received, set your Strain to ½ your max Survival, and reset your Survival to its full value. Usable once per Full Sleep.",
       proficiencies: [
         [],
         [
           "Malleable: You may use Shapeshift one more time per Full Sleep."
         ],
         [
-          "Feral: In the form of creatures with a Will below 1, add your G to all unarmed attack damage.",
-          "Gifted: You may use Powers up to [2 G] while Shapeshifted.",
-          "Up Leveled: You may take on the form of creatures 1 G above yourself."
+          "Feral: In the form of creatures with a Will below 1, add your level to all unarmed attack damage.",
+          "Gifted: You may use Powers up to [LVL 2] while Shapeshifted.",
+          "Up Leveled: You may take on the form of creatures 1 level above yourself."
         ],
         [
           "Resize: [Action] You may, as a Full Action, change the size of your form by 1 Size.",
@@ -194,23 +194,23 @@ export default [
           "Reform: [React] You may revert to your normal form as a React Action."
         ],
         [
-          "Effortless: You may take on the form of creatures 2 G above yourself and use Powers up to [3 G] while Shapeshifted. Requires Up Leveled and Gifted."
+          "Effortless: You may take on the form of creatures 2 level above yourself and use Powers up to [LVL 3] while Shapeshifted. Requires Up Leveled and Gifted."
         ]
       ]
     },
     {
       name: "Seedling",
       attributes: "[Action] [Minion]",
-      description: "You release a seed onto the ground which sprouts into a Tiny sized Plant Creature. The Seedling is completely under your control and has a Movement and Full Action, the Seedling has small limbs for movement but no limbs for interacting with objects or creatures. The Seedling has 1 Life, [2 * G] Survival, 10 ft of movement, 2 Strength, 1 Agility, 1 Stamina, and 0 Will. The Seedling cannot be controlled by another person unless they control you. One Seedling may exist at a time. Lasts 10 minutes. Cannot be taken if you possess a Minion Gift. Causes 2 Strain.",
+      description: "You release a seed onto the ground which sprouts into a Tiny sized Plant Creature. The Seedling is completely under your control and has a Movement and Full Action, the Seedling has small limbs for movement but no limbs for interacting with objects or creatures. The Seedling has 1 Life, [2 * LVL] Survival, 10 ft of movement, 2 Strength, 1 Agility, 1 Stamina, and 0 Will. The Seedling cannot be controlled by another person unless they control you. One Seedling may exist at a time. Lasts 10 minutes. Cannot be taken if you possess a Minion Power. Causes 2 Strain.",
       proficiencies: [
         [],
         [
-          "Bark: The Seedling increases its Survival to 5G.",
-          "Vines: The Seedling grows vines which can hold items (up to 20lb) and Grapple creatures, deals 1d4 crushing damage on a success. Can Grapple one creature at a time, uses their Full Action. Add G to its Grapple check."
+          "Bark: The Seedling increases its Survival to [5 * LVL].",
+          "Vines: The Seedling grows vines which can hold items (up to 20lb) and Grapple creatures, deals 1d4 crushing damage on a success. Can Grapple one creature at a time, uses their Full Action. Add LVL to its Grapple check."
         ],
         [
           "Roots: May Snare while successfully Grappling a creature.",
-          "Barbs: May attack as a Full Action, dealing 1d6 Sharp damage. Adds your G to its attack rolls.",
+          "Barbs: May attack as a Full Action, dealing 1d6 Sharp damage. Adds your level to its attack rolls.",
           "Hardy: Lasts up to 1 hour.",
           "In Season: You may have 2 more Seedlings at one time. This Power only produces 1 per action."
         ],
@@ -222,14 +222,14 @@ export default [
         ],
         [
           "Garden: You may have 2 more Seedlings at one time. This Power may produce 2 per action.",
-	        "Entangle: Seedlings add an additional G to their Grapple check and Vines deals 1d6 damage."
+	        "Entangle: Seedlings add an additional LVL to their Grapple check and Vines deals 1d6 damage."
         ]
       ]
     },
     {
       name: "Broodling",
       attributes: "[Action] [Minion]",
-      description: "You may birth a Small sized creature with mammal traits. The Broodling is not completely under your control but may be given verbal commands (which it interprets to the best of its ability and cannot handle complex sequences) and has a Movement and Full Action. The Broodling has small limbs for movement and 2 fore-limbs for interacting with objects or creatures but cannot use mechanical tools. The Broodling has 1 Life, [5 * G] Survival, 20 ft of movement, 3 Strength, 3 Agility, 1 Stamina, and 0 Will. One Broodling may exist at a time. Lasts 1 day. Cannot be taken if you possess a Minion Gift. Causes Strain equal to 10% of your base max survival and takes 10 minutes of uninterrupted effort.",
+      description: "You may birth a Small sized creature with mammal traits. The Broodling is not completely under your control but may be given verbal commands (which it interprets to the best of its ability and cannot handle complex sequences) and has a Movement and Full Action. The Broodling has small limbs for movement and 2 fore-limbs for interacting with objects or creatures but cannot use mechanical tools. The Broodling has 1 Life, [5 * LVL] Survival, 20 ft of movement, 3 Strength, 3 Agility, 1 Stamina, and 0 Will. One Broodling may exist at a time. Lasts 1 day. Cannot be taken if you possess a Minion Power. Causes Strain equal to 10% of your base max survival and takes 10 minutes of uninterrupted effort.",
       proficiencies: [
         [],
         [
@@ -237,12 +237,12 @@ export default [
         ]
       ]
     }
-  ], // 2G
-  [ // 3G
+  ], // LVL 2
+  [ // LVL 3
     {
       name: "Runic Evolution",
       attributes: "[Activate] [Self] [Passive]",
-      description: "Your DNA forms a runic word, your body has evolved to use it but cannot Awaken any other runes. At the time you take this Gift, choose 2 Gifts from the Runic Arts Source which is of [3 G] or below, these are now Mutant Powers you may use. These Gifts gain Fade as a Runic Arts Gift normally would. Using this Power uses your Activation Action in addition to the Action requirements of the selected Power.",
+      description: "Your DNA forms a runic word, your body has evolved to use it but cannot Awaken any other runes. At the time you take this Power, choose 2 Powers from the Runic Arts Source which is of [LVL 3] or below, these are now Mutant Powers you may use. These Powers gain Fade as a Runic Arts Power normally would. Using this Power uses your Activation Action in addition to the Action requirements of the selected Power.",
       proficiencies: []
     },
     {
@@ -283,31 +283,31 @@ export default [
         ]
       ]
     }
-  ], // 3G
-  [ // 4G
+  ], // LVL 3
+  [ // LVL 4
 
-  ], // 4G
-  [ // 5G
+  ], // LVL 4
+  [ // LVL 5
     {
       name: "Phagogenesis",
       attributes: "[Action] [Melee]",
-      description: "Eat the brain of a target person. If they have the Mutation Source and have died within the last 1 hour, you absorb some of their DNA. Pets you produce gain 1 Power (one choice shared across all active pets) from any person whose DNA you have absorbed. The Power has no Proficiencies and can only be up to [2 G] in requirement and may not produce Pets, minions or other creatures. You can only contain 1 person's DNA at one time. You can only store 1 new person per day. The act is seen as disturbing, immoral, or even unforgivable by some cultures.",
+      description: "Eat the brain of a target person. If they have the Mutation Source and have died within the last 1 hour, you absorb some of their DNA. Pets you produce gain 1 Power (one choice shared across all active pets) from any person whose DNA you have absorbed. The Power has no Proficiencies and can only be up to [LVL 2] in requirement and may not produce Pets, minions or other creatures. You can only contain 1 person's DNA at one time. You can only store 1 new person per day. The act is seen as disturbing, immoral, or even unforgivable by some cultures.",
       proficiencies: [
         [],[],[],[],
         [
-          "RNA: You can have 1 Proficiency active on the Power, this Proficiency can only be up to [3 G] in requirement.",
+          "RNA: You may select 1 Proficiency on the Power for your pet to use, this Proficiency can only be up to [LVL 3] in requirement.",
           "Memory: You can store a second person's DNA."
         ],
         [
-          "Evolved: Your pets can use a Power up to [4 G], and RNA may be a Proficiency up to [5 G] in requirement.",
+          "Evolved: Your pets can use a Power up to [LVL 4], and RNA may be a Proficiency up to [LVL 5] in requirement.",
           "Bank: You can store a third person's DNA, requires Memory."
         ],
         [
-          "Complex: Your Pets may have a second Power up to [2 G], RNA may apply to this second Power."
+          "Complex: Your Pets may have a second Power up to [LVL 2], RNA may apply to this second Power."
         ]
       ]
     }
-  ] // 5G
+  ] // LVL 5
 ]
 // {
 //   name: "",

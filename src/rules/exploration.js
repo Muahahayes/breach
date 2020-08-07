@@ -29,7 +29,7 @@ content: <div>
   While you are Sleeping, you are not aware of your surroundings. Noises or mild physical interaction may wake you, if you are trying to stay asleep through interruptions roll a [d20 + Stamina] vs 15 to resist waking up. If you voluntarily want to be woken by disturbances while out of combat roll a [d20 + Awareness] vs 15, or vs the sneak of a creature if it is the source of the disturbance, to wake up and gain awareness of the source of the disturbance. If you are in combat and voluntarily want to be woken by disturbances roll a [d20 + Will] vs 15, or vs [the attack roll - damage dealt] if you are hit by an attack which deals damage, if [the attack roll - damage dealt] is less than 1 you wake up instantly. When you are woken by a disturbance and did not already take a turn in this round you are placed at the end of the round's turn order with 0 Movement distance for that turn.<br/>
   <hr/>
  <h3>Size:</h3>
-  Creature's come in many shapes and sizes. When moving, you may only pass through another creature's space if you are not in the same Size Tier. Gain a -G reduction when initiating a Grapple against a smaller creature, but gain a +G bonus when maintaining the Grapple. When a creature of a higher Size category is standing between you and an attacker, you gain +G Avoidance to ranged attacks and powers.<br/>
+  Creature's come in many shapes and sizes. When moving, you may only pass through another creature's space if you are not in the same Size Tier. Gain an Unfavored -1 reduction when initiating a Grapple against a smaller creature, but gain a Favored +1 bonus when maintaining the Grapple. When a creature of a higher Size category is standing between you and an attacker, the attacker gains an Unfavored -1 to ranged attacks and powers against you.<br/>
   <ul>
     <li>Tiny: Less than 2' tall/long.</li>
     <li>Small: 2'-5' tall/long.</li>
@@ -41,9 +41,9 @@ content: <div>
   <hr/>
   <h3>Hunger:</h3> 
   Your character needs food and water to live. Your character requires 5 Water Points (WP) and 5 Food Points (FP) + 1 for every 10lb of your character's weight in every 3 day period. (Food points can be thought of as about 1,000 calories, for ease of play they are simplified and food from official sources are given FP instead. For homebrewing new foods follow a 1,000 calorie per 1 FP rule of thumb. Water is simplified to about 1 WP per quart/liter). <br/>
-  You may miss 1 time period for Food, but during that time your Attributes suffer a -G penalty, if you meet your skipped time period's quota the penalty goes away and you start to apply FP to the current time period. You may go 1 day over your Water time period, but during that time your Attributes suffer a -G penalty. If you meet the extended period's quota the penalty goes away and you start to apply WP to the current time period. <br/>
+  You may miss 1 time period for Food, but during that time your Attributes suffer an Unfavored -1 penalty, if you meet your skipped time period's quota the penalty goes away and you start to apply FP to the current time period. You may go 1 day over your Water time period, but during that time your Attributes suffer an Unfavored -1 penalty. If you meet the extended period's quota the penalty goes away and you start to apply WP to the current time period. <br/>
   These timeframes start from the beginning of the game and trigger every 3 days. If you go 1 period over your Food period or 1 day over your Water period without meeting the quota you become unconscious until you are force fed the required Food or Water. If you go 1 more period while unconscious you die of starvation/dehydration. <br/>
-  Example: Jimmy has drank 4 WP in a 3 day period and begins his 4th day. He receives the -G penalty. He drinks 1 more WP by the end of the day and the penalty goes away, but now he needs 5 WP before the end of 2 more days or the penalty will return.
+  Example: Jimmy has drank 4 WP in a 3 day period and begins his 4th day. He receives then Unfavored -1 penalty. He drinks 1 more WP by the end of the day and the penalty goes away, but now he needs 5 WP before the end of 2 more days or the penalty will return.
   <hr/>
   <h3>Scavenging:</h3>
   While exploring the world you may search for useful objects from your surroundings. The GM may have a list of objects planned for the area with difficulties to find (for low quality/cost or obvious materials a 10, for medium or hidden a 15, for high quality or well hidden a 20 is suggested. For rare or more powerful objects the check can go up to 25 or can have specific requirements to find). Roll an Urban or Outdoorsman Skill check for urban/non-urban environments vs the difficulty to find.<br/>
@@ -62,12 +62,12 @@ content: <div>
   <hr/>
   <h3>Climate:</h3>
   Various environmental factors may have an effect on creatures. For each round in combat, or each 10 minutes out of combat, apply the current Climate's effects to creatures within the area of effect. Types of Climate may be combined and cause multiple effects at once. Some tools, Powers, or proficiencies can protect against Climate.<br/>
-  Hot: Exceptionally hot temperatures, 110°F or higher. Take 1d4 Fire damage for every 10°F above 100. The heat exhausts the creatures causing all d20 rolls to receive a -G penalty. Shelter raises the threshold by 20°F.<br/>
-  Cold: Exceptionally cold temperatures, 0°F or lower. Take 1d4 Cold damage for every 10°F below 10. The cold slows the creatures, reducing travel distance by 1 mile and movement distance by 5ft for every 10°F below 10 (to a minimum of 1 mile of travel and 5ft of movement). Shelter lowers the threshold by 20°F.<br/>
+  Hot: Exceptionally hot temperatures, 110°F or higher. Take 1d4 Fire damage for every 10°F above 100. The heat exhausts the creatures causing all d20 rolls to receive an Unfavored -1 penalty. Shelter raises the threshold by 20°F.<br/>
+  Cold: Exceptionally cold temperatures, 0°F or lower. Take 1d4 Cold damage for every 10°F below 10. The cold slows the creatures, reducing travel distance by 1 mile and Speed by 1 for every 10°F below 10 (to a minimum of 1 mile of travel and a Speed of 1). Shelter lowers the threshold by 20°F.<br/>
   Stormy: Extreme winds buffet against the creatures, 50mph or higher. Roll an Athletics check vs 15, if you fail you fall Prone. Shelter's may collapse at 70mph, every hour roll a d20 vs 10, on a fail the shelter is destroyed. Increase both checks' difficulty by 1 for every 10mph.<br/>
-  Fog: Thick fog obscures vision. All d20 rolls involving sight receive a -G penalty. Limit sight ranges by half.<br/>
+  Fog: Thick fog obscures vision. All d20 rolls involving sight receive an Unfavored -1 penalty. Limit sight ranges by half.<br/>
   Wet: Increase the dice size of Hot and Cold Climates to d6's. Unprotected food may spoil, if you are not sheltered during a sleep roll a d4. On 2 half, and on 1 all, of your food is destroyed.<br/>
-  Dry: Reduces the time needed to drink your Water quota by 1 day.
+  Dry: Reduces the time needed to drink your Water quota by 1 day (to a minimum of 1 day).
   <hr/>
   <h3>Shelter:</h3>
   You may spend 30 min setting up a tent or other form of shelter (you may need to scavenge for supplies). You are protected from various Climate effects while you are inside your shelter.

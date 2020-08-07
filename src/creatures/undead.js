@@ -4,7 +4,7 @@ export default {
 name: 'Undead',
 description: <p>Creature's that have been brought back from death into varying states of life or undeath.</p>,
 creatures:[
-  [// 1G
+  [// lv1
     { // select all this to copy paste
       name: 'Thrall',
       description: `A lifeless corpse given automation again by Aether, their eyes are dull and void of whatever mind they once had. Thrall\'s are created by dark magics and are seen as unholy desecrations of the dead. A Thrall may be given basic commands by its creator to follow, but many are old and forgotten which act on a base instinct to feed on living flesh.`,
@@ -38,14 +38,14 @@ creatures:[
       ],
       actions: [ // write various actions here
         `Bash: [Action] [Melee] The Thrall swings its arms at a melee target, making a melee attack roll. Deals 1d4+1 damage.`,
-        `Bite: [Action] [Melee] The Thrall bites onto a melee target, making a melee attack roll with Unfavored -1. Deals 1d4+1 damage and applies a Poison which deals 1 nature damage per turn, with a Stamina check of {10}`
+        `Bite: [Action] [Melee] The Thrall bites onto a melee target, making a melee attack roll with Unfavored -1. Deals 1d4+1 damage and applies a Poison which deals 1 nature damage per turn, with a Stamina check of [10]`
       ]
     } // end of a creature, select up to this point to copy paste
   ],
-  [// 2G
+  [// lv2
 
   ],//ect
-  [// 3G
+  [// lv3
     { // select all this to copy paste
         name: `Wight`,
         description: `A deceased person brought back to life by reinfusing their Aether into their corpse. A failed ressurection, with no past memories and limited power. Despite having no memory of their mortal life, often some negative emotions will persist in death and motivate the Wight's behavior.`,
@@ -81,9 +81,9 @@ creatures:[
           `Strike: [Action] [Melee] The Wight swings its weapon at a melee target, making a melee attack roll. Deals 1d10+2 damage.`,
           `Command: [Action] [Ranged] The Wight calls out to any undead creature in the area which is of lesser level than the Wight and is not currently under another creature's control. They give a command for the undead to perform an Action.`,
           `Shoot: [Action] [Ranged] The Wight uses a ranged weapon to shoot at a target within 30 ft, making a ranged attack roll. Deals 1d8+2 damage.`,
-          `Use Power: [Optional] [Action] The Wight may use a Power it had in life, the GM selects what powers (if any) it might posses.`
+          `Use Power: [Optional] [Action] The Wight may use a Power it had in life, the GM selects what powers (if any) it might have.`
         ]
       }
-  ]// 3G
+  ]// lv3
 ]
 }

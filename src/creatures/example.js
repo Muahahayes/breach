@@ -4,7 +4,9 @@ export default {
 name: 'name',
 description: <p>blahblah</p>,
 creatures:[
-  [// 1G
+  [// lv1
+    
+    //start of creature
     { // select all this to copy paste
       name: ``,
       description: ``,
@@ -40,9 +42,11 @@ creatures:[
         ``,
         ``
       ]
-    }  // end of a creature, select up to this point to copy paste
+    }  
+    // end of a creature, select up to this point to copy paste
+
   ],
-  [// 2G
+  [// lv2
 
   ]//ect
 ]

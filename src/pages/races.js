@@ -10,8 +10,8 @@ export default {
       <li><b>Physical Build:</b> The race's typical height, weight, lifespan, and other features.</li>
       <li><b>Base Stats:</b> the starting value of your Attributes before adding AP</li>
       <li><b>Speed:</b> the dice used for rolling your movement distance and turn order during combat</li>
-      <li><b>Creation AP:</b> this is how many AP you can spend on increasing your Attributes before gaining any Gifts.</li>
-      <li><b>Favored Skills:</b> when adding to the value of your Skills at character creation, if you do not select a Skill listed here it will cost 2 Skill Points per point added.</li>
+      <li><b>Creation AP:</b> this is how many AP you can spend on increasing your Attributes before gaining any Powers.</li>
+      <li><b>Favored Skills:</b> all Skills start at -2. If they are listed as a Favored Skill they start at 0 instead.</li>
       <li><b>Creation Skill Points:</b> this is how many points you can spend on increasing your Skills, this is affected by Favored Skills.</li>
       <li><b>Languages:</b> the languages you have learned before the story begins, the first language listed is your 'mother tongue' and is the most comfortable language they prefer to use.</li>
       <li><b>Racial Features:</b> unique perks given by your Race with various effects.</li>

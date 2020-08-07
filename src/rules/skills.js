@@ -24,17 +24,17 @@ export default {
 
   <hr/>
   <h3>Limits:</h3>
-  <span>The maximum points you may have in a Skill is 5x your G Level you possess. If a Skill is at its maximum it cannot gain XP from a <b>Hard Succeed/Fail</b>.</span><br/>
+  <span>The maximum points you may have in a Skill is 5x your Level. If a Skill is at its maximum and the next XP you would gain would lead to all 5 Skill choices for your next increase being already their max value it cannot gain XP from a <b>Hard Succeed/Fail</b>. (ie. your Athletics and Crafstman are both already at 5 times your level, you have gained XP from Athletics twice and Craftsman twice, you cannot gain XP from either Skill until you have gained an XP and increased a different Skill.)</span><br/>
 
   <hr/>
   <h3>Inspiring Expertise:</h3>
-  <span>If a member of your party is a Gift level above you, their expertise inspires you. This grants 1 XP on any <b>Soft Succeed</b>. This effect only applies when you roll one of their 5 highest Skills and you are within 100 ft.</span><br/>
+  <span>If a member of your party is a level above you, their expertise inspires you. This grants 1 XP on any <b>Soft Succeed</b>. This effect only applies when you roll one of their 5 highest Skills and you are within 100 ft.</span><br/>
 
   <hr/>
   <h3>Skill Contest:</h3>
   <span> When two creatures are opposing one another in an activity and are not resolving it through <Link to="combat">Combat</Link> or <Link to="socializing">Argument</Link> they enter a Skill Contest. Compare the skill values of both creatures for the skill they are contesting, this is their threshold of failing. The two creatures roll Skill checks against one another using the skill being contested, the victor is the higher skill roll, reroll on a tie. <br/>
-  On a <b>Hard Success</b> by the victor, the loser temporarily loses skill equal to the victor's G * 2 (do not gain XP for this roll). <br/>
-  On a <b>Soft Success</b> the loser temporarily loses skill equal to the victor's G. When a creature drops below 1 in the Skill they lose the contest. <br/>
+  On a <b>Hard Success</b> by the victor, the loser temporarily loses skill equal to the victor's level doubled (do not gain XP for this roll). <br/>
+  On a <b>Soft Success</b> the loser temporarily loses skill equal to the victor's level. When a creature drops below 1 in the Skill they lose the contest. <br/>
   After the contest, reset the Skill values to their starting value. The victor may make an action with that skill, the loser cannot interfere with the use of that skill. Both creatures receive 1 XP after the contest has ended.</span><br/>
 
   <hr/>
@@ -53,6 +53,7 @@ export default {
   <ul>
       <li>Mechanics (maintaining, repairing, or improving technology)</li>
       <li>Craftsman (can find blueprints and craft advanced tools and weaponry)</li>
+      <li>Runesmithing (can find blueprints to use Prismatic Gems to permanently apply Runic engravings upon objects)</li>
       <li>Athletics (running, climbing, swimming, and other physical activities that require practiced use of non-flexible motions)</li>
       <li>Acrobatics (jumping, contorting, dodging, and other physical activities that require mobility and flexibility)</li>
       <li>Charm (improving a person's opinion of yourself, long term effect)</li>

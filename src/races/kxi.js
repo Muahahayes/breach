@@ -30,7 +30,7 @@ export default {
       name:"Drone",
       description: "A Drone Kx'i is the most common type of Kx'i. Drones tend to live no more than 80 years and rarely migrate from their community. They do the bulk of the work, and feel an instinctual bond to the Royal Kx'i who rules them. Their limbs tend to be thicker and stronger, and their bodies more round. Their chitin has more dull hues with a rough matte texture.",
       racials:[
-        "Chitin: Take -G damage from Sharp and Piercing damage attacks.",
+        "Chitin: Take -LVL damage from Sharp and Piercing damage attacks.",
         "Worker: Gain +1 Strength."
       ]
     }    

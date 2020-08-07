@@ -35,13 +35,13 @@ export default {
     name: "Parry",
     skill: "Martial Arms",
     requirement: 10,
-    description: "When you are attacked by a melee attack, as a React Action you may attempt to deflect the blow. Roll a d20 + Martial Arms vs the attack roll value of the melee attack. On a Hard Success you cause the attack to miss. On a Soft Success you subtract Gd4 damage from the attack, it hits you and applies its effects. On a Soft Fail the attack hits you as normal and applies its effects. On a Hard Fail you leave yourself open and cause the attack to hit you harder, it deals an additional Gd4 damage and then applies its effects."
+    description: "When you are attacked by a melee attack, as a React Action you may attempt to deflect the blow. Roll a d20 + Martial Arms vs the attack roll value of the melee attack. On a Hard Success you cause the attack to miss. On a Soft Success you subtract LVL * d4 damage from the attack, it hits you and applies its effects. On a Soft Fail the attack hits you as normal and applies its effects. On a Hard Fail you leave yourself open and cause the attack to hit you harder, it deals an additional LVL * d4 damage and then applies its effects."
   },
   "retaliation" : {
     name: "Retaliation",
     skill: "Martial Arms | Block",
     requirement: 10,
-    description: "When you are attacked by a melee attack, if the attack results in a Hard Fail you may immediately as a Free Action deal damage with an equipped weapon to the attacker equal to your G.\n\nWhen your Skill has increased to 15, the damage dealt is increased to 2*G."
+    description: "When you are attacked by a melee attack, if the attack results in a Hard Fail you may immediately as a Free Action deal damage with an equipped weapon to the attacker equal to your level.\n\nWhen your Skill has increased to 15, the damage dealt is increased to 2*LVL."
   },
   "quick strike" : {
     name: "Quick Strike",
@@ -71,7 +71,7 @@ export default {
     name: "Execution",
     skill: "Martial Arms | Marksman",
     requirement: 15,
-    description: "Through your battle experience you can recognize when a creature is near death. When a creature you can see is at 1 Life and drops below half their max Survival you are alerted to this. While they are in this state, your basic Attack Action gains a Favored +2 against them and deals an extra Gd4 damage."
+    description: "Through your battle experience you can recognize when a creature is near death. When a creature you can see is at 1 Life and drops below half their max Survival you are alerted to this. While they are in this state, your basic Attack Action gains a Favored +2 against them and deals an extra LVL * d4 damage."
   },
   "water tap" : {
     name: "Water Tap",

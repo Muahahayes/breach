@@ -7,7 +7,7 @@ content: <div>
   <b>Killing/Subduing:</b> When dealing damage the attacker may attempt to subdue and not kill the victim, if they reduce the victim's Life below 1 but not to a negative number higher than the victim's max Life the victim is made unconscious, otherwise the victim is Dead. If the creature's Life drops below 1 from damage, the attacker intends to kill, and the creature is a Player, or for NPCs at your GM's discretion, apply the <Link to="/rules/stats">Death</Link> rules. Otherwise, the creature is immediately Dead.</p>
   <hr/>
   <h3>Types of Damage:</h3>
-  <p><b>Resistance:</b> When you are Resistant to a type of Damage, subtract G from all damage received from that type. Additionally, whenever that type of damage would bring you to 0 Survival, roll a d20 vs the remaining damage. On a success, cancel the remaining damage and set your Survival to 1.<br/><br/>
+  <p><b>Resistance:</b> When you are Resistant to a type of Damage, subtract your Level from all damage received from that type. Additionally, whenever that type of damage would bring you to 0 Survival, roll a d20 vs the remaining damage. On a success, cancel the remaining damage and set your Survival to 1.<br/><br/>
   <b>Physical types:</b><br/>
   <ul>
     <li><b>Blunt:</b> Damage caused by impact with a flat non-sharp object.</li>
@@ -74,7 +74,7 @@ content: <div>
     <tbody> 
     <tr><td>d10</td><td>Severity</td><td>Effect</td></tr>
     <tr><td>1-4</td><td>Mild</td><td>No Effect</td></tr>
-    <tr><td>5-8</td><td>Moderate</td><td>-G Survival</td></tr>
+    <tr><td>5-8</td><td>Moderate</td><td>-LVL Survival</td></tr>
     <tr><td>9-10</td><td>Heavy</td><td>Moderate and <Link to="/rules/stats#favored">Unfavored</Link> -1 on Attacks, Skills and Powers</td></tr>
     </tbody>
   </table>
@@ -97,10 +97,10 @@ content: <div>
         <caption>Body Injuries</caption>
         <tbody> 
         <tr><td>d10</td><td>Severity</td><td>Moderate</td><td>Heavy</td><td>Extreme</td></tr>
-        <tr><td>1-2</td><td>Legs</td><td>-1 speed</td><td>-G speed and knocked Prone</td><td>Heavy and can't use Movement Action</td></tr>
-        <tr><td>3-4</td><td>Lower Body</td><td>-1 Avoidance</td><td>-G Avoidance</td><td>Heavy and 1/2 Carry Weight</td></tr>
-        <tr><td>5-6</td><td>Arms</td><td>-1 Attack Rolls</td><td>-G Attack Rolls</td><td>Heavy and cannot use 1 arm</td></tr>
-        <tr><td>7-9</td><td>Upper Body</td><td>-G Max Survival</td><td>Moderate and lose 1 additional Life</td><td>Heavy but -1/2 Survival instead of -G</td></tr>
+        <tr><td>1-2</td><td>Legs</td><td>-1 speed</td><td>-LVL speed and knocked Prone</td><td>Heavy and can't use Movement Action</td></tr>
+        <tr><td>3-4</td><td>Lower Body</td><td>-1 Avoidance</td><td>-LVL Avoidance</td><td>Heavy and 1/2 Carry Weight</td></tr>
+        <tr><td>5-6</td><td>Arms</td><td>-1 Attack Rolls</td><td>Unfavored -1 to Attack Rolls</td><td>Heavy and cannot use 1 arm</td></tr>
+        <tr><td>7-9</td><td>Upper Body</td><td>-LVL Max Survival</td><td>Moderate and lose 1 additional Life</td><td>Heavy but -1/2 Survival instead</td></tr>
         <tr><td>10</td><td>Head</td><td>Unfavored -1 All Rolls (up to -3)</td><td>Moderate and roll a Moderate effect from the Mental Damage injury table</td><td>Heavy and Unconscious until this Injury is cured</td></tr>
         </tbody>
       </table>
@@ -111,9 +111,9 @@ content: <div>
         <tbody> 
         <tr><td>d10</td><td>Severity</td><td>Moderate</td><td>Heavy</td><td>Extreme</td></tr>
         <tr><td>1-2</td><td>Memory</td><td>On your next turn you cannot use an action on any creature which is not in line of sight at the start of your turn</td><td>Give your character sheet to the GM, you cannot look at the sheet until this injury is cured</td><td>Heavy and any time you try to recall a name, location, or event roll a d4, on a 1 you don't remember any of it and on a 2 or 3 you forget some meaningful detail</td></tr>
-        <tr><td>3-4</td><td>Balance</td><td>-1 Avoidance</td><td>-G Avoidance</td><td>Heavy and 1/2 Carry Weight</td></tr>
-        <tr><td>5-6</td><td>Sensory</td><td>-1 Attack Rolls</td><td>-G Attack Rolls</td><td>Heavy and lose sense of touch</td></tr>
-        <tr><td>7-9</td><td>Emotional</td><td>-G Max Survival</td><td>Moderate and lose 1 additional Life</td><td>Heavy but -1/2 Survival instead of -G</td></tr>
+        <tr><td>3-4</td><td>Balance</td><td>-1 Avoidance</td><td>-LVL Avoidance</td><td>Heavy and 1/2 Carry Weight</td></tr>
+        <tr><td>5-6</td><td>Sensory</td><td>-1 Attack Rolls</td><td>Unfavored -1 Attack Rolls</td><td>Heavy and lose sense of touch</td></tr>
+        <tr><td>7-9</td><td>Emotional</td><td>-LVL Max Survival</td><td>Moderate and lose 1 additional Life</td><td>Heavy but -1/2 Survival instead</td></tr>
         <tr><td>10</td><td>Cognitive</td><td>Unfavored -1 All Rolls (up to -3)</td><td>Moderate and roll a Moderate effect from the Mental Damage injury table</td><td>Heavy and Asleep until this Injury is cured</td></tr>
         </tbody>
       </table>

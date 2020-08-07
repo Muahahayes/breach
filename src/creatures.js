@@ -48,7 +48,7 @@ function Creatures({ match }) {
       return (        
         <div className="content">
           <div className="content-head">
-            <h1>[{creature.level} G] {creature.name}</h1>
+            <h1>[LVL {creature.level}] {creature.name}</h1>
           </div>
           <div className="content-body">
             Return to <Link to={`/world/creatures/${match.params.t}`}>{match.params.t}</Link> creatures.
@@ -67,7 +67,7 @@ function Creatures({ match }) {
       let levelContent = [];
       if (creatures[level].length > 0) {
         if (level > 0) levelContent.push(<hr className="searchHR"/>);
-        levelContent.push(<h2>[{Number(level)+1} G]</h2>);
+        levelContent.push(<h2>[LVL {Number(level)+1}]</h2>);
       }      
       for (let creature of creatures[level]) {
         if (creature.name) {
@@ -249,7 +249,7 @@ function Creatures({ match }) {
                 <p className="searchSpan">
                   <span className="searchBox">
                     <label className="searchLabel" htmlFor="levelSearch">Filter Level:</label>
-                    <input className ="searchBar" type="tel" id="levelSearch" name="levelSearch" onChange={filter.bind(null, false)} placeholder="G#" tabIndex={1}></input>                  
+                    <input className ="searchBar" type="tel" id="levelSearch" name="levelSearch" onChange={filter.bind(null, false)} placeholder="#" tabIndex={1}></input>                  
                   </span>
                   <br/>
                   <br/>
@@ -267,7 +267,7 @@ function Creatures({ match }) {
                 <span className="searchSpan">
                   <span className="searchBox">
                     <label className="searchLabel" htmlFor="levelSearch">Filter Level:</label>
-                    <input className ="searchBar" type="search" id="levelSearch" name="levelSearch" onChange={filter} placeholder="G#" tabIndex={1}></input>
+                    <input className ="searchBar" type="search" id="levelSearch" name="levelSearch" onChange={filter} placeholder="#" tabIndex={1}></input>
                   </span>
                   <label className="searchLabel" htmlFor="creaturesearch">Search Creatures:</label>            
                   <input className ="searchBar" type="search" id="creaturesearch" name="creaturesearch" onChange={search} placeholder="Creature" tabIndex={2} title="Searches for a creature name starting with your text, add a * to the front to search for creatures that include your text within their name. (eg. *oc finds Shock)"></input>  

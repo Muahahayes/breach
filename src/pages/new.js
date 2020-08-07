@@ -13,7 +13,7 @@ export default {
      <li><b>AC:</b> We call this Avoidance.</li>
      <li><b>HP:</b> We call this Life and Survival, and its a bit different this time around so read more below!</li>
      <li><b>Attributes:</b> There's a few missing in Breach, we'll detail why below.</li>
-     <li><b>Levels and Experience:</b> We call this Gifts and XP.</li>
+     <li><b>Levels and Experience:</b> We call this Levels and XP, but is gained differently than you might be used to.</li>
      <li><b>Races:</b> There may be a different selection than you're familiar with, but there's a variety of different types of character to express yourself with!</li>
      <li><b>Skills:</b> These are more important than ever and factor directly into your leveling process!</li>
      <li><b>Aspects/Personality:</b> We call these Quirks, and it has a mechanical effect on the game.</li>
@@ -24,8 +24,8 @@ export default {
     <br/>
     <b>Classes:</b> Gone! (See <Link to="sources">Sources</Link>)<br/>
     Instead of Classes, we have something called your Source. Don't think of this as a direct replacement though. Sources are not as regimented as a Class.
-    When you create your character you select what Source your character gains their Gifts from. A Gift is some kind of power or ability that sets them apart from the average person. Every time you gain enough XP to level up, you select a new Gift from your chosen Source. There's plenty to choose from within each Source, so you can be a lot more freeform with developing your abilities than a typical Class in other RPGs.
-    To supplement the Source and Gift system, we have something called Proficiencies. As you gain XP, you'll have opportunities to pick Proficiencies from the Gifts you possess. Think of these as passive bonuses or smaller sub-abilities (or Talent Trees from Video Game RPGs) that you can unlock from your existing Gifts.<br/>
+    When you create your character you select what Source your character gains their Powers from. A Power is some kind of power or ability that sets them apart from the average person. Every time you gain enough XP to level up, you select a new Power from your chosen Source. There's plenty to choose from within each Source, so you can be a lot more freeform with developing your abilities than a typical Class in other RPGs.
+    To supplement the Source and Power system, we have something called Proficiencies. As you gain XP, you'll have opportunities to pick Proficiencies from the Powers you possess. Think of these as passive bonuses or smaller sub-abilities (or Talent Trees from Video Game RPGs) that you can unlock from your existing Powers.<br/>
     <br/>
     <b>HP:</b> Split in two! (See <Link to="/rules/stats">Stats</Link>)<br/>
     The classic system of having a raw chunk of health to slowly wittle down sounded boring and didn't make much sense to us. Have 20 arrows sticking out of you? That's just fine! Did a 21st arrow hit your arm? You're dying on the ground! So we split HP into two stats, Life and Survival.
@@ -42,7 +42,7 @@ export default {
     In Breach, every round of combat the creatures involved roll their Speed to determine how far they can move during their turn. The turn order is based on the highest to lowest movement distances of the creatures. This means we have a Dynamic Turn Order, which can change each round.<br/>
     <br/>
     <b>XP:</b> Now with less murder-hobo! (See <Link to="/rules/leveling">XP</Link>)<br/>
-    In Breach you no longer gain XP from killing random creatures. Instead, it's tied into the Skill system. When you Hard Succeed or Hard Fail at a Skill check, you gain 1 XP. Every 5 XP you can pick a Proficiency from your Source/Gifts and a Skill increases by 1.
+    In Breach you no longer gain XP from killing random creatures. Instead, it's tied into the Skill system. When you Hard Succeed or Hard Fail at a Skill check, you gain 1 XP. Every 5 XP you can pick a Proficiency from your Source/Powers and a Skill increases by 1.
     You can still gain XP from combat, because most ways of attacking rely on Skill checks. But now, there's other ways of leveling up. Ever wanted to play a merchant or a thief (that didn't need to kill?), now you can level and keep up with the party without shedding a drop of blood!<br/>
     <br/>
     <b>Succeed/Fail:</b> Hard what? (See <Link to="/rules/skills">Skills</Link>)<br/>

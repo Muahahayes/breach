@@ -2,11 +2,11 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import renderGift from './renderGift';
 
-function Gifts({ match }) {
+function Powers({ match }) {
   if (match && match.params && match.params.g) { // individual gift
     let giftName = match.params.g;
     giftName = giftName.split('_').join(' ');
-    let source = require(`./sources/gifts/${match.params.s}`);
+    let source = require(`./sources/powers/${match.params.s}`);
     let gift;
     let giftLevel;
     for (let level in source.default) {
@@ -39,10 +39,10 @@ function Gifts({ match }) {
       return (        
         <div className="content">
           <div className="content-head">
-            <h1>[{giftLevel} G] {gift.name}</h1>
+            <h1>[LVL {giftLevel}] {gift.name}</h1>
           </div>
           <div className="content-body">
-            Return to <Link to={`/sources/${match.params.s}/gifts`}>{sourceName}</Link> Gifts
+            Return to <Link to={`/sources/${match.params.s}/powers`}>{sourceName}</Link> Powers
             {renderGift(gift)}
           </div>  
         </div>
@@ -51,7 +51,7 @@ function Gifts({ match }) {
     
   }
   else if (match && match.params && match.params.s) { // source, render all gifts
-    let source = require(`./sources/gifts/${match.params.s}`);
+    let source = require(`./sources/powers/${match.params.s}`);
     let gifts = source.default;
     let content = [];
 
@@ -59,7 +59,7 @@ function Gifts({ match }) {
       let levelContent = [];
       if (gifts[level].length > 0) {
         if (level > 0) levelContent.push(<hr className="searchHR"/>);
-        levelContent.push(<h2>[{Number(level)+1} G]</h2>);
+        levelContent.push(<h2>[LVL {Number(level)+1}]</h2>);
       }      
       for (let gift of gifts[level]) {
         if (gift) levelContent.push(<div className={`searchEntry`} id={gift.name}>{renderGift(gift, match.params.s)}</div>);
@@ -246,16 +246,16 @@ function Gifts({ match }) {
       <p className="searchSpan">
         <span className="searchBox">
           <label className="searchLabel" htmlFor="levelSearch">Filter Level:</label>
-          <input className ="searchBar" type="tel" id="levelSearch" name="levelSearch" onChange={filter.bind(null, false)} placeholder="G#" tabIndex={1}></input>                  
+          <input className ="searchBar" type="tel" id="levelSearch" name="levelSearch" onChange={filter.bind(null, false)} placeholder="#" tabIndex={1}></input>                  
         </span>
         <br/>
         <br/>
-        <label className="searchLabel" htmlFor="giftSearch">Search Gift:</label>            
-        <input className ="searchBar" type="search" id="giftSearch" name="giftSearch" onChange={search.bind(null, false)} placeholder="Gift" tabIndex={2} title="Searches for a Gift name starting with your text, add a * to the front to search for Gifts that include your text within their name. (eg. *oc finds Shock)"></input>      
+        <label className="searchLabel" htmlFor="giftSearch">Search Powers:</label>            
+        <input className ="searchBar" type="search" id="giftSearch" name="giftSearch" onChange={search.bind(null, false)} placeholder="Power" tabIndex={2} title="Searches for a Power name starting with your text, add a * to the front to search for Powers that include your text within their name. (eg. *oc finds Shock)"></input>      
         <br/>
         <br/>
         <label className="searchLabel" htmlFor="attributeSearch">Search Attributes:</label>            
-        <input className ="searchBar" type="search" id="attributeSearch" name="attributeSearch" onChange={attributes} placeholder="[Attribute]" tabIndex={2} title="Searches for Gifts with any attribute that include your text within the attribute name. Add a + between attributes to narrow the search to match multiple attributes. (eg. Ranged+Action)"></input>        
+        <input className ="searchBar" type="search" id="attributeSearch" name="attributeSearch" onChange={attributes} placeholder="[Attribute]" tabIndex={2} title="Searches for Powers with any attribute that include your text within the attribute name. Add a + between attributes to narrow the search to match multiple attributes. (eg. Ranged+Action)"></input>        
       </p> 
                   
     }
@@ -264,19 +264,19 @@ function Gifts({ match }) {
       <span className="searchSpan">
         <span className="searchBox">
           <label className="searchLabel" htmlFor="levelSearch">Filter Level:</label>
-          <input className ="searchBar" type="search" id="levelSearch" name="levelSearch" onChange={filter} placeholder="G#" tabIndex={1}></input>
+          <input className ="searchBar" type="search" id="levelSearch" name="levelSearch" onChange={filter} placeholder="#" tabIndex={1}></input>
         </span>
-        <label className="searchLabel" htmlFor="giftSearch">Search Gifts:</label>            
-        <input className ="searchBar" type="search" id="giftSearch" name="giftSearch" onChange={search} placeholder="Gift" tabIndex={2} title="Searches for a Gift name starting with your text, add a * to the front to search for Gifts that include your text within their name. (eg. *oc finds Shock)"></input>  
+        <label className="searchLabel" htmlFor="giftSearch">Search Powers:</label>            
+        <input className ="searchBar" type="search" id="giftSearch" name="giftSearch" onChange={search} placeholder="Power" tabIndex={2} title="Searches for a Power name starting with your text, add a * to the front to search for Powers that include your text within their name. (eg. *oc finds Shock)"></input>  
         <label className="searchLabel" htmlFor="attributeSearch">Search Attributes:</label>            
-        <input className ="searchBar" type="search" id="attributeSearch" name="attributeSearch" onChange={attributes} placeholder="[Attribute]" tabIndex={2} title="Searches for Gifts with any attribute that include your text within the attribute name. Add a + between attributes to narrow the search to match multiple attributes. (eg. Ranged+Action)"></input>            
+        <input className ="searchBar" type="search" id="attributeSearch" name="attributeSearch" onChange={attributes} placeholder="[Attribute]" tabIndex={2} title="Searches for Powers with any attribute that include your text within the attribute name. Add a + between attributes to narrow the search to match multiple attributes. (eg. Ranged+Action)"></input>            
       </span>
     }
     let {name} = require(`./sources/${match.params.s}`).default;
     return (
       <div className="content">
         <div className="content-head">
-          <h1>{name} Gifts</h1>
+          <h1>{name} Powers</h1>
         </div>
         <div className={"content-body search-list"}>
           <div id="popup-screen" onClick = {hidePopup}></div>
@@ -293,14 +293,14 @@ function Gifts({ match }) {
     return (
       <div className="content">
         <div className="content-head">
-          <h1>GIFTS</h1>
+          <h1>Powers</h1>
         </div>
         <div className="content-body">
-          No gifts found for this page!
+          No powers found for this page!
         </div>  
       </div>
     ); 
   }
 }
 
-export default Gifts;
+export default Powers;

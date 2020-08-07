@@ -4,7 +4,7 @@ export default {
 name: 'Humanoid',
 description: <p>dudes shaped like people</p>,
 creatures:[
-  [ // 1G
+  [ // lv1
     {
       name: 'Lesser Goblin',
       description: 'Angry little gobbo Angry little gobbo Angry little gobbo Angry little gobbo Angry little gobbo Angry little gobbo Angry little gobbo Angry little gobbo Angry little gobbo Angry little gobbo Angry little gobbo Angry little gobbo Angry little gobbo Angry little gobbo Angry little gobbo Angry little gobbo Angry little gobbo Angry little gobbo Angry little gobbo ',
@@ -43,8 +43,8 @@ creatures:[
         'Shoot: [Action] [Ranged] The goblin uses a small pistol or bow to shoot at a target within 30 ft, making a ranged attack roll. Deals 1d6+2 damage.'
       ]
     }
-  ],// 1G
-  [// 2G
+  ],// lv1
+  [// lv2
     {
       name: 'Bob',
       description: 'Oh no its bob',
@@ -80,7 +80,7 @@ creatures:[
         'Wreck: [Action] [Ranged] Bob wrecks everyone\'s shit in a 100ft radius, dealing 10d10 Bob damage.'
       ]
     }
-  ]// 2G
+  ]// lv2
 ]
 }
 /*

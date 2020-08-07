@@ -52,7 +52,7 @@ function parseSource(sourceJSON) {
       if (sourceJSON.proficiencies[level].length > 0) {
         let els = [];
         parseContent(sourceJSON.proficiencies[level], els);
-        proficiencies.push(<h3 style={{marginTop:0}}>[{Number(level)+1} G]</h3>);
+        proficiencies.push(<h3 style={{marginTop:0}}>[LVL {Number(level)+1}]</h3>);
         proficiencies.push(els);
         if (sourceJSON.proficiencies.length > Number(level)+1) proficiencies.push(<br/>);
       }
@@ -61,7 +61,7 @@ function parseSource(sourceJSON) {
       if (sourceJSON.lesser[level].length > 0) {
         let els = [];
         parseContent(sourceJSON.lesser[level], els);
-        lesserGifts.push(<h3 style={{marginTop:0}}>[{Number(level)+1} G]</h3>);
+        lesserGifts.push(<h3 style={{marginTop:0}}>[LVL {Number(level)+1}]</h3>);
         lesserGifts.push(els);
         if (sourceJSON.lesser.length > Number(level)+1) lesserGifts.push(<br/>);
       }
@@ -74,8 +74,10 @@ function parseSource(sourceJSON) {
         {desc}
         <h3>Resource: </h3>
         {resource}
+        <hr/>
         {(sourceJSON.proficiencies.length > 0)?<h3>Proficiencies: </h3>:null}
         {proficiencies}
+        <hr/>
         {(sourceJSON.lesser.length > 0)?<h3>Lesser Gifts: </h3>:null}
         {lesserGifts}
       </div>

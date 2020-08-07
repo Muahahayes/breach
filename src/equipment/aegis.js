@@ -2,7 +2,7 @@ import React from 'react';
 export default {
   name: 'Aegis',
   description: <p>
-    An Aegis unit is a small more focused Hard Light Plate localized in an area, usually on a forearm. While it is active, it may increase your Avoidance and also provides further benefits while you Block. 
+    An Aegis unit is a small more focused Hard Light Plate localized in an area, usually on a forearm. While it is active, it may provide benefits while you Block. 
     While you are Blocking, gain Avoidance from your active Aegis. When you use the Block action with an Aegis, add the Aegis's Reduction to the damage reduced by the Block. 
     After you have Blocked a number of hits equal to the Aegis' threshold, the Aegis fails and shuts off. The Aegis recharges after taking a Break or Full Sleep. You may only 
     equip an Aegis if you meet the required Strength.

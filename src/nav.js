@@ -95,14 +95,14 @@ function Nav({ match }) {
           <li><Link style={navStyle} to="/sources/mutation">Mutation</Link></li>
           </ul>
         </li>
-        <li><Link style={navStyle} to="/gifts" id="gift-link" onClick={show.bind(null,'gift')}>Gifts</Link> <span className="listBtn" id="gift-btn" onClick={toggle.bind(null,'gift')}>▼</span></li>
+        <li><Link style={navStyle} to="/powers" id="gift-link" onClick={show.bind(null,'gift')}>Powers</Link> <span className="listBtn" id="gift-btn" onClick={toggle.bind(null,'gift')}>▼</span></li>
         <li id="gift-list" className="list" style={hidden}>
           <ul>
-          <li><Link style={navStyle} to="/sources/psychic/gifts">Psychic</Link></li>
-          <li><Link style={navStyle} to="/sources/cosmic/gifts">Cosmic</Link></li>
-          <li><Link style={navStyle} to="/sources/runic/gifts">Runic Arts</Link></li>
-          <li><Link style={navStyle} to="/sources/bloodline/gifts">Bloodline</Link></li>
-          <li><Link style={navStyle} to="/sources/mutation/gifts">Mutation</Link></li>
+          <li><Link style={navStyle} to="/sources/psychic/powers">Psychic</Link></li>
+          <li><Link style={navStyle} to="/sources/cosmic/powers">Cosmic</Link></li>
+          <li><Link style={navStyle} to="/sources/runic/powers">Runic Arts</Link></li>
+          <li><Link style={navStyle} to="/sources/bloodline/powers">Bloodline</Link></li>
+          <li><Link style={navStyle} to="/sources/mutation/powers">Mutation</Link></li>
           </ul>
         </li>
         <li><Link style={navStyle} to="/techniques">Techniques</Link></li>

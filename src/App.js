@@ -3,7 +3,7 @@ import './App.css';
 import Nav from './nav';
 import Races from './races';
 import Sources from './sources';
-import Gifts from './gifts';
+import Powers from './powers';
 import Equipment from './equipment';
 import Techniques from './techniques';
 import Rules from './rules';
@@ -36,9 +36,9 @@ function App() {
         <Switch>
           <Route path="/pages/:p" component={InfoPage}/>
           <Route path="/races/:r" component={Races}/>
-          <Route path="/sources/:s/gifts" component={Gifts}/>
+          <Route path="/sources/:s/powers" component={Powers}/>
           <Route path="/sources/:s" component={Sources}/>          
-          <Route path="/gifts/:s/:g" component={Gifts}/>
+          <Route path="/powers/:s/:g" component={Powers}/>
           <Route path="/equipment/:t/:e" component={Equipment}/>
           <Route path="/equipment/:t" component={Equipment}/>
           <Route path="/techniques/:t" component={Techniques}/>
@@ -59,10 +59,11 @@ function App() {
 
 //  TODO:
 /*  
-    Daily: Add 2 Gifts and 2 Lesser Gifts
+    Daily: Add 2 Powers and 2 Lesser Powers
     Daily: Add 2 Creatures
     Ryan is now writing content, up to him what he prioritizes while I get things working in the background
-    
+
+    damage might scale a bit too hard compared to survivability?
     Equipment
     finish Exploration.js
     Make a rough draft of a character sheet

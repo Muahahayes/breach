@@ -13,8 +13,8 @@ export default {
 		"Languages: Atali, Imperial"
   ],
   racials:[
-    "Cold-blooded: Take -G fire damage and the Climate affects you as if the temperature was 10°F colder.",
-    "Poison Resistance: When you are Poisoned, reduce the duration by G rounds."
+    "Cold-blooded: Take -LVL fire damage and the Climate affects you as if the temperature was 10°F colder.",
+    "Poison Resistance: When you are Poisoned, reduce the duration by LVL rounds (to a minimum of 0)."
   ],
   subMarker:"'",
   sub:[

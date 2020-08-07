@@ -35,7 +35,7 @@ function renderGift(gift, source) {
     let giftName = gift.name.toLowerCase().split(' ').join('_');
     return (
       <div className="gift">
-        {(window.matchMedia(' (max-width: 800px) ').matches) ? <h2><Link to={`/gifts/${source}/${giftName}`}>{gift.name}</Link></h2> : <h2 className="popup-link" onClick = {showPopup.bind(null, gift.name, source)}>{gift.name}</h2>}
+        {(window.matchMedia(' (max-width: 800px) ').matches) ? <h2><Link to={`/powers/${source}/${giftName}`}>{gift.name}</Link></h2> : <h2 className="popup-link" onClick = {showPopup.bind(null, gift.name, source)}>{gift.name}</h2>}
         <span><b className="attributes">{gift.attributes}</b></span>
         <br/>
         {description}
@@ -48,7 +48,7 @@ function showPopup(giftName, sourceName) {
   let modal = document.getElementById('popup-modal');
   let screen = document.getElementById('popup-screen');
   console.log(sourceName);
-  let source = require(`./sources/gifts/${sourceName}`);
+  let source = require(`./sources/powers/${sourceName}`);
   let gift;
   for (let level in source.default) {
     for (let g of source.default[level]) {
@@ -71,7 +71,7 @@ function showPopup(giftName, sourceName) {
   }
   else {
     let content = <div id="modal-body">
-      <div style={{display:'flex', justifyContent:'space-around'}}><span style={{fontSize:'0.8rem'}}><a style={{fontSize:'2.5rem'}} href={`/gifts/${sourceName}/${giftName.split(' ').join('_')}`}>{giftName}</a> (link to page)</span></div>
+      <div style={{display:'flex', justifyContent:'space-around'}}><span style={{fontSize:'0.8rem'}}><a style={{fontSize:'2.5rem'}} href={`/powers/${sourceName}/${giftName.split(' ').join('_')}`}>{giftName}</a> (link to page)</span></div>
       {renderGift(gift)}
     </div>
     ReactDOM.render(content, modal)

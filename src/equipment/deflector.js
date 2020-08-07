@@ -2,7 +2,7 @@ import React from 'react';
 export default {
   name: 'Deflectors',
   description: <p>
-    A Personal Deflector emits a small field around the individual's body, reacting to high velocity objects and repelling them to reduce their force. 
+    A Personal Deflector is a Rune enscribed upon a metal crest worn upon your chest, which emits a small field around the individual's body that reacts to high velocity objects and repels them to reduce their force. 
     When you are hit by a Ranged Attack, reduce the damage dealt by the Reduction listed on your Deflector (to a minimum of 1).
   </p>,
   stats: ['price', 'reduction', 'tag'],
