@@ -6,7 +6,6 @@ export default [
       description: "Point at a creature or object within 30ft and make a Power Attack roll. You release a blast of kinetic energy at the target dealing 1d6 kinetic damage. This makes a moderate clapping sound on impact. It creates a distorted ripple through the air as it travels to its target. Costs 1 ae.",
       proficiencies: [
         [
-          "Empowered: Add your Will to the damage roll.",
           "Forceful: Add 1d4 to the damage roll, this increases the cost by 1 ae per die. (1 Additional optional die with each repeated proficiency, repeatable up to [2 * LVL])"
         ],
         [
@@ -28,29 +27,32 @@ export default [
     {
       name: "Spirit Shield",
       attributes: "[Action] [Ranged]",
-      description: "Point at a person within 30 ft that you can see. A thin shimmering layer of spirit energy wraps around their body, protecting them from harm. Provide them with 1d8 Shielding. A person may only have one Spirit Shield effect active on them at one time. Lasts 1 day. Costs 1 ae.",
+      description: "Point at a person within 30 ft that you can see. A thin shimmering layer of spirit energy wraps around their body, protecting them from harm. Provide them with 1d6 Shielding. A person may only have one Spirit Shield effect active on them at one time. Lasts 1 day. Costs 1 ae.",
       proficiencies: [
         [
-          "Empowered: Add your Will to the Shielding."
+          "Empowered: Increase the Shielding to 1d8."
         ],
         [
-          "Hardened: Until the person's Shielding drops to 0, reduce physical damage taken by 1."
+          "Hardened: Until the person's Shielding drops to 0, reduce physical damage taken by 1.",
+          "Pull: You may pull the person up to 5 ft towards you."
         ],
         [
           "Reinforced: Hardened reduces damage by your level instead.",
           "Redoubt: When the person's Shielding drops to 0 from damage, if the remaining damage would bring them below 1 Survival cancel any damage beyond bringing them to 1 Survival, up to an amount of damage equal to their Max Survival.",
-          "Potency: Increase the Shielding to 1d10. Increases the cost by 1 ae."
+          "Potency: You may increase the Shielding to 1d10. This increases the cost by 1 ae."
         ],
         [
-          "Greater Shielding: Increase the Shielding to 2d6. Requires Potency. Increases the cost by 1 ae.",
-          "Prismatic: Hardened now applies to Elemental and Mental damage (except for Darkness)."
+          "Greater Shielding: Increase the effect of Potency to 2d6.",
+          "Prismatic: Hardened now applies to Elemental and Mental damage (except for Darkness).",
+          "Greater Pull: Increase the effect of Pull to 10 ft."
         ],
         [
           "Shatter: [Activate] When the person's Shielding drops to 0 from damage, roll a Will check vs Agility for all creatures within 10 ft, deal 1d10 Spirit damage to any creature that fails the check.",
-          "Bounce: [Activate] If at least 1 point of Shielding from Spirit Shield remains after being hit by an attack, roll a d4. On a 4, apply the Spirit Shield effect to another person within 30 ft and within line of sight. Costs LVL ae."
+          "Bounce: [Activate] If at least 1 point of Shielding from Spirit Shield remains after being hit by an attack, roll a d4. On a 4, apply the Spirit Shield effect to another person within 30 ft and within line of sight. Costs LVL ae.",
+          "Greater Empowerment: Increase the effect of Empowered to 1d10."
         ],
         [
-          "Bulwark: Increase the Shielding to 4d6. Requires Greater Shielding. Increases the cost by 2 ae.",
+          "Bulwark: Increase the effect of Greater Shielding to 4d6. Increase the cost by 1 additional ae.",
           "Skipping Stones: [Activate] When you cast the Spirit Shield power successfully, you may immediately attempt a Bounce effect on that Spirit Shield, and any further Spirit Shields this effect creates during this turn. These Bounce effects do not cost additional Activation Actions.",
           "Smooth Stones: When using Skipping Stones, the Bounce effect succeeds on a 3 or a 4."
         ]
@@ -62,7 +64,6 @@ export default [
       description: "Lay your hand upon a creature and weave the Aether within their body to close up their wounds. Heal 1d6 damage from that person. Costs 1 ae.",
       proficiencies: [
         [
-          "Empowered: Add your Will to the amount healed.",
           "Ease Pain: [Activate] You may spend any amount of the healing to reduce their Strain instead of healing them, and then heal them with the remaining amount."
         ],
         [
@@ -99,7 +100,6 @@ export default [
         [
           "Crash: The base Hydromancy effect now deals damage on a Soft Fail.",
           "Shape: [Activate] Instead of moving water with Hydromancy or Manipulation, you can shape it into any shape while conserving its volume. You can hold it in that shape for up to 10 minutes as long as you spend your Activation Action each turn. The Shape cannot move unless you use Manipulation to move it.",
-          "Empowered: Add your Will to any damage dealt by a Hydromancy effect.",
           "Ventilation: [Passive] You can draw the oxygen out of the water around you. You and any creatures you choose within 10 ft can breath while underwater. This effect is disabled when you have 0 ae.",
           "Mist: [Free] You may produce a cooling mist at will, cooling the area around you by 10 F within 10 ft. Lasts as long as desired. The effect is disabled when you have 0 ae."
         ],
@@ -129,7 +129,6 @@ export default [
       description: "Requires your Elemental Soul to be the Fire type. As an Action you may either snuff out a torch sized flame within 10 ft, or ignite a small flame in your hand which you may hold for up to 10 minutes or throw up to 10ft away. If you throw the flame, it must land on a flammable surface or it will snuff out. As a Full Action you may ignite a flame which quickly grows and fans out from your hand in a 10 ft cone in front of you. Every creature within the area must roll a d20 + Agility vs [10 + Power] to avoid the fire. On a Success they avoid being hit. Deal 1d4 Fire damage to every creature that Fails. Costs 1 ae.",
       proficiencies: [
         [
-          "Empowered: Add your Will to any damage done by Pyromancy.",
           "Spectacle: [Activate] You may shape the flame into moving silhouettes. You may use the flame in Perform or Disruption checks as an Activate Action to add your Will to the check. Costs 1 ae."
         ],
         [
@@ -238,7 +237,6 @@ export default [
       proficiencies: [
         [],
         [
-          "Empowered: Add your Will to the damage dealt.",
           "Freeze: [Action] You may freeze a body of water you can see within 10 ft of you. You can freeze a size of water equal to a sphere with a radius of 5 ft. Any creature within the water is Snared, and on its turn must make an Athletics check vs Power to break free. On a Fail it remains Snared, on a Success it is no longer snared, but on a Soft Success it is Slowed for 1 turn. Costs 2 ae."
         ],
         [
@@ -294,7 +292,6 @@ export default [
         [],[],
         [
           "Duration: When the effect reaches the end of its duration, you may extend it by 1 turn for 1 ae. (1 Additional optional extension with each repeated proficiency).",
-          "Empowered: Add your Will to the damage roll.",
           "Impact: Increase the damage to 1d8."        
         ],
         [

@@ -16,8 +16,9 @@ export default {
     ],
     [
       "Regenerative: Gain +LVL to any healing you receive from a Power.",
-      "Ancient Endurance: Increase your Stamina by 1.",
-      "Two-Handed Tempo: Two-Handed Speed reduces the penalty by an additional 1 (to a minimum of 0)."
+      "Ancient Endurance: Increase your Stamina by 1 and increase its maximum to [LVL + 4].",
+      "Two-Handed Tempo: Two-Handed Speed reduces the penalty by an additional 1 (to a minimum of 0).",
+      "Constitution: You may add your level to your Stamina rolls."
     ],
     [
       //4
@@ -34,7 +35,7 @@ export default {
     ]
   ],
   capstones: [
-    "Blood Frenzy: Once per Full Sleep you may, as an Action, enter into a Blood Frenzy. While in this Frenzy your blood glows brightly across your skin and your eyes become crimson red. Once per turn you may ignore the bloodlust cost of one Power you use and its Proficiencies. This Frenzy lasts for 30 seconds, and ends prematurely if you are made unconscious, asleep, feared, or if you enter Apathy."
+    "Blood Frenzy: Once per Full Sleep you may, as an Action, enter into a Blood Frenzy. While in this Frenzy your blood glows brightly across your skin and your eyes become crimson red. Once per turn you may ignore up to 3 Bloodlust required from one Power you use and its Proficiencies. This Frenzy lasts for 30 seconds, and ends prematurely if you are made unconscious, asleep, feared, or if you enter Apathy."
   ],
   lesser: [
     [

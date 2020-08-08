@@ -7,17 +7,18 @@ export default {
     [
       "Thick Skin: Increase your max survival by 5. (Repeatable up to LVL times)",
       "Retractable Canines: Your canine teeth are sharp and can extend to twice their length.",
-      "Tail: If you did not already have one, gain a tail of your animal choice. You gain +1 to Agility checks.",
+      "Tail: If you did not already have one, gain a tail of your choice of animal. You gain +1 to Agility rolls.",
       "Two-Handed Speed: If your two-handed weapon reduces your Speed while equipped, reduce the penalty by 1 (to a minimum of 0)."
     ],
     [
       "Expanded Lungs: You can hold your breath twice as long.",
       "Owl Neck: You can face behind you without turning your body, and you can rotate your head upside down.",
-      "Genetic Morph: At 5 stacks, gain a new Power up to [LVL 3] which does not use a Full Action. This does not count as Leveling Up. (Repeatable up to 5 stacks, one Power may be gained from this Proficiency)"
+      "Genetic Morph: At 5 stacks, gain a new Power up to [LVL 3]. This does not count as Leveling Up. (Repeatable up to 5 stacks, one Power may be gained from this Proficiency)"
     ],
     [
       "Regenerative: Gain +LVL to any healing you receive.",
-      "Evolutionary Endurance: Increase your Stamina by 1."
+      "Evolutionary Endurance: Increase your Stamina by 1 and increase its maximum to [LVL + 4].",
+      "Constitution: You may add your level to your Stamina rolls."
     ],
     [
       "Photosynthesis: You gain 1 Food Point whenever you take a Break in direct sunlight."

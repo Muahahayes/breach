@@ -77,8 +77,6 @@ export default [
       description: "You have ten flowers budding on your skin. You may have one burst and shower a creature (not yourself) in melee range with parasitic pollen which clings onto their skin. Whenever you fully sleep or take a break while eating a full meal you regain all flowers, choose 1 color of flower and if they all heal or deal damage. The flowers do the effect chosen on creatures the pollen touches for 1d6 healing/damage. Causes 1 Strain to burst a flower.",
       proficiencies: [
         [
-          "Empowered: Add your Will to the amount healed.",
-          "Passion: Add your Will to the amount damaged.",
 	        "Perennial: When you switch flowers, you may keep up to LVL flowers from the previous budding.",
 	        "Garden: You may bud up to LVL more flowers."
         ],
@@ -107,7 +105,6 @@ export default [
       description: "You reach out and touch a creature. You inject them with a spine from your wrist, transferring some small portion of your blood into their system, healing them for 1d8. Causes 1 Strain.",
       proficiencies: [
         [
-          "Empowered: Add your Will to the amount healed.",
           "Heated: [Activate] Your blood is now a higher temperature. You feel warm to the touch, you take -G cold damage, and the Climate affects you as if the temperature was 10°F warmer. Additionally, your Transfusion target may gain LVL Bloodlust when healed. Cannot take with Cold-Blooded."
         ],
         [
@@ -156,8 +153,8 @@ export default [
       proficiencies: [
         [],
         [
-          "Empowered: Add your Will to the amount of Shielding.",
-          "Ease: If you roll a 3 or less on the Shielding roll, Barkskin causes 1 less Strain."
+          "Ease: If you roll a 3 or less on the Shielding roll, Barkskin causes 1 less Strain.",
+          "Rooted: You may increase the Shielding by 5. You are Snared for 1 turn."
         ],
         [
           "Potency: Increase the Shielding to 1d8.",

@@ -39,7 +39,6 @@ export default [
       description: "Point at a creature or object within 30ft. You release a blast of psychic energy at the target dealing 1d6 psychic damage. The creature affected by Shock can hear a screeching in their mind, but otherwise it makes no sound. It creates a warped cascade of light as it travels to its target.",
       proficiencies: [
         [
-          "Empowered: Add your Will to the damage roll.",
           "Forceful: Add 1d4 to the damage roll. (Repeatable up to LVL)"
         ],
         [
@@ -48,7 +47,7 @@ export default [
           "Tranquility: You may still use Shock while afflicted by Psychic Break, however only the Empowered and Impact proficiencies will benefit your shocks used in this way."
         ],
         [
-          "Greater Empowerment: Add your Will to the damage roll a second time. Requires Empowered.",
+          "Empowerment: Add your Will to the damage roll.",
           "Magnitude: Increase the size of the Forceful dice rolled. (repeatable d6, d8)",
           "Effort: Roll a copy of the primary die and add the result to the damage of this Shock, roll a Psychic Fatigue check for each copy rolled. (Repeatable up to LVL)",
           "Reach: Increase the range to 50 ft.",
@@ -102,7 +101,6 @@ export default [
       description: "As an Action you may either snuff out a torch sized flame within 10 ft, or ignite a small flame in your hand which you may hold for up to 10 minutes or throw up to 10ft away. If you throw the flame, it must land on a flammable surface or it will snuff out. As a Full Action you may ignite a flame which quickly grows and fans out from your hand in a 10 ft cone in front of you. Every creature within the area must roll a d20 + Athletics vs Power to avoid the fire. On a Success they avoid being hit. Deal 1d4 Fire damage to every creature that Fails.",
       proficiencies: [
         [
-          "Empowered: Add your Will to any damage done by Pyrokinesis.",
           "Spectacle: [Activate] You may shape the flame into moving silhouettes. You may use the flame in Perform or Disruption checks as an Activate Action to add your Will to the check."
         ],
         [
@@ -159,18 +157,20 @@ export default [
       proficiencies: [
         [
           "Quirked: Whenever you apply a Quirk in a roll involving the creature, gain Favored +1 to the roll.",
-          "Empowered: Add your Will to the damage dealt by Pursuit."
+          "Charge: [Activate] [Action] After moving you may, as an Activation Action, use your Full Action to make a basic melee attack against a creature you are Pursuing. This does not cause a Psychic Fatigue check."
         ],
         [
           "Impact: Increase the damage to 1d6.",
           "Ease: You no longer need to make a Psychic Fatigue check when Pursuit triggers from a basic melee attack.",
-          "Gifted: You may trigger Pursuit on any attack or power which deals damage while you are within 10 feet of the creature."
+          "Improved Charge: The basic melee attack from Charge no longer costs a Full Action.",
+          "Phase Rush: [Action] While within 20 ft of a creature you are Pursuing you may, as a Full Action, blur out of phase with the physical world and be pulled towards them. You appear 1 second later at a point you can see within 5 ft of the creature. This causes a Psychic Fatigue check."
         ],
         [
           "Magnitude: Increase the damage to 1d8. Requires Impact.",
           "Chase: [React] If the creature moves further than 10 feet away from you, as a Reaction Action you may move 10 feet towards the creature.",
+          "Advantage: While a creature is under your Pursuit, gain a Favored +1 to your basic melee attack rolls against that creature.",
           "Pressure: While a creature is under your Pursuit, you may give the creature an Unfavored -1 to attack and power rolls against you, but you do not gain the benefits of the Advantage proficiency. Requires Advantage.",
-          "Advantage: While a creature is under your Pursuit, gain Favored +1 to your basic melee attack rolls against that creature."
+          "Gifted: You may trigger Pursuit on any attack or power which deals damage while you are within 10 feet of the creature."
         ],
         [
           "Fork: You may apply your Pursuit to a second creature at a time.",
@@ -180,7 +180,7 @@ export default [
         ],
         [
           "Favored: Advantage now applies to any rolls against the creature.",
-          "Debilitate: [Activate] When Pursuit deals damage, you may instead deal 0 damage and reduce the creature's survival by half the damage it would have dealt. This survival is restored if the creature receives healing equal to its original max survival or when it completes a Full Sleep."
+          "Debilitate: [Activate] When Pursuit deals damage, you may as an Activation Action instead deal 0 damage and reduce the creature's max survival by half the damage your attack would have dealt. This survival is restored if the creature receives a healing amount which would bring it to its original max survival or when it completes a Full Sleep."
         ]
       ]
     }
@@ -193,7 +193,8 @@ export default [
       proficiencies: [
         [],
         [
-          "Refreshment: If you retain the focus until the next turn, your Psychic Break ends, Refreshment is usable once per Full Sleep."
+          "Refreshment: If you retain the focus until the next turn, your Psychic Break ends, Refreshment is usable once per Full Sleep.",
+          "Soothe: If you retain the focus until the next turn, you may remove 1 Blind, Deaf, Fear or Taunt effect from yourself."
         ],
         [
           "Relaxed: Your use of Refreshment is reset on a Break as well as a Full Sleep.",
@@ -201,7 +202,7 @@ export default [
           "Enhance: If you retain focus until the next turn, gain a Favored +1 to any attack rolls, checks, or damage done by any Powers during that turn. You do not need to be in a Psychic Break to use Focus."
         ],
         [
-          "Respite: Increases the number of Refreshment uses by 1 (Repeatable up to 4).",
+          "Respite: Increases the number of Refreshment uses by 1 (Repeatable up to 4 additional uses).",
           "Calm: Ignore the first failed condition while retaining your focus.",
           "Tranquil: Inner Peace ignores 1 additional Psychic Fatigue."
         ],
@@ -213,19 +214,21 @@ export default [
     {
       name: "Disruption",
       attributes: "[Action] [Ranged] [Contract]",
-      description: "You reach out with your mind to disrupt the flow of energy within a creature you can see. Roll your normal Psychic Fatigue check to place a Disruption on a Power they used on their most recent turn. This Disruption lasts until the end of their next turn. When they attempt to use a Disrupted Power roll additional Psychic Fatigue checks equal to the LVL of the Power they attempt to use, if you succeed they cannot use the Power and lose any Actions the Power required. If you fail one of the additional checks they may use the Power but you do not go into Psychic Exhaustion.",
+      description: "You reach out with your mind to disrupt the flow of energy within a creature you can see. Roll a d20 + Power vs Power. On a Success roll your normal Psychic Fatigue check to place a Disruption on a Power they used on their most recent turn. This Disruption lasts until the end of their next turn. When they attempt to use a Disrupted Power roll additional Psychic Fatigue checks equal to the LVL of the Power they attempt to use, if you succeed they cannot use the Power and lose any Actions the Power required. If you fail one of the additional checks they may use the Power but you do not go into Psychic Exhaustion.",
       proficiencies: [
         [],
         [
-          "Suppress: Reduce the number of Psychic Fatigue checks required to Disrupt a Power by 1 (to a minimum of 1 check) (Repeatable)."
+          "Suppress: Reduce the number of Psychic Fatigue checks required to Disrupt a Power by 1 (to a minimum of 1 check).",
+          "Hush: Instead of its usual effects, you may apply the Silence effect to the creature for 1 turn."
         ],
         [
-          "Counter: [React] As a Reaction, you may attempt to Disrupt a Psychic or Cosmic Power before it takes effect, roll Psychic Fatigue checks equal to the LVL of the Power plus 1. If you succeed they cannot use the Power and lose any Actions required. If you fail one of these checks they may use the Power and you do not enter Psychic Exaustion.", 
+          "Counter: [React] As a Reaction, you may attempt to Disrupt a Psychic or Cosmic Power the victim of your Disruption attempts before it takes effect, roll Psychic Fatigue checks equal to the LVL of the Power plus 1. If you succeed they cannot use the Power and lose any Actions required. If you fail one of these checks they may use the Power and you do not enter Psychic Exaustion.", 
 		      "Smother: Increase the reduction from Suppress by 1 (to a minimum of 1 check)."
         ],
         [
           "Disable: When you successfully nullify a Power, that Power remains Disrupted for one more turn.",
-		      "Denial: Reduce the number of Psychic Fatigue checks required to Counter a Power by 2 (to a minimum of 1 check)."
+          "Denial: Reduce the number of Psychic Fatigue checks required to Counter a Power by 2 (to a minimum of 1 check).",
+          "Censor: [Activate] You may, as an Activation Action, roll a d20 + Power vs Power against the creature each turn to continue the Silence effect from Hush."
         ],
         [
           "Permission: [Activate] When you successfully nullify a creature's Power twice in a row, roll a Power vs Will check against the creature. On a success, the creature may only attempt to use that Power when you give it permission. After every Full Sleep the creature may attempt another Power vs Will check to end this effect."

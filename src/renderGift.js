@@ -14,7 +14,7 @@ function renderGift(gift, source) {
       if (gift.proficiencies[level].length > 0) {
         let els = [];
         parseContent(gift.proficiencies[level], els);
-        proficiencies.push(<h3>[{Number(level)+1} G]</h3>)
+        proficiencies.push(<h3>[LVL {Number(level)+1}]</h3>)
         proficiencies.push(els);
         proficiencies.push(<br/>);
       }

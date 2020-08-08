@@ -17,20 +17,21 @@ export default {
     <h3>Attributes:</h3>
     <span>An Attribute is a measurement of your natural ability at a base level. No Attribute may be increased above 3 + LVL</span>
     <ul>
-      <li><span>Strength (Raw power, anaerobic activity)</span><br/></li>
-      <li><span>Agility (Physical nimbleness and flexibility)</span><br/></li>
-      <li><span>Will (Mental strength)</span><br/></li>
-      <li><span>Stamina (Life and endurance)</span><br/></li>
+      <li><span>Strength (Raw power, anaerobic activity): Every point of Strength increases your Equip Weight by 1 and is required to use heavier equipment.</span><br/></li>
+      <li><span>Agility (Physical nimbleness and flexibility): Add half your Agility value to your Avoidance stat.</span><br/></li>
+      <li><span>Will (Mental strength): Will is used to resist some non-physical effects.</span><br/></li>
+      <li><span>Stamina (Life and endurance): Every point of Stamina increases your Survival by 2 and the distance you can travel per day by 5 miles. Every even number of Stamina increases your Life by 1.</span><br/></li>
     </ul>
-    <br/>
-    <span><b>Strength Benefits:</b> Every point of Strength increases your Equip Weight by 1. Add your Strength value to your unarmed attack damage and most melee weapons.</span><br/>
-    <span><b>Agility Benefits:</b> Agility is used to avoid some area of effect attacks. Add your Agility value to your Avoidance stat.</span><br/>
-    <span><b>Will Benefits:</b> Will is used to resist some non-physical effects or empower some Powers.</span><br/>
-    <span><b>Stamina Benefits:</b> Every point of Stamina increases your Survival by 2 and the distance you can travel per day by 5 miles. Every even number of Stamina increases your Life by 1.</span><br/>
     <br/>
     <span><b>Stat Checks:</b> Some Powers, Techniques, and Attacks will contest an Attribute check. These checks can Hard Succeed or Hard Fail like a <Link to="skills">Skill</Link> check but do not give <Link to="leveling">XP</Link>.</span><br/>
     <br/>
     <span><b>Increasing Attributes:</b> Your Attributes are determined by your Race's starting Attributes, and are increased from Attribute Points (AP) you have at character creation. When <Link to="leveling">Leveling Up</Link> at every even numbered Level, you may increase 1 Attribute by 1, but you cannot increase the Attribute beyond 3 + LVL.</span><br/>
+    <br/>
+    <span><b>Primary Attribute:</b> A person may have 1 Primary Attribute. On Odd number levels when leveling up, increase this Attribute by 1. You may add your level to rolls involving your Primary Attribute. Your Primary Attribute also gives you additional benefits.</span><br/>
+    <span><b>Strength Benefits:</b>  Add your Strength value to your unarmed attack damage, melee weapon attack damage, and your Athletics rolls. Reduce damage taken from Physical damage types by the value of your Strength.</span><br/>
+    <span><b>Agility Benefits:</b> Add your Agility value to your unarmed attack damage, melee weapon attack damage, ranged weapon attack damage, and your Acrobatics rolls. Add your full Agility value to your Avoidance stat instead of only half.</span><br/>
+    <span><b>Will Benefits:</b> Add your Will value to any damage, healing or shielding dealt by a Power. Reduce damage taken from Mental damage types by the value of your Will.</span><br/>
+    <span><b>Stamina Benefits:</b> Each point of Stamina increases your Survival by 3 instead of 2. You may treat an Extreme Injury as a Heavy Injury once per Full Sleep, upon attaining 5 Stamina you may do this twice.</span><br/>
     <hr/>
     <h3>Secondary Stats:</h3>
     <span><b>Shielding:</b> You start with 0 Shielding. You may gain Shielding from various effects in the game. When you have at least 1 Shielding, Attacks which reduce your Survival will first reduce your Shielding instead, if the Attack deals damage greater than your Shielding the remaining damage after your Shielding is reduced to 0 is subtracted from your Survival. You lose any Shielding after a Full Sleep. </span><br/>

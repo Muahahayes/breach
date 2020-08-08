@@ -60,7 +60,6 @@ export default [
       description: "As an additional Action you channel darkness into a basic melee attack before determining if the attack hits. Add a d4 for each point of Will you possess to the damage dealt by the attack. Costs 2 Bloodlust.",
       proficiencies: [
         [
-          "Empowered: Add your Will to the damage dealt.",
           "Fury: On a Hard Success, gain an additional Bloodlust."
         ],
         [
@@ -99,7 +98,7 @@ export default [
           "Dive: [Activate] If you land on top of a creature after leaping at least half your maximum movement distance you may make a basic Melee attack as an Activation Action. Costs 1 Bloodlust."
         ],
         [
-          "Shadowflight: While Darkflight is active, as your movement action, if you are standing out of direct light you may disappear and reappear in another location out of direct light within your maximum movement."
+          "Shadowflight: While Darkflight is active, as a Full Action, if you are standing out of direct light you may disappear and reappear in another location out of direct light within your maximum movement."
         ]
       ]
     },
@@ -109,7 +108,6 @@ export default [
       description: "You release a wave of dark energy 30 ft around you. Roll a d20 + Use Power. All creatures must roll a d20 + Will vs your roll, any that fail take 1d4 Darkness damage. Costs 2 Bloodlust.",
       proficiencies: [
         [
-          "Empowered: Add your Will to the damage dealt."
         ],
         [
           "Malignant: Add your level to the Severity roll of any Injury caused by Hemotremor's damage."
@@ -126,7 +124,6 @@ export default [
         [],
         [
           "Sharp Aim: Permanently add 1 to your Marksmanship Skill.",
-          "Empowered: Add your Will to the damage dealt.",
           "Twin Shot: If Dark Shot hits, you may make a basic Ranged Weapon attack on the same target for free."
         ],
         [
