@@ -23,8 +23,8 @@ export default {
 
   <hr/>
   <h3>Limits:</h3>
-  <span>The maximum points you may have in a Skill is 5x your Level. If a Skill is at its maximum and the next XP you would gain would lead to all 5 Skill choices for your next increase being already their max value it cannot gain XP from a <b>Hard Succeed/Fail</b>. (ie. your Athletics and Crafstman are both already at 5 times your level, you have gained XP from Athletics twice and Craftsman twice, you cannot gain XP from either Skill until you have gained an XP and increased a different Skill.)</span><br/>
-  <span>After reaching LVL 5 you may only increase at most 5 Skills above 20 points.</span>
+  <span>The maximum points you may have in a Skill is 3x your Level. If a Skill is at its maximum and the next XP you would gain would lead to all 5 Skill choices for your next increase being already their max value it cannot gain XP from a <b>Hard Succeed/Fail</b>. (ie. your Athletics and Crafstman are both already at 5 times your level, you have gained XP from Athletics twice and Craftsman twice, you cannot gain XP from either Skill until you have gained an XP and increased a different Skill.)</span><br/>
+  <span>You may only increase at most 5 Skills above 10 points.</span>
 
   <hr/>
   <h3>Inspiring Expertise:</h3>
