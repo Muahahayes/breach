@@ -240,7 +240,7 @@ export default [
     {
       name: "Flux",
       attributes: "[Action] [Ranged]",
-      description: "On your turn, as an Action you release the energy within this rune to cause Flux on a creature you can see. On that creature's next Attack or Power roll, subtract 10 minus this rune's Fade (to a minimum of 0) from that roll. If their roll still succeeds, cause 1 additional Fade. The creature may attempt a d20 + Will vs your Use Power to resist this effect.",
+      description: "On your turn, as an Action you release the energy within this rune to cause Flux on a creature you can see. On that creature's next Attack or Power roll, subtract 10 minus this rune's Fade (to a minimum of 0) from that roll. If their roll still succeeds, cause 1 additional Fade. The creature may attempt a Will Save to resist this effect.",
       proficiencies: [
         [],
         [
@@ -260,7 +260,7 @@ export default [
           "Daze: Instead of its usual effect, Flux may give the creature the Dumb effect until it ends 2 turns or 10 minutes has past."
         ],
         [
-          "Boggle: Daze, when used outside of combat, may last for 2 hours. After 1 hour the creature may attempt to end the effect by rolling a d20 + Will vs your Use Power."
+          "Boggle: Daze, when used outside of combat, may last for 2 hours. After 1 hour the creature may attempt to end the effect by rolling a Will Save."
         ]
       ]
     },

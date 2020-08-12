@@ -84,7 +84,7 @@ export default [
           "Martial Expertise: Permanently add 1 to your Martial Arms Skill."
         ],
         [
-          "Hellfire: Your weapon alights in flame as it strikes, the creature must roll a 20 + Stamina vs your own d20 + Will. On a fail they are Burned, dealing 1d6 Fire damage over 2 turns. On a Hard Fail the Burn deals 1d8 damage over 3 turns instead.",
+          "Hellfire: Your weapon alights in flame as it strikes, the creature must roll a Stamina Save. On a fail they are Burned, dealing 1d6 Fire damage over 2 turns. On a Hard Fail the Burn deals 1d8 damage over 3 turns instead.",
           "Quirked: When using a Quirk on this attack, increase the size of Sanguine Strike's dice to a d10. Requires Impact.",
           "Penetration: This attack ignores the target's Aegis."
         ],
@@ -120,7 +120,7 @@ export default [
     {
       name: "Hemotremor",
       attributes: "[Action] [AOE]",
-      description: "You release a wave of dark energy 30 ft around you. All creatures must roll a d20 + Will vs [10 + Power], any that fail take 1d4 Darkness damage. Costs 2 Bloodlust.",
+      description: "You release a wave of dark energy 30 ft around you. All creatures must roll a Will Save, any that fail take 1d4 Darkness damage. Costs 2 Bloodlust.",
       proficiencies: [
         [
 
@@ -133,10 +133,10 @@ export default [
     {
       name: "Gaze",
       attributes: "[Action] [Ranged]",
-      description: "You stare into a creature's eyes and assault their mind with dark energy. They must roll a d20 + Will vs [10 + Power] to withstand the effect. On a Fail they experience intense horror for as long as they look at you, and for 1 turn after looking away they are Feared. Has no effect on creature's of a higher level than you. Costs 1 Bloodlust.",
+      description: "You stare into a creature's eyes and assault their mind with dark energy. They must roll a Will Save to withstand the effect. On a Fail they experience intense horror for as long as they look at you, and for 1 turn after looking away they are Feared. Has no effect on creature's of a higher level than you. Costs 1 Bloodlust.",
       proficiencies: [
         [
-          
+
         ]
       ]
     }
@@ -160,7 +160,7 @@ export default [
         [
           "Deadly Aim: Permanently add 2 to your Marksmanship Skill",
           "Dark Twin: You may spend Bloodlust to use Dark Shot with your Twin Shot attack.",
-          "Piercing Shot: [Action] As an Action, you may attempt to apply the Sundered effect to the victim hit. They may roll d20 + Stamina vs [10 + Power] to resist the effect."
+          "Piercing Shot: [Action] As an Action, you may attempt to apply the Sundered effect to the victim hit. They may roll Stamina Save to resist the effect."
         ],
         [
           "Overwhelm: [Activate] If your Dark Shot deals a killing blow you may use any Power which costs Bloodlust. This may only trigger once per turn."
@@ -275,7 +275,7 @@ export default [
     {
       name: "Miasma",
       attributes: "[Action] [AOE] [Melee]",
-      description: "As an Action you release a cloud of poisonous gas from your body, which floats in place and takes up an area with a radius of 10 ft. Any creature other than yourself that is within the cloud must roll a d20 + Stamina vs [10 + Power] each turn they are within the cloud. On a Fail they take 2d8 Nature damage, on a Hard Fail they are also Poisoned for an additional 2d4 Nature damage for 3 turns with a difficulty of [10 + Power].",
+      description: "As an Action you release a cloud of poisonous gas from your body, which floats in place and takes up an area with a radius of 10 ft. Any creature other than yourself that is within the cloud must roll a Stamina Save each turn they are within the cloud. On a Fail they take 2d8 Nature damage, on a Hard Fail they are also Poisoned for an additional 2d4 Nature damage for 3 turns with a difficulty of [10 + Power].",
       proficiencies: [
         [],[],
         [
@@ -292,7 +292,7 @@ export default [
       proficiencies: [
         [],[],[],
         [
-          "Nullify: As a Free Action, whenever a creature within 10 ft attempts to use a Power, you may spend 1 Bloodlust to prevent the attempt. The creature must roll a d20 + Will vs [10 + Power] to resist this effect.",
+          "Nullify: As a Free Action, whenever a creature within 10 ft attempts to use a Power, you may spend 1 Bloodlust to prevent the attempt. The creature must roll a Will Save to resist this effect.",
           "Unravel: Whenever a creature, object, or an Engraving upon an object created by a Power enters the dark energy of the Shroud and you are aware of it, you may spend 1 Bloodlust as a Free Action to destroy it.",
           "Persistent: The effect lasts 1 hour, and is immune to any Powers or effects that attempt to remove it or prevent the initial use of this Power, including another Shroud. No longer costs Bloodlust per minute."
         ],

@@ -63,7 +63,7 @@ export default [
         ],
         [
           "Sharpened: Your unarmed melee attack now deals 1d8 sharp damage.",
-          "Poisoned: [Activate] Your unarmed melee attack now may apply a Poison if it naturally rolls 15+ on its attack and hits. This Poison deals 1d4 nature damage per turn, afterwards if the enemy rolls d20 + Stamina vs [10 + LVL] the Poison effect ends."
+          "Poisoned: [Activate] Your unarmed melee attack now may apply a Poison if it naturally rolls 15+ on its attack and hits. This Poison deals 1d4 nature damage per turn, afterwards if the enemy rolls a Stamina Save the Poison effect ends."
         ],
         [
           "Razors: Your unarmed melee attack now deals 1d10 sharp damage.",
@@ -267,7 +267,7 @@ export default [
     {
       name: "Swarm",
       attributes: "[Action] [AOE]",
-      description: "A swarm of flying insects spew forth from your body, attacking all creatures within a 10 ft radius and quickly die afterwards. All creatures in the afflicted area must roll a d20 + Stamina vs [10 + Power], on a Fail they take 1d8 Nature damage. Causes 3 Strain.",
+      description: "A swarm of flying insects spew forth from your body, attacking all creatures within a 10 ft radius and quickly die afterwards. All creatures in the afflicted area must roll a Stamina Save, on a Fail they take 1d8 Nature damage. Causes 3 Strain.",
       proficiencies: [
         [],[],
         [

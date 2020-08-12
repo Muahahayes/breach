@@ -95,7 +95,7 @@ export default [
     {
       name: "Hydromancy",
       attributes: "[Action] [Action] [Ranged] [Elemental]",
-      description: "Requires your Elemental Soul to be the Water type. As a Full Action you may create water in an area you can see in a sphere with a radius of 5 ft which centers around a point within 10 ft of you. After creation you may use this Power's Action Action to move it or else it will fall to the ground, you may move this water up to 20 ft in any direction in a wave-like shape and once reaching its destination it falls to the ground. Any creature that is pushed by the water must roll a d20 + Agility vs [10 + Power] to resist being moved. On a Success they do not move, on a Soft Fail they are carried with the water to its destination and on a Hard Fail they are also dealt 1d6 Water damage. Costs 1 ae.",
+      description: "Requires your Elemental Soul to be the Water type. As a Full Action you may create water in an area you can see in a sphere with a radius of 5 ft which centers around a point within 10 ft of you. After creation you may use this Power's Action Action to move it or else it will fall to the ground, you may move this water up to 20 ft in any direction in a wave-like shape and once reaching its destination it falls to the ground. Any creature that is pushed by the water must roll an Agility Save to resist being moved. On a Success they do not move, on a Soft Fail they are carried with the water to its destination and on a Hard Fail they are also dealt 1d6 Water damage. Costs 1 ae.",
       proficiencies: [
         [
           "Manipulation: [Action] As an Action you pull together water you can see within 10 ft of you and the water forms into a sphere with a 5 ft radius, if the source of the water has a volume greater than a 5 ft sphere the excess water is left behind. You may move this water just like you would use an Action to move water you have created with Hydromancy. Costs 1 ae.",
@@ -130,7 +130,7 @@ export default [
     {
       name: "Pyromancy",
       attributes: "[Action] [Action] [Ranged] [Elemental]",
-      description: "Requires your Elemental Soul to be the Fire type. As an Action you may either snuff out a torch sized flame within 10 ft, or ignite a small flame in your hand which you may hold for up to 10 minutes or throw up to 10ft away. If you throw the flame, it must land on a flammable surface or it will snuff out. As a Full Action you may ignite a flame which quickly grows and fans out from your hand in a 10 ft cone in front of you. Every creature within the area must roll a d20 + Agility vs [10 + Power] to avoid the fire. On a Success they avoid being hit. Deal 1d4 Fire damage to every creature that Fails. Costs 1 ae.",
+      description: "Requires your Elemental Soul to be the Fire type. As an Action you may either snuff out a torch sized flame within 10 ft, or ignite a small flame in your hand which you may hold for up to 10 minutes or throw up to 10ft away. If you throw the flame, it must land on a flammable surface or it will snuff out. As a Full Action you may ignite a flame which quickly grows and fans out from your hand in a 10 ft cone in front of you. Every creature within the area must roll an Agility Save to avoid the fire. On a Success they avoid being hit. Deal 1d4 Fire damage to every creature that Fails. Costs 1 ae.",
       proficiencies: [
         [
           "Spectacle: [Activate] You may shape the flame into moving silhouettes. You may use the flame in Perform or Disruption checks as an Activate Action to add your Will to the check. Costs 1 ae."
@@ -139,7 +139,7 @@ export default [
           "Blaze: [Action] As a Full Action, you ignite a streak of fire that shoots out in a straight line. Make a ranged Power attack against a creature you can see within 30 ft. On a hit deal 1d8 Fire damage. Costs 1 ae.",
           "Heat: Increase the damage of Pyromancy' Full Action attack to 1d6.",
           "Warmth: [Free] You may produce a radiant heat at will, warming the area around you by 10 F within 10 ft. This effect is disabled when you are at 0 ae.",
-          "Manipulation: [Action] As an Action you gather the fire within a 5 ft radius you can see within 10 ft and may move it up to 20 ft in any direction. Any creature within the fire's destination must roll a d20 + Agility vs [10 + Power] to avoid the fire, On a Success they avoid being hit. Deal 1d4 Fire damage to every creature that Fails. Costs 1 ae."
+          "Manipulation: [Action] As an Action you gather the fire within a 5 ft radius you can see within 10 ft and may move it up to 20 ft in any direction. Any creature within the fire's destination must roll an Agility Save to avoid the fire, On a Success they avoid being hit. Deal 1d4 Fire damage to every creature that Fails. Costs 1 ae."
         ],
         [
           "Ignition: [Activate] Whenever one or more creatures Hard Fail a check to avoid fire from Pyromancy, you may spend an Activation Action to apply a Burn to the creatures for 2 turns which deals 1d4 Fire damage.",
@@ -260,15 +260,15 @@ export default [
       proficiencies: [
         [],
         [
-          "Haunt: [Action] Point at a creature you can see and release a Soul Fragment upon them. They must roll a d20 + Will vs [10 + LVL] or else become cursed with a Haunting. While Haunted they receive a Unfavored -1 on any roll for an Action which deals damage. Lasts for 3 turns.",
-          "Vengence: [Action] Point at a creature you can see and release a Soul Fragment upon them. They must roll a d20 + Will vs [10 + LVL] or else by struck by a Spirit of Vengence. They take 2d8 spirit damage. If they rolled a Hard Fail they are also gripped by the spirit, Snaring them for 1 turn."
+          "Haunt: [Action] Point at a creature you can see and release a Soul Fragment upon them. They must roll a Will Save or else become cursed with a Haunting. While Haunted they receive a Unfavored -1 on any roll for an Action which deals damage. Lasts for 3 turns.",
+          "Vengence: [Action] Point at a creature you can see and release a Soul Fragment upon them. They must roll a Will Save or else by struck by a Spirit of Vengence. They take 2d8 spirit damage. If they rolled a Hard Fail they are also gripped by the spirit, Snaring them for 1 turn."
         ]//TODO more
       ]
     },
     {
       name: "Cryonic Flash",
       attributes: "[Action] [Ranged]",
-      description: "Reach out towards a creature you can see within 30 ft, a flash of Aether is released from your body and a wave of cold washes over them. They must roll a d20 + Will vs [10 + Power] to resist the effect. On a Fail they take 1d8 Water damage. On a Hard Fail they also are Slowed -1 for 1 turn. Costs 2 ae.",
+      description: "Reach out towards a creature you can see within 30 ft, a flash of Aether is released from your body and a wave of cold washes over them. They must roll a Will Save to resist the effect. On a Fail they take 1d8 Water damage. On a Hard Fail they also are Slowed -1 for 1 turn. Costs 2 ae.",
       proficiencies: [
         [],
         [
@@ -302,7 +302,7 @@ export default [
     {
       name: "Destiny Bomb",
       attributes: "[Action] [AoE] [Melee]",
-      description: "As two Full Actions the Cosmic focuses the Aether within themselves into a volatile high pressure state which begins to pull on the surrounding Aether distorting the karmic destiny of any creature within 20 ft of the Cosmic. The energy is released, spending half of the Cosmic's current ae and dealing 1d10 spirit damage for each ae spent to all creature's hit within the area. Creature's must roll a d20 + Athletics or Acrobatics vs Power, on a Soft Success they talk half damage and on any Fail they take full damage from the effect. After the effect, any creature that failed the check receives a -1 Unfavored on their next d20 roll and any creature that Hard Failed the check considers their next Soft Fail of any kind to be a Hard Fail. The Cosmic also receives the Unfavored effect, and recieves the other effect if any creature Hard Succeeds their roll. These non-damaging effects only occur if more than LVL ae was spent.",
+      description: "As two Full Actions the Cosmic focuses the Aether within themselves into a volatile high pressure state which begins to pull on the surrounding Aether distorting the karmic destiny of any creature within 20 ft of the Cosmic. The energy is released, spending half of the Cosmic's current ae and dealing 1d10 spirit damage for each ae spent to all creature's hit within the area. Creature's must roll an Agility or Will Save, on a Soft Success they talk half damage and on any Fail they take full damage from the effect. After the effect, any creature that failed the check receives a -1 Unfavored on their next d20 roll and any creature that Hard Failed the check considers their next Soft Fail of any kind to be a Hard Fail. The Cosmic also receives the Unfavored effect, and recieves the other effect if any creature Hard Succeeds their roll. These non-damaging effects only occur if more than LVL ae was spent.",
       proficiencies: [
         [],[],
         [
@@ -323,7 +323,7 @@ export default [
         ],
         [
           "Rebound: [Activate] A second Destiny Bomb detonates in the same area at the start of your next turn, this second Destiny Bomb considers all effects and damage as if it spent half the ae that the first one spent. The negative effects only effect the Cosmic if they are within the effect range.",
-          "Karmic Explosion: [Activate] Instead of its usual effects and ignoring any proficiencies, deal 2d10 + Will damage for each ae spent in an area with a radius of 20 ft that is centered at a location you can see within 50 ft. Every creature within the area must roll a d20 + Athletics or Acrobatics vs Power, on any Success they take half the damage, on a Soft Fail they take full damage and are stunned for 1 turn, on a Hard Fail they take 3 Life damage directly before applying the normal damage and are stunned for 2 turns. This effect costs all of your current ae and requires at least half your Max ae to be spent. The unconscious effect from hitting 0 ae from this cost lasts for at least 1 hour regardless of any attempts to wake you."
+          "Karmic Explosion: [Activate] Instead of its usual effects and ignoring any proficiencies, deal 2d10 + Will damage for each ae spent in an area with a radius of 20 ft that is centered at a location you can see within 50 ft. Every creature within the area must roll an Agility or Will Save, on any Success they take half the damage, on a Soft Fail they take full damage and are stunned for 1 turn, on a Hard Fail they take 3 Life damage directly before applying the normal damage and are stunned for 2 turns. This effect costs all of your current ae and requires at least half your Max ae to be spent. The unconscious effect from hitting 0 ae from this cost lasts for at least 1 hour regardless of any attempts to wake you."
         ]
       ]
     },

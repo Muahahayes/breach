@@ -98,7 +98,7 @@ export default [
     {
       name: "Pyrokinesis",
       attributes: "[Action] [Ranged]",
-      description: "As an Action you may either snuff out a torch sized flame within 10 ft, or ignite a small flame in your hand which you may hold for up to 10 minutes or throw up to 10ft away. If you throw the flame, it must land on a flammable surface or it will snuff out. As a Full Action you may ignite a flame which quickly grows and fans out from your hand in a 10 ft cone in front of you. Every creature within the area must roll a d20 + Athletics vs Power to avoid the fire. On a Success they avoid being hit. Deal 1d4 Fire damage to every creature that Fails.",
+      description: "As an Action you may either snuff out a torch sized flame within 10 ft, or ignite a small flame in your hand which you may hold for up to 10 minutes or throw up to 10ft away. If you throw the flame, it must land on a flammable surface or it will snuff out. As a Full Action you may ignite a flame which quickly grows and fans out from your hand in a 10 ft cone in front of you. Every creature within the area must roll an Agility Save to avoid the fire. On a Success they avoid being hit. Deal 1d4 Fire damage to every creature that Fails.",
       proficiencies: [
         [
           "Spectacle: [Activate] You may shape the flame into moving silhouettes. You may use the flame in Perform or Disruption checks as an Activate Action to add your Will to the check."
@@ -107,7 +107,7 @@ export default [
           "Blaze: [Action] As a Full Action, you ignite a streak of fire that shoots out in a straight line. Make a ranged Power attack against a creature you can see within 30 ft. On a hit deal 1d8 Fire damage.",
           "Heat: Increase the damage of Pyrokinesis' Full Action attack to 1d6.",
           "Warmth: [Free] You may produce a radiant heat at will, warming the area around you by 10 F within 10 ft. Lasts as long as desired. This effect is disabled if you enter Psychic Exhaustion.",
-          "Manipulation: [Action] As an Action you gather the fire within a 5 ft radius you can see within 10 ft and may move it up to 20 ft in any direction. Any creature within the fire's destination must roll a d20 + Athletics vs Power to avoid the fire, On a Success they avoid being hit. Deal 1d4 Fire damage to every creature that Fails."
+          "Manipulation: [Action] As an Action you gather the fire within a 5 ft radius you can see within 10 ft and may move it up to 20 ft in any direction. Any creature within the fire's destination must roll an Agility Save to avoid the fire, On a Success they avoid being hit. Deal 1d4 Fire damage to every creature that Fails."
         ],
         [
           "Ignition: [Activate] Whenever one or more creatures Hard Fail a check to avoid fire from Pyrokinesis, you may spend an Activation Action to apply a Burn to the creatures for 2 turns which deals 1d4 Fire damage.",
@@ -121,7 +121,7 @@ export default [
           "Spread: Increase the range of Blaze to 40 ft, and increase your base Pyrokinesis Full Action effect's cone size by 5 ft."        
         ],
         [
-          "Eruption: [Activate] As an Activation Action when you use Blaze, you may release a spurt of molten magma at the target's feet. All creature's within 10 ft of the target must roll a d20 + Athletics vs Power to avoid the magma. On a Hard Success they move out of the area, on a Soft Success they take Blaze's regular damage, on a Fail they take double Blaze's regular damage, and on a Hard Fail they also receive a Burn for 1d8 over 3 turns. Roll an additional Psychic Fatigue check with -1 Unfavored.",
+          "Eruption: [Activate] As an Activation Action when you use Blaze, you may release a spurt of molten magma at the target's feet. All creature's within 10 ft of the target must roll an Agility Save to avoid the magma. On a Hard Success they move out of the area, on a Soft Success they take Blaze's regular damage, on a Fail they take double Blaze's regular damage, and on a Hard Fail they also receive a Burn for 1d8 over 3 turns. Roll an additional Psychic Fatigue check with -1 Unfavored.",
           "Combustion: [Activate] You may use Manipulation to move fire you can see within 50 ft in a radius of 100 ft. Increase the distance you can move this fire by 30 ft. This increases the damage of this Manipulation to 1d8 for every 20 ft in the radius of the fire. Deal half damage to any creature that Soft Succeeds its Athletics check. Roll 2 additional Psychic Fatigue checks with -1 Unfavored."        
         ],
         [
@@ -153,7 +153,7 @@ export default [
     {
       name: "Pursuit",
       attributes: "[Action] [Melee]",
-      description: "When you hit a creature with a basic melee attack you may spend a Full Action to begin a Pursuit on that creature. The creature must roll a d20 + Will vs the value of your attack roll. On a Soft Fail they are under a Pursuit for your next 2 turns. On a Hard Fail the Pursuit lasts 3 turns. During a Pursuit, whenever you hit that creature with a basic melee attack roll a Psychic Fatigue check and if you succeed add 1d4 to the damage dealt. Only one creature may be under your Pursuit at a time.",
+      description: "When you hit a creature with a basic melee attack you may spend a Full Action to begin a Pursuit on that creature. The creature must roll a Will Save. On a Soft Fail they are under a Pursuit for your next 2 turns. On a Hard Fail the Pursuit lasts 3 turns. During a Pursuit, whenever you hit that creature with a basic melee attack roll a Psychic Fatigue check and if you succeed add 1d4 to the damage dealt. Only one creature may be under your Pursuit at a time.",
       proficiencies: [
         [
           "Quirked: Whenever you apply a Quirk in a roll involving the creature, gain Favored +1 to the roll.",
