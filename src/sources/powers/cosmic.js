@@ -34,7 +34,7 @@ export default [
         ],
         [
           "Hardened: Until the person's Shielding drops to 0, reduce physical damage taken by 1.",
-          "Pull: You may pull the person up to 5 ft towards you."
+          "Pull: You may pull the person up to 5 ft towards you. This does not trigger Opportunity."
         ],
         [
           "Reinforced: Hardened reduces damage by your level instead.",
@@ -44,7 +44,7 @@ export default [
         [
           "Greater Shielding: Increase the effect of Potency to 2d6.",
           "Prismatic: Hardened now applies to Elemental and Mental damage (except for Darkness).",
-          "Greater Pull: Increase the effect of Pull to 10 ft."
+          "Greater Pull: Increase the effect of Pull to 10 ft"
         ],
         [
           "Shatter: [Activate] When the person's Shielding drops to 0 from damage, roll a Will check vs Agility for all creatures within 10 ft, deal 1d10 Spirit damage to any creature that fails the check.",
@@ -64,23 +64,27 @@ export default [
       description: "Lay your hand upon a creature and weave the Aether within their body to close up their wounds. Heal 1d6 damage from that person. Costs 1 ae.",
       proficiencies: [
         [
-          "Ease Pain: [Activate] You may spend any amount of the healing to reduce their Strain instead of healing them, and then heal them with the remaining amount."
+          "Ease Pain: [Activate] You may spend any amount of the healing to reduce their Strain instead of healing them, and then heal them with the remaining amount.",
+          "Refund: If you roll a 1 on the healing die this Power costs 0 ae."
         ],
         [
-          "Potency: Increase the amount healed to 1d8. Increases the cost by 1 ae.",
-          "Experienced: Add your level to the amount healed."
+          "Potency: Increase the amount healed to 1d8.",
+          "Experienced: Add your level to the amount healed.",
+          "Greater Refund: Refund now applies to a 1 or a 2 on the healing roll."
         ],
         [
           "Clear Mind: [Activate] The target may ignore their next Psychic Fatigue check.",
-          "Restore: Instead of healing Soul Stitching may end any Blind, Deafen, or Immobilizing effects not originating from a Ancient Bloodline or Mutation Source. Costs 1 additional ae when used in this way.",
-          "Reach: [Activate] You may cast Soul Stitching on a target up to 20 ft away. Only the Empowered, Experienced, Potency, Greater Healing, and Renew proficiencies may be active when the Power is used in this way. Costs 1 additional ae when used in this way."
+          "Restore: Instead of healing, Soul Stitching may end any Blind, Deafen, Silence, Slow or Snare effects not originating from a Bloodline or Mutation Source. Costs 1 additional ae when used in this way.",
+          "Reach: [Activate] You may cast Soul Stitching on a target up to 20 ft away. Only the Refund, Greater Refund, Experienced, and Potency proficiencies may be active when the Power is used in this way. Costs 1 additional ae when used in this way."
         ],
         [
           "Revival: When used on a target below 1 Life, restore 1 Life instead of its usual effects. Costs 1 additional ae when used in this way.",
-          "Greater Healing: Increase the amount healed to 1d10. Requires Potency. Increases the cost by 1 ae."
+          "Greater Healing: Increase the amount healed to 1d10. Requires Potency. Increases the cost by 1 ae.",
+          "Cure: If the target's Survival is at its Max, instead of healing Close Wound cures one Non-Extreme Injury. Costs 1 additional ae when used in this way."
         ],
         [
-          "Renew: Increase the amount healed to 2d6. May apply Restore with its cost. Requires Greater Healing. Increases the cost by 1 ae.",
+          "Renew: Increase the amount healed to 2d6. May apply Restore's effect with its cost. Requires Greater Healing.",
+          "Cleanse: Restore may be used on effects caused by a Curse.",
           "Spirit Stitching: [Activate] You may apply a basic Spirit Shield effect if you possess that Power. Costs 1 additional ae when used in this way."
         ],
         [
@@ -154,6 +158,37 @@ export default [
         ],
         [
           "Inferno: Increase the radius of Combustion by 100 ft."
+        ]
+      ]
+    },
+    {
+      name: "Close Wound",
+      attributes: "[Action] [Touch]",
+      description: "The Cosmic presses their hand against a creature's open wound caused by damage taken during this Round or the previous Round. Heal the creature for up to 5 of the damage caused (healing added from Will's Primary Attribute benefit cannot go above the original damage caused). Costs 1 ae.",
+      proficiencies: [
+        [
+          "Ease Pain: [Activate] You may use Close Wound to reduce Strain gained during this Round or the previous Round.",
+          "Refund: If Close Wound only heals a damage amount equal or less than your level this Power costs 0 ae. (ignores healing caused by Holistic Healing)"
+        ],
+        [
+          "Holistic Healing: healing added from the Will Primary Attribute benefit may go above the original damage caused. (ie, the creature took 3 damage on the previous Round and you have a Will of 4. You may heal the 3 damage, and then an additional 4 points of healing)",
+          "Experienced: Add your level to the maximum possible damage healed."
+        ],
+        [
+          "Greater Refund: Refund now applies to up to double your level.",
+          "Potency: Increase the potential amount healed by 3.", //8
+          "Restore: Instead of healing, Close Wound may end any Blind, Deafen, Silence, Slow or Cripple effects not originating from a Bloodline or Mutation Source. Costs 1 additional ae when used in this way.",
+          "Reach: [Activate] You may cast Close Wound on a target up to 20 ft away. Only the Refund, Greater Refund, Experienced, Holistic Healing and Potency proficiencies may be active when the Power is used in this way. Costs 1 additional ae when used in this way.",
+          "Cure: If the target's Survival is at its Max, instead of healing Close Wound cures one Non-Extreme Injury. Costs 1 additional ae when used in this way."
+        ],
+        [
+          "Revival: When used on a target below 1 Life, restore 1 Life instead of its usual effects. Costs 1 additional ae when used in this way.",
+          "Treatment: [Activate] When Close Wound is used on a target at their Max Survival (or no less than your Will below their Max Survival if Will is your Primary Attribute), instead of healing you may remove one Non-Extreme Injury from the target as an Activation Action. Costs 1 additional ae when used in this way."
+        ],
+        [
+          "Greater Healing: Increase the potential amount healed by 4.", //12
+          "Cleanse: Restore may be used on effects caused by a Curse.",
+          "Greater Cure: Cure may be used on Extreme Injuries. Increases the cost by an additional 2 ae when used to cure an Extreme Injury."
         ]
       ]
     }
@@ -237,15 +272,23 @@ export default [
       proficiencies: [
         [],
         [
-          "Freeze: [Action] You may freeze a body of water you can see within 10 ft of you. You can freeze a size of water equal to a sphere with a radius of 5 ft. Any creature within the water is Snared, and on its turn must make an Athletics check vs Power to break free. On a Fail it remains Snared, on a Success it is no longer snared, but on a Soft Success it is Slowed for 1 turn. Costs 2 ae."
+          "Freeze: [Action] You may freeze a body of water you can see within 10 ft of you. You can freeze a size of water equal to a sphere with a radius of 5 ft. Any creature within the water is Snared, and on its turn must make an Athletics check vs Power to break free. On a Fail it remains Snared, on a Success it is no longer snared, but on a Soft Success it is Slowed for 1 turn. Costs 2 ae.",
+          "Impact: Increase the damage to 1d10.",
+          "Cooling: You may use Cryonic Flash to cool an area. Within 30 ft the temperature is reduced by 20F and the Dry climate effect is nullified."
         ],
         [
           "Deep Cold: Creatures are now Slowed on a Soft Fail.",
-          "Frigid Wave: [Activate] As an Activation Action, Cryonic Flash effects every creature within 30 ft in the direction you are facing. Costs 2 additional ae."
+          "Frigid Wave: [Activate] As an Activation Action, Cryonic Flash effects every creature within 30 ft in the direction you are facing. Costs 2 additional ae.",
+          "Sluggish: Increase the Slow effect to -2.",
         ],
         [
-          "Rooted: When you use Cryonic Flash, you may decide if all creatures affected are Slowed or Snared if they Hard Fail their roll."
-        ]//TODO more
+          "Rooted: When you use Cryonic Flash, you may decide if all creatures affected are Slowed or Snared if they Hard Fail their roll.",
+          "Lingering: The Slow effect is extended by 1 turn.",
+          "Magnitude: Increase the damage to 2d6."
+        ],
+        [
+          "Flash Freeze: If the target is already Slowed or Snared by Cryonic Flash and Hard Fails the check it is Stunned for 1 turn and takes an additional 2d6 damage."
+        ]
       ]
     }
   ],// LVL 2
@@ -259,7 +302,7 @@ export default [
     {
       name: "Destiny Bomb",
       attributes: "[Action] [AoE] [Melee]",
-      description: "The Cosmic focuses the Aether within themselves into a volatile high pressure state which begins to pull on the surrounding Aether distorting the karmic destiny of any creature within 20 ft of the Cosmic. The energy is released, spending half of the Cosmic's current ae and dealing 1d10 damage for each ae spent to all creature's hit within the area. Creature's must roll a d20 + Athletics vs Power, on a Soft Success they talk half damage and on any Fail they take full damage from the effect. After the effect, any creature that failed the check receives a -1 Unfavored on their next d20 roll and any creature that Hard Failed the check considers their next Soft Fail of any kind to be a Hard Fail. The Cosmic also receives both these effects. These non-damaging effects only occur if more than LVL ae was spent.",
+      description: "As two Full Actions the Cosmic focuses the Aether within themselves into a volatile high pressure state which begins to pull on the surrounding Aether distorting the karmic destiny of any creature within 20 ft of the Cosmic. The energy is released, spending half of the Cosmic's current ae and dealing 1d10 spirit damage for each ae spent to all creature's hit within the area. Creature's must roll a d20 + Athletics or Acrobatics vs Power, on a Soft Success they talk half damage and on any Fail they take full damage from the effect. After the effect, any creature that failed the check receives a -1 Unfavored on their next d20 roll and any creature that Hard Failed the check considers their next Soft Fail of any kind to be a Hard Fail. The Cosmic also receives the Unfavored effect, and recieves the other effect if any creature Hard Succeeds their roll. These non-damaging effects only occur if more than LVL ae was spent.",
       proficiencies: [
         [],[],
         [
@@ -270,17 +313,17 @@ export default [
           "Reach: Increase the range to 30 ft.",
           "Magnitude: Increase the total damage by 2d10.",
           "Luck: If any creature Hard Failed their check, you don't gain a -1 Unfavored on your next d20 roll.",
-          "Bad Karma: [Activate] Any creature that Soft Failed their check considers their next Soft Fail of any kind to be a Hard Fail."
+          "Bad Karma: [Activate] As an Activation Action while releasing the Destiny Bomb, any creature(s) that Soft Failed their check considers their next Soft Fail of any kind to be a Hard Fail."
         ],
         [
           "Deadly Fate: Gain 1 ae for each creature killed by the blast.",
-		      "Overwhelming: [Activate] For every 2 ae spent, increase the damage by 1d10.",
-		      "Fortune: If any creature Hard Failed their check, gain a +1 Favored on your next d20 roll.",
+		      "Overwhelming: [Activate] As an Activation Action increase the damage by 1d10 for every 2 ae spent.",
+		      "Fortune: If any creature Hard Failed their check, gain a +1 Favored on your next d20 roll. Requires Luck.",
 		      "Effort: You may spend additional ae up to your current ae."
         ],
         [
           "Rebound: [Activate] A second Destiny Bomb detonates in the same area at the start of your next turn, this second Destiny Bomb considers all effects and damage as if it spent half the ae that the first one spent. The negative effects only effect the Cosmic if they are within the effect range.",
-          "Karmic Explosion: [Activate] Instead of its usual effects and ignoring any proficiencies, deal 2d10 + Will damage for each ae spent in an area with a radius of 20 ft that is centered at a location you can see within 50 ft. Every creature within the area must roll a d20 + Athletics vs Power, on any Success they take half the damage, on a Soft Fail they take full damage and are stunned for 1 turn, on a Hard Fail they take 3 Life damage directly before applying the normal damage and are stunned for 2 turns. This effect costs all of your current ae and requires at least half your Max ae to be spent. The unconscious effect from hitting 0 ae from this cost lasts for at least 1 hour regardless of any attempts to wake you."
+          "Karmic Explosion: [Activate] Instead of its usual effects and ignoring any proficiencies, deal 2d10 + Will damage for each ae spent in an area with a radius of 20 ft that is centered at a location you can see within 50 ft. Every creature within the area must roll a d20 + Athletics or Acrobatics vs Power, on any Success they take half the damage, on a Soft Fail they take full damage and are stunned for 1 turn, on a Hard Fail they take 3 Life damage directly before applying the normal damage and are stunned for 2 turns. This effect costs all of your current ae and requires at least half your Max ae to be spent. The unconscious effect from hitting 0 ae from this cost lasts for at least 1 hour regardless of any attempts to wake you."
         ]
       ]
     },

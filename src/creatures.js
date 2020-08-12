@@ -67,14 +67,14 @@ function Creatures({ match }) {
       let levelContent = [];
       if (creatures[level].length > 0) {
         if (level > 0) levelContent.push(<hr className="searchHR"/>);
-        levelContent.push(<h2>[LVL {Number(level)+1}]</h2>);
+        levelContent.push(<h2>[LVL {Number(level)}]</h2>);
       }      
       for (let creature of creatures[level]) {
         if (creature.name) {
           levelContent.push(<div className={`searchEntry`} id={creature.name}>{renderCreature(creature, match.params.t)}</div>);
         }
       }
-      let idStr = `level${Number(level)+1}`
+      let idStr = `level${Number(level)}`
       let levelBlock = React.createElement("div", {className: "levelBlock", id: idStr}, levelContent);
       content.push(levelBlock);
     }

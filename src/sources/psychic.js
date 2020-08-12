@@ -18,7 +18,8 @@ export default {
       "Focused: Add your level to your defensive Will checks.",
       "Uncensored: Once per day you may at will end a Silence status effect active on you.",
       "Two-Handed Tempo: Two-Handed Speed reduces the penalty by an additional 1 (to a minimum of 0).",
-      "Constitution: You may add your level to your Stamina rolls."
+      "Constitution: You may add your level to your Stamina rolls.",
+      "Clarity: You may add your level to your Will rolls."
     ],
     [
       "No Resistance: Roll your Psychic Fatigue checks after the main roll of using a Power. Whenever you Hard Succeed while using a Power, you do not make the base Psychic Fatigue check for that use of that Power.",

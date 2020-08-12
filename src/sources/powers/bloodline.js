@@ -1,6 +1,21 @@
 export default [
   [ // LVL 1
     {
+      name: "Vampirism",
+      attributes: "[Self] [Passive]",
+      description: "At, and only at, LVL 1 you may select this Power. Gain the Bloodthirst, Darkflight, and Gaze Powers. Take 2d4 fire damage if you are touched by sunlight, this can only occur once every 10 minutes but if you remain in the sunlight you feel incredibly uncomfortable and begin to blister. You are pale and feel cold to the touch. You do not age. Each time you use Bloodthirst on a living creature you gain 1 FP, you gain no benefits from food and cannot gain FP otherwise. You gain the Hunger proficiency on your Bloodthirst for free.",
+      proficiencies: [
+        [],[],
+        [
+          "Warmth: You may appear darker skin tones. You feel like a normal temperature to the touch."
+        ],
+        [
+          "UV Resistance: You may spend 1 hour a day in direct sunlight before you begin to take damage.",
+          "Metabolism: You may eat raw meat or bone marrow to satisfy your hunger."
+        ]
+      ]
+    },
+    {
       name: "Rampage",
       attributes: "[Action] [Self]",
       description: "Your blood boils with rage throwing you into a violent Rampage. Spend up to 5 Bloodlust to enter a Rampage for that many turns. During a Rampage you are immune to to Sleep, Unconscious, Stun, Fear, and Immobilize effects. Your Rampage ends early if you enter Apathy. A turn counts as 2 towards the duration if you do not deal any damage to a creature during that turn.",
@@ -105,13 +120,24 @@ export default [
     {
       name: "Hemotremor",
       attributes: "[Action] [AOE]",
-      description: "You release a wave of dark energy 30 ft around you. Roll a d20 + Use Power. All creatures must roll a d20 + Will vs your roll, any that fail take 1d4 Darkness damage. Costs 2 Bloodlust.",
+      description: "You release a wave of dark energy 30 ft around you. All creatures must roll a d20 + Will vs [10 + Power], any that fail take 1d4 Darkness damage. Costs 2 Bloodlust.",
       proficiencies: [
         [
+
         ],
         [
           "Malignant: Add your level to the Severity roll of any Injury caused by Hemotremor's damage."
         ]//TODO more
+      ]
+    },
+    {
+      name: "Gaze",
+      attributes: "[Action] [Ranged]",
+      description: "You stare into a creature's eyes and assault their mind with dark energy. They must roll a d20 + Will vs [10 + Power] to withstand the effect. On a Fail they experience intense horror for as long as they look at you, and for 1 turn after looking away they are Feared. Has no effect on creature's of a higher level than you. Costs 1 Bloodlust.",
+      proficiencies: [
+        [
+          
+        ]
       ]
     }
   ], // LVL 1
@@ -134,7 +160,7 @@ export default [
         [
           "Deadly Aim: Permanently add 2 to your Marksmanship Skill",
           "Dark Twin: You may spend Bloodlust to use Dark Shot with your Twin Shot attack.",
-          "Piercing Shot: [Action] As an Action, you may attempt to apply the Sundered effect to the victim hit. They may roll d20 + Stamina vs your Use Power to resist the effect."
+          "Piercing Shot: [Action] As an Action, you may attempt to apply the Sundered effect to the victim hit. They may roll d20 + Stamina vs [10 + Power] to resist the effect."
         ],
         [
           "Overwhelm: [Activate] If your Dark Shot deals a killing blow you may use any Power which costs Bloodlust. This may only trigger once per turn."
@@ -188,14 +214,14 @@ export default [
     {
       name: "Hex",
       attributes: "[Action] [Ranged]",
-      description: "Point at a creature you can see within 30 ft. and make a Use Power attack. On a hit, apply a Hex Curse to the target. While Hexed, the creature receives an Unfavored -1 on rolls to resist or avoid negative effects or attacks by you. Lasts 1 hour. Costs 2 Bloodlust.",
+      description: "Point at a creature you can see within 30 ft. and make a Power attack. On a hit, apply a Hex Curse to the target. While Hexed, the creature receives an Unfavored -1 on rolls to resist or avoid negative effects or attacks by you. Lasts 1 hour. Costs 2 Bloodlust.",
       proficiencies: [
         [],
         [
           /*
           ideas: 
           increase injury severity rolls
-          reduce Use Power
+          reduce Power
           chance to cause Fear effect if they hit you
           slow -2
           shorten hunger/thirst quota by 1 day
@@ -249,7 +275,7 @@ export default [
     {
       name: "Miasma",
       attributes: "[Action] [AOE] [Melee]",
-      description: "As an Action you release a cloud of poisonous gas from your body, which floats in place and takes up an area with a radius of 10 ft. Any creature other than yourself that is within the cloud must roll a d20 + Stamina vs [10 + Use Power] each turn they are within the cloud. On a Fail they take 2d8 Nature damage, on a Hard Fail they are also Poisoned for an additional 2d4 Nature damage for 3 turns with a difficulty of [10 + Use Power].",
+      description: "As an Action you release a cloud of poisonous gas from your body, which floats in place and takes up an area with a radius of 10 ft. Any creature other than yourself that is within the cloud must roll a d20 + Stamina vs [10 + Power] each turn they are within the cloud. On a Fail they take 2d8 Nature damage, on a Hard Fail they are also Poisoned for an additional 2d4 Nature damage for 3 turns with a difficulty of [10 + Power].",
       proficiencies: [
         [],[],
         [
@@ -266,7 +292,7 @@ export default [
       proficiencies: [
         [],[],[],
         [
-          "Nullify: As a Free Action, whenever a creature within 10 ft attempts to use a Power, you may spend 1 Bloodlust to prevent the attempt. The creature must roll a d20 + Will vs [10 + LVL] to resist this effect.",
+          "Nullify: As a Free Action, whenever a creature within 10 ft attempts to use a Power, you may spend 1 Bloodlust to prevent the attempt. The creature must roll a d20 + Will vs [10 + Power] to resist this effect.",
           "Unravel: Whenever a creature, object, or an Engraving upon an object created by a Power enters the dark energy of the Shroud and you are aware of it, you may spend 1 Bloodlust as a Free Action to destroy it.",
           "Persistent: The effect lasts 1 hour, and is immune to any Powers or effects that attempt to remove it or prevent the initial use of this Power, including another Shroud. No longer costs Bloodlust per minute."
         ],

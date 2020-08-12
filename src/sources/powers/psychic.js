@@ -17,7 +17,7 @@ export default [
         ],
         [
           "Wave: In addition to dealing damage, you may push all targets hit 10 ft away from you.",
-          "Impact: Increases the damage to 1d4 + Will.",
+          "Impact: Increases the damage to 1d4.",
           "Shout: [Activate] Instead of dealing damage or other effects, as an Activation Action you may inflict Stun on every target hit for 1 turn. Roll an additional Psychic Fatigue check for each target hit. You do not regain this Activation Action on your next turn."
         ],
         [
@@ -25,7 +25,7 @@ export default [
           "Telepathic: You may roll your attack vs their Avoidance + Will instead, this Power deals Psychic damage instead of Kinetic when used this way." 
         ],
         [
-          "Magnitude: Increases the damage to 1d6 + Will.",
+          "Magnitude: Increases the damage to 1d6.",
           "Focused: You may direct your Psi Burst at a single creature in range. Instead of dealing damage or other effects, inflict Dumb on hit for LVL turns."
         ],
         [
@@ -79,7 +79,7 @@ export default [
           "Impact: Increases the damage to 1d6."
         ],
         [
-          "Swift Strike: [Activate] After landing a melee hit, add LVL to your next speed roll when determining turn order.", 
+          "Swift Strike: [Activate] After landing a melee hit, add LVL Initiative to your next speed roll when determining turn order.", 
           "Phase: [Activate] The blade cuts through armor more effectively, add LVL to your attack roll.",
           "Magnitude: Increases the damage to 1d8. Requires Impact.",
           "Quirked: When using a Quirk on this attack, increase the damage to 1d10."
@@ -132,7 +132,7 @@ export default [
     {
       name: "Foresight",
       attributes: "[Free] [Self]",
-      description: "Use while performing a skill check, the next time you use that same skill (After at least an hour has passed), add double your normal skill bonus to that roll. This roll cannot Hard Succeed. You may store one Foresight roll at a time, you may not store a Foresight roll from a skill check that is using a Foresight roll.",
+      description: "Use while performing a Skill check, the next time you use that same Skill (After at least an hour has passed), add double your normal Skill bonus to that roll. This roll cannot Hard Succeed. You may store one Foresight roll at a time, you may not store a Foresight roll from a skill check that is using a Foresight roll.",
       proficiencies: [
         [// TODO: if skills become percentile, redo forecast. instead, you 'save' ONE of the d10 rolls (and if its tens or ones digit) and may use that in the next percentile roll
           "Forecast: [Free Action] Before rolling any d20 you may call out a number between 1-4. Roll a d4 and the d20, if you roll your chosen d4 number you may 'save' the number shown on the d20 and do not need to roll a Psychic Fatigue check. The next time you use a d20 for the same purpose, you may substitute the roll with the saved number. If you fail to roll your chosen number, roll a Psychic Fatigue check. You can store a Forecast roll once per full sleep.",
@@ -157,7 +157,7 @@ export default [
       proficiencies: [
         [
           "Quirked: Whenever you apply a Quirk in a roll involving the creature, gain Favored +1 to the roll.",
-          "Charge: [Activate] [Action] After moving you may, as an Activation Action, use your Full Action to make a basic melee attack against a creature you are Pursuing. This does not cause a Psychic Fatigue check."
+          "Charge: [Activate] After moving you may, as an Activation Action, use your Full Action to make a basic melee attack against a creature you are Pursuing if you are within melee range. This does not cause a Psychic Fatigue check."
         ],
         [
           "Impact: Increase the damage to 1d6.",
@@ -167,7 +167,7 @@ export default [
         ],
         [
           "Magnitude: Increase the damage to 1d8. Requires Impact.",
-          "Chase: [React] If the creature moves further than 10 feet away from you, as a Reaction Action you may move 10 feet towards the creature.",
+          "Chase: [React] Using an Opportunity to Chase a creature you are Pursuing is increased to 10 ft.",
           "Advantage: While a creature is under your Pursuit, gain a Favored +1 to your basic melee attack rolls against that creature.",
           "Pressure: While a creature is under your Pursuit, you may give the creature an Unfavored -1 to attack and power rolls against you, but you do not gain the benefits of the Advantage proficiency. Requires Advantage.",
           "Gifted: You may trigger Pursuit on any attack or power which deals damage while you are within 10 feet of the creature."
@@ -176,7 +176,7 @@ export default [
           "Fork: You may apply your Pursuit to a second creature at a time.",
           "Split: [Activate] If two creatures have your Pursuit and are both within 10 feet of you, you may use your Activation Action to perform a basic melee attack on each of the creatures.",
           "Relentless: Chase also allows you to make a basic melee attack on the creature as a Free Action.",
-          "Force: Whenever you apply a Quirk to a roll which results in damage, increase the damage by 1d6."
+          "Force: Whenever you apply a Quirk to a roll which results in damage against a creature you are Pursuing increase the damage by 1d6."
         ],
         [
           "Favored: Advantage now applies to any rolls against the creature.",

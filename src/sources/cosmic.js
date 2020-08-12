@@ -16,7 +16,8 @@ export default {
       "Third Eye: You are immune to the Blind effect.",
       "Focused: Add your level to your defensive Will checks.",
       "Channeled Aether: [Activate] As an Activation Action you may delay any Power you use by up to LVL turns. The Power's targeting does not move from the original location. When the Power takes effect, you may replace damage/healing/effect dice up to the number of turns delayed with their maximum value.",
-      "Constitution: You may add your level to your Stamina rolls."
+      "Constitution: You may add your level to your Stamina rolls.",
+      "Clarity: You may add your level to your Will rolls."
     ],
     [
       "Pond: Increase your maximum well by 5.",

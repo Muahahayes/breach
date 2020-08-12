@@ -7,7 +7,7 @@ content: <div>
   <hr/>
   <h3>Turns and Rounds:</h3>
   <p>Combat is divided into moments in time called Turns, Rounds, and Phases. All players take Turns doing actions until the Combat has ended. <br/><br/>
-  <b>Rounds:</b><br/> A collection of Turns, each creature takes 1 Turn in order and the Round concludes after each creature has finished their Turns. At the start of a new round every creature rolls their Speed dice to determine the maximum distance of their Movement Action and order in the next Round. Then, all creatures go in order and decide if they wish to use their Movement Action or not and where they would like to move. After movement has concluded, each creature takes its turn in order and uses its Actions (Movement Actions may not be used during a regular Turn).<br/><br/>
+  <b>Rounds:</b><br/> A collection of Turns, each creature takes 1 Turn in order and the Round concludes after each creature has finished their Turns. At the start of a new round every creature rolls their Speed dice and add any Movement bonuses to determine the maximum distance of their Movement Action and add any Initiative bonuses to the roll to determine order in the next Round. Then, all creatures go in order and decide if they wish to use their Movement Action or not and where they would like to move. After movement has concluded, each creature takes its turn in order and uses its Actions (Movement Actions may not be used during a regular Turn).<br/><br/>
   <b>Turns:</b><br/> A segment of time about 5 seconds long. Creatures may use their Full Action(s) during their Turn, if they did not move during the start of the Round they may use an additional Full Action. The order in which creatures take their turn is determined by the Speed they rolled for the current round. A tie between players and non-player creatures always favors the player. A tie between players may be decided by the group of players at the moment the turn is available (to settle disagreements roll a d20 contest to break the tie). If a player has minions/pets they may do those actions in any order after their character has finished their turn.</p>
   <hr/>
   <h3>Actions:</h3>
@@ -48,5 +48,8 @@ content: <div>
   <hr/>
   <h3>Prone:</h3>
   <p>If you fall or are knocked to the ground you are Prone. While Prone you cannot use your Movement Action except to stand up, and you begin your turn with only 1 Full Action. When rolling your Speed dice at the start of a round, if you are Prone the result is reduced by half. On your turn you may stand up and end the Prone effect as a Movement Action. While you are Prone, enemy attacks are Favored +1 against you. Your defensive rolls while prone are considered a Hard Fail when you roll a Soft Fail.</p>
+  <hr/>
+  <h3>Opportunity:</h3>
+  <p>Whenever a creature moves out of your melee range you may take an Opportunity. This Opportunity may be used to Impede, Attack, or Chase. When you Impede you reduce their Movement Distance by 5 ft. When you Attack you may make 1 basic melee attack against the creature. When you Chase you may move 5 ft in the direction the creature is moving.</p>
 </div>
 }

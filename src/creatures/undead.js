@@ -4,6 +4,9 @@ export default {
 name: 'Undead',
 description: <p>Creature's that have been brought back from death into varying states of life or undeath.</p>,
 creatures:[
+  [ // lv0
+
+  ], // lv0
   [// lv1
     { // select all this to copy paste
       name: 'Thrall',
@@ -44,7 +47,7 @@ creatures:[
   ],
   [// lv2
 
-  ],//ect
+  ],// lv2
   [// lv3
     { // select all this to copy paste
         name: `Wight`,

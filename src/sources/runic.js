@@ -18,7 +18,8 @@ export default {
       "Receptive: Gain +LVL to any healing you receive from a Cosmic or Runic Power.",
       "Proficient: When you level up, you may select 4 Powers instead of 3. At least 1 Power must be below LVL 3.",
       "Dusk: Increase the effect of Twilight by 1.",
-      "Constitution: You may add your level to your Stamina rolls."
+      "Constitution: You may add your level to your Stamina rolls.",
+      "Clarity: You may add your level to your Will rolls."
     ],
     [
       "Nightfall: Increase the effect of Twilight by 1.",

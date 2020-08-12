@@ -66,7 +66,8 @@ content: <div>
   </p>
   <hr/>
   <h3 id="injury">Injury:</h3>
-  <p>When you receive an injury for any reason roll 2d10, the first roll decides the severity. The second roll decides where the injury occurs (Physical/Elemental damage effects the body, and Mental effects the mind). If at any time all 5 areas of the Body or Mind have an Extreme injury you instantly drop to 0 Life and become <Link to="/rules/stats">Dying</Link>. When a Life point is healed you may select 1 Injury to be removed. Life points for Extreme severity Injuries cannot be healed until the Injury is cured.</p>
+  <p>When you receive an injury for any reason roll 2d10, the first roll decides the severity. The second roll decides where the injury occurs (Physical/Elemental damage effects the body, and Mental effects the mind). If you already have an Extreme Injury in that location lose 1 Life instead and roll an Injury for that Life lost.<br/>
+    If at any time all 5 areas of the Body or Mind have an Extreme injury you instantly drop to 0 Life and become <Link to="/rules/stats">Dying</Link>. When a Life point is healed you may select 1 Injury to be removed. Life points for Extreme severity Injuries cannot be healed until the Injury is cured.</p>
   <h3>Simplified Injury Table:</h3>
   <p>While playing the Simplified ruleset, or for non-person creatures, roll 1d10 on the Simplified Injury Table and do not worry about the location of the Injury.</p>
   <table>
@@ -75,7 +76,7 @@ content: <div>
     <tr><td>d10</td><td>Severity</td><td>Effect</td></tr>
     <tr><td>1-4</td><td>Mild</td><td>No Effect</td></tr>
     <tr><td>5-8</td><td>Moderate</td><td>-LVL Survival</td></tr>
-    <tr><td>9-10</td><td>Heavy</td><td>Moderate and <Link to="/rules/stats#favored">Unfavored</Link> -1 on Attacks, Skills and Powers</td></tr>
+    <tr><td>9-10</td><td>Heavy</td><td><Link to="/rules/stats#favored">Unfavored</Link> -1 on All Rolls</td></tr>
     </tbody>
   </table>
   <h3>Full Injury Tables:</h3>
@@ -86,8 +87,8 @@ content: <div>
       <tbody> 
       <tr><td>d10</td><td>Severity</td><td>Effect</td></tr>
       <tr><td>1-3</td><td>Mild</td><td>No Effect</td></tr>
-      <tr><td>4-6</td><td>Moderate</td><td>Read Body/Mind</td></tr>
-      <tr><td>7-9</td><td>Heavy</td><td>Read Body/Mind</td></tr>
+      <tr><td>4-7</td><td>Moderate</td><td>Read Body/Mind</td></tr>
+      <tr><td>8-9</td><td>Heavy</td><td>Read Body/Mind</td></tr>
       <tr><td>10</td><td>Extreme</td><td>Read Body/Mind</td></tr>
       </tbody>
     </table>
@@ -97,11 +98,11 @@ content: <div>
         <caption>Body Injuries</caption>
         <tbody> 
         <tr><td>d10</td><td>Severity</td><td>Moderate</td><td>Heavy</td><td>Extreme</td></tr>
-        <tr><td>1-2</td><td>Legs</td><td>-1 speed</td><td>-LVL speed and knocked Prone</td><td>Heavy and can't use Movement Action</td></tr>
-        <tr><td>3-4</td><td>Lower Body</td><td>-1 Avoidance</td><td>-LVL Avoidance</td><td>Heavy and 1/2 Carry Weight</td></tr>
-        <tr><td>5-6</td><td>Arms</td><td>-1 Attack Rolls</td><td>Unfavored -1 to Attack Rolls</td><td>Heavy and cannot use 1 arm</td></tr>
-        <tr><td>7-9</td><td>Upper Body</td><td>-LVL Max Survival</td><td>Moderate and lose 1 additional Life</td><td>Heavy but -1/2 Survival instead</td></tr>
-        <tr><td>10</td><td>Head</td><td>Unfavored -1 All Rolls (up to -3)</td><td>Moderate and roll a Moderate effect from the Mental Damage injury table</td><td>Heavy and Unconscious until this Injury is cured</td></tr>
+        <tr><td>1-2</td><td>Legs</td><td>-1 Speed</td><td>-LVL Speed and knocked Prone</td><td>Heavy and can't use Movement Action</td></tr>
+        <tr><td>3-4</td><td>Lower Torso</td><td>-1 Avoidance</td><td>-LVL Avoidance</td><td>Heavy and Paralyzed</td></tr>
+        <tr><td>5-6</td><td>Arms</td><td>-1 Attack Rolls</td><td>Unfavored -1 to Attack Rolls</td><td>Heavy and 1 arm is Crippled</td></tr>
+        <tr><td>7-9</td><td>Upper Torso</td><td>-LVL Max Survival</td><td>Lose 1 additional Life (Mild Injury)</td><td>Heavy and add your level to Physical Damage received</td></tr>
+        <tr><td>10</td><td>Head</td><td>Unfavored on -1 All Rolls</td><td>Moderate and roll a Moderate effect from the Body Injury table</td><td>Unconscious until this Injury is cured</td></tr>
         </tbody>
       </table>
     </div>
@@ -110,11 +111,11 @@ content: <div>
         <caption>Mind Injuries</caption>
         <tbody> 
         <tr><td>d10</td><td>Severity</td><td>Moderate</td><td>Heavy</td><td>Extreme</td></tr>
-        <tr><td>1-2</td><td>Memory</td><td>On your next turn you cannot use an action on any creature which is not in line of sight at the start of your turn</td><td>Give your character sheet to the GM, you cannot look at the sheet until this injury is cured</td><td>Heavy and any time you try to recall a name, location, or event roll a d4, on a 1 you don't remember any of it and on a 2 or 3 you forget some meaningful detail</td></tr>
-        <tr><td>3-4</td><td>Balance</td><td>-1 Avoidance</td><td>-LVL Avoidance</td><td>Heavy and 1/2 Carry Weight</td></tr>
+        <tr><td>1-2</td><td>Memory</td><td>You cannot use an action on or move towards any creature which is not in line of sight</td><td>Give your character sheet to the GM, you cannot look at the sheet until this injury is cured</td><td>Heavy and any time you try to recall a name, location, or event roll a d4, on a 1 you don't remember any of it and on a 2 or 3 you forget a meaningful detail</td></tr>
+        <tr><td>3-4</td><td>Balance</td><td>-1 Avoidance</td><td>-LVL Avoidance</td><td>Heavy and Paralyzed</td></tr>
         <tr><td>5-6</td><td>Sensory</td><td>-1 Attack Rolls</td><td>Unfavored -1 Attack Rolls</td><td>Heavy and lose sense of touch</td></tr>
-        <tr><td>7-9</td><td>Emotional</td><td>-LVL Max Survival</td><td>Moderate and lose 1 additional Life</td><td>Heavy but -1/2 Survival instead</td></tr>
-        <tr><td>10</td><td>Cognitive</td><td>Unfavored -1 All Rolls (up to -3)</td><td>Moderate and roll a Moderate effect from the Mental Damage injury table</td><td>Heavy and Asleep until this Injury is cured</td></tr>
+        <tr><td>7-9</td><td>Emotional</td><td>-LVL Max Survival</td><td>Lose 1 additional Life (Mild Injury)</td><td>Heavy and add your level to Mental Damage received</td></tr>
+        <tr><td>10</td><td>Cognitive</td><td>Unfavored on -1 All Rolls</td><td>Moderate and roll a Moderate effect from the Mind Injury table</td><td>Unconscious until this Injury is cured</td></tr>
         </tbody>
       </table>
     </div>

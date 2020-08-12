@@ -18,7 +18,8 @@ export default {
       "Regenerative: Gain +LVL to any healing you receive from a Power.",
       "Ancient Endurance: Increase your Stamina by 1 and increase its maximum to [LVL + 4].",
       "Two-Handed Tempo: Two-Handed Speed reduces the penalty by an additional 1 (to a minimum of 0).",
-      "Constitution: You may add your level to your Stamina rolls."
+      "Constitution: You may add your level to your Stamina rolls.",
+      "Clarity: You may add your level to your Will rolls."
     ],
     [
       //4

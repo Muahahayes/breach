@@ -4,7 +4,6 @@ export default {
   name: "Skills",
   content: <div>
   <span>A Skill increases the result of d20 rolls which attempt to accomplish some task. All Skills start at 0 and are increased by the starting points given by your Race and by gaining <Link to="leveling">XP</Link> from when you <b>Hard Succeed</b> or <b>Hard Fail</b>.</span><br/>
-{/* Make skills a percentile roll (2 d10s read as tens and ones digits) instead of a d20? So skills scaling really high makes sense, and then Attribute checks are still d20 so attributes effectively scale 5x faster than skills. Note, if we do this then Hard/Soft should be 10 instead of 5 when rolling a d100 */}
   <hr/>
   <h3>Hard/Soft Rolls:</h3>
   <span>When you roll a d20 to pass a check, there are 4 different tiers of results: <br/>
@@ -25,6 +24,7 @@ export default {
   <hr/>
   <h3>Limits:</h3>
   <span>The maximum points you may have in a Skill is 5x your Level. If a Skill is at its maximum and the next XP you would gain would lead to all 5 Skill choices for your next increase being already their max value it cannot gain XP from a <b>Hard Succeed/Fail</b>. (ie. your Athletics and Crafstman are both already at 5 times your level, you have gained XP from Athletics twice and Craftsman twice, you cannot gain XP from either Skill until you have gained an XP and increased a different Skill.)</span><br/>
+  <span>After reaching LVL 5 you may only increase at most 5 Skills above 20 points.</span>
 
   <hr/>
   <h3>Inspiring Expertise:</h3>

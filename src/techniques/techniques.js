@@ -47,7 +47,7 @@ export default {
     name: "Quick Strike",
     skill: "Martial Arms | Marksman",
     requirement: 5,
-    description: "When you do a basic Attack Action you may use your Activation Action to increase the tempo of your strike. Roll a d4, add that value to your Speed roll at the start of the next round while determining turn order, this does not increase your movement distance.\n\nWhen your Skill has increased to 10, roll a second d4 when using this Technique."
+    description: "When you do a basic Attack Action you may use your Activation Action to increase the tempo of your strike. Roll a d4, add that value as Initiative to your Speed roll at the start of the next round while determining turn order.\n\nWhen your Skill has increased to 10, roll a second d4 when using this Technique."
   },
   "deep breathing" : {
     name: "Deep Breathing",

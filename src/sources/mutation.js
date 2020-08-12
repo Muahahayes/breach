@@ -13,12 +13,14 @@ export default {
     [
       "Expanded Lungs: You can hold your breath twice as long.",
       "Owl Neck: You can face behind you without turning your body, and you can rotate your head upside down.",
-      "Genetic Morph: At 5 stacks, gain a new Power up to [LVL 3]. This does not count as Leveling Up. (Repeatable up to 5 stacks, one Power may be gained from this Proficiency)"
+      "Genetic Morph: At 5 stacks, gain a new Power up to [LVL 3]. This does not count as Leveling Up. (Repeatable up to 5 stacks, one Power may be gained from this Proficiency)",
+      "Fast Reflexes: Add 1 Initiative to your Speed rolls."
     ],
     [
       "Regenerative: Gain +LVL to any healing you receive.",
       "Evolutionary Endurance: Increase your Stamina by 1 and increase its maximum to [LVL + 4].",
-      "Constitution: You may add your level to your Stamina rolls."
+      "Constitution: You may add your level to your Stamina rolls.",
+      "Clarity: You may add your level to your Will rolls."
     ],
     [
       "Photosynthesis: You gain 1 Food Point whenever you take a Break in direct sunlight."
