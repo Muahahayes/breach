@@ -63,22 +63,21 @@ function App() {
     Daily: Add 2 Creatures
     Ryan is now writing content, up to him what he prioritizes while I get things working in the background
 
-    damage might scale a bit too hard compared to survivability?
     Equipment
     finish Exploration.js
     Make a rough draft of a character sheet
     Start adding pages of content so there's enough for a playtest campaign this summer?    
     Go back over the rules and iterate/refine them (playtest ready at this point if *I* GM it)
 
-    Refactor the site to have content pages load from a separate site I make as an API, so all the content doesn't load in one chunk at the start
-    Make GM guide, put link in the smaller navbar
-    ***More TODO will show up here making the GM guide***
-    Go back over the rules and iterate/refine them
-
     Make a login system, only allow official users to see the World and GM books, put login and guidebook links in a smaller navbar above content-head
     Make a character sheet wizard, saves a sheet to a user
     Make roll calculator, pulls a character from the user
     Reading the player book is *free* but the user tools require an account login
+    Refactor the site to have content pages load from a separate site I make as an API, so all the content doesn't load in one chunk at the start
+
+    Make GM guide, put link in the smaller navbar
+    ***More TODO will show up here making the GM guide***
+    Go back over the rules and iterate/refine them
     (Now in ALPHA state, playtestable for other GMs)
 
     Work with Ryan on an intro campaign
