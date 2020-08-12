@@ -15,6 +15,7 @@ export default {
   racials:[
     "Stride: Add 10ft to your Movement distance. Add 5 miles to your travel distance.",
 		"Long Arms: Add 5ft to your melee reach.",
-		"Hardy: Each point of Stamina increases your Survival by 2 instead of 1."
+    "Hardy: Increase your Max Survival by 5.",
+    "Muscular: Your Strength may go up to [LVL + 4]."
   ]
 }
