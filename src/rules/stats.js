@@ -19,7 +19,7 @@ export default {
     <ul>
       <li><span>Strength (Raw power, anaerobic activity): Every point of Strength increases your Equip Weight by 1 and is required to use heavier equipment.</span><br/></li>
       <li><span>Agility (Physical nimbleness and flexibility): Add half your Agility value to your Avoidance stat.</span><br/></li>
-      <li><span>Will (Mental strength): Will is used to resist some non-physical effects.</span><br/></li>
+      <li><span>Will (Mental strength): Add your Will to the Save Difficulty on your Powers.</span><br/></li>
       <li><span>Stamina (Life and endurance): Every point of Stamina increases your Survival by 2 and the distance you can travel per day by 5 miles. Every even number of Stamina increases your Life by 1.</span><br/></li>
     </ul>
     <br/>
@@ -36,7 +36,7 @@ export default {
     <h3>Secondary Stats:</h3>
     <span><b>Shielding:</b> You start with 0 Shielding. You may gain Shielding from various effects in the game. When you have at least 1 Shielding, Attacks which reduce your Survival will first reduce your Shielding instead, if the Attack deals damage greater than your Shielding the remaining damage after your Shielding is reduced to 0 is subtracted from your Survival. You lose any Shielding after a Full Sleep. </span><br/>
     <br/>
-    <span><b>Avoidance:</b> Your character gains Avoidance from their equipment, Agility, and some Powers. When a creature attempts to Attack your character, the difficulty of the Attack roll is determined by your Avoidance.</span><br/>
+    <span><b>Avoidance:</b> Your character gains Avoidance from their equipment, Agility, and some Powers. When a creature attempts to Attack your character, the difficulty of the Attack roll is determined by your Avoidance. If you do not have any Equipment that is increasing your Avoidance, your default Avoidance is 12 + Half your Agility.</span><br/>
     <br/>
     <span><b>Speed:</b> You have Speed dice which are used for determining your maximum distance when doing a Movement Action. The number of dice and their size is determined by your Race and may be increased by some Powers.</span><br/>
     <hr id="favored"/>
@@ -45,6 +45,9 @@ export default {
       If more than 1 Bonus/Penalty is active, add together the +/- numbers to determine the final result (with a maximum of +/- 3). For example, a player with a Favored +3 bonus has been given an Unfavored -1 penalty. +3 added to -1 equals +2 so the player would add twice their level to their roll. When rolling an opposing roll against another creature an Unfavored bonus is based on the opposing creature's level instead of your own.
     </p>
     <hr/>
-    <span><b>A note on numbers:</b> Whenever you calculate a fraction of a number, if the result is not a whole number you must round down to the nearest non-zero whole number (If it is zero, treat it as 1).</span><br/>
+    <h3>Saving Rolls:</h3>
+    <p>Sometimes when a Power attempts to apply a negative effect to you, there is an Attribute Save required to Save yourself from the effect. Roll a d20 plus the Attribute declared against the Save Difficulty of the Power.
+    The Save Difficulty of a Power is equal to 7 + Will + LVL for the user of that Power.</p><br/><br/>
+    <span><b>A note on numbers:</b> Whenever you calculate a fraction of a number, if the result is not a whole number you must round down to the nearest non-zero whole number (If this results in zero, treat it as 1). A fraction of zero is always zero.</span>
   </div>
 }

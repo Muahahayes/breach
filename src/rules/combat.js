@@ -29,7 +29,7 @@ content: <div>
   <b>Ranged rules:</b><br/>
   As a Full Action you may attempt to Attack a single creature. You must have a Ranged weapon in your hands, and the enemy must be within the range listed on the weapon. Roll a Marksmanship check vs their Avoidance to use the weapon to Attack. If you succeed deal the damage described by the weapon used. If a creature is behind a solid object of at least half their height, gain Unfavored -1 to the attack.<br/><br/>
   <b>Power rules:</b><br/>
-  As an Action you may attempt to Attack creatures (the Action used, range required and number of creatures are described by the Power). If the Power does not specify a Skill or Attribute used in a check, roll a Power check vs their Avoidance. On a success, deal the damage and/or apply the effect described by the Power used.</p>
+  As an Action you may attempt to Attack creatures (the Action used, range required and number of creatures are described by the Power). If the Power does not specify a Skill or Attribute used in a check, roll a Power Skill check vs their Avoidance. On a success, deal the damage and/or apply the effect described by the Power used. If a Power requires an Attribute Save instead of rolling a Power Skill check the opposing creature must roll a d20 + the declared Attribute vs [7 + Will + LVL].</p>
   <hr/>
   <h3>Targeting Types:</h3>
   <p>
