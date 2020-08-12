@@ -12,32 +12,33 @@ export default {
     [
       "Iron Will: Subtract your Will from the difficulty of Psychic Fatigue checks.",
       "Mind Over Matter: Every 2 Proficiency you put into Mind Over Matter gives you 1 AP you can spend on any Attribute except Will. (Cannot increase an Attribute higher than [LVL + 3]). (Repeatable up to LVL)",
-      "Mental Map: You are always aware of which direction is True North and what time of day it is."
+      "Mental Map: You are always aware of which direction is True North and what time of day it is.",
+      "Thick Skin: Increase your Max Survival by 5."
     ],
     [
       "Focused: Add your level to your defensive Will checks.",
       "Uncensored: Once per day you may at will end a Silence status effect active on you.",
       "Two-Handed Tempo: Two-Handed Speed reduces the penalty by an additional 1 (to a minimum of 0).",
-      "Constitution: You may add your level to your Stamina rolls.",
-      "Clarity: You may add your level to your Will rolls."
+      "Constitution: You may add your level to your Stamina Saving rolls.",
+      "Clarity: You may add your level to your Will Saving rolls."
     ],
     [
       "No Resistance: Roll your Psychic Fatigue checks after the main roll of using a Power. Whenever you Hard Succeed while using a Power, you do not make the base Psychic Fatigue check for that use of that Power.",
       "Psi Sense: When you are within 30 ft of a creature you are aware of you immediately know if they have the Psychic Source, and if so what their level is."
     ],
     [
-      "Mental Resilience: After putting 3 points into Mental Resilience you gain resistance to Mental damage types. (Repeatable up to 3)"
+      "Mental Resilience: After putting 3 points into Mental Resilience you gain resistance to Mental damage types."
     ],
     [
       //6
     ],
     [
       "Extended Gifts: Gain a new Power from your Source of [LVL 3] or less (Repeatable up to 3)."
-      //TODO add capstone proficiencies, powerful effects but can only pick 1
+      
     ]
   ],
   capstones: [
-
+//TODO add capstone proficiencies, powerful effects but can only pick 1
   ],
   lesser: [
     [

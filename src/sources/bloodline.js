@@ -5,7 +5,7 @@ export default {
   resource: "Bloodlust: Whenever you deal damage to, or receive damage from a creature you gain 1 Bloodlust (once per creature per turn, max of [LVL * 2] number of creatures per turn). These Bloodlust points may be spent by various Powers within this Source. Whenever you fail to land an attack on an opponent you lose a Bloodlust. if you reach 0 Bloodlust you enter Apathy and are unable to use any Powers until you gain at least 1 Bloodlust to end your Apathy. You lose all of your Bloodlust when you have a Full Sleep, and half (rounded down) when you take a Break.",
   proficiencies: [
     [
-      "Thick Skin: Increase your max survival by 5. (Repeatable up to LVL times)",
+      "Thick Skin: Increase your Max Survival by 5.",
       "Retractable Canines: Your canine teeth are sharp and can extend to twice their length.",
       "Two-Handed Speed: If your two-handed weapon reduces your Speed while equipped, reduce the penalty by 1 (to a minimum of 0)."
     ],
@@ -18,25 +18,26 @@ export default {
       "Regenerative: Gain +LVL to any healing you receive from a Power.",
       "Ancient Endurance: Increase your Stamina by 1 and increase its maximum to [LVL + 4].",
       "Two-Handed Tempo: Two-Handed Speed reduces the penalty by an additional 1 (to a minimum of 0).",
-      "Constitution: You may add your level to your Stamina rolls.",
-      "Clarity: You may add your level to your Will rolls."
+      "Constitution: You may add your level to your Stamina Saving rolls.",
+      "Clarity: You may add your level to your Will Saving rolls."
     ],
     [
-      //4
+      "Hardy: Increase your Max Survival by 5."
     ],
     [
-      "Timeless: You do not age and will no longer die of age, natural illnesses, or hunger and thirst."
+      "Timeless: You do not age and will no longer die of age or natural illnesses."
     ],
     [
       //6
     ],
     [
       "Extended Gifts: Gain a new Power from your Source of [LVL 3] or less (Repeatable up to 3)."
-      //TODO add capstone proficiencies, powerful effects but can only pick 1
+      
     ]
   ],
   capstones: [
     "Blood Frenzy: Once per Full Sleep you may, as an Action, enter into a Blood Frenzy. While in this Frenzy your blood glows brightly across your skin and your eyes become crimson red. Once per turn you may ignore up to 3 Bloodlust required from one Power you use and its Proficiencies. This Frenzy lasts for 30 seconds, and ends prematurely if you are made unconscious, asleep, feared, or if you enter Apathy."
+    //TODO add capstone proficiencies, powerful effects but can only pick 1
   ],
   lesser: [
     [

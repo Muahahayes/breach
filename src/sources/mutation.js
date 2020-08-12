@@ -2,10 +2,10 @@ export default {
   name: "Mutation",  
   slogan: "The Powers of Evolution",
   description: "Mutants are a new and not fully understood scientific development who are finding their place in the world.",
-  resource: "Metabolism: When you use an active Mutation you experience Strain. You lower your max survival for each point of Strain you gain, and regain this lowered max survival for each point of Strain you lose up to your unstrained maximum. You remove all of your Strain when you fully sleep or if you take a break while eating a full meal. You remove an amount of Strain equal to [Stamina * LVL] when you take a break without eating a full meal. If your Strain exceeds half your unstrained max survival you become Overstrained and become unconscious, you cannot use any Powers until you fully sleep or take a break while eating a full meal.",
+  resource: "Metabolism: When you use an active Mutation you experience Strain. You cannot be healed to a value above your Max Survival minus your current Strain. You remove all of your Strain when you fully sleep or if you take a break while eating a full meal. You remove an amount of Strain equal to [Stamina * LVL] when you take a break without eating a full meal. If your Strain exceeds half your Max Survival you become Overstrained and cannot gain any more Strain.",
   proficiencies: [
     [
-      "Thick Skin: Increase your max survival by 5. (Repeatable up to LVL times)",
+      "Thick Skin: Increase your Max Survival by 5.",
       "Retractable Canines: Your canine teeth are sharp and can extend to twice their length.",
       "Tail: If you did not already have one, gain a tail of your choice of animal. You gain +1 to Agility rolls.",
       "Two-Handed Speed: If your two-handed weapon reduces your Speed while equipped, reduce the penalty by 1 (to a minimum of 0)."
@@ -13,17 +13,18 @@ export default {
     [
       "Expanded Lungs: You can hold your breath twice as long.",
       "Owl Neck: You can face behind you without turning your body, and you can rotate your head upside down.",
-      "Genetic Morph: At 5 stacks, gain a new Power up to [LVL 3]. This does not count as Leveling Up. (Repeatable up to 5 stacks, one Power may be gained from this Proficiency)",
+      "Genetic Morph: After putting 3 points into Genetic Morph gain a new Power up to [LVL 3]. This does not count as Leveling Up. You may only gain 1 Power from this Proficiency.",
       "Fast Reflexes: Add 1 Initiative to your Speed rolls."
     ],
     [
       "Regenerative: Gain +LVL to any healing you receive.",
-      "Evolutionary Endurance: Increase your Stamina by 1 and increase its maximum to [LVL + 4].",
-      "Constitution: You may add your level to your Stamina rolls.",
-      "Clarity: You may add your level to your Will rolls."
+      "Evolutionary Endurance: Increase your Stamina by 1 and increase its maximum by 1.",
+      "Constitution: You may add your level to your Stamina Saving rolls.",
+      "Clarity: You may add your level to your Will Saving rolls."
     ],
     [
-      "Photosynthesis: You gain 1 Food Point whenever you take a Break in direct sunlight."
+      "Photosynthesis: You gain 1 Food Point whenever you take a Break in direct sunlight.",
+      "Hardy: Increase your Max Survival by 5."
     ],
     [
       //5
@@ -33,11 +34,11 @@ export default {
     ],
     [
       "Extended Gifts: Gain a new Power from your Source of [LVL 3] or less (Repeatable up to 3)."
-      //TODO add capstone proficiencies, powerful effects but can only pick 1
+      
     ]
   ],
   capstones: [
-
+//TODO add capstone proficiencies, powerful effects but can only pick 1
   ],
   lesser: [
     [

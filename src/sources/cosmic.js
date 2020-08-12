@@ -5,7 +5,7 @@ export default {
   resource: "Cosmic Well: You gain a Well of Aether (ae) within your soul. Your Well can hold up to [5 + LVL + Will] ae at one time. You gain [5 + LVL] ae from a Full Sleep, and an amount equal to [LVL + Will] when you take a Break. If you reach 0 ae you will be rendered unconscious and you will regain 1 ae if you are woken up, or 5 if you fully sleep.\nElemental Soul: Choose Spirit, Darkness, or an Elemental damage type. Your Well is attuned to this element. Add LVL damage to any damage you deal with this element. You are resistant to this damage type.",
   proficiencies: [
     [
-      "Willful: Add 1 to your Will attribute and increase its maximum to [LVL + 4]."
+      "Willful: Add 1 to your Will attribute and increase its maximum by 1."
     ],
     [
       "Deep Well: Increase your maximum well by 3.",
@@ -16,8 +16,8 @@ export default {
       "Third Eye: You are immune to the Blind effect.",
       "Focused: Add your level to your defensive Will checks.",
       "Channeled Aether: [Activate] As an Activation Action you may delay any Power you use by up to LVL turns. The Power's targeting does not move from the original location. When the Power takes effect, you may replace damage/healing/effect dice up to the number of turns delayed with their maximum value.",
-      "Constitution: You may add your level to your Stamina rolls.",
-      "Clarity: You may add your level to your Will rolls."
+      "Constitution: You may add your level to your Stamina Saving rolls.",
+      "Clarity: You may add your level to your Will Saving rolls."
     ],
     [
       "Pond: Increase your maximum well by 5.",
@@ -26,18 +26,19 @@ export default {
       "Slumber: Increase the ae gained from a Full Sleep by 5."
     ],
     [
-      "Timeless: You do not age and will no longer die of age, natural illnesses, or hunger and thirst."
+      "Timeless: You do not age and will no longer die of age or natural illnesses."
     ],
     [
       //6
     ],
     [
       "Extended Gifts: Gain a new Power from your Source of [LVL 3] or less (Repeatable up to 3)."
-      //TODO add capstone proficiencies, powerful effects but can only pick 1
+      
     ]
   ],
   capstones: [
     "Archon: Once per Full Sleep you may, as an Action, enter into an Archon form. While within this form your body becomes translucent and thrums with energy matching your Elemental Soul. When rolling dice for damage, healing or shielding, after seeing the result of the roll you may spend 1 ae to replace that result with the maximum value of that die. This form lasts for 1 minute and ends prematurely if you are made unconscious, or asleep."
+    //TODO add capstone proficiencies, powerful effects but can only pick 1
   ],
   lesser: [
     [

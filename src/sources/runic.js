@@ -11,15 +11,16 @@ export default {
     [
       "Energized: While you have 0 Fade points, add +1 to any damage you deal with a Power.",
       "Twilight: When an effect uses your current Fade, you may add 1 to the effect.",
-      "Glow: The ignore the first 5 points of Fade you would gain, resets after a Full Sleep."
+      "Glow: The ignore the first 5 points of Fade you would gain, resets after a Full Sleep.",
+      "Thick Skin: Increase your Max Survival by 5."
     ],
     [
       "Greater Energized: Increase Energized to +LVL.",
       "Receptive: Gain +LVL to any healing you receive from a Cosmic or Runic Power.",
       "Proficient: When you level up, you may select 4 Powers instead of 3. At least 1 Power must be below LVL 3.",
       "Dusk: Increase the effect of Twilight by 1.",
-      "Constitution: You may add your level to your Stamina rolls.",
-      "Clarity: You may add your level to your Will rolls."
+      "Constitution: You may add your level to your Stamina Saving rolls.",
+      "Clarity: You may add your level to your Will Saving rolls."
     ],
     [
       "Nightfall: Increase the effect of Twilight by 1.",
@@ -35,11 +36,11 @@ export default {
     ],
     [
       "Extended Gifts: Gain 2 new Powers from your Source of [3 G] or less (Repeatable up to 3)."
-      //TODO add capstone proficiencies, powerful effects but can only pick 1
+      
     ]
   ],
   capstones: [
-
+//TODO add capstone proficiencies, powerful effects but can only pick 1
   ],
   lesser: [
     [
