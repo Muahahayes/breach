@@ -2,10 +2,9 @@ export default {
   name: "Psychic",
   slogan: "The Powers of the Mind",
   description: "Psychics are an established class of 'better' creatures with a genetic advantage within the urban society, they developed about 200 years ago early on in the industrial boom. Using their unique Aether within themselves, they intuitively feel in tune with the world and can resonate with the Aether around them to impose changes upon it. They created the modern capitalist state by taking advantage of the non-psionic peoples and established themselves as the upper class.",
-  resource: "Psychic Fatigue: When you use any kind of action (even a Free Action) to use a Power or Lesser Power, roll a d20. If you roll lower than [9 + LVL] (or a natural 1) you fail to contain the energies within your mind causing a Psychic Break. Cancel that Power's effect and you cannot use any of your Powers or Lesser Powers until you fully sleep or take a break. If you are Feared or Stunned you must make a Psychic Fatigue check each turn of the effect's duration.",
+  resource: "Psychic Fatigue: When you use any kind of action (even a Free Action) to use a Power or Lesser Power, roll a d20. If you roll equal or lower than 1 (or a natural 1) you fail to contain the energies within your mind causing a Psychic Break. Cancel that Power's effect and you cannot use any of your Powers or Lesser Powers until you Fully Sleep or take a Break. If you are Feared or Stunned you must make a Psychic Fatigue check each turn of the effect's duration. Whenever you Succeed a Psychic Fatigue check increase the difficulty of the check by 1. When you Fully Sleep or take a Break reset the difficulty to 1.\nFocus: Once per minute, or once per Round in combat, you may spend an Action to Focus. Roll a d10. On a 10 or higher your current Psychic Break ends. On a Fail, add 1 to your next Focus attempt (up to a max of 5).",
   proficiencies: [
     [
-      "Mental Fortitude: Subtract 1 from the difficulty of Psychic Fatigue checks (to a minimum of 8). (Repeatable)",
       "Charismatic: Gain a Favored +1 to Charm attempts against persons with a Will less than 2.",
       "Two-Handed Speed: If your two-handed weapon reduces your Speed while equipped, reduce the penalty by 1 (to a minimum of 0)."
     ],
@@ -38,11 +37,12 @@ export default {
     ]
   ],
   capstones: [
-//TODO add capstone proficiencies, powerful effects but can only pick 1
+    //TODO add capstone proficiencies, powerful effects but can only pick 1
+    "Broken Mind: When you enter a Psychic Break you may activate Broken Mind. The energies within your mind surge through you in a chaotic rush of power. Your eyes glow bright white and your hair and clothes float weightless around you. You may use your Psychic Powers during this Break, and treat all damage dice rolled as their maximum value. After 3 Rounds or 1 minute out of combat, if your Break has not ended you are knocked unconscious. Usable once per Full Sleep."
   ],
   lesser: [
     [
-      "Greater Flourish: [Action] [Ranged] For 10 minutes, within 30 ft you may manipulate objects and/or lift objects weighing no more than 5*LVL pounds up to 30 ft in the air. Requires use of your hand. Do not make a Psychic Fatigue check.",
+      "Greater Flourish: [Action] [Ranged] Within 30 ft you may manipulate objects and/or lift objects weighing no more than 10*LVL pounds up to 30 ft in the air. Requires use of your hand. Do not make a Psychic Fatigue check.",
       "Link: [Action] [Ranged] You can initiate Psychic Links with other persons as an Action. While Linked you may communicate silently with one another using any Language you share. If you move further than 100 ft apart the Link is broken. Lasts 1 hour, the effect ends prematurely if you enter a Psychic Break.",
       "Psi Network: [Free] [Touch] You can tap into the Psi Network of your current city if a Psi Network exists at any Network Crystal, giving you access to information and long range communication. Do not make a Psychic Fatigue check."
     ],
