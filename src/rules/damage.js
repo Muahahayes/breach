@@ -24,7 +24,7 @@ content: <div>
   <b>Mental types:</b><br/>
   <ul>
     <li><b>Psychic:</b> Damaged caused by assaults on the mind.</li>
-    <li><b>Kinetic:</b> Damaged caused to the body by the powers of the mind, deals Blunt type damage when it successfully hits.</li>
+    <li><b>Kinetic:</b> Damaged caused to the body by the powers of the mind. Resistance to Physical or Mental damage gives resistance to Kinetic, but Immunity to only one of the two does not give Immunity to Kinetic.</li>
     <li><b>Spirit:</b> Damage caused by the raw Aether within living things.</li>
     <li><b>Darkness:</b> Damage which pierces the Aether within a sentient creature's soul.</li>
   </ul>  
