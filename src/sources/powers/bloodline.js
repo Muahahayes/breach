@@ -3,7 +3,7 @@ export default [
     {
       name: "Vampirism",
       attributes: "[Self] [Passive]",
-      description: "At, and only at, LVL 1 you may select this Power. Gain the Bloodthirst, Darkflight, and Gaze Powers. Take 2d4 fire damage if you are touched by sunlight, this can only occur once every 10 minutes but if you remain in the sunlight you feel incredibly uncomfortable and begin to blister. You are pale and feel cold to the touch. You do not age. Each time you use Bloodthirst on a living creature you gain 1 FP, you gain no benefits from food and cannot gain FP otherwise. You gain the Hunger proficiency on your Bloodthirst for free.",
+      description: "At, and only at, LVL 1 you may select this Power. Gain the Bloodthirst and Darkflight Powers. Upon reaching level 2 you also gain the Hemotremor Power. Take 2d4 fire damage if you are touched by sunlight, this can only occur once every 10 minutes but if you remain in the sunlight you feel incredibly uncomfortable and begin to blister. You are pale and feel cold to the touch. You do not age. Each time you use Bloodthirst on a living creature you gain 1 FP, you gain no benefits from food and cannot gain FP otherwise. You gain the Hunger proficiency on your Bloodthirst for free.",
       proficiencies: [
         [],[],
         [
@@ -12,6 +12,24 @@ export default [
         [
           "UV Resistance: You may spend 1 hour a day in direct sunlight before you begin to take damage.",
           "Metabolism: You may eat raw meat or bone marrow to satisfy your hunger."
+        ]
+      ]
+    },
+    {
+      name: "Withered",
+      attributes: "[Self] [Passive]",
+      description: "At, and only at, LVL 1 you may select this Power. Gain the Fade and either Shadow Bolt or Dark Shot Powers. Upon reaching level 2 you also gain either the Hex or Malfeasance Power. Your Strength and Stamina may not be increased past your starting values by any means. Your body appears frail and sickly, your beauty fades and onlookers feel a mixture of pity, disgust and discomfort. You have a lower tolerance for physical pain. At will on your turn you may damage yourself by any number up to your current Survival and gain that many Bloodlust.",
+      proficiencies: [
+        [],
+        [
+          "Glass Skin: Your skin becomes thin and prone to cuts but your blood courses with power beneath the surface. You become pale with a red hue near major blood vessels. You take +LVL Sharp damage. Add your level to all damage dealt by a Power."
+        ],
+        [
+          "Hardy: Increase your Max Survival by 3.",
+          "Gaunt: Lose 20 lb of body weight and 1 Strength. Gain 1 Will and increase its maximum by 1."
+        ],
+        [
+          "Waif: You no longer require food or water. You longer sleep, you gain the benefit of a Full Sleep if you lay down or sit for 6 hours and make minimal movement. You are immune to Sleep and Unconscious effects."
         ]
       ]
     },
@@ -42,7 +60,7 @@ export default [
     {
       name: "Bloodthirst",
       attributes: "[Action] [Melee]",
-      description: "As an Action, on touch you attempt to pierce a creature with your teeth or fingers, dealing 1d8 + Strength damage. Costs 1 Bloodlust.",
+      description: "As an Action, on touch you attempt to pierce a creature with your teeth or fingers, dealing 1d8 Sharp damage (you may add Strength or Agility's Primary benefit to this damage). Costs 1 Bloodlust.",
       proficiencies: [
         [
           "Fury: On a hit, gain an additional Bloodlust.",
@@ -57,7 +75,7 @@ export default [
         [
           "Anticoagulant: [Activate] On a hit, as an Activation Action the target Bleeds once after 5 turns.",
           "Magnitude: Increase the damage to 2d6. Increase the effect of Quirked to 2d8.",
-          "Feed: Thirst gains more Survival and deals more damage equal to your level."
+          "Feed: Thirst gains more Survival and deals additional damage equal to your level."
         ],
         [
           "Flow: Anticoagulant Bleeds after 2 fewer turns.",
@@ -72,16 +90,16 @@ export default [
     {
       name: "Sanguine Strike",
       attributes: "[Action] [Melee]",
-      description: "As an additional Action you channel darkness into a basic melee attack before determining if the attack hits. Add a d4 for each point of Will you possess to the damage dealt by the attack. Costs 2 Bloodlust.",
+      description: "As an Action you channel darkness into your weapon and perform a basic melee attack. Add a d4 for each point of Will you possess to the damage of the attack. Costs 2 Bloodlust.",
       proficiencies: [
         [
-          "Fury: On a Hard Success, gain an additional Bloodlust."
+          "Fury: On a Hard Success on the basic melee attack, gain an additional Bloodlust."
         ],
         [
           "Confirm: You may choose to apply Sanguine Strike after a basic melee attack has been determined to hit, but before discovering if it is a Soft or Hard Success.",
           "Impact: Increase the size of Sanguine Strike's dice to a d6.",
           "Energized: The damage added by Sanguine Strike is now Darkness damage.",
-          "Martial Expertise: Permanently add 1 to your Martial Arms Skill."
+          "Martial Expertise: Permanently add 1 to your Martial Arms Skill and increase its maximum by 1."
         ],
         [
           "Hellfire: Your weapon alights in flame as it strikes, the creature must roll a Stamina Save. On a fail they are Burned, dealing 1d6 Fire damage over 2 turns. On a Hard Fail the Burn deals 1d8 damage over 3 turns instead.",
@@ -90,9 +108,8 @@ export default [
         ],
         [
           "Greater Impact: Increase the size of Sanguine Strike's dice to a d8. Increase the effect of Quirked to a d12. Requires Impact.",
-          "Effortless: [Activate] When you use Sanguine Strike you may spend an Activation Action to roll a d4. On a 4, you do not spend a Full Action for this use of Sanguine Strike.",
           "Cleave: [Activate] If a creature dies from this attack, you may spend an Activation Action to roll an Attack roll against another creature within reach. On a Soft Success, deal half this attack's damage to that creature. On a Hard Success, deal full damage.",
-          "Deadly Expertise: Permanently add 2 to your Martial Arms Skill."
+          "Deadly Expertise: Permanently add 1 to your Martial Arms Skill and increase its maximum by 1."
         ],
         [
           "Magnitude: Increase the size of Sanguine Strike's dice to a d10. Increase the effect of Quirked to 2d8. Requires Greater Impact.",
@@ -118,38 +135,12 @@ export default [
       ]
     },
     {
-      name: "Hemotremor",
-      attributes: "[Action] [AOE]",
-      description: "You release a wave of dark energy 30 ft around you. All creatures must roll a Will Save, any that fail take 1d4 Darkness damage. Costs 2 Bloodlust.",
-      proficiencies: [
-        [
-
-        ],
-        [
-          "Malignant: Add your level to the Severity roll of any Injury caused by Hemotremor's damage."
-        ]//TODO more
-      ]
-    },
-    {
-      name: "Gaze",
-      attributes: "[Action] [Ranged]",
-      description: "You stare into a creature's eyes and assault their mind with dark energy. They must roll a Will Save to withstand the effect. On a Fail they experience intense horror for as long as they look at you, and for 1 turn after looking away they are Feared. Has no effect on creature's of a higher level than you. Costs 1 Bloodlust.",
-      proficiencies: [
-        [
-
-        ]
-      ]
-    }
-  ], // LVL 1
-  [// LVL 2
-    {
       name: "Dark Shot",
       attributes: "[Action] [Ranged]",
       description: "Use a Ranged Weapon to make a basic Ranged Weapon attack. Add 1d4 Darkness damage to the attack. Costs 1 Bloodlust.",
       proficiencies: [
-        [],
         [
-          "Sharp Aim: Permanently add 1 to your Marksmanship Skill.",
+          "Sharp Aim: Permanently add 1 to your Marksmanship Skill and increase its maximum by 1.",
           "Twin Shot: If Dark Shot hits, you may make a basic Ranged Weapon attack on the same target for free."
         ],
         [
@@ -158,12 +149,78 @@ export default [
           "Focused: [Action] As an Action, you may focus more power into your shot. Roll each base damage die of your Ranged Weapon twice when adding up your damage dealt."
         ],
         [
-          "Deadly Aim: Permanently add 2 to your Marksmanship Skill",
-          "Dark Twin: You may spend Bloodlust to use Dark Shot with your Twin Shot attack.",
-          "Piercing Shot: [Action] As an Action, you may attempt to apply the Sundered effect to the victim hit. They may roll Stamina Save to resist the effect."
+          "Deadly Aim: Permanently add 1 to your Marksmanship Skill and increase its maximum by 1.",
+          "Dark Twin: You may spend Bloodlust to use Dark Shot with your Twin Shot attack."
         ],
         [
-          "Overwhelm: [Activate] If your Dark Shot deals a killing blow you may use any Power which costs Bloodlust. This may only trigger once per turn."
+          "Overwhelm: [Activate] If your Dark Shot deals a killing blow you may use any Power which costs Bloodlust. This may only trigger once per turn.",
+          "Piercing Shot: [Action] As an Action, you may attempt to apply the Sundered effect to the victim hit. They must roll a Stamina Save to resist the effect.",
+          "Greater Impact: Increase the damage die to 1d8."
+        ]
+      ]
+    },
+    {
+      name: "Gaze",
+      attributes: "[Action] [Ranged]",
+      description: "You stare into a creature's eyes and assault their mind with dark energy. They must roll a Will Save to withstand the effect. On a Fail they experience intense horror for as long as they look at you, and for 1 turn after looking away they are Feared. Has no effect on creature's of a higher level than you. Costs 1 Bloodlust.",
+      proficiencies: [
+        [
+          //TODO
+        ]
+      ]
+    },
+    {
+      name: "Shadow Bolt",
+      attributes: "[Action] [Ranged]",
+      description: "Point at a creature or object you can see within 30ft. A streak of silent shadow leaps from your hand and strikes the target dealing 1d6 Darkness damage. Costs 1 Bloodlust.",
+      proficiencies: [
+        [
+          "Shadowmark: When your Shadow Bolt hits a creature, you may give that creature a Shadowmark. Shadowmark adds a 1d4 to the next Darkness damage roll against the creature and then is removed. Lasts 1 minute. A creature may only have 1 Shadowmark at a time."
+        ],
+        [
+          "Impact: Increase the damage dealt to 1d8.",
+          "Fork: Every creature within 10ft of the target must roll a Will Save. On a Fail they receive a Shadowmark. Requires Shadowmark.",
+          "Focused: [Action] As an Action, you may focus more power into your Shadow Bolt. Roll each damage die twice (including Shadowmark dice)."
+        ],
+        [
+          "Linger: Shadowmark may be used twice before being removed. Only one Shadowmark may be active on a creature at a time, but attempting to apply a second Shadowmark resets the number of uses available.",
+          "Reach: Increase the range to 50ft.",
+          "Greater Impact: Increase the damage dealt to 1d10.",
+          "Greater Shadowmark: Increase the damage of Shadowmark to 1d6. You may add your Will to this damage if you have the Will Primary benefit."
+        ],
+        [
+          "Magnitude: Increase the damage dealt to 2d6.",
+          "Greater Linger: Shadowmark may be used thrice before being removed."
+        ]
+      ]
+    },
+    {
+      name: "Fade",
+      attributes: "[Action] [Self]",
+      description: "Your body becomes transparent and difficult to see. Gain a Favored +1 to Hide and Sneak checks. Lasts for 1 minute. Ends prematurely if you take damage or enter Apathy. Costs 1 Bloodlust.",
+      proficiencies: [
+        /* ideas:
+            fully invisible (lv 3 maybe?)
+            extend duration
+            creatures forget location (requires invisible, lv4?)
+            can reappear somewhere else and end the effect (like a blink)
+            can remove existance awareness (lv5?)
+        */
+      ]
+    }
+  ], // LVL 1
+  [// LVL 2
+    {
+      name: "Hemotremor",
+      attributes: "[Action] [AOE]",
+      description: "You release a wave of dark energy 30 ft around you. All creatures must roll a Will Save, any that fail take 1d4 Darkness damage. Costs 2 Bloodlust.",
+      proficiencies: [
+        [],
+        [
+          "Malignant: Add your level to the Severity roll of any Injury caused by Hemotremor's damage."
+        ],//TODO more
+        [
+          "Impact: Increase the damage to 1d6."
         ]
       ]
     },
@@ -186,7 +243,7 @@ export default [
     {
       name: "Bind Daemon",
       attributes: "[Action] [Touch] [Minion]",
-      description: "You reach out and touch the forehead of a creature which is at 1 Life or below, by speaking its name and spending 5 Bloodlust you bind it to your service as your Daemon. The creature may make a Will check vs your Will to resist the effect, on a success it is not bound and on a Hard Success it can never be bound by you using this Power against its will. The Daemon must make every effort to be within 1 mile of you, cannot directly cause you harm, and you may as an Action spend 1 Bloodlust per creature's level to force the Daemon to do any Action you choose (only if it is capable of carrying it out and will not cause direct harm to the Daemon). Any additional conditions the Daemon agrees to before the binding must also be obeyed. The Daemon comes to your side when called. This binding lasts until the Daemon is destroyed, you die, or you spend an hour releasing the binding. You may only have one binding at a time.",
+      description: "You reach out and touch the forehead of a creature which is at 1 Life or below, by speaking its name and spending 5 Bloodlust you bind it to your service as your Daemon. The creature may make a Will Save to resist the effect, on a success it is not bound and on a Hard Success it can never be bound by you using this Power against its will. The Daemon must make every effort to be within 1 mile of you, cannot directly cause you harm, and you may as an Action spend 1 Bloodlust per creature's level to force the Daemon to do any Action you choose (only if it is capable of carrying it out and will not cause direct harm to the Daemon). Any additional conditions the Daemon agrees to before the binding must also be obeyed. The Daemon comes to your side when called. This binding lasts until the Daemon is destroyed, you die, the terms of an agreement given before the binding, or you spend an hour releasing the binding. You may only have one binding at a time.",
       proficiencies: [
         [],[],
         [
@@ -194,11 +251,11 @@ export default [
           "Pair: You may have a second binding active at one time. They both must be bound with the same set of conditions."
         ],
         [
-          "Trio: You may have a third binding active at one time. They may have different sets of conditions. Requires Pair.",
+          "Trio: You may have a third binding active at one time. Your Daemons may have different sets of conditions. Requires Pair.",
           "Domination: You gain Favored +2 in any opposing skill checks against one of your Daemon."
         ],
         [
-          "Dark Gift: You may bestow each of your Daemon with a Power you possess up to [LVL 2] and not including Minion Powers.",
+          "Dark Gift: You may bestow each of your Daemons with a Power you possess up to [LVL 2] and not including Minion Powers.",
           "Company: You may have up to five bindings active at one time. Requires Trio."
         ],
         [
@@ -214,18 +271,24 @@ export default [
     {
       name: "Hex",
       attributes: "[Action] [Ranged]",
-      description: "Point at a creature you can see within 30 ft. and make a Power attack. On a hit, apply a Hex Curse to the target. While Hexed, the creature receives an Unfavored -1 on rolls to resist or avoid negative effects or attacks by you. Lasts 1 hour. Costs 2 Bloodlust.",
+      description: "Point at a creature you can see within 30 ft. and make a Power attack against it. On a Success, apply a Hex Curse to the target. While Hexed, the creature receives an Unfavored -1 on Save rolls triggered by you. Only one Hex Curse may be active on a creature at a time.Lasts 1 Minute. Costs 2 Bloodlust.",
       proficiencies: [
         [],
         [
-          /*
-          ideas: 
-          increase injury severity rolls
-          reduce Power
-          chance to cause Fear effect if they hit you
-          slow -2
-          shorten hunger/thirst quota by 1 day
-          */
+          "Vulnerable: Increase all Injury severity rolls made by the creature by 1.",
+          "Weaken: Temporarily reduce the creature's Power Skill by your level."
+        ],
+        [
+          "Recoil: [React] If the creature deals damage to you, as a Reaction Action you may Fear them for 1 round.",
+          "Hinderance: The creature is Slowed -2.",
+          "Lingering: Increase the duration to 1 hour."
+        ],
+        [
+          "Malnourish: Instead of its usual effect, Hex lasts indefinitely and shortens the creature's hunger and thirst periods by 1 day. Once per day the creature may attempt a Will Save to end the effect.",
+          "Choke: Malnourish also Silences the creature."
+        ],
+        [
+          "Inescapable: Malnourish's effect does not end on a Soft Success."
         ]
       ]
     },
@@ -237,6 +300,43 @@ export default [
         [],
         [
           // consume soul fragments to gain self buffs, note that soul fragment is the same thing in cosmic's Soul Rend so these powers can work together using that shared resource
+        ],
+        [
+          "Infusion: [Action] You may spend an hour to use a Soul Fragment to reinfuse an inert Lesser Chaos Gem to create a Lesser Soul Gem. To do so, you must use a Soul Fragment from a creature of at least level 3 and who had a Will of at least 3. Soul Gems may often be used in place of a Chaos Gem. Costs 5 Bloodlust."
+        ],
+        [
+          "Moderate Infusion: Infusion may be used to reinfuse a Moderate Chaos Gem to create a Moderate Soul Gem. To do so, you must use a Soul Fragment from a creature of at least level 4 and who had a Will of at least 5. Requires Infusion."
+        ],
+        [
+          "Greater Infusion: Infusion may be used to reinfuse a Greater Chaos Gem to create a Greater Soul Gem. To do so, you must use a Soul Fragment from a creature of at least level 5 and who had a Will of at least 7. Requires Moderate Infusion."
+        ],
+        [
+          "Epic Infusion: Infusion may be used to reinfuse an Epic Chaos Gem to create an Epic Soul Gem. To do so, you must use a Soul Fragment from a creature of at least level 7 and who had a Will of at least 10. Requires Greater Infusion."
+        ]
+      ]
+    },
+    {
+      name: "Malfeasance",
+      attributes: "[Action] [Ranged]",
+      description: "Point at a creature you can see within 30 ft. and make a Power attack against it. On a Success, deal 1d4 Darkness damage. On a Hard Success apply a Malfeasance Curse to the creature, this Curse lasts for 1 Minute. Only one Malfeasance Curse may be active on a creature at a time. Costs 2 Bloodlust.",
+      proficiencies: [
+        [],
+        [
+          "Rend: The Curse subtracts this Power's damage dealt from any healing the creature receives.",
+          "Subdue: The Curse gives the creature's basic attack rolls against you an Unfavored -1 penalty.",
+          "Vulnerable: Increase all Injury severity rolls made by the creature by 1."
+        ],
+        [
+          "Insistant: Apply the Curse on a Soft Success as well.",
+          "Harass: [Activate] The Curse grants you a Favored +1 to Attack and Power rolls against the creature.",
+          "Assault: [Activate] The Curse increases damage you deal to the creature by your level."
+        ],
+        [
+          "Anger: Instead of its usual effect, Malfeasance lasts indefinitely and causes the creature to have a shorter temper and feel victimized by others more easily. Once per day the creature may attempt a Will Save to end the effect.",
+          "Wander: Anger also causes the creature to feel a strong need to travel at least 5 miles a day and not return to the same location twice."
+        ],
+        [
+          "Inescapable: Anger's effect does not end on a Soft Success."
         ]
       ]
     }
