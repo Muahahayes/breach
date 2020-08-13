@@ -9,18 +9,21 @@ export default [
           "Forceful: Add 1d4 to the damage roll, this increases the cost by 1 ae per die. (1 Additional optional die with each repeated proficiency, repeatable up to [2 * LVL])"
         ],
         [
-          "Impact: Increase the size of the first die rolled. (1 Additional optional size increase with each repeated proficiency, repeatable d8, d10, d12)",
+          "Impact: Increase the damage roll to 1d8.",
           "Elemental: Choose an elemental damage type (or Spirit/Darkness, but only if you have that Elemental Soul type), your shock may be kinetic energy or any element you chose with this Proficiency. (1 Additional element with each repeated proficiency, a single shock may only be one damage type)."
         ],
         [
-          "Magnitude: You may increase the size of the Forceful dice rolled, this increases the cost by 1 ae per size increase. (1 Additional optional size increase with each repeated proficiency, repeatable d6, d8, d10).",
-          "Reach: Increase the range to 50 ft.",
+          "Magnitude: Increase the size of the Forceful dice to a d6.",
+          "Reach: Increase the range to 50ft.",
           "Discharge: [Activate] You may roll a second Power roll, compare this roll to the avoidance of each creature within 5ft of the target of your Shock. Any creature who has a lower avoidance than your roll is hit by the Discharge, roll your Forceful dice and distribute the number of dice equally between the creatures hit to deal the damage of each die to its respective creature. Do not apply your Forceful dice to the original target of your Shock when using Discharge.",
-          "Arc: Your discharge can now affect a creature within 10ft of the target of your Shock, and a chain of creatures within 5ft of each other starting from this first Discharge target."
+          "Arc: Your discharge can now affect a creature within 10ft of the target of your Shock, and a chain of creatures within 5ft of each other starting from this first Discharge target.",
+          "Greater Impact: Increase the damage roll to 1d10. Requires Impact."
         ],
         [
           "Subtle: [Activate] As an Activation Action you may suppress the sound of the blast and smooth out the ripple effect. If a creature(s) within range is not aware of you, you may roll a Hide check vs the Awareness Roll of the creature(s). If you succeed and do not damage the creature, this Shock does not alert them to your presence. If you succeed and damage the creature, they are aware of you but not your location.",
-          "Twin Shock: [Activate] [Action] As an Activation Action you may use a Full Action to cast an exact copy of this Shock at a second target within range. This second Shock costs 3 ae and may use a different damage type if you have taken the Elemental proficiency."
+          "Twin Shock: [Activate] [Action] As an Activation Action you may use a Full Action to cast an exact copy of this Shock at a second target within range. This second Shock costs 3 ae and may use a different damage type if you have taken the Elemental proficiency.",
+          "Area: Increase the range of Discharge to 10ft, the initial range of Arc to 20ft and the distance between creatures in the chain to 10ft.",
+          "Greater Magnitude: Increase the size of the Forceful dice to a d8."
         ]
       ]
     },
@@ -262,7 +265,19 @@ export default [
         [
           "Haunt: [Action] Point at a creature you can see and release a Soul Fragment upon them. They must roll a Will Save or else become cursed with a Haunting. While Haunted they receive a Unfavored -1 on any roll for an Action which deals damage. Lasts for 3 turns.",
           "Vengence: [Action] Point at a creature you can see and release a Soul Fragment upon them. They must roll a Will Save or else by struck by a Spirit of Vengence. They take 2d8 spirit damage. If they rolled a Hard Fail they are also gripped by the spirit, Snaring them for 1 turn."
-        ]//TODO more
+        ],//TODO more
+        [
+          "Infusion: [Action] You may spend an hour to use a Soul Fragment to reinfuse an inert Lesser Chaos Gem to create a Lesser Soul Gem. To do so, you must use a Soul Fragment from a creature of at least level 3 and who had a Will of at least 3. Soul Gems may often be used in place of a Chaos Gem. Costs 5 ae."
+        ],
+        [
+          "Moderate Infusion: Infusion may be used to reinfuse a Moderate Chaos Gem to create a Moderate Soul Gem. To do so, you must use a Soul Fragment from a creature of at least level 4 and who had a Will of at least 5. Requires Infusion."
+        ],
+        [
+          "Greater Infusion: Infusion may be used to reinfuse a Greater Chaos Gem to create a Greater Soul Gem. To do so, you must use a Soul Fragment from a creature of at least level 5 and who had a Will of at least 7. Requires Moderate Infusion."
+        ],
+        [
+          "Epic Infusion: Infusion may be used to reinfuse an Epic Chaos Gem to create an Epic Soul Gem. To do so, you must use a Soul Fragment from a creature of at least level 7 and who had a Will of at least 10. Requires Greater Infusion."
+        ]
       ]
     },
     {

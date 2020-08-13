@@ -23,6 +23,30 @@ export default {
       description: 'A Tool for creating pieces of physical art using the Art Skill. Made of elevated quality and gives a +2 to Art when used.',
       price: 100,
       tags: 'art, fine'
+    },
+    {
+      name: 'Lesser Chaos Gem',
+      description: 'A small gemstone infused with chaotic energy, about a quarter of an inch in length. These gems are mined from deep beneath the earth where the spiritual energy of the world is most volatile. Many crafting recipes and incredible Powers make use of these gems, however pulling the energy from a gem will render it inert and brittle.',
+      price: 200,
+      tags: 'gem, lesser'
+    },
+    {
+      name: 'Moderate Chaos Gem',
+      description: 'A gemstone infused with chaotic energy, about 1 inch in length. These gems are mined from deep beneath the earth where the spiritual energy of the world is most volatile. Many crafting recipes and incredible Powers make use of these gems, however pulling the energy from a gem will render it inert and brittle.',
+      price: 1000,
+      tags: 'gem, moderate'
+    },
+    {
+      name: 'Greater Chaos Gem',
+      description: 'A large gemstone infused with chaotic energy, about 2-3 inches in length. These gems are mined from deep beneath the earth where the spiritual energy of the world is most volatile. Many crafting recipes and incredible Powers make use of these gems, however pulling the energy from a gem will render it inert and brittle.',
+      price: 5000,
+      tags: 'gem, greater'
+    },
+    {
+      name: 'Epic Chaos Gem',
+      description: 'A large gemstone infused with chaotic energy, about 6 inches in length. Epic Chaos Gems are the most rare and are almost never seen on the open market, making their actual price hard to determine. These gems are mined from deep beneath the earth where the spiritual energy of the world is most volatile. Many crafting recipes and incredible Powers make use of these gems, however pulling the energy from a gem will render it inert and brittle.',
+      price: 50000,
+      tags: 'gem, epic'
     }
   ]
 }
