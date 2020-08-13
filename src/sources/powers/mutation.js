@@ -239,7 +239,7 @@ export default [
     {
       name: "Runic Evolution",
       attributes: "[Activate] [Self] [Passive]",
-      description: "Your DNA forms a runic word, your body has evolved to use it but cannot Awaken any other runes. At the time you take this Power, choose 2 Powers from the Runic Arts Source which is of [LVL 3] or below, these are now Mutant Powers you may use. These Powers gain Fade as a Runic Arts Power normally would. Using this Power uses your Activation Action in addition to the Action requirements of the selected Power.",
+      description: "Your DNA forms a runic word, your body has evolved to use it but cannot Awaken any other runes. At the time you take this Power, choose 1 Power from the Runic Arts Source which is of [LVL 3] or below, this is now a Mutant Power you may use. This Power gains Fade as a Runic Arts Power normally would. Using this Power uses your Activation Action in addition to the Action requirements of the selected Power.",
       proficiencies: []
     },
     {
