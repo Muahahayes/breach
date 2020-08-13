@@ -271,15 +271,16 @@ export default [
       proficiencies: [
         [],
         [
-          "Empowered: Add your Will to the bolt of energy's damage.",
+          "Empowered: If Will is not your Primary Attribute, you may add your Will to the bolt of energy's damage.",
           "True Shot: On a Hard Success do not roll for the bolt of energy to hit, it cannot miss."
         ],
         [
-          "Ensnared: [Activation] On a Hard Success and as an Activation Action Arcane Bolt may Slow -10 ft for 2 turns instead of dealing damage.",
-          "Paralyzing: [Activation] On a Hard Success and as an Activation Action Arcane Bolt may Paralyze for 1 turn instead of dealing damage."
+          "Ensnared: [Activation] On a Hard Success and as an Activation Action Arcane Bolt may Slow -2 for 2 turns instead of dealing damage.",
+          "Paralyzing: [Activation] On a Hard Success and as an Activation Action Arcane Bolt may Paralyze for 1 turn instead of dealing damage.",
+          "Echo: If Arcane Bolt hits, you may roll a second time to fire a second Arcane Bolt."
         ],
         [
-          "Echo: If Arcane Bolt hits, you may roll a second time to fire a second Arcane Bolt."
+          ""
         ]
       ]
     },
@@ -306,7 +307,7 @@ export default [
     {
       name: "Cosmic Rune",
       attributes: "[Activate] [Self] [Passive]",
-      description: "At the time you take this Power, choose 1 Power from the Cosmic Source, this is now a Runic Arts Power you may use. This Power gains 1 Fade for every 2 ae required, rounding up, and your maximum ae is considered 10 when calculating effects based on your maximum. Using this Power uses your Activation Action in addition to the Action requirements of the selected Power.",
+      description: "At the time you take this Power, choose 1 Power from the Cosmic Source which is of [LVL 3] or below, this is now a Runic Arts Power you may use. This Power gains 1 Fade for every 2 ae required, rounding up, and your maximum ae is considered 10 when calculating effects based on your maximum. Using this Power uses your Activation Action in addition to the Action requirements of the selected Power.",
       proficiencies: []
     },
     {
@@ -332,7 +333,7 @@ export default [
     {
       name: "Phase",
       attributes: "[Self] [Action]",
-      description: "As an Action, your physical form phases into an aether form for 1 round or 1 minute out of combat. While phased you pass through solid objects, cannot interact with the physical world and float freely while conserving your momentum. You become immune to attacks/powers which do not deal elemental or mental damage types, or does not inflict a curse status effect. Phase ends early if you take damage. When passing through an object, being attacked, or being targeted by a negative effect, roll a d20 + Use Power vs 10. On any result other than a Hard Success, gain 1 Fade on this rune. On a Soft Fail you are no longer phasing after resolving the attack or effect. On a Hard Fail you are no longer phasing before resolving the attack or effect. On any Fail involving an object, you do not pass through the object.",
+      description: "As an Action, your physical form phases into an aether form for 1 round or 1 minute out of combat. While phased you pass through solid objects, cannot interact with the physical world and float freely while conserving your momentum. You become immune to attacks/powers except those which deal Elemental or Mental damage types, or which inflict a Curse status effect. Phase ends early if you take damage. When passing through an object, being attacked, or being targeted by a negative effect, roll a d20 + Use Power vs 10. On any result other than a Hard Success, gain 1 Fade on this rune. On a Soft Fail you are no longer phasing after resolving the attack or effect. On a Hard Fail you are no longer phasing before resolving the attack or effect. On any Fail involving an object, you do not pass through the object.",
       proficiencies: [
         [],[],
         [

@@ -42,21 +42,21 @@ export default [
           "Forceful: Add 1d4 to the damage roll. (Repeatable up to LVL)"
         ],
         [
-          "Impact: Increase the size of the first die rolled. (Repeatable d8, d10, d12)",
+          "Impact: Increase the damage roll to 1d8.",
           "Telekinetic: Your shock may use kinetic energy, dealing blunt type damage.",
           "Tranquility: You may still use Shock while afflicted by Psychic Break, however only the Empowered and Impact proficiencies will benefit your shocks used in this way."
         ],
         [
-          "Empowerment: Add your Will to the damage roll.",
-          "Magnitude: Increase the size of the Forceful dice rolled. (repeatable d6, d8)",
-          "Effort: Roll a copy of the primary die and add the result to the damage of this Shock, roll a Psychic Fatigue check for each copy rolled. (Repeatable up to LVL)",
-          "Reach: Increase the range to 50 ft.",
-          "Discharge: [Activate] You may roll a second Power roll, compare this roll to the avoidance of each creature within 5ft of the target of your Shock. Any creature who has a lower avoidance than your roll is hit by the Discharge, roll your Forceful dice and distribute the number of dice equally between the creatures hit to deal the damage of each die to its respective creature. Do not apply your Forceful dice to the original target of your Shock when using Discharge.",
-          "Arc: Your discharge can now affect a creature within 10ft of the target of your Shock, and a chain of creatures within 5ft of each other starting from this first Discharge target."
+          "Empowerment: Add your Will to the damage roll (in addition to the Will Primary benefit).",
+          "Magnitude: Increase the size of the Forceful dice rolled to a d6.",
+          "Reach: Increase the range to 50ft.",
+          "Greater Impact: Increase the damage roll to 1d10. Requires Impact.",
+          "Discharge: [Activate] You may roll a second Power roll, compare this roll to the avoidance of each creature within 5ft of the target of your Shock. Any creature who has a lower avoidance than your roll is hit by the Discharge, roll your Forceful dice and distribute the number of dice equally between the creatures hit to deal the damage of each die to its respective creature. Do not apply your Forceful dice to the original target of your Shock when using Discharge."
         ],
         [
           "Subtle: [Activate] As an Activation Action you may suppress the light emitted by the Shock. If a creature(s) within range is not aware of you, you may roll a Hide check vs the Awareness Roll of the creature(s). If you succeed and do not damage the creature, this Shock does not alert them to your presence. If you succeed and damage the creature, they are aware of you but not your location.",
-          "Overwhelming: [Contract] Increase the size of the first die rolled to a d20. Requires 3 points in Impact."
+          "Overwhelming: [Contract] Increase the damage roll to 2d6. If you have a Contract increase this to 2d8 instead. Requires Greater Impact.",
+          "Greater Magnitude: Increase the size of the Forceful dice to a d8."
         ],
         [
           "Subconscious: Now the first time in a combat with a creature when you use Subtle and deal damage with this Shock, if you succeed and do not damage their Life they are not alerted to your presence.",
@@ -134,8 +134,8 @@ export default [
       attributes: "[Free] [Self]",
       description: "Use while performing a Skill check, the next time you use that same Skill (After at least an hour has passed), add double your normal Skill bonus to that roll. This roll cannot Hard Succeed. You may store one Foresight roll at a time, you may not store a Foresight roll from a skill check that is using a Foresight roll.",
       proficiencies: [
-        [// TODO: if skills become percentile, redo forecast. instead, you 'save' ONE of the d10 rolls (and if its tens or ones digit) and may use that in the next percentile roll
-          "Forecast: [Free Action] Before rolling any d20 you may call out a number between 1-4. Roll a d4 and the d20, if you roll your chosen d4 number you may 'save' the number shown on the d20 and do not need to roll a Psychic Fatigue check. The next time you use a d20 for the same purpose, you may substitute the roll with the saved number. If you fail to roll your chosen number, roll a Psychic Fatigue check. You can store a Forecast roll once per full sleep.",
+        [
+          "Forecast: [Free Action] Before rolling any d20 you may call out a number between 1-4. Roll a d4 and the d20, if you roll your chosen d4 number you may 'save' the number shown on the d20 and do not need to roll a Psychic Fatigue check. The next time you use a d20 for the same purpose, you may substitute the roll with the saved number. If you fail to roll your chosen number, roll a Psychic Fatigue check. You can store a Forecast roll once per Full Sleep.",
 		      "Mulligan: If you fail to guess correctly but succeed the Psychic Fatigue check from the Forecast proficiency you may attempt your Forecast again. Limit of one Mulligan per Forecast used."
         ],
         [
