@@ -5,7 +5,7 @@ export default {
   appearance:"Their skin has a rock-like texture with skin tones ranging from a light pale blue to a dark granite gray. Their torso and head are a larger proportion than most races, with wide ears and beady eyes.",
   stats:[
     "Physical Build: 4'-4'11\", 150-200lb, 250 years, 2 arms, 2 legs, large ears",
-    "Base Stats: Strength 2, Agility 0, Stamina 3, Will 1",
+    "Base Stats: Strength 2, Agility -1, Stamina 3, Will 1",
     "Speed: 1d4 + 2",
 		"Creation AP: 3",
 		"Favored Skills: Athletics, Insight, History, Martial Arms, Block, Hide, Search, Outdoorsman ",

@@ -22,7 +22,7 @@ export default {
       name:"Alko",
       description: "The Alko'Atal are a proud race of warriors, with colorful feathers sprouting from their heads, forearms, and along their tail. Their faces are angular, with rows are sharp teeth. They stand between six and seven feet tall when their back is straight, with a tail of only two feet in length. Their shoulders are more broad than the Akkso'Atal and their skin is a leathery hide, aiding them in carving out sections of jungle to settle their cities. The Alko'Atal see themselves as the 'True Atal' by virtue of their strength and should rule Etzal by might.",
       racials:[
-        "Alko Might: Gain +2 Strength. Your Strength may go up to [LVL + 4].",
+        "Alko Might: Gain +1 Strength.",
         "Warcry: Gain a Favored +1 to your Disruption checks."
       ]
     },
@@ -30,7 +30,7 @@ export default {
       name:"Akkso",
       description: "The Akkso'Atal are a determined race of opportunists. They stand between five and six feet tall when their back is straight, which is rare, with a tail up to four feet in length. Their bodies are more lithe than the Alko'Atal and their skin is soft and slippery, with smooth faces and frills extending from their heads. They feel at home in swamps and riverlands, and settle along the sides of the great rivers in the jungles of Etzal. The Akkso'Atal see themselves as the 'True Atal' by virtue of being more at home in the harsh environments of Etzal.",
       racials:[
-        "Akkso Guile: Gain +2 Agility. Your Agility may go up to [LVL + 4].",
+        "Akkso Guile: Gain +1 Agility.",
         "Amphibious: Gain a Favored +1 to all Swimming based Athletics checks, and you may spend up to 1 hour underwater before needing to breathe. You require 1 additional Water Point to satisfy your Hunger."
       ]
     }

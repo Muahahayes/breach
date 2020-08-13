@@ -5,7 +5,7 @@ export default {
   appearance:"Their upper body appears humanoid with some insect-like features which varies between communities, but they typically have a pronounced curve in the spine and arms. They have 4 thin chitinous legs and a softer chitin on their torso and arms. Their mouth and eyes are large, which can be off putting for people who have not spent time around them.",
   stats:[
     "Physical Build: 5'-6'6\", 150-200lb, 60-120 years, 4 legs and 2 arms",
-    "Base Stats: Strength 1, Agility 0, Stamina 2, Will 1",
+    "Base Stats: Strength 1, Agility -1, Stamina 2, Will 1",
     "Speed: 2d4",
 		"Creation AP: 4",
 		"Favored Skills: Athletics, Persuasion, Insight, Logic, Sneak, Awareness, Medicine, Urban",

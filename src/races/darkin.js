@@ -7,7 +7,7 @@ export default {
     "Physical Build: 3'6\"-4'6\", 50-100lb, 200 years, 2 legs, 2 arms",
     "Base Attributes: Strength 1, Agility 0, Stamina 2, Will 2",
     "Speed: 1d4 + 2",
-    "Creation AP: 4",
+    "Creation AP: 3",
     "Favored Skills: Craftsman, Insight, History, Logic, Marksmanship, Hide, Search, Investigation, Disruption",
     "Creation Skill Points: 10",
     "Languages: Darkin, Any playable race's language"

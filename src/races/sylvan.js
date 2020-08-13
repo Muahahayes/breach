@@ -5,9 +5,9 @@ export default {
   appearance:"Their physique has various animal characteristics, the majority taking on features of a mammal native to their homeland while always keeping a basic humanoid shape consisting of bipedal legs with opposable thumbs and upright neck. How close they resemble a typical human varies from tribe to tribe, with some looking mostly human aside from some minor animal trait and other appearing as large mammals standing upright like a human.",
   stats:[
     "Physical Build: 4'6\"-6'6\", 80-200lb, 120 years, 2 legs, 2 arms, maybe a tail",
-    "Base Attributes: Strength 1, Agility 3, Stamina 2, Will 0",
+    "Base Attributes: Strength 1, Agility 2, Stamina 1, Will 0",
     "Speed: 2d4 + 5ft",
-		"Creation AP: 3",
+		"Creation AP: 4",
 		"Favored Skills: Acrobatics, Charm, Unarmed Combat, Sneak, Hide, Awareness, Search, Outdoorsman",
 		"Creation Skill Points: 10",
 		"Languages: Sylvan, Imperial"

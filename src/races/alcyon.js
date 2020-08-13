@@ -5,7 +5,7 @@ export default {
   appearance:`Standing out easily from a crowd, their broad shoulders and long swinging arms border their broad barrelled chests and thick necks. They have a large humanoid build, with marbled skin reminiscent of stone and earth, such as a swirling marble-white to a flowing muddy-brown.`,
   stats:[
     "Physical Build: 6'6\"-7'6\", 200-300lb, 60 years, 2 arms, 2 legs",
-    "Base Stats: Strength 3, Agility 0, Stamina 3, Will 0",
+    "Base Stats: Strength 3, Agility 0, Stamina 2, Will 0",
     "Speed: 1d6 + 10ft",
 		"Creation AP: 3",
 		"Favored Skills: Mechanics, Athletics, Insight, Martial Arms, Awareness, Urban, Disruption",
@@ -15,7 +15,6 @@ export default {
   racials:[
     "Stride: Add 10ft to your Movement distance. Add 5 miles to your travel distance.",
 		"Long Arms: Add 5ft to your melee reach.",
-    "Hardy: Increase your Max Survival by 5.",
-    "Muscular: Your Strength may go up to [LVL + 4]."
+    "Hardy: Increase your Max Survival by 5."
   ]
 }

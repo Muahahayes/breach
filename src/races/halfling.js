@@ -5,9 +5,9 @@ export default {
   appearance:`They are small in stature, with pointed ears. They're often soft bodied with hands and feet firm as if calloused but remaining smooth to the touch. They tend to have round facial structures.`,
   stats:[
     "Physical Build: 3'-4', 40-60lb, 110 years, 2 arms and 2 legs",
-    "Base Stats: Strength 1, Agility 2, Stamina 1, Will 2",
+    "Base Stats: Strength 0, Agility 2, Stamina 1, Will 1",
     "Speed: 1d4 + 2",
-		"Creation AP: 3",
+		"Creation AP: 4",
 		"Favored Skills: Charm, Insight, History, Hide, Awareness, Perform, Nature, Outdoorsman, Social",
 		"Creation Skill Points: 12",
 		"Languages: Imperial, Any playable race's language"

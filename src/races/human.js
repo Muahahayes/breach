@@ -8,7 +8,7 @@ export default {
     "Physical Build: 5'-6'6\", 100-250lb, 100 years, 2 legs and 2 arms",
     "Base Attributes: Strength 1, Agility 1, Stamina 1, Will 1",
     "Speed: 1d6 + 1",
-    "Creation AP: 5",
+    "Creation AP: 4",
     "Favored Skills: Art, Logic, Athletics, Persuasion, Search, Medicine, Social, Disruption",
     "Creation Skill Points: 12",
     "Languages: Imperial, Any playable race's language"
