@@ -186,7 +186,7 @@ export default [
     }
   ],// LVL 1
   [// LVL 2
-    {
+    {//TODO, remove due to the psychic fatigue rework??
       name: "Focus",
       attributes: "[Action] [Self]",
       description: "During a Psychic Break you may spend a turn to Focus, this does not cause a Psychic Fatigue check. If you are not moved involuntarily, take Life damage, or are forced to take a Psychic Fatigue check during this time you retain this focus. If you take damage equal or greater than ½ your Survival, roll a Psychic Fatigue check to maintain this focus. During your next turn, if you still have this focus, you may use a Power as if you were not in a Psychic Break.",
