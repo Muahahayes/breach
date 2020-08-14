@@ -2,37 +2,35 @@ export default {
   name: "Runic Arts",  
   slogan: "The Powers of Engraving",
   description: "[Flavor Text]",
-  resource: "Engravings: When you level up, instead of selecting 1 Power you may select 3. You Engrave these Powers onto your body to attune yourself to their power. Whenever you select a Lesser Power, you apply a Lesser Engraving upon your body. You may only use a Power if that Power's Engraving is awakened. After a Full Sleep all of your currently awakened Engravings become suppressed and then you may select up to LVL Engravings, these Engraving awaken with Aether and glow brightly on your skin. After a Break you may awaken 1 Engraving by suppressing a different Engraving which is currently awakened. When you gain a Proficiency you may only apply it to a currently awakened Engraving, you may only use Proficiencies that are on currently awakened Engravings.\nFading: Whenever you use an Engraving the runes upon your body gain 1 point of Fade. Each point of Fade reduces all d20 rolls done with Powers by 1 up to a maximum of 20. All Fade is removed when you finish a Full Sleep. Fade points cannot go below zero. When using a Lesser Power, unless stated otherwise, add 1 Fade.",
+  resource: "Runes: When you level up, instead of selecting 1 Power you may select 3. You engrave these Powers onto your body as a Rune to attune yourself to their power. Whenever you select a Lesser Power, you apply a Lesser Rune upon your body. A Rune may be in 3 states: Awakened, Dormant, or Faded. You may only use a Power if that Power's Rune is Awakened. After a Full Sleep all of your currently Awakened and Faded Runes become Dormant and then you may select up to LVL Runes, these Runes become Awakened with Aether and glow brightly on your skin. After a Break you may Awaken any 1 Rune (Dormant or Faded) by selecting a different Rune which is currently Awakened and make it Dormant. You may only use Proficiencies that are on currently Awakened Rune. All Lesser Runes are Awakened after a Full Sleep.\nFading: Awakened Runes gain 1 Fade when their Power is used. When a Rune's Fade is equal or greater than your level that Rune becomes Faded, it is no longer Awakened and you must choose a Dormant Rune to Awaken in its place. If no Runes are currently Dormant, all of your Faded Runes become Dormant. You may select one of these Dormant Runes, except for the Rune that just barely Faded. Lesser Runes do not Awaken another Rune when they Fade, after a Lesser Rune has Faded it only becomes Awakened after a Full Sleep.",
   proficiencies: [
     [
-      "Sustain: Whenever you roll a natural 20 while using a Power, you may subtract 1 Fade.",
+      "Sustain: Whenever you roll a natural 20 while using a Power, this does count towards it Fading.",
       "Two-Handed Speed: If your two-handed weapon reduces your Speed while equipped, reduce the penalty by 1 (to a minimum of 0)."
     ],
     [
-      "Energized: While you have 0 Fade points, add +1 to any damage you deal with a Power.",
-      "Twilight: When an effect uses your current Fade, you may add 1 to the effect.",
-      "Glow: The ignore the first 5 points of Fade you would gain, resets after a Full Sleep.",
+      "Energized: While you have 0 Faded Runes, add +1 to any damage you deal with a Power.",
+      "Glow: The first 2 uses of your Powers does not count towards them Fading, resets after a Full Sleep.",
       "Thick Skin: Increase your Max Survival by 5."
     ],
     [
       "Greater Energized: Increase Energized to +LVL.",
       "Receptive: Gain +LVL to any healing you receive from a Cosmic or Runic Power.",
       "Proficient: When you level up, you may select 4 Powers instead of 3. At least 1 Power must be below LVL 3.",
-      "Dusk: Increase the effect of Twilight by 1.",
       "Constitution: You may add your level to your Stamina Saving rolls.",
       "Clarity: You may add your level to your Will Saving rolls."
     ],
     [
-      "Nightfall: Increase the effect of Twilight by 1.",
-      "Light: You may awaken one additional rune after a Full Sleep. You may not awaken any runes above LVL 3 while using Light.",
-      "Shine: Increase Glow to 10."
+      "Light: You may Awaken one additional Rune after a Full Sleep. You may not awaken any runes above LVL 3 while using Light. This Rune does not Awaken another Rune when it Fades.",
+      "Shine: Increase Glow to 4.",
+      "Refresh: When you take a Break, you may Awaken 1 additional Rune."
     ],
     [
       "Ascended: You may use Light while a rune above LVL 3 is awakened.",
-      "Greater Light: Light may awaken one additional rune."
+      "Greater Light: Light may Awaken one additional Rune."
     ],
     [
-      "Major Light: Light may awaken one additional rune."
+      "Major Light: Light may Awaken one additional Rune."
     ],
     [
       "Extended Gifts: Gain 2 new Powers from your Source of [3 G] or less (Repeatable up to 3)."
@@ -49,13 +47,13 @@ export default {
     ],
     [
       "Runic Munitions: [Action] [Touch] Spend 10 minutes to Engrave up to 30 pieces of ammo. Increase the damage of any ranged attack using this ammo by an amount equal to your level.",
-      "Rune of Alarm: [Action] [Touch] Spend 1 minute touching an object to Engrave it. You are aware of any creature within 3 feet of the Rune."
+      "Rune of Alarm: [Action] [Touch] Spend 1 minute touching an object to Engrave it. You are aware of any creature within 3 feet of the Rune. The Rune persists for 1 day per level."
     ],
     [
-      "Sealing Shot: [Action] [Touch] Spend 10 minutes to Engrave a creature's full true name onto a piece of ammo and roll a d20 + Power, if a ranged attack hits with that ammo that creature must make a Will check vs the Power roll engraved or they are Silenced and Snared for G rounds. Usable once per Full Sleep.",
+      "Sealing Shot: [Action] [Touch] Spend 10 minutes to Engrave a creature's full true name onto a piece of ammo and roll a d20 + Power, if a ranged attack hits using that ammo hits the creature it must Succeed a Will check or they are Silenced and Snared for LVL rounds. This Rune is only usable once per Full Sleep.",
       "Invigorate: [Activation] [Self] Choose a Quirk when you take this Lesser Power. Whenever you gain a Favored bonus with this Quirk you may use your Activation Action to subtract 1 Fade from any awakened Rune.",
       "Feedback: [Activation] [Self] Whenever you roll a Hard Fail, as an Activation Action you may apply 1 Fade to a rune of your choice which is currently awakened.",
-      "Glyph of Honesty: [Action] [AOE] By running your palm along a flat surface you create a circle of runes. While within it, creatures that attempt to knowingly lie must succeed a d20 + Will vs Will or be compelled to tell the truth. On a Soft Fail they may still lie by omission. On a Hard Fail they must tell the full truth."
+      "Glyph of Honesty: [Action] [AOE] By running your palm along a flat surface you create a circle of runes. While within it, creatures that attempt to knowingly lie must succeed a d20 + Will vs Will or be compelled to tell the truth. On a Soft Fail they may still lie by omission. On a Hard Fail they must tell the full truth. This Rune is only usable once per Full Sleep."
     ]
   ]
 }

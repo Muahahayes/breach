@@ -3,14 +3,13 @@ export default [
     {
       name: "Engraved Weapon",
       attributes: "[Action] [Touch]",
-      description: "By pressing your finger against an object you may imbue it with an Engraving of Empowerment and attune it with an Engraving upon your body. " 
+      description: "By pressing your finger against an object you may imbue it with an Engraving of Empowerment and attune it with a Rune upon your body. This does not cause Fade. " 
       + "While you are holding the object, when you make a basic attack with the object you may add 1d4 to the damage result. "
       + "You may only Engrave one object at a time, and may only Engrave an object once per day. You may remove the Engraving at any time as a Free Action. "
-      + "Fade points on this Engraving apply to any Attack roll with the object if you intend to use the effects of this Power. Lasts for 1 day.",
+      + "When you miss with this weapon it applies 1 Fade to this Power, you gain an Unfavored -1 to any attack rolls with this weapon if this Rune is Faded. Lasts for 1 day.",
       proficiencies: [
         [
-          "Empowered: Add your Will to the damage given by this Power.",
-          "Surge: [Activate] If this Power has zero Fade points, add an additional 1d4 damage. Causes 1 additional Fade.",
+          "Surge: [Activate] If this Power has zero Fade and is Awakened, when you hit you may as an Activation Action add an additional 1d4 damage.",
           "Attuned: You are always aware of this object's location and whoever is touching it."
         ],
         [
@@ -18,23 +17,20 @@ export default [
           "Overwhelming: Surge rolls an additional die and adds its damage. (Repeatable up to LVL)",
           "Hazard: Increase any Injury table rolls caused by this Power by 1.",
           "Reach: If the Engraved object is a Ranged Weapon, increase it's range by 10 ft.",
-          "Glow: Once per Break, you may treat the usage of this Power as if it had no Fade points."
+          "Glow: Once per Break, you may treat the usage of this Power as if it had no Fade points and was Awakened."
         ],
         [
           "Greater Impact: Increase the damage of this Power to 1d8. Requires Impact.",
-          "Burst: [Activate] If this Power has LVL or fewer Fade points, you may deal the Engraved Weapon damage to every creature who's Avoidance would be hit by your attack within a 10 ft radius of your attack's target.",
-          "Effortless: If any Engraved Weapon damage die rolls its maximum value, this use of Engraved Weapon does not cause any Fade.",
+          "Burst: [Activate] If this Power is Awakened, you may as an Activation Action deal the Engraved Weapon damage to every creature who's Avoidance would be hit by your attack within a 10 ft radius of your attack's target.",
           "Greater Surge: Increase the damage of Surge to 1d6."
         ],
         [
-          "Ease: Effortless also subtracts 1 Fade from this Power.",
-          "Resonant: Surge may be used if this Power has LVL or fewer Fade points. Surge no longer causes additional Fade.",
+          "Resonant: Surge may be used if this Power has LVL or fewer Fade points.",
           "Magnitude: Increase the damage of this Power to 1d10. Requires Greater Impact.",
-          "Desperate: [Activate] If this Power has 10 or more Fade points, you may add 1d10 to its damage. Causes 1 additional Fade.",
           "Greater Reach: If the Engraved object is a Ranged Weapon, increase it's range by 10 ft. Also, increase the radius of Burst by 10 ft."
         ],
         [
-          "Evoke: [Activate] Increase this Power's Fade to 20 points. Deal 1d10 damage to your target and every creature who's Avoidance would be hit by your attack within a 20 ft radius of your target for each Fade point caused by Evoke.",
+          "Evoke: [Activate] As an Activation Action you may increase this Power's Fade to its maximum. Deal 1d10 damage to your target and every creature who's Avoidance would be hit by your attack within a 20 ft radius of your target for each Fade point caused by Evoke. Afterwards, this Rune becomes Faded.",
           "Shine: Increase the uses of Glow by one per Break."
         ]
       ]
@@ -45,45 +41,43 @@ export default [
       description: "Point to a creature or object you can see within 30 ft, a rune alights on your palm and releases a blast of energy at the target. This makes a moderate clapping sound on impact. Deal 1d8 Kinetic damage.",
       proficiencies: [
         [
-          "Empowered: Add your Will to the damage dealt.",
-          "Surge: [Activate] If this Power has zero Fade points, add an additional 1d6 damage. Causes 1 additional Fade."
+          "Surge: [Activate] If you have no Faded Runes, add an additional 1d6 damage."
         ],
         [
           "Impact: Increase the damage of this Power to 1d10",
           "Reach: Increase the range to 50 ft.",
-          "Glow: Once per Break, you may treat the usage of this Power as if it had no Fade points."
+          "Glow: Once per Break, you may treat the usage of this Power as if it had no Fade points and you had no Faded Runes."
         ],
         [
           "Greater Impact: Increase the damage of this Power to 1d12. Requires Impact.",
-          "Burst: [Activate] If this Power has LVL or fewer Fade points, you may deal the Runic Blast damage to every creature who's Avoidance would be hit by your attack within a 10 ft radius of your attack's target.",
+          "Burst: [Activate] If this Power has 0 Fade you may as an Activation Action deal the Runic Blast damage to every creature who's Avoidance would be hit by your attack within a 10 ft radius of your attack's target.",
           "Effortless: If any Runic Blast damage die rolls its maximum value, this use of Runic Blast does not cause any Fade.",
           "Greater Surge: Increase the damage of Surge to 1d8."
         ],
         [
-          "Ease: Effortless also subtracts 1 Fade from this Power.",
-          "Resonant: Surge may be used if this Power has LVL or fewer Fade points. Surge no longer causes additional Fade.",
+          "Resonant: Surge may be used if you have 1 Faded Rune.",
           "Magnitude: Increase the damage of this Power to 2d8. Requires Greater Impact."
         ],
         [
           "Shine: Increase the uses of Glow by one per Break.",
-          "Aftershock: Whenever you Hard Succeed the Use Power roll to hit with Runic Blast you may do another Runic Blast as a Free Action."
+          "Aftershock: Whenever you Hard Succeed the Power roll to hit with Runic Blast you may do another Runic Blast as a Free Action. This second Runic Blast also causes 1 Fade."
         ]
       ]
     },
     {
       name: "Ward",
       attributes: "[Action] [Touch]",
-      description: "By pressing your finger against an object you imbue it with an Engraving of Warding and attune it to an Engraving upon your body. The effect lasts 1 hour. "
-      +"You are aware of the object's location and whoever is touching it. You may only have 1 Ward active at a time.",
+      description: "By pressing your finger against an object you imbue it with an Engraving of Warding and attune it to a Rune upon your body. The effect lasts 1 hour. "
+      +"You are aware of the object's location and whoever is touching it. You may only have 1 Ward active at a time. You may use the Ward Power on a Ward object to change which proficiencies are active on it. Ward Fades after only 1 use.",
       proficiencies: [
         [
-          "Hinderance: [Activate] When you create the Ward, you may give it an Hindering effect. All creatures within 10 ft of the Ward receive -LVL on their next Speed roll after determining turn order.",
-          "Retaliate: [Activate] When you create the Ward, you may give it a Retaliating effect. Whenever a creature within 30 ft of the Ward harms you, the Ward will attempt a Power attack vs Avoidance to blast a shot of energy at them, dealing 1d6 Kinetic damage. Causes 1 Fade.",
-          "Vigor: [Activate] When you create the Ward, you may give it an Invigorating effect. All creatures you choose within 10 ft of the ward receive +LVL on their next Speed roll after determining turn order.",
-          "Muse: If you imbue an instrument as a Ward, gain a Favored +1 on Perform checks with that instrument (does not stack with Mystical Muse). If you imbue an art tool as a Ward, gain a Favored +1 on Art checks with that tool."
+          "Hinderance: [Activate] When you create the Ward, you may give it an Hindering effect. All creatures who end their turn within 10 ft of the Ward receive -10 ft on their Movement Distance on their next turn.",
+          "Retaliate: [Activate] When you create the Ward, you may give it a Retaliating effect. Whenever a creature within 30 ft of the Ward harms you, the Ward will attempt a Power attack vs Avoidance to blast a shot of energy at them, dealing 1d6 Kinetic damage.",
+          "Vigor: [Activate] When you create the Ward, you may give it an Invigorating effect. All creatures you choose who end their turn within 10 ft of the ward receive 10 ft on their Movment Distance on their next turn.",
+          "Artisan: If you imbue an art tool as a Ward, gain a Favored +1 on Art checks with that tool."
         ],
         [
-          "Sluggish: Hinderance now applies its effect before determining turn order.",
+          "Sluggish: Hinderance now also subtracts 2 from their Initiative.",
           "Impact: Increase the damage of Retaliate to 1d8.",
           "Elemental: Choose an Elemental damage type, your Retaliate may be Kinetic energy or any element you chose with this Proficiency. (1 Additional element with each repeated proficiency, a single Ward can only select one damage type when created)",
           "Empowered: Creatures effected by Vigor may choose to add your Will to any d20 or damage roll, they may only do this one time while affected by this Ward."
@@ -91,8 +85,8 @@ export default [
         [
           "Multiplex: You may have a second Ward active at a time.",
           "Reach: Hinderance and Vigor's range are increased to 30 ft.",
-          "Aggressive: If Retaliate doesn't attack any creatures during a round, at the end of the round you may choose to have it attack the nearest non-allied creature.",
-          "Renewing: Whenever a creature effected by Vigor rolls a Speed value higher than they could have without the Vigor effect, they heal 1d6 damage."
+          "Aggressive: If Retaliate doesn't attack any creatures during a Round, at the end of the Round you may choose to have it attack the nearest non-allied creature.",
+          "Renewing: Whenever a creature effected by Vigor gains a Movement Distance higher than they could have without the Vigor effect, they heal 1d6 damage."
         ]
       ]
     },
@@ -100,7 +94,7 @@ export default [
       name: "Imbued Sight",
       attributes: "[Passive] [Self]",
       description: "Engravings upon your eyes grant you enhanced sight. Gain a Favored +1 to Search checks vs the Hide Skill. Only 1 proficiency may be active per eye at one time. "
-      +"You must make a choice for each eye when you Awaken this Engraving, and that choice lasts until this Engraving becomes Suppressed.",
+      +"You must make a choice for each eye when you Awaken this Engraving, and that choice lasts until this Engraving becomes Faded or Dormant. Lasts for 10 minutes and this Rune Fades after only one use.",
       proficiencies: [
         [],
         [
@@ -125,20 +119,24 @@ export default [
       description: "As an Action you reach out and touch a willing creature. A small rune of Resonance alights upon them. As Reaction when they roll a d6, roll a d6 for yourself. If the sum of the two d6 rolls is equal to 7, you may add this rune's Fade (or a minimum of 1) to their roll. If the sum is equal to 2, subtract this rune's Fade from their roll instead.",
       proficiencies: [
         [
-          "Approximation: The sum may equal 8 as well.",
-          "Dim: This rune begins with 2 Fade when it is awakened after a Full Sleep."
+          "Approximation: The sum may equal 8 as well."
         ],
         [
           "Perfect: The sum may equal 12 as well, when the sum equals 12 you may also add your LVL to their roll.",
           "Snake-Eyes: You no longer need to subtract your Fade from their roll when the sum is equal to 2.",
-          "Faded: This rune begins with 5 Fade when it is awakened after a Full Sleep. Requires Dim."
+          "Collective: Add the Fade on all of your Runes to this effect."
         ],
         [
           "Harmony: [Activate] As an Activation Action when another of your runes gains Fade, you may apply Fade to this rune as well.",
-          "Cobra-Eyes: When the sum is 2 you may add this rune's Fade to their roll. Requires Snake-Eyes."
+          "Cobra-Eyes: When the sum is 2 you may add this rune's Fade to their roll. Requires Snake-Eyes.",
+          "Dim: This rune begins with 2 Fade when it is awakened after a Full Sleep.",
+          "Combine: Add the number of your Faded Runes to this effect."
         ],
         [
           "Darkened: This rune begins with 10 Fade when it is awakened after a Full Sleep. Requires Faded."
+        ],
+        [
+          "Faded: This rune begins with 4 Fade when it is awakened after a Full Sleep. Requires Dim."
         ]
       ]
     },
@@ -151,13 +149,12 @@ export default [
           "Empowered: Add your Will to this rune's effect."
         ],
         [
-          "Potency: Add 5 to this rune's effect.",
-          "Effortless: Their roll only causes an additional Fade on a Hard Fail."
+          "Effortless: Their roll only causes an additional Fade on a Hard Fail.",
+          "Ease: This rune doesn't cause a base Fade if the creature's roll is a Hard Success."
         ],
         [
-          "Greater Potency: Add your LVL to this rune's effect.",
-          "Ease: This rune doesn't cause a base Fade if the creature's roll is a Hard Success.",
-          "Boost: [Activate] As an Activation Action, Embolden may be used on Use Power rolls."
+          "Potency: Add your LVL to this rune's effect.",
+          "Boost: [Activate] As an Activation Action, Embolden may be used on Power rolls."
         ],
         [
           "Quirked: Their roll may use a Quirk without imposing an Unfavored penalty.",
@@ -174,12 +171,12 @@ export default [
     {
       name: "Mystical Muse",
       attributes: "[Action] [Touch]",
-      description: "You enscribe a Rune of the Muse into a musical instrument and attune it with an Engraving upon your body. When you use the instrument to do a Perform roll gain a Favored +1. You may enscribe one instrument at a time.",
+      description: "You enscribe an Engraving of the Muse into a musical instrument and attune it with a Rune upon your body. When you use the instrument to do a Perform roll gain a Favored +1. You may enscribe one instrument at a time.",
       proficiencies: [
         [],
         [
-          "Inspiring Sonnet: [Action] You recite a poem which inspires courage in the hearts of your comrades. Every ally who hears it gains a Favored +1 on their next basic Attack roll.",
-          "Piercing Chord: [Action] You play a sharp progression of notes which causes great discomfort to all who hear it. Creatures who hear it must roll a d20 + Will vs [10 + Fade] to resist the chord, on a Fail they take 1d4 damage and on a Hard Fail they also are Deaf for 1 turn.",
+          "Inspiring Sonnet: [Action] While playing your instrument you recite a poem which inspires courage in the hearts of your comrades. Every ally who hears it gains a Favored +1 on their next basic Attack roll.",
+          "Piercing Chord: [Action] You play a sharp progression of notes which causes great discomfort to all who hear it. Creatures who hear it must roll a Will Save to resist the chord, on a Fail they take 1d4 damage and on a Hard Fail they also are Deaf for 1 turn.",
           "Busking: When you Hard Succeed a Perform check using your enscribed instrument in a public place roll a 1d10 and gain that many Virtua from passing listeners. You may benefit from this proficiency once per Break."
         ],//TODO more
         [
@@ -192,13 +189,12 @@ export default [
       name: "Imbued Projection",
       attributes: "[Action] [Touch]",
       description: "By pressing your finger against a Projection Plating unit, you imbue it with an Engraving of Protection. "
-      +"Increase the Shielding granted by the Projection Plating by LVL. Lasts 1 hour. You may imbue one Projection Plating unit at a time.",
+      +"Increase the Shielding granted by the Projection Plating by LVL. Lasts until this Rune becomes Faded or Dormant. You may imbue one Projection Plating unit at a time.",
       proficiencies: [
         [],
         [
-          "Empowered: Add your Will to the Shielding granted.",
-          "Protection: [React] Whenever the user of the Projection Plating loses 1 Life they may spend their React to roll a [d20 - Fade] vs 10. "
-          +"On a success, reboot the Projection Plating with half its usual effect. Causes 1 Fade."
+          "Empowered: Add your Will to the Shielding granted. (Imbued Projection does not normally benefit from a Will Primary Attribute)",
+          "Protection: [React] Whenever the user of the Projection Plating loses 1 Life they may spend their React to reboot the Projection Plating with half its usual effect. Causes 1 Fade."
         ],
         [
           "Deflection: While their Projection Plating is active, increase the effect of their Deflector by 2.",
@@ -211,7 +207,7 @@ export default [
         ]
       ]
     },
-    {
+    {//TODO rework with new Fade system
       name: "Overload",
       attributes: "[Action] [Melee]",
       description: "When a single target attack with a Fade penalty on its roll hits its target, you may spend an Action to add that attack's Fade to the damage dealt.",
@@ -240,12 +236,11 @@ export default [
     {
       name: "Flux",
       attributes: "[Action] [Ranged]",
-      description: "On your turn, as an Action you release the energy within this rune to cause Flux on a creature you can see. On that creature's next Attack or Power roll, subtract 10 minus this rune's Fade (to a minimum of 0) from that roll. If their roll still succeeds, cause 1 additional Fade. The creature may attempt a Will Save to resist this effect.",
+      description: "On your turn, as an Action you release the energy within this rune to cause Flux on a creature you can see. On that creature's next Attack or Power roll, subtract 5 minus this rune's Fade (to a minimum of 0) from that roll. If their roll still Succeeds, cause 1 additional Fade. The creature may attempt a Will Save to resist this effect.",
       proficiencies: [
         [],
         [
-          "Empowered: Add your Will to the amount subtracted.",
-          "Refresh: If their roll is a Hard Fail, this Flux causes 1 fewer Fade."
+          "Empowered: Add your Will to the amount subtracted."
         ],
         [
           "Impede: You may ready this Action as a React, Flux applies to the creature's current Attack or Power roll when used in this way.",
@@ -253,8 +248,8 @@ export default [
           "Effortless: This rune no longer causes an additional Fade if the creature's roll Soft Succeeds."
         ],
         [
-          "Greater Empowered: Add your LVL to the amount subtracted. Requires Empowered.",
-          "Ease: This rune no longer causes an additional Fade if the creature's roll succeeds. Requires Effortless."
+          "Ease: This rune no longer causes an additional Fade if the creature's roll Hard Succeeds. Requires Effortless.",
+          "Refresh: If their roll is a Hard Fail, this Flux causes 1 fewer Fade."
         ],
         [
           "Daze: Instead of its usual effect, Flux may give the creature the Dumb effect until it ends 2 turns or 10 minutes has past."
@@ -267,27 +262,27 @@ export default [
     {
       name: "Arcane Bolt",
       attributes: "[Action] [Ranged]",
-      description: "Shoot a basic Ranged Attack with a shot empowered by runic power. If the attack hits, roll a d20 + Use Power vs [10 + Fade]. On a Success a bolt of energy leaps out of your weapon and strikes at the target as another basic Ranged Attack, dealing kinetic damage.",
+      description: "Shoot a basic Ranged Attack with a shot empowered by runic power. If the attack hits, the victim must roll a Will Save. On a Fail a bolt of energy leaps out of your weapon and strikes at the target as another basic Ranged Attack, dealing kinetic damage.",
       proficiencies: [
         [],
         [
           "Empowered: If Will is not your Primary Attribute, you may add your Will to the bolt of energy's damage.",
-          "True Shot: On a Hard Success do not roll for the bolt of energy to hit, it cannot miss."
+          "True Shot: On a Hard Success for the original attack the creature does not make a Will Save, the bolt cannot miss."
         ],
         [
           "Ensnared: [Activation] On a Hard Success and as an Activation Action Arcane Bolt may Slow -2 for 2 turns instead of dealing damage.",
           "Paralyzing: [Activation] On a Hard Success and as an Activation Action Arcane Bolt may Paralyze for 1 turn instead of dealing damage.",
-          "Echo: If Arcane Bolt hits, you may roll a second time to fire a second Arcane Bolt."
+          "Echo: If Arcane Bolt hits, the victim must roll a Will Save again to resist a second Arcane Bolt."
         ],
         [
-          ""
+          "Ease: Arcane Bolt causes 1 less Fade if the attack Hard Succeeds."
         ]
       ]
     },
     {
       name: "Quiet",
       attributes: "[Action] [AOE]",
-      description: "By tracing a rune in the air you create a Rune of Quiet. All sound within 10 ft of the rune is Silenced, all creatures within the area are Deaf. The rune glows brightly, cannot be moved and persists for 1 minute.",
+      description: "By tracing a rune in the air you create a Rune of Quiet. All sound within 10 ft of the rune is Silenced, all creatures within the area are Deaf. The rune glows brightly, cannot be moved and persists for 1 minute. This Rune is usable only once before Fading.",
       proficiencies: [
         [],
         [
@@ -307,33 +302,32 @@ export default [
     {
       name: "Cosmic Rune",
       attributes: "[Activate] [Self] [Passive]",
-      description: "At the time you take this Power, choose 1 Power from the Cosmic Source which is of [LVL 3] or below, this is now a Runic Arts Power you may use. This Power gains 1 Fade for every 2 ae required, rounding up, and your maximum ae is considered 10 when calculating effects based on your maximum. Using this Power uses your Activation Action in addition to the Action requirements of the selected Power.",
+      description: "At the time you take this Power, choose 1 Power from the Cosmic Source which is of [LVL 3] or below, this is now a Runic Arts Power you may use. This Power gains 1 Fade for every 2 ae required, rounding up, and your maximum ae is considered 2*LVL when calculating effects based on your maximum. Using this Power uses your Activation Action in addition to the Action requirements of the selected Power.",
       proficiencies: []
     },
     {
       name: "Mimicry",
       attributes: "[Action] [Self]",
-      description: "As an Action the rune re-lights your most recently used rune, allowing you to use that rune again without any proficiencies. This allows you to ignore the limitation on using an Action for the same purpose twice in one turn. Applies the Fade penalty of this rune as well as the rune being reused as well as adding Fade to that rune.",
+      description: "As an Action the rune re-lights your most recently used rune (even if it is Faded), allowing you to use that rune again without any proficiencies. This allows you to ignore the limitation on using an Action for the same purpose twice in one turn. This causes 1 Fade to both this Rune and the Rune being reused. Mimicry may not be reused by Mimicry.",
       proficiencies: [
         [],[],
         [
           "Ease: Do not add the base Fade of using a rune to the rune being reused.",
-          "Mild Effect: You may also reuse one proficiency on the rune being reused, excluding proficiencies that require any kind of action cost."
+          "Mild Effect: You may also reuse one proficiency on the rune being reused, excluding proficiencies that require any kind of action cost or additional Fade."
         ],
         [
-          "Moderate Effect: You may reuse one additional proficiency. Requires Mild Effect.",
-          "Effortless: Do not apply the Fade penalty of the rune being reused.",
+          "Moderate Effect: Mild Effect may reuse two proficiencies. Requires Mild Effect.",
           "Active: You may reuse proficiencies that require an Activation Action without needing to use another Activation Action."
         ],
         [
-          "Greater Effect: You may reuse one additional proficiency. Requires Moderate Effect."
+          "Greater Effect: Mild Effect may reuse a third proficiency. Requires Moderate Effect."
         ]
       ]
     },
     {
       name: "Phase",
       attributes: "[Self] [Action]",
-      description: "As an Action, your physical form phases into an aether form for 1 round or 1 minute out of combat. While phased you pass through solid objects, cannot interact with the physical world and float freely while conserving your momentum. You become immune to attacks/powers except those which deal Elemental or Mental damage types, or which inflict a Curse status effect. Phase ends early if you take damage. When passing through an object, being attacked, or being targeted by a negative effect, roll a d20 + Use Power vs 10. On any result other than a Hard Success, gain 1 Fade on this rune. On a Soft Fail you are no longer phasing after resolving the attack or effect. On a Hard Fail you are no longer phasing before resolving the attack or effect. On any Fail involving an object, you do not pass through the object.",
+      description: "As an Action, your physical form phases into an aether form for 1 round or 1 minute out of combat. While phased you pass through solid objects, cannot interact with the physical world and float freely while conserving your momentum. You become immune to attacks/powers except those which deal Elemental or Mental damage types, or which inflict a Curse status effect. Phase ends early if you take damage. When passing through an object, being attacked, or being targeted by a negative effect, roll a d20 + LVL vs 10. On any result other than a Hard Success, gain 1 Fade on this rune. On a Soft Fail you are no longer phasing after resolving the attack or effect. On a Hard Fail you are no longer phasing before resolving the attack or effect. On any Fail involving an object, you do not pass through the object.",
       proficiencies: [
         [],[],
         [
@@ -342,7 +336,7 @@ export default [
         ],
         [
           "Water Phasing: Instead of its usual effect, you may enter a special form of Phase. In this form, from your perspective water has all of the properties of air and none of the properties of water. Cannot use any proficiencies that do not specifically work with Water Phasing.",
-          "Engrave: As an Action you may reach out and touch a creature. That creature gains the effects of Phase or Water Phasing. If the creature is unwilling, it must contest a d20 + Use Power vs your Use Power."
+          "Engrave: As an Action you may reach out and touch a creature. That creature gains the effects of Phase or Water Phasing. If the creature is unwilling, it must make a Will Save."
         ],
         [
           "Glide: You may move your full movement distance. Requires Propel."
