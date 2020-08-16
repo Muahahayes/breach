@@ -10,7 +10,7 @@ export default {
     ],
     [
       "Energized: While you have 0 Faded Runes, add +1 to any damage you deal with a Power.",
-      "Glow: The first 2 uses of your Powers does not count towards them Fading, resets after a Full Sleep.",
+      "Glow: Subract 1 Fade from the first 2 uses of your Powers, resets after a Full Sleep. This effect does not apply to Runes with a Max of only 1 Fade.",
       "Thick Skin: Increase your Max Survival by 5."
     ],
     [
@@ -21,9 +21,10 @@ export default {
       "Clarity: You may add your level to your Will Saving rolls."
     ],
     [
-      "Light: You may Awaken one additional Rune after a Full Sleep. You may not awaken any runes above LVL 3 while using Light. This Rune does not Awaken another Rune when it Fades.",
+      "Light: You may Awaken one additional Rune after a Full Sleep. You may not Awaken any runes above LVL 3 while using Light. This Rune does not Awaken another Rune when it Fades.",
       "Shine: Increase Glow to 4.",
-      "Refresh: When you take a Break, you may Awaken 1 additional Rune."
+      "Refresh: When you take a Break, you may Awaken 1 additional Rune.",
+      "Brighten: Select 1 Power which has a Max Fade of 1. Increase its Max Fade by 1."
     ],
     [
       "Ascended: You may use Light while a rune above LVL 3 is awakened.",
@@ -34,11 +35,12 @@ export default {
     ],
     [
       "Extended Gifts: Gain 2 new Powers from your Source of [3 G] or less (Repeatable up to 3)."
-      
     ]
   ],
   capstones: [
 //TODO add capstone proficiencies, powerful effects but can only pick 1
+    "Resplendent: Once per Week you may consume the energy from a Moderate Chaos Gem or higher, or a Greater Soul Gem or higher, to Awaken all of your Runes. All of your Runes are reset to 0 Fade and become Dormant instead of Faded when they Fade. This effect lasts for 1 minute.",
+    "Accelerate: Once per Full Sleep you may focus your energy into accelerating your Powers. You gain 1 additional Full Action on each of your turns, but your Runes cause 1 additional Fade when they are used. Lasts for 30 seconds."
   ],
   lesser: [
     [
