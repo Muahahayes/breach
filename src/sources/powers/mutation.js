@@ -126,6 +126,8 @@ export default [
         ]
       ]
     }
+    // melee weapon power
+    // grasping roots
   ], // LVL 1
   [ // LVL 2
     {
@@ -174,7 +176,7 @@ export default [
     {
       name: "Shapeshift",
       attributes: "[Action] [Self]",
-      description: "You may take on the form and appearance of any creature who you have touched and is equal or lesser level than yourself. While in this form your Strength, Agility and Stamina stats match the values of the creature's stats, you can use [LVL 1] Powers with an additional Activation Action and you gain any Passive physical traits of the creature. When you have lost Life equal to your LVL during your transformation, or as an Action on your turn voluntarily, you immediately revert to your normal form, negate any remaining damage received, set your Strain to ½ your max Survival, and reset your Survival to its full value. Usable once per Full Sleep.",
+      description: "You may take on the form and appearance of any creature who you have touched and is equal or lesser level than yourself. While in this form your Strength, Agility and Stamina stats match the values of the creature's stats, you can use [LVL 1] Powers but must spend an additional Activation Action and you gain any Passive physical traits of the creature. When you have lost at least 1 Life, or as an Action on your turn voluntarily, you immediately revert to your normal form, apply that lost Life and any Injuries to your original body and reset your Survival to its full value. Causes 3 Strain.",
       proficiencies: [
         [],
         [
@@ -187,11 +189,11 @@ export default [
         ],
         [
           "Resize: [Action] You may, as a Full Action, change the size of your form by 1 Size.",
-          "Relaxed: Set your Strain to ¼ your max Survival when you revert to your normal form.",
+          "Relaxed: Shapeshift causes 3 fewer Strain, however if you revert forms due to losing Life you immediately gain 3 Strain.",
           "Reform: [React] You may revert to your normal form as a React Action."
         ],
         [
-          "Effortless: You may take on the form of creatures 2 level above yourself and use Powers up to [LVL 3] while Shapeshifted. Requires Up Leveled and Gifted."
+          "Effortless: You may use Powers up to [LVL 3] while Shapeshifted. Requires Gifted."
         ]
       ]
     },
