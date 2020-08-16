@@ -189,12 +189,13 @@ export default [
           "Treatment: [Activate] When Close Wound is used on a target at their Max Survival (or no less than your Will below their Max Survival if Will is your Primary Attribute), instead of healing you may remove one Non-Extreme Injury from the target as an Activation Action. Costs 1 additional ae when used in this way."
         ],
         [
-          "Greater Healing: Increase the potential amount healed by 4.", //12
+          "Greater Potency: Increase the potential amount healed by 4.", //12
           "Cleanse: Restore may be used on effects caused by a Curse.",
           "Greater Cure: Cure may be used on Extreme Injuries. Increases the cost by an additional 2 ae when used to cure an Extreme Injury."
         ]
       ]
     }
+    // ranged weapon power
   ],// LVL 1
   [// LVL 2
     {
@@ -259,7 +260,7 @@ export default [
     {
       name: "Soul Rend",
       attributes: "[Action] [Ranged]",
-      description: "Point at a creature you can see within 30 ft and tear at their soul dealing 1d6 spirit damage. If they are currently at 1 Life this applies a Mark of Rending upon them. If they die while Marked the cosmic gains 1 Soul Fragment. If they heal at least 1 point of Survival the Mark is removed. Costs 2 ae.",
+      description: "Point at a creature you can see within 30 ft and tear at their soul dealing 1d6 spirit damage. If they are currently at 1 Life this applies a Mark of Rending upon them. If they die while Marked the cosmic gains 1 Soul Fragment, a small wisp of energy that contains a portion of the creature's spirit. If they heal at least 1 point of Survival the Mark is removed. Costs 2 ae.",
       proficiencies: [
         [],
         [
@@ -267,7 +268,8 @@ export default [
           "Vengence: [Action] Point at a creature you can see and release a Soul Fragment upon them. They must roll a Will Save or else by struck by a Spirit of Vengence. They take 2d8 spirit damage. If they rolled a Hard Fail they are also gripped by the spirit, Snaring them for 1 turn."
         ],//TODO more
         [
-          "Infusion: [Action] You may spend an hour to use a Soul Fragment to reinfuse an inert Lesser Chaos Gem to create a Lesser Soul Gem. To do so, you must use a Soul Fragment from a creature of at least level 3 and who had a Will of at least 3. Soul Gems may often be used in place of a Chaos Gem. Costs 5 ae."
+          "Infusion: [Action] You may spend an hour to use a Soul Fragment to reinfuse an inert Lesser Chaos Gem to create a Lesser Soul Gem. To do so, you must use a Soul Fragment from a creature of at least level 3 and who had a Will of at least 3. Soul Gems may often be used in place of a Chaos Gem. Costs 5 ae.",
+          "Spectral Force: [Activate] As an Activation Action, when you deal Spirit damage you may use 1 Soul Fragment to deal Darkness damage instead. Add a 1d4 to this damage dealt."
         ],
         [
           "Moderate Infusion: Infusion may be used to reinfuse a Moderate Chaos Gem to create a Moderate Soul Gem. To do so, you must use a Soul Fragment from a creature of at least level 4 and who had a Will of at least 5. Requires Infusion."
@@ -406,7 +408,17 @@ export default [
         ]
       ]
     }
-  ]// LVL 3
+  ],// LVL 3
+  [// LVL 4
+    {
+      name: "Spirit Guise",
+      attributes: "[Action] [Self]",
+      description: "You consume a Soul Fragment from a humanoid creature to take on their form. For 1 day you have their appearance, voice, and any passive physical attributes of the creature including their Strength, Agility and Stamina. You may perform an Insight check vs [15 + Will] of the creature to remember vague details about their life. Costs 4 ae.",
+      proficiencies: [
+        //TODO
+      ]
+    }
+  ]// LVL 4
 ]
 // {
 //   name: "",
