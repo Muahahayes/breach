@@ -184,6 +184,7 @@ export default [
         ]
       ]
     }
+    // ranged weapon power
   ],// LVL 1
   [// LVL 2
     {//TODO, remove due to the psychic fatigue rework??
@@ -267,6 +268,8 @@ export default [
         ]
       ]
     }
+    // scrying
+    // illusory cage (prof at 3 to make the cage physical)
   ],// LVL 2
   [// LVL 3
     {
@@ -340,6 +343,7 @@ export default [
         ]
       ]
     }
+    // mind drain
   ],// LVL 3
   [// LVL 4
     {
