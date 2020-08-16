@@ -382,6 +382,14 @@ export default [
           //TODO
         ]
       ]
+    },
+    {
+      name: "Wraith",
+      attributes: "[Action] [Minion]",
+      description: "You empower a Soul Fragment with dark energy and release it into the world. A Wraith is created at a point you can see within 10 ft of you. This Wraith obeys your commands and will attack any creature it sees which has intent to do physical harm to you. The Wraith fades from this world after 10 minutes. You may only summon 1 Wraith at a time. Costs 2 Bloodlust.",
+      proficiencies: [
+        //TODO
+      ]
     }
   ],// LVL 3
   [// LVL 4
@@ -405,6 +413,14 @@ export default [
           "Immunity: [Activate] Spend your Activation Action at the initial casting of Shroud. During this Shroud effect, any Power that targets you or anywhere within the dark energy of the Shroud fails.",
           "Suppression: [Activate] Spend your Activation Action at the initial casting of Shroud. During this Shroud effect, Nullify may be used on any creature within the dark energy of the Shroud and no longer costs Bloodlust."
         ]
+      ]
+    },
+    {
+      name: "Spirit Guise",
+      attributes: "[Action] [Self]",
+      description: "You consume a Soul Fragment from a humanoid creature to take on their form. For 1 day you have their appearance, voice, and any passive physical attributes of the creature including their Strength, Agility and Stamina. You may perform an Insight check vs [15 + Will] of the creature to remember vague details about their life. Costs 3 Bloodlust.",
+      proficiencies: [
+        //TODO
       ]
     }    
   ]// LVL 4
