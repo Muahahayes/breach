@@ -92,7 +92,7 @@ function Nav({ match }) {
           <li><Link style={navStyle} to="/sources/cosmic">Cosmic</Link></li>
           <li><Link style={navStyle} to="/sources/runic">Runic Arts</Link></li>
           <li><Link style={navStyle} to="/sources/bloodline">Bloodline</Link></li>
-          <li><Link style={navStyle} to="/sources/mutation">Mutation</Link></li>
+          <li><Link style={navStyle} to="/sources/spiritualist">Spiritualist</Link></li>
           </ul>
         </li>
         <li><Link style={navStyle} to="/powers" id="gift-link" onClick={show.bind(null,'gift')}>Powers</Link> <span className="listBtn" id="gift-btn" onClick={toggle.bind(null,'gift')}>▼</span></li>
@@ -102,7 +102,7 @@ function Nav({ match }) {
           <li><Link style={navStyle} to="/sources/cosmic/powers">Cosmic</Link></li>
           <li><Link style={navStyle} to="/sources/runic/powers">Runic Arts</Link></li>
           <li><Link style={navStyle} to="/sources/bloodline/powers">Bloodline</Link></li>
-          <li><Link style={navStyle} to="/sources/mutation/powers">Mutation</Link></li>
+          <li><Link style={navStyle} to="/sources/spiritualist/powers">Spiritualist</Link></li>
           </ul>
         </li>
         <li><Link style={navStyle} to="/techniques">Techniques</Link></li>
