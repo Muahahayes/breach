@@ -28,74 +28,6 @@ export default [
       ]
     },
     {
-      name: "Spirit Shield",
-      attributes: "[Action] [Ranged]",
-      description: "Point at a person within 30 ft that you can see. A thin shimmering layer of spirit energy wraps around their body, protecting them from harm. Provide them with 1d6 Shielding. A person may only have one Spirit Shield effect active on them at one time. Lasts 1 day. Costs 1 ae.",
-      proficiencies: [
-        [
-          "Empowered: Increase the Shielding to 1d8."
-        ],
-        [
-          "Hardened: Until the person's Shielding drops to 0, reduce physical damage taken by 1.",
-          "Pull: You may pull the person up to 5 ft towards you. This does not trigger Opportunity."
-        ],
-        [
-          "Reinforced: Hardened reduces damage by your level instead.",
-          "Redoubt: When the person's Shielding drops to 0 from damage, if the remaining damage would bring them below 1 Survival cancel any damage beyond bringing them to 1 Survival, up to an amount of damage equal to their Max Survival.",
-          "Potency: You may increase the Shielding to 1d10. This increases the cost by 1 ae."
-        ],
-        [
-          "Greater Shielding: Increase the effect of Potency to 2d6.",
-          "Prismatic: Hardened now applies to Elemental and Mental damage (except for Darkness).",
-          "Greater Pull: Increase the effect of Pull to 10 ft"
-        ],
-        [
-          "Shatter: [Activate] When the person's Shielding drops to 0 from damage, roll a Will check vs Agility for all creatures within 10 ft, deal 1d10 Spirit damage to any creature that fails the check.",
-          "Bounce: [Activate] If at least 1 point of Shielding from Spirit Shield remains after being hit by an attack, roll a d4. On a 4, apply the Spirit Shield effect to another person within 30 ft and within line of sight. Costs LVL ae.",
-          "Greater Empowerment: Increase the effect of Empowered to 1d10."
-        ],
-        [
-          "Bulwark: Increase the effect of Greater Shielding to 4d6. Increase the cost by 1 additional ae.",
-          "Skipping Stones: [Activate] When you cast the Spirit Shield power successfully, you may immediately attempt a Bounce effect on that Spirit Shield, and any further Spirit Shields this effect creates during this turn. These Bounce effects do not cost additional Activation Actions.",
-          "Smooth Stones: When using Skipping Stones, the Bounce effect succeeds on a 3 or a 4."
-        ]
-      ]
-    },
-    {
-      name: "Soul Stitching",
-      attributes: "[Action] [Melee]",
-      description: "Lay your hand upon a creature and weave the Aether within their body to close up their wounds. Heal 1d6 damage from that person. Costs 1 ae.",
-      proficiencies: [
-        [
-          "Ease Pain: [Activate] You may spend any amount of the healing to reduce their Strain instead of healing them, and then heal them with the remaining amount.",
-          "Refund: If you roll a 1 on the healing die this Power costs 0 ae."
-        ],
-        [
-          "Potency: Increase the amount healed to 1d8.",
-          "Experienced: Add your level to the amount healed.",
-          "Greater Refund: Refund now applies to a 1 or a 2 on the healing roll."
-        ],
-        [
-          "Clear Mind: [Activate] The target may ignore their next Psychic Fatigue check.",
-          "Restore: Instead of healing, Soul Stitching may end any Blind, Deafen, Silence, Slow or Snare effects not originating from a Bloodline or Mutation Source. Costs 1 additional ae when used in this way.",
-          "Reach: [Activate] You may cast Soul Stitching on a target up to 20 ft away. Only the Refund, Greater Refund, Experienced, and Potency proficiencies may be active when the Power is used in this way. Costs 1 additional ae when used in this way."
-        ],
-        [
-          "Revival: When used on a target below 1 Life, restore 1 Life instead of its usual effects. Costs 1 additional ae when used in this way.",
-          "Greater Healing: Increase the amount healed to 1d10. Requires Potency. Increases the cost by 1 ae.",
-          "Cure: If the target's Survival is at its Max, instead of healing Close Wound cures one Non-Extreme Injury. Costs 1 additional ae when used in this way."
-        ],
-        [
-          "Renew: Increase the amount healed to 2d6. May apply Restore's effect with its cost. Requires Greater Healing.",
-          "Cleanse: Restore may be used on effects caused by a Curse.",
-          "Spirit Stitching: [Activate] You may apply a basic Spirit Shield effect if you possess that Power. Costs 1 additional ae when used in this way."
-        ],
-        [
-          "Protection: When Spirit Stitching applies the Spirit Shield effect, it may use any proficiencies you possess for Spirit Shield. Costs 2 additional ae when used in this way (in addition to Spirit Stitching)."
-        ]
-      ]
-    },
-    {
       name: "Hydromancy",
       attributes: "[Action] [Action] [Ranged] [Elemental]",
       description: "Requires your Elemental Soul to be the Water type. As a Full Action you may create water in an area you can see in a sphere with a radius of 5 ft which centers around a point within 10 ft of you. After creation you may use this Power's Action Action to move it or else it will fall to the ground, you may move this water up to 20 ft in any direction in a wave-like shape and once reaching its destination it falls to the ground. Any creature that is pushed by the water must roll an Agility Save to resist being moved. On a Success they do not move, on a Soft Fail they are carried with the water to its destination and on a Hard Fail they are also dealt 1d6 Water damage. Costs 1 ae.",
@@ -165,6 +97,99 @@ export default [
       ]
     },
     {
+      name: "Shining Shot",
+      attributes: "[Action] [Ranged]",
+      description: "Use a Ranged Weapon to make a basic Ranged Weapon attack. The shot shines brightly as it streaks through the air towards its target. Add 1d4 Spirit damage to the attack. Costs 1 ae.",
+      proficiencies: [
+        [
+          "Silvered: The physical damage dealt by this attack is considered a Silver weapon.",
+          "Sharp Aim: Permanently add 1 to your Marksmanship Skill and increase its maximum by 1."
+        ],
+        [
+          "Impact: Increase the damage die to 1d6.",
+          "Twin Shot: If Shining Shot hits, you may make a basic Ranged Weapon attack on the same target for free.",          
+          "Focused: [Action] As an Action before attacking, you may focus more power into your shot. Roll each base damage die of your Ranged Weapon twice when adding up your damage dealt."
+        ],
+        [
+          "Deadly Aim: Permanently add 1 to your Marksmanship Skill and increase its maximum by 1.",
+          "Fork: Your Twin Shot may be used on any target within range.",
+          "Dark Twin: You may spend 1 ae to use Shining Shot with your Twin Shot attack."
+        ],
+        [
+          "Piercing Shot: [Action] As an Action, you may attempt to deal 1 point of Life damage to the target hit. They must roll a Stamina Save to resist the effect.",
+          "Greater Impact: Increase the damage die to 1d8."
+        ]
+      ]
+    },
+    {
+      name: "Spirit Shield",
+      attributes: "[Action] [Ranged]",
+      description: "Point at a person within 30 ft that you can see. A thin shimmering layer of spirit energy wraps around their body, protecting them from harm. Provide them with 1d6 Shielding. A person may only have one Spirit Shield effect active on them at one time. Lasts 1 day. Costs 1 ae.",
+      proficiencies: [
+        [
+          "Empowered: Increase the Shielding to 1d8."
+        ],
+        [
+          "Hardened: Until the person's Shielding drops to 0, reduce physical damage taken by 1.",
+          "Pull: You may pull the person up to 5 ft towards you. This does not trigger Opportunity."
+        ],
+        [
+          "Reinforced: Hardened reduces damage by your level instead.",
+          "Redoubt: When the person's Shielding drops to 0 from damage, if the remaining damage would bring them below 1 Survival cancel any damage beyond bringing them to 1 Survival, up to an amount of damage equal to their Max Survival.",
+          "Potency: You may increase the Shielding to 1d10. This increases the cost by 1 ae."
+        ],
+        [
+          "Greater Shielding: Increase the effect of Potency to 2d6.",
+          "Prismatic: Hardened now applies to Elemental and Mental damage (except for Darkness).",
+          "Greater Pull: Increase the effect of Pull to 10 ft"
+        ],
+        [
+          "Shatter: [Activate] When the person's Shielding drops to 0 from damage, roll a Will check vs Agility for all creatures within 10 ft, deal 1d10 Spirit damage to any creature that fails the check.",
+          "Bounce: [Activate] If at least 1 point of Shielding from Spirit Shield remains after being hit by an attack, roll a d4. On a 4, apply the Spirit Shield effect to another person within 30 ft and within line of sight. Costs LVL ae.",
+          "Greater Empowerment: Increase the effect of Empowered to 1d10."
+        ],
+        [
+          "Bulwark: Increase the effect of Greater Shielding to 4d6. Increase the cost by 1 additional ae.",
+          "Skipping Stones: [Activate] When you cast the Spirit Shield power successfully, you may immediately attempt a Bounce effect on that Spirit Shield, and any further Spirit Shields this effect creates during this turn. These Bounce effects do not cost additional Activation Actions.",
+          "Smooth Stones: When using Skipping Stones, the Bounce effect succeeds on a 3 or a 4."
+        ]
+      ]
+    },
+    {
+      name: "Soul Stitching",
+      attributes: "[Action] [Melee]",
+      description: "Lay your hand upon a creature and weave the Aether within their body to close up their wounds. Heal 1d6 damage from that person. Costs 1 ae.",
+      proficiencies: [
+        [
+          "Ease Pain: [Activate] You may spend any amount of the healing to reduce their Strain instead of healing them, and then heal them with the remaining amount.",
+          "Refund: If you roll a 1 on the healing die this Power costs 0 ae."
+        ],
+        [
+          "Potency: Increase the amount healed to 1d8.",
+          "Experienced: Add your level to the amount healed.",
+          "Greater Refund: Refund now applies to a 1 or a 2 on the healing roll."
+        ],
+        [
+          "Clear Mind: [Activate] The target may ignore their next Psychic Fatigue check.",
+          "Restore: Instead of healing, Soul Stitching may end any Blind, Deafen, Silence, Slow or Snare effects not originating from a Bloodline or Mutation Source. Costs 1 additional ae when used in this way.",
+          "Reach: [Activate] You may cast Soul Stitching on a target up to 20 ft away. Only the Refund, Greater Refund, Experienced, and Potency proficiencies may be active when the Power is used in this way. Costs 1 additional ae when used in this way."
+        ],
+        [
+          "Revival: When used on a target below 1 Life, restore 1 Life instead of its usual effects. Costs 1 additional ae when used in this way.",
+          "Greater Healing: Increase the amount healed to 1d10. Requires Potency. Increases the cost by 1 ae.",
+          "Cure: If the target's Survival is at its Max, instead of healing Close Wound cures one Non-Extreme Injury. Costs 1 additional ae when used in this way."
+        ],
+        [
+          "Renew: Increase the amount healed to 2d6. May apply Restore's effect with its cost. Requires Greater Healing.",
+          "Cleanse: Restore may be used on effects caused by a Curse.",
+          "Spirit Stitching: [Activate] You may apply a basic Spirit Shield effect if you possess that Power. Costs 1 additional ae when used in this way."
+        ],
+        [
+          "Protection: When Spirit Stitching applies the Spirit Shield effect, it may use any proficiencies you possess for Spirit Shield. Costs 2 additional ae when used in this way (in addition to Spirit Stitching)."
+        ]
+      ]
+    },
+    {
       name: "Close Wound",
       attributes: "[Action] [Touch]",
       description: "The Cosmic presses their hand against a creature's open wound caused by damage taken during this Round or the previous Round. Heal the creature for up to 5 of the damage caused (healing added from Will's Primary Attribute benefit cannot go above the original damage caused). Costs 1 ae.",
@@ -174,7 +199,7 @@ export default [
           "Refund: If Close Wound only heals a damage amount equal or less than your level this Power costs 0 ae. (ignores healing caused by Holistic Healing)"
         ],
         [
-          "Holistic Healing: healing added from the Will Primary Attribute benefit may go above the original damage caused. (ie, the creature took 3 damage on the previous Round and you have a Will of 4. You may heal the 3 damage, and then an additional 4 points of healing)",
+          "Holistic Healing: Healing added from the Will Primary Attribute benefit may go above the original damage caused. (ie, the creature took 3 damage on the previous Round and you have a Will of 4. You may heal the 3 damage, and then an additional 4 points of healing)",
           "Experienced: Add your level to the maximum possible damage healed."
         ],
         [
@@ -194,10 +219,9 @@ export default [
           "Greater Cure: Cure may be used on Extreme Injuries. Increases the cost by an additional 2 ae when used to cure an Extreme Injury."
         ]
       ]
-    }
-    // ranged weapon power
-  ],// LVL 1
-  [// LVL 2
+    },
+    // add a non-combat related power
+    // chaos bolt
     {
       name: "Barrier",
       attributes: "[Action] [AoE]",
@@ -319,7 +343,7 @@ export default [
     {
       name: "Destiny Bomb",
       attributes: "[Action] [AoE] [Melee]",
-      description: "As two Full Actions the Cosmic focuses the Aether within themselves into a volatile high pressure state which begins to pull on the surrounding Aether distorting the karmic destiny of any creature within 20 ft of the Cosmic. The energy is released, spending half of the Cosmic's current ae and dealing 1d10 spirit damage for each ae spent to all creature's hit within the area. Creature's must roll an Agility or Will Save, on a Soft Success they talk half damage and on any Fail they take full damage from the effect. After the effect, any creature that failed the check receives a -1 Unfavored on their next d20 roll and any creature that Hard Failed the check considers their next Soft Fail of any kind to be a Hard Fail. The Cosmic also receives the Unfavored effect, and recieves the other effect if any creature Hard Succeeds their roll. These non-damaging effects only occur if more than LVL ae was spent.",
+      description: "By spending 2 Full Actions the Cosmic focuses the Aether within themselves into a volatile high pressure state which begins to pull on the surrounding Aether distorting the karmic destiny of any creature within 20 ft of the Cosmic. The energy is released, spending half of the Cosmic's current ae and dealing 1d10 spirit damage for each ae spent to all creature's hit within the area. Creature's must roll an Agility or Will Save, on a Soft Success they talk half damage and on any Fail they take full damage from the effect. After the effect, any creature that failed the check receives a -1 Unfavored on their next d20 roll and any creature that Hard Failed the check considers their next Soft Fail of any kind to be a Hard Fail. The Cosmic also receives the Unfavored effect, and recieves the other effect if any creature Hard Succeeds their roll. These non-damaging effects only occur if more than LVL ae was spent.",
       proficiencies: [
         [],[],
         [
@@ -407,9 +431,7 @@ export default [
           */
         ]
       ]
-    }
-  ],// LVL 3
-  [// LVL 4
+    },
     {
       name: "Spirit Guise",
       attributes: "[Action] [Self]",

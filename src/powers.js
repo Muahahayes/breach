@@ -57,10 +57,9 @@ function Powers({ match }) {
 
     for (let level in gifts) {
       let levelContent = [];
-      if (gifts[level].length > 0) {
-        if (level > 0) levelContent.push(<hr className="searchHR"/>);
-        levelContent.push(<h2>[LVL {Number(level)+1}]</h2>);
-      }      
+      let tiers = ['Common', 'Epic', 'Legendary']
+      levelContent.push(<hr className="searchHR"/>);
+      levelContent.push(<h2>[{tiers[level]}]</h2>);            
       for (let gift of gifts[level]) {
         if (gift) levelContent.push(<div className={`searchEntry`} id={gift.name}>{renderGift(gift, match.params.s)}</div>);
       }

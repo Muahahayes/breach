@@ -194,9 +194,7 @@ export default [
           "Cleanse: Purify may remove all Curse effects on the creature, doing so causes Restore to immediately become Faded."
         ]
       ]
-    }
-  ], // LVL 1
-  [ // LVL 2
+    },
     {
       name: "Mystical Muse",
       attributes: "[Action] [Touch]",
@@ -413,9 +411,7 @@ export default [
           "Glide: You may move your full movement distance. Requires Propel."
         ]
       ]
-    }
-  ],// LVL 3
-  [// LVL 4
+    },
     {
       name: "Runic Invigoration",
       attributes: "[Action] [Self]",

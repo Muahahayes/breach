@@ -125,11 +125,11 @@ export default [
 	        "T-Cells: May substitute rolling the healing dice with the current amount of Strain you have."
         ]
       ]
-    }
+    },
     // melee weapon power
+    // melee non-weapon power
     // grasping roots
-  ], // LVL 1
-  [ // LVL 2
+    // song based power
     {
       name: "Tight Reflexes",
       attributes: "[React] [Self]",
@@ -235,6 +235,42 @@ export default [
           //TODO
         ]
       ]
+    },    
+    {
+      name: "True Strike",
+      attributes: "[Action] [Melee]",
+      description: "Channel your conviction into a melee attack, gain a Favored +1 to the attack roll. Causes 1 Strain",
+      proficiencies: [
+        [
+          /**
+          On a Hard Success treat any roll on your damage dice which is below half of the maximum value as if you rolled half it's maximum value
+          lvl 2, Ignore physical damage immunity to deal half damage, also ignore physical damage resistance 
+           */
+        ],
+        [
+          //lvl 4, may deal spirit type damage, requires ^
+        ]
+      ]
+    },
+    {
+      name: "Radiant Weapon",
+      attributes: "[Action] [Melee]",
+      description: "Empower a melee weapon or your fists with a shining light. Choose a visual representation based on your convictions (such as sunlight, moonlight, lightning, ect.) and choose either Spirit, Darkness, Nature or Electric damage when you gain this Power. Make a melee attack and deal an additional 1d4 damage of your chosen type. Causes 1 Strain.",
+      proficiencies: [
+        [
+          /**
+          Profs:
+          Heal based on the bonus damage dealt
+          Fear undead/fiends on hit
+          1d6 damage
+          Also deal the bonus damage to a nearby creature
+          Deal the bonus damage even on a Soft Fail attack
+           */
+        ],
+        [
+          //TODO
+        ]
+      ]
     }
   ], // LVL 2
   [ // LVL 3
@@ -244,6 +280,41 @@ export default [
       description: "Your DNA forms a runic word, your body has evolved to use it but cannot Awaken any other runes. At the time you take this Power, choose 1 Power from the Runic Arts Source which is of [LVL 3] or below, this is now a Mutant Power you may use. This Power gains Fade as a Runic Arts Power normally would. Using this Power uses your Activation Action in addition to the Action requirements of the selected Power.",
       proficiencies: []
     },
+    {
+      name: "Smite",
+      attributes: "[Action] [AOE]",
+      description: "By spending 2 Full Actions the Spiritualist calls upon a greater power to deliver their wrath to nearby creatures, when selecting this power choose one appearance based on your beliefs (such as a flash of light, a moonbeam, a crash of thunder, ect). Deals 6 d6s of Spirit Damage distributed amongst nearby creatures within 10 ft before rolling, no one creature may take more than 12 damage from these dice (extra damage bonuses such as Will Primary Benefit are unaffected). Creatures that receive at least 1 die must roll an Agility Save to avoid the effect, on a Success they are not affected. Causes 3 Strain.",
+      proficiencies: [
+        [],
+        [
+          /**
+          Profs:
+          Epic
+          Add 2 d6s
+          Increase the cap on dice damage to 18
+          Deal half damage on a Soft Success for the Save
+          May roll before distributing the dice
+          Deal half damage but apply the Blind effect for 2 turns to creatures that Hard Fail the Save
+
+          Legendary
+          Add 2 d6s
+          May spend 3 more Strain and Activation to use all the dice on one target with uncapped damage
+          May spend 3 more Strain and Activation to increase the size of the dice to a d10, however no creature may receive more than 1 die
+          */
+        ]
+      ]
+    },
+    {
+      name: "Tranquility",
+      attributes: "[Action] [Minion]",
+      description: "Spend 2 Full Actions to perform a small prayer to create an area of peace, reducing up to 3 damage dealt to ANY creature within 20 ft, up to a total of 10 damage reduced throughout the duration. Lasts 1 turn. Causes 2 Strain. ",
+      proficiencies: [
+        [],
+        [
+          //TODO
+        ]
+      ]
+    }, 
     {
       name: "Flurry",
       attributes: "[Action] [Melee]",
@@ -282,9 +353,6 @@ export default [
         ]
       ]
     }
-  ], // LVL 3
-  [ // LVL 4
-
   ], // LVL 4
   [ // LVL 5
     {

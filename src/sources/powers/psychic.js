@@ -1,9 +1,9 @@
-export default [
+export default [//TODO: change profs that add additional psychic fatigue checks to have Effort +1
   [// LVL 1
     {
       name: "Contract",
       attributes: "[Passive] [Self]",
-      description: "You may take this Power at and only at [LVL 1]. When your Powers awakened inside you there was a small tear in the Aether of your soul. You commune with a Cosmic creature through the tear and are granted otherworldly power in exchange for a Contract you agree to uphold (usually has conditions that must be met). This creature may speak to your mind through the tear during a Full Sleep. You gain two [LVL 1] or one [LVL 1] and one [LVL 2] Contract Powers for free. Contract Powers may also be selected by Psychics who do not make a Contract, unless stated otherwise, but Proficiencies marked [Contract] may only be used with an active Contract. These Powers you get for free come from your Contract and if you violate the Contract they may not be used. When you level in future, you may only select [LVL 1] or [LVL 2] Powers from the Psychic Source list. You may only select Powers of [LVL 3] or higher if they are Contract Powers.",
+      description: "You may take this Power at and only at [LVL 1]. When your Powers awakened inside you there was a small tear in the Aether of your soul. You commune with a powerful creature through the tear and are granted otherworldly power in exchange for a Contract you agree to uphold (usually has conditions that must be met). Create a new Promise Quirk to represent this Contract. This creature may speak to your mind through the tear during a Full Sleep at its discretion. You gain two [LVL 1] or one [LVL 1] and one [LVL 2] Contract Powers for free. Contract Powers may also be selected by Psychics who do not make a Contract, unless stated otherwise, but Proficiencies marked [Contract] may only be used with an active Contract. These Powers you get for free come from your Contract and if you violate the Contract they may be lost, you may regain these Powers by reconciling your Contract or creating a new Contract with this or another powerful otherworldly being. When you level in future, you may only select Powers of [LVL 3] or below, you may only select higher level Powers if they are marked as a Contract Power.",
       proficiencies: []
     },
     {
@@ -65,13 +65,19 @@ export default [
       ]
     },
     {
+      name: "Illusory Arrow",
+      attributes: "[Action] [Ranged]",
+      description: "You weave a colored arrow of light and project it out of a ranged weapon. Make a basic ranged weapon attack. A glowing streak of color sails through the air towards the target, dealing an additional 1d4 Psychic damage on hit. This attack uses no ammo but has no effect on blind creatures.",
+      proficiencies: [
+        //TODO
+      ]
+    },
+    {
       name: "Psionic Blade",
       attributes: "[Free] [Melee]",
-      description: "You extend a violent Psychic energy from your hand. After making a basic unarmed melee attack, add 1d4 psychic damage to this attack. Usable once per turn. This Power does not trigger the usual Psychic Fatigue check if the attack hits.",
+      description: "You extend a shard of violent Psychic energy from your hand. Make a basic unarmed melee attack, on a hit add 1d4 psychic damage to the attack. Usable once per turn. This Power does not trigger the usual Psychic Fatigue check if the attack hits.",
       proficiencies: [
-        [
-          "Empowered: Add your Will to the damage."
-        ],
+        [],
         [
           "Sheath: You may use Psionic Blade with a sharp or piercing damage melee weapon.", 
           "Horrific: [Activate] Instead of dealing the additional psychic damage, you may Frighten the target for one turn.",
@@ -183,11 +189,17 @@ export default [
           "Debilitate: [Activate] When Pursuit deals damage, you may as an Activation Action instead deal 0 damage and reduce the creature's max survival by half the damage your attack would have dealt. This survival is restored if the creature receives a healing amount which would bring it to its original max survival or when it completes a Full Sleep."
         ]
       ]
-    }
-    // ranged weapon power
-  ],// LVL 1
-  [// LVL 2
-    {//TODO, remove due to the psychic fatigue rework??
+    },
+    // add a non-combat related power
+    {
+      name: "Befuddle",
+      attributes: "[Action] [Ranged]",
+      description: "Point at a creature within 30 ft you can see. The creature must make a Will Save. On a Soft Fail the creature is Slowed -1 for 3 turns or 1 minute out of combat. On a Hard Fail the creature becomes confused and has difficulty keeping track of its surroundings, on its next turn or for the next 1 minute out of combat when it attempts to move it must roll a 2d4. The direction of its movement is determined by the result, with a 2 being diagonally behind it to the right, and diagonal values rotating counter clockwise to 8 being behind it to the left. A 5 is directly ahead of it. On a Hard Success, increase the difficulty of your Psychic Fatigue checks by 1.",
+      proficiencies: [
+        //TODO
+      ]
+    },
+    {//TODO, remove due to the psychic fatigue rework?? or maybe have it lower the DC of the psychic fatigue checks
       name: "Focus",
       attributes: "[Action] [Self]",
       description: "During a Psychic Break you may spend a turn to Focus, this does not cause a Psychic Fatigue check. If you are not moved involuntarily, take Life damage, or are forced to take a Psychic Fatigue check during this time you retain this focus. If you take damage equal or greater than ½ your Survival, roll a Psychic Fatigue check to maintain this focus. During your next turn, if you still have this focus, you may use a Power as if you were not in a Psychic Break.",
@@ -267,9 +279,22 @@ export default [
           "Deep Roots: Threads persist through the creature becoming unconscious and have no time limit."
         ]
       ]
+    },
+    {
+      name: "Restraining Light",
+      attributes: "[Action] [Ranged]",
+      description: "A cage formed out of light appears around a creature you can see within 30 ft. They must make a Will Save to resist the effect, on a Fail they are Snared for 1 Round. This has no effect on creatures with a Will less than 1.",
+      proficiencies: [
+        [],
+        [
+          //cage all creatures in a 5ft radius
+          //can extend duration by spending an Activation Action each turn, creatures may make the Will Save on each turn
+          //prevent creature from making a melee attack
+          //may effect creatures with low Will
+        ]
+      ]
     }
     // scrying
-    // illusory cage (prof at 3 to make the cage physical)
   ],// LVL 2
   [// LVL 3
     {
@@ -297,6 +322,25 @@ export default [
         [
           "Zealous: When the victim lowers their regard for an assisting person, lower it by 2.",
 		      "Devoted: [Activate] Assisted and triggered checks cannot Hard Succeed if their regard for the Psychic is greater than 0. They gain 1 regard for the Psychic whenever they Hard Fail any check against this Power up to a Max regard of 5."
+        ]
+      ]
+    },
+    {
+      name: "Illusory Chains",
+      attributes: "[Action] [Melee]",
+      description: "Chains appear that extend from your hands. They reach up to 10 ft away from you and last for 1 hour. You may make unarmed melee attacks using the chains to deal 1d6 Kinetic damage. You may grapple creatures within reach of the chains, doing so uses your Power skill instead of Athletics. A creature may make an Awareness check vs Power to see through the illusion, on a Soft Success they may not be grappled by these chains and on a Hard Success they also may not be damaged by these chains.",
+      proficiencies: [
+        [],
+        [
+          /*
+          prof ideas
+          increase damage
+          allow you to climb with them
+          allow you to Block using the chains
+          increase the reach to 15 ft for making attacks
+          if a creature hard fails their attempt to end the grapple, you may leave chains behind that do not go away until they succeed the grapple or you enter a psychic break
+          while grappled the creature is compelled to only speak truths
+          */
         ]
       ]
     },
@@ -342,10 +386,8 @@ export default [
           */
         ]
       ]
-    }
+    },
     // mind drain
-  ],// LVL 3
-  [// LVL 4
     {
       name: "Madness",
       attributes: "[Action] [Melee]",

@@ -7,7 +7,8 @@ content: <div>
   <b>Killing/Subduing:</b> When dealing damage the attacker may attempt to subdue and not kill the victim, if they reduce the victim's Life below 1 but not to a negative number higher than the victim's Max Life the victim is made unconscious, otherwise the victim is Dead. If the creature's Life drops below 1 from damage, the attacker intends to kill, and the creature is a Player, or for NPCs at your GM's discretion, apply the <Link to="/rules/stats">Death</Link> rules. Otherwise, the creature is immediately Dead.</p>
   <hr/>
   <h3>Types of Damage:</h3>
-  <p><b>Resistance:</b> When you are Resistant to a type of Damage, subtract your Level from all damage received from that type. Additionally, whenever that type of damage would bring you to 0 Survival, roll a d20 vs the remaining damage. On a success, cancel the remaining damage and set your Survival to 1.<br/><br/>
+  <p><b>Resistance:</b> Whenever that type of damage would bring you to 0 Survival, roll a d20 vs the remaining damage. On a success, cancel the remaining damage and set your Survival to 1. When you would take direct damage to your Life for each point of Life roll a d20 vs 10. On a Soft Success treat the injury as Mild, and on a Hard Success ignore that point of Life damage.<br/>
+  <b>Reduction: When you have a reduction to a damage type you receive less damage from that type equal to the reduction, to a minimum of 1 damage received.</b><br/><br/>
   <b>Physical types:</b><br/>
   <ul>
     <li><b>Blunt:</b> Damage caused by impact with a flat non-sharp object.</li>

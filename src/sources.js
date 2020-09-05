@@ -47,6 +47,7 @@ function parseSource(sourceJSON) {
     let proficiencies = [];
     let lesserGifts = [];
     let capstones = [];
+    let paths = [];
     parseContent(sourceJSON.description, desc);
     parseContent(sourceJSON.resource, resource);
     for (let level in sourceJSON.proficiencies) {
@@ -67,7 +68,8 @@ function parseSource(sourceJSON) {
         if (sourceJSON.lesser.length > Number(level)+1) lesserGifts.push(<br/>);
       }
     }
-    parseContent(sourceJSON.capstones, capstones)
+    if(sourceJSON.capstones) parseContent(sourceJSON.capstones, capstones)
+    if(sourceJSON.path) parseContent(sourceJSON.path, paths)
 
     // Format for displaying the source's information
     return (
@@ -84,7 +86,9 @@ function parseSource(sourceJSON) {
         {lesserGifts}
         <hr/>
         {(sourceJSON.capstones.length > 0)?<h3>LVL 7 Capstones: </h3>:null}
-        {capstones}
+        {(sourceJSON.capstones)?capstones:null}
+        {(sourceJSON.path)?<h3>Paths:</h3>:null}
+        {(sourceJSON.path)?paths:null}
       </div>
     );
 }

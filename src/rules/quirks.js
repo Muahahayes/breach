@@ -15,5 +15,8 @@ export default {
 		<li>Weaknesses: What bad habit, fear or shortcoming gets in the way of them succeeding</li>
 		<li>Conflict: What event, person, place, or organization is actively or passively pushing them to fail or acts as an obstacle</li>
     </ul>
+    <hr/>
+    <h3>Promises:</h3>
+    A Promise Quirk is a special Quirk that is gained through storytelling or special Powers you may select from your Source. A Promise is a set of rules or actions you agree to abide by. Whenever you violate a Promise while doing an Action, gain an Unfavored -1 on any d20 rolls involved. If you are going down the wrong path or violating the Promise over a period of time, receive this Unfavored -1 on all d20 rolls you make during this time. Do not gain additional XP for this Unfavored penalty and you do not use Promise Quirks for bonuses or penalties like you would one of your 5 base Quirks. You may have any number of Promises at one time.
   </div>
 }

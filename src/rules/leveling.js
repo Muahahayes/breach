@@ -15,20 +15,24 @@ export default {
     Note: LVL 7 is the maximum level you can attain, but you may continue to gain Proficiencies and increase your Skills.
     </span><br/><br/>
     <hr/>
+    <h3>Capstones:</h3>
+    <span>Upon reaching lvl 8 you must select 1 Capstone from your Source. These are powerful and unique passives or abilities that showcase the peak capabilities of your Source. You only get 1 Capstone so choose wisely!</span><br/><br/>
+    <hr/>
     <h3>Max Level:</h3>
-    <span>Upon reaching lvl 7 your character no longer levels up by gaining XP. You still may gain XP as normal, and gain Proficiencies and increase your Skills, but there is no higher level than 7. If all of your Skills have reached their cap you can no longer gain XP and your character has reached the peak of their mortal capabilities.<br/>
-    Additionally, immediately after attaining level 7 you must select 1 Capstone from your Source. These are powerful and unique passives or abilities that showcase reaching the peak of your Source.
-    </span>
+    <span>Upon reaching lvl 10 your character no longer levels up by gaining XP. You still may gain XP as normal, and gain Proficiencies and increase your Skills, but there is no higher level than 10. If all of your Skills have reached their cap you can no longer gain XP and your character has reached the peak of their mortal capabilities.<br/></span>
     <table>
       <tbody>
       <tr><td>Level</td><td>XP for next level</td><td>Proficiencies</td></tr>
       <tr><td>1</td><td>15</td><td>3</td></tr>
-      <tr><td>2</td><td>40</td><td>8</td></tr>
-      <tr><td>3</td><td>60</td><td>12</td></tr>
-      <tr><td>4</td><td>80</td><td>16</td></tr>
-      <tr><td>5</td><td>100</td><td>20</td></tr>
-      <tr><td>6</td><td>100</td><td>20</td></tr>
-      <tr><td>7</td><td>---</td><td>&#8734;</td></tr>
+      <tr><td>2</td><td>20</td><td>4</td></tr>
+      <tr><td>3</td><td>30</td><td>6</td></tr>
+      <tr><td>4</td><td>50</td><td>10</td></tr>
+      <tr><td>5</td><td>50</td><td>10</td></tr>
+      <tr><td>6</td><td>50</td><td>10</td></tr>
+      <tr><td>7</td><td>75</td><td>15</td></tr>
+      <tr><td>8</td><td>100</td><td>20</td></tr>
+      <tr><td>9</td><td>100</td><td>20</td></tr>
+      <tr><td>10</td><td>---</td><td>&#8734;</td></tr>
       </tbody>
     </table>
   </div>

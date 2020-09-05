@@ -15,15 +15,14 @@ export default {
       "Thick Skin: Increase your Max Survival by 5."
     ],
     [
-      "Focused: Add your level to your defensive Will checks.",
       "Uncensored: Once per day you may at will end a Silence status effect active on you.",
       "Two-Handed Tempo: Two-Handed Speed reduces the penalty by an additional 1 (to a minimum of 0).",
       "Constitution: You may add your level to your Stamina Saving rolls.",
       "Clarity: You may add your level to your Will Saving rolls."
     ],
     [
-      "No Resistance: Roll your Psychic Fatigue checks after the main roll of using a Power. Whenever you Hard Succeed while using a Power, you do not make the base Psychic Fatigue check for that use of that Power.",
-      "Psi Sense: When you are within 30 ft of a creature you are aware of you immediately know if they have the Psychic Source, and if so what their level is."
+      "No Resistance: Roll your Psychic Fatigue checks after the main roll of using a Power. Whenever you Hard Succeed a d20 roll while using a Power, subtract 1 from the difficulty of your Psychic Fatigue rolls (to a minimum of 1).",
+      "Psi Sense: When you are within 30 ft of a creature which you are aware of you immediately know if they have the Psychic Source, and if so what their level is."
     ],
     [
       "Mental Resilience: After putting 3 points into Mental Resilience you gain resistance to Mental damage types."
@@ -32,8 +31,7 @@ export default {
       //6
     ],
     [
-      "Extended Gifts: Gain a new Power from your Source of [LVL 3] or less (Repeatable up to 3)."
-      
+      "Extended Gifts: Gain a new Power from your Source of Common Tier (Repeatable up to 3)."      
     ]
   ],
   capstones: [

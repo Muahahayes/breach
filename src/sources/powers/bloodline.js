@@ -137,24 +137,24 @@ export default [
     {
       name: "Dark Shot",
       attributes: "[Action] [Ranged]",
-      description: "Use a Ranged Weapon to make a basic Ranged Weapon attack. Add 1d4 Darkness damage to the attack. Costs 1 Bloodlust.",
+      description: "Use a Ranged Weapon to make a basic Ranged Weapon attack. Dark energy is woven around the shot, leaving a trail of shadow in its wake. Add 1d4 Darkness damage to the attack. Costs 1 Bloodlust.",
       proficiencies: [
         [
-          "Sharp Aim: Permanently add 1 to your Marksmanship Skill and increase its maximum by 1.",
-          "Twin Shot: If Dark Shot hits, you may make a basic Ranged Weapon attack on the same target for free."
+          "Sharp Aim: Permanently add 1 to your Marksmanship Skill and increase its maximum by 1."
         ],
         [
           "Impact: Increase the damage die to 1d6.",
-          "Fork: Your Twin Shot may be used on any target within range.",
-          "Focused: [Action] As an Action, you may focus more power into your shot. Roll each base damage die of your Ranged Weapon twice when adding up your damage dealt."
+          "Twin Shot: If Dark Shot hits, you may make a basic Ranged Weapon attack on the same target for free.",          
+          "Focused: [Action] As an Action before attacking, you may focus more power into your shot. Roll each base damage die of your Ranged Weapon twice when adding up your damage dealt."
         ],
         [
           "Deadly Aim: Permanently add 1 to your Marksmanship Skill and increase its maximum by 1.",
-          "Dark Twin: You may spend Bloodlust to use Dark Shot with your Twin Shot attack."
+          "Fork: Your Twin Shot may be used on any target within range.",
+          "Dark Twin: You may spend 1 Bloodlust to use Dark Shot with your Twin Shot attack."
         ],
         [
           "Overwhelm: [Activate] If your Dark Shot deals a killing blow you may use any Power which costs Bloodlust. This may only trigger once per turn.",
-          "Piercing Shot: [Action] As an Action, you may attempt to apply the Sundered effect to the victim hit. They must roll a Stamina Save to resist the effect.",
+          "Piercing Shot: [Action] As an Action, you may attempt to deal 1 point of Life damage to the target hit. They must roll a Stamina Save to resist the effect.",
           "Greater Impact: Increase the damage die to 1d8."
         ]
       ]
@@ -166,6 +166,9 @@ export default [
       proficiencies: [
         [
           //TODO
+          // sleep effect?
+          // charm effect?
+          // non-combat effects?
         ]
       ]
     },
@@ -207,9 +210,7 @@ export default [
             can remove existance awareness (lv5?)
         */
       ]
-    }
-  ], // LVL 1
-  [// LVL 2
+    },
     {
       name: "Hemotremor",
       attributes: "[Action] [AOE]",
@@ -390,9 +391,7 @@ export default [
       proficiencies: [
         //TODO
       ]
-    }
-  ],// LVL 3
-  [// LVL 4
+    },
     {
       name: "Shroud",
       attributes: "[Action] [AoE] [Self]",

@@ -5,7 +5,7 @@ export default {
   resource: "Runes: When you level up, instead of selecting 1 Power you may select 3. You engrave these Powers onto your body as a Rune to attune yourself to their power. Whenever you select a Lesser Power, you apply a Lesser Rune upon your body. A Rune may be in 3 states: Awakened, Dormant, or Faded. You may only use a Power if that Power's Rune is Awakened. After a Full Sleep all of your currently Awakened and Faded Runes become Dormant and then you may select up to LVL Runes, these Runes become Awakened with Aether and glow brightly on your skin. After a Break you may Awaken any 1 Rune (Dormant or Faded) by selecting a different Rune which is currently Awakened and make it Dormant. You may only use Proficiencies that are on currently Awakened Rune. All Lesser Runes are Awakened after a Full Sleep.\nFading: Awakened Runes gain 1 Fade when their Power is used. When a Rune's Fade is equal or greater than your level that Rune becomes Faded, it is no longer Awakened and you must choose a Dormant Rune to Awaken in its place. If no Runes are currently Dormant, all of your Faded Runes become Dormant. You may select one of these Dormant Runes, except for the Rune that just barely Faded. Lesser Runes do not Awaken another Rune when they Fade, after a Lesser Rune has Faded it only becomes Awakened after a Full Sleep.",
   proficiencies: [
     [
-      "Sustain: Whenever you roll a natural 20 while using a Power, this does count towards it Fading.",
+      "Sustain: Whenever you roll a natural 20 while using a Power, this does count towards it Fading. This effect does not apply to Runes with a Max of only 1 Fade.",
       "Two-Handed Speed: If your two-handed weapon reduces your Speed while equipped, reduce the penalty by 1 (to a minimum of 0)."
     ],
     [
@@ -16,25 +16,25 @@ export default {
     [
       "Greater Energized: Increase Energized to +LVL.",
       "Receptive: Gain +LVL to any healing you receive from a Cosmic or Runic Power.",
-      "Proficient: When you level up, you may select 4 Powers instead of 3. At least 1 Power must be below LVL 3.",
+      "Proficient: When you level up, you may select 4 Powers instead of 3. At least 1 Power must be Common Tier.",
       "Constitution: You may add your level to your Stamina Saving rolls.",
       "Clarity: You may add your level to your Will Saving rolls."
     ],
     [
-      "Light: You may Awaken one additional Rune after a Full Sleep. You may not Awaken any runes above LVL 3 while using Light. This Rune does not Awaken another Rune when it Fades.",
+      "Light: You may Awaken one additional Rune after a Full Sleep. At this time you may not Awaken any runes above Common Tier while using Light. This Rune does not Awaken another Rune when it Fades.",
       "Shine: Increase Glow to 4.",
       "Refresh: When you take a Break, you may Awaken 1 additional Rune.",
-      "Brighten: Select 1 Power which has a Max Fade of 1. Increase its Max Fade by 1."
+      "Brighten: Select 1 Power which has a Max Fade greater than 1. Increase its Max Fade by 1."
     ],
     [
-      "Ascended: You may use Light while a rune above LVL 3 is awakened.",
+      "Ascended: You may use Light while a rune above Common Tier is awakened. However, any rune(s) awakened by Light may not be above Common Tier.",
       "Greater Light: Light may Awaken one additional Rune."
     ],
     [
       "Major Light: Light may Awaken one additional Rune."
     ],
     [
-      "Extended Gifts: Gain 2 new Powers from your Source of [3 G] or less (Repeatable up to 3)."
+      "Extended Gifts: Gain 2 new Powers from your Source of Common Tier (Repeatable up to 3)."
     ]
   ],
   capstones: [
