@@ -1,8 +1,8 @@
 import React from 'react';
 export default {
   name:"Trollkin",
-  description:"Trollkin are an offshoot of the Troll species. They're smarter than a typical Troll but much smaller. Trollkin are seclusive and don't venture into cities often, often living alone or in a small group of less than a dozen. They are suspicious and don't warm to strangers quickly.",
-  appearance:"Their skin has a rock-like texture with skin tones ranging from a light pale blue to a dark granite gray. Their torso and head are a larger proportion than most races, with wide ears and beady eyes.",
+  description:"Trollkin are an offshoot of the Troll species. They're smarter than a typical Troll but much smaller, and although they have the durable skin of their Troll cousins they lack the heightened passive regeneration. Trollkin are seclusive and don't venture into cities often, often living alone or in a small group of less than a dozen. They are suspicious and don't warm to strangers quickly. Trollkin mature more slowly than many races, taking upwards of 50 years to reach Adulthood.",
+  appearance:"Their skin has a rock-like texture with skin tones ranging from a light pale blue to a dark granite gray. Their torso and head are round and a larger proportion than most races, with wide ears and beady eyes.",
   stats:[
     "Physical Build: 4'-4'11\", 150-200lb, 250 years, 2 arms, 2 legs, large ears",
     "Base Stats: Strength 2, Agility -1, Stamina 3, Will 1",
