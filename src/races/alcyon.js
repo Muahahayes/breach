@@ -9,7 +9,7 @@ export default {
     "Speed: 1d6 + 10ft",
 		"Creation AP: 3",
 		"Favored Skills: Mechanics, Athletics, Insight, Martial Arms, Awareness, Urban, Disruption",
-		"Creation Skill Points: 8",
+		"Creation Skill Points: 10",
 		"Languages: Imperial, Any playable race's language or Giantfolk if they were raised with the old tongue"
 ],
   racials:[

@@ -9,7 +9,7 @@ export default {
     "Speed: 2d4 + 5ft",
 		"Creation AP: 3",
 		"Favored Skills: Athletics, Art, Awareness, Disruption, Insight, Martial Arms, Outdoorsman",
-		"Creation Skill Points: 8",
+		"Creation Skill Points: 10",
 		"Languages: Atali, Imperial"
   ],
   racials:[

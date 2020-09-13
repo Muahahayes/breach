@@ -15,7 +15,7 @@ export default {
   racials:[
     "Hunt: Increase your travel distance by 5 miles, and gain a Favored +1 to Outdoorsman checks when scavenging for Food.",
     "Sharp Hearing: Gain a Favored +1 to Awareness checks involving sounds.",
-    "Trusting: Gain a Favored +1 to Charm attempts, and you receive an Unfavored -1 to skill checks against Charm.",
+    "Trusting: Gain a Favored +1 to Charm attempts, and you receive an Unfavored -1 to d20 rolls against Charm.",
     "Acute Smell: Gain a Favored +1 to Search checks involving scents."
   ]
 }

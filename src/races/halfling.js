@@ -9,7 +9,7 @@ export default {
     "Speed: 1d4 + 2",
 		"Creation AP: 4",
 		"Favored Skills: Charm, Insight, History, Hide, Awareness, Perform, Nature, Outdoorsman, Social",
-		"Creation Skill Points: 12",
+		"Creation Skill Points: 10",
 		"Languages: Imperial, Any playable race's language"
 ],
   racials:[
