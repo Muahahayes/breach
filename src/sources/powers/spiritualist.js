@@ -271,6 +271,14 @@ export default [
           //TODO
         ]
       ]
+    },
+    {
+      name: "Zealotry",
+      attributes: "[Action] [Ranged]",
+      description: "You gaze upon a creature within 30 ft and rebuke them, speaking harsh words at them empowered by your convictions. Can be used in different ways such as insult, mock, belittle, admonish or threaten. The creature must make a Will Save, on a Fail they receive an Unfavored -1 on their d20 rolls for the next minute. Causes 2 Strain.",
+      proficiencies: [
+        //TODO
+      ]
     }
   ], // LVL 2
   [ // LVL 3
