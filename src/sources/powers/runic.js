@@ -198,13 +198,13 @@ export default [
     {
       name: "Mystical Muse",
       attributes: "[Action] [Touch]",
-      description: "You enscribe an Engraving of the Muse into a musical instrument and attune it with a Rune upon your body. When you use the instrument to do a Perform roll gain a Favored +1, on a Fail gain 1 Fade. You may enscribe one instrument at a time, this does not cause Fade. Max 3 Fade.",
+      description: "You enscribe an Engraving of the Muse into a musical instrument and attune it with a Rune upon your body. When you use the instrument to do a Perform roll you may use this Power to gain a Favored +1, on a Fail gain 1 Fade. You may enscribe one instrument at a time, this does not cause Fade. Max 3 Fade.",
       proficiencies: [
         [],
         [
           "Inspiring Sonnet: [Action] While playing your instrument you recite a poem which inspires courage in the hearts of your comrades. Every ally who hears it gains a Favored +1 on their next basic Attack roll. Causes 1 Fade.",
           "Piercing Chord: [Action] You play a sharp progression of notes which causes great discomfort to all who hear it. Creatures who hear it must roll a Will Save to resist the chord, on a Fail they take 1d4 damage and on a Hard Fail they also are Deaf for 1 Round. Causes 1 Fade.",
-          "Busking: When you Hard Succeed a Perform check using your enscribed instrument in a public place roll a 1d10 and gain that many Virtua from passing listeners. You may benefit from this proficiency once per Break."
+          "Virtuoso: When you busk using this instrument, add your LVL to the roll for how much Virtua you earn."
         ],//TODO more
         [
           "Allegro: [Action] You play a jolly tune that inspires swiftness in the hearts of your comrades. Every ally who hears it gains +1 to their next Speed roll. Causes 1 Fade.",

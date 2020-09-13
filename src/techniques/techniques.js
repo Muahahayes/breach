@@ -78,6 +78,18 @@ export default {
     skill: "Nature | Outdoorsman",
     requirement: 10,
     description: "You know how to draw water from trees and large plants. When you take a Break near a tree or large plant you can generate 1 Water Point which may be drunk by an ally or stored for later use.\n\nWhen your Skill has increased to 15 you may generate a second Water Point."
+  },
+  "language" : {
+    name: "Language",
+    skill: "History | Social",
+    requirement: 5,
+    description: "You may study a new language. You develop a conversational level of competency with the language of your choice, as well as the ability to read it and write it in a basic fashion. You may learn this Technique multiple times, each time counts towards your limit of Techniques known.\n\nWhen your Skill has increased to 10 you may speak it fluently and your reading and writing reach an average adult's level of competency. When your Skill has increased to 15 you can be considered well spoken, and have the writing skills of a scholar."
+  },
+  "busking": {
+    name: "Busking",
+    skill: "Perform",
+    requirement: 5,
+    description: "When you Hard Succeed a Perform check using your enscribed instrument in a public place roll a 1d10 and gain that many Virtua from passing listeners. You may benefit from this Technique once per Break.\n\nWhen your Skill has increased to 10 you may do this on a Soft Success and may benefit from this Technique twice per Break."
   }
 }
 /*
