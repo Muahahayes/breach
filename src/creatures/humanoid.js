@@ -9,10 +9,10 @@ creatures:[
       name: 'Human Commoner',
       description: 'A typical Human who has not seen much battle in their life. They are common merchants, farmers, and townsfolk. They do not seek fights unless provoked and many will try to escape a fight against stronger creatures.',
       image: 'https://cdn.discordapp.com/attachments/316751799031824385/698476701101064292/1586599947839.png',
-      attributes: '[Human]',  // arbitrary, used for searching
+      attributes: '[Human] [Biological]',  // arbitrary, used for searching
       level: 0,
       stats: {
-        'actions': 1,
+        'actions': 2,
         'life': 1,
         'survival': 5,
         'avoidance': 10,
@@ -51,7 +51,7 @@ creatures:[
       attributes: '[Green] [Goblin] [Biological]',
       level: 1,
       stats: {
-        'actions': 1,
+        'actions': 2,
         'life': 2,
         'survival': 6,
         'avoidance': 12,
@@ -76,10 +76,10 @@ creatures:[
         'Disruption: -2'
       ],
       actions: [
-        'Bash: [Action] [Melee] The goblin swings its weapon at a melee target, making a basic melee attack. Deals 1d4+1 damage.',
+        'Bash: [Action] [Melee] The goblin swings its weapon at a melee target, making a basic melee attack. Deals 1d4+1 Blunt damage.',
         'Flee: [Movement] [Self] When the goblin drops to low health, it runs away using its Full Action to add 10 ft to its Movement.',
-        'Throw: [Action] [Ranged] The goblin throws rocks, trash, or other small debris at a target within 20 ft, making a basic ranged attack. Deals 2 damage.',
-        'Shoot: [Action] [Ranged] The goblin uses a small pistol or bow to shoot at a target within 30 ft, making a basic ranged attack. Deals 1d6+2 damage.'
+        'Throw: [Action] [Ranged] The goblin throws rocks, trash, or other small debris at a target within 20 ft, making a basic ranged attack. Deals 2 Blunt damage.',
+        'Shoot: [Action] [Ranged] The goblin uses a small pistol or bow to shoot at a target within 30 ft, making a basic ranged attack. Deals 1d6+2 Sharp damage.'
       ]
     }
   ],// lv1
@@ -119,7 +119,47 @@ creatures:[
         'Wreck: [Action] [Ranged] Bob wrecks everyone\'s shit in a 100ft radius, dealing 10d10 Bob damage.'
       ]
     }
-  ]// lv2
+  ],// lv2
+  [// lv3
+    { // select all this to copy paste, and if you highlight it all and ctrl+/ it will comment/uncomment it all
+      name: 'Mountain Troll',
+      description: 'Trolls from a mountainous region are large and typically broader in build than other types of Troll. Their skin has the consistency of a boulder and their large heads and hands intimidate any wild animals they come across. A Mountain Troll typically lives alone and rarely ventures further than a few miles from the cave it dwells within, only travelling further if it struggles to find food. They can consume any vegetation or animals they can catch, and can resort to eating trees when desperate.',
+      image: null,
+      attributes: '[Troll] [Biological]',  // arbitrary, used for searching
+      level: 3,
+      stats: {
+        'actions': 2,
+        'life': 6,
+        'survival': 20,
+        'avoidance': 18,
+        'speed': '1d4+3',
+        'strength': 10,
+        'agility': 1,
+        'stamina': 8,
+        'will': 0
+      },
+      skills:[ // you can add other skills if they'd be relevant to the creature, these ones are just the combat related ones
+        'Athletics: 10',
+        'Martial Arms: 10',
+        'Marksmanship: -2',
+        'Power: -2',
+        'Block: 5',
+        'Unarmed Combat: 10',
+        'Sneak: -2',
+        'Hide: 4',
+        'Awareness: 6',
+        'Search: 0',
+        'Insight: -2',
+        'Disruption: 5'
+      ],
+      actions: [ // write various actions here
+        'Smash: [Action] [Melee] The Troll brings down its fist on a creature, dealing 1d8+10 Blunt damage.',
+        'Swing: [Action] [Melee] The Troll swings a tree or other large object at a creature, dealing 1d12+10 Blunt damage.',
+        'Hard Skin: [Passive] [Self] The Troll has a hard layer of rock-like skin reducing damage it takes from Physical attacks by 5.',
+        'Regeneration: [Passive] [Self] Trolls have a naturally high regeneration, causing them to restore 1d4 Survival at the beginning of each turn. If the Troll is at full Survival at the start of its turn it rolls a d4, on a 4 it restores 1 Life. The Troll does not benefit from regeneration if it took any Fire or Nature damage after its previous turn.'
+      ]
+    }
+  ]// lv3
 ]
 }
 /*
