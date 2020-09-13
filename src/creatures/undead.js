@@ -15,7 +15,7 @@ creatures:[
       attributes: '[Mindless]', // arbitrary, used for searching
       level: 1,
       stats: {
-        'actions': 1,
+        'actions': 2,
         'life': 1,
         'survival': 10,
         'avoidance': 10,
@@ -41,7 +41,8 @@ creatures:[
       ],
       actions: [ // write various actions here
         `Bash: [Action] [Melee] The Thrall swings its arms at a melee target, making a melee attack roll. Deals 1d4+1 damage.`,
-        `Bite: [Action] [Melee] The Thrall bites onto a melee target, making a melee attack roll with Unfavored -1. Deals 1d4+1 damage and applies a Poison which deals 1 nature damage per turn, with a Stamina check of [10]`
+        `Bite: [Action] [Melee] The Thrall bites onto a melee target, making a melee attack roll with Unfavored -1. Deals 1d4+1 damage and applies a Poison which deals 1 nature damage per turn, with a Stamina check of [10]`,
+        `Undeath: [Passive] [Self] When this Undead creature is reduced to 0 Life and rolls for an injury, on a Mild it remains at 1 Life and 1 Survival. This effect fails if this is caused by Spirit or Darkness type damage. For Sharp type damage, this effect also succeeds on a Moderate.`
       ]
     } // end of a creature, select up to this point to copy paste
   ],
@@ -84,7 +85,8 @@ creatures:[
           `Strike: [Action] [Melee] The Wight swings its weapon at a melee target, making a melee attack roll. Deals 1d10+2 damage.`,
           `Command: [Action] [Ranged] The Wight calls out to any undead creature in the area which is of lesser level than the Wight and is not currently under another creature's control. They give a command for the undead to perform an Action.`,
           `Shoot: [Action] [Ranged] The Wight uses a ranged weapon to shoot at a target within 30 ft, making a ranged attack roll. Deals 1d8+2 damage.`,
-          `Use Power: [Optional] [Action] The Wight may use a Power it had in life, the GM selects what powers (if any) it might have.`
+          `Use Power: [Optional] [Action] The Wight may use a Power it had in life, the GM selects what powers (if any) it might have.`,
+          `Undeath: [Passive] [Self] When this Undead creature is reduced to 0 Life and rolls for an injury, on a Mild it remains at 1 Life and 1 Survival. This effect fails if this is caused by Spirit or Darkness type damage. For Sharp type damage, this effect also succeeds on a Moderate.`
         ]
       }
   ]// lv3
