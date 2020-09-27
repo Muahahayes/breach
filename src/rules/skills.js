@@ -47,7 +47,7 @@ export default {
 
   <hr/>
   <h3>Concentrated Effort:</h3>
-  <span>You may attempt a Skill check while taking some time out of combat to give it your best effort. After 30 minutes of deliberate effort and without any actions stopping your attempt, you may perform the Skill check as if you rolled a 20 (This does not count as a Natural 20 or as Critical).</span>
+  <span>You may attempt a Skill check while taking some time out of combat to give it your best effort. After 30 minutes of deliberate effort and without any actions stopping your attempt, you may perform the Skill check as if you rolled a 15.</span>
   <hr/>
   <h3>Skills List:</h3>
   <ul>

@@ -258,17 +258,20 @@ export default [
       description: "Empower a melee weapon or your fists with a shining light. Choose a visual representation based on your convictions (such as sunlight, moonlight, lightning, ect.) and choose either Spirit, Darkness, Nature or Electric damage when you gain this Power. Make a melee attack and deal an additional 1d4 damage of your chosen type. Causes 1 Strain.",
       proficiencies: [
         [
-          /**
-          Profs:
-          Heal based on the bonus damage dealt
-          Fear undead/fiends on hit
-          1d6 damage
-          Also deal the bonus damage to a nearby creature
-          Deal the bonus damage even on a Soft Fail attack
-           */
+          "_:Heal yourself for half of the bonus damage dealt by this effect (rounded up)."
         ],
         [
-          //TODO
+          "_:When used against an Undead or Fiend they must roll a Will Save, on a Fail they are feared for 1 turn.",
+          "Impact: Increase the damage dealt to 1d6."
+        ],
+        [
+          "_:Heal yourself for the full bonus damage dealt by this effect. Requires _",
+          "_:_ fears the creature for an additional turn.",
+          "_:Your attack still deals this bonus damage to the target when you Soft Fail the attack roll."
+        ],
+        [
+          "Greater Impact: Increase the damage dealt to 1d8. Requires Impact.",
+          "_:Choose a creature within 5ft of your target. If your attack roll would succeed against this creature you may deal this bonus damage to that creature as well."
         ]
       ]
     },
@@ -277,7 +280,30 @@ export default [
       attributes: "[Action] [Ranged]",
       description: "You gaze upon a creature within 30 ft and rebuke them, speaking harsh words at them empowered by your convictions. Can be used in different ways such as insult, mock, belittle, admonish or threaten. The creature must make a Will Save, on a Fail they receive an Unfavored -1 on their d20 rolls for the next minute. Causes 2 Strain.",
       proficiencies: [
+        [
+          "_:On a Hard Fail the creature receives an Unfavored -2 instead."
+        ]
         //TODO
+      ]
+    },
+    {
+      name: "Ensnarement",
+      attributes: "[Action] [Ranged]",
+      description: "Point at a creature you can see within 10 ft which is within 5 ft of the ground or a large plant. Roots, vines, branches or the earth itself ensnare the creature's legs. The creature must roll an Agility Save. On a Soft Fail the creature is Slowed -2, on a Hard Fail the creature is Snared. The effect lasts for 1 turn. Causes 2 Strain.",
+      proficiencies: [
+        [
+          "_:This effect now lasts for up to LVL turns. The creature may roll an Agility Save each turn, on a Success the effect ends."
+        ],
+        [
+          "_:Deals 1d4 Crushing damage each turn.",
+          "_:Ensnarement can effect up to 2 additional creatures within 5 ft of the target creature"
+        ],
+        [
+          "_:Deals 1d6 damage"
+        ],
+        [
+          "_:The effect now lasts until the creature succeeds an Agility Save. Requires _"
+        ]
       ]
     }
   ], // LVL 2

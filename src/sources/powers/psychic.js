@@ -345,6 +345,19 @@ export default [//TODO: change profs that add additional psychic fatigue checks 
       ]
     },
     {
+      name: "Bewitching Colors",
+      attributes: "[Action] [Ranged]",
+      description: "Point at a creature you can see within 30 ft. A dazzling display of colors appears before their eyes, they must roll a Will Save. On a Fail they are under the spell of the lights, hindering their actions and causing them to be Paralyzed on their next turn.",
+      proficiencies: [
+        /*TODO
+          can maintain this up to a minute by spending your activation action each turn
+          on a hard fail they are Asleep with their eyes open
+          after the effect ends they receive an Unfavored -1 on their next roll against you
+          you can use the effect to communicate visual and auditory information to the creature
+         */
+      ]
+    },
+    {
       name: "Mind Flay",
       attributes: "[Action] [Ranged]",
       description: "Point at a creature in your line of sight within 50 ft. Dark and twisted horrors flash before their eyes. Roll a d20 + Use Power vs their Insight. On a Success they may not target you with an Action on their next turn. On a Hard Success they are Feared for 1 turn and must move away from you.",

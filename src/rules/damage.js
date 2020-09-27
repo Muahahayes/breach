@@ -8,7 +8,7 @@ content: <div>
   <hr/>
   <h3>Types of Damage:</h3>
   <p><b>Resistance:</b> Whenever that type of damage would bring you to 0 Survival, roll a d20 vs the remaining damage. On a success, cancel the remaining damage and set your Survival to 1. When you would take direct damage to your Life for each point of Life roll a d20 vs 10. On a Soft Success treat the injury as Mild, and on a Hard Success ignore that point of Life damage.<br/>
-  <b>Reduction: When you have a reduction to a damage type you receive less damage from that type equal to the reduction, to a minimum of 1 damage received.</b><br/><br/>
+  <b>Reduction:</b> When you have a reduction to a damage type you receive less damage from that type equal to the reduction, to a minimum of 1 damage received.<br/><br/>
   <b>Physical types:</b><br/>
   <ul>
     <li><b>Blunt:</b> Damage caused by impact with a flat non-sharp object.</li>

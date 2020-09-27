@@ -51,5 +51,8 @@ content: <div>
   <hr/>
   <h3>Opportunity:</h3>
   <p>Whenever a creature moves out of your melee range you may take an Opportunity. This Opportunity may be used to Impede, Attack, or Chase. When you Impede you reduce their Movement Distance by 5 ft. When you Attack you may make 1 basic melee attack against the creature. When you Chase you may move 5 ft in the direction the creature is moving. You may use one Opportunity per Round.</p>
+  <hr/>
+  <h3>Maintaining Effects:</h3>
+  <p>Whenever you maintain an effect by spending your Activation Action on a following turn, if you received damage, were forced to move, were knocked prone, or received a status effect since your last turn you must roll a d20 + Stamina vs 15 to successfully maintain the effect.</p>
 </div>
 }

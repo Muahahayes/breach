@@ -40,8 +40,8 @@ export default [
       proficiencies: [
         [
           "Duration: Increase the maximum turns, and maximum cost, by 2. (Repeatable)",
-	        "Numb: [Activate] Use your Activation Action when beginning your Rampage, when you take physical damage during this Rampage, you may spend 1 Bloodlust to subtract LVL * d4 from the damage taken.",
-	        "Rage: [Activate] Use your Activation Action when beginning your Rampage, when you land a hit that deals damage to a creature during this Rampage, you may spend 1 Bloodlust to add LVL * d4 damage."
+	        "Numb: [Activate] Use your Activation Action when beginning your Rampage, once per turn when you take physical damage during this Rampage, you may spend 1 Bloodlust to subtract [LVL/2]d4 from the damage taken (LVL/2 rounded up).",
+	        "Rage: [Activate] Use your Activation Action when beginning your Rampage, when you land a hit that deals damage to a creature during this Rampage, you may spend 1 Bloodlust to add [LVL/2]d4 damage (LVL/2 rounded up)."
         ],
         [
           "Protection: During Rampage, subtract 6 from an Injury Severity roll after seeing the result (to a minimum of 1), usable once per Full Sleep. ",
@@ -50,7 +50,8 @@ export default [
         ],
         [
           "Roar: When beginning your Rampage, you may Roar to attempt to Taunt every hostile creature within 30 ft of you. Roll a d20 + Disruption, each creature rolls d20 + Will to contest your roll, any that fail are Taunted for 1 turn.",
-          "Frenzy: During the Rampage, you may drop below 1 Life without experiencing any of the effects of Dying. If you are still below 1 Life at the end of your Rampage you immediately fall prone and begin Dying."
+          "Frenzy: During the Rampage, you may drop below 1 Life without experiencing any of the effects of Dying. If you are still below 1 Life at the end of your Rampage you immediately fall prone and begin Dying.",
+          "Unfeeling: You may use Numb twice per turn."
         ],
         [
           "Sturdy: During a Rampage with Numb active, you may use Protection once per Full Sleep without referring to or counting towards your limit."
@@ -60,7 +61,7 @@ export default [
     {
       name: "Bloodthirst",
       attributes: "[Action] [Melee]",
-      description: "As an Action, on touch you attempt to pierce a creature with your teeth or fingers, dealing 1d8 Sharp damage (you may add Strength or Agility's Primary benefit to this damage). Costs 1 Bloodlust.",
+      description: "As an Action, on touch you attempt to pierce a creature with your teeth or fingers. Roll a Use Power or Unarmed Combat attack.  On a hit, deal 1d8 Sharp damage (you may add Strength or Agility's Primary benefit to this damage). Costs 1 Bloodlust.",
       proficiencies: [
         [
           "Fury: On a hit, gain an additional Bloodlust.",
@@ -74,13 +75,13 @@ export default [
         ],
         [
           "Anticoagulant: [Activate] On a hit, as an Activation Action the target Bleeds once after 5 turns.",
-          "Magnitude: Increase the damage to 2d6. Increase the effect of Quirked to 2d8.",
+          "Magnitude: Increase the damage to 2d6. Increase the effect of Quirked to 2d8. Requires Impact.",
           "Feed: Thirst gains more Survival and deals additional damage equal to your level."
         ],
         [
           "Flow: Anticoagulant Bleeds after 2 fewer turns.",
           "Drain: Thirst and Anticoagulant may both be used with the same Activation Action.",
-          "Overwhelming: Increase the damage to 2d8. Increase the effect of Quirked to 2d10."
+          "Overwhelming: Increase the damage to 2d8. Increase the effect of Quirked to 2d10. Requires Magnitude."
         ],
         [
           "Rupture: Anticoagulant Bleeds after 1 fewer turn, and may Bleed 2 more times."
@@ -228,16 +229,17 @@ export default [
     {
       name: "Sillouete",
       attributes: "[Action] [Self]",
-      description: "A shadowy form rises from your shadow. It stays attached to your shadow and your shadow is pulled around with it, but if your shadow disappears or the Sillouete is more than 30 ft away from you the Sillouete is destroyed. The Sillouete may spend 1 Bloodlust and 1 Full Action per turn to interact with an object, do a basic melee attack for 1d6 damage, or to use a melee or touch non-minion Power of [LVL 2] or lower without proficiency effects. Spend 2 Bloodlust to summon the Sillouete. If your Sillouete is destroyed it may not be summoned again until you take a Break or finish a Full Sleep.",
+      description: "A shadowy form rises from your shadow. It stays attached to your shadow and your shadow is pulled around with it, but if your shadow disappears or the Sillouete is more than 30 ft away from you the Sillouete is destroyed. The Sillouete may spend 1 Bloodlust and 1 Full Action per turn to interact with an object, do a basic melee attack for 1d6 damage, or to use a [Common] melee or touch non-minion Power without proficiency effects. Spend 2 Bloodlust to summon the Sillouete. If your Sillouete is destroyed it may not be summoned again until you take a Break or finish a Full Sleep.",
       proficiencies: [
         [],
         [
           "Shadow Link: When you take damage which does not reduce your Life, you may apply half the damage to your Sillouete instead. Your Sillouete is destroyed after it has taken damage equal to half your max Survival.",
-          "Reach: Increase the range the Sillouete can go without being destroyed to 50 ft."
+          "Reach: Increase the range the Sillouete can go without being destroyed to 50 ft.",
+          "Impact: Increase the damage of the Sillouete's basic melee attack to 1d8."
         ],
         [
-          "Gifted: The Sillouete may use Powers up to [LVL 3].",
-          "Impact: Increase the damage of the Sillouete's basic melee attack to 1d8."
+          "Gifted: The Sillouete may use [Epic] Powers.",
+          "_: The Sillouete may be used by using your Activation Action instead of your Full Action."      
         ]//TODO: more
       ]
     },
