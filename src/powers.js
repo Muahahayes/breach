@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import renderGift from './renderGift';
 
 function Powers({ match }) {
+  let tiers = ['Common', 'Epic', 'Legendary']
   if (match && match.params && match.params.g) { // individual gift
     let giftName = match.params.g;
     giftName = giftName.split('_').join(' ');
@@ -13,7 +14,7 @@ function Powers({ match }) {
       for (let g of source.default[level]) {
         if (g.name.toLowerCase() === giftName.toLowerCase()) {
           gift = g;
-          giftLevel = Number(level) + 1;
+          giftLevel = Number(level);
           continue;
         }
       }
@@ -39,7 +40,7 @@ function Powers({ match }) {
       return (        
         <div className="content">
           <div className="content-head">
-            <h1>[LVL {giftLevel}] {gift.name}</h1>
+            <h1>[{tiers[giftLevel]}] {gift.name}</h1>
           </div>
           <div className="content-body">
             Return to <Link to={`/sources/${match.params.s}/powers`}>{sourceName}</Link> Powers
@@ -54,10 +55,9 @@ function Powers({ match }) {
     let source = require(`./sources/powers/${match.params.s}`);
     let gifts = source.default;
     let content = [];
-
     for (let level in gifts) {
       let levelContent = [];
-      let tiers = ['Common', 'Epic', 'Legendary']
+      
       levelContent.push(<hr className="searchHR"/>);
       levelContent.push(<h2>[{tiers[level]}]</h2>);            
       for (let gift of gifts[level]) {

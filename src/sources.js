@@ -85,7 +85,7 @@ function parseSource(sourceJSON) {
         {(sourceJSON.lesser.length > 0)?<h3>Lesser Powers: </h3>:null}
         {lesserGifts}
         <hr/>
-        {(sourceJSON.capstones.length > 0)?<h3>LVL 7 Capstones: </h3>:null}
+        {(sourceJSON.capstones.length > 0)?<h3>LVL 8 Capstones: </h3>:null}
         {(sourceJSON.capstones)?capstones:null}
         {(sourceJSON.path)?<h3>Paths:</h3>:null}
         {(sourceJSON.path)?paths:null}

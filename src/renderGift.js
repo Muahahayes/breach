@@ -10,11 +10,12 @@ function renderGift(gift, source) {
   parseContent(gift.attributes, attributes);
   if (!source) { // render the full gift
     let proficiencies = [];
+    let tiers = ['Common','Epic','Legendary']
     for (let level in gift.proficiencies) {
       if (gift.proficiencies[level].length > 0) {
         let els = [];
         parseContent(gift.proficiencies[level], els);
-        proficiencies.push(<h3>[LVL {Number(level)+1}]</h3>)
+        proficiencies.push(<h3>[{tiers[level]}]</h3>)
         proficiencies.push(els);
         proficiencies.push(<br/>);
       }

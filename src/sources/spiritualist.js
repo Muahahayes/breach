@@ -14,7 +14,7 @@ export default {
     [
       "Expanded Lungs: You can hold your breath twice as long.",
       "Owl Neck: You can face behind you without turning your body, and you can rotate your head upside down.",
-      "Spiritual Awakening: After putting 3 points into Spiritual Awakening gain a new Power up to [LVL 3]. This does not count as Leveling Up. You may only gain 1 Power from this Proficiency.",
+      "Spiritual Awakening: After putting 3 points into Spiritual Awakening gain a new [Common] Power. This does not count as Leveling Up. You may only gain 1 Power from this Proficiency.",
       "Fast Reflexes: Add 1 Initiative to your Speed rolls."
     ],
     [
