@@ -278,9 +278,9 @@ body {
   #popup-modal {
     background-color: rgb(245, 245, 225);
     opacity: 100%;
-    position: absolute;
+    position: fixed;
     margin-left: 5%;
-    margin-top: 5%;
+    margin-top: 7%;
     width: 78%;
     z-index: 2;
     display: none;
@@ -288,10 +288,13 @@ body {
     border-style: solid;
     border-width: 10px;
     border-color: rgb(200, 200, 180);
+    overflow: initial;
   }
   #modal-body {
     margin-left: 2px;
     margin-right: 2px;
+    height: 80vh;
+    overflow-y: auto;
   }
   .popup-link {
     cursor: pointer;
