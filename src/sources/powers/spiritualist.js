@@ -3,22 +3,22 @@ export default [
     {
       name: "Harden",
       attributes: "[React] [Self]",
-      description: "Your skin can flex and morph to become a hard like armor. When you receive damage, you may reduce the damage taken by an amount equal to your current Strain. Afterwards, causes 2 Strain. May only be used while Blocking and may only be used twice per Full Sleep. Regain a use after taking a Break, or regain all uses after a Full Sleep.",
+      description: "On Reaction from being hit, your body is infused with power and shifts to better embody your ideals. For more nature oriented faiths it may appear like hard scales or bark, and for more divine oriented faiths is may appear to gain angelic armor. When you receive damage, you may reduce the damage taken by an amount equal to your current Strain. Afterwards, causes 2 Strain. May only be used while Blocking and may only be used twice per Full Sleep. Regain a use after taking a Break, or regain all uses after a Full Sleep.",
       proficiencies: [
         [
           "Calloused: Reduce the damage taken by an additional amount equal to your level.",
-          "Frequency: Increase the number of times you may use this per Full Sleep by 1. (Repeatable up to 4)",
-          "Spines: [Activate] If you use Harden against a melee attack, deal 1d4 piercing damage to the attacker.",
+          "Frequency: Increase the number of times you may use this per Full Sleep by 2.",
+          "Spines: [Activate] If you use Harden against a melee attack, you may deal 1d4 sharp damage to the attacker. This causes 1 Strain.",
           "Calloused: Increase the number of uses regained after taking a Break to 2."
         ],
         [
           "Reactive Skin: You may use Harden while not Blocking.",
-          "Quills: Increase the size of the Spines or Quill Spray die, causes 1 Strain per size increase. (Repeatable d6, d8, d10)",
-          "Quill Spray: [Activate] When you use Harden, you may release a spray of quills around. Every creature within 10ft must roll an Agility check vs your current Strain, you deal 1d4 piercing damage to any Soft Fail and additional damage equal to your level to any Hard Fail."
+          "Quills: Increase the size of the Spines and Quill Spray dice. (Repeatable d6, d8, d10)",
+          "Quill Spray: [Activate] When you use Harden, you may release a spray of quills around. Every creature within 10ft must roll an Agility check vs your current Strain, you deal 1d4 sharp damage to any Soft Fail and additional damage equal to your level to any Hard Fail. This causes 2 Strain. Requires Spines."
         ],
         [
           "Armored Skin: [Passive] While Blocking, increase your Avoidance by 2.",
-          "Adaptive Flesh: [Activate] When you use Harden, you may become Resistant to the type of damage you received, unless this damage would bring you to 0 Survival. This lasts until you lose 1 Life or you use Adaptive Flesh again."
+          "Adaptive Flesh: [Activate] When you use Harden you may become Resistant to the type of damage you received, unless this damage would bring you to 0 Survival. This lasts until you lose at least 1 Life or you use Adaptive Flesh again."
         ]
       ]
     },
@@ -105,9 +105,7 @@ export default [
         ]
       ]
     },
-    // melee weapon power
     // melee non-weapon power
-    // grasping roots
     // song based power
     {
       name: "Tight Reflexes",
@@ -209,7 +207,7 @@ export default [
       description: "Channel your conviction into a melee attack, gain a Favored +1 to the attack roll. Causes 1 Strain",
       proficiencies: [
         [
-          /**
+          /*
           On a Hard Success treat any roll on your damage dice which is below half of the maximum value as if you rolled half it's maximum value
           lvl 2, Ignore physical damage immunity to deal half damage, also ignore physical damage resistance 
            */
@@ -222,19 +220,20 @@ export default [
     {
       name: "Radiant Weapon",
       attributes: "[Action] [Melee]",
-      description: "Empower a melee weapon or your fists with a shining light. Choose a visual representation based on your convictions (such as sunlight, moonlight, lightning, ect.) and choose either Spirit, Darkness, Nature or Electric damage when you gain this Power. Make a melee attack and deal an additional 1d4 damage of your chosen type. Causes 1 Strain.",
+      description: "Empower a melee weapon or your fists with a shining light. Choose a visual representation based on your convictions (such as sunlight, moonlight, lightning, ect.) and choose either Spirit, Darkness, Nature or Electric damage when you gain this Power. Make a melee or unarmed attack and deal an additional 1d4 damage of your chosen type. Causes 1 Strain.",
       proficiencies: [
         [
-          "_:Heal yourself for half of the bonus damage dealt by this effect (rounded up).",
-          "_:When used against an Undead or Fiend they must roll a Will Save, on a Fail they are feared for 1 turn.",
+          "Clergy: Heal yourself for half of the bonus damage dealt by this effect (rounded up).",
+          "Turn Evil: When used against an Undead or Fiend they must roll a Will Save, on a Fail they are feared for 1 turn.",
           "Impact: Increase the damage dealt to 1d6."
         ],
         [
-          "_:Heal yourself for the full bonus damage dealt by this effect. Requires _",
-          "_:_ fears the creature for an additional turn.",
-          "_:Your attack still deals this bonus damage to the target when you Soft Fail the attack roll.",
+          "Greater Clergy: Heal yourself for the full bonus damage dealt by this effect. Requires Clergy.",
+          "Greater Turn Evil: Turn Evil fears the creature for an additional turn.",
+          "Turn Foe: Pick one type of creature (a list from the Creatures section), your Turn Evil now also applies to this type.",
+          "True Judgement: Your attack still deals this bonus damage to the target when you Soft Fail the attack roll.",
           "Greater Impact: Increase the damage dealt to 1d8. Requires Impact.",
-          "_:Choose a creature within 5ft of your target. If your attack roll would succeed against this creature you may deal this bonus damage to that creature as well."
+          "Cleave: Choose a creature within 5ft of your target. If your attack roll would succeed against this creature you may deal this bonus damage to that creature as well."
         ]
       ]
     },
@@ -244,7 +243,9 @@ export default [
       description: "You gaze upon a creature within 30 ft and rebuke them, speaking harsh words at them empowered by your convictions. Can be used in different ways such as insult, mock, belittle, admonish or threaten. The creature must make a Will Save, on a Fail they receive an Unfavored -1 on their d20 rolls for the next minute. Causes 2 Strain.",
       proficiencies: [
         [
-          "_:On a Hard Fail the creature receives an Unfavored -2 instead."
+          "Falter: On a Hard Fail the creature receives an Unfavored -2 instead.",
+          "Motivate: Instead of its usual effect, you may speak words to motivate a creature in an unpleasant way (such as tough love, a hard lesson, call to take action, ect). The creature does not need to make a Will Save and receives a Favored +1 on its next d20 roll, however a Soft Fail will be considered a Hard Fail.",
+          "Boldness: Instead of its usual effect, you may use Zealotry to embolden yourself against a creature under the effect of your Zealotry and fuel your conviction. If the creature Fails its Will Save it does not receive any penalty, but you will remove up to 3 Strain. On a Hard Fail you may remove 1 additional Strain."
         ]
         //TODO
       ]
@@ -270,7 +271,7 @@ export default [
     {
       name: "Runic Evolution",
       attributes: "[Activate] [Self] [Passive]",
-      description: "Your DNA forms a runic word, your body has evolved to use it but cannot Awaken any other runes. At the time you take this Power, choose 1 Power from the Runic Arts Source which is of [LVL 3] or below, this is now a Mutant Power you may use. This Power gains Fade as a Runic Arts Power normally would. Using this Power uses your Activation Action in addition to the Action requirements of the selected Power.",
+      description: "Your DNA forms a runic word, your body has evolved to use it but cannot Awaken any other runes. At the time you take this Power, choose 1 Power from the Runic Arts Source which is of [LVL 3] or below, this is now a Spiritualist Power you may use. This Power gains Fade as a Runic Arts Power normally would. Using this Power uses your Activation Action in addition to the Action requirements of the selected Power.",
       proficiencies: []
     },
     {
@@ -316,7 +317,7 @@ export default [
         [],
         [
           "Effortless: You may use Flurry without causing Strain once per day.",
-          "Strained: You may use Flurry after any other Mutation that causes damage and causes Strain.",
+          "Strained: You may use Flurry after any other Power that causes damage and causes Strain.",
           "Momentum: If the Flurry attack hits, perform another attack on the same target.",
           "Cleave: Flurry may be used on any target that is within melee range."
         ],
@@ -324,7 +325,7 @@ export default [
           "Juggernaut: If Momentum's attack hits, perform another attack on the same target.",
           "Sweep: Momentum may be used on any target that is within melee range.",
           "Swing Through: [Activate] If Flurry deals a killing blow, you may use it again on a target in melee range without causing any further Strain, do not trigger Momentum until the Swing Through(s) are finished. Only the first Swing Through uses your Activation Action.",
-          "Overwhelm: [Activate] If Flurry deals a killing blow, you may perform a Mutation that causes Strain. This may only trigger once per turn."
+          "Overwhelm: [Activate] If Flurry deals a killing blow, you may perform a Power that causes Strain. This may only trigger once per turn."
         ]        
       ]
     },

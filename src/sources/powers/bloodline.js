@@ -245,7 +245,7 @@ export default [
     {
       name: "Hex",
       attributes: "[Action] [Ranged]",
-      description: "Point at a creature you can see within 30 ft. and make a Power attack against it. On a Success, apply a Hex Curse to the target. While Hexed, the creature receives an Unfavored -1 on Save rolls triggered by you. Only one Hex Curse may be active on a creature at a time.Lasts 1 Minute. Costs 2 Bloodlust.",
+      description: "Point at a creature you can see within 30 ft. and make a Power attack against it. On a Success, apply a Hex Curse to the target. While Hexed, the creature receives an Unfavored -1 on Save rolls triggered by you. Only one Hex Curse may be active on a creature at a time. Lasts 1 Minute. Costs 2 Bloodlust.",
       proficiencies: [
         [
           "Vulnerable: Increase all Injury severity rolls made by the creature by 1.",

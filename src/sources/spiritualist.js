@@ -2,7 +2,6 @@ export default {
   name: "Spiritualist",  
   slogan: "The Powers of Belief",
   description: "Draw on the powers of the world, nature, the spirits, or your inner spirit as a source of your power. Belief and Conviction allow them to strain their body to call upon the Aether to aid them, whether their beliefs are true is uncertain and if any gods are listening the world has never heard a reply. This power strengthens your body and ascends you above your original form, granting various alterations to your body as you bond with nature and the world around you. When you create a Spiritualist select a Path, your Path comes with a Promise and rewards you with additional Powers.",
-  // TODO: refactor mutation to be Shaman/Spiritualist. 
   resource: "Strain: When you use an active Power you experience Strain. You cannot be healed to a value above your Max Survival minus your current Strain. You remove all of your Strain when you fully sleep. You remove an amount of Strain equal to [Stamina * LVL] when you take a break. If your Strain exceeds half your Max Survival you become Overstrained and cannot gain any more Strain.",
   proficiencies: [
     [
