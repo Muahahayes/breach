@@ -48,14 +48,14 @@ function Techniques({ match }) {
     let tierContent = [];
 
     for (let t of tList) {
-      if (t.requirement > tier*5) { // start new tier
+      if (t.requirement > tier*3) { // start new tier
         if (tier > 0) {
           content.push(React.createElement("div", {className: "levelBlock", id: `level${tier}`}, tierContent));
           tierContent = [];
         }
-        tier++;
+        tier = Math.floor(t.requirement/3);
         if (tier > 1) tierContent.push(<hr className="searchHR"/>)
-        tierContent.push(<h2>[Skill {tier*5}]</h2>);
+        tierContent.push(<h2>[Skill {tier*3}]</h2>);
         tierContent.push(<div className={`searchEntry ${t.skill}`} id={t.name}>{renderTechnique(t, true)}</div>);
       }
       else {
