@@ -79,7 +79,7 @@ function showPopup(giftName, sourceName) {
   }
   screen.style.display = 'block';
   modal.style.display = 'block';
-  window.scroll(0,0);
+  // window.scroll(0,0);
 }
 
 

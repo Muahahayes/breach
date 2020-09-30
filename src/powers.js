@@ -277,9 +277,9 @@ function Powers({ match }) {
         <div className="content-head">
           <h1>{name} Powers</h1>
         </div>
+        <div id="popup-modal"></div>
         <div className={"content-body search-list"}>
-          <div id="popup-screen" onClick = {hidePopup}></div>
-          <div id="popup-modal"></div>
+          <div id="popup-screen" onClick = {hidePopup}></div>          
           <br/>
           {filterEl}
           <br/>
