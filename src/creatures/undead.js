@@ -54,7 +54,7 @@ creatures:[
         name: `Wight`,
         description: `A deceased person brought back to life by reinfusing their Aether into their corpse. A failed ressurection, with no past memories and limited power. Despite having no memory of their mortal life, often some negative emotions will persist in death and motivate the Wight's behavior.`,
         image: ``,
-        attributes: `[Sentient]`, // arbitrary, used for searching
+        attributes: `[Sentient] [Power]`, // arbitrary, used for searching
         level: 3,
         stats: {
           'actions': 2,

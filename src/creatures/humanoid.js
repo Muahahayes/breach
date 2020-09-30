@@ -85,6 +85,46 @@ creatures:[
   ],// lv1
   [// lv2
     {
+      name: 'Goblin Witchdoctor',
+      description: 'When a goblin child shows it has "The Gift" it is chosen to be trained by the current tribe witchdoctor. Its taught the uses of herbs and how to use its strong spirit to heal allies and curse enemies. When it comes of age, if the current witchdoctor is still alive, it will take a few goblins from the tribe to break off and form a new tribe in a new territory. Some witchdoctors have been known to speak the language of nearby civilized races, though they rarely develop anything better than an uneasy truce with their neighbors.',
+      image: null,
+      attributes: '[Green] [Goblin] [Biological] [Power]', 
+      level: 2,
+      stats: {
+        'actions': 2,
+        'life': 2,
+        'survival': 10,
+        'avoidance': 13,
+        'speed': '1d4+2, +1 Initiative',
+        'strength': 0,
+        'agility': 2,
+        'stamina': 0,
+        'will': 1
+      },
+      skills:[ 
+        'Athletics: 0',
+        'Martial Arms: 0',
+        'Marksmanship: 2',
+        'Power: 4',
+        'Block: 0',
+        'Unarmed Combat: 0',
+        'Sneak: 2',
+        'Hide: 2',
+        'Awareness: 4',
+        'Search: 0',
+        'Insight: 0',
+        'Disruption: -2'
+      ],
+      actions: [
+        'Bash: [Action] [Melee] The goblin swings its weapon at a melee target, making a basic melee attack. Deals 1d4+1 Blunt damage.',
+        'Flee: [Movement] [Self] When the goblin drops to low health, it runs away using its Full Action to add 10 ft to its Movement.',
+        'Throw: [Action] [Ranged] The goblin throws rocks, trash, or other small debris at a target within 20 ft, making a basic ranged attack. Deals 2 Blunt damage.',
+        'Shoot: [Action] [Ranged] The goblin uses a small pistol or bow to shoot at a target within 30 ft, making a basic ranged attack. Deals 1d6+2 Sharp damage.',
+        'Medicinal Herb: [Action] [Melee] The witchdoctor rubs some herbs into the wound of an ally and says a word of power, healing them for 1d6+1 damage.',
+        'Hex: [Action] [Ranged] The witchdoctor points at a creature and angry shouts a word of power while making a Power attack against it. On a Success the creature receives an Unfavored -1 on its next d20 roll and for 1 minute it increases all injury severity rolls by 1.'
+      ]
+    },
+    {
       name: 'Bob',
       description: 'Oh no its bob',
       image: null,
@@ -121,36 +161,36 @@ creatures:[
     }
   ],// lv2
   [// lv3
-    { // select all this to copy paste, and if you highlight it all and ctrl+/ it will comment/uncomment it all
+    {
       name: 'Mountain Troll',
       description: 'Trolls from a mountainous region are large and typically broader in build than other types of Troll. Their skin has the consistency of a boulder and their large heads and hands intimidate any wild animals they come across. A Mountain Troll typically lives alone and rarely ventures further than a few miles from the cave it dwells within, only travelling further if it struggles to find food. They can consume any vegetation or animals they can catch, and can resort to eating trees when desperate.',
       image: null,
-      attributes: '[Troll] [Biological]',  // arbitrary, used for searching
+      attributes: '[Troll] [Biological]',
       level: 3,
       stats: {
         'actions': 2,
         'life': 6,
-        'survival': 20,
+        'survival': 22,
         'avoidance': 18,
         'speed': '1d4+3',
         'strength': 10,
-        'agility': 1,
+        'agility': 0,
         'stamina': 8,
         'will': 0
       },
-      skills:[ // you can add other skills if they'd be relevant to the creature, these ones are just the combat related ones
-        'Athletics: 10',
-        'Martial Arms: 10',
+      skills:[
+        'Athletics: 9',
+        'Martial Arms: 5',
         'Marksmanship: -2',
         'Power: -2',
         'Block: 5',
-        'Unarmed Combat: 10',
+        'Unarmed Combat: 9',
         'Sneak: -2',
         'Hide: 4',
         'Awareness: 6',
         'Search: 0',
         'Insight: -2',
-        'Disruption: 5'
+        'Disruption: 7'
       ],
       actions: [ // write various actions here
         'Smash: [Action] [Melee] The Troll brings down its fist on a creature, dealing 1d8+10 Blunt damage.',
