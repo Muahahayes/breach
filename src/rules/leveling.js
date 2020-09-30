@@ -5,7 +5,7 @@ export default {
   content: <div>
     <h3>Experience (XP):</h3>
     <span>If a character <b>Hard Succeeds</b> or <b>Hard Fails</b> a <Link to="skills">Skill</Link> check they gain 1 XP (if contesting Skill checks between players, XP eligibility is up to the GM's discretion).<br/>
-    You do not gain XP from a Hard Succeed on a check if its difficulty is equal or less than your base Skill bonus plus 1. If your Skill check contests multiple counter checks at once, it only counts as a Hard Succeed or Hard Fail if it Hard Succeeds/Hard Fails against at least half of the checks, it counts as a Hard Succeed if there is a tie between Hard Succeeds and Hard Fails.<br/>
+    If a Skill roll difficulty is your Skill bonus + 1 or lower, it is a Trivial Skill Check and does not give any XP. If your Skill check contests multiple counter checks at once, it only counts as a Hard Succeed or Hard Fail if it Hard Succeeds/Hard Fails against at least half of the checks, it counts as a Hard Succeed if there is a tie between Hard Succeeds and Hard Fails.<br/>
     <br/>
     Every 5 XP points you may choose 1 Skill that gave you XP during your current Level, increase that Skill by 1. Also you immediately must choose a Proficiency from a Power or your Source, or choose a Lesser Power from your Source. This choice must be within the given threshold as denoted by LVL, representing your level. Proficiencies increase the power/utility of a Power, grant passive bonuses or grant sub-powers. If you gain a Proficiency from any other source (such as defeating an Epic creature or Hard Succeeding/Hard Failing a scenario) you immediately gain 5 XP and increase any Skill by 1.<br/></span>
     <hr/>

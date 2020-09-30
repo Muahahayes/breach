@@ -23,7 +23,7 @@ export default {
 
   <hr/>
   <h3>Limits:</h3>
-  <span>The maximum points you may have in a Skill is 3x your Level. If a Skill is at its maximum and the next XP you would gain would lead to all 5 Skill choices for your next increase being already their max value it cannot gain XP from a <b>Hard Succeed/Fail</b>. (ie. your Athletics and Crafstman are both already at 5 times your level, you have gained XP from Athletics twice and Craftsman twice, you cannot gain XP from either Skill until you have gained an XP and increased a different Skill.)</span><br/>
+  <span>The maximum points you may have in a Skill is 3x your Level. If a Skill is at its maximum and the next XP you would gain would lead to all 5 Skill choices for your next increase being already their max value it cannot gain XP from a <b>Hard Succeed/Fail</b>. (ie. your Athletics and Crafstman are both already at 3 times your level, you have gained XP from Athletics twice and Craftsman twice, you cannot gain XP from either Skill until you have gained an XP and increased a different Skill.)</span><br/>
   <span>You may only increase at most 5 Skills above 15 points.</span>
 
   <hr/>
@@ -39,7 +39,7 @@ export default {
 
   <hr/>
   <h3>Scenarios:</h3>
-  <span>Short challenging moments that require multiple skill checks to overcome (navigating a vehicle through a chase, climbing a crumbling cliff side, hacking into a strong network, etc). May involve multiple creatures.<br/>
+  <span>Short challenging moments that require multiple skill checks to overcome (navigating a vehicle through a chase, climbing a crumbling cliff side, repairing the mast on a ship in a storm, etc). May involve multiple creatures.<br/>
   If the players pass ¾ of the checks the overall scenario is a <b>Hard Success</b>, award a Proficiency and they succeed without consequences. <br/>
   If they pass ½ of the checks the overall scenario is a <b>Soft Success</b>, they succeed with some kind of compromise or cost. <br/>
   If they pass ¼ of the checks it's a <b>Soft Failure</b>, they don't succeed and have mild to moderate consequences. Then the story continues down a narratively reasonable path, probably a harder one or a plan B. <br/>
