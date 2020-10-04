@@ -108,6 +108,12 @@ export default {
     skill: "Unarmed Combat",
     requirement: 9,
     description: "When you maintain a Grapple on an enemy you may attempt to break their body using leverage against their joints or bones. Roll a d20 + Unarmed Combat vs their d20 + Athletics or Acrobatics, on a Hard Success you deal 1 point of Life damage and may choose any body part (other than Head) for the Injury location. On a Soft Success you deal 1d8 Crushing Damage. On a Hard Fail the Grapple ends. You may use Fracture once per Break.\n\nWhen your Skill has increased to 15 you may use Fracture twice per Break."
+  },
+  "quick draw" : {
+    name: "Quick Draw",
+    skill: "Awareness",
+    requirement: 3,
+    description: "Your reaction speed has become heightened. You may add half your Agility (rounded down) to your Initiative after rolling your Speed."
   }
 }
 /*

@@ -63,7 +63,7 @@ creatures:[
       },
       skills: [
         'Athletics: 1',
-        'Martial Arms: 0',
+        'Martial Arms: 1',
         'Marksmanship: 1',
         'Power: -2',
         'Block: 0',

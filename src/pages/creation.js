@@ -14,7 +14,7 @@ export default {
       <li><b>Select your <Link to="/sources">Source</Link>:</b> This Source will be the origin of your character's Powers, it sets them apart from the common public.</li>
       <li><b>Select your first <Link to="/powers">Power</Link> and Lesser Power:</b> Gain 2 Powers and 1 Lesser Power. You may only select Powers and Lesser Powers from your Source, and they must be [Common]. Each time you level you will select an additional Power, which must be within your level tier.</li>
       <li><b>Assign your first <Link to="/rules/leveling">Proficiencies</Link>:</b> At character creation you are awarded 2 Proficiencies, which may be spent on your first Power or on your passive Source Proficiencies. These may not be used to gain Lesser Powers.</li>
-      <li><b>Starting <Link to="/equipment">Equipment</Link>:</b> Refer to the Equipment tables, you may spend up to 200 Virtua on Equipment which your character will start their story possessing. You may not spend more than 100 Virtua on a single piece of Starting Equipment. Your character starts with 2 Equip Weight plus their Strength (with a minimum of 1).</li>
+      <li><b>Starting <Link to="/equipment">Equipment</Link>:</b> Refer to the Equipment tables, you may spend up to 20 Gold on Equipment which your character will start their story possessing. You may not spend more than 10 Gold on a single piece of Starting Equipment. Your character starts with 2 Equip Weight plus/minus their Strength (with a minimum of 1).</li>
     </ul>
     <hr/>
     <h3>Creating a Character at higher levels:</h3>

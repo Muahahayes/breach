@@ -9,11 +9,11 @@ content: <div>
  <h3>Lighting:</h3>
   The lighting condition of an environment come in 5 stages:
   <ul>
-    <li><b>Harsh:</b> Subtract 1 from rolls vs Avoidance. -1 Unfavored to Stealth/Hide rolls.</li>
+    <li><b>Harsh:</b> Unfavored -1 to rolls vs Avoidance. Unfavored -1 to Stealth/Hide rolls.</li>
     <li><b>Medium:</b> Good visibility, the default lighting condition if not otherwise stated.</li>
-    <li><b>Low:</b> +1 Favored to Stealth and Hide rolls. Restricts your visual Awareness to 50 ft.</li>
-    <li><b>Dark:</b> +2 Favored to Stealth and Hide rolls. -1 Unfavored to Search rolls. Restricts your visual Awareness to 20 ft.</li>
-    <li><b>Pitch Black:</b> +3 Favored to Stealth and Hide rolls. -2 Unfavored to Search rolls. Restricts your visual Awareness to 0ft.</li>
+    <li><b>Low:</b> Favored +1 to Stealth and Hide rolls. Restricts your visual Awareness to 50 ft.</li>
+    <li><b>Dark:</b> Favored +2 to Stealth and Hide rolls. Unfavored -1 to Search rolls. Restricts your visual Awareness to 20 ft.</li>
+    <li><b>Pitch Black:</b> Favored +3 to Stealth and Hide rolls. Unfavored -2 to Search rolls. Restricts your visual Awareness to 0ft.</li>
   </ul>
   <hr/>
  <h3>Hiding or Sneaking:</h3>
@@ -58,7 +58,7 @@ content: <div>
   <hr/>
   <h3>Currency:</h3>
   The Urban society uses a currency called Virtua, a cryptocurrency that is stored in the Psi Network. Non-psychics must visit a Broker to check on their balance. Citizens are given a V-Chip to carry out transactions, a small card with a built-in crystal chip that resonates with the Psi Network. Two persons each holding their V-Chip against each other will resonate the chips, the person to speak a value will send that value to the other person's V balance on the network. The Consortium can check the network at any time to see transaction histories and the citizen's ID associated with the chips involved. Unmarked chips are made by illegal Brokers who trade materials or give a debt for non-citizens or citizens trying to be untracked to have a V-Chip without their ID. Unmarked chips still have a unique ID, and if the Consortium are able to associate the ID with you they may assign that ID to you and track you through your transactions.<br/>
-  Outside of Urban society smaller villages or foreigners do not use Virtua. They may use bartering for physical goods, or trade in precious metals. In general, 1 piece of gold (unmarked, plain chunks of metal about the size of half your thumb) is worth 100 Virtua. 1 piece of silver is worth 50 Virtua.
+  Outside of Urban society smaller villages or foreigners do not use Virtua. They may use bartering for physical goods, or trade in precious metals. In general, 1 piece of gold (unmarked, plain chunks of metal about the size of half your thumb, some Dukedoms may mint their own coin but the value is determined by weight when trading across regions) is worth 10 Virtua. 1 piece of silver is worth 5 Virtua.
   <hr/>
   <h3>Climate:</h3>
   Various environmental factors may have an effect on creatures. For each round in combat, or each 10 minutes out of combat, apply the current Climate's effects to creatures within the area of effect. Types of Climate may be combined and cause multiple effects at once. Some tools, Powers, or proficiencies can protect against Climate.<br/>

@@ -111,9 +111,9 @@ function Nav({ match }) {
           <ul>
           <li><Link style={navStyle} to="/equipment/melee">Melee Weapons</Link></li>
           <li><Link style={navStyle} to="/equipment/ranged">Ranged Weapons</Link></li>
-          <li><Link style={navStyle} to="/equipment/deflector">Deflectors</Link></li>
-          <li><Link style={navStyle} to="/equipment/plating">Projection Plating</Link></li>
-          <li><Link style={navStyle} to="/equipment/aegis">Aegis</Link></li>
+          {/* <li><Link style={navStyle} to="/equipment/deflector">Deflectors</Link></li> */}
+          <li><Link style={navStyle} to="/equipment/plating">Armor</Link></li>
+          <li><Link style={navStyle} to="/equipment/aegis">Shields</Link></li>
           <li><Link style={navStyle} to="/equipment/tool">Tools/Misc</Link></li>
           </ul>
         </li>
@@ -135,6 +135,7 @@ function Nav({ match }) {
       <li id="creatures-list" className="list" style={hidden}>
         <ul>
         <li><Link style={navStyle} to="/world/creatures/humanoid">Humanoids</Link></li>
+        <li><Link style={navStyle} to="/world/creatures/beast">Beasts</Link></li>
         <li><Link style={navStyle} to="/world/creatures/undead">Undead</Link></li>
         </ul>
       </li>

@@ -92,7 +92,8 @@ export default [
       proficiencies: [
         [
           "Heat Sight: You can now see heat through most solid objects which are less than 5 ft thick.",
-          "Zoom: You may reduce your periferal vision, but double your view distance. Your ranged attacks gain a Favored +1 to the attack roll if you attacked that target on the previous turn."
+          "Zoom: You may reduce your periferal vision, but double your view distance. Your ranged attacks gain a +1 to the attack roll if you attacked that target on the previous turn.",
+          "Shared Sight: You may close this eye to share the sight of your other eye(s) with creatures you choose within 10 ft."
         ],
         [
           "Dark Sight: You can see in any lighting condition that is not Pitch Black as if it were Medium.",
@@ -100,7 +101,11 @@ export default [
           +"If a creature moves into and then out of your field of view in one movement, you may do a basic ranged attack against it as a React Action.",
           "Piercing Sight: Your Heat Sight may now see the normal appearance, not just heat.",
           "Third Eye: You gain an additional eye which may be placed anywhere on your body. This proficiency does not count towards your limit, but this eye may not gain other proficiencies. "
-          +"If this eye can see a threat, it cannot flank you."
+          +"If this eye can see a threat, it cannot flank you.",
+          "Enhanced Zoom: Zoom now grants a +3 bonus and triples your view distance."
+        ],
+        [
+          "Spyglass: Zoom now grants a +5 bonus and quadruples your view distance. Requires Enhanced Zoom."
         ]
       ]
     },
@@ -134,14 +139,14 @@ export default [
           "Ease: This rune doesn't cause a base Fade if the creature's roll is a Hard Success."
         ],
         [
-          "Boost: [Activate] As an Activation Action, Embolden may be used on Power rolls.",
+          "Boost: [Activate] As an Activation Action, Embolden may be used on a Power roll.",
           "Shine: Increase this Rune's Max Fade by 1.",
           "Quirked: Their roll may use a Quirk without imposing an Unfavored penalty.",
           "Willful: [Activate] As an Activation Action, Embolden may be used on any roll that uses the creature's Will. Requires Boost.",
           "Fortune: [Activate] As an Activation Action, instead of its usual effects you may cause their next d20 Skill roll to treat any Hard Fail as a Soft Fail. You may use this proficiency once per Full Sleep."
         ],
         [
-          "Prosper: You may use Fortune any number of times until it is used on a roll which results in a Hard Fail. After this happens, you may not use Fortune again until you finish a Full Sleep."
+          "Prosper: You may use Fortune any number of times until it is used on a roll which results in a Fail. After this happens, you may not use Fortune again until you finish a Full Sleep."
         ]
       ]
     },
@@ -162,11 +167,13 @@ export default [
       proficiencies: [
         [
           "Soothe Mind: Instead of its usual effect, Restore may end a creature's Psychic Break. Causes 2 additional Fade.",
-          "Potency: Increase the healing on this Power based on its current Fade. 1d8 at 1 Fade, 1d10 at 2 Fade, 1d12 at 3 Fade or higher."
+          "Potency: Increase the healing on this Power based on its current Fade. 1d8 at 1 Fade, 1d10 at 2 Fade, 1d12 at 3 Fade or higher.",
+          "Triage: Increase the Max Fade of this Rune by 1."
         ],
         [
           "Mend Wound: Instead of its usual effect, if the creature is currently at its Max Survival you may cure 1 non-extreme Injury. Causes 2 additional Fade.",
-          "Purify: Instead of its usual effect, you may remove 1 Curse effect from the creature. Causes 2 additional Fade."
+          "Purify: Instead of its usual effect, you may remove 1 Curse effect from the creature. Causes 2 additional Fade.",
+          "Greater Triage: Increase the Max Fade of this Rune by 1."
         ],
         [
           "Cleanse: Purify may remove all Curse effects on the creature, doing so causes Restore to immediately become Faded."
@@ -290,10 +297,14 @@ export default [
       attributes: "[Action] [AOE] [Aura]",
       description: "You release a soft glow of Runic energy that imparts safety and protection to friendly creatures around you. Creatures who mean you no harm within 20 ft that are within line of sight receive +1 Avoidance. Only 1 Aura Rune may be active at one time. This effect persists as long as this Rune is Awakened. After activating this Rune, cause 1 Fade at the end of each of your Turns. Max 3 Fade.",
       proficiencies: [
-        [],
+        [
+          "Salvation: [React] As a Reaction, when a creature within this aura rolls a Save you may add +1 to their roll. Causes 1 Fade.",
+          "Bulwark: Reduce Physical damage taken by creatures within this aura by 1."
+        ],
         [
           "Reserve: At the end of your Turn, if no creature within the effect was the target of an attack or received any damage, this Rune does not cause any Fade on this Turn.",
-          "Empowered: Increase the Avoidance bonus to a +2."
+          "Empowered: Increase the Avoidance bonus to a +2.",
+          "Greater Bulwark: Increase the effect of Bulwark to 3."
         ]
       ]
     },
@@ -302,10 +313,13 @@ export default [
       attributes: "[Action] [AOE] [Aura]",
       description: "You release a soft glow of Runic energy that imparts health and well-being to friendly creatures around you. Creatures who mean you no harm within 20 ft that are within line of sight are healed 1 Survival at the end of each of your Turns, do not add your Will Primary Benefit to this healing. Only 1 Aura Rune may be active at one time. This effect persists as long as this Rune is Awakened. After activating this Rune, cause 1 Fade at the end of each of your Turns. Max 3 Fade.",
       proficiencies: [
-        [],
+        [
+          "Rejuvenation: Increases all healing received by creatures within the aura by 1."
+        ],
         [
           "Empowered: Increase the healing dealt to an amount equal to your level.",
-          "Reserve: At the end of your Turn, if all creatures within the effect are already at their Max Survival, this Rune does not cause any Fade on this Turn."
+          "Reserve: At the end of your Turn, if all creatures within the effect are already at their Max Survival, this Rune does not cause any Fade on this Turn.",
+          "Greater Rejuvenation: Increase the effect of Rejuvenation to 3."
         ]
       ]
     },
@@ -314,10 +328,13 @@ export default [
       attributes: "[Action] [AOE] [Aura]",
       description: "You release a soft glow of Runic energy that imparts brute force to friendly creatures around you. Creatures who mean you no harm within 20 ft that are within line of sight receive +1 to any Physical Damage they deal. Only 1 Aura Rune may be active at one time. This effect persists as long as this Rune is Awakened. After activating this Rune, cause 1 Fade at the end of each of your Turns. Max 3 Fade.",
       proficiencies: [
-        [],
+        [
+          "Elemental: This aura also applies to Elemental damage dealt.",
+          "Mental: This aura also applies to Mental damage dealt."
+        ],
         [
           "Empowered: Increase the damage bonus to an amount equal to your level.",
-          "Reserve: At the end of your Turn, if no creature dealt Physical Damage using this effect's bonus, this Rune does not cause any Fade on this Turn."
+          "Reserve: At the end of your Turn, if no creature dealt damage using this effect's bonus, this Rune does not cause any Fade on this Turn."
         ]
       ]
     }
