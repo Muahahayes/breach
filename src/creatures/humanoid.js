@@ -158,6 +158,43 @@ creatures:[
       actions: [
         'Wreck: [Action] [Ranged] Bob wrecks everyone\'s shit in a 100ft radius, dealing 10d10 Bob damage.'
       ]
+    },
+    {
+      name: 'Young Mountain Troll',
+      description: 'Trolls from a mountainous region are large and typically broader in build than other types of Troll. Their skin has the consistency of a boulder and their large heads and hands intimidate any wild animals they come across. A Mountain Troll typically lives alone and rarely ventures further than a few miles from the cave it dwells within, only travelling further if it struggles to find food. They can consume any vegetation or animals they can catch, and can resort to eating trees when desperate. The young Trolls, prior to their 3rd year of life, are smaller and have softer skin than an adult but are just as aggressive.',
+      image: null,
+      attributes: '[Troll] [Biological]',
+      level: 3,
+      stats: {
+        'actions': 2,
+        'life': 5,
+        'survival': 18,
+        'avoidance': 16,
+        'speed': '1d4+2',
+        'strength': 8,
+        'agility': 0,
+        'stamina': 7,
+        'will': -1
+      },
+      skills:[
+        'Athletics: 8',
+        'Martial Arms: 4',
+        'Marksmanship: -2',
+        'Power: -2',
+        'Block: 5',
+        'Unarmed Combat: 7',
+        'Sneak: -2',
+        'Hide: 4',
+        'Awareness: 5',
+        'Search: 0',
+        'Insight: -2',
+        'Disruption: 7'
+      ],
+      actions: [ // write various actions here
+        'Smash: [Action] [Melee] The Troll brings down its fist on a creature, dealing 1d8+8 Blunt damage.',
+        'Swing: [Action] [Melee] The Troll swings a tree or other large object at a creature, dealing 1d12+8 Blunt damage.',
+        'Regeneration: [Passive] [Self] Trolls have a naturally high regeneration, causing them to restore 1d4 Survival at the beginning of each turn. If the Troll is at full Survival at the start of its turn it rolls a d4, on a 4 it restores 1 Life. The Troll does not benefit from regeneration if it took any Fire or Nature damage after its previous turn.'
+      ]
     }
   ],// lv2
   [// lv3

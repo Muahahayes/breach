@@ -249,7 +249,6 @@ export default [//TODO: change profs that add additional psychic fatigue checks 
       attributes: "[Action] [Ranged]",
       description: "A cage formed out of light appears around a creature you can see within 30 ft. They must make a Will Save to resist the effect, on a Fail they are Snared for 1 Round. This has no effect on creatures with a Will less than 1.",
       proficiencies: [
-        [],
         [
           //cage all creatures in a 5ft radius
           //can extend duration by spending an Activation Action each turn, creatures may make the Will Save on each turn
