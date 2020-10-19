@@ -5,7 +5,7 @@ export default {
   resource: "Strain: When you use an active Power you experience Strain. You cannot be healed to a value above your Max Survival minus your current Strain. You remove all of your Strain when you fully sleep. You remove an amount of Strain equal to [Stamina * LVL] when you take a break. If your Strain exceeds half your Max Survival you become Overstrained and cannot gain any more Strain.",
   proficiencies: [
     [
-      "Thick Skin: Increase your Armor by 1. This is increased to half your Strength when not wearing Torso Armor.",
+      "Thick Skin: Increase your Armor by 1. This bonus is increased to half your Strength instead when not wearing Torso Armor.",
       "Retractable Canines: Your canine teeth are sharp and can extend to twice their length.",
       "Tail: If you did not already have one, gain a tail of your choice of animal. You gain +1 to Agility rolls.",
       "Two-Handed Speed: If your two-handed weapon reduces your Speed while equipped, reduce the penalty by 1 (to a minimum of 0)."
@@ -25,7 +25,7 @@ export default {
     [
       "Dawn: You gain 1 Food Point whenever you take a Break in direct sunlight.",
       "Hardy: Increase your Max Survival by 5.",
-      "Hardened Skin: Increase your Armor by 3. This is increased by half your Strength when not wearing Torso Armor. Requires Thick Skin."
+      "Hardened Skin: Thick Skin now increases your Armor by 3. This bonus is increased to your full Strength instead when not wearing Torso Armor."
     ],
     [
       //5

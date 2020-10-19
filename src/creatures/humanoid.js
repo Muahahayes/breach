@@ -169,7 +169,7 @@ creatures:[
         'actions': 2,
         'life': 4,
         'survival': 18,
-        'avoidance': 16,
+        'avoidance': '13 + 4 Armor',
         'speed': '1d4+2',
         'strength': 8,
         'agility': 0,
@@ -208,7 +208,7 @@ creatures:[
         'actions': 2,
         'life': 5,
         'survival': 22,
-        'avoidance': 18,
+        'avoidance': '13 + 5 Armor',
         'speed': '1d4+3',
         'strength': 10,
         'agility': 0,
@@ -232,7 +232,7 @@ creatures:[
       actions: [ // write various actions here
         'Smash: [Action] [Melee] The Troll brings down its fist on a creature, dealing 1d8+10 Blunt damage.',
         'Swing: [Action] [Melee] The Troll swings a tree or other large object at a creature, dealing 1d12+10 Blunt damage.',
-        'Hard Skin: [Passive] [Self] The Troll has a hard layer of rock-like skin reducing damage it takes from Physical attacks by 5.',
+        'Hard Skin: [Passive] [Self] The Troll has a hard layer of rock-like skin increasing its Armor against Physical damage by 2.',
         'Regeneration: [Passive] [Self] Trolls have a naturally high regeneration, causing them to restore 1d4 Survival at the beginning of each turn. If the Troll is at full Survival at the start of its turn it rolls a d4, on a 4 it restores 1 Life. The Troll does not benefit from regeneration if it took any Fire or Nature damage after its previous turn.'
       ]
     }

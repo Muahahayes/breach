@@ -80,7 +80,7 @@ export default [//TODO: change profs that add additional psychic fatigue checks 
           "Phase: [Activate] The blade cuts through armor more effectively, add LVL to your attack roll.",
           "Magnitude: Increases the damage to 1d8. Requires Impact.",
           "Quirked: When using a Quirk on this attack, increase the damage to 1d10.",
-          "Cleave: [Activate] When you hit your target, deal the Psionic Blade damage to each creature within melee range of the target which has an avoidance lower than the attack roll.", 
+          "Cleave: [Activate] When you hit your target, deal the Psionic Blade damage to each creature within melee range of the target which has an avoidance lower than the attack roll. This damage ignores Armor.", 
           "Overwhelming: [Activate] Increases the damage to 2d6. Reroll any of these dice that roll a 1. Keep the new result. Requires Magnitude. Also, passively increase the effect of Quirked to 2d8.",
           "Rapid: Psionic Blade is usable more than once per turn, but only once per attack."
         ],

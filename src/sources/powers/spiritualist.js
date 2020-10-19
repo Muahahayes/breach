@@ -17,7 +17,7 @@ export default [
           "Quill Spray: [Activate] When you use Harden, you may release a spray of quills around. Every creature within 10ft must roll an Agility check vs your current Strain, you deal 1d4 sharp damage to any Soft Fail and additional damage equal to your level to any Hard Fail. This causes 2 Strain. Requires Spines."
         ],
         [
-          "Armored Skin: [Passive] While Blocking at any time, increase your Armor by 2.",
+          "Shield of Faith: [Passive] While Blocking at any time, increase your Armor by 4.",
           "Adaptive Flesh: [Activate] When you use Harden you may become Resistant to the type of damage you received, unless this damage would bring you to 0 Survival. This lasts until you lose at least 1 Life or you use Adaptive Flesh again."
         ]
       ]
@@ -130,7 +130,8 @@ export default [
         [
           "Potency: Increase the Shielding to 1d8.",
           "Ease: If you roll a 3 or less on the Shielding roll, Barkskin causes 1 less Strain.",
-          "Rooted: You may increase the Shielding by 5. You are Snared for 1 turn."
+          "Rooted: You may increase the Shielding by 5. You are Snared for 1 turn.",
+          "Hardwood: While Backskin is active, increase your Armor by 2."
         ],
         [          
           "Hard: After using Barkskin reduce Blunt damage taken by G",
@@ -246,6 +247,9 @@ export default [
           "Falter: On a Hard Fail the creature receives an Unfavored -2 instead.",
           "Motivate: Instead of its usual effect, you may speak words to motivate a creature in an unpleasant way (such as tough love, a hard lesson, call to take action, ect). The creature does not need to make a Will Save and receives a Favored +1 on its next d20 roll, however a Soft Fail will be considered a Hard Fail.",
           "Boldness: Instead of its usual effect, you may use Zealotry to embolden yourself against a creature under the effect of your Zealotry and fuel your conviction. If the creature Fails its Will Save it does not receive any penalty, but you will remove up to 3 Strain. On a Hard Fail you may remove 1 additional Strain."
+        ],
+        [
+          "Expose: You may also reduce the creature's Armor by 2 for the duration."
         ]
         //TODO
       ]

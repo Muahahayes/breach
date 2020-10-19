@@ -231,7 +231,7 @@ export default [
           "Invigorate: [Activate] You may increase the damage of the creature's next attack by your Will.",
           "Calm: [Activate] You may allow the creature to ignore its next Psychic Fatigue check.",
           "Potency: Increase the effect roll to 1d10.",
-          "Repel: The creature gains 1 Avoidance.",
+          "Repel: The creature gains 2 Armor.",
           "Firm: Increase the effect by your level.",
           "Resistant: [Activate] You may give the creature Resistance to your Elemental Soul's damage type.",
           "Fortune: [Activate] You may give a -1 Unfavored penalty to the next attack against the creature."
@@ -239,7 +239,8 @@ export default [
         [
           "Bolster: [Activate] If the creature currently does not have Fortitude, instead of its usual effects Fortitude may fully restore the creature's Survival and activate the Invigorate and Fortune effects if you have those proficiencies chosen. Afterwards the creature may not receive any Fortitude effect for 1 hour.",
           "Resolve: [Activate] You may increase the effect roll to 2d10.",
-          "Endure: When the creature reaches 1 Life while Fortitude is active, they immediately cure up to 2 Mild or Moderate Injuries, heal 2 Life and fully restore their Survival. Afterwards, the current Fortitude effect ends and the creature may not receive any Fortitude effects except for Bolster until they finish a Full Sleep."
+          "Endure: When the creature reaches 1 Life while Fortitude is active, they immediately cure up to 2 Mild or Moderate Injuries, heal 2 Life and fully restore their Survival. Afterwards, the current Fortitude effect ends and the creature may not receive any Fortitude effects except for Bolster until they finish a Full Sleep.",
+          "Greater Repel: Repel may increase the creature's Avoidance by 2 instead of Armor."
         ]
       ]
     },

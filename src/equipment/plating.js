@@ -14,7 +14,7 @@ export default {
       price: 5,
       armor: 1,
       shielding: 0,
-      avoidance: 2,
+      avoidance: 0,
       strength: '1',
       weight: 1,
       tags: 'leather, armor'
@@ -25,7 +25,7 @@ export default {
       price: 30,
       armor: 4,
       shielding: 0,
-      avoidance: 3,
+      avoidance: 1,
       strength: '4',
       weight: 3,
       tags: 'chain, torso, armor, slow, severity'
@@ -34,7 +34,7 @@ export default {
       name: 'Leather Vest',
       description: 'A vest made of hardened leather, provides mild protection.',
       price: 15,
-      armor: 2,
+      armor: 1,
       shielding: 0,
       avoidance: 2,
       strength: '1',

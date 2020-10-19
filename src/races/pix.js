@@ -14,7 +14,7 @@ export default {
 ],
   racials:[
     "Frail: -1 Max Life.",
-    "Evasive: +1 Avoidance vs Physical or Elemental attacks.",
+    "Evasive: +1 Avoidance vs Physical and Elemental attacks.",
     "Clever: Add 1 to your Will Saving rolls.",
 		"Flourish: Pix can pull objects within 5ft towards them with a wave of their hand, and by gripping the empty air they can psychically grip/manipulate and hold objects within 1ft of that hand. Only usable on objects that weigh no more than 20 pounds plus five times their Strength. Requires use of their hand. Weapons and Tools longer than 1ft can only be held using this method, enabling them to use objects that larger races can use by default. Gain a Favored +1 for sleight of hand or other object manipulation tricks.",
  		"Flight: The Pix can Fly, allowing them to freely move in 3 dimensions. While flying, add a 1d4 to your Movement Distance. However, Pix are not very strong at flying and cannot fly very high. After every turn, or 10min of flight, you must be within 5ft above a surface. If you are more than 5ft above a surface roll a d20 + Stamina vs 10 to stay airborne, on a fail you fall until landing on a solid surface. Ignore difficult terrain while flying. The buzzing gives an Unfavored -1 to Sneak and Hide rolls while flying. If you are missing a wing subtract 2 from their Speed while flying and subtract 3 from their roll to stay high in the air. If they are missing 2 wings subtract 4 and 6 respectively. If they are missing more than 2 wings they cannot Fly."

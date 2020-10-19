@@ -14,7 +14,7 @@ export default {
 ],
   racials:[
     "Friendly: Gain a +1 to the regard gained by the first Charm success you have on a person in their lifetime.",
-		"Ballad: They have heard many tales of the world in the form of songs. May gain a Favored +1 to History checks, but only if afterwards they sing a few lines of a folk song (player improvised) pertaining to the story being remembered, accuracy depending on if they succeeded the check.",
+		"Ballad: The Halfling have heard many tales of the world in the form of songs. May gain a Favored +1 to History checks, but only if afterwards they sing a few lines of a folk song (player improvised) pertaining to the story being remembered, accuracy depending on if they succeeded the check.",
 		"Optimism: Once per day, you may treat a Hard Fail as a Soft Fail. You still gain any XP earned."
   ]
 }

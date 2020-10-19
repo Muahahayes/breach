@@ -5,7 +5,7 @@ export default {
   resource: "Bloodlust: Whenever you deal damage without using a Power or receive damage from a creature you gain 1 Bloodlust (once per creature per turn, max of [LVL * 2] number of creatures per turn). These Bloodlust points may be spent by various Powers within this Source. Whenever you fail to land an attack on an opponent you lose a Bloodlust. If you reach 0 Bloodlust you enter Apathy and are unable to use any Powers until you gain at least 1 Bloodlust to end your Apathy. You lose all but 1 Bloodlust when you have a Full Sleep, and half of your Bloodlust (rounded down) when you take a Break (to a minimum of 1).",
   proficiencies: [
     [
-      "Thick Skin: Increase your Armor by 1. This is increased to half your Strength when not wearing Torso Armor.",
+      "Thick Skin: Increase your Armor by 1. This bonus is increased to half your Strength instead when not wearing Torso Armor.",
       "Retractable Canines: Your canine teeth are sharp and can extend to twice their length.",
       "Two-Handed Speed: If your two-handed weapon reduces your Speed while equipped, reduce the penalty by 1 (to a minimum of 0).",
       "Brood: You no longer lose Bloodlust by taking a Break."
@@ -25,7 +25,7 @@ export default {
     ],
     [
       "Hardy: Increase your Max Survival by 5.",
-      "Hardened Skin: Increase your Armor by 3. This is increased by half your Strength when not wearing Torso Armor. Requires Thick Skin.",
+      "Hardened Skin: Thick Skin now increases your Armor by 3. This bonus is increased to your full Strength instead when not wearing Torso Armor.",
       "Night Terrors: You retain up to 4 Bloodlust when you Full Sleep. Requires Dark Dreams.",
       "Rage: Barbaric is now limited to 1 Bloodlust per creature, up to 3."
     ],
