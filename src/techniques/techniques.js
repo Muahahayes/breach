@@ -11,7 +11,7 @@ export default {
     name: "Triage",
     skill: "Medicine",
     requirement: 3,
-    description: "Through studying applied medicinal practices you are now capable of healing injuries. While taking a Break with another creature and using medical supplies equaling 10 Virtua or more in value, you may attempt to heal 1 Life on the creature for a non-extreme Injury. Roll a d20 + Medicine. If the result is above a 10 you may heal a Mild Injury, above a 15 you may heal a Moderate Injury, and above a 20 you may heal a Heavy Injury.\n\nWhen your Medicine Skill reaches 15 you may heal Extreme Injuries with a roll above 30."
+    description: "Through studying applied medicinal practices you are now capable of healing injuries. While taking a Break with another creature and using medical supplies equaling 1 Gold or more in value, you may attempt to heal 1 Life on the creature for a non-extreme Injury. Roll a d20 + Medicine. If the result is above a 10 you may heal a Mild Injury, above a 15 you may heal a Moderate Injury, and above a 20 you may heal a Heavy Injury.\n\nWhen your Medicine Skill reaches 15 you may heal Extreme Injuries with a roll above 30."
   },
   "tactician": {
     name: "Tactician",
