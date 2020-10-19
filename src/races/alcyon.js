@@ -6,7 +6,7 @@ export default {
   stats:[
     "Physical Build: 6'6\"-7'6\", 200-300lb, 60 years, 2 arms, 2 legs",
     "Base Stats: Strength 3, Agility 0, Stamina 2, Will 0",
-    "Speed: 1d6 + 10ft",
+    "Speed: 1d6",
 		"Creation AP: 3",
 		"Favored Skills: Mechanics, Athletics, Insight, Martial Arms, Awareness, Urban, Disruption",
 		"Creation Skill Points: 10",
@@ -14,7 +14,7 @@ export default {
 ],
   racials:[
     "Stride: Add 10ft to your Movement distance. Add 5 miles to your travel distance.",
-		"Long Arms: Add 5ft to your melee reach.",
+		"Long Arms: Add 5ft to your Opportunity range and to your Impede effect.",
     "Hardy: Increase your Max Survival by 5."
   ]
 }

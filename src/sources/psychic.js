@@ -7,7 +7,8 @@ export default {
     [
       "Charismatic: Gain a Favored +1 to Charm attempts against persons with a Will less than 2.",
       "Two-Handed Speed: If your two-handed weapon reduces your Speed while equipped, reduce the penalty by 1 (to a minimum of 0).",
-      "Resilient Mind: Add 1 to your Armor against Mental damage."
+      "Resilient Mind: Add 1 to your Armor against Mental damage.",
+      "Willful: Add 1 to your Will attribute and increase its maximum by 1."
     ],
     [
       "Iron Will: Subtract your Will from the difficulty of Psychic Fatigue checks.",
@@ -19,7 +20,8 @@ export default {
       "Uncensored: Once per day you may at will end a Silence status effect active on you.",
       "Two-Handed Tempo: Two-Handed Speed reduces the penalty by an additional 1 (to a minimum of 0).",
       "Constitution: You may add your level to your Stamina Saving rolls.",
-      "Clarity: You may add your level to your Will Saving rolls."
+      "Clarity: You may add your level to your Will Saving rolls.",
+      "Brute Power: Instead of adding your Will to your Save Difficulty you may add your level twice."
     ],
     [
       "No Resistance: Roll your Psychic Fatigue checks after the main roll of using a Power. Whenever you Hard Succeed a d20 roll while using a Power, subtract 1 from the difficulty of your Psychic Fatigue rolls (to a minimum of 1).",

@@ -19,7 +19,8 @@ export default {
       "Receptive: Gain +LVL to any healing you receive from a Cosmic or Runic Power.",
       "Proficient: When you level up, you may select 4 Powers instead of 3. At least 1 Power must be Common Tier.",
       "Constitution: You may add your level to your Stamina Saving rolls.",
-      "Clarity: You may add your level to your Will Saving rolls."
+      "Clarity: You may add your level to your Will Saving rolls.",
+      "Brute Power: Instead of adding your Will to your Save Difficulty you may add your level twice."
     ],
     [
       "Light: You may Awaken one additional Rune after a Full Sleep. At this time you may not Awaken any runes above Common Tier while using Light. This Rune does not Awaken another Rune when it Fades.",

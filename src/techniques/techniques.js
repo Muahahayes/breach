@@ -11,7 +11,7 @@ export default {
     name: "Triage",
     skill: "Medicine",
     requirement: 3,
-    description: "Through studying applied medicinal practices you are now capable of healing injuries. While taking a Break with another creature and using medical supplies equaling 1 Gold or more in value, you may attempt to heal 1 Life on the creature for a non-extreme Injury. Roll a d20 + Medicine. If the result is above a 10 you may heal a Mild Injury, above a 15 you may heal a Moderate Injury, and above a 20 you may heal a Heavy Injury.\n\nWhen your Medicine Skill reaches 15 you may heal Extreme Injuries with a roll above 30."
+    description: "Through studying applied medicinal practices you are now capable of healing injuries. While taking a Break with another creature and using medical supplies equaling 1 Silver or more in value, you may attempt to heal 1 Life on the creature for a non-extreme Injury. Roll a d20 + Medicine. If the result is above a 10 you may heal a Mild Injury, above a 15 you may heal a Moderate Injury, and above a 20 you may heal a Heavy Injury. If you do not roll high enough to heal an Injury you may reduce a non-Extreme Injury to Mild. \n\nWhen your Medicine Skill reaches 15 you may heal Extreme Injuries with a roll above 30."
   },
   "tactician": {
     name: "Tactician",
@@ -77,19 +77,19 @@ export default {
     name: "Water Tap",
     skill: "Nature | Outdoorsman",
     requirement: 3,
-    description: "You know how to draw water from trees and large plants. When you take a Break near a tree or large plant you can generate 1 Water Point which may be drunk by an ally or stored for later use.\n\nWhen your Skill has increased to 9 you may generate a second Water Point."
+    description: "You know how to draw water from trees and large plants. When you take a Break near a tree or large plant you can generate 1 Water Point which may be stored for later use, also every ally with you may drink 1 Water Point from the plant instantly.\n\nWhen your Skill has increased to 9 you may generate a second Water Point to store."
   },
   "language" : {
     name: "Language",
     skill: "History | Social",
     requirement: 3,
-    description: "You may study a new language. You develop a conversational level of competency with the language of your choice, as well as the ability to read it and write it in a basic fashion. You may learn this Technique multiple times, each time counts towards your limit of Techniques known.\n\nWhen your Skill has increased to 9 you may speak it fluently and your reading and writing reach an average adult's level of competency. When your Skill has increased to 15 you can be considered well spoken, and have the writing skills of a scholar."
+    description: "You may study a new language. You develop a conversational level of competency with the language of your choice, as well as the ability to read it and write it in a basic fashion. You may learn this Technique multiple times, each time counts towards your limit of Techniques known.\n\nWhen your Skill has increased to 9 you may speak it fluently and your reading and writing reach an average adult's level of competency.\nWhen your Skill has increased to 15 you can be considered well spoken, and have the writing skills of a scholar."
   },
   "busking": {
     name: "Busking",
     skill: "Perform",
     requirement: 3,
-    description: "When you Hard Succeed a Perform check using your voice or musical instrument in a public place roll a 1d10 and gain that many Virtua from passing listeners. You may benefit from this Technique once per Break.\n\nWhen your Skill has increased to 9 you may do this on a Soft Success and may benefit from this Technique twice per Break."
+    description: "When you Hard Succeed a Perform check using your voice or musical instrument in a public place roll a 1d10 and gain that many Copper from passing listeners. You may benefit from this Technique once per Break.\n\nWhen your Skill has increased to 6 increase the money gained to 2d10 Copper.\nWhen your Skill has increased to 9 you may do this on a Soft Success and may benefit from this Technique twice per Break.\nWhen your Skill has increased to 12 increase the money gained to 4d10 Copper."
   },
   "martial arts" : {
     name: "Martial Arts",
@@ -101,7 +101,7 @@ export default {
     name: "Brewing",
     skill: "Cooking",
     requirement: 3,
-    description: "\\:By mixing herbs and spices into the drinks you create you can infuse them with special properties. This requires 30 minutes of effort and at least 1 silver worth of supplies (or your own herbs if successfully scavenged from the wild) to create 4 servings. Choose one effect when brewing a batch of drinks:\nThe drinker restores 2 ae, removes 2 Strain, ends a Psychic Break, or can choose one Faded rune to become Dormant. When your Skill has increased to 9 the ae and Strain become 3.\nThe drinker heals for 1d4 health. When your Skill has increased to 9 the healing becomes 1d6.\nThe drinker feels more alert and gains a Favored +1 to their Awareness checks for 1 hour.\nThe drinker feels comforted and raises the threshold for Hot climate effects and lowers the threshold for Cold climate effects by 10°F.\nThe drinker feels happy and free, putting them into a state of intoxication which reduces their Will by 2 as well as giving them an Unfavored -1 to Insight checks for 30 minutes."
+    description: "\\:By mixing herbs and spices into the drinks you create you can infuse them with special properties. This requires 30 minutes of effort and at least 1 silver worth of supplies (or your own herbs if successfully scavenged from the wild) to create 4 servings. Choose one effect when brewing a batch of drinks:\n\nThe drinker restores 2 ae, removes 2 Strain, ends a Psychic Break, or can choose one Faded rune to become Dormant. When your Skill has increased to 9 the ae and Strain become 3.\nThe drinker heals for 4 health. When your Skill has increased to 9 the healing becomes 8.\nThe drinker feels more alert and gains a Favored +1 to their Awareness checks for 1 hour.\nThe drinker feels comforted and raises the threshold for Hot climate effects and lowers the threshold for Cold climate effects by 10°F.\nThe drinker feels happy and free, putting them into a state of intoxication which reduces their Will by 2 as well as giving them an Unfavored -1 to Insight checks for 30 minutes."
   },
   "fracture" : {
     name: "Fracture",
@@ -114,6 +114,20 @@ export default {
     skill: "Awareness",
     requirement: 3,
     description: "Your reaction speed has become heightened. You may add half your Agility (rounded down) to your Initiative after rolling your Speed."
+  },
+  "weapon mastery" : {
+    name: "Weapon Mastery",
+    skill: "Martial Arms",
+    requirement: 3,
+    description: `\\:Different types of weapon provide additional effects (some numbers may increase for high quality or Runic weapons):\n
+      Swords: Increase Avoidance by 1 while held in your hand.
+      Daggers: Deal an additional 1d4 damage on a Hard Success.
+      Axes: Ignore 2 points of Armor. Two-Handed Axes ignore 4.
+      Maces: Knock the victim prone when dealing an Injury.
+      Spears: Roll double the damage dice on a Critical hit.
+      Kamas/Scythes: On a Hard Success apply a 2 turn Bleed.
+      Halberds: Dismount the victim on a Hard Success. Also, roll double the damage dice on a Critical hit.
+      Staves: Double the impede effect during an Opportunity.`
   }
 }
 /*

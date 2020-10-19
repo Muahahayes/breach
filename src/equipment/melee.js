@@ -4,17 +4,6 @@ export default {
   description: <p>
     When making a Melee Attack while a Melee Weapon is equipped, use the damage listed on the weapon. You may only use a weapon to attack if you meet the Strength and Agility Requirements and have enough available hands. 
     If you are wielding a weapon in your Off-Hand (your Character's non-dominant hand) receive an Unfavored -1 on all of your Melee Attacks. If a weapon has both one-handed and two-handed tags you may use it in either way, use the damage listed to the left for one-handed and to the right for two-handed (eg. "1d6/1d8 Sharp" 1d6 is for one-handed and 1d8 is for two-handed).<br/><br/>
-    Different types of weapon provide additional effects (some numbers may increase for high quality or Runic weapons):
-    <ul>
-      <li>Swords: Increase Avoidance by 1.</li>
-      <li>Daggers: Deal an additional 1d4 damage on a Hard Success.</li>
-      <li>Axes: Ignore 2 points of Armor. Two-Handed Axes ignore 4.</li>
-      <li>Maces: Knock the victim prone when dealing an Injury.</li>
-      <li>Spears: Roll double the damage dice on a Critical hit.</li>
-      <li>Kamas/Scythes: On a Hard Success apply a 2 turn Bleed.</li>
-      <li>Halberds: Dismount the victim on a Hard Success. Also, roll double the damage dice on a Critical hit.</li>
-      <li>Staves: Double the impede effect during an Opportunity.</li>
-    </ul>
   </p>,
   stats: ['price', 'damage', 'strength', 'agility', 'tags'],
   equipment: [ 
@@ -50,7 +39,7 @@ export default {
     },
     {
       name: 'Silver Shortsword',
-      description: 'A high quality blade made of silver. This damage may be considered Spirit if needed to avoid damage immunity. Increases Avoidance by an additional 1.',
+      description: 'A high quality blade made of silver. This damage may be considered Spirit if needed to avoid damage immunity. Increases Avoidance by 1.',
       price: 50,
       damage: '1d8 Sharp',
       strength: 1,
@@ -71,7 +60,7 @@ export default {
     {
       name: 'Hatchet',
       description: 'A small axe used by huntsmen and bandits alike.',
-      price: 0,
+      price: 5,
       damage: '1d8 Sharp',
       strength: 2,
       agility: '-',

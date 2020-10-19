@@ -14,14 +14,16 @@ export default {
       "Ancestral Strength: You may spend 1 Bloodlust to gain a Favored +1 to any Strength check, including Saving rolls.",
       "Carnivore: After eating a meal which included a type of meat, gain 1 Bloodlust.",
       "Dark Dreams: You retain up to 2 Bloodlust when you Full Sleep.",
-      "Barbaric: You now gain 1 Bloodlust when dealing damage to a creature using a Power, limited to 1 Bloodlust per use of a Power."
+      "Barbaric: You now gain 1 Bloodlust when dealing damage to a creature using a Power, limited to 1 Bloodlust per use of a Power.",
+      "Willful: Add 1 to your Will attribute and increase its maximum by 1."
     ],
     [
       "Regenerative: Gain +LVL to any healing you receive from a Power.",
       "Ancient Endurance: Increase your Stamina by 1 and increase its maximum by 1.",
       "Two-Handed Tempo: Two-Handed Speed reduces the penalty by an additional 1 (to a minimum of 0).",
       "Constitution: You may add your level to your Stamina Saving rolls.",
-      "Clarity: You may add your level to your Will Saving rolls."
+      "Clarity: You may add your level to your Will Saving rolls.",
+      "Brute Power: Instead of adding your Will to your Save Difficulty you may add your level twice."
     ],
     [
       "Hardy: Increase your Max Survival by 5.",

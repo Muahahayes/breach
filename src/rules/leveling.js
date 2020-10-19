@@ -7,7 +7,7 @@ export default {
     <span>If a character <b>Hard Succeeds</b> or <b>Hard Fails</b> a <Link to="skills">Skill</Link> check they gain 1 XP (if contesting Skill checks between players, XP eligibility is up to the GM's discretion).<br/>
     If a Skill roll difficulty is your Skill bonus + 1 or lower, it is a Trivial Skill Check and does not give any XP. If your Skill check contests multiple counter checks at once, it only counts as a Hard Succeed or Hard Fail if it Hard Succeeds/Hard Fails against at least half of the checks, it counts as a Hard Succeed if there is a tie between Hard Succeeds and Hard Fails.<br/>
     <br/>
-    Every 5 XP points you may choose 1 Skill that gave you XP during your current Level, increase that Skill by 1. Also you immediately must choose a Proficiency from a Power or your Source, or choose a Lesser Power from your Source. This choice must be within the given threshold as denoted by LVL, representing your level. Proficiencies increase the power/utility of a Power, grant passive bonuses or grant sub-powers. If you gain a Proficiency from any other source (such as defeating an Epic creature or Hard Succeeding/Hard Failing a scenario) you immediately gain 5 XP and increase any Skill by 1.<br/></span>
+    Every 3 XP points you may choose 1 Skill that gave you XP during your current Level, increase that Skill by 1 and gain a Proficiency. The next time you take a Break or Full Sleep you must choose a Proficiency from a Power or your Source, or choose a Lesser Power from your Source. This choice must be within the given threshold as denoted by LVL, representing your level. Proficiencies increase the power/utility of a Power, grant passive bonuses or grant sub-powers. If you gain a Proficiency from any other source (such as defeating an Epic creature or Hard Succeeding/Hard Failing a scenario) you immediately gain 3 XP and increase any Skill by 1.<br/></span>
     <hr/>
     <h3>Leveling Up:</h3>
     <span>When you gain enough XP for your next level your level is increased by 1, then you must first spend your Proficiency gained from this XP. Select a new Power and a new Lesser Power from your Source within your level Tier after your next Full Sleep. Gain Max <Link to="stats">Survival</Link> equal to double your Stamina. Reset XP to 0 and add any leftover XP past the leveling threshold (if any). Every even numbered level, increase any one <Link to="stats">Attribute</Link> by 1.<br/>
@@ -23,15 +23,15 @@ export default {
     <table>
       <tbody>
       <tr><td>Level</td><td>XP for next level</td><td>Proficiencies</td> <td>Tier</td></tr>
-      <tr><td>1</td><td>15</td><td>3</td><td>Common</td></tr>
-      <tr><td>2</td><td>20</td><td>4</td><td>Common</td></tr>
-      <tr><td>3</td><td>30</td><td>6</td><td>Common</td></tr>
-      <tr><td>4</td><td>50</td><td>10</td><td>Epic</td></tr>
-      <tr><td>5</td><td>50</td><td>10</td><td>Epic</td></tr>
-      <tr><td>6</td><td>50</td><td>10</td><td>Epic</td></tr>
-      <tr><td>7</td><td>75</td><td>15</td><td>Epic</td></tr>
-      <tr><td>8</td><td>100</td><td>20</td><td>Legendary</td></tr>
-      <tr><td>9</td><td>100</td><td>20</td><td>Legendary</td></tr>
+      <tr><td>1</td><td>15</td><td>5</td><td>Common</td></tr>
+      <tr><td>2</td><td>21</td><td>7</td><td>Common</td></tr>
+      <tr><td>3</td><td>30</td><td>10</td><td>Common</td></tr>
+      <tr><td>4</td><td>48</td><td>16</td><td>Epic</td></tr>
+      <tr><td>5</td><td>48</td><td>16</td><td>Epic</td></tr>
+      <tr><td>6</td><td>48</td><td>16</td><td>Epic</td></tr>
+      <tr><td>7</td><td>60</td><td>20</td><td>Epic</td></tr>
+      <tr><td>8</td><td>60</td><td>20</td><td>Legendary</td></tr>
+      <tr><td>9</td><td>60</td><td>20</td><td>Legendary</td></tr>
       <tr><td>10</td><td>---</td><td>&#8734;</td><td>Legendary</td></tr>
       </tbody>
     </table>

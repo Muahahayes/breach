@@ -33,7 +33,7 @@ export default {
     {
       name: 'Leather Vest',
       description: 'A vest made of hardened leather, provides mild protection.',
-      price: 15,
+      price: 10,
       armor: 1,
       shielding: 0,
       avoidance: 2,

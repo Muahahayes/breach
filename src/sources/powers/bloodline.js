@@ -146,6 +146,9 @@ export default [
       description: "You stare into a creature's eyes and assault their mind with dark energy. They must roll a Will Save to withstand the effect. On a Fail they experience intense horror for as long as they look at you, and for 1 turn after looking away they are Feared. Has no effect on creature's of a higher level than you. Costs 1 Bloodlust.",
       proficiencies: [
         [
+          "Entrance: [Activation] As an Activation Action when the creature Hard Fails the save, you beguile the creature with your force of will. Declare an Action it is capable of performing and a target, on its next turn it must attempt to carry out that Action.",
+          "Incite: Instead of its usual effect, you may fill the creature with violent thoughts. For the next 2 turns (or minute out of combat) the creature can only make Actions which cause damage.",
+          "Expose Lies: Instead of its usual effect, you may force the creature to be incapable of telling untruths for 1 hour."
           //TODO
           // sleep effect?
           // charm effect?

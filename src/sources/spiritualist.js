@@ -14,13 +14,15 @@ export default {
       "Expanded Lungs: You can hold your breath twice as long.",
       "Owl Neck: You can face behind you without turning your body, and you can rotate your head upside down.",
       "Spiritual Awakening: After putting 3 points into Spiritual Awakening gain a new [Common] Power. This does not count as Leveling Up. You may only gain 1 Power from this Proficiency.",
-      "Fast Reflexes: Add 1 Initiative to your Speed rolls."
+      "Fast Reflexes: Add 1 Initiative to your Speed rolls.",
+      "Willful: Add 1 to your Will attribute and increase its maximum by 1."
     ],
     [
       "Regenerative: Gain +LVL to any healing you receive.",
       "Evolutionary Endurance: Increase your Stamina by 1 and increase its maximum by 1.",
       "Constitution: You may add your level to your Stamina Saving rolls.",
-      "Clarity: You may add your level to your Will Saving rolls."
+      "Clarity: You may add your level to your Will Saving rolls.",
+      "Brute Power: Instead of adding your Will to your Save Difficulty you may add your level twice."
     ],
     [
       "Dawn: You gain 1 Food Point whenever you take a Break in direct sunlight.",
