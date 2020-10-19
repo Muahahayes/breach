@@ -56,22 +56,22 @@ export default [
     {
       name: "Bloodthirst",
       attributes: "[Action] [Melee]",
-      description: "As an Action, on touch you attempt to pierce a creature with your teeth or fingers. Roll a Use Power or Unarmed Combat attack.  On a hit, deal 1d8 Sharp damage (you may add Strength or Agility's Primary benefit to this damage). Costs 1 Bloodlust.",
+      description: "As an Action you attempt to pierce a creature with your teeth or fingers. Roll a Use Power or Unarmed Combat attack. On a hit, deal 1d8 Sharp damage (you may add Strength or Agility's Primary benefit to this damage if rolling Unarmed Combat). Costs 1 Bloodlust.",
       proficiencies: [
         [
-          "Fury: On a hit, gain an additional Bloodlust.",
+          "Fury: On a Hard Success, gain an additional Bloodlust.",
           "Thirst: [Activate] On a hit, as an Activation Action heal Survival equal to your level.",
           "Assault: [Action] As an Action, you may put extra effort into the attack. Roll each damage die twice when adding up your damage dealt.",        
-          "Impact: Increase the damage to 1d10.",
+          "Impact: Increase the damage to 1d10. Costs 1 additional Bloodlust.",
           "Hunger: You may use Bloodthirst for free if you are in Apathy.",
           "Quirked: When using a Quirk on this attack, Increase the damage to 2d6."
         ],
         [
           "Anticoagulant: [Activate] On a hit, as an Activation Action the target Bleeds once after 5 turns.",
-          "Magnitude: Increase the damage to 2d6. Increase the effect of Quirked to 2d8. Requires Impact.",
+          "Greater Impact: Increase the damage of Impact to 2d6. Increase the effect of Quirked to 2d8.",
           "Feed: Thirst gains more Survival and deals additional damage equal to your level.",        
           "Flow: Anticoagulant Bleeds after 2 fewer turns.",          
-          "Overwhelming: Increase the damage to 2d8. Increase the effect of Quirked to 2d10. Requires Magnitude."
+          "Magnitude: Increase the damage of Impact to 2d8. Increase the effect of Quirked to 2d10. Requires Greater Impact."
         ],
         [
           "Drain: Thirst and Anticoagulant may both be used with the same Activation Action.",
@@ -94,7 +94,7 @@ export default [
         [
           "Hellfire: Your weapon alights in flame as it strikes, the creature must roll a Stamina Save. On a fail they are Burned, dealing 1d6 Fire damage over 2 turns. On a Hard Fail the Burn deals 1d8 damage over 3 turns instead.",
           "Quirked: When using a Quirk on this attack, increase the size of Sanguine Strike's dice to a d10. Requires Impact.",
-          "Penetration: This attack ignores the target's Block.",        
+          "Penetration: This attack ignores the target's Armor.",        
           "Greater Impact: Increase the size of Sanguine Strike's dice to a d8. Increase the effect of Quirked to a d12. Requires Impact.",
           "Cleave: [Activate] If a creature dies from this attack, you may spend an Activation Action to roll an Attack roll against another creature within reach. On a Soft Success, deal half this attack's damage to that creature. On a Hard Success, deal full damage.",
           "Deadly Expertise: Permanently add 1 to your Martial Arms Skill and increase its maximum by 1."
@@ -126,7 +126,7 @@ export default [
       proficiencies: [
         [
           "Sharp Aim: Permanently add 1 to your Marksmanship Skill and increase its maximum by 1.",        
-          "Impact: Increase the damage die to 1d6.",
+          "Impact: Increase the damage die to 1d6. Costs 1 additional Bloodlust.",
           "Twin Shot: If Dark Shot hits, you may make a basic Ranged Weapon attack on the same target for free.",          
           "Focused: [Action] As an Action before attacking, you may focus more power into your shot. Roll each base damage die of your Ranged Weapon twice when adding up your damage dealt."
         ],
@@ -135,8 +135,8 @@ export default [
           "Fork: Your Twin Shot may be used on any target within range.",
           "Dark Twin: You may spend 1 Bloodlust to use Dark Shot with your Twin Shot attack.",        
           "Overwhelm: [Activate] If your Dark Shot deals a killing blow you may use any Power which costs Bloodlust. This may only trigger once per turn.",
-          "Piercing Shot: [Action] As an Action, you may attempt to deal 1 point of Life damage to the target hit. They must roll a Stamina Save to resist the effect.",
-          "Greater Impact: Increase the damage die to 1d8."
+          "Piercing Shot: [Action] As an Action, you may attempt to deal 1 point of Life damage to the target. Roll a Ranged Weapon attack, ignore their Armor. On a hit, they must roll a Stamina Save to resist the effect.",
+          "Greater Impact: Increase the damage of Impact to 1d8."
         ]
       ]
     },

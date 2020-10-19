@@ -6,7 +6,8 @@ export default {
   proficiencies: [
     [
       "Charismatic: Gain a Favored +1 to Charm attempts against persons with a Will less than 2.",
-      "Two-Handed Speed: If your two-handed weapon reduces your Speed while equipped, reduce the penalty by 1 (to a minimum of 0)."
+      "Two-Handed Speed: If your two-handed weapon reduces your Speed while equipped, reduce the penalty by 1 (to a minimum of 0).",
+      "Resilient Mind: Add 1 to your Armor against Mental damage."
     ],
     [
       "Iron Will: Subtract your Will from the difficulty of Psychic Fatigue checks.",
@@ -25,7 +26,7 @@ export default {
       "Psi Sense: When you are within 30 ft of a creature which you are aware of you immediately know if they have the Psychic Source, and if so what their level is."
     ],
     [
-      "Mental Resilience: After putting 3 points into Mental Resilience you gain resistance to Mental damage types."
+      "Mental Fortitude: After putting 3 points into Mental Resilience you gain resistance to Mental damage types."
     ],
     [
       //6

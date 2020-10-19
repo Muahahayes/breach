@@ -87,7 +87,7 @@ export default [
       description: "Use a Ranged Weapon to make a basic Ranged Weapon attack. The shot shines brightly as it streaks through the air towards its target. Add 1d4 Spirit damage to the attack. Costs 1 ae.",
       proficiencies: [
         [
-          "Silvered: The physical damage dealt by this attack is considered a Silver weapon.",
+          "Silvered: The physical damage dealt by this attack is considered a Silver weapon and may be considered Spirit damage if needed to avoid damage immunity.",
           "Sharp Aim: Permanently add 1 to your Marksmanship Skill and increase its maximum by 1.",
           "Impact: Increase the damage die to 1d6.",
           "Twin Shot: If Shining Shot hits, you may make a basic Ranged Weapon attack on the same target for free.",          

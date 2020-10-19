@@ -18,8 +18,8 @@ creatures:[
       level: 2,
       stats: {
         'actions': 2,
-        'life': 4,
-        'survival': 25,
+        'life': 3,
+        'survival': 15,
         'avoidance': 14,
         'speed': '1d6+2',
         'strength': 5,
@@ -58,7 +58,7 @@ creatures:[
       stats: {
         'actions': 2,
         'life': 4,
-        'survival': 30,
+        'survival': 18,
         'avoidance': 14,
         'speed': '1d6+3',
         'strength': 6,

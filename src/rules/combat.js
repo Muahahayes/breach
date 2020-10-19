@@ -22,14 +22,16 @@ content: <div>
   <hr/>
   <h3>Attacking:</h3>
   <p><b>Attack Rolls:</b><br/>
-  On a critical success (a Natural 20 on a d20 attack roll), the attack automatically succeeds to hit the target and is considered a Hard Success (up to your GMs discretion if the target is hittable at all) and deals additional damage equal to the maximum value of the largest die in the attack. On a critical fail (a Natural 1 on a d20 roll), the attack automatically fails to hit the target and it is considered a Hard Fail, your GM may give stronger consequences than a regular Hard Fail.<br/>
+  On a critical success (a Natural 20 on a d20 attack roll), the attack automatically succeeds to hit the target and is considered a Hard Success (up to your GMs discretion if the target is hittable at all) and the largest die in the attack is considered its maximum value. On a critical fail (a Natural 1 on a d20 roll), the attack automatically fails to hit the target and it is considered a Hard Fail, your GM may give stronger consequences than a regular Hard Fail.<br/>
   Otherwise, on a Hard or Soft Success you hit the target. On a Hard or Soft Fail you miss your attack. Powers may specify extra effects for Hard or Soft results.<br/><br/>
   <b>Melee rules:</b><br/>
-  As a Full Action you may attempt to Attack a single creature within Melee range (usually 5ft unless altered by other effects). If you have a Melee weapon in your hands you may roll a Martial Arms Skill check vs their Avoidance to use the weapon to Attack, or else roll an Unarmed Combat Skill check vs their Avoidance. If you succeed deal the damage described by the weapon used, or deal 1d4 + Strength blunt damage if you are using Unarmed Combat.<br/><br/>
+  As a Full Action you may attempt to Attack a single creature within Melee range (usually 5ft unless altered by other effects). If you have a Melee weapon in your hands you may roll a Martial Arms Skill check vs their Avoidance to use the weapon to Attack, or else roll an Unarmed Combat Skill check vs their Avoidance. If you succeed deal the damage described by the weapon used, or deal 1d4 blunt damage if you are using Unarmed Combat.<br/><br/>
   <b>Ranged rules:</b><br/>
   As a Full Action you may attempt to Attack a single creature. You must have a Ranged weapon in your hands, and the enemy must be within the range listed on the weapon. Roll a Marksmanship Skill check vs their Avoidance to use the weapon to Attack. If you succeed deal the damage described by the weapon used. If a creature is behind a solid object of at least half their height, gain Unfavored -1 to the attack.<br/><br/>
   <b>Power rules:</b><br/>
-  As an Action you may attempt to Attack creatures (the Action used, range required and number of creatures are described by the Power). If the Power does not specify a Skill or Attribute used in a check, roll a Power Skill check vs their Avoidance. On a success, deal the damage and/or apply the effect described by the Power used. If a Power requires an Attribute Save instead of rolling a Power Skill check the opposing creature must roll a d20 + the declared Attribute vs [7 + Will + LVL].</p>
+  As an Action you may attempt to Attack creatures (the Action used, range required and number of creatures are described by the Power). If the Power does not specify a Skill or Attribute used in a check, roll a Power Skill check vs their Avoidance. On a success, deal the damage and/or apply the effect described by the Power used. If a Power requires an Attribute Save instead of rolling a Power Skill check the opposing creature must roll a d20 + the declared Attribute vs [7 + Will + LVL].<br/><br/>
+  <b>Touch rules:</b>
+  If an action/power/effect/technique requires you to Touch your target, ignore checking their Armor value.</p>
   <hr/>
   <h3>Targeting Types:</h3>
   <p>
@@ -40,7 +42,7 @@ content: <div>
   <b>Line:</b> In a chosen direction, all creatures/objects between the source and a point at the end of the effect's range in that direction are caught in the effect.</p>
   <hr/>
   <h3>Grappling:</h3>
-  <p>While Grappled a creature cannot make Full or Movement Actions on their Turn. You may initiate a Grapple by rolling an Unarmed Melee Attack, and if you hit instead of dealing damage you enter a Grapple contest with the target. Roll Athletics vs their Athletics or Acrobatics, on a Hard Success you succeed in Grappling them, on a Soft Success they are Grappled for only one turn. On a Soft Fail they are not Grappled, on a Hard Fail they are not Grappled and you lose your React for this Round.<br/>
+  <p>While Grappled a creature cannot make Full or Movement Actions on their Turn. You may initiate a Grapple by rolling an Unarmed Melee Attack to Touch the creature, and if you hit instead of dealing damage you enter a Grapple contest with the target. Roll Athletics vs their Athletics or Acrobatics, on a Hard Success you succeed in Grappling them, on a Soft Success they are Grappled for only one turn. On a Soft Fail they are not Grappled, on a Hard Fail they are not Grappled and you lose your React for this Round.<br/>
   If you succeed in Grappling them, on each of your turns you must spend a Full Action to maintain the Grapple. On each of the creature's turns they may use a Full Action to reroll their check vs your original Athletics roll. If they Succeed they end the Grapple. If they Fail they add a Favored +1 to their next attempt (up to +3).</p>
   <hr/>
   <h3>Blocking:</h3>
@@ -54,5 +56,7 @@ content: <div>
   <hr/>
   <h3>Maintaining Effects:</h3>
   <p>Whenever you maintain an effect by spending your Activation Action on a following turn, if you received damage, were forced to move, were knocked prone, or received a status effect since your last turn you must roll a d20 + Stamina vs 15 to successfully maintain the effect.</p>
+  <h3>Armor:</h3>
+  <p>Whenever you roll an Attack or Power against a creature's Avoidance (except for when rolling to Touch, or if the Power does not deal direct damage) if the roll succeeds compare the roll to the creature's Avoidance + Armor. If the roll fails this Armor check, the damage it deals is reduced by half.</p>
 </div>
 }

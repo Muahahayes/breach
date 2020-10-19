@@ -1,11 +1,11 @@
 export default {
   name: "Bloodline",  
   slogan: "The Powers of the Past",
-  description: "[Flavor Text]",
-  resource: "Bloodlust: Whenever you deal damage to, or receive damage from a creature you gain 1 Bloodlust (once per creature per turn, max of [LVL * 2] number of creatures per turn). These Bloodlust points may be spent by various Powers within this Source. Whenever you fail to land an attack on an opponent you lose a Bloodlust. If you reach 0 Bloodlust you enter Apathy and are unable to use any Powers until you gain at least 1 Bloodlust to end your Apathy. You lose all but 1 Bloodlust when you have a Full Sleep, and half of your Bloodlust (rounded down) when you take a Break (to a minimum of 1).",
+  description: "[Flavor Text]", //TODO
+  resource: "Bloodlust: Whenever you deal damage without using a Power or receive damage from a creature you gain 1 Bloodlust (once per creature per turn, max of [LVL * 2] number of creatures per turn). These Bloodlust points may be spent by various Powers within this Source. Whenever you fail to land an attack on an opponent you lose a Bloodlust. If you reach 0 Bloodlust you enter Apathy and are unable to use any Powers until you gain at least 1 Bloodlust to end your Apathy. You lose all but 1 Bloodlust when you have a Full Sleep, and half of your Bloodlust (rounded down) when you take a Break (to a minimum of 1).",
   proficiencies: [
     [
-      "Thick Skin: Increase your Max Survival by 5.",
+      "Thick Skin: Increase your Armor by 1. This is increased to half your Strength when not wearing Torso Armor.",
       "Retractable Canines: Your canine teeth are sharp and can extend to twice their length.",
       "Two-Handed Speed: If your two-handed weapon reduces your Speed while equipped, reduce the penalty by 1 (to a minimum of 0).",
       "Brood: You no longer lose Bloodlust by taking a Break."
@@ -13,7 +13,8 @@ export default {
     [
       "Ancestral Strength: You may spend 1 Bloodlust to gain a Favored +1 to any Strength check, including Saving rolls.",
       "Carnivore: After eating a meal which included a type of meat, gain 1 Bloodlust.",
-      "Dark Dreams: You retain up to 2 Bloodlust when you Full Sleep."
+      "Dark Dreams: You retain up to 2 Bloodlust when you Full Sleep.",
+      "Barbaric: You now gain 1 Bloodlust when dealing damage to a creature using a Power, limited to 1 Bloodlust per use of a Power."
     ],
     [
       "Regenerative: Gain +LVL to any healing you receive from a Power.",
@@ -23,10 +24,14 @@ export default {
       "Clarity: You may add your level to your Will Saving rolls."
     ],
     [
-      "Hardy: Increase your Max Survival by 5."
+      "Hardy: Increase your Max Survival by 5.",
+      "Hardened Skin: Increase your Armor by 3. This is increased by half your Strength when not wearing Torso Armor. Requires Thick Skin.",
+      "Night Terrors: You retain up to 4 Bloodlust when you Full Sleep. Requires Dark Dreams.",
+      "Rage: Barbaric is now limited to 1 Bloodlust per creature, up to 3."
     ],
     [
-      "Timeless: You do not age and will no longer die of age or natural illnesses."
+      "Timeless: You do not age and will no longer die of age or natural illnesses.",
+      "Berserker: You gain 2 Bloodlust when you receive damage from a creature."
     ],
     [
       //6

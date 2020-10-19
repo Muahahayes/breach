@@ -167,7 +167,7 @@ creatures:[
       level: 3,
       stats: {
         'actions': 2,
-        'life': 5,
+        'life': 4,
         'survival': 18,
         'avoidance': 16,
         'speed': '1d4+2',
@@ -206,7 +206,7 @@ creatures:[
       level: 3,
       stats: {
         'actions': 2,
-        'life': 6,
+        'life': 5,
         'survival': 22,
         'avoidance': 18,
         'speed': '1d4+3',

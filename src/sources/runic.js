@@ -1,7 +1,7 @@
 export default {
   name: "Runic Arts",  
   slogan: "The Powers of Engraving",
-  description: "[Flavor Text]",
+  description: "[Flavor Text]", //TODO
   resource: "Runes: When you level up, instead of selecting 1 Power you may select 2. You engrave these Powers onto your body as a Rune to attune yourself to their power. Whenever you select a Lesser Power, you apply a Lesser Rune upon your body. A Rune may be in 3 states: Awakened, Dormant, or Faded. You may only use a Power if that Power's Rune is Awakened. After a Full Sleep all of your currently Awakened and Faded Runes become Dormant and then you may select up to LVL Runes, these Runes become Awakened with Aether and glow brightly on your skin. After a Break you may Awaken any 1 Rune (Dormant or Faded) by selecting a different Rune which is currently Awakened and make it Dormant. You may only use Proficiencies that are on currently Awakened Rune. All Lesser Runes are Awakened after a Full Sleep.\nFading: Awakened Runes gain 1 Fade when their Power is used. When a Rune's Fade is equal or greater than your level that Rune becomes Faded, it is no longer Awakened and you must choose a Dormant Rune to Awaken in its place. If no Runes are currently Dormant, all of your Faded Runes become Dormant. You may select one of these Dormant Runes, except for the Rune that just barely Faded. Lesser Runes do not Awaken another Rune when they Fade, after a Lesser Rune has Faded it only becomes Awakened after a Full Sleep.",
   proficiencies: [
     [
@@ -12,7 +12,7 @@ export default {
     [
       "Energized: While you have 0 Faded Runes, add +1 to any damage you deal with a Power.",
       "Glow: Subract 1 Fade from the first 2 uses of your Powers, resets after a Full Sleep. This effect does not apply to Runes with a Max of only 1 Fade.",
-      "Thick Skin: Increase your Max Survival by 5."
+      "Thick Skin: Increase your Armor by 1. This is increased to half your Strength when not wearing Torso Armor."
     ],
     [
       "Greater Energized: Increase Energized to +LVL.",

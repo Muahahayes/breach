@@ -9,19 +9,19 @@ export default [//TODO: change profs that add additional psychic fatigue checks 
     {
       name: "Psi Burst",
       attributes: "[Action] [Ranged] [AOE]",
-      description: "Releases a burst of psychic energy in a 30 ft range centered on your character. Roll d20 + Use Power, every creature within the effect must roll a Will check vs this roll. Deals 1 kinetic damage on a failed Will check.",
+      description: "Releases a burst of psychic energy in a 30 ft range centered on your character. Every creature within the effect must roll a Will check. Deals LVL kinetic damage on a failed Will check.",
       proficiencies: [
         [
           "Scream: [Activate] Instead of dealing damage or other effects, you may inflict Fear on every target hit for LVL turns, at the end of each turn they may roll a Will check vs [15 + Will] to end the effect.",
           "Feedback: [Activate] Instead of dealing damage or other effects, you may force a Psychic Fatigue check on every target hit which has a Psychic Source.",
           "Wave: In addition to dealing damage, you may push all targets hit 10 ft away from you.",
-          "Impact: Increases the damage to 1d4.",
+          "Impact: Deals an additional 1d4.",
           "Shout: [Activate] Instead of dealing damage or other effects, as an Activation Action you may inflict Stun on every target hit for 1 turn. Roll an additional Psychic Fatigue check for each target hit. You do not regain this Activation Action on your next turn."
         ],
         [
           "Echo: [Action] As an Action you may do a second Psi Burst, this second use must not use the same status effect as the first but may use your Activation Action a second time.",
           "Telepathic: You may roll your attack vs their Avoidance + Will instead, this Power deals Psychic damage instead of Kinetic when used this way.",
-          "Magnitude: Increases the damage to 1d6.",
+          "Magnitude: Increases the damage of Impact to 1d6.",
           "Focused: You may direct your Psi Burst at a single creature in range. Instead of dealing damage or other effects, inflict Dumb on hit for LVL turns."
         ],
         [
@@ -268,7 +268,7 @@ export default [//TODO: change profs that add additional psychic fatigue checks 
     },
     {
       name: "Twist Reality",
-      attributes: "[Action] [Melee]",
+      attributes: "[Action] [Touch]",
       description: "\\:You touch the head of a person who has a high regard for you, if their regard is greater than 2 you may impose a trigger or rule for how one aspect of their psyche interprets their world. The effect fails if their regard is not high enough, and causes them to lose 2 regard for you. Examples: \"all puppies look like dangerous wolves\", \"people who offer you a handshake are trying to recruit you into a shadowy organization/death cult\", \"if you don't walk up this hill and say hello to every sunrise you will die\". They roll a d20 + Insight vs Power to resist the new twist, on any Success they resist the effect and lower their regard for you by 2 or set it to -2 whichever results in a lower value, on a Soft Fail they may make a new harder check (add their regard to your Power roll) each time it triggers, on a Hard Fail they may not. For these triggered checks, on a Hard Success the effect ends, on a Soft Success they grow suspicious and lower their regard toward the Psychic by 1. They may also make the harder check when a person brings their attention to it, once per trigger, even if they Hard Failed the original check. For this assisted check the victim can use their Insight or the assisting person's Persuasion, whichever is higher. On a Hard Success the effect ends, on a Soft Success they grow suspicious and lower their regard towards the Psychic by 1, on a Hard Fail they lower regard of the person helping them by 1. The effect lasts for 1 week and ends prematurely if they go 10 miles away from you or if you enter Psychic Exhaustion within sight of them.",
       proficiencies: [
         [],
@@ -362,7 +362,7 @@ export default [//TODO: change profs that add additional psychic fatigue checks 
     // mind drain
     {
       name: "Madness",
-      attributes: "[Action] [Melee]",
+      attributes: "[Action] [Touch]",
       description: "As an Action you reach out and grab a creature's head. Make a basic melee attack roll with an Unfavored -1. On a hit, instead of dealing damage you assault their mind with Madness. Roll a d20 + Charm vs Insight. On any Fail the creature resists you and there is no effect. On a Soft Success the creature is Stunned for 1 turn, roll an additional Psychic Fatigue check. On a Hard Success the creature is driven mad and must attempt to perform damaging actions against a random creature which is hostile towards you on its next turn. If no creatures nearby are hostile towards you the creature spends its turn moving up to half of its movement distance away from you and will attack any creature near it at random.",
       proficiencies: [
         [],

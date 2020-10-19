@@ -295,15 +295,16 @@ export default [
     {
       name: "Aura of Protection",
       attributes: "[Action] [AOE] [Aura]",
-      description: "You release a soft glow of Runic energy that imparts safety and protection to friendly creatures around you. Creatures who mean you no harm within 20 ft that are within line of sight receive +1 Avoidance. Only 1 Aura Rune may be active at one time. This effect persists as long as this Rune is Awakened. After activating this Rune, cause 1 Fade at the end of each of your Turns. Max 3 Fade.",
+      description: "You release a soft glow of Runic energy that imparts safety and protection to friendly creatures around you. Creatures who mean you no harm within 20 ft that are within line of sight receive +1 Armor. Only 1 Aura Rune may be active at one time. This effect persists as long as this Rune is Awakened. After activating this Rune, cause 1 Fade at the end of each of your Turns. Max 3 Fade.",
       proficiencies: [
         [
           "Salvation: [React] As a Reaction, when a creature within this aura rolls a Save you may add +1 to their roll. Causes 1 Fade.",
-          "Bulwark: Reduce Physical damage taken by creatures within this aura by 1."
+          "Bulwark: Reduce Physical damage taken by creatures within this aura by 1.",
+          "Empowered: Increase the Armor bonus to 2."
         ],
         [
           "Reserve: At the end of your Turn, if no creature within the effect was the target of an attack or received any damage, this Rune does not cause any Fade on this Turn.",
-          "Empowered: Increase the Avoidance bonus to a +2.",
+          "Deflection: Increase the creature's Avoidance by 1.",
           "Greater Bulwark: Increase the effect of Bulwark to 3."
         ]
       ]
@@ -314,12 +315,14 @@ export default [
       description: "You release a soft glow of Runic energy that imparts health and well-being to friendly creatures around you. Creatures who mean you no harm within 20 ft that are within line of sight are healed 1 Survival at the end of each of your Turns, do not add your Will Primary Benefit to this healing. Only 1 Aura Rune may be active at one time. This effect persists as long as this Rune is Awakened. After activating this Rune, cause 1 Fade at the end of each of your Turns. Max 3 Fade.",
       proficiencies: [
         [
-          "Rejuvenation: Increases all healing received by creatures within the aura by 1."
+          "Rejuvenation: Increases all healing received by creatures within the aura by 1.",
+          "Soothe: When the Aura is first cast, reduce the Strain of the creatures by 1."
         ],
         [
           "Empowered: Increase the healing dealt to an amount equal to your level.",
           "Reserve: At the end of your Turn, if all creatures within the effect are already at their Max Survival, this Rune does not cause any Fade on this Turn.",
-          "Greater Rejuvenation: Increase the effect of Rejuvenation to 3."
+          "Greater Rejuvenation: Increase the effect of Rejuvenation to 3.",
+          "Greater Soothe: Soothe applies to each Turn."
         ]
       ]
     },
@@ -330,7 +333,8 @@ export default [
       proficiencies: [
         [
           "Elemental: This aura also applies to Elemental damage dealt.",
-          "Mental: This aura also applies to Mental damage dealt."
+          "Mental: This aura also applies to Mental damage dealt.",
+          "Overpower: Creatures effected also ignore 1 Armor on their attacks."
         ],
         [
           "Empowered: Increase the damage bonus to an amount equal to your level.",
